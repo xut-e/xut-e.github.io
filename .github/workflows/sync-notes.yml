@@ -1,0 +1,88 @@
+name: Sync Notes to Website
+
+on:
+  workflow_dispatch:          # Permite lanzarlo manualmente desde GitHub
+  schedule:
+    - cron: "0 6 * * *"       # Cada día a las 6:00 UTC
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Clonamos el repo de la web
+      - name: Checkout website repo
+        uses: actions/checkout@v4
+        with:
+          path: site
+
+      # 2️⃣ Clonamos el repo privado Notes
+      - name: Checkout Notes repo
+        uses: actions/checkout@v4
+        with:
+          repository: xut-e/Notes
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          path: notes
+
+      # 3️⃣ Generamos la carpeta limpia "apuntes"
+      - name: Build cleaned apuntes folder
+        run: |
+          set -euo pipefail
+          SRC="notes/Ciberseguridad"
+          DST="site/apuntes"
+
+          slugify() {
+            local input="$*"
+            echo "$input" \
+              | tr '[:upper:]' '[:lower:]' \
+              | sed -E 's/[[:space:]]+/-/g' \
+              | sed -E 's/[^a-z0-9._/-]+//g' \
+              | sed -E 's/^-+//g'
+          }
+
+          rm -rf "$DST"
+          mkdir -p "$DST"
+
+          cd "$SRC"
+
+          find . \( -iname "*.md" -o -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" \) | while read -r FILE; do
+            CLEAN_PATH="${FILE#./}"
+
+            DIRNAME=$(dirname "$CLEAN_PATH")
+            BASENAME=$(basename "$CLEAN_PATH")
+
+            IFS='/' read -r -a PARTS <<< "$DIRNAME"
+            SLUGGED_DIR=""
+            for PART in "${PARTS[@]}"; do
+              if [ -z "$PART" ] || [ "$PART" = "." ]; then
+                continue
+              fi
+              NEWSEG=$(slugify "$PART")
+              if [ -z "$SLUGGED_DIR" ]; then
+                SLUGGED_DIR="$NEWSEG"
+              else
+                SLUGGED_DIR="$SLUGGED_DIR/$NEWSEG"
+              fi
+            done
+
+            NEWFILE=$(slugify "$BASENAME")
+
+            TARGET_DIR="../../$DST/$SLUGGED_DIR"
+            TARGET_PATH="$TARGET_DIR/$NEWFILE"
+
+            mkdir -p "$TARGET_DIR"
+            cp "$FILE" "$TARGET_PATH"
+
+            echo "[OK] Copiado → $TARGET_PATH"
+          done
+
+      # 4️⃣ Subimos los cambios al repo de la web
+      - name: Commit and push changes
+        run: |
+          cd site
+          git config user.name "xut-e"
+          git config user.email "xut.workmail@gmail.com"
+          git add apuntes
+          git diff --cached --quiet || git commit -m "Sync notes from private repo"
+          git push
+
