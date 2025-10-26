@@ -36,14 +36,33 @@ jobs:
 
           slugify() {
             local input="$*"
-            echo "$input" \
-              | tr '[:upper:]' '[:lower:]' \
-              | sed -E 's/[[:space:]]+/-/g' \
-              | sed -E 's/[.]+//g' \
-              | sed -E 's/[^a-z0-9_-]+//g' \
-              | sed -E 's/-+/-/g' \
-              | sed -E 's/^-+|-+$//g'
+            # Separar nombre y extensión
+            local name="${input%.*}"
+            local ext="${input##*.}"
+
+            # Si no hay extensión (carpeta)
+            if [ "$name" = "$ext" ]; then
+              echo "$input" \
+                | tr '[:upper:]' '[:lower:]' \
+                | sed -E 's/[[:space:]]+/-/g' \
+                | sed -E 's/[.]+//g' \
+                | sed -E 's/[^a-z0-9_-]+//g' \
+                | sed -E 's/-+/-/g' \
+                | sed -E 's/^-+|-+$//g'
+            else
+              # Si hay extensión (.md, .png, etc.)
+              local cleaned
+              cleaned=$(echo "$name" \
+                | tr '[:upper:]' '[:lower:]' \
+                | sed -E 's/[[:space:]]+/-/g' \
+                | sed -E 's/[.]+//g' \
+                | sed -E 's/[^a-z0-9_-]+//g' \
+                | sed -E 's/-+/-/g' \
+                | sed -E 's/^-+|-+$//g')
+              echo "${cleaned}.${ext}"
+            fi
           }
+
 
 
           rm -rf "$DST"
