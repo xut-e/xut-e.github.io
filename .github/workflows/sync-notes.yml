@@ -14,7 +14,10 @@ jobs:
       - name: Checkout website repo
         uses: actions/checkout@v4
         with:
+          repository: xut-e/xut-e.github.io
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           path: site
+
 
       # 2️⃣ Clonamos el repo privado Notes
       - name: Checkout Notes repo
