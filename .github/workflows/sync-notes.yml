@@ -1,126 +1,35 @@
-name: Sync Notes to Website
+name: Build apuntes
 
 on:
-  workflow_dispatch:          # Permite lanzarlo manualmente desde GitHub
-  schedule:
-    - cron: "0 6 * * *"       # Cada día a las 6:00 UTC
+  push:
+    branches:
+      - main
 
 jobs:
-  sync:
+  build-apuntes:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Clonamos el repo de la web
-      - name: Checkout website repo
+      - name: Checkout repo
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          repository: xut-e/xut-e.github.io
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          path: site
+          python-version: '3.x'
 
-
-      # 2️⃣ Clonamos el repo privado Notes
-      - name: Checkout Notes repo
-        uses: actions/checkout@v4
-        with:
-          repository: xut-e/Notes
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          path: notes
-
-      # 3️⃣ Generamos la carpeta limpia "apuntes"
-      - name: Build cleaned apuntes folder
+      - name: Run build script
         run: |
-          set -euo pipefail
-          SRC="notes/Ciberseguridad"
-          DST="site/apuntes"
+          python3 scripts/build_apuntes.py
 
-          slugify() {
-            local input="$*"
-            # Separar nombre y extensión
-            local name="${input%.*}"
-            local ext="${input##*.}"
-
-            # Si no hay extensión (carpeta)
-            if [ "$name" = "$ext" ]; then
-              echo "$input" \
-                | tr '[:upper:]' '[:lower:]' \
-                | sed -E 's/[[:space:]]+/-/g' \
-                | sed -E 's/[.]+//g' \
-                | sed -E 's/[^a-z0-9_-]+//g' \
-                | sed -E 's/-+/-/g' \
-                | sed -E 's/^-+|-+$//g'
-            else
-              # Si hay extensión (.md, .png, etc.)
-              local cleaned
-              cleaned=$(echo "$name" \
-                | tr '[:upper:]' '[:lower:]' \
-                | sed -E 's/[[:space:]]+/-/g' \
-                | sed -E 's/[.]+//g' \
-                | sed -E 's/[^a-z0-9_-]+//g' \
-                | sed -E 's/-+/-/g' \
-                | sed -E 's/^-+|-+$//g')
-              echo "${cleaned}.${ext}"
-            fi
-          }
-
-
-
-          rm -rf "$DST"
-          mkdir -p "$DST"
-
-          cd "$SRC"
-
-          find . \( -iname "*.md" -o -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" \) | while read -r FILE; do
-            CLEAN_PATH="${FILE#./}"
-
-            DIRNAME=$(dirname "$CLEAN_PATH")
-            BASENAME=$(basename "$CLEAN_PATH")
-
-            IFS='/' read -r -a PARTS <<< "$DIRNAME"
-            SLUGGED_DIR=""
-            for PART in "${PARTS[@]}"; do
-              if [ -z "$PART" ] || [ "$PART" = "." ]; then
-                continue
-              fi
-              NEWSEG=$(slugify "$PART")
-              if [ -z "$SLUGGED_DIR" ]; then
-                SLUGGED_DIR="$NEWSEG"
-              else
-                SLUGGED_DIR="$SLUGGED_DIR/$NEWSEG"
-              fi
-            done
-
-            NEWFILE=$(slugify "$BASENAME")
-
-            TARGET_DIR="../../$DST/$SLUGGED_DIR"
-            TARGET_PATH="$TARGET_DIR/$NEWFILE"
-
-            mkdir -p "$TARGET_DIR"
-            
-            # Añadir front matter si es un .md
-            if [[ "$TARGET_PATH" == *.md ]]; then
-              TITLE=$(basename "$TARGET_PATH" .md | sed -E 's/[-_]/ /g' | sed 's/\b\(.\)/\u\1/g')
-              echo "---" > tmp.md
-              echo "title: $TITLE" >> tmp.md
-              echo "layout: apunte" >> tmp.md
-              echo "---" >> tmp.md
-              cat "$FILE" >> tmp.md
-              mv tmp.md "$TARGET_PATH"
-            else
-              cp "$FILE" "$TARGET_PATH"
-            fi
-
-
-            echo "[OK] Copiado → $TARGET_PATH"
-          done
-
-      # 4️⃣ Subimos los cambios al repo de la web
-      - name: Commit and push changes
+      - name: Commit generated files
         run: |
-          cd site
-          git config user.name "xut-e"
-          git config user.email "xut.workmail@gmail.com"
-          git add -f apuntes
-          git diff --cached --quiet || git commit -m "Sync notes from private repo"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add apuntes _includes/sidebar.html
+          # Solo commitea si hay cambios
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: build apuntes automático"
+            git push
+          fi
 
