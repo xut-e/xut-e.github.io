@@ -1,82 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>xut | Apuntes TryHackMe en castellano</title>
   <meta name="description" content="Apuntes técnicos de ciberseguridad y TryHackMe en castellano.">
-  <meta name="keywords" content="ciberseguridad, tryhackme, hacking, linux, redes, xut">
+  <meta name="keywords" content="ciberseguridad, tryhackme, apuntes, hacking, linux, xut">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
   <header>
     <section>
-      <h1><span aria-hidden="true">✱</span> <span>xut</span></h1>
+      <h1><a href="/" aria-label="xut - inicio" style="text-decoration:none;color:inherit;"><span aria-hidden="true">✱</span> <span>xut</span></a></h1>
+
       <nav aria-label="Principal">
         <ul>
-          <li><a href="/" aria-current="page">Apuntes</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="https://github.com/xut-e" rel="noopener">GitHub</a></li>
+          <li><a href="/" aria-current="page">Inicio</a></li>
+          <li><a href="/apuntes/">Apuntes</a></li>
+          <li><a href="/sobre-mi.html">Sobre mí</a></li>
+          <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
         </ul>
       </nav>
     </section>
   </header>
 
   <main>
-    <section class="layout-sidebar">
-      <h2>Índice THM</h2>
-      <nav class="tree-nav">
+    <!-- SIDEBAR: índice estático basado en tu tree (Pre Security / Cyber Security 101).
+         Más adelante podemos generar esto automáticamente desde /apuntes/ -->
+    <aside class="layout-sidebar" aria-labelledby="indice-label">
+      <h2 id="indice-label">Índice THM</h2>
+
+      <nav class="tree-nav" aria-label="Índice de apuntes">
         <ul>
+          <!-- Curso 1 -->
           <li>
             <details open>
               <summary>1. Pre Security</summary>
               <ul>
-                <li><a href="#">Introduction to Cybersecurity</a></li>
-                <li><a href="#">Careers in Cyber</a></li>
+                <li>
+                  <a href="/apuntes/thm/1-pre-security/1-introduction-to-cybersecurity/">Introduction to Cybersecurity</a>
+                </li>
+                <li>
+                  <a href="/apuntes/thm/1-pre-security/2-careers-in-cyber/">Careers in Cyber</a>
+                </li>
+                <!-- Añade más unidades según tu tree real -->
               </ul>
             </details>
           </li>
+
+          <!-- Curso 2 -->
           <li>
             <details>
-              <summary>2. Network Fundamentals</summary>
+              <summary>2. Cyber Security 101</summary>
               <ul>
-                <li><a href="#">OSI Model</a></li>
-                <li><a href="#">Packets and Frames</a></li>
+                <li>
+                  <a href="/apuntes/thm/2-cyber-security-101/1-what-is-hacking/">What is Hacking</a>
+                </li>
+                <li>
+                  <a href="/apuntes/thm/2-cyber-security-101/2-security-fundamentals/">Security Fundamentals</a>
+                </li>
+                <li>
+                  <a href="/apuntes/thm/2-cyber-security-101/3-networking-basics/">Networking Basics</a>
+                </li>
+                <!-- Añade más unidades según tu tree real -->
               </ul>
             </details>
           </li>
         </ul>
       </nav>
-    </section>
+    </aside>
 
-    <section class="layout-content">
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="layout-content" aria-labelledby="main-heading">
       <header>
-        <h2>Apuntes TryHackMe en castellano</h2>
-        <p class="intro">Apuntes personales de estudio en ciberseguridad. Redes, sistemas, explotación, forense, web, AD, criptografía…</p>
+        <h2 id="main-heading">Últimos apuntes</h2>
+        <p class="intro">Mis apuntes sincronizados automáticamente desde mi repo. Haz click para abrir cada apunte.</p>
       </header>
 
-      <article>
-        <header>
-          <h3><a class="post-link" href="#">Metasploit - Introducción</a></h3>
-          <p class="meta"><time datetime="2025-10-24">24 Oct 2025</time> · Explotación</p>
-        </header>
-        <p>Conceptos básicos del framework Metasploit, componentes principales y flujo de explotación.</p>
-      </article>
+      <!-- Contenedor donde pintaremos los últimos posts (dinámico si existe /apuntes/index.json) -->
+      <section id="latest-posts" aria-live="polite">
+        <!-- Fallback con ejemplos estáticos mientras no exista el JSON generado -->
+        <article>
+          <header>
+            <h3><a class="post-link" href="/apuntes/thm/2-cyber-security-101/1-what-is-hacking/">What is Hacking</a></h3>
+            <p class="meta"><time datetime="2025-10-26">26 Oct 2025</time> · Cyber Security 101</p>
+          </header>
+          <p>Resumen rápido y recursos sobre qué es el hacking y cómo se organiza el conocimiento.</p>
+        </article>
 
-      <article>
-        <header>
-          <h3><a class="post-link" href="#">HTTP in Detail</a></h3>
-          <p class="meta"><time datetime="2025-10-20">20 Oct 2025</time> · Web</p>
-        </header>
-        <p>Peticiones, respuestas, métodos, cabeceras y cookies. Base para entender hacking web.</p>
-      </article>
+        <article>
+          <header>
+            <h3><a class="post-link" href="/apuntes/thm/1-pre-security/1-introduction-to-cybersecurity/">Introduction to Cybersecurity</a></h3>
+            <p class="meta"><time datetime="2025-10-22">22 Oct 2025</time> · Pre Security</p>
+          </header>
+          <p>Primeros conceptos imprescindibles: amenazas, perfiles y buenas prácticas.</p>
+        </article>
+      </section>
+
+      <!-- Opcional: enlace directo al índice completo de apuntes -->
+      <p style="margin-top:1rem;">
+        <a href="/apuntes/" class="post-link">Ver todo el índice de apuntes →</a>
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> xut — Apuntes de ciberseguridad.</p>
-    <pre class="ascii">
+    <section>
+      <p>© <span id="year"></span> xut — Apuntes de ciberseguridad.</p>
+      <pre class="ascii" aria-hidden="true">
              ..                      .....          
    .H88x.  :~)88:                 .H8888888h.  ~-.  
   x888888X ~:8888    x.    .      888888888888x  `> 
@@ -89,11 +121,64 @@
 X888  X88888x.x"   "8888Y 8888"   !"*8888888n..  :  
 X88% : '%8888"      `Y"   'YP    '    "*88888888*   
  "*=~    `""                             ^"***"`    
-    </pre>
+      </pre>
+    </section>
   </footer>
 
   <script>
+    // año dinámico
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Intentamos cargar /apuntes/index.json si lo genera el workflow
+    (async function loadLatest() {
+      try {
+        const res = await fetch('/apuntes/index.json', {cache: "no-store"});
+        if (!res.ok) throw new Error('no index.json');
+        const data = await res.json(); // espera array [{title, path, date, excerpt}, ...]
+        const container = document.getElementById('latest-posts');
+        container.innerHTML = ''; // limpiamos fallback
+        // Tomamos los N primeros
+        const items = data.slice(0, 8);
+        for (const it of items) {
+          const art = document.createElement('article');
+
+          const h = document.createElement('h3');
+          const a = document.createElement('a');
+          a.className = 'post-link';
+          a.href = it.path; // path debe ser algo como /apuntes/...
+          a.textContent = it.title;
+          h.appendChild(a);
+
+          const header = document.createElement('header');
+          const meta = document.createElement('p');
+          meta.className = 'meta';
+          if (it.date) {
+            const time = document.createElement('time');
+            time.dateTime = it.date;
+            // formateo simple
+            const d = new Date(it.date);
+            time.textContent = d.toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
+            meta.appendChild(time);
+            meta.insertAdjacentText('beforeend', ' · ' + (it.section || ''));
+          } else {
+            meta.textContent = it.section || '';
+          }
+
+          header.appendChild(h);
+          header.appendChild(meta);
+          art.appendChild(header);
+
+          const p = document.createElement('p');
+          p.textContent = it.excerpt || '';
+          art.appendChild(p);
+
+          container.appendChild(art);
+        }
+      } catch (e) {
+        // no index.json -> nos quedamos con fallback estático
+        console.log('No index.json disponible (todavía). Fallback estático:', e.message);
+      }
+    })();
   </script>
 </body>
 </html>

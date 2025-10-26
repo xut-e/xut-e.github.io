@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | xut</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1><a href="/" style="text-decoration:none;color:inherit;">✱ xut</a></h1>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/apuntes/">Apuntes</a></li>
+          <li><a href="/sobre-mi.html">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main class="layout-content">
+    <article class="apunte">
+      <h2>{{ page.title }}</h2>
+      {{ content | markdownify | replace: '[[', '<a href="/apuntes/' | replace: ']]', '/">' }}
+    </article>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> xut — Apuntes de ciberseguridad.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

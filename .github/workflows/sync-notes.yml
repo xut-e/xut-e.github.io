@@ -96,7 +96,20 @@ jobs:
             TARGET_PATH="$TARGET_DIR/$NEWFILE"
 
             mkdir -p "$TARGET_DIR"
-            cp "$FILE" "$TARGET_PATH"
+            
+            # Añadir front matter si es un .md
+            if [[ "$TARGET_PATH" == *.md ]]; then
+              TITLE=$(basename "$TARGET_PATH" .md | sed -E 's/[-_]/ /g' | sed 's/\b\(.\)/\u\1/g')
+              echo "---" > tmp.md
+              echo "title: $TITLE" >> tmp.md
+              echo "layout: apunte" >> tmp.md
+              echo "---" >> tmp.md
+              cat "$FILE" >> tmp.md
+              mv tmp.md "$TARGET_PATH"
+            else
+              cp "$FILE" "$TARGET_PATH"
+            fi
+
 
             echo "[OK] Copiado → $TARGET_PATH"
           done
