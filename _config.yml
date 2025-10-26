@@ -12,7 +12,6 @@ exclude:
   - README.md
   - LICENSE
   - .github
-  - assets
   - node_modules
   - vendor
 
