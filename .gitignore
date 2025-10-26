@@ -1,0 +1,26 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Build de Jekyll / Pages
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependencias posibles
+node_modules/
+vendor/
+
+# Temporales y backups
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Repos temporales del workflow
+notes/
+site/
+apuntes/
+test-sync/
+
