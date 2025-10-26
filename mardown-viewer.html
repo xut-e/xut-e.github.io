@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xut-e — Visor de Apuntes</title>
+  <link rel="stylesheet" href="/main.css">
+
+  <!-- Librería para renderizar Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="layout-sidebar" id="sidebar">
+      <!-- Se cargará el sidebar dinámico -->
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="layout-content">
+      <article class="apunte">
+        <header class="apunte-header">
+          <h1 id="titulo"></h1>
+        </header>
+
+        <section class="apunte-body" id="viewer">
+          <p>Cargando apunte...</p>
+        </section>
+
+        <footer class="apunte-footer">
+          <p><a href="/">← Volver al inicio</a></p>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <footer class="layout-footer">
+    <p>© 2025 xut-e — Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    // Cargar el sidebar
+    fetch('/_includes/sidebar.html')
+      .then(res => res.text())
+      .then(html => { document.getElementById('sidebar').innerHTML = html; })
+      .catch(() => { document.getElementById('sidebar').innerHTML = '<p>Error al cargar el menú.</p>'; });
+
+    // Obtener archivo .md desde ?file=
+    const params = new URLSearchParams(window.location.search);
+    const filePath = params.get("file");
+
+    if (!filePath) {
+      document.getElementById("viewer").innerHTML = "<p>No se especificó ningún apunte.</p>";
+    } else {
+      document.getElementById("titulo").innerText = decodeURIComponent(filePath.split("/").pop().replace(".md", ""));
+      fetch(filePath)
+        .then(res => {
+          if (!res.ok) throw new Error("No se pudo cargar el archivo: " + filePath);
+          return res.text();
+        })
+        .then(md => {
+          const html = marked.parse(md);
+          document.getElementById("viewer").innerHTML = html;
+        })
+        .catch(err => {
+          document.getElementById("viewer").innerHTML = `<p style="color:red;">${err.message}</p>`;
+        });
+    }
+  </script>
+</body>
+</html>
+

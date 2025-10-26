@@ -9,13 +9,8 @@
 
 <body>
   <div class="layout">
+    <aside class="layout-sidebar" id="sidebar"></aside>
 
-    <!-- SIDEBAR -->
-    <aside class="layout-sidebar">
-      {% include sidebar.html %}
-    </aside>
-
-    <!-- CONTENIDO PRINCIPAL -->
     <main class="layout-content">
       <header class="main-header">
         <h1>Apuntes de Ciberseguridad</h1>
@@ -24,18 +19,20 @@
 
       <section class="apuntes-recientes">
         <h2>📘 Últimos apuntes</h2>
-        <ul id="lista-apuntes"></ul>
+        <ul>
+          <li><a href="/markdown-viewer.html?file=/apuntes/thm/1-pre-security/1. Pre Security.md">1. Pre Security</a></li>
+          <li><a href="/markdown-viewer.html?file=/apuntes/thm/2-cyber-security-101/2. Cyber Security 101.md">2. Cyber Security 101</a></li>
+          <li><a href="/markdown-viewer.html?file=/apuntes/thm/maquinas/Maquinas.md">Maquinas</a></li>
+        </ul>
       </section>
 
       <section class="sobre-mi">
         <h2>👤 Sobre mí</h2>
         <p>
           Soy <strong>xut-e</strong>, estudiante de ciberseguridad.  
-          Aquí recopilo mis notas, prácticas y recursos sobre hacking ético, redes, y plataformas como TryHackMe o HackTheBox.
+          Aquí recopilo mis notas, prácticas y recursos sobre hacking ético, redes y plataformas como TryHackMe o HackTheBox.
         </p>
-        <p>
-          Puedes ver más en <a href="/sobre-mi.html">Sobre mí</a>.
-        </p>
+        <p><a href="/sobre-mi.html">Más sobre mí</a></p>
       </section>
     </main>
   </div>
@@ -44,27 +41,11 @@
     <p>© 2025 xut-e — Todos los derechos reservados</p>
   </footer>
 
-  <!-- Script para cargar los apuntes -->
   <script>
-    async function cargarApuntes() {
-      try {
-        const res = await fetch('/apuntes/index.json');
-        if (!res.ok) throw new Error('No se pudo cargar el índice de apuntes.');
-        const apuntes = await res.json();
-
-        const lista = document.getElementById('lista-apuntes');
-        apuntes.slice(-10).reverse().forEach(a => {
-          const li = document.createElement('li');
-          li.innerHTML = `<a href="${a.path}">${a.title}</a>`;
-          lista.appendChild(li);
-        });
-      } catch (err) {
-        console.error(err);
-        const lista = document.getElementById('lista-apuntes');
-        lista.innerHTML = '<li>Error al cargar los apuntes.</li>';
-      }
-    }
-    cargarApuntes();
+    fetch('/_includes/sidebar.html')
+      .then(res => res.text())
+      .then(html => { document.getElementById('sidebar').innerHTML = html; })
+      .catch(() => { document.getElementById('sidebar').innerHTML = '<p>Error al cargar el menú.</p>'; });
   </script>
 </body>
 </html>
