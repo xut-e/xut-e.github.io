@@ -36,9 +36,12 @@ jobs:
             echo "$input" \
               | tr '[:upper:]' '[:lower:]' \
               | sed -E 's/[[:space:]]+/-/g' \
-              | sed -E 's/[^a-z0-9._/-]+//g' \
-              | sed -E 's/^-+//g'
+              | sed -E 's/[.]+//g' \
+              | sed -E 's/[^a-z0-9_-]+//g' \
+              | sed -E 's/-+/-/g' \
+              | sed -E 's/^-+|-+$//g'
           }
+
 
           rm -rf "$DST"
           mkdir -p "$DST"
@@ -82,7 +85,7 @@ jobs:
           cd site
           git config user.name "xut-e"
           git config user.email "xut.workmail@gmail.com"
-          git add apuntes
+          git add -f apuntes
           git diff --cached --quiet || git commit -m "Sync notes from private repo"
           git push
 
