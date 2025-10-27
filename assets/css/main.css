@@ -102,25 +102,6 @@ body {
 }
 
 /* ===== Sidebar índice ===== */
-.sidebar {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-card);
-  padding: 1rem;
-  max-height: calc(100vh - 6rem);
-  overflow-y: auto;
-  position: sticky;
-  top: 1rem;
-  font-size: .9rem;
-}
-
-.sidebar h2 {
-  font-size: .9rem;
-  font-weight: 600;
-  margin: 0 0 .75rem;
-  color: var(--text-main);
-}
-
 .tree-nav {
   margin: 0;
   padding: 0;
@@ -274,47 +255,6 @@ body {
 }
 
 /* ====== Toggle lateral (Índice) ====== */
-.index-toggle {
-  position: fixed;
-  left: 1rem;
-  top: 5rem;
-  z-index: 100;
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: var(--radius-card);
-  padding: 0.5rem 0.75rem;
-  cursor: pointer;
-  font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-}
-
-.sidebar {
-  position: fixed;
-  left: -320px;
-  top: 0;
-  bottom: 0;
-  width: var(--sidebar-width);
-  background-color: var(--bg-surface);
-  border-right: 1px solid var(--border-color);
-  border-radius: 0 var(--radius-card) var(--radius-card) 0;
-  overflow-y: auto;
-  padding: 1rem;
-  transition: left 0.3s ease;
-  z-index: 90;
-}
-
-.sidebar.open {
-  left: 0;
-}
-
-.sidebar h2 {
-  margin-top: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-}
-
 @media (min-width: 900px) {
   .index-toggle {
     display: none;
@@ -381,26 +321,6 @@ body {
 }
 
 /* Ajuste automático de altura */
-.sidebar {
-  height: auto;
-  max-height: calc(100vh - 4rem);
-  overflow-y: auto;
-  transition: left 0.3s ease, width 0.2s ease;
-}
-
-.sidebar {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-card);
-  padding: 1rem;
-  font-size: .9rem;
-  max-height: calc(100vh - 4rem);
-  overflow-y: auto;
-  position: sticky;
-  top: 1rem;
-  transition: all 0.3s ease;
-}
-
 .tree-nav summary {
   font-weight: 500;
   padding: .2rem 0;
@@ -432,5 +352,63 @@ body {
 
 .tree-nav details summary::-webkit-details-marker {
   display: none;
+}
+
+/* ===== PANEL LATERAL PLEGABLE ===== */
+
+/* Botón flotante */
+.index-toggle {
+  position: fixed;
+  top: 5rem;
+  left: 1rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-card);
+  padding: 0.5rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 100;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+.index-toggle:hover {
+  background: var(--accent-hover);
+}
+
+/* Sidebar oculto/visible */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  background-color: var(--bg-surface);
+  border-right: 1px solid var(--border-color);
+  padding: 1rem;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  z-index: 90;
+}
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+/* Ajuste en pantallas grandes */
+@media (min-width: 900px) {
+  .index-toggle {
+    display: none;
+  }
+  .sidebar {
+    position: static;
+    height: auto;
+    transform: none;
+    border-radius: var(--radius-card);
+  }
+}
+
+/* Sombra y animación suave */
+.sidebar.open {
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
 }
 
