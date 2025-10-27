@@ -33,7 +33,7 @@
 
   // 3. Detectar qué archivo estoy viendo ahora, para resaltarlo
   const params = new URLSearchParams(window.location.search);
-  let currentFile = params.get("file"); 
+  let currentFile = params.get("file");
   if (currentFile && !currentFile.startsWith("content/")) {
     currentFile = "content/" + currentFile;
   }
@@ -48,6 +48,47 @@
 
   const currentNorm = currentFile ? normalizePath(currentFile) : null;
 
+  // === ORDEN NATURAL ===========================================
+  // Extrae número inicial si existe ("12. Hashing" -> 12)
+  function leadingNumber(name) {
+    const match = name.trim().match(/^(\d+)[\.\)]?\s*/); // 1. , 2) , etc
+    if (!match) return null;
+    // parseInt seguro:
+    const numStr = match[1];
+    let n = 0;
+    for (let i = 0; i < numStr.length; i++) {
+      n = n * 10 + (numStr.charCodeAt(i) - 48);
+    }
+    return n;
+  }
+
+  function sortContentsNatural(list) {
+    // clonamos para no mutar el original
+    return [...list].sort((a, b) => {
+      const aName = a.name || "";
+      const bName = b.name || "";
+
+      const aNum = leadingNumber(aName);
+      const bNum = leadingNumber(bName);
+
+      const aHas = aNum !== null;
+      const bHas = bNum !== null;
+
+      if (aHas && bHas) {
+        if (aNum !== bNum) return aNum - bNum;
+        // si tienen el mismo número exacto, desempata por nombre normal
+        return aName.localeCompare(bName, "es", { numeric: true, sensitivity: "base" });
+      }
+
+      if (aHas && !bHas) return -1;
+      if (!aHas && bHas) return 1;
+
+      // ninguno tiene número inicial → ordenar alfa natural también
+      return aName.localeCompare(bName, "es", { numeric: true, sensitivity: "base" });
+    });
+  }
+  // =============================================================
+
   // 4. Builder recursivo
   function buildNode(node, basePath) {
     if (node.type === "directory") {
@@ -56,7 +97,6 @@
       const details = document.createElement("details");
       details.dataset.path = dirPath;
 
-      // restaurar abierto si estaba guardado
       if (openSet.has(dirPath)) {
         details.setAttribute("open", "");
       }
@@ -67,7 +107,10 @@
 
       const ul = document.createElement("ul");
 
-      (node.contents || []).forEach(child => {
+      // ORDENAMOS AQUÍ
+      const orderedChildren = sortContentsNatural(node.contents || []);
+
+      orderedChildren.forEach(child => {
         const li = document.createElement("li");
         const built = buildNode(child, dirPath);
         if (built) {
@@ -78,7 +121,6 @@
 
       details.appendChild(ul);
 
-      // guardar cambios de toggle
       details.addEventListener("toggle", () => {
         if (details.open) {
           openSet.add(dirPath);
@@ -102,38 +144,28 @@
         return span;
       }
 
-      // Nombre sin .md
       const fileNameNoExt = node.name.replace(/\.md$/i, "").trim();
 
-      // === FILTRO A: archivos que empiezan por "0." ===
+      // FILTRO A: "0. ..." -> ocultar
       if (fileNameNoExt.startsWith("0.")) {
         return null;
       }
 
-      // === FILTRO B/C: archivos índice internos ===
-      // Regla: ocultar si el nombre del archivo coincide EXACTAMENTE (case-insensitive, trim)
-      // - con el nombre de la carpeta padre
-      // - o con el nombre de la carpeta abuelo
-      //
-      // Ej: basePath = "content/Ciberseguridad/THM/2. Cyber Security 101/2. Public Key Cryptography Basics"
-      //      split -> [..., "2. Cyber Security 101", "2. Public Key Cryptography Basics"]
+      // FILTRO B/C: archivo índice con nombre de carpeta padre o abuelo
       const pathParts = basePath ? basePath.split("/") : [];
       const parentDirName = pathParts.length > 0 ? pathParts[pathParts.length - 1].trim().toLowerCase() : "";
       const grandParentDirName = pathParts.length > 1 ? pathParts[pathParts.length - 2].trim().toLowerCase() : "";
 
       const fileNorm = fileNameNoExt.toLowerCase();
 
-      // ¿coincide con la unidad / tema?
       if (parentDirName && fileNorm === parentDirName) {
         return null;
       }
-
-      // ¿coincide con el curso / bloque superior?
       if (grandParentDirName && fileNorm === grandParentDirName) {
         return null;
       }
 
-      // construir enlace normal
+      // construir href
       const relativeForQuery = filePath.replace(/^content\//, "");
 
       const a = document.createElement("a");
@@ -141,7 +173,6 @@
       a.textContent = fileNameNoExt;
       a.href = "markdown-viewer.html?file=" + encodeURIComponent(relativeForQuery);
 
-      // resaltar si es la página actual
       if (currentNorm && normalizePath(filePath) === currentNorm) {
         a.classList.add("current-page");
       }
@@ -149,13 +180,12 @@
       return a;
     }
 
-    // fallback
     const span = document.createElement("span");
     span.textContent = node.name || "(?)";
     return span;
   }
 
-  // 5. Elegimos raíz "content/Ciberseguridad"
+  // 5. Montar raíz "content/Ciberseguridad"
   const raiz = treeData[0]?.contents || [];
 
   const treeWrapper = document.createElement("nav");
@@ -163,8 +193,8 @@
 
   const topUL = document.createElement("ul");
 
-  raiz.forEach(sectionNode => {
-    // saltar carpetas que no quieras mostrar
+  // también ordenamos las secciones top-level
+  sortContentsNatural(raiz).forEach(sectionNode => {
     if (sectionNode.name === "Z Imagenes") return;
     if (sectionNode.type !== "directory") return;
 
