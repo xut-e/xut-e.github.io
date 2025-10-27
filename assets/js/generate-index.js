@@ -49,11 +49,9 @@
   const currentNorm = currentFile ? normalizePath(currentFile) : null;
 
   // === ORDEN NATURAL ===========================================
-  // Extrae número inicial si existe ("12. Hashing" -> 12)
   function leadingNumber(name) {
-    const match = name.trim().match(/^(\d+)[\.\)]?\s*/); // 1. , 2) , etc
+    const match = name.trim().match(/^(\d+)[\.\)]?\s*/);
     if (!match) return null;
-    // parseInt seguro:
     const numStr = match[1];
     let n = 0;
     for (let i = 0; i < numStr.length; i++) {
@@ -63,7 +61,6 @@
   }
 
   function sortContentsNatural(list) {
-    // clonamos para no mutar el original
     return [...list].sort((a, b) => {
       const aName = a.name || "";
       const bName = b.name || "";
@@ -76,14 +73,12 @@
 
       if (aHas && bHas) {
         if (aNum !== bNum) return aNum - bNum;
-        // si tienen el mismo número exacto, desempata por nombre normal
         return aName.localeCompare(bName, "es", { numeric: true, sensitivity: "base" });
       }
 
       if (aHas && !bHas) return -1;
       if (!aHas && bHas) return 1;
 
-      // ninguno tiene número inicial → ordenar alfa natural también
       return aName.localeCompare(bName, "es", { numeric: true, sensitivity: "base" });
     });
   }
@@ -107,7 +102,6 @@
 
       const ul = document.createElement("ul");
 
-      // ORDENAMOS AQUÍ
       const orderedChildren = sortContentsNatural(node.contents || []);
 
       orderedChildren.forEach(child => {
@@ -136,36 +130,50 @@
     if (node.type === "file") {
       const filePath = basePath ? basePath + "/" + node.name : node.name;
 
-      // sólo .md nos interesan
-      if (!filePath.endsWith(".md")) {
+      // extensión (lowercase)
+      const lowerName = node.name.toLowerCase();
+
+      const isMarkdown = lowerName.endsWith(".md");
+      const isPDF = lowerName.endsWith(".pdf");
+
+      // si no es ni .md ni .pdf → lo seguimos enseñando como gris sin link
+      if (!isMarkdown && !isPDF) {
         const span = document.createElement("span");
         span.textContent = node.name;
         span.style.opacity = ".5";
         return span;
       }
 
-      const fileNameNoExt = node.name.replace(/\.md$/i, "").trim();
+      // nombre visible sin .md/.pdf
+      const fileNameNoExt = node.name
+        .replace(/\.md$/i, "")
+        .replace(/\.pdf$/i, "")
+        .trim();
 
-      // FILTRO A: "0. ..." -> ocultar
-      if (fileNameNoExt.startsWith("0.")) {
-        return null;
+      // === FILTROS SOLO PARA MD (para no ocultar PDFs útiles) ===
+      if (isMarkdown) {
+        // A: "0. ..." -> ocultar
+        if (fileNameNoExt.startsWith("0.")) {
+          return null;
+        }
+
+        // B/C: archivo índice con nombre = carpeta padre o abuelo
+        const pathParts = basePath ? basePath.split("/") : [];
+        const parentDirName = pathParts.length > 0 ? pathParts[pathParts.length - 1].trim().toLowerCase() : "";
+        const grandParentDirName = pathParts.length > 1 ? pathParts[pathParts.length - 2].trim().toLowerCase() : "";
+
+        const fileNorm = fileNameNoExt.toLowerCase();
+
+        if (parentDirName && fileNorm === parentDirName) {
+          return null;
+        }
+        if (grandParentDirName && fileNorm === grandParentDirName) {
+          return null;
+        }
       }
+      // === fin filtros ===
 
-      // FILTRO B/C: archivo índice con nombre de carpeta padre o abuelo
-      const pathParts = basePath ? basePath.split("/") : [];
-      const parentDirName = pathParts.length > 0 ? pathParts[pathParts.length - 1].trim().toLowerCase() : "";
-      const grandParentDirName = pathParts.length > 1 ? pathParts[pathParts.length - 2].trim().toLowerCase() : "";
-
-      const fileNorm = fileNameNoExt.toLowerCase();
-
-      if (parentDirName && fileNorm === parentDirName) {
-        return null;
-      }
-      if (grandParentDirName && fileNorm === grandParentDirName) {
-        return null;
-      }
-
-      // construir href
+      // construimos href hacia el visor. para pdf también usamos markdown-viewer.html
       const relativeForQuery = filePath.replace(/^content\//, "");
 
       const a = document.createElement("a");
@@ -173,6 +181,7 @@
       a.textContent = fileNameNoExt;
       a.href = "markdown-viewer.html?file=" + encodeURIComponent(relativeForQuery);
 
+      // resaltar archivo actual si coincide la ruta normalizada
       if (currentNorm && normalizePath(filePath) === currentNorm) {
         a.classList.add("current-page");
       }
@@ -180,6 +189,7 @@
       return a;
     }
 
+    // fallback
     const span = document.createElement("span");
     span.textContent = node.name || "(?)";
     return span;
@@ -193,7 +203,6 @@
 
   const topUL = document.createElement("ul");
 
-  // también ordenamos las secciones top-level
   sortContentsNatural(raiz).forEach(sectionNode => {
     if (sectionNode.name === "Z Imagenes") return;
     if (sectionNode.type !== "directory") return;
