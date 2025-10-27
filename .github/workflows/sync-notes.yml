@@ -1,9 +1,9 @@
 name: Sync Notes
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *" # opcional: ejecuta cada 12h
+    - cron: '0 0 * * *' #Ejecuta todos los días a las 00:00h
+  workflow_dispatch:
 
 jobs:
   sync:
