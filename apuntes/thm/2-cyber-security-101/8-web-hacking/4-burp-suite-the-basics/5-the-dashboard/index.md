@@ -1,0 +1,19 @@
+---
+layout: apunte
+title: "5. The Dashboard"
+---
+
+Para lanzar el programa escribe `burpsuite` en tu terminal. Una vez abierto y aceptados los términos y condiciones, podremos seleccionar un tipo de proyecto. En la versión Community las opciones son limitadas y puedes pulsar `Next` directamente.
+
+La siguiente ventana nos permite elegir la configuración para Burp Suite. Generalmente conviene dejar los ajustes predeterminados. Haz click en `Start Burp`.
+
+El dashboard de Burp está dividido en 4 partes:
+
+![](/apuntes/img/Pasted image 20251004021343.png)
+
+1. **Tasks:** Permite definir tareas en segundo plano que Burp Suite realizará mientras usas la aplicación. En la versión Community, la tarea por defecto "Live Passive Crawl", que automáticamente registra las páginas visitadas es suficiente.
+2. **Event Log:** Ofrece información acerca de las acciones realizadas por Burp Suite, como ejecutar el proxy, o detalles sobre las conexiones de Burp.
+3. **Issue Activity:** Esta sección es sólo de Burp Suite Professional. Muestra las vulnerabilidades identificadas por el escáner automático, posicionado por severidad y filtrable basado en la certeza de la vulnerabilidad.
+4. **Advisory:** Ofrece información detallada sobre las vulnerabilidades identificadas, incluyendo referencias y remedios sugeridos. Esta información puede ser exportada a un reporte.
+
+A lo largo de las pestañas y ventanas de Burp Suite veras unos signos de interrogación. Hacer click en ellos abre una nueva ventana con información de ayuda específica para esa sección.

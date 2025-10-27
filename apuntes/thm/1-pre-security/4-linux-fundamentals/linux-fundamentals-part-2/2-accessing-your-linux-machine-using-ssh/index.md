@@ -1,0 +1,29 @@
+---
+layout: apunte
+title: "2. Accessing Your Linux Machine Using SSH"
+---
+
+Secure SHell (SSH) es un protocolo usado para conectarse a máquinas de manera remota.
+
+-----------
+<h2>¿Qué es SSH y cómo funciona?</h2>
+Es un protocolo entre dispositivos de forma encriptada. Usando criptografía, cualquier input humanamente leíble, se encripta para su transporte por la red. Siendo desencriptado una vez llega a la máquina remota.
+
+![](/apuntes/img/022.png)
+
+De momento sólo necesitamos entender que:
+
+- SSH nos permite ejecutar comandos de manera remota desde otro dispositivo.
+- Cualquier información mandada entre dispositivos es encriptada.
+
+--------------------------
+<h2>Usando SSH para loguearnos en nuestra máquina Linux</h2>
+El uso de SSH es muy sencillo, sólo necesitamos proporcionar dos cosas:
+
+1. La IP de la máquina remota.
+2. Credenciales correctas para validar el login.
+
+Para esta lección nos conectaremos como el usuario tryhackme cuya contraseña es tryhackme. La sintaxis es: `ssh <usuario>@<direccion_ip>`.
+
+1. ![](/apuntes/img/024.png)
+2. ![](/apuntes/img/023.png)

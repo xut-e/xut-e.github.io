@@ -1,0 +1,48 @@
+---
+layout: apunte
+title: "4. Virus and Threat Protection"
+---
+
+Se divide en dos partes:
+
+- Peligros actuales.
+- Ajustes de protección contra virus y amenazas.
+
+<h2>Peligros actuales</h2>
+Opciones de escaneo:
+
+- Rápido: Comprueba aquellos ficheros en los que los peligros se suelen alojar.
+- Completo: Comprueba todos los archivos y programas activos en el disco duro.
+- Personalizado: Elije archivos y localizaciones para escanear.
+
+Historial de amenazas:
+
+- Último escaneo: Windows Defender Antivirus escanea tu dispositivo automáticamente en busca de amenazas o virus.
+- Amenazas en cuarentena: Amenazas que han sido aisladas. Son eliminadas periódicamente.
+- Amenazas permitidas: Son identificados como amenazas pero tú has permitido que se ejecuten.
+
+>[!WARNING] No permitas a un  objeto identificado como amenaza ejecutarse si no sabes lo que haces.
+
+--------------
+<h2>Ajustes de protección contra virus y amenazas</h2>
+Controlar ajustes
+
+- Protección en tiempo real: Localiza y previene al malware de instalarse o ejecutarse en tu dispositivo.
+- Protección de nube: Ofrece protección para acceder a la última copia de seguridad en la nube.
+- Subida automática de pruebas: Manda ejemplos de archivos a Microsoft para ayudar a protegerte a ti y a otros.
+- Acceso controlado a ficheros: Protege archivos, ficheros y áreas de memoria de accesos no autorizados.
+- Exclusiones: Windows Defender Antivirus no escaneará archivos excluidos.
+- Notificaciones: WDA mandará notificaciones con información crítica.
+
+>[!WARNING] Los archivos excluidos podrían contener malware. Usa esta opción sólo si sabes lo que haces.
+
+Actualizaciones de protección contra virus y amenazas:
+
+- Buscar actualizaciones: Comprueba manualmente si hay alguna actualización que afecte a WDA.
+
+Protección contra ransomware:
+
+- Acceso controlado a ficheros: La protección contra ransomware requiere que esta opción esté habilitada.
+
+>[!TIP] Puedes escanear cualquier archivo o fichero haciendo click derecho y seleccionando `Scan with Microsoft Defender`.
+

@@ -1,0 +1,10 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+En esta segunda parte de Linux Fundamentals estaremos aplicando los conocimientos adquiridos en la primera parte. Además, en esta segunda parte estaremos:
+
+- Desbloqueando el potencial de los primeros comandos introduciendo flags y argumentos.
+- Avanzando tu conocimiento del sistema de ficheros para realizar comandos más útiles como copiar y mover archivos.
+- Descubriendo cómo se maneja el acceso a archivos y ficheros y cómo podemos determinar nuestro acceso.

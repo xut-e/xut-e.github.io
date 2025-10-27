@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "5. HTML Injection"
+---
+
+Es una vulnerabilidad que ocurre cuando el input de un usuario no filtrado se muestra en la web. Si un sitio falla al sanitizar el input de un usuario, y ese input es usado en la página web, entonces el usuario puede inyectar código HTML.
+
+Cuando un usuario tiene el control sobre cómo su input se enseña, puede subir HTML o JS y el buscador lo usará en la página, pudiendo cambiar así la apariencia y funcionalidad.
+
+![](/apuntes/img/021.png)
+
+La imagen de arriba muestra cómo una form se outputea en la web. Cualquier cosa que el usuario introduce se usa en la función sayHi.
+
+La regla general es nunca fiarse del input del usuario. Además sanitizar los inputs antes de meterlo en una función.

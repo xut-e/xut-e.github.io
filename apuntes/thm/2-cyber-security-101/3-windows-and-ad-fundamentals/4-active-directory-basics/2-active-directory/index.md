@@ -1,0 +1,67 @@
+---
+layout: apunte
+title: "2. Active Directory"
+---
+
+El núcleo de cualquier WD es el Active Directory Domain Service (AD DS). Actúa como un catálogo que contiene información de todos los "objetos" que existen en tu red. Entre los objetos soportados por AD tenemos: usuarios, grupos, máquinas, impresoras, comparticiones y más.
+
+<h2>Users</h2>
+Los usuarios son uno de los objetos más comunes en el AD. Son uno de los objetos conocidos como **security principals**. Esto significa que pueden ser autenticados por el dominio y ser asignados con privilegios o recursos.
+
+Los usuarios pueden usarse para representar dos tipos de entidad:
+
+- Personas: Por ejemplo empleados, que necesitan acceso a la red.
+- Servicios: Servicios como MSSQL necesitan ciertos permisos para ejecutar el servicio, es por esto que se crean usuarios con esos privilegios.
+
+-------------
+<h2>Machines</h2>
+Son otro tipo de objeto del AD. Por cada ordenador que se una al AD domain, un nuevo objeto máquina será creado. Estas también son consideradas **security principals** y se les asigna una cuenta. Estas cuentas son administradores locales y, aunque se supone que nadie debe conectarse con ellas más que el propio ordenador, si tienes la contraseña puedes entrar.
+
+>[!NOTE] Las contraseñas de las cuentas de máquinas son compuestas por 120 caracteres random y van rotando.
+
+Identificar las cuentas es fácil pues se componen del nombre de la máquina más el símbolo del dolar. Una máquina llamada `DC01` tendrá una cuenta llamada `DC01$`.
+
+------------
+<h2>Security Groups</h2>
+Puedes darles la capacidad a ciertos grupos de dar permisos a otros usuarios o grupos. Esto permite mejor manejabilidad y menos compromiso de seguridad. También son considerados **security principals**.
+
+Los grupos pueden tener por miembros usuarios y máquinas. Muchos de estos son creados por defecto:
+
+| **Security Group** | **Descripción**                                                                                                                     |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Domain Admins      | Los usuarios de este grupo tienen privilegios administrativos sobre el dominio entero.                                              |
+| Server Operators   | Los usuarios en este grupo pueden administrar DC. Sin embargo, no pueden cambiar ninguna suscripción de grupos administrativos.     |
+| Backup Operators   | Pueden acceder a cualquier archivo ignorando sus permisos. Son usados por lo general para realizar copias de seguridad del sistema. |
+| Account Operators  | Los usuarios de este grupo pueden crear o modificar otras cuentas del dominio.                                                      |
+| Domain Users       | Incluye todas las cuentas de usuario del dominio.                                                                                   |
+| Domain Computers   | Incluye todos los ordenadores del dominio.                                                                                          |
+| Domain Controllers | Incluye todos los DC del dominio.                                                                                                   |
+
+-----------------
+<h2>Active Directory Users and Computers</h2>
+Para configurar usuarios, grupos o máquinas en AD, tenemos que entrar en el DC y ejecutar `Active Directory Users and Computers` desde el menú.
+
+![](/apuntes/img/048.png)
+
+Esto abrirá una ventana donde podemos ver la jerarquía de los usuarios, ordenadores y grupos que existen en el dominio. Estos objetos están organizados en OUs (Unidades de Organización u Organizational Units) que son objetos contenedores que nos permiten clasificar usuarios y máquinas. Los OUs se suelen usar parta definir sets de usuarios con políticas similares. Por ejemplo, los empleados de ventas de una compañía tendrán un set diferente que los empleados de IT.
+
+Algo muy común es que un OU tenga "hijos". Por ejemplo en nuestra máquina el OU `THM` tiene por hijos: IT, Management, Marketing y Sales.
+
+![](/apuntes/img/049.png)
+
+Al abrir cualquier OU podemos ver los usuarios que tiene este.
+
+También hay otros contenedores que se crean por defecto. Estos son:
+
+- Builtin: Contiene grupos por defecto disponibles para cualquier host de Windows.
+- Computers: Cualquier máquina que se una a la red será puesta aquí por defecto. La puedes mover si lo deseas.
+- Domain Controllers: OU por defecto que contiene los DC en la red.
+- Users: Usuarios y grupos por defecto que se apliquen al contexto completo del dominio.
+- Managed Service Accounts: Contiene cuentas usadas por servicios del Dominio de Windows.
+
+-----------------
+<h2>Security Groups vs OUs</h2>
+Seguramente te preguntarás por qué tenemos grupos y OUs. Mientras que los dos se utilizan para clasificar usuarios su propósito es completamente diferente.
+
+- OUs son útiles para aplicar políticas a usuarios y ordenadores lo que incluye configuraciones específicas para un set de usuarios dependiendo del rol en la empresa. Un usuario puede se sólo miembro de un OU a la vez ya que no tendría sentido aplicar dos sets de políticas al mismo usuario.
+- Grupos de seguridad son usados para conceder permisos sobre los recursos. Usaremos grupos si queremos permitir a algunos usuarios acceder a archivos compartidos o una impresora, por ejemplo. Un usuario puede ser parte de múltiples grupos.

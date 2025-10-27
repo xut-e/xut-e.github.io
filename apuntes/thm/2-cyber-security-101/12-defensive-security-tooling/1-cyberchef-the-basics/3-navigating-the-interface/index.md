@@ -1,0 +1,78 @@
+---
+layout: apunte
+title: "3. Navigating the Interface"
+---
+
+CyberChef consiste de 4 áreas. Cada una de estas tiene diferentes componentes o funcionalidades. Las cuatro áreas son:
+
+1. Operaciones
+2. Receta
+3. Input
+4. Output
+
+![](/apuntes/img/Pasted image 20251026130851.png)
+
+Veamos lo que hace cada una de ellas.
+
+---------------------------------
+<h2>Operaciones</h2>
+Repositorio práctico de todas las operaciones que CyberChef está equipado para hacer. Estas operaciones se categorizan meticulosamente, ofreciendo a los usuarios acceso a varias capabilidades.
+
+Aquí unas de las operaciones que verás durante tu trayectoria:
+
+| Operaciones     | Descripción                                                  | Ejemplos                                                                                                                                                                                 |
+| --------------- | -------------------------------------- | ---------------------------------------------|
+| From Morse Code | Traduce código morse a caracteres alfanuméricos en mayúscula | `- .... .-. . .- - ...` se transforma en `THREATS`                                                                                                                                       |
+| URL Encode      | Codifica caracteres especiales en su forma URL               | `https://tryhackme.com/r/room/cyberchefbasics` se convierte en `https%3A%2F%2Ftryhackme%2Ecom%2Fr%2Froom%2Fcyberchefbasics`                                                              |
+| To Base64       | Codifica información raw en base64                           | `This is fun!` se convierte en `VGhpcyBpcyBmdW4h`                                                                                                                                        |
+| To Hex          | Convierte el inut en formato hexadecimal                     | `This Hex conversion is awesome!` se convierte en `54 68 69 73 20 48 65 78 20 63 6f 6e 76 65 72 73 69 6f 6e 20 69 73 20 61 77 65 73 6f 6d 65 21`                                         |
+| To Decimal      | Convierte el input en un array de decimales                  | `This Decimal conversion is awesome!` se convierte en `84 104 105 115 32 68 101 99 105 109 97 108 32 99 111 110 118 101 114 115 105 111 110 32 105 115 32 97 119 101 115 111 109 101 33` |
+| ROT13           | Sustitución César simple                                     | `Digital Forensics and Incident Response` se convierte en `Qvtvgny Sberafvpf naq Vapvqrag Erfcbafr`                                                                                      |
+
+-------------------------------
+<h2>Receta</h2>
+Se considera el corazón de la herramienta. Aquí puedes seleccionar, ordenar y ajustar las operaciones para que cumplan tus necesidades. Aquí es donde tomas control, definiendo el argumento de cada operación. En esta área puedes arrastrar las operaciones que quieres usar y especificar argumentos y opciones.
+
+Las funcionalidades incluyen:
+
+- `Save recipe`: Te permite guardar las operaciones seleccionadas.
+- `Load recipe`: Te permite cargar una receta previamente guardada.
+- `Clear recipe`: Te permite limpiar las recetas elegidas durante un uso.
+
+Las puedes encontrar en los iconos:
+
+![](/apuntes/img/Pasted image 20251026132259.png)
+
+La parte de abajo es `BAKE!` que significa ornear. Esto procesa la información con la receta dada.
+
+Adicionalmente, puedes marcar la opción `Auto Bake`, lo que te permite cocinar la receta seleccionada sin necesidad de darle a Bake constantemente.
+
+--------------------------------
+<h2>Input</h2>
+Ofrece un espacio donde puedes introducir fácilmente texto o archivos pegando, arrastrando o escribiendo directamente para realizar operaciones sobre ellos.
+
+![](/apuntes/img/Pasted image 20251026133558.png)
+
+Además, tiene las siguientes funcionalidades:
+
+- `Add a new input tab`: Aquí es donde la pestaña adicional se crea para que el usuario use diferentes valores de la pestaña anterior.
+  ![](/apuntes/img/Pasted image 20251026133604.png)
+- `Open folder as input`: Esta funcionalidad permite subir un directorio entero como valor de input.
+  ![](/apuntes/img/Pasted image 20251026133615.png)
+- `Open file as input`: Permite subir un archivo como input.
+  ![](/apuntes/img/Pasted image 20251026133629.png)
+- `Clear input and output`: Esta funcionalidad permite al usuario limpiar cualquier valor de input insertados y su correspondiente valor output.
+- `Reset pane layout`: Esta funcionalidad trae la interfaz de herramientas a su valor de tamaño por defecto.
+
+------------------------------------
+<h2>Output</h2>
+Es un espacio visual que muestra la información procesada. Presenta la salida de la receta de forma limpia y ordenada.
+
+![](/apuntes/img/Pasted image 20251026133637.png)
+
+Las funcionalidades incluyen:
+
+- `Save output to file`: Permite guardar los resultados en un archivo.
+- `Copy raw output to the clipboard`: Esta funcionalidad permite a los usuarios copiar output raw directamente a la clipboard, permitiendo que lo peguen en cualquier sitio rápidamente.
+- `Replace input with output`: Permite a los usuarios sobrescribir rápidamente la información de input basada en los resultados de la operación.
+- `Maximise output pane`: Devuelve la interfaz de herramientas a su tamaño por defecto.

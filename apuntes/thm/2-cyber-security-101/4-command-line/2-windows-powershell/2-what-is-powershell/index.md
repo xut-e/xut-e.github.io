@@ -1,0 +1,21 @@
+---
+layout: apunte
+title: "2. What is PowerShell"
+---
+
+PowerShell es una plataforma de automatización de tareas que consta de una linea de comandos, un lenguaje de scripting y un marco de control de configuración.
+
+-----------------------
+<h2>Una breve historia sobre PowerShell</h2>
+Fue desarrollada para sobreponerse a las limitaciones de las herramientas de linea de comandos que había. A principios de los 2000, herramientas tradicionales como `cmd.exe` se quedaban cortas para la automatización y el manejo de los sistemas.
+
+Jeffrey Snover, un ingeniero de Microsoft, se dio cuenta de que Windows y UNIX manejaban las operaciones del sistema de forma diferente. Windows usaba una estructura de datos y APIs mientras que UNIX trataba todo como archivos. Como esto hacía que migrar las herramientas de UNIX a Windows no fuera práctico, J. Snover desarrolló con orientación a objetos. Fue lanzada en 2006 y en 2016 con la creciente demanda de una herramienta de automatización, Windows lanzó PowerShell Core, de código abierto.
+
+-----------
+<h2>El poder en PowerShell</h2>Para poder entender el poder de PowerShell, necesitamos comprender qué es un objeto en este contexto.
+
+En programación, un objeto representa un ítem con propiedades (características) y métodos (acciones). Por ejemplo, el objeto `coche` tendría propiedades `color`, `modelo`, `nivelDeGasolina` y métodos como `conducir()`, `tocarBocina()` o `repostar()`.
+
+De forma similar, en PowerShell los objetos son unidades de información fundamentales que pueden contener nombres, usuarios, propiedades y métodos.
+
+En la command shell tradicional, los comandos están basados en texto, significando que sus procesos nos dan información en texto plano. Por el contrario, cuando un cmdlet (comand-let) se ejecuta en PowerShell, devuelve un objeto que almacena información, lo que da pie a manipulación de la información más flexible y potente.

@@ -1,0 +1,68 @@
+---
+layout: apunte
+title: "4. Shell Scripting and Components"
+---
+
+Un script de Shell no es nada más que un conjunto de comandos. Supón una tarea repetitiva que requiere que introduzcas múltiples comandos usando una consola. En vez de meter uno a uno manualmente puedes escribir un documento que sirva como una lista de tareas para el ordenador.
+
+El primer paso es abrir un editor de texto en la consola, puede ser nano, vi, vim, nvim, etc. Llamaremos al script `loquesea.sh`. El `.sh` realmente no es necesario, pero nos ayuda a la hora de identificar scripts.
+
+Todos los scripts pueden ejecutarse sin lo que se conoce como shebang o hashbang (`#!`). Sin embargo, es preferible ponerlo ya que nos facilitará la ejecución que cambiará de `/usr/bin/bash script.sh` (sin el hashbang) a `./script.sh` (con él). Este siempre se debe de poner en la primera línea del script, y dependiendo del lenguaje que utilicemos en el script y de dónde esté alojado en nuestro sistema será uno u otro.
+
+En nuestro caso `vi first_script.sh` -> `#!/bin/bash`.
+
+------------
+<h2>Variables</h2>
+Una variable guarda contenido dentro de ella. Supongamos que usamos un valor complejo, como una URL. en vez de escribir esta muchas veces, podemos guardarla en una variable con un nombre sencillo y ponerla cuando lo necesitemos.
+
+En el siguiente script veremos como se pregunta por el nombre, se guarda en una variable y por último se muestra por pantalla:
+
+```bash
+#!/bin/bash
+
+echo "Hey, what's your name?"
+read name
+echo "Welcome, $name"
+```
+
+Para ejecutar este script, tenemos que darle permisos. Esto lo podemos hacer con el comando `chmod +x <archivo>`. La notación es **r** para leer, **w** para escribir y **x** para ejecutar, **+** para dar y **-** para quitar. En su defecto podemos usar la notación octal si nos resulta más fácil.
+
+Una vez tiene permisos lo ejecutamos haciendo uso de `./` antes del ejecutable. Esto le dice a la shell que ejecute el archivo que está en este directorio.
+
+--------------------
+<h2>Bucles</h2>
+Como su propio nombre da a entender, es algo que se repite. Por ejemplo, tienes una lista de muchos amigos y quieres mandarles el mismo mensaje. En vez de mandar todos de manera individual, puedes hacer un bucle que repita el proceso de mandar el mensaje.
+
+```bash
+#!/bin/bash
+
+for i in {1..10};do
+	echo $i
+done
+```
+
+La variable `i` es el iterador, puede tener el nombre que tu quieras. Este se ejecutara de 1 a 10. El `do` indica el comienzo del bucle y `done` el final. El comando `echo $i` imprimirá la variable `i` de cada iteración.
+
+--------------------
+<h2>Condicionales</h2>
+Son una parte especial del scripting, nos ayudan a ejecutar cierta parte del código sólo si una condición se cumple. Imagina que hay un secreto que sólo quieres que vea un usuario:
+
+```bash
+#!/bin/bash
+
+echo "Please enter your name first:"
+read name
+if [ "$name" = "Stewart" ]; then
+        echo "Welcome Stewart! Here is the secret: THM_Script"
+else
+        echo "Sorry! You are not authorized to access the secret."
+fi
+```
+
+El script de arriba te pide un nombre. Si introduces el correcto te da el secreto. Si no, te dice que no estás autorizado.
+
+--------------------
+<h2>Comentarios</h2>
+A veces el código puede ser muy complejo, o queremos que otros usuarios tengan facilidad para entenderlo, en este caso, podemos comentar el código para dar indicaciones, explicaciones o hacerlo más legible. 
+
+Para comentar en bash podemos usar `#`. Los comentarios no afectan a la ejecución del código.

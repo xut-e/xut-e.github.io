@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "1. What is Networking"
+---
+
+Las redes son cosas conectadas, por ejemplo tu grupo de amigos. Las redes se pueden dar en todos los ámbitos de la vida:
+
+- El sistema de transporte de una ciudad.
+- Infraestructuras como la red eléctrica.
+- Sistemas postales.
+
+Más específicamente, en informática, las redes tienen la misma idea aplicada a los dispositivos tecnológicos. Una red puede estar formada desde 2 hasta millones de dispositivos.
+
+![](/apuntes/img/descargar.png)

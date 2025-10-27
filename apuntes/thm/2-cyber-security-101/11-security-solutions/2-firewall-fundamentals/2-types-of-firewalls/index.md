@@ -1,0 +1,34 @@
+---
+layout: apunte
+title: "2. Types of Firewalls"
+---
+
+Desplegar un firewall se volvió habitual en las redes después de que las organizaciones descubrieran su habilidad para filtrar tráfico dañino de sus sistemas y redes. Hay varios tipos de firewalls. Estos diferentes tipos también pueden trabajar en capas OSI diferentes. Examinemos los más comunes.
+
+![](/apuntes/img/Pasted image 20251024125154.png)
+
+---------------------------------------
+<h2>Stateless Firewall</h2>
+Este tipo de Firewall opera en las capas 3 y 4 del modelo OSI y funciona únicamente filtrando la información basándose en reglas predeterminadas sin tener en cuenta el estado de las conexiones previas. Esto significa que disparará alertas incluso si forman parte de una conexión legítima porque no tienen en cuenta  el estado previo de conexión. Supón que el firewall deniega unos paquetes de una fuente porque no cumple con las reglas. Idealmente, debería denegar los paquetes futuros, pero olvida lo anterior. Por esto, los paquetes futuros seguirán siendo tratados y matcheados como nuevos.
+
+------------------------------
+<h2>Stateful Firewall</h2>
+Este tipo de firewall va más allá de las reglas configuradas. Lleva un recuento de las conexiones anteriores y las guarda en una tabla de estado. Esto añade otra capa de seguridad al inspeccionar los paquetes basados en su historial. Opera en capas 3 y 4 del modelo OSI. Supón que el firewall acepta unos paquetes de una fuente. En ese caso, tomará nota de esta conexión y permitirá en el futuro. Aunque no es tan simple, funcionan en base a contexto. Por lo que no sólo se fijará en conexiones antiguas.
+
+-----------------------------------
+<h2>Proxy Firewall</h2>
+El problema de los firewalls anteriores es que ninguno tiene la habilidad de inspeccionar los contenidos de un paquete. Los firewalls proxy, intermedian la conexión entre la red privada e internet y operan en la capa 7 del modelo OSI. Inspeccionan el contenido de los paquetes. Se puede aplicar filtros por contenido.
+
+--------------------------------------
+<h2>Next-Generation Firewall (NGFW)</h2>
+Es el tipo de firewall más avanzado y opera de la capa 3 a la 7, ofreciendo inspección profunda de paquetes y otras funcionalidades que mejoran la seguridad del tráfico. Cuenta con un IPS que bloquea actividades maliciosas en tiempo real. Ofrece análisis heurísticos analizando los patrones de ataques y bloqueándolos instantáneamente antes de llegar a la red. Los NGFWs tienen capacidad de desencriptación SSL/TLS, lo que les permite inspeccionar los paquetes y correlacionarlos con las amenazas.
+
+--------------------------
+<h2>Resumen</h2>
+
+| Firewalls                 | Characteristics                                                                                                                                                                               |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stateless firewalls       | - Filtrado básico  <br>- Sin registro de conexiones pasadas  <br>- Eficiente para redes veloces                                                                                               |
+| Stateful firewalls        | - Reconoce el tráfico por patrones <br>- Reglas complejas aplicables  <br>- Monitoriza las conexiones de red                                                                                  |
+| Proxy firewalls           | - También inspecciona la información dentro de los paquetes<br>- Ofrece filtro por contenido<br>- Ofrece control de aplicación<br>- Desencripta e inspecciona paquetes de información SSL/TLS |
+| Next-generation firewalls | - Ofrece protección contra amenazas avanzada<br>- Tiene un IPS integrado<br>- Identifica anomalías en base a escaneos heurísticos<br>- Desencripta e inspecciona paquetes SSL/TLS             |

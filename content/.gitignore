@@ -1,0 +1,23 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Obsidian metadata
+.obsidian/workspace.json
+.obsidian/plugins/
+.obsidian/snippets/
+
+# Cachés o temporales
+*.tmp
+*.bak
+*.swp
+
+# Archivos exportados
+*.pdf
+*.zip
+*.tar.gz
+
+# Build artifacts (si algún día usas pandoc u otra herramienta)
+_site/
+dist/
+
