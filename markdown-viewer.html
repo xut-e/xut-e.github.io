@@ -38,23 +38,22 @@
 
   <!-- LAYOUT -->
   <main class="page-shell">
-  <!-- SIDEBAR DINÁMICO IGUAL QUE EN INDEX -->
-  <aside class="sidebar" id="indice">
-    <h2 id="indice-label">Índice</h2>
-    <div id="dynamic-index">
-      <p>Cargando índice...</p>
-    </div>
-  </aside>
+    <!-- SIDEBAR DINÁMICO IGUAL QUE EN INDEX -->
+    <aside class="sidebar" id="indice">
+      <h2 id="indice-label">Índice</h2>
+      <div id="dynamic-index">
+        <p>Cargando índice...</p>
+      </div>
+    </aside>
 
-  <!-- CONTENIDO MARKDOWN -->
-  <section class="markdown-body">
-    <h1 id="md-title">Cargando…</h1>
-    <div id="md-content" style="font-size:.95rem; line-height:1.5;">
-      Cargando contenido del apunte…
-    </div>
-  </section>
-</main>
-
+    <!-- CONTENIDO MARKDOWN -->
+    <section class="markdown-body">
+      <h1 id="md-title">Cargando…</h1>
+      <div id="md-content" style="font-size:.95rem; line-height:1.5;">
+        Cargando contenido del apunte…
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -79,121 +78,103 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
 
   <!-- SCRIPT PRINCIPAL -->
   <script>
-	(async function () {
-	  const params = new URLSearchParams(window.location.search);
-	  const fileParam = params.get("file");
+    (async function () {
+      const params = new URLSearchParams(window.location.search);
+      const fileParam = params.get("file");
 
-	  const titleEl = document.getElementById("md-title");
-	  const contentEl = document.getElementById("md-content");
+      const titleEl = document.getElementById("md-title");
+      const contentEl = document.getElementById("md-content");
 
-	  if (!fileParam) {
-	    titleEl.textContent = "Sin archivo";
-	    contentEl.textContent = "No se ha especificado ningún archivo.";
-	    return;
-	  }
+      if (!fileParam) {
+        titleEl.textContent = "Sin archivo";
+        contentEl.textContent = "No se ha especificado ningún archivo.";
+        return;
+      }
 
-	  // ruta real en el servidor
-	  const realPath = fileParam.startsWith("content/")
-	    ? fileParam
-	    : "content/" + fileParam;
+      // ruta real en el servidor
+      const realPath = fileParam.startsWith("content/")
+        ? fileParam
+        : "content/" + fileParam;
 
-	  const lower = realPath.toLowerCase();
+      const lower = realPath.toLowerCase();
 
-	  // Si es PDF -> incrustar visor PDF
-	  if (lower.endsWith(".pdf")) {
-	    // título: nombre del archivo sin .pdf
-	    const cleanName = realPath.split("/").pop().replace(/\.pdf$/i, "");
-	    titleEl.textContent = cleanName;
+      // Si es PDF -> incrustar visor PDF
+      if (lower.endsWith(".pdf")) {
+        const cleanName = realPath.split("/").pop().replace(/\.pdf$/i, "");
+        titleEl.textContent = cleanName;
 
-	    // Limpiamos contenedor y metemos iframe/embed
-	    contentEl.innerHTML = "";
+        contentEl.innerHTML = "";
 
-	    const viewer = document.createElement("iframe");
-	    viewer.src = realPath;
-	    viewer.style.width = "100%";
-	    viewer.style.height = "80vh";
-	    viewer.style.border = "1px solid var(--border-color, #444)";
-	    viewer.loading = "lazy";
+        const viewer = document.createElement("iframe");
+        viewer.src = realPath;
+        viewer.style.width = "100%";
+        viewer.style.height = "80vh";
+        viewer.style.border = "1px solid var(--border-color, #444)";
+        viewer.loading = "lazy";
 
-	    contentEl.appendChild(viewer);
-	    return;
-	  }
+        contentEl.appendChild(viewer);
+        return;
+      }
 
-	  // Si es Markdown -> fetch + render
-	  if (lower.endsWith(".md")) {
-	    try {
-	      const res = await fetch(realPath);
-	      if (!res.ok) throw new Error("No se pudo cargar el archivo");
-	      let mdText = await res.text();
+      // Si es Markdown -> fetch + render
+      if (lower.endsWith(".md")) {
+        try {
+          const res = await fetch(realPath);
+          if (!res.ok) throw new Error("No se pudo cargar el archivo");
+          let mdText = await res.text();
 
-	      // título = primera línea tipo "# ..." o sino nombre de archivo
-	      const lines = mdText.split("\n");
-	      const h1Match = lines[0]?.match(/^#\s+(.+)/);
-	      if (h1Match) {
-		titleEl.textContent = h1Match[1].trim();
-	      } else {
-		titleEl.textContent = realPath.split("/").pop().replace(/\.md$/i, "");
-	      }
+          // título = primera línea tipo "# ..." o sino nombre de archivo
+          const lines = mdText.split("\n");
+          const h1Match = lines[0]?.match(/^#\s+(.+)/);
+          if (h1Match) {
+            titleEl.textContent = h1Match[1].trim();
+          } else {
+            titleEl.textContent = realPath.split("/").pop().replace(/\.md$/i, "");
+          }
 
-	      // Conversión sencilla Markdown->HTML (tu parser / reemplazos existentes)
-	      // Aquí asumo que ya tenías un mini parser con <h1>, <h2>, <code>, listas, etc.
-	      // Conservo la lógica básica que venías usando:
+          // Renderizado completo de Markdown (tablas, listas, etc.)
+          mdText = marked.parse(mdText, {
+            gfm: true,
+            breaks: true,
+          });
 
-	      // headers
-	      mdText = mdText.replace(/^######\s(.+)$/gm, "<h6>$1</h6>");
-	      mdText = mdText.replace(/^#####\s(.+)$/gm, "<h5>$1</h5>");
-	      mdText = mdText.replace(/^####\s(.+)$/gm, "<h4>$1</h4>");
-	      mdText = mdText.replace(/^###\s(.+)$/gm, "<h3>$1</h3>");
-	      mdText = mdText.replace(/^##\s(.+)$/gm, "<h2>$1</h2>");
-	      mdText = mdText.replace(/^#\s(.+)$/gm, "<h1>$1</h1>");
-	      
-	      // horizontal rule (3 o más guiones consecutivos)
-	      mdText = mdText.replace(/^-{3,}\s*$/gm, "<hr>");
+          // Corrige imágenes tipo Obsidian ![[imagen.png]]
+    	  mdText = mdText.replace(/!\[\[(.+?)\]\]/g, (match, p1) => {
+	    const src = decodeURIComponent(p1.trim()); // decodifica espacios
+	    const normalized = src
+	      .replace(/^Pasted image\s+/i, "Pasted image ") // asegura formato correcto
+	      .replace(/\s+/g, " "); // normaliza espacios múltiples
 
-	      // code inline `...`
-	      mdText = mdText.replace(/`+\s*([^`]+?)\s*`+/g, "<code>$1</code>");
+	    return `<img src="/content/Ciberseguridad/Z%20Imagenes/${encodeURIComponent(normalized)}" alt="${normalized}">`;
+	  });
 
-	      // bold **...**
-	      mdText = mdText.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
 
-	      // italic *...*
-	      mdText = mdText.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, "<em>$1</em>");
+          // Asegura que los enlaces externos se abran en nueva pestaña
+          mdText = mdText.replace(/<a href="(https?:\/\/[^"]+)">/g,
+            '<a href="$1" target="_blank" rel="noopener">');
 
-	      // listas ordenadas
-	      mdText = mdText.replace(/^\s*\d+\.\s.+$/gm, m => {
-		return "<li>" + m.replace(/^\s*\d+\.\s/, "") + "</li>";
-	      });
-	      // agrupar <li> consecutivos en <ol>
-	      mdText = mdText.replace(/(<li>[\s\S]*?<\/li>)/g, "<ol>$1</ol>")
-			     .replace(/<\/ol>\s*<ol>/g, "");
+          // Inyecta el HTML procesado
+          contentEl.innerHTML = mdText;
 
-	      // listas sin ordenar
-	      mdText = mdText.replace(/^\s*[-+*]\s.+$/gm, m => {
-		return "<li>" + m.replace(/^\s*[-+*]\s/, "") + "</li>";
-	      });
-	      mdText = mdText.replace(/(<li>[\s\S]*?<\/li>)/g, "<ul>$1</ul>")
-			     .replace(/<\/ul>\s*<ul>/g, "");
+          // Resalta el código si existe
+          contentEl.querySelectorAll('pre code').forEach(block => {
+            hljs.highlightElement(block);
+          });
 
-	      // párrafos: líneas normales que no son tags ya
-	      mdText = mdText.replace(/^(?!<h\d>|<ul>|<ol>|<li>|<\/li>|<code>|<strong>|<em>|<iframe|<pre|<blockquote)(.+)$/gm,
-		"<p>$1</p>"
-	      );
+        } catch (e) {
+          titleEl.textContent = "Error";
+          contentEl.textContent = "No se pudo cargar el archivo seleccionado.";
+        }
+        return;
+      }
 
-	      contentEl.innerHTML = mdText;
-	    } catch (e) {
-	      titleEl.textContent = "Error";
-	      contentEl.textContent = "No se pudo cargar el archivo seleccionado.";
-	    }
-	    return;
-	  }
-
-	  // fallback: tipo desconocido
-	  titleEl.textContent = realPath.split("/").pop();
-	  contentEl.innerHTML = `
-	    <p>No sé mostrar este tipo de archivo todavía.</p>
-	    <p><a href="${realPath}" target="_blank" rel="noopener noreferrer">Abrir directamente</a></p>
-	  `;
-	})();
+      // fallback: tipo desconocido
+      titleEl.textContent = realPath.split("/").pop();
+      contentEl.innerHTML = `
+        <p>No sé mostrar este tipo de archivo todavía.</p>
+        <p><a href="${realPath}" target="_blank" rel="noopener noreferrer">Abrir directamente</a></p>
+      `;
+    })();
   </script>
 
   <script src="assets/js/generate-index.js"></script>
