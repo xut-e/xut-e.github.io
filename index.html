@@ -42,11 +42,13 @@
   </footer>
 
   <script>
-    fetch('/_includes/sidebar.html')
-      .then(res => res.text())
-      .then(html => { document.getElementById('sidebar').innerHTML = html; })
-      .catch(() => { document.getElementById('sidebar').innerHTML = '<p>Error al cargar el menú.</p>'; });
+	  fetch('_includes/sidebar.html')
+	    .then(res => res.text())
+	    .then(html => { document.getElementById('sidebar').innerHTML = html; })
+	    .catch(() => { document.getElementById('sidebar').innerHTML = '<p>Error al cargar el menú.</p>'; });
   </script>
+
+
 </body>
 </html>
 
