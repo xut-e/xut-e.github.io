@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sobre mí | xut</title>
   <meta name="description" content="Sobre xut — especialista en ciberseguridad y creador de apuntes técnicos en castellano.">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-  <header>
-    <section>
-      <h1><span aria-hidden="true">✱</span> <span>xut</span></h1>
-      <nav aria-label="Principal">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/" aria-label="xut - inicio">
+        <span aria-hidden="true">✱</span>
+        <span>xut</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Principal">
         <ul>
-          <li><a href="/">Apuntes</a></li>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/#indice">Apuntes</a></li>
           <li><a href="/sobre-mi.html" aria-current="page">Sobre mí</a></li>
-          <li><a href="https://github.com/xut-e" rel="noopener">GitHub</a></li>
+          <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
         </ul>
       </nav>
-    </section>
+    </div>
   </header>
 
-  <main>
-    <section class="layout-content">
-      <header>
+  <!-- CONTENIDO -->
+  <main class="page-shell">
+    <section>
+      <article class="card">
         <h2>Sobre mí</h2>
-        <p class="intro">
-          Soy <strong>xut</strong>, especialista en ciberseguridad y estudiante en la <strong>Technische Hochschule Mittelhessen (THM)</strong>.  
-          Mi objetivo es compartir conocimiento técnico en castellano, documentando mi proceso de aprendizaje en hacking ético, redes, sistemas y seguridad ofensiva.
-        </p>
-      </header>
-
-      <article>
-        <h3>🧠 Qué encontrarás aquí</h3>
         <p>
-          Este sitio es mi base de conocimiento personal, donde recopilo apuntes de <strong>TryHackMe</strong>, guías, notas y documentación técnica.  
-          Todo está pensado para ser <em>útil, limpio y accesible</em> tanto para mí como para cualquiera que esté aprendiendo ciberseguridad desde cero.
-        </p>
-        <p>
-          Con el tiempo, este espacio evolucionará hacia un <strong>portfolio técnico</strong> que refleje mis proyectos, herramientas y certificaciones.
+          Soy <strong>xut</strong>, especialista en ciberseguridad y estudiante en la
+          <strong>Technische Hochschule Mittelhessen (THM)</strong>.  
+          Mi objetivo es compartir conocimiento técnico en castellano, documentando mi proceso de aprendizaje
+          en hacking ético, redes, sistemas y seguridad ofensiva.
         </p>
       </article>
 
-      <article>
+      <article class="card">
+        <h3>🧠 Qué encontrarás aquí</h3>
+        <p>
+          Este sitio es mi base de conocimiento personal, donde recopilo apuntes de <strong>TryHackMe</strong>,
+          guías, notas y documentación técnica.  
+          Todo está pensado para ser <em>útil, limpio y accesible</em> tanto para mí como para cualquiera que esté aprendiendo
+          ciberseguridad desde cero.
+        </p>
+        <p>
+          Con el tiempo, este espacio evolucionará hacia un <strong>portfolio técnico</strong> que refleje mis proyectos,
+          herramientas y certificaciones.
+        </p>
+      </article>
+
+      <article class="card">
         <h3>💻 Tecnologías y enfoque</h3>
         <ul>
           <li>Linux, bash scripting, automatización y seguridad de sistemas.</li>
@@ -53,11 +65,8 @@
         </ul>
       </article>
 
-      <article>
+      <article class="card">
         <h3>📬 Contacto y redes</h3>
-        <p>
-          Puedes encontrarme en:
-        </p>
         <ul>
           <li>🐙 GitHub → <a href="https://github.com/xut-e" target="_blank" rel="noopener">xut-e</a></li>
           <li>✉️ Correo → <a href="mailto:xut@proton.me">xut@proton.me</a></li>
@@ -65,7 +74,7 @@
         </ul>
       </article>
 
-      <article>
+      <article class="card">
         <h3>🧩 Identidad</h3>
         <pre class="ascii">
              ..                      .....          
@@ -85,9 +94,25 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> xut — Apuntes de ciberseguridad.</p>
-    <p><a href="/">Volver al inicio</a></p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <small>© <span id="year"></span> xut-e — Todos los derechos reservados</small>
+      <pre class="ascii" aria-hidden="true">
+             ..                      .....          
+   .H88x.  :~)88:                 .H8888888h.  ~-.  
+  x888888X ~:8888    x.    .      888888888888x  `> 
+ ~   "8888X  %88"  .@88k  z88u   X~     `?888888hx~ 
+      X8888       ~"8888 ^8888   '      x8.^"*88*"  
+   .xxX8888xxxd>    8888  888R    `-:- X8888x       
+  :88888888888"     8888  888R         488888>      
+  ~   '8888         8888  888R       .. `"88*       
+ xx.  X8888:    .   8888 ,888B .   x88888nX"      . 
+X888  X88888x.x"   "8888Y 8888"   !"*8888888n..  :  
+X88% : '%8888"      `Y"   'YP    '    "*88888888*   
+ "*=~    `""                             ^"***"`    
+      </pre>
+    </div>
   </footer>
 
   <script>

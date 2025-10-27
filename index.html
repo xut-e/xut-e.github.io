@@ -1,54 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>xut-e — Apuntes de Ciberseguridad</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>xut | Apuntes TryHackMe en castellano</title>
+  <meta name="description" content="Apuntes técnicos de ciberseguridad y TryHackMe en castellano.">
+  <meta name="keywords" content="ciberseguridad, tryhackme, apuntes, hacking, linux, xut">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-  <div class="layout">
-    <aside class="layout-sidebar" id="sidebar"></aside>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/" aria-label="xut - inicio">
+        <span aria-hidden="true">✱</span>
+        <span>xut</span>
+      </a>
 
-    <main class="layout-content">
-      <header class="main-header">
-        <h1>Apuntes de Ciberseguridad</h1>
-        <p>Notas, cursos y recursos personales sobre seguridad informática, THM y más.</p>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="/" aria-current="page">Inicio</a></li>
+          <li><a href="#indice">Apuntes</a></li>
+          <li><a href="/sobre-mi.html">Sobre mí</a></li>
+          <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- LAYOUT 2 COLUMNAS -->
+  <main class="page-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="indice">
+	    <h2 id="indice-label"Ciberseguridad</h2>
+	    <div id="dynamic-index">
+		    <p>Cargando indice...</p>
+	    </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section>
+      <header class="main-content-header">
+        <h2>Apuntes de Ciberseguridad</h2>
+        <p class="intro">
+          Notas, cursos y recursos personales sobre seguridad informática, THM y más.
+        </p>
       </header>
 
-      <section class="apuntes-recientes">
-        <h2>📘 Últimos apuntes</h2>
-        <ul>
-          <li><a href="/markdown-viewer.html?file=/apuntes/thm/1-pre-security/1. Pre Security.md">1. Pre Security</a></li>
-          <li><a href="/markdown-viewer.html?file=/apuntes/thm/2-cyber-security-101/2. Cyber Security 101.md">2. Cyber Security 101</a></li>
-          <li><a href="/markdown-viewer.html?file=/apuntes/thm/maquinas/Maquinas.md">Maquinas</a></li>
+      <!-- Últimos apuntes -->
+      <section class="card">
+        <h3>📘 Últimos apuntes</h3>
+        <ul id="latest-posts">
+          <li><a href="markdown-viewer.html?file=apuntes/thm/1-pre-security/1. Pre Security.md">1. Pre Security</a></li>
+          <li><a href="markdown-viewer.html?file=apuntes/thm/2-cyber-security-101/2. Cyber Security 101.md">2. Cyber Security 101</a></li>
+          <li><a href="markdown-viewer.html?file=apuntes/thm/maquinas/0. Maquinas.md">Máquinas</a></li>
         </ul>
       </section>
 
-      <section class="sobre-mi">
-        <h2>👤 Sobre mí</h2>
+      <!-- Sobre mí breve -->
+      <section class="card">
+        <h3>🧠 Sobre mí</h3>
         <p>
-          Soy <strong>xut-e</strong>, estudiante de ciberseguridad.  
-          Aquí recopilo mis notas, prácticas y recursos sobre hacking ético, redes y plataformas como TryHackMe o HackTheBox.
+          Soy <strong>xut-e</strong>, estudiante de ciberseguridad. Aquí recopilo mis notas,
+          prácticas y recursos sobre hacking ético, redes y plataformas como TryHackMe.
         </p>
-        <p><a href="/sobre-mi.html">Más sobre mí</a></p>
+        <p>
+          <a href="/sobre-mi.html">Más sobre mí →</a>
+        </p>
       </section>
-    </main>
-  </div>
+    </section>
+  </main>
 
-  <footer class="layout-footer">
-    <p>© 2025 xut-e — Todos los derechos reservados</p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <small>© <span id="year"></span> xut-e — Todos los derechos reservados</small>
+      <pre class="ascii" aria-hidden="true">
+             ..                      .....          
+   .H88x.  :~)88:                 .H8888888h.  ~-.  
+  x888888X ~:8888    x.    .      888888888888x  `> 
+ ~   "8888X  %88"  .@88k  z88u   X~     `?888888hx~ 
+      X8888       ~"8888 ^8888   '      x8.^"*88*"  
+   .xxX8888xxxd>    8888  888R    `-:- X8888x       
+  :88888888888"     8888  888R         488888>      
+  ~   '8888         8888  888R       .. `"88*       
+ xx.  X8888:    .   8888 ,888B .   x88888nX"      . 
+X888  X88888x.x"   "8888Y 8888"   !"*8888888n..  :  
+X88% : '%8888"      `Y"   'YP    '    "*88888888*   
+ "*=~    `""                             ^"***"`    
+      </pre>
+    </div>
   </footer>
 
   <script>
-	  fetch('_includes/sidebar.html')
-	    .then(res => res.text())
-	    .then(html => { document.getElementById('sidebar').innerHTML = html; })
-	    .catch(() => { document.getElementById('sidebar').innerHTML = '<p>Error al cargar el menú.</p>'; });
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
-
+  <script src="assets/js/generate-index.js"></script>
 </body>
 </html>
 
