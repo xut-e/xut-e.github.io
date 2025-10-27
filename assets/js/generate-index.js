@@ -1,5 +1,5 @@
 // ==============================
-// ÍNDICE DINÁMICO - ESTILO OBSIDIAN
+// ÍNDICE DINÁMICO ESTILO OBSIDIAN
 // ==============================
 
 async function loadIndexTree() {
@@ -27,9 +27,9 @@ async function loadIndexTree() {
   }
 }
 
-// Comparador natural humano
+// Comparación natural (1,2,3,...,10)
 function naturalCompare(a, b) {
-  return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+  return a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" });
 }
 
 // Determina si un nodo debe mostrarse
@@ -40,10 +40,10 @@ function isVisibleNode(node) {
   return true;
 }
 
+// Construcción recursiva del árbol
 function buildTree(nodes, parentPath = "", level = 0) {
   if (!nodes || !Array.isArray(nodes)) return document.createElement("ul");
 
-  // Ordenar humanamente
   nodes.sort((a, b) => naturalCompare(a.name, b.name));
 
   const ul = document.createElement("ul");
@@ -63,17 +63,16 @@ function buildTree(nodes, parentPath = "", level = 0) {
       summary.textContent = node.name;
       details.appendChild(summary);
 
-      // Abrir solo el primer nivel (THM, HTB, etc.)
+      // Solo el primer nivel (THM) expandido
       if (level === 0) details.open = true;
 
       details.appendChild(buildTree(visibleChildren, fullPath, level + 1));
       li.appendChild(details);
-
     } else if (node.type === "file" && node.name.endsWith(".md")) {
       const parentFolder = parentPath.split("/").pop() || "";
       const cleanName = node.name.replace(".md", "");
 
-      // omitir índices internos
+      // Ignorar índices internos
       if (cleanName === parentFolder || cleanName.startsWith("0.")) continue;
 
       const a = document.createElement("a");
@@ -89,23 +88,26 @@ function buildTree(nodes, parentPath = "", level = 0) {
   return ul;
 }
 
-
 // ==============================
-// TOGGLE DEL PANEL Y ESTADO GUARDADO
+// BOTÓN DE MOSTRAR / OCULTAR ÍNDICE
 // ==============================
 document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector("#toggle-index");
+  const toggleBtn = document.querySelector("#toggle-index");
   const sidebar = document.querySelector(".sidebar");
 
-  const savedState = localStorage.getItem("sidebarOpen") === "true";
-  if (savedState) sidebar.classList.add("open");
+  // Restaurar estado anterior
+  const saved = localStorage.getItem("sidebarVisible");
+  if (saved === "false") sidebar.classList.add("hidden");
 
-  if (toggle && sidebar) {
-    toggle.addEventListener("click", () => {
-      sidebar.classList.toggle("open");
-      localStorage.setItem("sidebarOpen", sidebar.classList.contains("open"));
-    });
-  }
+  // Configurar texto inicial
+  toggleBtn.textContent = sidebar.classList.contains("hidden") ? "☰ Índice" : "← Índice";
+
+  // Evento de click
+  toggleBtn.addEventListener("click", () => {
+    const hidden = sidebar.classList.toggle("hidden");
+    toggleBtn.textContent = hidden ? "☰ Índice" : "← Índice";
+    localStorage.setItem("sidebarVisible", !hidden);
+  });
 
   loadIndexTree();
 });
