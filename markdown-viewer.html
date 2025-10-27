@@ -146,6 +146,9 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
 	      mdText = mdText.replace(/^###\s(.+)$/gm, "<h3>$1</h3>");
 	      mdText = mdText.replace(/^##\s(.+)$/gm, "<h2>$1</h2>");
 	      mdText = mdText.replace(/^#\s(.+)$/gm, "<h1>$1</h1>");
+	      
+	      // horizontal rule (3 o más guiones consecutivos)
+	      mdText = mdText.replace(/^-{3,}\s*$/gm, "<hr>");
 
 	      // code inline `...`
 	      mdText = mdText.replace(/`+\s*([^`]+?)\s*`+/g, "<code>$1</code>");
