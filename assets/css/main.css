@@ -101,6 +101,7 @@ body {
   padding-left: 1rem;
 }
 .tree-nav li {
+  list-style: none;
   margin: 0.1rem 0;
 }
 .tree-nav summary {
