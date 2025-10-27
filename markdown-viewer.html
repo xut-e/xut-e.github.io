@@ -69,37 +69,41 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // 1. leer ?file=...
-    const params = new URLSearchParams(window.location.search);
-    const fileRel = params.get('file'); // ej: apuntes/thm/1-pre-security/1. Pre Security.md
+    	const params = new URLSearchParams(window.location.search);
+	let fileRel = params.get("file"); // ejemplo: "Ciberseguridad/THM/1. Pre Security/1. Pre Security.md"
 
-    const titleEl = document.getElementById('md-title');
-    const contentEl = document.getElementById('md-content');
+	// Normalizamos la ruta
+	if (!fileRel) {
+	  document.getElementById("md-title").textContent = "Error";
+	  document.getElementById("md-content").innerHTML =
+	    "<p style='color:red;'>No se especificó ningún archivo.</p>";
+	} else {
+	  // Si la ruta NO empieza con "content/", la corregimos
+	  if (!fileRel.startsWith("content/")) {
+	    fileRel = "content/" + fileRel;
+	  }
 
-    if (!fileRel) {
-      titleEl.textContent = "Error";
-      contentEl.innerHTML = "<p style='color:red;'>No se especificó ningún archivo.</p>";
-    } else {
-      titleEl.textContent = fileRel.split('/').pop().replace('.md','');
+	  document.getElementById("md-title").textContent = fileRel
+	    .split("/")
+	    .pop()
+	    .replace(".md", "");
 
-      // MUY IMPORTANTE:
-      // fetch SIN "/" inicial => relativo al repo GitHub Pages
-      fetch(fileRel)
-        .then(res => {
-          if (!res.ok) {
-            throw new Error("No se pudo cargar el archivo: " + fileRel);
-          }
-          return res.text();
-        })
-        .then(mdText => {
-          // render cutre: saltos de línea => <p> y ## => <h2> etc.
-          // (no tenemos marked.js offline, así que hago un parser mínimo rápido)
-          const html = basicMarkdownToHtml(mdText);
-          contentEl.innerHTML = html;
-        })
-        .catch(err => {
-          contentEl.innerHTML = "<p style='color:red;'>" + err.message + "</p>";
-        });
-    }
+	  fetch(fileRel)
+	    .then((res) => {
+	      if (!res.ok) throw new Error("No se pudo cargar el archivo: " + fileRel);
+	      return res.text();
+	    })
+	    .then((mdText) => {
+	      const html = basicMarkdownToHtml(mdText);
+	      document.getElementById("md-content").innerHTML = html;
+	    })
+	    .catch((err) => {
+	      document.getElementById("md-content").innerHTML =
+		"<p style='color:red;'>" + err.message + "</p>";
+	    });
+	}
+
+
 
     // parser markdown muy básico (titulares, codeblocks, párrafos)
     function escapeHTML(str){
