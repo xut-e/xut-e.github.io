@@ -4,17 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>xut | Apuntes</title>
+
   <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Librerías -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <link
-  	rel="stylesheet"
-  	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
   />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 </head>
 
 <body>
-  <!-- HEADER igual que index -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="site-header-inner">
       <a class="site-brand" href="/" aria-label="xut - inicio">
@@ -33,13 +36,16 @@
     </div>
   </header>
 
-  <!-- LAYOUT 2 COLUMNAS -->
+  <!-- LAYOUT -->
   <main class="page-shell">
-    <!-- Reutilizamos la misma sidebar que index -->
     <aside class="sidebar">
       <h2>Índice</h2>
-      <p style="font-size:.8rem;color:var(--text-dim);margin-top:0;">← vuelve al inicio para el árbol completo.</p>
-      <p style="margin:0;"><a href="/" style="color:var(--accent);text-decoration:none;">Inicio</a></p>
+      <p style="font-size:.8rem;color:var(--text-dim);margin-top:0;">
+        ← vuelve al inicio para el árbol completo.
+      </p>
+      <p style="margin:0;">
+        <a href="/" style="color:var(--accent);text-decoration:none;">Inicio</a>
+      </p>
     </aside>
 
     <section class="markdown-body">
@@ -71,85 +77,110 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </div>
   </footer>
 
- <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+  <!-- SCRIPT PRINCIPAL -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-  // 1. Leer parámetro ?file=...
-  const params = new URLSearchParams(window.location.search);
-  let fileRel = params.get("file"); // ej: "Ciberseguridad/THM/1. Pre Security/1. Pre Security.md"
+    // Leer ?file=...
+    const params = new URLSearchParams(window.location.search);
+    let fileRel = params.get("file");
 
-  // Normalizamos la ruta
-  if (!fileRel) {
-    document.getElementById("md-title").textContent = "Error";
-    document.getElementById("md-content").innerHTML =
-      "<p style='color:red;'>No se especificó ningún archivo.</p>";
-  } else {
-    // Si la ruta NO empieza con "content/", la corregimos
-    if (!fileRel.startsWith("content/")) {
-      fileRel = "content/" + fileRel;
+    if (!fileRel) {
+      document.getElementById("md-title").textContent = "Error";
+      document.getElementById("md-content").innerHTML =
+        "<p style='color:red;'>No se especificó ningún archivo.</p>";
+    } else {
+      if (!fileRel.startsWith("content/")) {
+        fileRel = "content/" + fileRel;
+      }
+
+      document.getElementById("md-title").textContent = fileRel
+        .split("/")
+        .pop()
+        .replace(".md", "");
+
+      fetch(fileRel)
+        .then(res => {
+          if (!res.ok) throw new Error("No se pudo cargar el archivo: " + fileRel);
+          return res.text();
+        })
+        .then(mdText => {
+          const IMAGE_BASE = "content/Ciberseguridad/Z Imagenes/";
+
+          // --- 1) Reemplazar sintaxis Obsidian [[imagen]] o ![[imagen]] -> Markdown imagen estándar
+          mdText = mdText.replace(/!?(\[\[)([^\]]+)\]\]/g, (match, _, inner) => {
+            const fileName = inner.trim();
+
+            // ya viene con ruta absoluta "content/..."
+            if (fileName.startsWith("content/")) {
+              return `![](${fileName})`;
+            }
+
+            // construir ruta dentro de Z Imagenes
+            const imgSrc = IMAGE_BASE + fileName;
+            const safeSrc = imgSrc.replace(/\s/g, "%20"); // espacios a %20
+            return `![](${safeSrc})`;
+          });
+
+          // --- 2) Normalizar sintaxis de links estilo Markdown que vienen feos
+          // Casos:
+          // [texto] (url)  => [texto](url)
+          // [texto]((url)) => [texto](url)
+          // [texto]( url ) => [texto](url)
+          mdText = mdText
+            .replace(/\]\s+\(/g, "](")                     // quita espacios entre ] y (
+            .replace(/\]\(\((https?:[^\)]+)\)\)/g, "]($1)") // ((url)) -> (url)
+            .replace(/\]\(\s*([^)]+)\s*\)/g, "]($1)");      // ( url ) -> (url)
+
+          // --- 3) Generar HTML inicial con marked
+          marked.setOptions({
+            highlight: function (code, lang) {
+              const validLang = hljs.getLanguage(lang) ? lang : 'plaintext';
+              return hljs.highlight(code, { language: validLang }).value;
+            },
+            breaks: true
+          });
+
+          let html = marked.parse(mdText);
+
+          // --- 4) Post-procesar enlaces que aún hayan quedado literales en forma [texto](link)
+          // Esto convierte cualquier resto plano "[texto](https://loquesea)" en <a href="https://loquesea">texto</a>
+          // y le pone target="_blank".
+          html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (match, text, url) => {
+            const cleanUrl = url.trim().replace(/\s/g, "%20");
+            return `<a href="${cleanUrl}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+          });
+
+          // --- 5) Inyectar en el DOM
+          const contentEl = document.getElementById("md-content");
+          contentEl.classList.add("markdown-body");
+          contentEl.innerHTML = html;
+
+          // --- 6) Asegurar que los <a> que ya existían también abran en nueva pestaña
+          contentEl.querySelectorAll("a").forEach(a => {
+            const href = a.getAttribute("href");
+            if (href && /^https?:\/\//i.test(href)) {
+              a.setAttribute("target", "_blank");
+              a.setAttribute("rel", "noopener noreferrer");
+            }
+            if (href) {
+              try {
+                a.setAttribute("href", decodeURIComponent(href));
+              } catch (e) {}
+            }
+          });
+
+          // --- 7) Resaltado de código
+          document.querySelectorAll('pre code').forEach(el => {
+            hljs.highlightElement(el);
+          });
+        })
+        .catch(err => {
+          document.getElementById("md-content").innerHTML =
+            "<p style='color:red;'>" + err.message + "</p>";
+        });
     }
-
-    // Mostrar título
-    document.getElementById("md-title").textContent = fileRel
-      .split("/")
-      .pop()
-      .replace(".md", "");
-
-    // 2. Cargar el archivo .md
-    fetch(fileRel)
-      .then((res) => {
-        if (!res.ok) throw new Error("No se pudo cargar el archivo: " + fileRel);
-        return res.text();
-      })
-      .then(mdText => {
-        // 🔧 Reemplazar sintaxis [[imagen]] por Markdown estándar
-        const IMAGE_BASE = "content/Ciberseguridad/Z Imagenes/";
-
-	// Reemplazar referencias Obsidian [[imagen]] o ![[imagen]]
-	mdText = mdText.replace(/!?(\[\[)([^\]]+)\]\]/g, (match, _, inner) => {
-	  const fileName = inner.trim();
-
-	  // Si ya tiene "content/" es una ruta completa → úsala tal cual
-	  if (fileName.startsWith("content/")) {
-	    return `![](${fileName})`;
-	  }
-
-	  // Si no, la resolvemos en Z Imagenes
-	  const imgSrc = IMAGE_BASE + fileName;
-
-	  // Escapamos paréntesis o espacios especiales
-	  const safeSrc = imgSrc.replace(/\s/g, "%20");
-
-	  return `![](${safeSrc})`;
-	});
-
-        // 3. Configurar marked + highlight.js
-        marked.setOptions({
-          highlight: function (code, lang) {
-            const validLang = hljs.getLanguage(lang) ? lang : 'plaintext';
-            return hljs.highlight(code, { language: validLang }).value;
-          },
-          breaks: true
-        });
-
-        const html = marked.parse(mdText);
-        const contentEl = document.getElementById("md-content");
-        contentEl.classList.add("markdown-body");
-        contentEl.innerHTML = html;
-
-        // 4. Inicializar resaltado
-        document.querySelectorAll('pre code').forEach((el) => {
-          hljs.highlightElement(el);
-        });
-      })
-      .catch((err) => {
-        document.getElementById("md-content").innerHTML =
-          "<p style='color:red;'>" + err.message + "</p>";
-      });
-  }
-</script>
-
-
+  </script>
 </body>
 </html>
 
