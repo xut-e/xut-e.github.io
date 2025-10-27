@@ -29,15 +29,17 @@
     </div>
   </header>
 
-  <!-- LAYOUT 2 COLUMNAS -->
-  <main class="page-shell">
+  <!-- BOTÓN FLOTANTE -->
+  <button id="toggle-index" class="index-toggle">☰ Índice</button>
 
+  <!-- LAYOUT PRINCIPAL -->
+  <main class="page-shell">
     <!-- SIDEBAR -->
     <aside class="sidebar" id="indice">
-	    <h2 id="indice-label"Ciberseguridad</h2>
-	    <div id="dynamic-index">
-		    <p>Cargando indice...</p>
-	    </div>
+      <h2 id="indice-label">Índice</h2>
+      <div id="dynamic-index">
+        <p>Cargando índice...</p>
+      </div>
     </aside>
 
     <!-- CONTENIDO PRINCIPAL -->
@@ -49,7 +51,6 @@
         </p>
       </header>
 
-      <!-- Últimos apuntes -->
       <section class="card">
         <h3>📘 Últimos apuntes</h3>
         <ul id="latest-posts">
@@ -59,16 +60,13 @@
         </ul>
       </section>
 
-      <!-- Sobre mí breve -->
       <section class="card">
         <h3>🧠 Sobre mí</h3>
         <p>
           Soy <strong>xut-e</strong>, estudiante de ciberseguridad. Aquí recopilo mis notas,
           prácticas y recursos sobre hacking ético, redes y plataformas como TryHackMe.
         </p>
-        <p>
-          <a href="/sobre-mi.html">Más sobre mí →</a>
-        </p>
+        <p><a href="/sobre-mi.html">Más sobre mí →</a></p>
       </section>
     </section>
   </main>
@@ -94,6 +92,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </div>
   </footer>
 
+  <!-- SCRIPTS -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
