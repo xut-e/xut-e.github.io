@@ -71,138 +71,85 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+ <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-    // 1. leer ?file=...
-    	const params = new URLSearchParams(window.location.search);
-	let fileRel = params.get("file"); // ejemplo: "Ciberseguridad/THM/1. Pre Security/1. Pre Security.md"
+  // 1. Leer parámetro ?file=...
+  const params = new URLSearchParams(window.location.search);
+  let fileRel = params.get("file"); // ej: "Ciberseguridad/THM/1. Pre Security/1. Pre Security.md"
 
-	// Normalizamos la ruta
-	if (!fileRel) {
-	  document.getElementById("md-title").textContent = "Error";
-	  document.getElementById("md-content").innerHTML =
-	    "<p style='color:red;'>No se especificó ningún archivo.</p>";
-	} else {
-	  // Si la ruta NO empieza con "content/", la corregimos
-	  if (!fileRel.startsWith("content/")) {
-	    fileRel = "content/" + fileRel;
+  // Normalizamos la ruta
+  if (!fileRel) {
+    document.getElementById("md-title").textContent = "Error";
+    document.getElementById("md-content").innerHTML =
+      "<p style='color:red;'>No se especificó ningún archivo.</p>";
+  } else {
+    // Si la ruta NO empieza con "content/", la corregimos
+    if (!fileRel.startsWith("content/")) {
+      fileRel = "content/" + fileRel;
+    }
+
+    // Mostrar título
+    document.getElementById("md-title").textContent = fileRel
+      .split("/")
+      .pop()
+      .replace(".md", "");
+
+    // 2. Cargar el archivo .md
+    fetch(fileRel)
+      .then((res) => {
+        if (!res.ok) throw new Error("No se pudo cargar el archivo: " + fileRel);
+        return res.text();
+      })
+      .then(mdText => {
+        // 🔧 Reemplazar sintaxis [[imagen]] por Markdown estándar
+        const IMAGE_BASE = "content/Ciberseguridad/Z Imagenes/";
+
+	// Reemplazar referencias Obsidian [[imagen]] o ![[imagen]]
+	mdText = mdText.replace(/!?(\[\[)([^\]]+)\]\]/g, (match, _, inner) => {
+	  const fileName = inner.trim();
+
+	  // Si ya tiene "content/" es una ruta completa → úsala tal cual
+	  if (fileName.startsWith("content/")) {
+	    return `![](${fileName})`;
 	  }
 
-	  document.getElementById("md-title").textContent = fileRel
-	    .split("/")
-	    .pop()
-	    .replace(".md", "");
+	  // Si no, la resolvemos en Z Imagenes
+	  const imgSrc = IMAGE_BASE + fileName;
 
-	  fetch(fileRel)
-	    .then((res) => {
-	      if (!res.ok) throw new Error("No se pudo cargar el archivo: " + fileRel);
-	      return res.text();
-	    })
-	   
-	  .then(mdText => {
-		  // Configuramos marked con highlight.js
-		  marked.setOptions({
-		    highlight: function (code, lang) {
-		      const validLang = hljs.getLanguage(lang) ? lang : 'plaintext';
-		      return hljs.highlight(code, { language: validLang }).value;
-		    },
-		    breaks: true
-		  });
+	  // Escapamos paréntesis o espacios especiales
+	  const safeSrc = imgSrc.replace(/\s/g, "%20");
 
-  const html = marked.parse(mdText);
+	  return `![](${safeSrc})`;
+	});
 
-  const contentEl = document.getElementById("md-content");
-  contentEl.classList.add("markdown-body");
-  contentEl.innerHTML = html;
+        // 3. Configurar marked + highlight.js
+        marked.setOptions({
+          highlight: function (code, lang) {
+            const validLang = hljs.getLanguage(lang) ? lang : 'plaintext';
+            return hljs.highlight(code, { language: validLang }).value;
+          },
+          breaks: true
+        });
 
-  // Inicializar resaltado (por si marked no lo hizo)
-  document.querySelectorAll('pre code').forEach((el) => {
-    hljs.highlightElement(el);
-  });
-})
+        const html = marked.parse(mdText);
+        const contentEl = document.getElementById("md-content");
+        contentEl.classList.add("markdown-body");
+        contentEl.innerHTML = html;
 
-
-	    .catch((err) => {
-	      document.getElementById("md-content").innerHTML =
-		"<p style='color:red;'>" + err.message + "</p>";
-	    });
-	}
+        // 4. Inicializar resaltado
+        document.querySelectorAll('pre code').forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      })
+      .catch((err) => {
+        document.getElementById("md-content").innerHTML =
+          "<p style='color:red;'>" + err.message + "</p>";
+      });
+  }
+</script>
 
 
-
-    // parser markdown muy básico (titulares, codeblocks, párrafos)
-    function escapeHTML(str){
-      return str
-        .replace(/&/g,"&amp;")
-        .replace(/</g,"&lt;")
-        .replace(/>/g,"&gt;");
-    }
-
-    function basicMarkdownToHtml(md) {
-      // code blocks ``` ... ```
-      let html = "";
-      const lines = md.split("\n");
-      let inCode = false;
-      let codeBuf = [];
-
-      function flushParagraph(buf){
-        const text = buf.join(" ").trim();
-        if (!text) return;
-        html += "<p>" + text
-          .replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
-          .replace(/`([^`]+)`/g,"<code>$1</code>")
-          + "</p>";
-      }
-
-      let pBuf = [];
-
-      for (let line of lines){
-        if (line.trim().startsWith("```")) {
-          if (!inCode){
-            // abrir bloque code
-            flushParagraph(pBuf); pBuf=[];
-            inCode = true;
-            codeBuf = [];
-          } else {
-            // cerrar bloque code
-            inCode = false;
-            html += "<pre><code>" + escapeHTML(codeBuf.join("\n")) + "</code></pre>";
-            codeBuf=[];
-          }
-          continue;
-        }
-
-        if (inCode){
-          codeBuf.push(line);
-          continue;
-        }
-
-        // headings
-        if (/^#{1,6}\s+/.test(line)) {
-          flushParagraph(pBuf); pBuf=[];
-          const m = line.match(/^(#{1,6})\s+(.*)$/);
-          const level = m[1].length;
-          const text = m[2];
-          html += `<h${level}>${text}</h${level}>`;
-          continue;
-        }
-
-        if (line.trim()===""){
-          flushParagraph(pBuf); pBuf=[];
-        } else {
-          pBuf.push(line.trim());
-        }
-      }
-
-      flushParagraph(pBuf);
-      if (inCode){
-        html += "<pre><code>" + escapeHTML(codeBuf.join("\n")) + "</code></pre>";
-      }
-
-      return html;
-    }
-  </script>
 </body>
 </html>
 
