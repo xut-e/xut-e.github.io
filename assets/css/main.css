@@ -17,7 +17,6 @@
   --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Consolas, monospace;
   --page-max-width: 1400px;
-  --sidebar-width: 300px;
 }
 
 * { box-sizing: border-box; }
@@ -32,12 +31,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* ===== Header (barra arriba) ===== */
+/* ===== Header ===== */
 .site-header {
   border-bottom: 1px solid var(--border-color);
   background-color: var(--bg-surface);
 }
-
 .site-header-inner {
   max-width: var(--page-max-width);
   margin-inline: auto;
@@ -48,7 +46,6 @@ body {
   justify-content: space-between;
   row-gap: .75rem;
 }
-
 .site-brand {
   display: flex;
   align-items: baseline;
@@ -56,14 +53,11 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-main);
-  margin: 0;
   text-decoration: none;
 }
 .site-brand span[aria-hidden="true"] {
   color: var(--accent);
-  font-weight: 600;
 }
-
 .site-nav ul {
   list-style: none;
   display: flex;
@@ -73,7 +67,6 @@ body {
   font-size: .9rem;
   font-weight: 500;
 }
-
 .site-nav a {
   color: var(--text-main);
   text-decoration: none;
@@ -94,50 +87,117 @@ body {
   gap: 2rem;
   padding: 2rem 1rem 4rem;
 }
-
 @media (min-width: 900px) {
   .page-shell {
-    grid-template-columns: var(--sidebar-width) 1fr;
+    grid-template-columns: auto 1fr;
   }
 }
 
-/* ===== Sidebar índice ===== */
-.tree-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.tree-nav details {
-  background-color: var(--bg-page);
+/* ===== Sidebar (índice) ===== */
+.sidebar {
+  position: sticky;
+  top: 1rem;
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-card);
-  padding: .5rem .75rem;
-  margin-bottom: .5rem;
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: max-content;
+  min-width: 260px;
+  max-width: 420px;
+  transition: width 0.25s ease;
 }
 
+/* Flechas y jerarquía tipo Obsidian */
+.tree-nav ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: .25rem 0;
+}
+.tree-nav li {
+  margin: .1rem 0;
+  line-height: 1.4;
+}
 .tree-nav summary {
   cursor: pointer;
   font-weight: 500;
   color: var(--text-main);
-}
-
-.tree-nav ul {
-  list-style: none;
   padding-left: 1rem;
-  margin: .5rem 0 0;
+  position: relative;
+  user-select: none;
+  transition: color .15s ease;
+}
+.tree-nav summary:hover {
+  color: var(--accent);
+}
+.tree-nav summary::marker {
+  display: none;
+}
+.tree-nav summary::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+  color: var(--text-dim);
+}
+.tree-nav details[open] > summary::before {
+  transform: rotate(90deg);
+  color: var(--accent);
 }
 
-.tree-nav a {
+.tree-nav details {
+  border-left: 1px solid var(--border-color);
+  margin-left: .4rem;
+  padding-left: .5rem;
+}
+.tree-nav a.tree-link {
+  display: block;
+  padding: .1rem 0 .1rem 1rem;
   color: var(--accent);
   text-decoration: none;
-  line-height: 1.4;
-  display: block;
-  padding: .15rem 0;
-  word-break: break-word;
+  font-weight: 500;
 }
-.tree-nav a:hover {
+.tree-nav a.tree-link:hover {
   text-decoration: underline;
+}
+
+/* ===== Botón flotante (☰ Índice) ===== */
+.index-toggle {
+  position: fixed;
+  top: 5rem;
+  left: 1rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-card);
+  padding: 0.5rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 100;
+  transition: background 0.2s ease;
+}
+.index-toggle:hover {
+  background: var(--accent-hover);
+}
+
+/* Panel oculto lateral */
+.sidebar.hidden {
+  transform: translateX(-105%);
+  transition: transform 0.3s ease;
+}
+@media (max-width: 899px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(0);
+    z-index: 90;
+    border-radius: 0;
+  }
 }
 
 /* ===== Contenido principal ===== */
@@ -154,7 +214,7 @@ body {
   line-height: 1.5;
 }
 
-/* Bloques tipo tarjeta (Últimos apuntes, Sobre mí…) */
+/* Bloques tipo tarjeta */
 .card {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
@@ -164,7 +224,6 @@ body {
   font-size: .9rem;
   line-height: 1.5;
 }
-
 .card h3 {
   margin-top: 0;
   margin-bottom: .75rem;
@@ -175,19 +234,13 @@ body {
   align-items: center;
   gap: .5rem;
 }
-
-.card ul {
-  margin: 0;
-  padding-left: 1.25rem;
-}
-
 .card a {
   color: var(--accent);
   text-decoration: none;
 }
 .card a:hover { text-decoration: underline; }
 
-/* ===== Markdown render ===== */
+/* ===== Markdown ===== */
 .markdown-body h1,
 .markdown-body h2,
 .markdown-body h3,
@@ -221,12 +274,9 @@ body {
   font-family: var(--font-mono);
   font-size: .8rem;
   line-height: 1.4;
-  white-space: pre;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
-/* ===== Footer con ascii ===== */
+/* ===== Footer ===== */
 .site-footer {
   border-top: 1px solid var(--border-color);
   background: var(--bg-surface);
@@ -238,177 +288,12 @@ body {
   max-width: var(--page-max-width);
   margin-inline: auto;
 }
-.site-footer small {
-  display: block;
-  margin-bottom: 1rem;
-  color: var(--text-dim);
-}
-
 .site-footer pre.ascii {
   font-family: var(--font-mono);
   font-size: .6rem;
   color: var(--text-dim);
   white-space: pre;
-  margin: 0;
   line-height: 1.2;
   overflow-x: auto;
-}
-
-/* ====== Toggle lateral (Índice) ====== */
-@media (min-width: 900px) {
-  .index-toggle {
-    display: none;
-  }
-  .sidebar {
-    position: static;
-    width: var(--sidebar-width);
-    border-radius: var(--radius-card);
-    transition: none;
-  }
-}
-
-/* ===== ÁRBOL DE ÍNDICE (estilo Obsidian) ===== */
-.tree-nav ul {
-  list-style: none;
-  padding-left: 1rem;
-  margin: .3rem 0;
-}
-
-.tree-nav li {
-  position: relative;
-  margin: .15rem 0;
-  padding-left: .5rem;
-  line-height: 1.4;
-}
-
-.tree-nav summary {
-  cursor: pointer;
-  font-weight: 500;
-  color: var(--text-main);
-  user-select: none;
-  transition: color .15s ease;
-}
-
-.tree-nav summary:hover {
-  color: var(--accent);
-}
-
-.tree-nav a.tree-link {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color .15s ease;
-}
-
-.tree-nav a.tree-link:hover {
-  text-decoration: underline;
-}
-
-.tree-nav details {
-  border-left: 1px solid var(--border-color);
-  margin-left: .25rem;
-  padding-left: .5rem;
-}
-
-.tree-nav details[open] > summary::before {
-  content: "▼ ";
-  font-size: .7rem;
-}
-
-.tree-nav details:not([open]) > summary::before {
-  content: "▶ ";
-  font-size: .7rem;
-}
-
-/* Ajuste automático de altura */
-.tree-nav summary {
-  font-weight: 500;
-  padding: .2rem 0;
-}
-
-.tree-nav details {
-  margin-left: .4rem;
-  border-left: 1px solid var(--border-color);
-  padding-left: .5rem;
-}
-
-.tree-nav a.tree-link {
-  display: block;
-  padding: .15rem 0 .15rem .5rem;
-  word-break: break-word;
-}
-
-.tree-nav details[open] > summary::before {
-  content: "▼ ";
-  font-size: .7rem;
-  color: var(--accent);
-}
-
-.tree-nav details:not([open]) > summary::before {
-  content: "▶ ";
-  font-size: .7rem;
-  color: var(--text-dim);
-}
-
-.tree-nav details summary::-webkit-details-marker {
-  display: none;
-}
-
-/* ===== PANEL LATERAL PLEGABLE ===== */
-
-/* Botón flotante */
-.index-toggle {
-  position: fixed;
-  top: 5rem;
-  left: 1rem;
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: var(--radius-card);
-  padding: 0.5rem 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  z-index: 100;
-  transition: background 0.2s ease, opacity 0.2s ease;
-}
-.index-toggle:hover {
-  background: var(--accent-hover);
-}
-
-/* Sidebar oculto/visible */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: var(--sidebar-width);
-  height: 100vh;
-  background-color: var(--bg-surface);
-  border-right: 1px solid var(--border-color);
-  padding: 1rem;
-  overflow-y: auto;
-  transition: transform 0.3s ease;
-  transform: translateX(0);
-  z-index: 90;
-}
-.sidebar.hidden {
-  transform: translateX(-100%);
-}
-
-/* Ajuste en pantallas grandes */
-@media (min-width: 900px) {
-  .index-toggle {
-    display: none;
-  }
-  .sidebar {
-    position: static;
-    height: auto;
-    transform: none;
-    border-radius: var(--radius-card);
-  }
-}
-
-/* Sombra y animación suave */
-.sidebar.open {
-  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
 }
 

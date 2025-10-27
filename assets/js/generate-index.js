@@ -40,7 +40,7 @@ function isVisibleNode(node) {
   return true;
 }
 
-function buildTree(nodes, parentPath = "") {
+function buildTree(nodes, parentPath = "", level = 0) {
   if (!nodes || !Array.isArray(nodes)) return document.createElement("ul");
 
   // Ordenar humanamente
@@ -63,10 +63,10 @@ function buildTree(nodes, parentPath = "") {
       summary.textContent = node.name;
       details.appendChild(summary);
 
-      // Abrir automáticamente niveles 1 y 2
-      if (parentPath.split("/").length < 3) details.open = true;
+      // Abrir solo el primer nivel (THM, HTB, etc.)
+      if (level === 0) details.open = true;
 
-      details.appendChild(buildTree(visibleChildren, fullPath));
+      details.appendChild(buildTree(visibleChildren, fullPath, level + 1));
       li.appendChild(details);
 
     } else if (node.type === "file" && node.name.endsWith(".md")) {
@@ -88,6 +88,7 @@ function buildTree(nodes, parentPath = "") {
 
   return ul;
 }
+
 
 // ==============================
 // TOGGLE DEL PANEL Y ESTADO GUARDADO
