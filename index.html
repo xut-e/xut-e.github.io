@@ -11,29 +11,29 @@
 
 <body>
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="site-header-inner">
-      <a class="site-brand" href="/" aria-label="xut - inicio">
-        <span aria-hidden="true">✱</span>
-        <span>xut</span>
-      </a>
+   <header class="site-header">
+   <div class="site-header-inner">
+     <div class="site-left">
+       <a class="site-brand" href="/" aria-label="xut - inicio">
+         <span aria-hidden="true">✱</span>
+         <span>xut</span>
+       </a>
+       <a id="toggle-index" class="site-link" href="#">Índice</a>
+     </div>
 
-      <nav class="site-nav" aria-label="Principal">
-        <ul>
-          <li><a href="/" aria-current="page">Inicio</a></li>
-          <li><a href="#indice">Apuntes</a></li>
-          <li><a href="/sobre-mi.html">Sobre mí</a></li>
-          <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- BOTÓN FLOTANTE -->
-  <button id="toggle-index" class="index-toggle">☰ Índice</button>
+     <nav class="site-nav" aria-label="Principal">
+       <ul>
+         <li><a href="/" aria-current="page">Inicio</a></li>
+         <li><a href="#indice">Apuntes</a></li>
+         <li><a href="/sobre-mi.html">Sobre mí</a></li>
+         <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
+       </ul>
+     </nav>
+   </div>
+ </header>
 
   <!-- LAYOUT PRINCIPAL -->
-  <main class="page-shell">
+  <main class="page-shell with-sidebar">
     <!-- SIDEBAR -->
     <aside class="sidebar" id="indice">
       <h2 id="indice-label">Índice</h2>
@@ -43,7 +43,7 @@
     </aside>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <section>
+    <section class="content">
       <header class="main-content-header">
         <h2>Apuntes de Ciberseguridad</h2>
         <p class="intro">
@@ -93,10 +93,48 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   </footer>
 
   <!-- SCRIPTS -->
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+  <script src="assets/js/generate-index.js">
+   // año del footer
+   document.getElementById('year').textContent = new Date().getFullYear();
+   
+
+
+   (function () {
+     // 1. obtener el botón original
+     const originalBtn = document.getElementById("toggle-index");
+     if (!originalBtn) return;
+
+     // 2. clonar para quitar listeners ajenos
+     const cleanBtn = originalBtn.cloneNode(true);
+
+     // 3. sustituir en el DOM
+     originalBtn.replaceWith(cleanBtn);
+
+     // 4. referencias ya limpias
+     const toggleBtn = document.getElementById("toggle-index");
+     const sidebar = document.getElementById("indice");
+     if (!toggleBtn || !sidebar) return;
+
+     // 5. texto inicial correcto (sidebar empieza visible)
+     toggleBtn.textContent = "Ocultar índice";
+
+     // 6. toggle comportamiento + cambio de texto
+     toggleBtn.addEventListener("click", (e) => {
+       e.preventDefault();
+
+       const isHidden = sidebar.classList.toggle("hidden");
+
+       if (isHidden) {
+         // índice se ha ocultado
+         toggleBtn.textContent = "Mostrar índice";
+       } else {
+         // índice visible otra vez
+         toggleBtn.textContent = "Ocultar índice";
+       }
+     });
+    })();
   </script>
-  <script src="assets/js/generate-index.js"></script>
+
 </body>
 </html>
 

@@ -36,6 +36,23 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+/* ===== Botón Índice en la barra superior ===== */
+.index-nav-btn {
+  margin-left: 1rem;
+  background: var(--accent);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-card);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+.index-nav-btn:hover {
+  background: var(--accent-hover);
+}
+
+
 .site-brand {
   text-decoration: none;
   font-weight: 600;
@@ -72,26 +89,35 @@ body {
   padding: 2rem 1rem;
 }
 
-/* ===== Sidebar ===== */
+/* ===== Sidebar ocultable ===== */
+.page-shell {
+  display: flex;
+  gap: 2rem;
+  max-width: var(--page-max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease;
+}
+
 .sidebar {
-  position: sticky;
-  top: 1rem;
+  flex: 0 0 280px;
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-card);
   padding: 1rem;
   overflow-y: auto;
-  width: max-content;
-  min-width: 250px;
-  max-width: 420px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .sidebar.hidden {
-  transform: translateX(-120%);
+  transform: translateX(-110%);
   opacity: 0;
+  pointer-events: none;
 }
-.sidebar h2 {
-  display: none;
+
+.content {
+  flex: 1;
+  transition: width 0.3s ease;
 }
 
 /* ===== Árbol tipo Obsidian ===== */
@@ -164,11 +190,11 @@ body {
 .index-toggle:hover {
   background: var(--accent-hover);
 }
-@media (min-width: 900px) {
+/*@media (min-width: 900px) {
   .index-toggle {
     display: none;
   }
-}
+}*/
 
 /* ===== Cards ===== */
 .card {
@@ -251,19 +277,23 @@ body {
 }
 
 .markdown-body img {
-  display: block;
-  margin: 1em auto;
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
+  display: block; margin: 1em auto; max-width: 100%; border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.3); }
 
 /* enlace del apunte actual en el índice */
-.tree-nav a.tree-link.current-page {
-  background-color: rgba(102,161,130,0.15); /* verde pastel semi-transparente */
-  color: var(--accent);
-  border-radius: 4px;
-  padding-left: 1rem; /* mantener alineación */
-  font-weight: 600;
+.tree-nav a.tree-link.current-page { background-color: rgba(102,161,130,0.15);
+/* verde pastel semi-transparente */ color: var(--accent); border-radius: 4px;
+padding-left: 1rem; /* mantener alineación */ font-weight: 600; }
+
+/* ===== Botón Índice estilo enlace, junto a xut ===== */
+.site-left { display: flex; align-items: center; gap: 1rem; /* misma separación
+que las pestañas del nav */ }
+
+.site-link { text-decoration: none; color: var(--text-main); font-weight: 500;
+border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
+0.2s ease; }
+
+.site-link:hover { color: var(--accent);
+  border-color: var(--accent);
 }
 
