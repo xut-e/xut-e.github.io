@@ -194,3 +194,59 @@ body {
   color: var(--text-dim);
 }
 
+.markdown-body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+  color: #ddd;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  color: #fff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3em;
+}
+
+.markdown-body a {
+  color: #79b8ff;
+  text-decoration: none;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body pre {
+  background: #2d2d2d;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.markdown-body code {
+  background: #2d2d2d;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid #555;
+  padding-left: 1em;
+  color: #aaa;
+  font-style: italic;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+}
+.markdown-body th, .markdown-body td {
+  border: 1px solid #444;
+  padding: 0.5em;
+}
+

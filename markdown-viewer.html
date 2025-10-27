@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>xut | Apuntes</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link
+  	rel="stylesheet"
+  	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 </head>
 
 <body>
@@ -93,10 +99,30 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
 	      if (!res.ok) throw new Error("No se pudo cargar el archivo: " + fileRel);
 	      return res.text();
 	    })
-	    .then((mdText) => {
-	      const html = basicMarkdownToHtml(mdText);
-	      document.getElementById("md-content").innerHTML = html;
-	    })
+	   
+	  .then(mdText => {
+		  // Configuramos marked con highlight.js
+		  marked.setOptions({
+		    highlight: function (code, lang) {
+		      const validLang = hljs.getLanguage(lang) ? lang : 'plaintext';
+		      return hljs.highlight(code, { language: validLang }).value;
+		    },
+		    breaks: true
+		  });
+
+  const html = marked.parse(mdText);
+
+  const contentEl = document.getElementById("md-content");
+  contentEl.classList.add("markdown-body");
+  contentEl.innerHTML = html;
+
+  // Inicializar resaltado (por si marked no lo hizo)
+  document.querySelectorAll('pre code').forEach((el) => {
+    hljs.highlightElement(el);
+  });
+})
+
+
 	    .catch((err) => {
 	      document.getElementById("md-content").innerHTML =
 		"<p style='color:red;'>" + err.message + "</p>";
