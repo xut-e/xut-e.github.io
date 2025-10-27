@@ -1,114 +1,165 @@
-// ==============================
-// ÍNDICE DINÁMICO ESTILO OBSIDIAN
-// ==============================
+// assets/js/generate-index.js
 
-async function loadIndexTree() {
+(async function () {
+  const sidebarContainer = document.getElementById("dynamic-index");
+  if (!sidebarContainer) return;
+
+  // 1. Cargamos índice bruto
+  let treeData;
   try {
-    const res = await fetch("index.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("No existe index.json");
-    const data = await res.json();
-
-    const container = document.querySelector("#dynamic-index");
-    container.innerHTML = "";
-
-    // Navegar hasta el contenido de Ciberseguridad
-    const root = Array.isArray(data) ? data[0].contents : data.contents;
-    const ciberseg = root.find(d => d.name === "THM" || d.name === "Ciberseguridad") || root[0];
-
-    const ul = buildTree([ciberseg]);
-    ul.classList.add("tree-nav");
-    container.appendChild(ul);
-  } catch (e) {
-    const container = document.querySelector("#dynamic-index");
-    container.innerHTML = `<p style='color:red'>
-      ⚠ Error generando el índice:<br>${e.message}
-    </p>`;
-    console.error("Error generando índice dinámico:", e);
+    const res = await fetch("index.json");
+    treeData = await res.json();
+  } catch (err) {
+    sidebarContainer.innerHTML = "<p style='color:red;'>No se pudo cargar el índice.</p>";
+    return;
   }
-}
 
-// Comparación natural (1,2,3,...,10)
-function naturalCompare(a, b) {
-  return a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" });
-}
+  // 2. LocalStorage helpers
+  const OPEN_KEY = "indiceOpenPaths";
+  function loadOpenSet() {
+    try {
+      return new Set(JSON.parse(localStorage.getItem(OPEN_KEY) || "[]"));
+    } catch {
+      return new Set();
+    }
+  }
+  function saveOpenSet(set) {
+    localStorage.setItem(OPEN_KEY, JSON.stringify([...set]));
+  }
+  const openSet = loadOpenSet();
 
-// Determina si un nodo debe mostrarse
-function isVisibleNode(node) {
-  if (!node || !node.name) return false;
-  if (node.name.startsWith("Z Imagenes")) return false;
-  if (node.type === "file" && (!node.name.endsWith(".md") || node.name.startsWith("0."))) return false;
-  return true;
-}
+  // 3. ¿Qué archivo estoy viendo ahora? (para resaltar en verde pastel)
+  //    En index.html no hay ?file=..., así que será null
+  const params = new URLSearchParams(window.location.search);
+  let currentFile = params.get("file"); // ejemplo: "Ciberseguridad/THM/.../4. Diffie-Hellman Key Exchange.md"
+  if (currentFile && !currentFile.startsWith("content/")) {
+    currentFile = "content/" + currentFile;
+  }
 
-// Construcción recursiva del árbol
-function buildTree(nodes, parentPath = "", level = 0) {
-  if (!nodes || !Array.isArray(nodes)) return document.createElement("ul");
+  // Normalizamos para poder comparar rutas absolutas reales
+  function normalizePath(p) {
+    return p
+      .replace(/^\.?\/*/, "")         // quita "./" o "/" inicial
+      .replace(/%2F/gi, "/")          // por si viene urlencoded
+      .replace(/\s+/g, " ")           // colapsa espacios raros
+      .trim();
+  }
+  const currentNorm = currentFile ? normalizePath(currentFile) : null;
 
-  nodes.sort((a, b) => naturalCompare(a.name, b.name));
-
-  const ul = document.createElement("ul");
-
-  for (const node of nodes) {
-    if (!isVisibleNode(node)) continue;
-
-    const li = document.createElement("li");
-    const fullPath = parentPath ? `${parentPath}/${node.name}` : node.name;
-
+  // 4. Construir árbol DOM recursivamente
+  //    node = objeto de index.json (type, name, contents[])
+  //    basePath = ruta acumulada tipo "content/Ciberseguridad/THM/..."
+  function buildNode(node, basePath) {
     if (node.type === "directory") {
-      const visibleChildren = (node.contents || []).filter(isVisibleNode);
-      if (visibleChildren.length === 0) continue;
+      const dirPath = basePath ? basePath + "/" + node.name : node.name;
 
       const details = document.createElement("details");
+      details.dataset.path = dirPath;
+
+      // restaurar estado abierto desde localStorage:
+      if (openSet.has(dirPath)) {
+        details.setAttribute("open", "");
+      }
+
       const summary = document.createElement("summary");
       summary.textContent = node.name;
       details.appendChild(summary);
 
-      // Solo el primer nivel (THM) expandido
-      if (level === 0) details.open = true;
+      const ul = document.createElement("ul");
 
-      details.appendChild(buildTree(visibleChildren, fullPath, level + 1));
-      li.appendChild(details);
-    } else if (node.type === "file" && node.name.endsWith(".md")) {
-      const parentFolder = parentPath.split("/").pop() || "";
-      const cleanName = node.name.replace(".md", "");
+      (node.contents || []).forEach(child => {
+        const li = document.createElement("li");
+        li.appendChild(buildNode(child, dirPath));
+        ul.appendChild(li);
+      });
 
-      // Ignorar índices internos
-      if (cleanName === parentFolder || cleanName.startsWith("0.")) continue;
+      details.appendChild(ul);
 
-      const a = document.createElement("a");
-      a.textContent = cleanName;
-      a.href = "markdown-viewer.html?file=" + encodeURIComponent("Ciberseguridad/" + fullPath);
-      a.className = "tree-link";
-      li.appendChild(a);
+      // cuando el usuario abre/cierra, guardamos
+      details.addEventListener("toggle", () => {
+        if (details.open) {
+          openSet.add(dirPath);
+        } else {
+          openSet.delete(dirPath);
+        }
+        saveOpenSet(openSet);
+      });
+
+      return details;
     }
 
-    ul.appendChild(li);
+    if (node.type === "file") {
+      const filePath = basePath ? basePath + "/" + node.name : node.name;
+
+      // sólo nos interesan .md
+      if (!filePath.endsWith(".md")) {
+        const span = document.createElement("span");
+        span.textContent = node.name;
+        span.style.opacity = ".5";
+        return span;
+      }
+
+      // construimos href hacia markdown-viewer con ?file=<ruta SIN "content/">
+      // porque en markdown-viewer.js luego le volvemos a anteponer "content/"
+      const relativeForQuery = filePath.replace(/^content\//, "");
+
+      const a = document.createElement("a");
+      a.className = "tree-link";
+      a.textContent = node.name.replace(/\.md$/, "");
+      a.href = "markdown-viewer.html?file=" + encodeURIComponent(relativeForQuery);
+
+      // resaltar el archivo actual
+      if (currentNorm && normalizePath(filePath) === currentNorm) {
+        a.classList.add("current-page");
+      }
+
+      return a;
+    }
+
+    // fallback
+    const span = document.createElement("span");
+    span.textContent = node.name || "(?)";
+    return span;
   }
 
-  return ul;
-}
+  // 5. Sólo queremos la parte "Ciberseguridad" del JSON gigante
+  // El JSON raíz es un array [ {type:"directory",name:"." ...}, {...report...} ]
+  // Dentro de ".", hay "THM", "2. Cyber Security 101", etc.
+  // Pero en tu disco real todo está dentro de /content/Ciberseguridad/
+  //
+  // Truco: vamos a envolver todo bajo "content/Ciberseguridad" para que las rutas queden bien.
+  //
+  // Buscamos el nodo raíz "THM", "2. Cyber Security 101", etc. y lo montamos con basePath="content/Ciberseguridad"
+  const raiz = treeData[0]?.contents || [];
 
-// ==============================
-// BOTÓN DE MOSTRAR / OCULTAR ÍNDICE
-// ==============================
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.querySelector("#toggle-index");
-  const sidebar = document.querySelector(".sidebar");
+  const treeWrapper = document.createElement("nav");
+  treeWrapper.className = "tree-nav";
 
-  // Restaurar estado anterior
-  const saved = localStorage.getItem("sidebarVisible");
-  if (saved === "false") sidebar.classList.add("hidden");
+  const topUL = document.createElement("ul");
 
-  // Configurar texto inicial
-  toggleBtn.textContent = sidebar.classList.contains("hidden") ? "☰ Índice" : "← Índice";
+  raiz.forEach(sectionNode => {
+    // ignorar "Z Imagenes" y similares que no son apuntes
+    if (sectionNode.name === "Z Imagenes") return;
+    if (sectionNode.type !== "directory") return;
 
-  // Evento de click
-  toggleBtn.addEventListener("click", () => {
-    const hidden = sidebar.classList.toggle("hidden");
-    toggleBtn.textContent = hidden ? "☰ Índice" : "← Índice";
-    localStorage.setItem("sidebarVisible", !hidden);
+    const li = document.createElement("li");
+    li.appendChild(buildNode(sectionNode, "content/Ciberseguridad"));
+    topUL.appendChild(li);
   });
 
-  loadIndexTree();
-});
+  treeWrapper.appendChild(topUL);
+
+  // 6. Inyectar en el sidebar
+  sidebarContainer.innerHTML = "";
+  sidebarContainer.appendChild(treeWrapper);
+
+  // 7. Soporte botón flotante ☰ (móvil)
+  const toggleBtn = document.getElementById("toggle-index");
+  const sidebar = document.querySelector(".sidebar");
+  if (toggleBtn && sidebar) {
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("hidden");
+    });
+  }
+})();
 

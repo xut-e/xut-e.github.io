@@ -258,3 +258,12 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+/* enlace del apunte actual en el índice */
+.tree-nav a.tree-link.current-page {
+  background-color: rgba(102,161,130,0.15); /* verde pastel semi-transparente */
+  color: var(--accent);
+  border-radius: 4px;
+  padding-left: 1rem; /* mantener alineación */
+  font-weight: 600;
+}
+
