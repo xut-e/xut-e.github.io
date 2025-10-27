@@ -4,7 +4,7 @@
   const sidebarContainer = document.getElementById("dynamic-index");
   if (!sidebarContainer) return;
 
-  // 1. Cargamos índice bruto
+  // 1. Cargar índice
   let treeData;
   try {
     const res = await fetch("index.json");
@@ -14,8 +14,9 @@
     return;
   }
 
-  // 2. LocalStorage helpers
+  // 2. Estado abierto/cerrado en localStorage
   const OPEN_KEY = "indiceOpenPaths";
+
   function loadOpenSet() {
     try {
       return new Set(JSON.parse(localStorage.getItem(OPEN_KEY) || "[]"));
@@ -23,32 +24,31 @@
       return new Set();
     }
   }
+
   function saveOpenSet(set) {
     localStorage.setItem(OPEN_KEY, JSON.stringify([...set]));
   }
+
   const openSet = loadOpenSet();
 
-  // 3. ¿Qué archivo estoy viendo ahora? (para resaltar en verde pastel)
-  //    En index.html no hay ?file=..., así que será null
+  // 3. Detectar qué archivo estoy viendo ahora, para resaltarlo
   const params = new URLSearchParams(window.location.search);
-  let currentFile = params.get("file"); // ejemplo: "Ciberseguridad/THM/.../4. Diffie-Hellman Key Exchange.md"
+  let currentFile = params.get("file"); 
   if (currentFile && !currentFile.startsWith("content/")) {
     currentFile = "content/" + currentFile;
   }
 
-  // Normalizamos para poder comparar rutas absolutas reales
   function normalizePath(p) {
     return p
-      .replace(/^\.?\/*/, "")         // quita "./" o "/" inicial
-      .replace(/%2F/gi, "/")          // por si viene urlencoded
-      .replace(/\s+/g, " ")           // colapsa espacios raros
+      .replace(/^\.?\/*/, "") // quita "./" o "/" inicial
+      .replace(/%2F/gi, "/")
+      .replace(/\s+/g, " ")
       .trim();
   }
+
   const currentNorm = currentFile ? normalizePath(currentFile) : null;
 
-  // 4. Construir árbol DOM recursivamente
-  //    node = objeto de index.json (type, name, contents[])
-  //    basePath = ruta acumulada tipo "content/Ciberseguridad/THM/..."
+  // 4. Builder recursivo
   function buildNode(node, basePath) {
     if (node.type === "directory") {
       const dirPath = basePath ? basePath + "/" + node.name : node.name;
@@ -56,7 +56,7 @@
       const details = document.createElement("details");
       details.dataset.path = dirPath;
 
-      // restaurar estado abierto desde localStorage:
+      // restaurar abierto si estaba guardado
       if (openSet.has(dirPath)) {
         details.setAttribute("open", "");
       }
@@ -69,13 +69,16 @@
 
       (node.contents || []).forEach(child => {
         const li = document.createElement("li");
-        li.appendChild(buildNode(child, dirPath));
-        ul.appendChild(li);
+        const built = buildNode(child, dirPath);
+        if (built) {
+          li.appendChild(built);
+          ul.appendChild(li);
+        }
       });
 
       details.appendChild(ul);
 
-      // cuando el usuario abre/cierra, guardamos
+      // guardar cambios de toggle
       details.addEventListener("toggle", () => {
         if (details.open) {
           openSet.add(dirPath);
@@ -91,7 +94,7 @@
     if (node.type === "file") {
       const filePath = basePath ? basePath + "/" + node.name : node.name;
 
-      // sólo nos interesan .md
+      // sólo .md nos interesan
       if (!filePath.endsWith(".md")) {
         const span = document.createElement("span");
         span.textContent = node.name;
@@ -99,16 +102,46 @@
         return span;
       }
 
-      // construimos href hacia markdown-viewer con ?file=<ruta SIN "content/">
-      // porque en markdown-viewer.js luego le volvemos a anteponer "content/"
+      // Nombre sin .md
+      const fileNameNoExt = node.name.replace(/\.md$/i, "").trim();
+
+      // === FILTRO A: archivos que empiezan por "0." ===
+      if (fileNameNoExt.startsWith("0.")) {
+        return null;
+      }
+
+      // === FILTRO B/C: archivos índice internos ===
+      // Regla: ocultar si el nombre del archivo coincide EXACTAMENTE (case-insensitive, trim)
+      // - con el nombre de la carpeta padre
+      // - o con el nombre de la carpeta abuelo
+      //
+      // Ej: basePath = "content/Ciberseguridad/THM/2. Cyber Security 101/2. Public Key Cryptography Basics"
+      //      split -> [..., "2. Cyber Security 101", "2. Public Key Cryptography Basics"]
+      const pathParts = basePath ? basePath.split("/") : [];
+      const parentDirName = pathParts.length > 0 ? pathParts[pathParts.length - 1].trim().toLowerCase() : "";
+      const grandParentDirName = pathParts.length > 1 ? pathParts[pathParts.length - 2].trim().toLowerCase() : "";
+
+      const fileNorm = fileNameNoExt.toLowerCase();
+
+      // ¿coincide con la unidad / tema?
+      if (parentDirName && fileNorm === parentDirName) {
+        return null;
+      }
+
+      // ¿coincide con el curso / bloque superior?
+      if (grandParentDirName && fileNorm === grandParentDirName) {
+        return null;
+      }
+
+      // construir enlace normal
       const relativeForQuery = filePath.replace(/^content\//, "");
 
       const a = document.createElement("a");
       a.className = "tree-link";
-      a.textContent = node.name.replace(/\.md$/, "");
+      a.textContent = fileNameNoExt;
       a.href = "markdown-viewer.html?file=" + encodeURIComponent(relativeForQuery);
 
-      // resaltar el archivo actual
+      // resaltar si es la página actual
       if (currentNorm && normalizePath(filePath) === currentNorm) {
         a.classList.add("current-page");
       }
@@ -122,14 +155,7 @@
     return span;
   }
 
-  // 5. Sólo queremos la parte "Ciberseguridad" del JSON gigante
-  // El JSON raíz es un array [ {type:"directory",name:"." ...}, {...report...} ]
-  // Dentro de ".", hay "THM", "2. Cyber Security 101", etc.
-  // Pero en tu disco real todo está dentro de /content/Ciberseguridad/
-  //
-  // Truco: vamos a envolver todo bajo "content/Ciberseguridad" para que las rutas queden bien.
-  //
-  // Buscamos el nodo raíz "THM", "2. Cyber Security 101", etc. y lo montamos con basePath="content/Ciberseguridad"
+  // 5. Elegimos raíz "content/Ciberseguridad"
   const raiz = treeData[0]?.contents || [];
 
   const treeWrapper = document.createElement("nav");
@@ -138,22 +164,25 @@
   const topUL = document.createElement("ul");
 
   raiz.forEach(sectionNode => {
-    // ignorar "Z Imagenes" y similares que no son apuntes
+    // saltar carpetas que no quieras mostrar
     if (sectionNode.name === "Z Imagenes") return;
     if (sectionNode.type !== "directory") return;
 
     const li = document.createElement("li");
-    li.appendChild(buildNode(sectionNode, "content/Ciberseguridad"));
-    topUL.appendChild(li);
+    const built = buildNode(sectionNode, "content/Ciberseguridad");
+    if (built) {
+      li.appendChild(built);
+      topUL.appendChild(li);
+    }
   });
 
   treeWrapper.appendChild(topUL);
 
-  // 6. Inyectar en el sidebar
+  // 6. Pintar en el sidebar
   sidebarContainer.innerHTML = "";
   sidebarContainer.appendChild(treeWrapper);
 
-  // 7. Soporte botón flotante ☰ (móvil)
+  // 7. Botón móvil opcional
   const toggleBtn = document.getElementById("toggle-index");
   const sidebar = document.querySelector(".sidebar");
   if (toggleBtn && sidebar) {
