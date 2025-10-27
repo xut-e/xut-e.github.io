@@ -1,46 +1,40 @@
-name: Build apuntes
+name: Sync Notes
 
 on:
-  push:
-    branches:
-      - main
-permnissions:
-  contents: write
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *" # opcional: ejecuta cada 12h
 
 jobs:
-  build-apuntes:
+  sync:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout target repository (xut-e.github.io)
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          path: site
 
-      - name: Run build script
+      - name: Checkout source notes repository
+        uses: actions/checkout@v4
+        with:
+          repository: xut-e/Notes
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          path: notes
+
+      - name: Sync notes into content/
         run: |
+          rsync -av --delete notes/ site/content/
+          cd site
           python3 scripts/build_apuntes.py
 
-      - name: Commit generated files
+      - name: Commit and push changes
         run: |
+          cd site
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add apuntes _includes/sidebar.html
-          # Solo commitea si hay cambios
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: build apuntes automático"
-            git push
-          fi
-
-       - name: Build apuntes
-         run: |
-           python3 scripts/build_apuntes.py
-           git config user.name "github-actions[bot]"
-           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-           git add .
-           git commit -m "Auto-build apuntes after sync" || echo "No changes to commit"
-           git push
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Sync notes and rebuild" || echo "No changes to commit"
+          git push
 
