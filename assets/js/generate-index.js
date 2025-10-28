@@ -221,13 +221,6 @@
   sidebarContainer.innerHTML = "";
   sidebarContainer.appendChild(treeWrapper);
 
-  // 7. Botón móvil opcional
-  const toggleBtn = document.getElementById("toggle-index");
-  const sidebar = document.querySelector(".sidebar");
-  if (toggleBtn && sidebar) {
-    toggleBtn.addEventListener("click", () => {
-      sidebar.classList.toggle("hidden");
-    });
-  }
+  
 })();
 

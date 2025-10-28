@@ -94,47 +94,34 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   </footer>
 
   <!-- SCRIPTS -->
-  <script src="assets/js/generate-index.js">
-   // año del footer
-   document.getElementById('year').textContent = new Date().getFullYear();
-   
+  <script src="assets/js/generate-index.js"></script>
 
+<script>
+window.addEventListener("load", () => {
+  const btn = document.getElementById("toggle-index");
+  if (!btn) return;
 
-   (function () {
-     // 1. obtener el botón original
-     const originalBtn = document.getElementById("toggle-index");
-     if (!originalBtn) return;
+  btn.textContent = "Ocultar índice";
+  btn.classList.add("active");
 
-     // 2. clonar para quitar listeners ajenos
-     const cleanBtn = originalBtn.cloneNode(true);
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
 
-     // 3. sustituir en el DOM
-     originalBtn.replaceWith(cleanBtn);
+    const aside = document.getElementById("indice");
+    if (!aside) return;
 
-     // 4. referencias ya limpias
-     const toggleBtn = document.getElementById("toggle-index");
-     const sidebar = document.getElementById("indice");
-     if (!toggleBtn || !sidebar) return;
-
-     // 5. texto inicial correcto (sidebar empieza visible)
-     toggleBtn.textContent = "Ocultar índice";
-
-     // 6. toggle comportamiento + cambio de texto
-     toggleBtn.addEventListener("click", (e) => {
-       e.preventDefault();
-
-       const isHidden = sidebar.classList.toggle("hidden");
-
-       if (isHidden) {
-         // índice se ha ocultado
-         toggleBtn.textContent = "Mostrar índice";
-       } else {
-         // índice visible otra vez
-         toggleBtn.textContent = "Ocultar índice";
-       }
-     });
-    })();
-  </script>
+    if (aside.classList.contains("hidden")) {
+      aside.classList.remove("hidden");
+      btn.textContent = "Ocultar índice";
+      btn.classList.add("active");
+    } else {
+      aside.classList.add("hidden");
+      btn.textContent = "Mostrar índice";
+      btn.classList.remove("active");
+    }
+  });
+});
+</script>
 
 </body>
 </html>

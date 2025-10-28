@@ -297,3 +297,11 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   border-color: var(--accent);
 }
 
+
+/* Botón Índice activo (verde cuando el índice está visible) */
+.site-link.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+
