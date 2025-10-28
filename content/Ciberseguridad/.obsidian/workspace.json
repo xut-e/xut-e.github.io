@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/3. Dissecting CAPA Results Part 1 - General Information, MITRE and MAEC.md",
+                "file": "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/5. Dissecting CAPA Results Part 3 - Namespaces.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Dissecting CAPA Results Part 1 - General Information, MITRE and MAEC"
+              "title": "5. Dissecting CAPA Results Part 3 - Namespaces"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 273.5,
+    "collapsed": true
   },
   "right": {
     "id": "faed7e75b1bafdc2",
@@ -160,9 +161,15 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "de843610a44737e0",
+  "active": "f295a4bd362e114b",
   "lastOpenFiles": [
+    "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/4. Dissecting CAPA Results Part 2 - Malware Behavior Catalogue.md",
+    "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/3. Dissecting CAPA Results Part 1 - General Information, MITRE and MAEC.md",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/2. Tool Overview - How CAPA Works.md",
+    "THM/Maquinas/2. Medium/1. Mr. Robot/3. What is Key 3.md",
+    "Z Imagenes/023 1.png",
+    "Z Imagenes/023.png",
+    "THM/Maquinas/2. Medium/1. Mr. Robot/2. What is Key 2.md",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/1. Introduction.md",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/6. Your First Official Cook.md",
     "Z Imagenes/Pasted image 20251026151436.png",
@@ -174,8 +181,6 @@
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/5. Practice, Practice, Practice.md",
     "Z Imagenes/Pasted image 20251026150052.png",
     "Z Imagenes/Pasted image 20251026145754.png",
-    "Z Imagenes/Pasted image 20251026145656.png",
-    "Z Imagenes/Pasted image 20251026145542.png",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/4. Before Anything Else.md",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/3. Navigating the Interface.md",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/2. Accessing the Tool.md",
@@ -194,10 +199,6 @@
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/3. REMnux - Getting Started/1. Introduction.md",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/0. CAPA - The Basics.md",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/7. More Information, more fun!.md",
-    "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/6. Dissecting CAPA Results Part 4 - Capability.md",
-    "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/5. Dissecting CAPA Results Part 3 - Namespaces.md",
-    "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/4. Dissecting CAPA Results Part 2 - Malware Behavior Catalogue.md",
-    "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/3. Dissecting CAPA Results Part 1 - General Information, MITRE and MAEC.md",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/4. FlareVM - Arsenal of Tools",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/3. REMnux - Getting Started",
     "THM/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics",
