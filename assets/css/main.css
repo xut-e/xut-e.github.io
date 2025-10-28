@@ -100,7 +100,10 @@ body {
 }
 
 .sidebar {
-  flex: 0 0 280px;
+  flex: 0 1 auto;
+  width: fit-content;
+  min-width: 220px;
+  max-width: 420px;
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-card);
@@ -108,11 +111,13 @@ body {
   overflow-y: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-.sidebar.hidden {
+.sidebar.collapsing {
+  transition: all 0.3s ease;
   transform: translateX(-110%);
   opacity: 0;
-  pointer-events: none;
+}
+.sidebar.hidden {
+  display: none;
 }
 
 .content {
@@ -162,12 +167,27 @@ body {
   margin-left: .4rem;
   padding-left: .5rem;
 }
+
 .tree-nav a.tree-link {
   display: block;
   padding: .15rem 0 .15rem 1rem;
   color: var(--accent);
   text-decoration: none;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.4;
 }
+
+/* Limitar visualmente la altura a ~3 líneas */
+.tree-nav a.tree-link {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* máx. 3 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
 .tree-nav a.tree-link:hover {
   text-decoration: underline;
 }
@@ -304,4 +324,32 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   border-color: var(--accent);
 }
 
+/* ===== Reestructuración cuando el índice está oculto ===== */
+.page-shell.full-width .content,
+.page-shell.full-width .markdown-body {
+  margin: 0 auto;
+  max-width: 1000px;
+  flex: 1 1 100%;
+  transition: all 0.3s ease;
+}
+
+.page-shell.full-width {
+  justify-content: center;
+}
+
+.page-shell.full-width .markdown-body {
+  max-width: 1100px; /* aumenta el ancho del contenido */
+  padding: 2rem 3rem;
+}
+
+/* ===== Sidebar ajustable a su contenido ===== */
+.page-shell {
+  align-items: flex-start; /* evita que el aside se estire verticalmente */
+}
+
+.sidebar {
+  height: auto; /* altura según contenido */
+  max-height: 90vh; /* con límite para evitar desbordes */
+  overflow-y: auto; /* si hay mucho contenido, se puede hacer scroll */
+}
 

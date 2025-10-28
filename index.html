@@ -96,32 +96,47 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   <!-- SCRIPTS -->
   <script src="assets/js/generate-index.js"></script>
 
-<script>
+
+  <script>
 window.addEventListener("load", () => {
   const btn = document.getElementById("toggle-index");
-  if (!btn) return;
+  const aside = document.getElementById("indice");
+  const pageShell = document.querySelector(".page-shell");
 
+  if (!btn || !aside || !pageShell) return;
+
+  // Estado inicial
   btn.textContent = "Ocultar índice";
   btn.classList.add("active");
 
   btn.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const aside = document.getElementById("indice");
-    if (!aside) return;
+    const isHidden = aside.classList.contains("hidden");
 
-    if (aside.classList.contains("hidden")) {
+    if (isHidden) {
+      // Mostrar índice
       aside.classList.remove("hidden");
+      pageShell.classList.remove("full-width");
       btn.textContent = "Ocultar índice";
       btn.classList.add("active");
     } else {
-      aside.classList.add("hidden");
+      // Animación de colapso
+      aside.classList.add("collapsing");
+      pageShell.classList.add("full-width");
       btn.textContent = "Mostrar índice";
       btn.classList.remove("active");
+
+      // Espera la animación antes de ocultar
+      setTimeout(() => {
+        aside.classList.remove("collapsing");
+        aside.classList.add("hidden");
+      }, 300); // coincide con el CSS
     }
   });
 });
 </script>
+
 
 </body>
 </html>
