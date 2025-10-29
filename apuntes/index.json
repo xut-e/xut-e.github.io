@@ -1512,24 +1512,20 @@
     "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/4-flarevm-arsenal-of-tools/1-introduction/"
   },
   {
-    "title": "2. Machine Access",
-    "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/2-machine-access/"
+    "title": "4. Memory Investigation - Evidence Processing",
+    "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/4-memory-investigation-evidence-processing/"
   },
   {
-    "title": "3. File Analysis",
-    "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/3-file-analysis/"
-  },
-  {
-    "title": "4. Fake Networkl to Aid Analysis",
-    "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/4-fake-networkl-to-aid-analysis/"
+    "title": "3. Fake Networkl to Aid Analysis",
+    "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/3-fake-networkl-to-aid-analysis/"
   },
   {
     "title": "0. REMnux - Getting Started",
     "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/0-remnux-getting-started/"
   },
   {
-    "title": "5. Memory Investigation - Evidence Processing",
-    "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/5-memory-investigation-evidence-processing/"
+    "title": "2. File Analysis",
+    "path": "/apuntes/thm/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/2-file-analysis/"
   },
   {
     "title": "1. Introduction",
