@@ -360,6 +360,87 @@ window.addEventListener("load", async () => {
 });
 </script>
 
+<script>
+// ======== Sincronizar índice lateral con la nota actual (con autocierre de ramas viejas) ========
+window.addEventListener("load", () => {
+  const params = new URLSearchParams(window.location.search);
+  const currentFile = params.get("file");
+  if (!currentFile) return;
+
+  // normaliza rutas para poder compararlas sin líos de mayúsculas/espacios/encoding
+  const normalize = str =>
+    str
+      .replace(/\\/g, "/")
+      .replace(/%2F/gi, "/")
+      .replace(/%20/gi, " ")
+      .trim()
+      .toLowerCase();
+
+  // extrae sólo la parte después de ?file= de un href tipo
+  // "markdown-viewer.html?file=Ciberseguridad/THM/..."
+  function extractFileFromHref(href) {
+    if (!href) return "";
+    const i = href.indexOf("?file=");
+    if (i === -1) return href;
+    return href.substring(i + 6); // 6 = length of "?file="
+  }
+
+  function highlightInIndex() {
+    const links = document.querySelectorAll("#dynamic-index a.tree-link");
+    if (links.length === 0) return false; // índice aún no generado
+
+    // 1. Encontrar el <a> cuyo destino coincide con la nota actual
+    let currentLink = null;
+    for (const link of links) {
+      const linkFilePart = extractFileFromHref(link.getAttribute("href"));
+      if (normalize(currentFile) === normalize(linkFilePart)) {
+        currentLink = link;
+        break;
+      }
+    }
+
+    if (!currentLink) {
+      console.warn("⚠️ No se encontró el enlace actual en el índice:", currentFile);
+      return false;
+    }
+
+    // 2. Quitar highlight anterior
+    document.querySelectorAll("#dynamic-index .tree-link.current-page")
+      .forEach(el => el.classList.remove("current-page"));
+
+    // 3. Marcar el actual
+    currentLink.classList.add("current-page");
+
+    // 4. Cerrar TODAS las ramas <details> primero…
+    const allDetails = document.querySelectorAll("#dynamic-index details");
+    allDetails.forEach(det => { det.open = false; });
+
+    // 5. …y ahora volver a abrir sólo la cadena padre de currentLink
+    let parent = currentLink.closest("details");
+    while (parent) {
+      parent.open = true;
+      parent = parent.parentElement?.closest("details");
+    }
+
+    // 6. Scroll suave al enlace actual (útil si estás en otra zona del índice)
+    setTimeout(() => {
+      currentLink.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 200);
+
+    console.log("🌿 Índice sincronizado con:", currentLink.textContent.trim());
+    return true;
+  }
+
+  // Intentar varias veces hasta que generate-index.js haya construido el árbol
+  let tries = 0;
+  const interval = setInterval(() => {
+    tries++;
+    const ok = highlightInIndex();
+    if (ok || tries > 30) clearInterval(interval);
+  }, 200);
+});
+</script>
+
 
 </body>
 </html>
