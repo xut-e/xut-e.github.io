@@ -54,10 +54,18 @@
     <!-- CONTENIDO MARKDOWN -->
     <section class="markdown-body">
       <h1 id="md-title">Cargando…</h1>
+
       <div id="md-content" style="font-size:.95rem; line-height:1.5;">
         Cargando contenido del apunte…
       </div>
+
+      <div class="nav-buttons">
+        <button id="prev-note" title="Anterior">&lt;</button>
+        <button id="next-note" title="Siguiente">&gt;</button>
+      </div>
     </section>
+
+
   </main>
 
   <!-- FOOTER -->
@@ -221,6 +229,134 @@ window.addEventListener("load", () => {
       }, 300); // coincide con el CSS
     }
   });
+});
+</script>
+
+
+<script>
+window.addEventListener("load", async () => {
+  const params = new URLSearchParams(window.location.search);
+  const currentFile = params.get("file");
+  if (!currentFile) {
+    console.warn("⚠️ No se ha pasado parámetro ?file=");
+    return;
+  }
+
+  console.log("📄 Archivo actual:", currentFile);
+
+  const prevBtn = document.getElementById("prev-note");
+  const nextBtn = document.getElementById("next-note");
+
+  try {
+    const res = await fetch("index.json");
+    if (!res.ok) throw new Error("No se pudo cargar index.json");
+    const data = await res.json();
+
+    // === Función recursiva para recorrer el árbol ===
+    function flattenTree(node, path = "") {
+      if (!node) return [];
+      let files = [];
+
+      if (Array.isArray(node)) {
+        node.forEach(n => files.push(...flattenTree(n, path)));
+      } else if (node.type === "directory") {
+        const newPath = path ? `${path}/${node.name}` : node.name;
+
+        if (node.name === "Z Imagenes") {
+          console.log("🧩 Ignorado directorio de imágenes:", newPath);
+          return files;
+        }
+        node.contents?.forEach(n => files.push(...flattenTree(n, newPath)));
+      } else if (node.type === "file" && node.name.endsWith(".md")) {
+        const filePath = `${path}/${node.name}`;
+        const parts = filePath.split("/");
+        const fileName = node.name;
+        const parentName = parts[parts.length - 2];
+
+        // Reglas de exclusión
+        if (fileName.replace(/\.md$/, "") === parentName) {
+          console.log("⛔ Ignorado índice de carpeta:", filePath);
+          return files;
+        }
+        if (/^0\./.test(fileName)) {
+          console.log("⛔ Ignorado (empieza por 0.):", filePath);
+          return files;
+        }
+        if (/^\d+\.\s/.test(fileName) && parts.length === 2) {
+          console.log("⛔ Ignorado índice de curso:", filePath);
+          return files;
+        }
+
+        files.push(filePath);
+      }
+      return files;
+    }
+
+    // === Si el nodo raíz es ".", entrar en sus contents ===
+    const root = data[0]?.name === "." ? data[0].contents : data;
+    const allFiles = flattenTree(root);
+
+    console.log("✅ Archivos válidos encontrados:", allFiles.length);
+    console.table(allFiles);
+
+    const normalize = str =>
+      str.replace(/\\/g, "/").replace(/%20/g, " ").trim().toLowerCase();
+
+    // Permitir coincidencias aunque haya prefijos distintos
+    const idx = allFiles.findIndex(p => normalize(currentFile).endsWith(normalize(p)));
+    console.log("🔎 Índice actual:", idx);
+
+    if (idx === -1) {
+      console.warn("⚠️ Archivo no encontrado en index.json:", currentFile);
+      return;
+    }
+
+    // ======= Determinar prefijo actual =======
+    const matchPrefix = currentFile.match(/^([^/]+\/THM)\//);
+    const basePrefix = matchPrefix ? matchPrefix[1] : "Ciberseguridad/THM";
+    console.log("📁 Prefijo base detectado:", basePrefix);
+
+    // ======= Función para construir la ruta correcta =======
+    function buildFullPath(target) {
+      if (target.startsWith(basePrefix) || target.startsWith("Ciberseguridad/"))
+        return target;
+
+      if (target.startsWith("THM"))
+        return `Ciberseguridad/${target}`;
+
+      return `${basePrefix}/${target}`;
+    }
+
+    // ======= Configurar botones =======
+    if (idx > 0) {
+      prevBtn.addEventListener("click", () => {
+        const target = allFiles[idx - 1];
+        const fullPath = buildFullPath(target);
+        console.log("⬅️ Navegando a anterior:", fullPath);
+        window.location.href = `markdown-viewer.html?file=${encodeURIComponent(fullPath)}`;
+      });
+    } else {
+      prevBtn.disabled = true;
+      prevBtn.style.opacity = 0.5;
+      prevBtn.style.cursor = "default";
+    }
+
+    if (idx < allFiles.length - 1) {
+      nextBtn.addEventListener("click", () => {
+        const target = allFiles[idx + 1];
+        const fullPath = buildFullPath(target);
+        console.log("➡️ Navegando a siguiente:", fullPath);
+        window.location.href = `markdown-viewer.html?file=${encodeURIComponent(fullPath)}`;
+      });
+    } else {
+      nextBtn.disabled = true;
+      nextBtn.style.opacity = 0.5;
+      nextBtn.style.cursor = "default";
+    }
+
+  } catch (err) {
+    console.error("💥 Error en navegación entre notas:", err);
+  }
 });
 </script>
 

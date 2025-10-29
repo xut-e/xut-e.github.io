@@ -353,3 +353,29 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   overflow-y: auto; /* si hay mucho contenido, se puede hacer scroll */
 }
 
+/* ===== Navegación entre notas ===== */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.nav-buttons button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.nav-buttons button:hover {
+  background: var(--accent-hover);
+  transform: scale(1.1);
+}
+
