@@ -25,7 +25,6 @@
      <nav class="site-nav" aria-label="Principal">
        <ul>
          <li><a href="/" aria-current="page">Inicio</a></li>
-         <li><a href="#indice">Apuntes</a></li>
          <li><a href="/sobre-mi.html">Sobre mí</a></li>
          <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
        </ul>
@@ -98,40 +97,55 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
 
 
   <script>
+// ======== Mostrar / Ocultar índice con persistencia (por defecto oculto en index.html) ========
 window.addEventListener("load", () => {
   const btn = document.getElementById("toggle-index");
   const aside = document.getElementById("indice");
   const pageShell = document.querySelector(".page-shell");
-
   if (!btn || !aside || !pageShell) return;
 
-  // Estado inicial
-  btn.textContent = "Ocultar índice";
-  btn.classList.add("active");
+  // --- Leer estado previo de localStorage ---
+  // Si no hay valor guardado, por defecto lo ponemos en "false" (oculto)
+  const savedState = localStorage.getItem("indexVisible");
+  const isVisible = savedState === null ? false : savedState === "true";
 
-  btn.addEventListener("click", (e) => {
+  // --- Aplicar estado inicial ---
+  if (isVisible) {
+    aside.classList.remove("hidden");
+    pageShell.classList.remove("full-width");
+    btn.textContent = "Ocultar índice";
+    btn.classList.add("active");
+  } else {
+    aside.classList.add("hidden");
+    pageShell.classList.add("full-width");
+    btn.textContent = "Mostrar índice";
+    btn.classList.remove("active");
+  }
+
+  // --- Escuchar clic para alternar estado ---
+  btn.addEventListener("click", e => {
     e.preventDefault();
+    const currentlyHidden = aside.classList.contains("hidden");
 
-    const isHidden = aside.classList.contains("hidden");
-
-    if (isHidden) {
+    if (currentlyHidden) {
       // Mostrar índice
       aside.classList.remove("hidden");
       pageShell.classList.remove("full-width");
       btn.textContent = "Ocultar índice";
       btn.classList.add("active");
+      localStorage.setItem("indexVisible", "true");
     } else {
-      // Animación de colapso
+      // Ocultar índice (con animación)
       aside.classList.add("collapsing");
       pageShell.classList.add("full-width");
       btn.textContent = "Mostrar índice";
       btn.classList.remove("active");
+      localStorage.setItem("indexVisible", "false");
 
-      // Espera la animación antes de ocultar
       setTimeout(() => {
         aside.classList.remove("collapsing");
         aside.classList.add("hidden");
-      }, 300); // coincide con el CSS
+      }, 300); // coincide con la transición CSS
     }
   });
 });

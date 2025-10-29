@@ -379,3 +379,14 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   transform: scale(1.1);
 }
 
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  font-family: var(--font-mono);
+  white-space: normal;
+  word-break: break-word;
+}
+

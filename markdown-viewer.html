@@ -32,7 +32,6 @@
 	    <nav class="site-nav" aria-label="Principal">
 	      <ul>
 		<li><a href="/">Inicio</a></li>
-		<li><a href="/#indice">Apuntes</a></li>
 		<li><a href="/sobre-mi.html">Sobre mí</a></li>
 		<li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
 	      </ul>
@@ -53,6 +52,7 @@
 
     <!-- CONTENIDO MARKDOWN -->
     <section class="markdown-body">
+      <div id="breadcrumb" class="breadcrumb">Cargando ruta...</div>
       <h1 id="md-title">Cargando…</h1>
 
       <div id="md-content" style="font-size:.95rem; line-height:1.5;">
@@ -309,7 +309,34 @@ window.addEventListener("load", async () => {
 
     // === Si el nodo raíz es ".", entrar en sus contents ===
     const root = data[0]?.name === "." ? data[0].contents : data;
-    const allFiles = flattenTree(root);
+   
+    let allFiles = flattenTree(root);
+
+// 🔢 Orden natural: 1.md < 2.md < 10.md
+allFiles.sort((a, b) => {
+  const clean = s => s.toLowerCase().replace(/\\/g, "/");
+  const aParts = clean(a).split("/");
+  const bParts = clean(b).split("/");
+  const aName = aParts[aParts.length - 1];
+  const bName = bParts[bParts.length - 1];
+
+  // Extraer números iniciales (por ejemplo, "10. " → 10)
+  const numA = parseFloat(aName.match(/^(\d+(?:\.\d+)?)/)?.[1]) || 0;
+  const numB = parseFloat(bName.match(/^(\d+(?:\.\d+)?)/)?.[1]) || 0;
+
+  if (aParts.slice(0, -1).join("/") !== bParts.slice(0, -1).join("/")) {
+    // Mantiene orden jerárquico (por carpeta)
+    return clean(a).localeCompare(clean(b));
+  }
+
+  // Dentro de la misma carpeta, ordena por número si existe
+  if (numA !== numB) return numA - numB;
+
+  // Si no hay número, usa orden alfabético
+  return aName.localeCompare(bName, undefined, { numeric: true });
+});
+
+
 
     console.log("✅ Archivos válidos encontrados:", allFiles.length);
     console.table(allFiles);
@@ -455,6 +482,78 @@ window.addEventListener("load", () => {
   }, 200);
 });
 </script>
+
+
+<script>
+window.addEventListener("load", async () => {
+  const params = new URLSearchParams(window.location.search);
+  const currentFile = params.get("file");
+  if (!currentFile) return;
+
+  const breadcrumbEl = document.getElementById("breadcrumb");
+  if (!breadcrumbEl) return;
+
+  try {
+    const res = await fetch("index.json");
+    if (!res.ok) throw new Error("No se pudo cargar index.json");
+    const data = await res.json();
+
+    // 🔍 Busca recursivamente el archivo y devuelve la jerarquía
+    function findPath(node, target, path = []) {
+      if (!node) return null;
+      if (Array.isArray(node)) {
+        for (const child of node) {
+          const found = findPath(child, target, path);
+          if (found) return found;
+        }
+        return null;
+      }
+      if (node.type === "directory") {
+        const newPath = [...path, node.name];
+        for (const c of node.contents || []) {
+          const found = findPath(c, target, newPath);
+          if (found) return found;
+        }
+      } else if (node.type === "file") {
+        const filePath = [...path, node.name].join("/");
+        const normalize = s => s.replace(/\\/g, "/").replace(/%20/g, " ").toLowerCase();
+        if (normalize(target).endsWith(normalize(filePath))) {
+          return [...path, node.name];
+        }
+      }
+      return null;
+    }
+
+    const root = data[0]?.name === "." ? data[0].contents : data;
+    const pathArr = findPath(root, currentFile);
+
+    if (pathArr) {
+      // ✅ Detectar automáticamente si estás en THM, HTB, Maquinas, etc.
+      const baseFolder = pathArr.find(p =>
+        ["THM", "HTB", "Maquinas"].includes(p)
+      ) || pathArr[0];
+
+      // 🔧 Generar ruta completa con números intactos
+      const nicePath = pathArr
+        .filter(p => p !== "." && p !== "content")
+        .map(p => p.replace(/\.md$/i, ""))
+        .join(" > ");
+
+      // 🪶 Mostrar solo desde la carpeta base (ej. THM)
+      const idx = nicePath.indexOf(baseFolder);
+      breadcrumbEl.textContent =
+        idx !== -1 ? nicePath.slice(idx) : nicePath;
+    } else {
+      breadcrumbEl.textContent = "(Ruta no encontrada)";
+    }
+
+  } catch (e) {
+    console.error("💥 Error generando breadcrumb:", e);
+    breadcrumbEl.textContent = "(Error al cargar ruta)";
+  }
+});
+</script>
+
 
 
 </body>
