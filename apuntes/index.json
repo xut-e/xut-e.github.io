@@ -1,9 +1,5 @@
 [
   {
-    "title": "Pasted image 20251023163828.png",
-    "path": "/apuntes/z-imagenes/pasted-image-20251023163828-png/"
-  },
-  {
     "title": "1. Pre Security",
     "path": "/apuntes/thm/1-pre-security/1-pre-security/"
   },
@@ -574,6 +570,66 @@
   {
     "title": "5. Networking",
     "path": "/apuntes/thm/2-cyber-security-101/5-networking/5-networking/"
+  },
+  {
+    "title": "2. Cyber Security Training for Large Organisations",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/3-training-impact-on-teams/2-cyber-security-training-for-large-organisations/"
+  },
+  {
+    "title": "4. Vendor Selection",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/3-training-impact-on-teams/4-vendor-selection/"
+  },
+  {
+    "title": "3. Write a Cyber Security Training Investment Proposal",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/3-training-impact-on-teams/3-write-a-cyber-security-training-investment-proposal/"
+  },
+  {
+    "title": "1. Understanding the Impact of Cyber Security Trainign",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/3-training-impact-on-teams/1-understanding-the-impact-of-cyber-security-trainign/"
+  },
+  {
+    "title": "0. Training Impact on Teams",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/3-training-impact-on-teams/0-training-impact-on-teams/"
+  },
+  {
+    "title": "0. Careers in Cyber",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/2-careers-in-cyber/0-careers-in-cyber/"
+  },
+  {
+    "title": "0. Security Principles",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/0-security-principles/"
+  },
+  {
+    "title": "5. Defence-in-Depth",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/5-defence-in-depth/"
+  },
+  {
+    "title": "4. Fundamental Concepts of Security Models",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/4-fundamental-concepts-of-security-models/"
+  },
+  {
+    "title": "6. ISO - IEC 19249",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/6-iso-iec-19249/"
+  },
+  {
+    "title": "3. DAD",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/3-dad/"
+  },
+  {
+    "title": "8. Threat versus Risk",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/8-threat-versus-risk/"
+  },
+  {
+    "title": "7. Zero Trust versus Trust but Verify",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/7-zero-trust-versus-trust-but-verify/"
+  },
+  {
+    "title": "2. CIA",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/2-cia/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/1-introduction/"
   },
   {
     "title": "0. Defensive Security Intro",

@@ -69,6 +69,7 @@ Involucra usar scripts como de PowerShell y Python para automatizar tareas y pro
 --------------------------------
 <h2>Suite Sysinternals</h2>
 La Suite Sysinternals es una colección de utilidades de sistema avanzadas diseñada para ayudar a los profesionales de IT y desarrolladores a dirigir, resolver problemas y diagnosticar los sistemas Windows.
+
 - **Autoruns:** Muestra lo que lo ejecutables están configurados para hacer durante el arranque del sistema.
 - **Process Explorer:** Ofrece información sobre procesos corriendo.
 - **Process Monitor:** Monitoriza y registra procesos y actividades de hilos en tiempo real.
