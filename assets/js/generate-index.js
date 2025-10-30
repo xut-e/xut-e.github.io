@@ -195,32 +195,52 @@
     return span;
   }
 
-  // 5. Montar raíz "content/Ciberseguridad"
-  const raiz = treeData[0]?.contents || [];
+// 5. Montar raíz dinámica (compatible con nuevas estructuras)
+let raiz;
 
-  const treeWrapper = document.createElement("nav");
-  treeWrapper.className = "tree-nav";
+// Caso 1: formato antiguo con raíz "."
+if (Array.isArray(treeData) && treeData[0]?.name === ".") {
+  raiz = treeData[0].contents || [];
+}
+// Caso 2: formato nuevo (ya empieza por "Ciberseguridad" u otra carpeta)
+else if (Array.isArray(treeData)) {
+  raiz = treeData;
+}
+// Caso 3: un único objeto raíz (no array)
+else if (treeData && typeof treeData === "object" && treeData.name) {
+  raiz = [treeData];
+}
+// Fallback vacío
+else {
+  raiz = [];
+}
 
-  const topUL = document.createElement("ul");
+// === Construir el árbol visual (DOM) ===
+const treeWrapper = document.createElement("nav");
+treeWrapper.className = "tree-nav";
 
-  sortContentsNatural(raiz).forEach(sectionNode => {
-    if (sectionNode.name === "Z Imagenes") return;
-    if (sectionNode.type !== "directory") return;
+const topUL = document.createElement("ul");
 
-    const li = document.createElement("li");
-    const built = buildNode(sectionNode, "content/Ciberseguridad");
-    if (built) {
-      li.appendChild(built);
-      topUL.appendChild(li);
-    }
-  });
+// Ordena y recorre la raíz detectada
+sortContentsNatural(raiz).forEach(sectionNode => {
+  if (sectionNode.name === "Z Imagenes") return;
+  if (sectionNode.type !== "directory") return;
 
-  treeWrapper.appendChild(topUL);
+  const li = document.createElement("li");
+  const built = buildNode(sectionNode, sectionNode.name);
+  if (built) {
+    li.appendChild(built);
+    topUL.appendChild(li);
+  }
+});
 
-  // 6. Pintar en el sidebar
-  sidebarContainer.innerHTML = "";
-  sidebarContainer.appendChild(treeWrapper);
+treeWrapper.appendChild(topUL);
 
-  
+// 6. Pintar en el sidebar
+sidebarContainer.innerHTML = "";
+sidebarContainer.appendChild(treeWrapper);
+	
+
+
 })();
 
