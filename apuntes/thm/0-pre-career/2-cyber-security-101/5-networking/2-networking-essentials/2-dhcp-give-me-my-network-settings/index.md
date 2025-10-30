@@ -1,0 +1,37 @@
+---
+layout: apunte
+title: "2. DHCP - Give Me My Network Settings"
+---
+
+Cuando vas, por ejemplo, a una cafetería. Abres tu ordenador y éste, automáticamente recibe una dirección IP y de esta manera puedes conectarte a Internet sin tener que haber hecho nada.
+
+Cuando queremos acceder a una red, al menos necesitamos configurar:
+
+- Dirección IP con su correspondiente máscara de subred.
+- Router o gateway.
+- Servidor DNS.
+
+Configurar estas manualmente es una buena opción, sobre todo para servidores. Estos no necesitan moverse, además, la gente que quiere conectarse a ellos espera hacerlo en una IP fija.
+
+De todas formas, tener una forma automatizada de hacer esto es muy buena opción para dispositivo móviles, pues evita trabajo y conflictos de coincidencia, que dejarían a uno de los dispositivos sin poder acceder a la red.
+
+La solución para esto es DHCP, un protocolo que se basa en UDP. El servidor escucha UDP en el puerto 67 y el cliente manda desde UDP puerto 68.
+
+DHCP sigue cuatro pasos: Descubrir, ofrecer, pedir y reconocer.
+
+![](/apuntes/img/72.jpg)
+
+1. Discover: El cliente bropadcastea un mensaje DHCPDICOVER buscando el servidor local DHCP si existe.
+2. Offer: EL servidor le responde con un mensaje DHCPOFFER con la dirección IP disponible.
+3. Request: El cliente responde con DHCPREQUEST para indicar que acepta la dirección IP asignada.
+4. Acknowledge: El servidor responde con un mensaje DHCPACK para confirmar que la dirección IP se le ha sido asignada al cliente.
+
+![](/apuntes/img/073.jpg)
+
+El cliente empieza la conexión sin dirección IP, sólo MAC. En el primer y tercer paso no tiene IP todavía. El cliente se comunica desde la "IP" `0.0.0.0` y manda la comunicación junto con la MAC a la broadcast: `255.255.255.255`. 
+
+Al final del proceso DHCP, el dispositivo ha recibido:
+
+- La IP para acceder a recursos en la red.
+- La gateway para routear los paquetes fuera de la red.
+- Un servidor DNS para resolver nombres de dominios.

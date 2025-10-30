@@ -1,0 +1,32 @@
+---
+layout: apunte
+title: "5. Firewall and Network Protection"
+---
+
+<h2>¿Qué es un firewall?</h2>
+
+El tráfico fluctúa por nuestros dispositivos a través de los puertos. El firewall es lo que controla qué sí y qué no entra.
+
+Dentro de la pestaña de cortafuegos y protección de red tenemos:
+
+- Dominio: El perfil de dominio aplica a las redes donde el sistema host puede autentificarse ante un dominio controlador.
+- Privado: El perfil privado es un perfil asignado por el usuario y es usado para designar redes privadas o domésticas.
+- Público: El perfil por defecto, usado para designar redes públicas como WiFi's de aeropuertos, cafeterías, etc.
+
+Al hacer click en cualquiera de los perfiles, otra pestaña con dos opciones aparecerá:
+
+- Encender/Apagar firewall.
+-  Bloquear todas las conexiones entrantes.
+
+>[!WARNING] A menos que sepas exactamente lo que estás haciendo, es recomendable que dejes el firewall encendido.
+
+----------------
+<h2>Permitir una app en el firewall</h2>
+En este menú puedes decidir si darle permisos de entrada a una app a través del firewall. Algunas apps ofrecen información detallada en `Details`.
+
+------------------
+<h2>Ajustes avanzados</h2>
+Configurar tú mismo el firewall es sólo para usuarios avanzados. Para buenas prácticas pincha [aquí](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/best-practices-configuring).
+
+>[!TIP] El comando para abrir el Windows Defender Firewall es `WF.msc`.
+

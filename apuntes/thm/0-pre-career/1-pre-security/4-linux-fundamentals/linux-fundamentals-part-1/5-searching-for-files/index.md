@@ -1,0 +1,43 @@
+---
+layout: apunte
+title: "5. Searching for files"
+---
+
+Una de las características principales de Linux es lo eficiente que puedes ser con él.
+
+Para encontrar archivos en el sistema no hace falta usar cd y ls constantemente sino que podemos usar comandos como find para automatizar la búsqueda.
+
+---------------------
+<h2>Usando Find</h2>
+Si sabemos el nombre exacto de lo que buscamos pero no nos acordamos dónde está:
+
+```bash
+tryhackme@linux1:~$ find -name passwords.txt
+./floder1/passwords.txt
+```
+
+Si no nos acordamos del nombre entero pero si de la extensión podríamos realizar una búsqueda de la siguiente manera:
+
+```bash
+tryhackme@linux1:~$ find -name *.txt
+./folder1/passwords.txt
+./Documents/todo.txt
+```
+
+----------------------
+<h2>Usando Grep</h2>
+El comando grep nos permite buscar contenidos de un archivo específico.
+
+Tomemos como ejemplo el archivo access.log que tiene 244 líneas:
+
+```bash
+tryhackme@linux1:~$ wc -l access.log
+244 access.log
+```
+
+Podemos usar grep para filtrar el contenido que nos interese, en este caso ver si la IP 81.143.211.90  se encuentra en el archivo:
+
+```bash
+tryhackme@linux1:~$ grep "81.143.211.90" access.log
+81.143.211.90 - - [25/Mar/2021:11:17 + 0000] "GET / HTTP/1.1" 200 417 "-" "Mozilla/5.0 (Linux; Android 7.0; Moto G(4))"
+```

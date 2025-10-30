@@ -1,0 +1,45 @@
+---
+layout: apunte
+title: "8. HTTP Response - Headers and Body"
+---
+
+<h2>Headers de Respuesta</h2>
+Cuando un servidor web responde a una petición HTTP, incluye los headers de respuesta HTTP, que son pares de llave-valor. Estos, ofrecen información importante sobre la respuesta y le dicen al cliente cómo manejarla.
+
+![](/apuntes/img/139.jpg)
+
+------------------
+<h2>Headers de Respuesta Requeridos</h2>
+Algunos headers de respuesta son cruciales para que la respuesta HTTP funcione correctamente. Dan información esencial que tanto el servidor como el cliente necesitan para procesar todo correctamente. Aquí hay algunos importantes:
+
+- **Date**
+  Ejemplo: `Date: Fri, 23 Aug 2024 10:43:21 GMT`
+  Este header muestra la fecha y hora exactas de la respuesta.
+  
+- **Content-Type**
+  Ejemplo: `Content-Type: text/html; charset=utf-8`
+  Le dice al cliente qué tipo de contenido estará recibiendo. También incluye el set de caracteres ( como UTF-8) para ayudar a mostrarlo correctamente.
+  
+- **Server**
+  Ejemplo: `Server: nginx`
+  Este header muestra qué tipo de software está manejando la petición. Es bueno para hacer debugging, pero también puede revelar información que puede ser útil para los atacantes.
+
+--------------------
+<h2>Otros Headers de Respuesta Comunes</h2>
+A parte de los esenciales, hay otros headers comunes que dan instrucciones adicionales al cliente o al navegador y ayudan a controlar cómo la respuesta debería ser manejada.
+
+- **Set-Cookie**
+  Ejemplo: `Set-Cookie: sessionId=38af1337es7a8`
+  Este manda cookies desde el servidor al cliente, las cuales el cliente almacena y manda de vuelta con peticiones futuras. Para mantenerlas seguras, asegúrate de que están configuradas con las flags `HttpOnly` y `Secure`.
+  
+- **Cache-Control**
+  Ejemplo: `Cache-Control: max-age=600`
+  Este header le dice al cliente cuánto tempo puede almacenar la respuesta antes de tener que comprobar con el servidor de nuevo. También puede hacer que cierta información sensible no se cachee, usando `no-cache`.
+  
+- **Location**
+  Ejemplo: `Location: /index.html`
+  Este se utiliza en las respuestas de redirección (3XX). Le indica al cliente dónde ir después de que el recurso se haya movido.
+
+------------------------
+<h2>Cuerpo de Respuesta</h2>
+El cuerpo de respuesta HTTP es donde la información real vive, cosas como HTML, JSON, imágenes, etc, que el servidor manda de vuelta al cliente. Para prevenir ataques de inyección, como XSS, sanitiza siempre cualquier información antes de incluirla en la respuesta.
