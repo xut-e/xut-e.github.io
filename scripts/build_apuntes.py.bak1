@@ -36,10 +36,10 @@ def copy_image(src: Path, dst: Path):
     shutil.copy2(src, dst)
 
 # -----------------
-# Paso 1: indexar todas las notas
+# Paso 1: indexar todas las notas y decidir URLs
 # -----------------
 
-notes = []
+notes = []  # cada item: {title, src, url}
 
 def platform_slug(parts_after_ciberseguridad):
     return slugify(parts_after_ciberseguridad[0])
@@ -63,7 +63,7 @@ walk_md_files()
 title_to_url = {n["title"]: n["url"] for n in notes}
 
 # -----------------
-# Paso 2: procesar notas
+# Paso 2: procesar cada nota .md
 # -----------------
 
 def fix_internal_links(md_text: str) -> str:
@@ -90,7 +90,6 @@ for n in notes:
 # -----------------
 # Paso 3: copiar imágenes
 # -----------------
-
 def copy_all_images():
     src_img_dir = CONTENT_ROOT / "Z Imagenes"
     if src_img_dir.exists():
@@ -100,7 +99,7 @@ def copy_all_images():
 copy_all_images()
 
 # -----------------
-# Paso 4: sidebar.html (sin cambios)
+# Paso 4: generar sidebar.html (idéntico)
 # -----------------
 tree = {}
 for n in notes:
@@ -134,44 +133,37 @@ sidebar_html += "</nav>\n"
 write_file(INCLUDES_ROOT / "sidebar.html", sidebar_html)
 
 # -----------------
-# Paso 5: index.json plano
+# Paso 5: generar index.json plano
 # -----------------
 index_json = [{"title": n["title"], "path": n["url"]} for n in notes]
 write_file(OUTPUT_ROOT / "index.json", json.dumps(index_json, ensure_ascii=False, indent=2))
 
 # -----------------
-# Paso 6: arbol.json jerárquico (mantiene números + ignora .obsidian)
+# Paso 6: generar arbol.json jerárquico (tipo Obsidian)
 # -----------------
 def build_tree(path: Path):
-    # Ignorar carpetas ocultas y Z Imagenes
-    if path.name in ("Z Imagenes", ".obsidian") or path.name.startswith("."):
+    if path.name == "Z Imagenes":
         return None
-
     node = {"name": path.name}
-
     if path.is_dir():
         node["type"] = "directory"
         contents = []
         for child in sorted(path.iterdir()):
             child_node = build_tree(child)
             if child_node:
+                # Para archivos .md añadimos referencia al padre
                 if child.is_file():
                     child_node["parent"] = path.name
                 contents.append(child_node)
         node["contents"] = contents
-
     elif path.is_file() and path.suffix.lower() == ".md":
         name = path.stem
         parent = path.parent.name
-
-        # === Reglas de exclusión ===
+        # Ignorar reglas:
         if name.startswith("0."):
             return None
-        clean_file = re.sub(r"^\d+\.\s*", "", name).strip().lower()
-        clean_parent = re.sub(r"^\d+\.\s*", "", parent).strip().lower()
-        if clean_file == clean_parent:
+        if re.sub(r"^\d+\.\s*", "", name).lower() == re.sub(r"^\d+\.\s*", "", parent).lower():
             return None
-
         node["type"] = "file"
         rel_path = path.relative_to(CONTENT_ROOT)
         node["path"] = f"content/Ciberseguridad/{rel_path.as_posix()}"
@@ -182,5 +174,5 @@ def build_tree(path: Path):
 arbol = build_tree(CONTENT_ROOT)
 write_file(OUTPUT_ROOT / "arbol.json", json.dumps(arbol, ensure_ascii=False, indent=2))
 
-print("✅ Apuntes generados correctamente con index.json, sidebar.html y arbol.json (mantiene números, ignora .obsidian)")
+print("✅ Apuntes generados correctamente con index.json, sidebar.html y arbol.json")
 

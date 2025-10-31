@@ -3,11 +3,6 @@
   "type": "directory",
   "contents": [
     {
-      "name": ".obsidian",
-      "type": "directory",
-      "contents": []
-    },
-    {
       "name": "THM",
       "type": "directory",
       "contents": [
