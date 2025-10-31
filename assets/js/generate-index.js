@@ -175,6 +175,23 @@
       }
     });
 
+    // === Cerrar las demás unidades al abrir una nueva ===
+document.addEventListener("click", e => {
+  if (e.target.matches(".tree-nav summary")) {
+    // Esperar un tick para que se actualice el estado 'open'
+    setTimeout(() => {
+      const allDetails = document.querySelectorAll(".tree-nav details");
+      allDetails.forEach(d => {
+        // Si no es el mismo <details> ni un ancestro de la carpeta clicada → se colapsa
+        if (d !== e.target.parentElement && !d.contains(e.target.parentElement)) {
+          d.open = false;
+        }
+      });
+    }, 50);
+  }
+});
+
+
     container.appendChild(nav);
 
     // 🔥 IMPORTANTE: ahora que ya existe el árbol en el DOM → resalta
