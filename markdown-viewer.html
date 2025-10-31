@@ -87,9 +87,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   </footer>
 
   <!-- CARGAR AÑO -->
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
   <!-- CARGAR ÍNDICE -->
   <script src="assets/js/generate-index.js"></script>
@@ -102,9 +100,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     const pageShell = document.querySelector(".page-shell");
     if (!btn || !aside || !pageShell) return;
 
-    const savedState = localStorage.getItem("indexVisible") ?? "true";
-    const isVisible = savedState === "true";
-
+    const isVisible = localStorage.getItem("indexVisible") === "true";
     if (isVisible) {
       aside.classList.remove("hidden");
       pageShell.classList.remove("full-width");
@@ -155,10 +151,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       return;
     }
 
-    const realPath = fileParam.startsWith("content/")
-      ? fileParam
-      : "content/" + fileParam;
-
+    const realPath = fileParam.startsWith("content/") ? fileParam : "content/" + fileParam;
     const lower = realPath.toLowerCase();
 
     if (lower.endsWith(".pdf")) {
@@ -203,123 +196,152 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   })();
   </script>
 
-  <!-- SINCRONIZAR ÍNDICE CON NOTA ACTUAL -->
+  <!-- ÍNDICE PERSISTENTE + BREADCRUMB + FLECHAS -->
   <script>
-  window.addEventListener("load", () => {
-    const params = new URLSearchParams(window.location.search);
-    const currentFile = params.get("file");
-    if (!currentFile) return;
+window.addEventListener("DOMContentLoaded", async () => {
+  const params = new URLSearchParams(window.location.search);
+  const currentFile = params.get("file");
+  const breadcrumbEl = document.getElementById("breadcrumb");
+  const prevBtn = document.getElementById("prev-note");
+  const nextBtn = document.getElementById("next-note");
+  const aside = document.getElementById("indice");
 
-    const normalize = s => s.replace(/\\/g, "/").replace(/%20/g, " ").toLowerCase();
-    function extractFile(href) {
-      const i = href.indexOf("?file=");
-      return i === -1 ? href : href.substring(i + 6);
+  if (!currentFile) {
+    breadcrumbEl.textContent = "(Sin ruta)";
+    return;
+  }
+
+  try {
+    const res = await fetch("apuntes/arbol.json");
+    if (!res.ok) throw new Error("No se pudo cargar arbol.json");
+    const data = await res.json();
+
+    // === Recorre árbol ===
+    function flattenTree(node, path = "") {
+      if (!node) return [];
+      let files = [];
+      if (Array.isArray(node)) node.forEach(n => files.push(...flattenTree(n, path)));
+      else if (node.type === "directory") {
+        const newPath = path ? `${path}/${node.name}` : node.name;
+        if (node.name === "Z Imagenes") return files;
+        node.contents?.forEach(n => files.push(...flattenTree(n, newPath)));
+      } else if (node.type === "file" && node.name.endsWith(".md")) {
+        files.push(`${path}/${node.name}`);
+      }
+      return files;
     }
 
-    function highlightCurrent() {
+    const allFiles = flattenTree(data).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+    const normalize = s => s.replace(/\\/g, "/").replace(/%20/g, " ").toLowerCase();
+    const idx = allFiles.findIndex(f => normalize(currentFile).endsWith(normalize(f)));
+
+    // === Breadcrumb ===
+    const parts = currentFile.replace(/^content\/?/, "")
+      .split("/")
+      .filter(Boolean)
+      .map(seg => seg.replace(/\.md$/i, ""))
+      .map(seg => seg.replace(/-/g, " "))
+      .map(seg => seg.replace(/\b\w/g, c => c.toUpperCase()));
+    breadcrumbEl.textContent = parts.join(" > ") || "(Sin ruta)";
+
+    // === Estado persistente ===
+    const indexVisible = localStorage.getItem("indexVisible") === "true";
+    const savedBranches = JSON.parse(localStorage.getItem("indexOpenBranches") || "[]");
+
+    function highlightAndPersist(targetFile) {
       const links = document.querySelectorAll("#dynamic-index a.tree-link");
-      if (!links.length) return false;
+      if (!links.length) return;
+
+      document.querySelectorAll("#dynamic-index .tree-link.current-page")
+        .forEach(el => el.classList.remove("current-page"));
+
       let current = null;
       for (const l of links) {
-        if (normalize(currentFile) === normalize(extractFile(l.href))) {
+        const href = l.getAttribute("href") || "";
+        const file = href.split("?file=")[1];
+        if (normalize(file) === normalize(targetFile)) {
           current = l;
           break;
         }
       }
-      if (!current) return false;
+      if (!current) return;
 
-      document.querySelectorAll("#dynamic-index .tree-link.current-page")
-        .forEach(el => el.classList.remove("current-page"));
       current.classList.add("current-page");
 
+      // cerrar todo
       document.querySelectorAll("#dynamic-index details").forEach(d => d.open = false);
+      const opened = [];
       let parent = current.closest("details");
       while (parent) {
         parent.open = true;
+        opened.push(parent.querySelector("summary")?.textContent.trim());
         parent = parent.parentElement?.closest("details");
       }
-      current.scrollIntoView({ behavior: "smooth", block: "center" });
-      return true;
+      localStorage.setItem("indexOpenBranches", JSON.stringify(opened));
+      localStorage.setItem("indexLastFile", targetFile);
     }
 
-    let tries = 0;
-    const interval = setInterval(() => {
-      tries++;
-      if (highlightCurrent() || tries > 30) clearInterval(interval);
-    }, 200);
-  });
-  </script>
+    // === Esperar al árbol y restaurar ===
+    function restoreIndexState(targetFile) {
+      let tries = 0;
+      const interval = setInterval(() => {
+        tries++;
+        const ready = document.querySelectorAll("#dynamic-index a.tree-link").length > 0;
+        if (ready) {
+          clearInterval(interval);
+          highlightAndPersist(targetFile);
 
-  <!-- BREADCRUMB + FLECHAS FUNCIONALES -->
-  <script>
-  window.addEventListener("DOMContentLoaded", async () => {
-    const params = new URLSearchParams(window.location.search);
-    const currentFile = params.get("file");
-    const breadcrumbEl = document.getElementById("breadcrumb");
-    const prevBtn = document.getElementById("prev-note");
-    const nextBtn = document.getElementById("next-note");
-
-    if (!currentFile) {
-      breadcrumbEl.textContent = "(Sin ruta)";
-      return;
-    }
-
-    try {
-      const res = await fetch("apuntes/arbol.json");
-      if (!res.ok) throw new Error("No se pudo cargar arbol.json");
-      const data = await res.json();
-
-      function flattenTree(node, path = "") {
-        if (!node) return [];
-        let files = [];
-        if (Array.isArray(node)) {
-          node.forEach(n => files.push(...flattenTree(n, path)));
-        } else if (node.type === "directory") {
-          const newPath = path ? `${path}/${node.name}` : node.name;
-          if (node.name === "Z Imagenes") return files;
-          node.contents?.forEach(n => files.push(...flattenTree(n, newPath)));
-        } else if (node.type === "file" && node.name.endsWith(".md")) {
-          files.push(`${path}/${node.name}`);
+          // Reabre ramas guardadas
+          const details = document.querySelectorAll("#dynamic-index details summary");
+          const openList = JSON.parse(localStorage.getItem("indexOpenBranches") || "[]");
+          details.forEach(sum => {
+            const name = sum.textContent.trim();
+            if (openList.includes(name)) sum.parentElement.open = true;
+          });
         }
-        return files;
-      }
-
-      const allFiles = flattenTree(data).sort((a, b) =>
-        a.localeCompare(b, undefined, { numeric: true })
-      );
-      const normalize = s => s.replace(/\\/g, "/").replace(/%20/g, " ").toLowerCase();
-      const idx = allFiles.findIndex(f => normalize(currentFile).endsWith(normalize(f)));
-
-      // Breadcrumb
-      const parts = currentFile
-        .replace(/^content\/?/, "")
-        .split("/")
-        .filter(Boolean)
-        .map(seg => seg.replace(/\.md$/i, ""))
-        .map(seg => seg.replace(/-/g, " "))
-        .map(seg => seg.replace(/\b\w/g, c => c.toUpperCase()));
-
-      breadcrumbEl.textContent = parts.join(" > ") || "(Sin ruta)";
-
-      // Navegación
-      const goTo = i => {
-        const target = allFiles[i];
-        if (target) window.location.href = `markdown-viewer.html?file=${encodeURIComponent(target)}`;
-      };
-
-      if (idx > 0) prevBtn.onclick = () => goTo(idx - 1);
-      else prevBtn.disabled = true;
-
-      if (idx < allFiles.length - 1) nextBtn.onclick = () => goTo(idx + 1);
-      else nextBtn.disabled = true;
-
-    } catch (err) {
-      console.error("💥 Error breadcrumb/navegación:", err);
-      breadcrumbEl.textContent = "(Error al generar ruta)";
+        if (tries > 50) clearInterval(interval);
+      }, 200);
     }
-  });
-  </script>
 
-</body>
+    restoreIndexState(currentFile);
+
+    // === Navegación ===
+    const goTo = i => {
+      const target = allFiles[i];
+      if (!target) return;
+
+      // Guarda el estado actual ANTES de ir a la nueva página
+      const openBranches = [];
+      document.querySelectorAll("#dynamic-index details[open] > summary").forEach(s => {
+        openBranches.push(s.textContent.trim());
+      });
+      localStorage.setItem("indexOpenBranches", JSON.stringify(openBranches));
+      highlightAndPersist(target);
+
+      window.location.href = `markdown-viewer.html?file=${encodeURIComponent(target)}`;
+    };
+
+    if (idx > 0) prevBtn.onclick = () => goTo(idx - 1);
+    else prevBtn.disabled = true;
+
+    if (idx < allFiles.length - 1) nextBtn.onclick = () => goTo(idx + 1);
+    else nextBtn.disabled = true;
+
+    // Mantiene visibilidad
+    if (indexVisible) {
+      aside.classList.remove("hidden");
+      aside.classList.remove("collapsing");
+    } else {
+      aside.classList.add("hidden");
+    }
+
+  } catch (err) {
+    console.error("💥 Error índice/breadcrumb/navegación:", err);
+    breadcrumbEl.textContent = "(Error al generar ruta)";
+  }
+});
+</script>
+
+  </body>
 </html>
 
