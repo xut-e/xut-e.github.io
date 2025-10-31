@@ -216,7 +216,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     if (!res.ok) throw new Error("No se pudo cargar arbol.json");
     const data = await res.json();
 
-    // === Recorre árbol ===
     function flattenTree(node, path = "") {
       if (!node) return [];
       let files = [];
@@ -235,7 +234,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     const normalize = s => s.replace(/\\/g, "/").replace(/%20/g, " ").toLowerCase();
     const idx = allFiles.findIndex(f => normalize(currentFile).endsWith(normalize(f)));
 
-    // === Breadcrumb ===
     const parts = currentFile.replace(/^content\/?/, "")
       .split("/")
       .filter(Boolean)
@@ -244,80 +242,70 @@ window.addEventListener("DOMContentLoaded", async () => {
       .map(seg => seg.replace(/\b\w/g, c => c.toUpperCase()));
     breadcrumbEl.textContent = parts.join(" > ") || "(Sin ruta)";
 
-    // === Estado persistente ===
-    const indexVisible = localStorage.getItem("indexVisible") === "true";
-    const savedBranches = JSON.parse(localStorage.getItem("indexOpenBranches") || "[]");
-
-    function highlightAndPersist(targetFile) {
-      const links = document.querySelectorAll("#dynamic-index a.tree-link");
-      if (!links.length) return;
-
-      document.querySelectorAll("#dynamic-index .tree-link.current-page")
-        .forEach(el => el.classList.remove("current-page"));
-
-      let current = null;
-      for (const l of links) {
-        const href = l.getAttribute("href") || "";
-        const file = href.split("?file=")[1];
-        if (normalize(file) === normalize(targetFile)) {
-          current = l;
-          break;
-        }
-      }
-      if (!current) return;
-
-      current.classList.add("current-page");
-
-      // cerrar todo
-      document.querySelectorAll("#dynamic-index details").forEach(d => d.open = false);
-      const opened = [];
-      let parent = current.closest("details");
-      while (parent) {
-        parent.open = true;
-        opened.push(parent.querySelector("summary")?.textContent.trim());
-        parent = parent.parentElement?.closest("details");
-      }
-      localStorage.setItem("indexOpenBranches", JSON.stringify(opened));
-      localStorage.setItem("indexLastFile", targetFile);
+    // --- Normalización consistente ---
+    function normalizePathLikeIndex(raw) {
+      if (!raw) return "";
+      let s = decodeURIComponent(raw);
+      s = s.replace(/\\/g, "/").trim().replace(/\/{2,}/g, "/");
+      if (!s.toLowerCase().startsWith("content/")) s = "content/" + s;
+      return s.toLowerCase();
     }
 
-    // === Esperar al árbol y restaurar ===
-    function restoreIndexState(targetFile) {
+    // --- Actualizar índice ---
+    function updateIndexHighlight(targetFileRaw) {
+      const container = document.getElementById("dynamic-index");
+      if (!container) return;
+      const targetNorm = normalizePathLikeIndex(targetFileRaw);
+
+      const links = container.querySelectorAll("a.tree-leaf");
+      let currentLink = null;
+      links.forEach(a => {
+        const href = a.getAttribute("href") || "";
+        const fileParam = href.split("?file=")[1] || "";
+        const linkNorm = normalizePathLikeIndex(fileParam);
+        if (linkNorm === targetNorm) currentLink = a;
+      });
+      if (!currentLink) return;
+
+      container.querySelectorAll("a.tree-leaf.current-page").forEach(el => el.classList.remove("current-page"));
+      currentLink.classList.add("current-page");
+
+      container.querySelectorAll("details").forEach(d => (d.open = false));
+
+      const opened = [];
+      let parent = currentLink.closest("details");
+      while (parent) {
+        parent.open = true;
+        const sum = parent.querySelector(":scope > summary");
+        if (sum) opened.push(sum.textContent.trim());
+        parent = parent.parentElement?.closest("details");
+      }
+
+      localStorage.setItem("indexOpenBranches", JSON.stringify(opened));
+      localStorage.setItem("indexLastFile", targetFileRaw);
+
+      setTimeout(() => currentLink.scrollIntoView({ behavior: "smooth", block: "center" }), 100);
+    }
+
+    function waitForIndexThenHighlight(currentFileRaw) {
       let tries = 0;
       const interval = setInterval(() => {
         tries++;
-        const ready = document.querySelectorAll("#dynamic-index a.tree-link").length > 0;
+        const ready = document.querySelectorAll("#dynamic-index a.tree-leaf").length > 0;
         if (ready) {
           clearInterval(interval);
-          highlightAndPersist(targetFile);
-
-          // Reabre ramas guardadas
-          const details = document.querySelectorAll("#dynamic-index details summary");
-          const openList = JSON.parse(localStorage.getItem("indexOpenBranches") || "[]");
-          details.forEach(sum => {
-            const name = sum.textContent.trim();
-            if (openList.includes(name)) sum.parentElement.open = true;
-          });
+          updateIndexHighlight(currentFileRaw);
         }
-        if (tries > 50) clearInterval(interval);
-      }, 200);
+        if (tries > 60) clearInterval(interval);
+      }, 150);
     }
+    waitForIndexThenHighlight(currentFile);
 
-    restoreIndexState(currentFile);
-
-    // === Navegación ===
+    // --- Navegación con flechas ---
     const goTo = i => {
       const target = allFiles[i];
       if (!target) return;
-
-      // Guarda el estado actual ANTES de ir a la nueva página
-      const openBranches = [];
-      document.querySelectorAll("#dynamic-index details[open] > summary").forEach(s => {
-        openBranches.push(s.textContent.trim());
-      });
-      localStorage.setItem("indexOpenBranches", JSON.stringify(openBranches));
-      highlightAndPersist(target);
-
+      localStorage.setItem("indexLastFile", target);
       window.location.href = `markdown-viewer.html?file=${encodeURIComponent(target)}`;
     };
 
@@ -327,10 +315,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     if (idx < allFiles.length - 1) nextBtn.onclick = () => goTo(idx + 1);
     else nextBtn.disabled = true;
 
-    // Mantiene visibilidad
+    const indexVisible = localStorage.getItem("indexVisible") === "true";
     if (indexVisible) {
-      aside.classList.remove("hidden");
-      aside.classList.remove("collapsing");
+      aside.classList.remove("hidden", "collapsing");
     } else {
       aside.classList.add("hidden");
     }
@@ -342,6 +329,6 @@ window.addEventListener("DOMContentLoaded", async () => {
 });
 </script>
 
-  </body>
+</body>
 </html>
 
