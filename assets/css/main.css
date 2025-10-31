@@ -163,7 +163,7 @@ body {
   color: var(--accent);
 }
 .tree-nav details {
-  border-left: 1px solid var(--border-color);
+  border-left: none;
   margin-left: .4rem;
   padding-left: .5rem;
 }
@@ -398,7 +398,7 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
 }
 
 .tree-nav details {
-  border-left: 1px solid var(--border-color);
+  border-left: none;
   margin-left: 0.6rem;
   padding-left: 0.8rem;
 }
