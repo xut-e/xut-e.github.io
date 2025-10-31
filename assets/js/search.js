@@ -47,22 +47,20 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
   function extractContext(content, query) {
-    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const regex = new RegExp(`([^.!?\\n]*\\b${escaped}\\b[^.!?\\n]*[.!?])`, "gi");
+  if (!content || !query) return null;
 
-    const matches = content.match(regex);
-    if (!matches) return null;
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`.{0,120}\\b${escaped}\\b.{0,120}`, "gi");
+  const matches = content.match(regex);
 
-    const main = matches[0];
-    const allSentences = content.split(/(?<=[.!?])\s+/);
-    const index = allSentences.findIndex(s => main.includes(s.trim()));
+  if (!matches) return null;
 
-    const before = index > 0 ? allSentences[index - 1] : "";
-    const after = index < allSentences.length - 1 ? allSentences[index + 1] : "";
+  // Siempre usamos la primera coincidencia
+  const main = matches[0];
+  const snippet = main.trimStart().replace(/^\S*/, "...").trimEnd() + "...";
 
-    const snippet = [before, main, after].filter(Boolean).join(" ");
-    return { snippet, extraCount: matches.length - 1 };
-  }
+  return { snippet, extraCount: matches.length - 1 };
+}
 
   function createResultCard({ title, link, breadcrumb, snippet, extra }) {
   const article = document.createElement("article");
@@ -78,66 +76,75 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
   async function performSearch(query) {
-    container.innerHTML = "<p>Buscando...</p>";
+  container.innerHTML = "<p>Buscando...</p>";
 
-    try {
-      const res = await fetch(INDEX_URL);
-      if (!res.ok) throw new Error("No se pudo cargar el índice");
-      const index = await res.json();
+  try {
+    const res = await fetch("apuntes/index_full.json");
+    if (!res.ok) throw new Error("No se pudo cargar el índice");
+    const index = await res.json();
 
-      const normalizedQuery = normalize(query);
-      const results = [];
+    const normalizedQuery = normalize(query);
+    const results = [];
 
-      for (const note of index) {
-        const { title, path, breadcrumb, content } = note;
-        const normalizedTitle = normalize(title);
-        const normalizedContent = normalize(content);
+    // Expresión regular amplia: busca palabra o raíz
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regexGlobal = new RegExp(`\\b${escaped}\\w*\\b`, "i");
 
-        const inTitle = normalizedTitle.includes(normalizedQuery);
-        const inContent = normalizedContent.includes(normalizedQuery);
+    for (const note of index) {
+      const { title, path, breadcrumb, content } = note;
+      const normalizedTitle = normalize(title);
+      const normalizedContent = normalize(content);
 
-        if (inTitle || inContent) {
-          let snippet = "";
-          let extra = "";
+      const inTitle = regexGlobal.test(normalizedTitle);
+      const inContent = regexGlobal.test(normalizedContent);
 
-          if (inTitle && !inContent) {
-            // Coincidencia solo en el título: muestra 3 primeras frases
-            const sentences = content.split(/(?<=[.!?])\s+/).slice(0, 3).join(" ");
-            snippet = highlight(sentences, query);
-          } else if (inContent) {
-            const context = extractContext(content, query);
-            if (context) {
-              snippet = highlight(context.snippet, query);
-              if (context.extraCount > 0)
-                extra = `Ver ${context.extraCount} resultados más…`;
-            } else {
-              snippet = highlight(content.slice(0, 200) + "...", query);
-            }
+      if (inTitle || inContent) {
+        let snippet = "";
+        let extra = "";
+
+        // === Snippet para coincidencias ===
+        if (inContent) {
+          const matches = [];
+          const regex = new RegExp(`.{0,120}\\b${escaped}\\w*\\b.{0,120}`, "gi");
+          let match;
+          while ((match = regex.exec(content)) !== null) {
+            matches.push(match[0]);
           }
 
-          results.push({
-            title,
-            link: `markdown-viewer.html?file=${encodeURIComponent(path)}&q=${encodeURIComponent(query)}`,
-            breadcrumb,
-            snippet,
-            extra,
-          });
+          if (matches.length > 0) {
+            snippet = highlight(matches[0], query);
+            if (matches.length > 1)
+              extra = `Ver ${matches.length - 1} resultados más…`;
+          }
+        } else if (inTitle) {
+          const sentences = content.split(/(?<=[.!?])\s+/).slice(0, 3).join(" ");
+          snippet = highlight(sentences, query);
         }
-      }
 
-      if (!results.length) {
-        container.innerHTML = `<p>No se encontraron resultados para <strong>${query}</strong>.</p>`;
-        return;
+        results.push({
+          title,
+          link: `markdown-viewer.html?file=${encodeURIComponent(path)}&q=${encodeURIComponent(query)}`,
+          breadcrumb,
+          snippet,
+          extra,
+        });
       }
-
-      // Renderizar resultados
-      container.innerHTML = "";
-      results.forEach(r => container.appendChild(createResultCard(r)));
-    } catch (err) {
-      console.error("Error en búsqueda:", err);
-      container.innerHTML = "<p>Error al cargar el índice de búsqueda.</p>";
     }
+
+    if (!results.length) {
+      container.innerHTML = `<p>No se encontraron resultados para <strong>${query}</strong>.</p>`;
+      return;
+    }
+
+    // Renderizar resultados
+    container.innerHTML = "";
+    results.forEach(r => container.appendChild(createResultCard(r)));
+  } catch (err) {
+    console.error("Error en búsqueda:", err);
+    container.innerHTML = "<p>Error al cargar el índice de búsqueda.</p>";
   }
+}
+
 
   performSearch(query);
 });
