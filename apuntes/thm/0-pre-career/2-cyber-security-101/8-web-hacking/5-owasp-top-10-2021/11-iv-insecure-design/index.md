@@ -16,16 +16,16 @@ Fíjate cómo la vulnerabilidad está basada en la idea de que ningún usuario p
 -------------------
 <h2>Challenge</h2>
 1. Entramos a la página web proporcionada.
-   ![](/apuntes/img/Pasted image 20251010184923.png)
+   !**Pasted image 20251010184923.png**
 2. Probamos con "joseph", que es la cuenta en la que debemos meternos:
-   ![](/apuntes/img/Pasted image 20251010185218.png)
+   !**Pasted image 20251010185218.png**
 3. No hay tantos colores, así que probaremos con eso:
-   ![](/apuntes/img/Pasted image 20251010185346.png)
+   !**Pasted image 20251010185346.png**
 4. Acertamos con "green":
-   ![](/apuntes/img/Pasted image 20251010185419.png)
+   !**Pasted image 20251010185419.png**
 5. Iniciamos sesión:
-   ![](/apuntes/img/Pasted image 20251010185448.png)
+   !**Pasted image 20251010185448.png**
 6. Dentro encontramos la flag:
-   ![](/apuntes/img/Pasted image 20251010185536.png)
-   ![](/apuntes/img/Pasted image 20251010185548.png)
+   !**Pasted image 20251010185536.png**
+   !**Pasted image 20251010185548.png**
 

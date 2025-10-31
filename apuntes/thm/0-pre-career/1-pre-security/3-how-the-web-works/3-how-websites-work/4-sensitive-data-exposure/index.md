@@ -9,5 +9,5 @@ Ahora sabemos que la páginas web están construidas usando varias etiquetas que
 
 La información sensible puede ser usada por el atacante para llevar el ataque más allá en la aplicación web. Al rematar el trabajo de desarrollo de una web lo primero que hay que hacer es revisar el código fuente.
 
-1. ![](/apuntes/img/020.png)
-2. ![](/apuntes/img/019.png)
+1. !**020.png**
+2. !**019.png**

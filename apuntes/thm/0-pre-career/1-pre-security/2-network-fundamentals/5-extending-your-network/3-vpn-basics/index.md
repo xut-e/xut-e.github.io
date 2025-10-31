@@ -7,7 +7,7 @@ Una VPN (Virtual Private Network) es una tecnología que permite dispositivos en
 
 Por ejemplo, sólo los dispositivos dentro de la misma red pueden estar comunicados directamente (dentro de un negocio). De todas formas, una VPN permite que las dos oficinas se conecten:
 
-![](/apuntes/img/004.png)Los dispositivos conectados en la red #3 (VPN) siguen siendo parte de las redes #1 y #2. Algunos de los beneficios de usar VPN:
+!**004.png**Los dispositivos conectados en la red #3 (VPN) siguen siendo parte de las redes #1 y #2. Algunos de los beneficios de usar VPN:
 
 | **Beneficio**                                                     | **Descripción**                                                                                                                                                                                            |
 | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

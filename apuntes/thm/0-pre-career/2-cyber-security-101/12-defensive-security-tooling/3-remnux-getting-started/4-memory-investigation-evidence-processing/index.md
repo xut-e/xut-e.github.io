@@ -209,7 +209,7 @@ Veamos el comando:
 - La parte `plugin > wcry.$plugin.txt; done;` hace que volatility corra con los plugins y meta el resultado en un archivo con el nombre del plugin.
 Después de ejecutar el comando nos encontraremos con esto:
 
-![](/apuntes/img/Pasted image 20251029200952.png)
+!**Pasted image 20251029200952.png**
 
 -------------------------------
 <h2>Pre-procesado con Strings</h2>

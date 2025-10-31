@@ -11,7 +11,7 @@ Una solución a esto es usar algún mecanismo de integridad para garantizar que 
 
 JWTs son tokens simples que te permiten guardar los pares llave-valor en un token que ofrece integridad como parte del token. La idea es que puedas generar tokens que puedas dar a tus usuarios con la certeza de que no serán capaces de alterar los valores de parejas y pasar el check de integridad. La estructura de un JWT consta de 3 partes:
 
-![](/apuntes/img/Pasted image 20251013172339.png)
+!**Pasted image 20251013172339.png**
 
 El header contiene metadatos indicando que es un JWT, y el algoritmo de firmado que se utiliza es HS256. El payload contiene el par llave-valor con la información que la aplicación web requiere al cliente guardar. La firma es similar a un hash, tomado para verificar la integridad del payload. Si cambias el payload, la firma no coincidirá y la aplicación web sabrá que se ha modificado el payload.
 
@@ -26,27 +26,27 @@ Una vulnerabilidad de fallo de integridad estuvo presente en algunas librerías 
 
 Tomando como ejemplo el JWT que hemos visto antes, si quisiésemos cambiar el payload para que el nombre de usuario fuese "admin" y que no se hiciera la comprobación de integridad, tendríamos que decodear, modificar y volver a codificar el header y payload.
 
-![](/apuntes/img/Pasted image 20251013191114.png)
+!**Pasted image 20251013191114.png**
 
 ----------------------
 <h2>Challenge</h2>
 1. Entramos en la página dada:
-   ![](/apuntes/img/Pasted image 20251013222434.png)
+   !**Pasted image 20251013222434.png**
 2. Probando suerte con "guest" "guest" entramos a dicho usuario:
-   ![](/apuntes/img/Pasted image 20251013222538.png)
+   !**Pasted image 20251013222538.png**
 3. Si abrimos las dev tools podemos ver la cookie de sesión que se nos ha asignado:
-   ![](/apuntes/img/Pasted image 20251013222753.png)
+   !**Pasted image 20251013222753.png**
 4. Si decodeamos nuestro token:
-   ![](/apuntes/img/Pasted image 20251013223103.png)
+   !**Pasted image 20251013223103.png**
 5. Entonces sabemos que modificando la primera y segunda parte y borrando la última podemos acceder:
    - Primero metemos el contenido decodeado en un archivo:
-     ![](/apuntes/img/Pasted image 20251013223552.png)
+     !**Pasted image 20251013223552.png**
    - Ahora los modificamos:
-     ![](/apuntes/img/Pasted image 20251013223733.png)
-     ![](/apuntes/img/Pasted image 20251013223814.png)
+     !**Pasted image 20251013223733.png**
+     !**Pasted image 20251013223814.png**
    - Por último extraemos los fragmentos codificados en base64:
-     ![](/apuntes/img/Pasted image 20251013224004.png)
+     !**Pasted image 20251013224004.png**
 6. Por último juntamos los trozos y lo sustituimos por nuestra cookie (hay que ponerle el punto al final):
-   ![](/apuntes/img/Pasted image 20251013224804.png)
+   !**Pasted image 20251013224804.png**
 7. Obtenemos la flag:
-   ![](/apuntes/img/Pasted image 20251013224834.png)
+   !**Pasted image 20251013224834.png**

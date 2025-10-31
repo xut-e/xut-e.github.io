@@ -14,7 +14,7 @@ En la imagen de abajo tenemos los siguientes pasos:
 
 Empezamos con la aplicación a enviar, en la capa de transporte añadimos TCP o UDP header. En la capa de red añadimos el IP header. Finalmente añadimos un header y un trailer para encapsular la información en un marco.
 
-![](/apuntes/img/5f04259cf9bf5b57aed2c476-1719849061418.jpg)
+!**5f04259cf9bf5b57aed2c476-1719849061418.jpg**
 
 ---------------------
 <h2>La vida de un paquete</h2>

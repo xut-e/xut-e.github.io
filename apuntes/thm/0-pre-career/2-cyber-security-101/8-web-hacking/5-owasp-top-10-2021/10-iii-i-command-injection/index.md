@@ -32,7 +32,7 @@ En términos simples, este código hace lo siguiente:
 2. Comprueba si el parámetro "cow" está definido. Si lo está, la variable `$cow` toma lo que le haya sido pasado.
 3. El programa ejecuta la función `passthru("perl /usr/bin/cowsay -f $cow $mooing);`. La función `passthru`, ejecuta un comando en la consola del sistema operativo. Podemos ver que el comando está concatenando las variables. Ya que podemos manipular esas variables, podemos inyectar comandos usando trucos.
    
-   ![](/apuntes/img/Pasted image 20251009223354.png)
+   !**Pasted image 20251009223354.png**
 
 ----------------------
 <h2>Explotar Inyección de Comandos</h2>
@@ -40,11 +40,11 @@ Ahora que sabemos cómo funciona la aplicación por dentro, nos aprovecharemos d
 
 Para ejecutar comandos inline, sólo necesitamos en el siguiente formato `$(nuestro_comando)`. Si bash detecta un comando inline, lo ejecutará primero y usará el resultado con el comando principal, por ejemplo:
 
-![](/apuntes/img/Pasted image 20251009223744.png)
+!**Pasted image 20251009223744.png**
 
 Así que, volviendo a la app de cowsay, esto es lo que pasaría si inyectásemos comandos:
 
-![](/apuntes/img/Pasted image 20251009223818.png)
+!**Pasted image 20251009223818.png**
 
 Ya que la aplicación acepta cualquier input por nuestra parte, podemos inyectar comandos inline, que serán ejecutados y usados como parámetro para cowsay. Algunos comandos que puedes probar:
 
@@ -57,8 +57,8 @@ Ya que la aplicación acepta cualquier input por nuestra parte, podemos inyectar
 ------------------------
 <h2>Challenge</h2>
 
-1. ![](/apuntes/img/Pasted image 20251009224220.png)
-2. ![](/apuntes/img/Pasted image 20251009224355.png)
-3. ![](/apuntes/img/Pasted image 20251009224843.png)
-4. ![](/apuntes/img/Pasted image 20251009225230.png)
-5. ![](/apuntes/img/Pasted image 20251009225549.png)
+1. !**Pasted image 20251009224220.png**
+2. !**Pasted image 20251009224355.png**
+3. !**Pasted image 20251009224843.png**
+4. !**Pasted image 20251009225230.png**
+5. !**Pasted image 20251009225549.png**

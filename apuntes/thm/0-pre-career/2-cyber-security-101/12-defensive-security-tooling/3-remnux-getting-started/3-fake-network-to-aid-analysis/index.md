@@ -11,7 +11,7 @@ Usaremos las funcionalidades de INetSim para simular una red real en esta tarea.
 <h2>Máquinas Virtuales</h2>
 Para esta tarea usaremos 2 máquinas. La primera es nuestra máquina REMnux y la segunda es la AttackBox. Para ejecutar la Attackbox, clickamos en el botón azul **Start AttackBox**. Puedes cambiar de una a otra pinchando en los botones de abajo:
 
-![](/apuntes/img/Pasted image 20251029183511.png)
+!**Pasted image 20251029183511.png**
 
 ---------------------------------
 <h2>INetSim</h2>
@@ -65,11 +65,11 @@ Después de ejecutarlo, asegúrate de que ves la frase "**Simulation Runnin**" a
 <h2>AttackBox</h2>
 Desde la máquina de la Attackbox, abrimos el navegador y buscamos la IP de nuestra máquina REMnux usando el comando `https://<ip_REMnux>`. Le damos a Avanzado y aceptamos el riesgo y continuamos.
 
-![](/apuntes/img/Pasted image 20251029185149.png)
+!**Pasted image 20251029185149.png**
 
 Una vez hecho deberíamos ser redirigidos a la página base de INetSim.
 
-![](/apuntes/img/Pasted image 20251029185217.png)
+!**Pasted image 20251029185217.png**
 
 Un comportamiento usual del malware es descargar otro binario o script. Trataremos de imitar este comportamiento. Podemos hacerlo via CLI o por el navegador aunque usaremos CLI para hacerlo más realista. Usaremos el comando `sudo wget https://<IP_REMnux>/second_payload.zip --no-check-certificate`
 
@@ -93,7 +93,7 @@ También podemos tratar de descargarnos otro script, por ejemplo: `sudo wget htt
 
 Para verficar los archivos descargados comprobaremos el fichero de descargas, en nuestro caso root:
 
-![](/apuntes/img/Pasted image 20251029185608.png)
+!**Pasted image 20251029185608.png**
 
 Todos estos son archivos falsos. Intenta abrir `second_payload.ps1`. Al ser ejecutado, te dirigirá a la página de INetSim.
 

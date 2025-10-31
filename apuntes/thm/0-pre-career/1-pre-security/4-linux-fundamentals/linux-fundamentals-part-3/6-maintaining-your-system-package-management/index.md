@@ -6,7 +6,7 @@ title: "6. Maintaining your System - Package Management"
 <h2>Introduciendo Paquetes y Repositorios de Software</h2>
 Cuando los desarrolladores de software quieren subir su trabajo a la comunidad pueden subirlo a un repositorio "apt". Si es aprobado, sus programas y herramientas serán compartidos.
 
-![](/apuntes/img/031.png)
+!**031.png**
 
 Los archivos listados en `/etc/apt/` sirven como gateway/registro. Puedes añadir repositorios de la comunidad a tu sistema operativo haciendo `add-apt-repositorio`.
 

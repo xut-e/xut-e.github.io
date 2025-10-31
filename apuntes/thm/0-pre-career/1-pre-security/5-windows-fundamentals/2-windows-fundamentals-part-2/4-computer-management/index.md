@@ -22,17 +22,17 @@ El visor de eventos tiene tres partes:
 
 Hay cinco tipos de eventos que pueden ser registrados:
 
-![](/apuntes/img/039.png)
+!**039.png**
 
 Los logs estándar son visibles debajo de `Windows Logs`:
 
-![](/apuntes/img/040.png)
+!**040.png**
 
 En `Shared Folders` (carpetas compartidas), verás una lista completa de los archivos y carpetas compartidos a los que otros pueden acceder/conectarse.
 
 La compartición de Windows por defecto se llama `C$`:
 
-![](/apuntes/img/041.png)
+!**041.png**
 
 Debajo de `Sessions` puedes ver a usuarios que están conectados a los shares. Y todos los archivos a los que accedan se listarán debajo de `Open Files`.
 
@@ -42,7 +42,7 @@ En `Performance` verás una utilidad llamada `Performance Monitor` (`perfmon`). 
 
 `Device Manager` nos permite ver y configurar el hardware como deshabilitar cualquier parte unida al ordenador.
 
-![](/apuntes/img/042.png)
+!**042.png**
 
 -------------------
 <h2>Storage</h2>
@@ -55,13 +55,13 @@ Disk Management es una utilidad del sistema en Windows que nos permite realizar 
 - Reducir una partición.
 - Asignar o cambiar la letra de un disco (por ejemplo `E:`).
 
-![](/apuntes/img/043.png)
+!**043.png**
 
 -------------------
 <h2>Services and Applications</h2>
 Un servicio es un tipo de aplicación especial que corre en el fondo (bg). Aquí a parte de activar o desactivar el servicio, puedes ver sus propiedades.
 
-![](/apuntes/img/044.png)
+!**044.png**
 
 WMI (Windows Management Instrumentation) es el servicio que configura y controla precisamente la instrumentación del Windows Manager.
 

@@ -12,4 +12,4 @@ Cuando un dispositivo se conecta a una red, si no ha sido asignado con una IP ma
 3. El dispositivo responde Diciendo que quiere esa IP (DHCP Request). 
 4. Por último el servidor responde que la asignación ha sido completada de forma exitosa (DHCP ACK).
 
-![](/apuntes/img/004.png)
+!**004.png**

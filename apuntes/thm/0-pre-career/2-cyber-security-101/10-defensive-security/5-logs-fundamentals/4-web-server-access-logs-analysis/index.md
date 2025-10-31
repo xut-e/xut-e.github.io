@@ -30,11 +30,11 @@ Podemos realizar un análisis manual usando algunas utilidades de línea de coma
 Analizar un documento de logs de acceso web a un servidor:
 
 1. Descargamos el archivo:
-   ![](/apuntes/img/Pasted image 20251022185121.png)
+   !**Pasted image 20251022185121.png**
 2. Leemos el contenido del archivo:
-   ![](/apuntes/img/Pasted image 20251022185341.png)
+   !**Pasted image 20251022185341.png**
 3. Como es muy grande empezamos a filtrar:
-   ![](/apuntes/img/Pasted image 20251022185514.png)
+   !**Pasted image 20251022185514.png**
 4. Filtramos otra vez:
-   ![](/apuntes/img/Pasted image 20251022185645.png)
+   !**Pasted image 20251022185645.png**
 

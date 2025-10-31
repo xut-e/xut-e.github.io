@@ -7,7 +7,7 @@ Es una vulnerabilidad que ocurre cuando el input de un usuario no filtrado se mu
 
 Cuando un usuario tiene el control sobre cómo su input se enseña, puede subir HTML o JS y el buscador lo usará en la página, pudiendo cambiar así la apariencia y funcionalidad.
 
-![](/apuntes/img/021.png)
+!**021.png**
 
 La imagen de arriba muestra cómo una form se outputea en la web. Cualquier cosa que el usuario introduce se usa en la función sayHi.
 

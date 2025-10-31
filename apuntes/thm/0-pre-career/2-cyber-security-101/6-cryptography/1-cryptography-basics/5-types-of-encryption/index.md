@@ -12,7 +12,7 @@ Hay dos categorías principales de encriptado:
 <h2>Encriptación Simétrica</h2>
 Esta usa la misma llave para encriptar y desencriptar información. Mantener la llave secreta es un deber. También es llamada criptografía de clave privada. Comunicar la clave a las partes implicadas puede ser retante ya que necesita un canal de comunicación seguro. Mantener el secreto de la clave puede ser difícil, especialmente si hay varios receptores.
 
-![](/apuntes/img/129.jpg)
+!**129.jpg**
 
 Ejemplos de encriptación simétrica son DES (Data Encryption Standard), 3DES (Triple DES) y AES (Advanced Encryption Standard).
 
@@ -24,7 +24,7 @@ Ejemplos de encriptación simétrica son DES (Data Encryption Standard), 3DES (T
 <h2>Encriptación Asimétrica</h2>
 Al contrario que la encriptación simétrica, la encriptación asimétrica usa claves diferentes para encriptar y desencriptar. Esta usa la llave pública para encriptar y la privada sólo para desencriptar. Se conoce también como criptografía de clave pública.
 
-![](/apuntes/img/130.jpg)
+!**130.jpg**
 
 Algunos ejemplos son RSA, Diffie-Hellman y ECC (Eliptic Curve Cryptography). La clave privada necesita ser secreta.
 

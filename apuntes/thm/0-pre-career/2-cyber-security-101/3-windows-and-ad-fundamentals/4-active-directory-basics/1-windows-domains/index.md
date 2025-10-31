@@ -7,7 +7,7 @@ En una pequeña empresa con, por ejemplo 5 ordenadores, seguramente tú mismo pu
 
 De cualquier forma esto no es realista frente a un escenario más grande. Para sobreponernos a estas dificultades usamos un Windows Domain. Esto es un grupo de usuarios y ordenadores bajo la administración de un negocio. La idea principal de un WD es centralizar la administración de componentes comunes en un sólo repositorio llamado Active Directory (AD). El servidor que corre el AD es conocido como Domain Controller (DC).
 
-![](/apuntes/img/047.png)
+!**047.png**
 
 Ventajas principales:
 

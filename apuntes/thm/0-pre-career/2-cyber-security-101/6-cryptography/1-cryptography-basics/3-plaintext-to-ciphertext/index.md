@@ -9,7 +9,7 @@ El método de encriptación es el siguiente:
 2. Se pasa el mensaje en texto plano por una llave.
 3. Se obtiene el mensaje encriptado.
 
-![](/apuntes/img/125.jpg)
+!**125.jpg**
 
 Para recuperar el mensaje:
 
@@ -17,7 +17,7 @@ Para recuperar el mensaje:
 2. Se pasa por la llave de desencriptación.
 3. Se obtiene el mensaje en texto plano.
 
-![](/apuntes/img/126.jpg)
+!**126.jpg**
 
 Términos que acabamos de ver:
 

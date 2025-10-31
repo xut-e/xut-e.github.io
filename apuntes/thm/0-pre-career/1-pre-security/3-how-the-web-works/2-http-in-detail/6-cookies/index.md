@@ -5,7 +5,7 @@ title: "6. Cookies"
 
 Seguramente hayas oído hablar de cookies antes. Son una pequeña pieza de información qye está guardada en tu ordenador. Son guardadas cuando recibes un Set-Cookie header de un servidor web. Después, cada petición que hagas mandará la cookie de vuelta al servidor. Ya que HTTP es statekless y no guarda información sobre tus peticioines previas, la cookie se manda para ayudar al servidor a recordar quién eres.
 
-![](/apuntes/img/017.png)
+!**017.png**
 Las cookies pueden ser usadas oara muchos propósitos pero son comunmente más usadas para autentificarse de cara a un servidor. La cookie, de todas formas, no será un texto claro, sino una string encriptada.
 
 Puedes fácilmente ver qué cookies el servidor está mandando a la página web usando las herramientas de desarrollador (F12). Una vez allí te diriges a "Network".

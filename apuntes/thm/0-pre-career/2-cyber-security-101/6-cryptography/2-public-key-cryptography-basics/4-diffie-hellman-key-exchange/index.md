@@ -30,6 +30,6 @@ Pongamos un ejemplo más explicativo:
 4. Alice y Bob intercambian las claves. Este proceso se llama intercambio de claves.
 5. Alice y Bob finalmente calculan el secreto compartido usando su  clave privada y pública. Alice calcula: *(B^a) % p = 26¹³ % 29 = 10*; Bob calcula: *(A^b) % p = 19¹⁵ % 29 = 10*. Los dos cálculos conllevan al mismo resultado: g⁽ab⁾ % p = 10, su clave secreta compartida.
 
-![](/apuntes/img/131.jpg)
+!**131.jpg**
 
 Diffie-Hellman se suele usar junto a RSA para la criptografía pública. Diffie-Hellman se usa para el acuerdo, mientras que RSA para las firmas digitales, transporte de claves y autentificación. RSA ayuda a identificar la persona con la que hablas. De esta manera se previene a alguien atacando la conexión con un MITM pretendiendo ser quien no es.

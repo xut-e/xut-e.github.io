@@ -11,7 +11,7 @@ Supón que tienes una página web que usa librerías de terceros guardadas en se
 
 Cuando un usuario navegue hasta tu página el navegador descargará jQuery de la fuente externa especificada.
 
-![](/apuntes/img/Pasted image 20251013143945.png)
+!**Pasted image 20251013143945.png**
 
 El problema es que si un atacante consigue hackear el repositorio oficial de jQuery, podrían cambiar los contenidos de `https://code.jquery.com/jquery-3.6.1.min.js` para inyectar código malicioso. Como resultado, cualquiera visitando tu página web ejecutaría dicho código en su navegador sin saberlo.
 

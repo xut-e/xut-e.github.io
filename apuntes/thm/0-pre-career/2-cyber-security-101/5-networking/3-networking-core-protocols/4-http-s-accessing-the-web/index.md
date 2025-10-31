@@ -16,13 +16,13 @@ HTTP y HTTPS usan, por defecto, los puertos 80 y 443, respectivamente.
 
 Al buscar en el buscador la IP `10.10.178.231`, el buscador nos muestra la página perfectamente, pero ¿qué está pasando por detrás?
 
-![](/apuntes/img/080.png)
+!**080.png**
 
 Usando Wireshark podemos examinar el intercambio entre el buscador y el servidor web. La siguiente imagen muestra el mensaje enviado por nuestro buscador al servidor en rojo y la respuesta del servidor web en azul.
 
-![](/apuntes/img/081.png)
+!**081.png**
 
 Como recordarás, para conectarnos al servidor web usabamos telnet. Para recoger información de este, usábamos `GET / HTTP/1.1`. y `Host: anything`. Podemos recuperar ciertos archivos usando `GET /file.html HTTP/1.1`.
 
-![](/apuntes/img/082.png)
+!**082.png**
 

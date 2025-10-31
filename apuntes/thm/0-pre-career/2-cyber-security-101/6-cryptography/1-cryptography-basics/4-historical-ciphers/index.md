@@ -9,9 +9,9 @@ Aquí un ejemplo con `key = 3`:
 
 Encriptación:
 
-![](/apuntes/img/127.jpg)
+!**127.jpg**
 
 Desencriptación:
 
-![](/apuntes/img/128.jpg)
+!**128.jpg**
 

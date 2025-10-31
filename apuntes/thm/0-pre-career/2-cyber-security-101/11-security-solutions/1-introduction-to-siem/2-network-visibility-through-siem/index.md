@@ -5,7 +5,7 @@ title: "2. Network Visibility through SIEM"
 
 Antes de explicar la importancia del SIEM, tratemos de entender por qué es crítico tener mejor visibilidad de todas las actividades en una red. La imagen debajo muestra un ejemplo de una red simple que compete varios endpoints basados en Windows/Linux, un servidor de datos y un sitio web. Cada componente se comunica con otro o accede a internet a través del router.
 
-![](/apuntes/img/Pasted image 20251022221746.png)
+!**Pasted image 20251022221746.png**
 
 Como ya sabemos, cada componente de red puede tener uno o más fuentes de logs generando diferentes logs. Podemos dividir las fuentes de logs de red en dos partes lógicas:
 

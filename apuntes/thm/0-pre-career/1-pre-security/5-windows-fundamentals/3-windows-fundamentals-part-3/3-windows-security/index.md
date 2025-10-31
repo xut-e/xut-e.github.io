@@ -18,5 +18,5 @@ Antes de seguir comentaremos los colores de estado:
 
 Podemos hacer click en `Open Windows Security` para ver las acciones que podemos llevar a cabo con las diferentes herramientas.
 
-![](/apuntes/img/046.png)
+!**046.png**
 

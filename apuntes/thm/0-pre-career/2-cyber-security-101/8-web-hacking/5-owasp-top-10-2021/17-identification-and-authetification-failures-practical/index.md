@@ -12,22 +12,22 @@ Veamos un ejemplo. Queremmos acceder a la cuenta `admin`, por lo que registramos
 ------------------
 <h2>Challenge</h2>
 1. Entramos a la página dada.
-   ![](/apuntes/img/140.png)
+   !**140.png**
 2. Intentamos registrar el usuario dado
-   ![](/apuntes/img/141.png)
+   !**141.png**
 3. Nos da error así que vamos a intentar otro nombre de usuario.
-   ![](/apuntes/img/142.png)
+   !**142.png**
 4. Probamos con  " darren" en vez de "darren".
-   ![](/apuntes/img/143.png)
+   !**143.png**
 5. Ahora si que ha funcionado.
-   ![](/apuntes/img/144.png)
+   !**144.png**
 6. Iniciamos sesión:
-   ![](/apuntes/img/145.png)
+   !**145.png**
 7. Obtenemos una flag:
-   ![](/apuntes/img/146.png)
+   !**146.png**
 8. Ahora pobamos a hacerlo con **arthur**:
-   ![](/apuntes/img/147.png)
+   !**147.png**
 9. Iniciamos sesion con arthur:
-   ![](/apuntes/img/148.png)
+   !**148.png**
 10. Obtenemos la segunda flag:
-    ![](/apuntes/img/149.png)
+    !**149.png**

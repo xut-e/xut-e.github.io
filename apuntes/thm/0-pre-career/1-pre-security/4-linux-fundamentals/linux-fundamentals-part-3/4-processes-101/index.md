@@ -8,17 +8,17 @@ Los procesos son programas que están corriendo en nuestra máquina. Son control
 <h2>Viendo Procesos</h2>
 Podemos usar el comando `ps` para ver una lista de los procesos corriendo con información adicional como el código de estado, la sesión que lo corre y el nombre del programa que lo corre.
 
-![](/apuntes/img/025.png)
+!**025.png**
 
 >[!NOTE] Date cuenta de que en la foto de arriba un proceso tiene el PID 204 y el siguiente 205.
 
 Para ver aquellos procesos que corren otros usuarios o aquellos que no corren desde una sesión, sino desde el sistema, por ejemplo, podemos usar `ps aux`.
 
-![](/apuntes/img/026.png)
+!**026.png**
 
 Otro comando muy útil es `top`. Este te da información en tiempo real (actualizada cada 10 segundos o cuando nos movemos con las flechas direccionales).
 
-![](/apuntes/img/027.png)
+!**027.png**
 
 -----------------
 <h2>Controlando Procesos</h2>
@@ -38,7 +38,7 @@ Previamente hemos hablado de cómo funcionan los PID. El proceso con PID 0 es el
 
 Cualquier programa o proceso que lancemos será lo que conocemos como un "child" (hijo) del proceso **systemd**. Esto quiere decir que está controlado por systemd y que compartirá los mismos recursos.
 
-![](/apuntes/img/028.png)
+!**028.png**
 
 --------------------
 <h2>Haciendo que los procesos empiecen en el arranque</h2>
@@ -61,7 +61,7 @@ Podemos usar `systemctl` para:
 <h2>Introducción al Primer y Segundo Plano</h2>
 Los procesos pueden correr en dos estados: en primer plano (foreground) o en segundo plano (background). Al hacer `echo "Hi THM"` esperamos ver el output inmediatamente pero al añadir `&` se nos da el PID en su lugar.
 
-![](/apuntes/img/029.png)
+!**029.png**
 
 Esto es útil para comandos como copiar grandes cantidades de archivos, porque mientras se ejecuta en segundo plano podemos seguir haciendo cosas. También podemos usar `Ctrl+Z` para llevar a un proceso al segundo plano.
 

@@ -9,7 +9,7 @@ La siguiente ventana nos permite elegir la configuración para Burp Suite. Gener
 
 El dashboard de Burp está dividido en 4 partes:
 
-![](/apuntes/img/Pasted image 20251004021343.png)
+!**Pasted image 20251004021343.png**
 
 1. **Tasks:** Permite definir tareas en segundo plano que Burp Suite realizará mientras usas la aplicación. En la versión Community, la tarea por defecto "Live Passive Crawl", que automáticamente registra las páginas visitadas es suficiente.
 2. **Event Log:** Ofrece información acerca de las acciones realizadas por Burp Suite, como ejecutar el proxy, o detalles sobre las conexiones de Burp.

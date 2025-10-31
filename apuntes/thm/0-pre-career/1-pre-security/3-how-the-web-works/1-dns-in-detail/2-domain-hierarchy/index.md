@@ -4,7 +4,7 @@ title: "2. Domain Hierarchy"
 ---
 
 
-![](/apuntes/img/008.png)
+!**008.png**
 <h2>Top Level Domain</h2>
 Un TLD es la parte de más a la derecha de un dominio. En tryhackme sería *".com"*. Hay dos tipos de TLD:
 

@@ -9,7 +9,7 @@ De momento hemos visto cómo manejar un solo dominio, el rol de un DC y cómo or
 <h2>Trees</h2>
 Imagina que tu compañía ahora entra en competición en un nuevo país, y que este tiene un set de leyes diferentes por el cual tiene que actualizar tus GPOs. Aunque esto sería posible hacerse con una sola estructura OU, sería más difícil. Es aquí donde entran los trees:
 
-![](/apuntes/img/068.png)
+!**068.png**
 
 Esta estructura particionada nos da más control sobre lo que pueden hacer las ramas en el dominio. A parte de gestionar lo que cada uno puede y no puede hacer, también se pueden aplicar políticas diferentes para cada rama.
 
@@ -17,13 +17,13 @@ Esta estructura particionada nos da más control sobre lo que pueden hacer las r
 <h2>Forests</h2>
 Supón que tu compañía sigue creciendo y al final acaba adquiriendo otra empresa (MHT Inc.). Cuando las dos se fusionen, tendrás dos trees, una para cada compañía. Es por esto que se llama bosque.
 
-![](/apuntes/img/069.png)
+!**069.png**
 
 --------------------
 <h2>Trust Relationships</h2>
 En resumidas cuentas, tener relaciones de confianza permite que un usuario de `THM UK` acceda a un recurso de `MHT EU` por ejemplo. La relación más simple es una `One-Way Relationship`. Esto significa que si el dominio `AAA` confía en el dominio `BBB`, un usuario del dominio `BBB` podrá acceder a recursos en el dominio `AAA`.
 
-![](/apuntes/img/070.png)
+!**070.png**
 Otra relación es la `Two-Way Relationship`. Una vez sabemos cual es la one-way, esta se vuelve bastante intuitiva. Usuarios de ambos dominios podrán acceder a recursos en el otro.
 
 >[!IMPORTANT] Tener una relación de confianza no significa que los usuarios puedan acceder a TODOS los recursos, tú puedes configurar y modificar qué usuarios y a qué recursos.

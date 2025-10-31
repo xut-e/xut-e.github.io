@@ -17,4 +17,4 @@ Para guardar la IP y la MAC juntas, ARP manda dos tipos de mensaje:
 2. ARP Reply.
 
 Cuando un ARP Request se manda, un mensaje es broadcasted (mandado a todos) en la red al resto de dispositivos preguntando: "¿Cuál es la dirección MAC que posee esta IP?". Cuando el resto de dispositivos reciben ese mensaje, responden con un ARP Reply.
-![](/apuntes/img/003.png)
+!**003.png**

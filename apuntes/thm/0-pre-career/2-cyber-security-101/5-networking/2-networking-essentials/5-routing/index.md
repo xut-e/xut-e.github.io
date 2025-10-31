@@ -7,7 +7,7 @@ title: "5. Routing"
 
 Internet se compone de millones de routers y billones de dispositivos. La red de la imagen de abajo es una pequeña subred de Internet. Necesitamos un algoritmo de routeado para averiguar qué camino tomar.
 
-![](/apuntes/img/078.jpg)
+!**078.jpg**
 
 Los algoritmos no entran en el temario, pero de cualquier forma, describiremos brevemente unos cuantos protocolos para familiarizarnos:
 

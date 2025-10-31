@@ -6,7 +6,7 @@ title: "8. HTTP Response - Headers and Body"
 <h2>Headers de Respuesta</h2>
 Cuando un servidor web responde a una petición HTTP, incluye los headers de respuesta HTTP, que son pares de llave-valor. Estos, ofrecen información importante sobre la respuesta y le dicen al cliente cómo manejarla.
 
-![](/apuntes/img/139.jpg)
+!**139.jpg**
 
 ------------------
 <h2>Headers de Respuesta Requeridos</h2>

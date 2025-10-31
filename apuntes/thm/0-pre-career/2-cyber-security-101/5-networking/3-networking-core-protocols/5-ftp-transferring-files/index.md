@@ -55,4 +55,4 @@ ftp> quit
 
 Usamos Wireshark para examinar los mensajes intercambiados de cerca. Los mensajes del cliente están en rojo y los del servidor en azul. Algunos comandos difieren entre cliente y servidor. Cuando tu tecleas `ls`, al servidor se le manda `LIST`. Otra cosa a destacar es que el listado de directorios y archivos y el archivo descargado son mandados por otra conexión:
 
-![](/apuntes/img/083.png)
+!**083.png**

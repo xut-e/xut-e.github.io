@@ -13,7 +13,7 @@ Debajo podemos ver un paquete IP en un marco de Ethernet que contiene:
 - Dirección MAC de origen.
 - Tipo (IPv4 en este caso).
 
-![](/apuntes/img/074.png)
+!**074.png**
 
 El ARP hace posible encontrar la dirección MAC de otro dispositivo en Ethernet. En el ejemplo de abajo, un host con IP `192.168.66.89` quiere comunicarse con otro sistema con la IP `192.168.66.1`. Manda una petición ARP pidiendo al host `192.168.66.1` que responda y este lo hace con su dirección MAC.
 
@@ -33,6 +33,6 @@ user@TryHackMe$ tcpdump -r arp.pcapng -n -v
 
 Una petición ARP no se encapsula en un UDP o paquete IP, sino que es encapsulada directamente en un marco Ethernet como muestra la foto:
 
-![](/apuntes/img/075.png)
+!**075.png**
 
 ARP se considera capa 2 porque trabaja con direcciones MAC. Otros discutirían que es parte de la capa 3 porque soporta operaciones IP. Lo que es esencial saber es que ARP permite la traducción del direccionamiento de la capa 3 al direccionamiento de la capa 2.

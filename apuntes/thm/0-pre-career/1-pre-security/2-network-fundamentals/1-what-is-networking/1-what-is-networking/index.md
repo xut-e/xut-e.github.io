@@ -11,4 +11,4 @@ Las redes son cosas conectadas, por ejemplo tu grupo de amigos. Las redes se pue
 
 Más específicamente, en informática, las redes tienen la misma idea aplicada a los dispositivos tecnológicos. Una red puede estar formada desde 2 hasta millones de dispositivos.
 
-![](/apuntes/img/descargar.png)
+!**descargar.png**

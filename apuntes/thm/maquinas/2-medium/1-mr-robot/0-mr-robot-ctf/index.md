@@ -7,7 +7,7 @@ Can you root this Mr. Robot styled machine? This is a virtual machine meant for 
 
 Credit to [Leon Johnson](https://twitter.com/@sho_luv) for creating this machine. **This machine is used here with the explicit permission of the creator <3**
 
-![](/apuntes/img/mrrobot.png)
+!**mrrobot.png**
 
 1. Conectarse a la VPN de TryHackMe con `sudo openvpn <archivo.ovpn>`.
 

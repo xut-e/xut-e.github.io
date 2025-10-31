@@ -9,19 +9,19 @@ Uno de los principales objetivos de JS es ofrecer cajas de diálogo para interac
 <h2>Alert</h2>
 La función de alerta muestra un mensaje en una caja de diálogo con un botón de `OK`, típicamente usado para notificar al usuario.
 
-![](/apuntes/img/Pasted image 20250929233432.png)
+!**Pasted image 20250929233432.png**
 
 ------------------------
 <h2>Prompt</h2>
 La función de prompt muestra una caja de diálogo que pide un input al usuario. Devuelve el valor introducido si se le da a `OK` y `null` si se le da a `Cancel`.
 
-![](/apuntes/img/Pasted image 20250929233714.png)
+!**Pasted image 20250929233714.png**
 
 -----------------------
 <h2>Confirm</h2>
 La función confirm muestra una caja de diálogo con un mensaje y dos botones, `OK` y `Cancel`. Devuelve true si el usuario aprieta en `OK` y false si selecciona `Cancel`.
 
-![](/apuntes/img/Pasted image 20250929233850.png)
+!**Pasted image 20250929233850.png**
 
 --------------------
 <h2>¿Cómo Explotan los Hackers la Funcionalidad?</h2>

@@ -22,7 +22,7 @@ Cada usuario se localiza en `C:\Users`. Todos ellos tendrán las mismas carpetas
 
 Otra manera de acceder a esta información es hacer click derecho en el menú de inicio y seleccionar `Run`. Después escribir `lusrmgr.msc`.
 
-![](/apuntes/img/036.gif)
+!**036.gif**
 
 Allí deberías ver dos carpetas: **Users** y **Groups**.
 

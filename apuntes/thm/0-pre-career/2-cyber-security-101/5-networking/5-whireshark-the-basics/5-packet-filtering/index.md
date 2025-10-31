@@ -17,31 +17,31 @@ Los filtros son queries específicas diseñadas para los protocolos disponibles 
 <h2>Apply as Filter</h2>
 Es la forma más básica de filtrar tráfico. Al investigar una captura, puedes hacer click en el campo que quieres filtrar y usar el menú de click derecho o `Analyze -> Apply as Filter`. Una vez aplicado el filtro, Wireshark generará la query necesaria y la aplicará.
 
-![](/apuntes/img/115.png)
+!**115.png**
 
 --------------------
 <h2>Conversation Filter</h2>
 Al usar la opción de `Apply as Filter`, investigas sobre un paquete en concreto. Sin embargo, si quieres investigar sobre la conversación que ha tenido lugar centrándote en las direcciones IP, este tipo de filtro es muy útil porque permite ver sólo los paquetes relacionados. Puedes acceder usando el menú de click derecho o `Analyze -> Conversation Filter`.
 
-![](/apuntes/img/116.png)
+!**116.png**
 
 --------------------------
 <h2>Colourise Conversation</h2>
 Esta opción es similar a la de `Conversation Filter` solo que remarca los paquetes conectados sin aplicar un filtro de muestra. No tiene en cuenta el color del paquete antes de ser aplicado y puede ser accedido con el click derecho o `View -> Colourise Conversation`. Si queremos devolverlo a la normalidad hacemos `View -> Colourise Conversation -> Reset Colourisation`.
 
-![](/apuntes/img/117.png)
+!**117.png**
 
 -------------------
 <h2>Prepare as Filter</h2>
 Similar a `Apply as Filter`, esta opción crea una muestra usando el click derecho. Sin embargo, no aplica el filtro, sino que sólo lo desarrolla en la barra de queries. Se puede poner otras queries usando `and` u `or`.
 
-![](/apuntes/img/118.png)
+!**118.png**
 
 ---------------------
 <h2>Apply as Column</h2>
 Por defecto, la lista de paquetes ofrece información básica sobre cada paquete. Puedes usar el menú de click derecho o `Analyze -> Apply as Column` para añadir columnas al panel de la lista de paquetes. Una vez hecho, será visible en el panel de la lista. Puedes activarlas y desactivarlas haciendo click derecho en la parte superior del panel de paquetes.
 
-![](/apuntes/img/119.png)
+!**119.png**
 
 ------------------
 <h2>Follow Stream</h2>
@@ -51,6 +51,6 @@ Seguir el flujo del protocolo ayuda a recrear la información a nivel de aplicac
 
 Puedes usar el click derecho o `Analyze -> Follow TCP/UDP/HTTP Stream`. Los flujos salen en una nueva pestaña, siendo en azul la respuesta del servidor y en rojo la petición del cliente.
 
-![](/apuntes/img/120.png)
+!**120.png**
 
 Una vez seguido un flujo, Wireshark crea y aplica la query necesaria para seguir el flujo.

@@ -12,7 +12,7 @@ Un IDS puede ser desplegado de las siguientes maneras:
 - **Host Intrusion Detection System (HIDS):** Se instalan individualmente en los hosts y son responsables de detectar amenazas de seguridad potenciales asociadas a un host particular. Ofrecen visibilidad detallada de las actividades del host. Sin embargo pueden ser complicados de manejar en redes grandes.
 - **Network Intrusion Detection System (NIDS):** Son esenciales en detectar actividad maliciosa en la red entera sin importar un host en específico. Monitorizan el tráfico de red de todos los hosts involucrados para detectar actividad maliciosa. Ofrece una vista centralizada de todas las detecciones dentro de la red.
 
-![](/apuntes/img/Pasted image 20251024210018.png)
+!**Pasted image 20251024210018.png**
 
 --------------------------------
 <h2>Modos de Detección</h2>

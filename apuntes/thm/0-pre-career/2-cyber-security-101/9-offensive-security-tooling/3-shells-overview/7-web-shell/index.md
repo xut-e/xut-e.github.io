@@ -32,11 +32,11 @@ Esto ejecutará el comando whoami en el servidor y devolverá el resultado a tra
 El poder de los lenguajes soportados por los servidores web puede resultar en web shells con varias funcionalidades y evitar la detección a la vez. Veamos algunas de las más populares:
 
 - [p0wny-shell](https://github.com/flozz/p0wny-shell): Una web shell de un solo archivo PHP minimalista que permite RCE.
-  ![](/apuntes/img/Pasted image 20251017174237.png)
+  !**Pasted image 20251017174237.png**
 - [b374k shell](https://github.com/b374k/b374k): Una web shell PHP más rica en funcionalidades con manejo de archivos y ejecución de comandos, entre otras funcionalidades.
-  ![](/apuntes/img/Pasted image 20251017174417.png)
+  !**Pasted image 20251017174417.png**
 - [c99 shell](https://www.r57shell.net/single.php?id=13): Una web shell robusta y bien conocida con funcionalidades extensas.
-  ![](/apuntes/img/Pasted image 20251017174504.png)
+  !**Pasted image 20251017174504.png**
 
 Si quieres encontrar más web shells: https://www.r57shell.net/index.php 
 

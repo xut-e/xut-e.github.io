@@ -57,4 +57,4 @@ Connection closed by foreign host.
 
 Debajo una imagen con el servidor en azul y el cliente en rojo:
 
-![](/apuntes/img/086.png)
+!**086.png**

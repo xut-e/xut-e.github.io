@@ -15,7 +15,7 @@ Puede ser utilizado usando `-sT`. Intenta completar el three-way handshake con c
 
 El la imagen de abajo podemos ver que nuestra máquina tiene la IP `192.168.124.148` y el Sistema objetivo tiene TCP en el puerto 22 (abierto) y 23 (cerrado). Marcado con un 1, puedes ver el handshake; con un 2, una conexión intentada a un puerto cerrado.
 
-![](/apuntes/img/122.png)
+!**122.png**
 
 -----------------
 <h2>SYN Scan (Stealth)</h2>
@@ -23,7 +23,7 @@ Al contrario que el escaneo de conexión, el escaneo SYN sólo ejecuta el primer
 
 En la imagen de debajo, podemos escanear el sistema con el puerto 22 abierto. La parte marcada con un 1, muestra el servicio en escucha respondiendo con un paquete TCP SYN-ACK. Sin embargo, Nmap responde con un TCP RST para no completar el handshake. En la parte marcada con un 2, se muestra una conexión TCP intentándolo en un puerto cerrado. En este caso el intercambio es igual que el del escaneo de conexión.
 
-![](/apuntes/img/123.png)
+!**123.png**
 
 -----------------------
 <h2>Escaneando Puertos UDP</h2>
@@ -31,7 +31,7 @@ Aunque la mayoría de los servicios usan TCP para la comunicación, algunos usan
 
 Nmap ofrece la opción `-sU` para escanear servicios UDP. La imagen de abajo muestra varias respuestas de destino inalcanzable de ICMP, que es el mensaje que devuelven los puertos UDP cerrados.
 
-![](/apuntes/img/124.png)
+!**124.png**
 
 ---------------
 <h2>Limitando los Puertos Objetivo</h2>

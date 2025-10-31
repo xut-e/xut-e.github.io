@@ -39,4 +39,4 @@ Puede que queramos relacionar una tabla que contiene los libros con otra tabla q
 
 En nuestra tabla de libros, el `id` sería nuestra clave primaria, porque es única e irrepetible. Así mismo, en la tabla de autores el `id` podría ser nuestra PK (Primary Key). Y para relacionarlas añadiríamos una FK (Foreign Key o Clave Foránea) en la tabla de libros con el nombre de columna `id_autor`, donde introduciríamos el id del autor de la tabla autor.
 
-![](/apuntes/img/Pasted image 20250930233218.png)
+!**Pasted image 20250930233218.png**

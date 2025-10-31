@@ -42,17 +42,17 @@ Lo segundo que tenemos que hacer es subir el archivo al **CAPA Web Explorer**. P
 
 Ahora deberíamos ver la página de **Home**.
 
-![](/apuntes/img/Pasted image 20251028151115.png)
+!**Pasted image 20251028151115.png**
 
 Buscaremos el botón "**Upload from local**" en la esquina inferior izquierda y selecciona el archivo `.json` que hemos preparado. Una vez subido deberías ver un output similar a este:
 
-![](/apuntes/img/Pasted image 20251028151321.png)
+!**Pasted image 20251028151321.png**
 
 Ahora es momento de explorar esta adición a la herramienta. Revisaremos algunas capabilities y comprobaremos qué parte de las reglas exactamente fue un match.
 
 Veamos el primer ejemplo debajo. Sabemos que la capability fue **reference anti-VM strings targeting VMWare** y que el archivo de configuración de regla correspondiente fue **anti-vm-strings-targeting-vmware.yml**.
 
-![](/apuntes/img/Pasted image 20251028151705.png)
+!**Pasted image 20251028151705.png**
 
 Veamos el contenido de la regla:
 
@@ -134,7 +134,7 @@ rule:
 
 Veamos otro ejemplo. Sabemos que la capability fue **scheduled tasks via schtasts**, y que el archivo de regla fue **scheduled-tasks-via-schtasks.yml**.
 
-![](/apuntes/img/Pasted image 20251028152213.png)
+!**Pasted image 20251028152213.png**
 
 Lo mismo aplica que a nuestro primer ejemplo, nos centraremos en las features ya que es lo que CAPA usa para detectar coincidencias:
 
@@ -168,6 +168,6 @@ Bajo las funcionalidades "**string: /schtasks/i**" y "**string: /\/create/i**" f
 <h2>Caja de Búsqueda Global</h2>
 Otra funcionalidad guay de esta herramienta es poder filtrar y la búsqueda global.
 
-![](/apuntes/img/Pasted image 20251028152712.png)
+!**Pasted image 20251028152712.png**
 
 Es mucho más rápido el análisis de esta información usando CAPA Web Explorer que cualquier editor de texto.

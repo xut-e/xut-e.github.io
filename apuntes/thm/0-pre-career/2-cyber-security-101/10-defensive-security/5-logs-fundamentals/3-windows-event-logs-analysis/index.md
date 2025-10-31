@@ -15,15 +15,15 @@ Al contrario que otros archivos de log estudiados en las teras anteriores, Windo
 
 Para abrirlo, hacemos click en el botón de Windows y escribimos 'Event Viewer' y abrirá el Visor de Eventos. La parte en amarillo muestra los diferentes logs disponibles.
 
-![](/apuntes/img/Pasted image 20251022164251.png)
+!**Pasted image 20251022164251.png**
 
 Si haces click en `Windows Logs`, verás los diferentes tipos de logs que hemos visto al comienzo de la actividad. La primera porción resaltada muestra los diferentes tipos de logs. Cuando hacemos click en uno de ellos, veremos los diferentes logs, como se ve en la segunda parte resaltada. Finalmente, en la tercera porción tenemos diferentes opciones de análisis de logs.
 
-![](/apuntes/img/Pasted image 20251022165814.png)
+!**Pasted image 20251022165814.png**
 
 Veamos el contenido de alguno de ellos:
 
-![](/apuntes/img/Pasted image 20251022165832.png)
+!**Pasted image 20251022165832.png**
 
 Así es como un log de evento se ve en Windows. Tiene diferentes campos, pero veremos los siguientes:
 
@@ -50,12 +50,12 @@ Hay muchos más IDs de eventos. No es necesario recordarlos todos pero es bueno 
 
 El visor de eventos nos permite buscar entre los logs relacionados a un ID de evento específico con la funcionalidad `Filter Current Log`. Podemos hacer click en esta funcionalidad para aplicar cualquier filtro:
 
-![](/apuntes/img/Pasted image 20251022175353.png)
+!**Pasted image 20251022175353.png**
 
 Cuando hacemos click en `Filter Current Log`, se nos pedirá ingressar el ID de evento que queremos filtrar. Aquí debajo un ejemplo del filtrado por ID `4624`:
 
-![](/apuntes/img/Pasted image 20251022175549.png)
-![](/apuntes/img/Pasted image 20251022175603.png)
+!**Pasted image 20251022175549.png**
+!**Pasted image 20251022175603.png**
 
 ------------------------------
 <h2>Ejercicio</h2>
@@ -64,20 +64,20 @@ El viernes, una rganización crítica reportó haber sido víctima de un ciberat
 Tu trabajo es investigar y encontrar las actividades del atacante en este sistema comprometido antes de que ganase acceso al servidor.
 
 1. Entramos en la máquina por `xfreerdp3`:
-   ![](/apuntes/img/Pasted image 20251022181211.png)
-   ![](/apuntes/img/Pasted image 20251022181536.png)
+   !**Pasted image 20251022181211.png**
+   !**Pasted image 20251022181536.png**
 2. Entramos en el Event Viewer:
-   ![](/apuntes/img/Pasted image 20251022181658.png)
+   !**Pasted image 20251022181658.png**
 3. Buscamos por código 4720 para ver las cuentas creadas:
-   ![](/apuntes/img/Pasted image 20251022181848.png)
+   !**Pasted image 20251022181848.png**
 4. Pinchamos en la última creada y miramos el nombre de usuario de la nueva cuenta:
-   ![](/apuntes/img/Pasted image 20251022182049.png)
+   !**Pasted image 20251022182049.png**
 5. Miramos quién creó la cuenta:
-   ![](/apuntes/img/Pasted image 20251022182131.png)
+   !**Pasted image 20251022182131.png**
 6. Miramos cuándo se activó la cuenta:
-   ![](/apuntes/img/Pasted image 20251022182321.png)
+   !**Pasted image 20251022182321.png**
 7. Filtramos por código `4724` parra ver intentos de cambios de contraseña:
-   ![](/apuntes/img/Pasted image 20251022182632.png)
+   !**Pasted image 20251022182632.png**
 8. Vemos que efectivamente sí que se cambió:
-   ![](/apuntes/img/Pasted image 20251022182714.png)
+   !**Pasted image 20251022182714.png**
 

@@ -12,11 +12,11 @@ El ICMP es usado principalmente para la diagnosis de la red y reporte de errores
 <h2>Ping</h2>
 A lo mejor nunca has jugado al ping-pong, pero gracias a `ping` ahora puedes hacerlo con un ordenador. El comando `ping` manda una petición echo mediante ICMP (tipo 8).
 
-![](/apuntes/img/076.png)
+!**076.png**
 
 El ordenador que lo recibe devuelve un "pong", una petición echo mediante ICMP (tipo 0).
 
-![](/apuntes/img/077.png)
+!**077.png**
 
 Muchas cosas pueden interrumpir el ping. Además del hecho de que pueda estar offline o apagado, un firewall puede estar bloqueando el tráfico necesario para que `ping` funcione.
 

@@ -25,13 +25,13 @@ La GUI de Wireshark se abre con una sola página todo en uno. A primera vista de
 | **Status Bar**                    | Estado de herramientas e información de paquetes y perfiles.                                            |
 La imagen de abajo muestra la interfaz de Wireshark:
 
-![](/apuntes/img/093 1.png)
+!**093 1.png**
 
 -----------
 <h2>Cargando Archivos PCAP</h2>
 Para abrir un archivo PCAP puedes dárselo como parámetro a `wireshark <archivo_pcap>`, arrastrarlo a la interfaz o seleccionar `File`. Una vez abierto se ve algo así:
 
-![](/apuntes/img/094 1.png)
+!**094 1.png**
 
 Aquí vemos varias secciones:
 
@@ -47,22 +47,22 @@ A parte de la información rápida, Wireshark también colorea los paquetes de a
 
 Wireshark tiene dos tipos de métodos de coloreo de paquetes. Reglas temporales, sólo disponibles durante una sesión y reglas permanentes, que son guardadas bajo las preferencias de archivos (perfil). Podemos usar `click derecho en menú` o `View -> Coloring Rules`. La opción `Colourise Packet List` activa y desactiva las reglas de coloración. Las reglas temporales se pueden hacer `View -> Conversation Filter`. Así es como se ven las reglas por defecto:
 
-![](/apuntes/img/095 1.png)
+!**095 1.png**
 
 ---------------
 <h2>Sniffeo de Tráfico</h2>
 Podemos usar el botón azul de la aleta de un tiburón para comenzar el sniffeo de la red (capturar tráfico), el botón rojo lo parara y el verde lo reiniciará. La barra de estado también mostrará la interfaz sniffeada y el número de paquetes recolectados.
 
-![](/apuntes/img/096.png)
+!**096.png**
 
 -------------------
 <h2>Fusionar Archivos PCAP</h2>
 Wireshark puede combinar dos archivos pcap en uno solo. Para ello podemos hacer `File -> Merge`. Al escoger el segundo archivo, Wireshark mostrará el total de paquetes en el archivo seleccionado. Una vez le damos a `Open`, se fusionará con el archivo pcap existente y creará un archivo pcap nuevo. **Debemos guardar el archivo fusionado antes de poder trabajar sobre él.**
 
-![](/apuntes/img/097.png)
+!**097.png**
 
 -----------------
 <h2>Ver Detalles de Archivo</h2>
 Conocer los detalles del archivo es de ayuda. Especialmente cuando trabajamos con múltiples archivos pcap, a veces necesitamos comprobar el file hash, el tiempo de captura, los comentarios, estadísticas, etc. Para ver los detalles: `Statistics -> Capture File Properties` o haciendo click en el icono pcap localizado en la esquina inferior derecha.
 
-![](/apuntes/img/098.png)
+!**098.png**

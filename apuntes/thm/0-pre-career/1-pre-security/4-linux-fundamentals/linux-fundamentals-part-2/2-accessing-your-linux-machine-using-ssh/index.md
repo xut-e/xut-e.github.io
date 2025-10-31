@@ -9,7 +9,7 @@ Secure SHell (SSH) es un protocolo usado para conectarse a máquinas de manera r
 <h2>¿Qué es SSH y cómo funciona?</h2>
 Es un protocolo entre dispositivos de forma encriptada. Usando criptografía, cualquier input humanamente leíble, se encripta para su transporte por la red. Siendo desencriptado una vez llega a la máquina remota.
 
-![](/apuntes/img/022.png)
+!**022.png**
 
 De momento sólo necesitamos entender que:
 
@@ -25,5 +25,5 @@ El uso de SSH es muy sencillo, sólo necesitamos proporcionar dos cosas:
 
 Para esta lección nos conectaremos como el usuario tryhackme cuya contraseña es tryhackme. La sintaxis es: `ssh <usuario>@<direccion_ip>`.
 
-1. ![](/apuntes/img/024.png)
-2. ![](/apuntes/img/023.png)
+1. !**024.png**
+2. !**023.png**

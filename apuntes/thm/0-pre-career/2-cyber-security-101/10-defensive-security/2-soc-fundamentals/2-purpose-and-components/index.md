@@ -18,4 +18,4 @@ El objetivo principal de un equipo SOC es mantener la Detección y la respuesta 
 
 Hay tres pilares en un SOC. Con estos, un equipo SOC se vuelve maduro y eficiente detectando y respondiendo a diferentes incidentes. Estos pilares son **People**, **Process** y **Technology**.
 
-![](/apuntes/img/Pasted image 20251019205936.png)
+!**Pasted image 20251019205936.png**

@@ -9,7 +9,7 @@ Windows controla esas políticas a través de GPO (Group Policy Objects). Los GP
 
 Lo primero que vemos al abrirlo es la jerarquía de OU, previamente definida. Para configurar las políticas de los grupos, debemos crear primero un GPO debajo de "Group Policy Objects" y linkearlo con el OU donde queremos aplicar sus políticas. Hay algunas ya creadas en nuestra máquina:
 
-![](/apuntes/img/056.png)
+!**056.png**
 
 Podemos ver en la imagen de arriba que se han creado 3 GPOs. `Default Domain Policy` y `RDP Policy` están conectados con el dominio `thm.local` y `Default Domain Controllers Policy` está linkeado con `Domain Controllers`.
 
@@ -17,25 +17,25 @@ Podemos ver en la imagen de arriba que se han creado 3 GPOs. `Default Domain Pol
 
 Analicemos  `Default Domain Policy` para ver qué contiene una GPO. La primera pestaña que veremos al seleccionar un GPO es **scope**, que es donde el GPO es linkeado en el AD. Podemos ver que sólo ha sido linkeado al dominio `thm.local`.
 
-![](/apuntes/img/057.png)
+!**057.png**
 
 Como podemos ver, también se puede aplicar filtrado de seguridad a los GPOs para que sólo se apliquen a ciertos usuarios u ordenadores bajo una OU. Por defecto se aplicarán a los usuarios autentificados, lo que incluye a todos los usuarios/PCs.
 
 La pestaña `Settings` incluye los contenidos del GPO y nos deja ver las configuraciones específicas que aplica. Como ya hemos visto, cada GPO tiene configuraciones que aplican a los ordenadores sólo y configuraciones que aplican a los usuarios sólo. En este caso `Default Domain Policy` sólo contiene configuraciones de ordenador.
 
-![](/apuntes/img/058.png)
+!**058.png**
 
 Como este GPO aplica a todo el dominio, cualquier cambio afectará a todos los ordenadores. Cambiemos la longitud mínima de las contraseñas para que tengan 10 caracteres al menos:
 
-![](/apuntes/img/059.png)
+!**059.png**
 
 Esto abrirá una nueva pestaña. Para cambiar la longitud: `Computer Configuratios -> Policies -> Windows Setting -> Security Settings -> Account Policies -> Password Policy` y ahí cambiamos el valor requerido:
 
-![](/apuntes/img/060.png)
+!**060.png**
 
 Como podemos ver, múltiples políticas pueden establecerse en un GPO. Si necesitas información sobre cualquiera de ellas puedes hacer doble click en ellas y leer la pestaña `Explain`.
 
-![](/apuntes/img/061.png)
+!**061.png**
 
 ------------------------
 <h2>Distribución de GPOs</h2>
@@ -57,7 +57,7 @@ Queremos restringir el acceso al panel de control para aquellos usuarios que no 
 
 Crearemos un nuevo GPO llamado `Restrict Control Panel Access`. Como queremos que este GPO se aplique a usuarios específicos buscaremos debajo de `User Configuration` la siguiente política:
 
-![](/apuntes/img/062.png)
+!**062.png**
 
 Le damos a `Enable`.
 
@@ -69,6 +69,6 @@ Podríamos aplicar este GPO a las OUs que creamos antes (Workstations y Servers)
 
 Hagamos un GPO nuevo que llamaremos `Auto Lock Screen`.
 
-![](/apuntes/img/063.png)
+!**063.png**
 
 Después de crearlo y configurarlo lo arrastramos a `thm.local`.

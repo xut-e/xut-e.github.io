@@ -5,7 +5,7 @@ title: "4. Managing Computers in AD"
 
 Por defecto todas las máquinas que se unen a un dominio (excepto los DCs) son puestas en un contenedor llamado "Computers". Si comprobamos nuestro DC, veremos que ya hay algunas puestas allí:
 
-![](/apuntes/img/054.png)
+!**054.png**
 
 Aquí podemos ver todos los servidores, portátiles y PCs. Pero esto no es la mejor idea, puesto que querremos aplicarles políticas diferentes, seguramente. Aunque no hay un estándar para organizar las máquinas, podemos empezar separándolas en diferentes grupos:
 
@@ -15,6 +15,6 @@ Aquí podemos ver todos los servidores, portátiles y PCs. Pero esto no es la me
 
 Ya que estamos organizando nuestro AD, vamos a crear dos OUs separadas para `Workstations` y `Servers`. Los crearemos debajo de `thm.local`. Debería quedar así:
 
-![](/apuntes/img/055.png)
+!**055.png**
 
 Ahora moveremos los ordenadores personales y portátiles al OU de `Workstations` y los servidores al OU de `Servers`. Al hacer esto podremos configurar políticas más fácilmente.

@@ -9,7 +9,7 @@ La forma de atacar un sistema puede ser de varias maneras y estas vienen dadas p
 - **Alteración:** Es lo contrario de integridad.
 - **Destrucción/Denegación:** Es lo contrario de disponibilidad.
 
-![](/apuntes/img/Pasted image 20251030153045.png)
+!**Pasted image 20251030153045.png**
 
 Consideremos el ejemplo anterior de los pacientes:
 

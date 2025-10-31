@@ -13,7 +13,7 @@ Repasemos los pasos más comunes antes de que un buscador le pida a una página 
 
 Estos pasos se muestran en la imagen de abajo. Los tres paquetes del handshake TCP (marcados con un 1) preceden al primer paquete HTTP con `GET`. La comunicación está marcada con un 2. Los últimos 3 mensajes son la terminación de la comunicación y están marcados con un 3.
 
-![](/apuntes/img/87.png)
+!**87.png**
 
 --------------------------
 <h2>HTTP sobre TLS</h2>
@@ -25,16 +25,16 @@ HTTPS es Hypertext Transfer Protocol Secure. Es básicamente HTTP sobre TLS. Por
 
 La foto de debajo muestra una conexión TCP establecida en los tres primeros paquetes, marcados con un 1. Después, varios paquetes son intercambiados para negociar el protocolo TLS, marcado con un 2. Los apartados 1 y 2 son donde las negociaciones y establecimiento TLS ocurren. Finalmente, la información de la aplicación HTTP se intercambia, marcado con un 3. Mirando Wireshark vemos que pone "Application Data" porque no hay manera de saber su es de hecho HTTP o algún otro protocolo mandado por el puerto 443.
 
-![](/apuntes/img/088.png)
+!**088.png**
 
 Si intentamos ver lo que contienen los contenidos de los paquetes vemos algo del siguiente estilo sin tener la clave de encriptación:
 
-![](/apuntes/img/089.png)
+!**089.png**
 
 ------------------------
 <h2>Consiguiendo la Llave de Encriptación</h2>
 Es improbable que consigamos la clave, pero si lo hacemos, se la podemos dar a Wireshark para poder ver los paquetes de forma normal. Aquí un ejemplo de cómo se ven las comunicaciones encriptadas de arriba una vez tenemos la llave:
 
-![](/apuntes/img/090.png)
+!**090.png**
 
-![](/apuntes/img/091.png)
+!**091.png**

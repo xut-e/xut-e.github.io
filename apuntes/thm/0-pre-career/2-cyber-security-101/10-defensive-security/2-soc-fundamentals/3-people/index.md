@@ -9,7 +9,7 @@ En un SOC, con soluciones de seguridad sin intervención humana, acabarás centr
 
 A la gente se la conoce como equipo SOC y se divide en:
 
-![](/apuntes/img/Pasted image 20251019211812.png)
+!**Pasted image 20251019211812.png**
 
 - **Analista SOC (L1):** Cualquier cosa detectada por la solución de seguridad pasará primero por estos analistas. Llevan a cabo disparos de alerta básicos para determinar si una detección es maliciosa. Reportan dichas detecciones por los canales correspondientes.
 - **Analista SOC (L2):** Algunas detecciones pueden requerir de investigación más exhaustiva. Los analistas de nivel 2 ayudan a los de nivel 1 a correlacionar la información de múltiples fuentes para realizar un análisis como es debido.

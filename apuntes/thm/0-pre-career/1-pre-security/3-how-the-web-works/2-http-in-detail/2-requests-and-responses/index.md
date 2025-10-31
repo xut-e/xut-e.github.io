@@ -9,7 +9,7 @@ Cuando accedemos a una web, el buscador necesitará hacer peticiones al servidor
 <h2>¿Qué es una URL?</h2>
 Una URL es una instrucción de como acceder a un recurso en internet.
 
-![](/apuntes/img/015.png)
+!**015.png**
 - Scheme: Indica qué protocolo utilizar.
 - User: Algunos servicios requieren autentificación.
 - Host: Nombre de dominio o dirección IP del servidor al que deseas acceder.
@@ -22,7 +22,7 @@ Una URL es una instrucción de como acceder a un recurso en internet.
 <h2>Haciendo una petición</h2>
 Es posible hacer una petición al servidor con sólo una línea GET / HTTP/1.1:
 
-![](/apuntes/img/016.png)
+!**016.png**
 Pero para una experiencia más rica en la web, necesitamos mandar otra información también. Esta se manda en lo que se conoce como headers. Un ejemplo de petición:
 
 ```vb.net

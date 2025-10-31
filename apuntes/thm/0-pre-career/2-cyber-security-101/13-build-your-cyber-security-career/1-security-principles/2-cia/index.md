@@ -9,7 +9,7 @@ Antes de describir algo como seguro, debemos considerar qué hace que algo lo se
 - **Integridad:** Busca asegurar que la información no ha sido alterada, además, podemos detectar cualquier alteración si ocurre.
 - **Disponibilidad (Availability):** Intenta asegurar que el sistema o servicio esté disponible si se necesita.
 
-![](/apuntes/img/Pasted image 20251030145704.png)
+!**Pasted image 20251030145704.png**
 
 Consideremos la CIA relacionada a registros de pacientes y sistemas relacionados:
 

@@ -24,5 +24,5 @@ Puedes cambiar los puertos para tus servivios (por ejemplo correr un servicio we
 ----------------------------------
 <h2>Práctica</h2>
 
-1. ![](/apuntes/img/000.png)
-2. ![](/apuntes/img/001.png)
+1. !**000.png**
+2. !**001.png**

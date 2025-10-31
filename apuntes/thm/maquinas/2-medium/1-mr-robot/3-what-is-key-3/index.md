@@ -3,14 +3,14 @@ layout: apunte
 title: "3. What is Key 3"
 ---
 
-1. ![](/apuntes/img/020 1.png)
+1. !**020 1.png**
 Una vez que ya hemos sacado la segunda flag, es hora de rootear la máquina. Para ello primero intentamos ver si podemos ejecutar algún comando con sudo (no es el caso esta vez :'(    ). Entonces intentamos buscar archivos con permiso SUID. Y vemos algo "interesante". Nmap no debería tener permisos SUID.
 2. Haciendo una búsqueda rápida en [GTFOBins](https://gtfobins.github.io/), vemos que efectivamente esto se puede explotar.
-3. ![](/apuntes/img/021 1.png)
+3. !**021 1.png**
 Vemos que hay una manera extremadamente sencilla de ejecutar comandos (si la versión coincide), por lo que hacemos `nmap --version` y bingo! La versión instalada es la 3.81, coincide con los criterios, al lío!
-4. ![](/apuntes/img/022 1.png)
+4. !**022 1.png**
 Pues en un abrir y cerrar de ojos somos **root**.
-5. ![](/apuntes/img/023 1.png)
+5. !**023 1.png**
 Pues sólo nos quedaba encontrar el documento de la última flag, que tenía pinta que iba a estar en `/root`. Y así era.
 
 -------

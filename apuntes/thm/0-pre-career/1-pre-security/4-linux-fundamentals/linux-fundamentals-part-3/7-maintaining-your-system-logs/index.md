@@ -11,13 +11,13 @@ A continuación se ven algunos logs de los siguientes procesos:
 - Logs para el servicio fail2ban, el cuales usado para monitorizarataques de fuerza bruta.
 - El servicio UFW (firewall).
 
-![](/apuntes/img/032.png)
+!**032.png**
 
 Estos logs son una excelente manera de monitorizar la salud de tu sistema y procesos. Los dos tipos de logs que vemos debajo son:
 
 - Access logs.
 - Error logs.
 
-![](/apuntes/img/033.png)
+!**033.png**
 
 Hay, también otros logs que guardan otro tipo de información, como intentos de autentificación.

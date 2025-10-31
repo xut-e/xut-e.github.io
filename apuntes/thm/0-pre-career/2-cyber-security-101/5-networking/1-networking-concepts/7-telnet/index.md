@@ -15,4 +15,4 @@ Antes de continuar deberíamos mencionar que los servidores echo y daytime son c
 
 Con telnet nos conectamos al puerto que nos interese, por ejemplo el echo (7) con `telnet <ip> <puerto>`. Para cerrar la conexión usamos `Ctrl + ]`.
 
-![](/apuntes/img/71.png)
+!**71.png**

@@ -9,7 +9,7 @@ Cada dispositivo en la red genera algún tipo de log cuando una actividad se rea
 <h2>Máquinas Windows</h2>
 Windows registra cada evento que puede ser visto mediante la utilidad Event Viewer. Asigna un ID único a cada tipo de actividad de log, haciendo fácil para el analista examinar y llevar cuenta de ellos. Para ver eventos en un entorno Windows vale con escribir `Event Viewer` en la barra de búsqueda. Estos logs de los endpoints Windows se redirigen al SIEM.
 
-![](/apuntes/img/Pasted image 20251022224503.png)
+!**Pasted image 20251022224503.png**
 
 -----------------------
 <h2>Estaciones de Trabajo Linux</h2>
@@ -52,5 +52,5 @@ Todos estos logs ofrecen una riqueza de información que puede ayudar a identifi
 
 Un ejemplo de cómo Splunk ofrece varias formas de ingestión de logs.
 
-![](/apuntes/img/Pasted image 20251022230936.png)
+!**Pasted image 20251022230936.png**
 

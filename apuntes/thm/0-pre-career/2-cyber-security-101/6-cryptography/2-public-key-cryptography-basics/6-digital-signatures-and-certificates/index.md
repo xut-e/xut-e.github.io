@@ -11,7 +11,7 @@ Las firmas digitales ofrecen una manera de verificar la autenticidad e integrida
 
 La forma más sencilla de hacer una firma digital es encriptando el documento con tu clave privada. Si alguien quisiera verificar esta firma, desencriptarían el documento usando tu clave pública.
 
-![](/apuntes/img/132.jpg)
+!**132.jpg**
 
 Algunos artículos se refieren a firma electrónica y firma digital indistintamente, pero no son lo mismo. Pegar una foto encima de un documento no es una manera real de comprobar autenticidad porque cualquier persona puede hacerlo.
 

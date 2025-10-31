@@ -10,7 +10,7 @@ Antes de adentrarnos en Burp Proxy, exploremos las opciones disponibles para con
 
 Para acceder a los ajustes haz click en **Settings** arriba a la derecha. La ventana de Ajustes se ve así:
 
-![](/apuntes/img/Pasted image 20251004174038.png)
+!**Pasted image 20251004174038.png**
 
 En ella vemos un menú a mano izquierda. Este nos permite cambiar entre diferentes tipos de ajustes, incluyendo:
 

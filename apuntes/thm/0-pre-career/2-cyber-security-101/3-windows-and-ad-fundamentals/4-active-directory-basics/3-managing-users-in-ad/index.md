@@ -5,23 +5,23 @@ title: "3. Managing Users in AD"
 
 Nuestra primera tarea como administrador del dominio es comprobar los OUs y usuarios existentes en el AD ya que hay algunos cambios recientes. Los cambios son los siguientes:
 
-![](/apuntes/img/050.png)
+!**050.png**
 
 ---------------
 <h2>Borrar OUs y usuarios</h2>
 Lo primero que deberías notar es que hay un departamento OU adicional en nuestro AD actual:
 
-![](/apuntes/img/051.png)
+!**051.png**
 
 Nos han dicho que lo han cerrado por ajustes de presupuesto. Si intentas hacer click derecho y borrarlo recibirás el error:
 
-![](/apuntes/img/052.png)
+!**052.png**
 
 Para poder borrarlo debemos activar opciones avanzadas en el menú `View` porque los OUs están protegidos contra borrados accidentales.
 
 Una vez allí podemos hacer click derecho en el OU que queramos borrar, darle a propiedades y una vez allí ir a Objeto y quitar el tick de `Protect object from accidental deletion`.
 
-![](/apuntes/img/053.png)
+!**053.png**
 
 Acto seguido podemos borrar el OU.
 

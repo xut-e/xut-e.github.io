@@ -61,4 +61,4 @@ Connection closed by foreign host.
 
 Debajo en una imagen con la letra roja (cliente) y letra azul (servidor):
 
-![](/apuntes/img/085.png)
+!**085.png**

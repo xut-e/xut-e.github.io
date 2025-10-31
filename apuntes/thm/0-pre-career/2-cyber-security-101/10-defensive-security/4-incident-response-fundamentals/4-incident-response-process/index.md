@@ -17,11 +17,11 @@ El framework de respuesta a incidentes SANS tiene 6 fases (PICERL):
 | Lecciones Aprendidas | Una parte muy importante es reflexionar sobre por qué ha ocurrido lo ocurrido. Nos permite mejorar nuestros sistemas de seguridad. | Realizar una reunión post incidente para analizar las causas base.                            |
 El framework de respuesta a incidentes NIST es similar al SANS. El número de fases que tiene este se reduce a 4:
 
-![](/apuntes/img/Pasted image 20251021223143.png)
+!**Pasted image 20251021223143.png**
 
 Una comparación:
 
-![](/apuntes/img/Pasted image 20251021223201.png)
+!**Pasted image 20251021223201.png**
 
 Cada proceso tiene una forma de documentación formal. El documento formal se llama Plan de Respuesta a Incidentes.
 

@@ -17,7 +17,7 @@ Los dashboards son el componente más importante de los SIEMs. El SIEM presenta 
 - Reglas disparadas
 - Dominios más visitados
 
-![](/apuntes/img/Pasted image 20251024095310.png)
+!**Pasted image 20251024095310.png**
 
 ----------------------------
 <h2>Reglas de Correlación</h2>

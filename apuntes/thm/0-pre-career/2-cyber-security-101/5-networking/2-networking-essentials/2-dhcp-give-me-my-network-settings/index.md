@@ -19,14 +19,14 @@ La solución para esto es DHCP, un protocolo que se basa en UDP. El servidor esc
 
 DHCP sigue cuatro pasos: Descubrir, ofrecer, pedir y reconocer.
 
-![](/apuntes/img/72.jpg)
+!**72.jpg**
 
 1. Discover: El cliente bropadcastea un mensaje DHCPDICOVER buscando el servidor local DHCP si existe.
 2. Offer: EL servidor le responde con un mensaje DHCPOFFER con la dirección IP disponible.
 3. Request: El cliente responde con DHCPREQUEST para indicar que acepta la dirección IP asignada.
 4. Acknowledge: El servidor responde con un mensaje DHCPACK para confirmar que la dirección IP se le ha sido asignada al cliente.
 
-![](/apuntes/img/073.jpg)
+!**073.jpg**
 
 El cliente empieza la conexión sin dirección IP, sólo MAC. En el primer y tercer paso no tiene IP todavía. El cliente se comunica desde la "IP" `0.0.0.0` y manda la comunicación junto con la MAC a la broadcast: `255.255.255.255`. 
 

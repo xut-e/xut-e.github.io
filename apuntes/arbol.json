@@ -1,0 +1,3102 @@
+{
+  "name": "Ciberseguridad",
+  "type": "directory",
+  "contents": [
+    {
+      "name": ".obsidian",
+      "type": "directory",
+      "contents": []
+    },
+    {
+      "name": "THM",
+      "type": "directory",
+      "contents": [
+        {
+          "name": "0. Pre Career",
+          "type": "directory",
+          "contents": [
+            {
+              "name": "1. Pre Security",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "1. Introduction to cybersecurity",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Offensive Security Intro",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. What is Offensive Security.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/1. Offensive Security Intro/1. What is Offensive Security.md",
+                          "parent": "1. Offensive Security Intro"
+                        },
+                        {
+                          "name": "2. Hacking my first machine.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/1. Offensive Security Intro/2. Hacking my first machine.md",
+                          "parent": "1. Offensive Security Intro"
+                        },
+                        {
+                          "name": "3. Careers in Cyber Security.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/1. Offensive Security Intro/3. Careers in Cyber Security.md",
+                          "parent": "1. Offensive Security Intro"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Deffensive Security Intro",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Defensive Security.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/2. Deffensive Security Intro/1. Introduction to Defensive Security.md",
+                          "parent": "2. Deffensive Security Intro"
+                        },
+                        {
+                          "name": "2. Areas of Defensive Security.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/2. Deffensive Security Intro/2. Areas of Defensive Security.md",
+                          "parent": "2. Deffensive Security Intro"
+                        },
+                        {
+                          "name": "3. Practical Example of Defensive Security.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/2. Deffensive Security Intro/3. Practical Example of Defensive Security.md",
+                          "parent": "2. Deffensive Security Intro"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Careers in Cyber",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introducción.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/1. Introducción.md",
+                          "parent": "3. Careers in Cyber"
+                        },
+                        {
+                          "name": "2. Analista de seguridad.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/2. Analista de seguridad.md",
+                          "parent": "3. Careers in Cyber"
+                        },
+                        {
+                          "name": "3. Ingeniero de seguridad.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/3. Ingeniero de seguridad.md",
+                          "parent": "3. Careers in Cyber"
+                        },
+                        {
+                          "name": "4. Respondedor de Incidentes.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/4. Respondedor de Incidentes.md",
+                          "parent": "3. Careers in Cyber"
+                        },
+                        {
+                          "name": "5. Examinador Forense Digital.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/5. Examinador Forense Digital.md",
+                          "parent": "3. Careers in Cyber"
+                        },
+                        {
+                          "name": "6. Analista de Malware.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/6. Analista de Malware.md",
+                          "parent": "3. Careers in Cyber"
+                        },
+                        {
+                          "name": "7. Penetration Tester.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/7. Penetration Tester.md",
+                          "parent": "3. Careers in Cyber"
+                        },
+                        {
+                          "name": "8. Red Teamer.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/8. Red Teamer.md",
+                          "parent": "3. Careers in Cyber"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "2. Network Fundamentals",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. What is Networking",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "2. What is the Internet.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/1. What is Networking/2. What is the Internet.md",
+                          "parent": "1. What is Networking"
+                        },
+                        {
+                          "name": "3. Identifying Devices on a Network.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/1. What is Networking/3. Identifying Devices on a Network.md",
+                          "parent": "1. What is Networking"
+                        },
+                        {
+                          "name": "4. Ping (ICMP).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/1. What is Networking/4. Ping (ICMP).md",
+                          "parent": "1. What is Networking"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Introduction to LAN",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introducing LAN Topologies.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/2. Introduction to LAN/1. Introducing LAN Topologies.md",
+                          "parent": "2. Introduction to LAN"
+                        },
+                        {
+                          "name": "2. Intro to Subnetting.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/2. Introduction to LAN/2. Intro to Subnetting.md",
+                          "parent": "2. Introduction to LAN"
+                        },
+                        {
+                          "name": "3. ARP.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/2. Introduction to LAN/3. ARP.md",
+                          "parent": "2. Introduction to LAN"
+                        },
+                        {
+                          "name": "4. DHCP.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/2. Introduction to LAN/4. DHCP.md",
+                          "parent": "2. Introduction to LAN"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. OSI Model",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. What is the OSI Model.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/1. What is the OSI Model.md",
+                          "parent": "3. OSI Model"
+                        },
+                        {
+                          "name": "2. Layer 1 - Physical.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/2. Layer 1 - Physical.md",
+                          "parent": "3. OSI Model"
+                        },
+                        {
+                          "name": "3. Layer 2 - Data Link.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/3. Layer 2 - Data Link.md",
+                          "parent": "3. OSI Model"
+                        },
+                        {
+                          "name": "4. Layer 3 - Network.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/4. Layer 3 - Network.md",
+                          "parent": "3. OSI Model"
+                        },
+                        {
+                          "name": "5. Layer 4 - Transport.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/5. Layer 4 - Transport.md",
+                          "parent": "3. OSI Model"
+                        },
+                        {
+                          "name": "6. Layer 5 - Session.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/6. Layer 5 - Session.md",
+                          "parent": "3. OSI Model"
+                        },
+                        {
+                          "name": "7. Layer 6 - Presentation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/7. Layer 6 - Presentation.md",
+                          "parent": "3. OSI Model"
+                        },
+                        {
+                          "name": "8. Layer 7 - Application.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/8. Layer 7 - Application.md",
+                          "parent": "3. OSI Model"
+                        },
+                        {
+                          "name": "9. Práctica - OSI Game.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/3. OSI Model/9. Práctica - OSI Game.md",
+                          "parent": "3. OSI Model"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Packets and Frames",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. What are Packets and Frames.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/4. Packets and Frames/1. What are Packets and Frames.md",
+                          "parent": "4. Packets and Frames"
+                        },
+                        {
+                          "name": "2. TCP-IP (Three-Way Handshake).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/4. Packets and Frames/2. TCP-IP (Three-Way Handshake).md",
+                          "parent": "4. Packets and Frames"
+                        },
+                        {
+                          "name": "3. UDP-IP.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/4. Packets and Frames/3. UDP-IP.md",
+                          "parent": "4. Packets and Frames"
+                        },
+                        {
+                          "name": "4. Ports 101 (Practical).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/4. Packets and Frames/4. Ports 101 (Practical).md",
+                          "parent": "4. Packets and Frames"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5. Extending your Network",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Port Forwarding.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/5. Extending your Network/1. Introduction to Port Forwarding.md",
+                          "parent": "5. Extending your Network"
+                        },
+                        {
+                          "name": "2. Firewalls 101.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/5. Extending your Network/2. Firewalls 101.md",
+                          "parent": "5. Extending your Network"
+                        },
+                        {
+                          "name": "3. VPN Basics.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/5. Extending your Network/3. VPN Basics.md",
+                          "parent": "5. Extending your Network"
+                        },
+                        {
+                          "name": "4. LAN Networking Devices.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/5. Extending your Network/4. LAN Networking Devices.md",
+                          "parent": "5. Extending your Network"
+                        },
+                        {
+                          "name": "5. Practical - Network Simulator.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/5. Extending your Network/5. Practical - Network Simulator.md",
+                          "parent": "5. Extending your Network"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "3. How the Web Works",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. DNS in Detail",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. What is DNS_.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/1. What is DNS_.md",
+                          "parent": "1. DNS in Detail"
+                        },
+                        {
+                          "name": "2. Domain Hierarchy.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/2. Domain Hierarchy.md",
+                          "parent": "1. DNS in Detail"
+                        },
+                        {
+                          "name": "3. Record Types.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/3. Record Types.md",
+                          "parent": "1. DNS in Detail"
+                        },
+                        {
+                          "name": "4. Making a Request.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/4. Making a Request.md",
+                          "parent": "1. DNS in Detail"
+                        },
+                        {
+                          "name": "5. Práctica.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/5. Práctica.md",
+                          "parent": "1. DNS in Detail"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. HTTP in Detail",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. What is HTTP(S)_.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/1. What is HTTP(S)_.md",
+                          "parent": "2. HTTP in Detail"
+                        },
+                        {
+                          "name": "2. Requests and Responses.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/2. Requests and Responses.md",
+                          "parent": "2. HTTP in Detail"
+                        },
+                        {
+                          "name": "3. HTTP Methods.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/3. HTTP Methods.md",
+                          "parent": "2. HTTP in Detail"
+                        },
+                        {
+                          "name": "4. HTTP Status Codes.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/4. HTTP Status Codes.md",
+                          "parent": "2. HTTP in Detail"
+                        },
+                        {
+                          "name": "5. Headers.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/5. Headers.md",
+                          "parent": "2. HTTP in Detail"
+                        },
+                        {
+                          "name": "6. Cookies.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/6. Cookies.md",
+                          "parent": "2. HTTP in Detail"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. How Websites Work",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "2. HTML.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/2. HTML.md",
+                          "parent": "3. How Websites Work"
+                        },
+                        {
+                          "name": "3. JavaScript.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/3. JavaScript.md",
+                          "parent": "3. How Websites Work"
+                        },
+                        {
+                          "name": "4. Sensitive Data Exposure.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/4. Sensitive Data Exposure.md",
+                          "parent": "3. How Websites Work"
+                        },
+                        {
+                          "name": "5. HTML Injection.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/5. HTML Injection.md",
+                          "parent": "3. How Websites Work"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Putting it All Together",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "2. Other Components.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/4. Putting it All Together/2. Other Components.md",
+                          "parent": "4. Putting it All Together"
+                        },
+                        {
+                          "name": "3. How Web Servers Work.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/4. Putting it All Together/3. How Web Servers Work.md",
+                          "parent": "4. Putting it All Together"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "4. Linux Fundamentals",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "Linux Fundamentals Part 1",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/1. Introduction.md",
+                          "parent": "Linux Fundamentals Part 1"
+                        },
+                        {
+                          "name": "2. A Bit of Background on Linux.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/2. A Bit of Background on Linux.md",
+                          "parent": "Linux Fundamentals Part 1"
+                        },
+                        {
+                          "name": "3. Running your First few Commands.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/3. Running your First few Commands.md",
+                          "parent": "Linux Fundamentals Part 1"
+                        },
+                        {
+                          "name": "4. Interacting with the Filesystem!.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/4. Interacting with the Filesystem!.md",
+                          "parent": "Linux Fundamentals Part 1"
+                        },
+                        {
+                          "name": "5. Searching for files.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/5. Searching for files.md",
+                          "parent": "Linux Fundamentals Part 1"
+                        },
+                        {
+                          "name": "6. An Introduction to Shell Operators.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/6. An Introduction to Shell Operators.md",
+                          "parent": "Linux Fundamentals Part 1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Linux Fundamentals Part 2",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/1. Introduction.md",
+                          "parent": "Linux Fundamentals Part 2"
+                        },
+                        {
+                          "name": "2. Accessing Your Linux Machine Using SSH.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/2. Accessing Your Linux Machine Using SSH.md",
+                          "parent": "Linux Fundamentals Part 2"
+                        },
+                        {
+                          "name": "3. Introduction to Flags and Switches.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/3. Introduction to Flags and Switches.md",
+                          "parent": "Linux Fundamentals Part 2"
+                        },
+                        {
+                          "name": "4. Filesystem Interaction Continued.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/4. Filesystem Interaction Continued.md",
+                          "parent": "Linux Fundamentals Part 2"
+                        },
+                        {
+                          "name": "5. Permissions 101.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/5. Permissions 101.md",
+                          "parent": "Linux Fundamentals Part 2"
+                        },
+                        {
+                          "name": "6. Common Directories.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/6. Common Directories.md",
+                          "parent": "Linux Fundamentals Part 2"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Linux Fundamentals Part 3",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/1. Introduction.md",
+                          "parent": "Linux Fundamentals Part 3"
+                        },
+                        {
+                          "name": "2. Terminal Text Editors.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/2. Terminal Text Editors.md",
+                          "parent": "Linux Fundamentals Part 3"
+                        },
+                        {
+                          "name": "3. General-Useful Utilities.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/3. General-Useful Utilities.md",
+                          "parent": "Linux Fundamentals Part 3"
+                        },
+                        {
+                          "name": "4. Processes 101.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/4. Processes 101.md",
+                          "parent": "Linux Fundamentals Part 3"
+                        },
+                        {
+                          "name": "5. Maintaining your System - Automation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/5. Maintaining your System - Automation.md",
+                          "parent": "Linux Fundamentals Part 3"
+                        },
+                        {
+                          "name": "6. Maintaining your System - Package Management.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/6. Maintaining your System - Package Management.md",
+                          "parent": "Linux Fundamentals Part 3"
+                        },
+                        {
+                          "name": "7. Maintaining your System - Logs.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/7. Maintaining your System - Logs.md",
+                          "parent": "Linux Fundamentals Part 3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "5. Windows Fundamentals",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Windows Fundamentals Part 1",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Windows.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/1. Introduction to Windows.md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        },
+                        {
+                          "name": "2. Windows Editions.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/2. Windows Editions.md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        },
+                        {
+                          "name": "3. The Desktop (GUI).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/3. The Desktop (GUI).md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        },
+                        {
+                          "name": "4. The File System.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/4. The File System.md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        },
+                        {
+                          "name": "5. The Windows System32 Folders.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/5. The Windows System32 Folders.md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        },
+                        {
+                          "name": "6. User Accounts, Profiles and Permissions.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/6. User Accounts, Profiles and Permissions.md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        },
+                        {
+                          "name": "7. User Account Control.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/7. User Account Control.md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        },
+                        {
+                          "name": "8. Settings and the Control Panel.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/8. Settings and the Control Panel.md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        },
+                        {
+                          "name": "9. Task Manager.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/9. Task Manager.md",
+                          "parent": "1. Windows Fundamentals Part 1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Windows Fundamentals Part 2",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/1. Introduction.md",
+                          "parent": "2. Windows Fundamentals Part 2"
+                        },
+                        {
+                          "name": "2. System Configuration.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/2. System Configuration.md",
+                          "parent": "2. Windows Fundamentals Part 2"
+                        },
+                        {
+                          "name": "3. Change UAC Settings.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/3. Change UAC Settings.md",
+                          "parent": "2. Windows Fundamentals Part 2"
+                        },
+                        {
+                          "name": "4. Computer Management.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/4. Computer Management.md",
+                          "parent": "2. Windows Fundamentals Part 2"
+                        },
+                        {
+                          "name": "5. System Information.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/5. System Information.md",
+                          "parent": "2. Windows Fundamentals Part 2"
+                        },
+                        {
+                          "name": "6. Resource Monitor.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/6. Resource Monitor.md",
+                          "parent": "2. Windows Fundamentals Part 2"
+                        },
+                        {
+                          "name": "7. Command Prompt.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/7. Command Prompt.md",
+                          "parent": "2. Windows Fundamentals Part 2"
+                        },
+                        {
+                          "name": "8. Registry Editor.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/8. Registry Editor.md",
+                          "parent": "2. Windows Fundamentals Part 2"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Windows Fundamentals Part 3",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/1. Introduction.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        },
+                        {
+                          "name": "2. Windows Updates.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/2. Windows Updates.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        },
+                        {
+                          "name": "3. Windows Security.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/3. Windows Security.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        },
+                        {
+                          "name": "4. Virus and Threat Protection.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/4. Virus and Threat Protection.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        },
+                        {
+                          "name": "5. Firewall and Network Protection.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/5. Firewall and Network Protection.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        },
+                        {
+                          "name": "6. App and Browser Control.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/6. App and Browser Control.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        },
+                        {
+                          "name": "7. Device Security.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/7. Device Security.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        },
+                        {
+                          "name": "8. BitLocker.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/8. BitLocker.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        },
+                        {
+                          "name": "9. Volume Shadow Copy Service.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/9. Volume Shadow Copy Service.md",
+                          "parent": "3. Windows Fundamentals Part 3"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "2. Cyber Security 101",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "1. Start Your Cyber Security Journey",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Offensive Security Intro",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "2. Defensive Security Intro",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "3. Search Skills",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/1. Introduction.md",
+                          "parent": "3. Search Skills"
+                        },
+                        {
+                          "name": "2. Evaluation of Search Results.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/2. Evaluation of Search Results.md",
+                          "parent": "3. Search Skills"
+                        },
+                        {
+                          "name": "3. Search Engines.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/3. Search Engines.md",
+                          "parent": "3. Search Skills"
+                        },
+                        {
+                          "name": "4. Specialized Search Engines.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/4. Specialized Search Engines.md",
+                          "parent": "3. Search Skills"
+                        },
+                        {
+                          "name": "5. Vulnerabilities and Exploits.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/5. Vulnerabilities and Exploits.md",
+                          "parent": "3. Search Skills"
+                        },
+                        {
+                          "name": "6. Technical Documentation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/6. Technical Documentation.md",
+                          "parent": "3. Search Skills"
+                        },
+                        {
+                          "name": "7. Social Media.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/7. Social Media.md",
+                          "parent": "3. Search Skills"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "10. Defensive Security",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Defensive Security Intro",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "2. SOC Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to SOC.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/2. SOC Fundamentals/1. Introduction to SOC.md",
+                          "parent": "2. SOC Fundamentals"
+                        },
+                        {
+                          "name": "2. Purpose and Components.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/2. SOC Fundamentals/2. Purpose and Components.md",
+                          "parent": "2. SOC Fundamentals"
+                        },
+                        {
+                          "name": "3. People.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/2. SOC Fundamentals/3. People.md",
+                          "parent": "2. SOC Fundamentals"
+                        },
+                        {
+                          "name": "4. Process.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/2. SOC Fundamentals/4. Process.md",
+                          "parent": "2. SOC Fundamentals"
+                        },
+                        {
+                          "name": "5. Technology.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/2. SOC Fundamentals/5. Technology.md",
+                          "parent": "2. SOC Fundamentals"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Digital Forensics Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Digital Forensics.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/3. Digital Forensics Fundamentals/1. Introduction to Digital Forensics.md",
+                          "parent": "3. Digital Forensics Fundamentals"
+                        },
+                        {
+                          "name": "2. Digital Forensics Methodology.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/3. Digital Forensics Fundamentals/2. Digital Forensics Methodology.md",
+                          "parent": "3. Digital Forensics Fundamentals"
+                        },
+                        {
+                          "name": "3. Evidence Acquisition.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/3. Digital Forensics Fundamentals/3. Evidence Acquisition.md",
+                          "parent": "3. Digital Forensics Fundamentals"
+                        },
+                        {
+                          "name": "4. Windows Forensics.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/3. Digital Forensics Fundamentals/4. Windows Forensics.md",
+                          "parent": "3. Digital Forensics Fundamentals"
+                        },
+                        {
+                          "name": "5. Practical Example of Digital Forensics.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/3. Digital Forensics Fundamentals/5. Practical Example of Digital Forensics.md",
+                          "parent": "3. Digital Forensics Fundamentals"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Incident Response Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Incident Response.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/4. Incident Response Fundamentals/1. Introduction to Incident Response.md",
+                          "parent": "4. Incident Response Fundamentals"
+                        },
+                        {
+                          "name": "2. What are Incidents?.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/4. Incident Response Fundamentals/2. What are Incidents?.md",
+                          "parent": "4. Incident Response Fundamentals"
+                        },
+                        {
+                          "name": "3. Types of Incidents.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/4. Incident Response Fundamentals/3. Types of Incidents.md",
+                          "parent": "4. Incident Response Fundamentals"
+                        },
+                        {
+                          "name": "4. Incident Response Process.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/4. Incident Response Fundamentals/4. Incident Response Process.md",
+                          "parent": "4. Incident Response Fundamentals"
+                        },
+                        {
+                          "name": "5. Incident Response Techniques.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/4. Incident Response Fundamentals/5. Incident Response Techniques.md",
+                          "parent": "4. Incident Response Fundamentals"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5. Logs Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Logs.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/5. Logs Fundamentals/1. Introduction to Logs.md",
+                          "parent": "5. Logs Fundamentals"
+                        },
+                        {
+                          "name": "2. Types of Logs.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/5. Logs Fundamentals/2. Types of Logs.md",
+                          "parent": "5. Logs Fundamentals"
+                        },
+                        {
+                          "name": "3. Windows Event Logs Analysis.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/5. Logs Fundamentals/3. Windows Event Logs Analysis.md",
+                          "parent": "5. Logs Fundamentals"
+                        },
+                        {
+                          "name": "4. Web Server Access Logs Analysis.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/5. Logs Fundamentals/4. Web Server Access Logs Analysis.md",
+                          "parent": "5. Logs Fundamentals"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "11. Security Solutions",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction to SIEM",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/1. Introduction to SIEM/1. Introduction.md",
+                          "parent": "1. Introduction to SIEM"
+                        },
+                        {
+                          "name": "2. Network Visibility through SIEM.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/1. Introduction to SIEM/2. Network Visibility through SIEM.md",
+                          "parent": "1. Introduction to SIEM"
+                        },
+                        {
+                          "name": "3. Log Sources and Log Ingestion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/1. Introduction to SIEM/3. Log Sources and Log Ingestion.md",
+                          "parent": "1. Introduction to SIEM"
+                        },
+                        {
+                          "name": "4. Why SIEM.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/1. Introduction to SIEM/4. Why SIEM.md",
+                          "parent": "1. Introduction to SIEM"
+                        },
+                        {
+                          "name": "5. Analysing Logs and Alerts.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/1. Introduction to SIEM/5. Analysing Logs and Alerts.md",
+                          "parent": "1. Introduction to SIEM"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Firewall Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. What is the Purpose of a Firewall.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/2. Firewall Fundamentals/1. What is the Purpose of a Firewall.md",
+                          "parent": "2. Firewall Fundamentals"
+                        },
+                        {
+                          "name": "2. Types of Firewalls.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/2. Firewall Fundamentals/2. Types of Firewalls.md",
+                          "parent": "2. Firewall Fundamentals"
+                        },
+                        {
+                          "name": "3. Rules in Firewalls.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/2. Firewall Fundamentals/3. Rules in Firewalls.md",
+                          "parent": "2. Firewall Fundamentals"
+                        },
+                        {
+                          "name": "4. Windows Defender Firewall.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/2. Firewall Fundamentals/4. Windows Defender Firewall.md",
+                          "parent": "2. Firewall Fundamentals"
+                        },
+                        {
+                          "name": "5. Linux iptables Firewall.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/2. Firewall Fundamentals/5. Linux iptables Firewall.md",
+                          "parent": "2. Firewall Fundamentals"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. IDS Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. What is an IDS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/3. IDS Fundamentals/1. What is an IDS.md",
+                          "parent": "3. IDS Fundamentals"
+                        },
+                        {
+                          "name": "2. Types of IDS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/3. IDS Fundamentals/2. Types of IDS.md",
+                          "parent": "3. IDS Fundamentals"
+                        },
+                        {
+                          "name": "3. IDS Example - Snort.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/3. IDS Fundamentals/3. IDS Example - Snort.md",
+                          "parent": "3. IDS Fundamentals"
+                        },
+                        {
+                          "name": "4. Snort Usage.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/3. IDS Fundamentals/4. Snort Usage.md",
+                          "parent": "3. IDS Fundamentals"
+                        },
+                        {
+                          "name": "5. Practical Lab.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/3. IDS Fundamentals/5. Practical Lab.md",
+                          "parent": "3. IDS Fundamentals"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Vulnerability Scanner Overview",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. What Are Vulnerabilities?.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/4. Vulnerability Scanner Overview/1. What Are Vulnerabilities?.md",
+                          "parent": "4. Vulnerability Scanner Overview"
+                        },
+                        {
+                          "name": "2. Vulnerability Scanning.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/4. Vulnerability Scanner Overview/2. Vulnerability Scanning.md",
+                          "parent": "4. Vulnerability Scanner Overview"
+                        },
+                        {
+                          "name": "3. Tools for Vulnerability Scanning.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/4. Vulnerability Scanner Overview/3. Tools for Vulnerability Scanning.md",
+                          "parent": "4. Vulnerability Scanner Overview"
+                        },
+                        {
+                          "name": "4. CVE & CVSS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/4. Vulnerability Scanner Overview/4. CVE & CVSS.md",
+                          "parent": "4. Vulnerability Scanner Overview"
+                        },
+                        {
+                          "name": "5. OpenVAS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/4. Vulnerability Scanner Overview/5. OpenVAS.md",
+                          "parent": "4. Vulnerability Scanner Overview"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "12. Defensive Security Tooling",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. CyberChef - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/1. Introduction.md",
+                          "parent": "1. CyberChef - The Basics"
+                        },
+                        {
+                          "name": "2. Accessing the Tool.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/2. Accessing the Tool.md",
+                          "parent": "1. CyberChef - The Basics"
+                        },
+                        {
+                          "name": "3. Navigating the Interface.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/3. Navigating the Interface.md",
+                          "parent": "1. CyberChef - The Basics"
+                        },
+                        {
+                          "name": "4. Before Anything Else.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/4. Before Anything Else.md",
+                          "parent": "1. CyberChef - The Basics"
+                        },
+                        {
+                          "name": "5. Practice, Practice, Practice.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/5. Practice, Practice, Practice.md",
+                          "parent": "1. CyberChef - The Basics"
+                        },
+                        {
+                          "name": "6. Your First Official Cook.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/1. CyberChef - The Basics/6. Your First Official Cook.md",
+                          "parent": "1. CyberChef - The Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. CAPA - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/1. Introduction.md",
+                          "parent": "2. CAPA - The Basics"
+                        },
+                        {
+                          "name": "2. Tool Overview - How CAPA Works.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/2. Tool Overview - How CAPA Works.md",
+                          "parent": "2. CAPA - The Basics"
+                        },
+                        {
+                          "name": "3. Dissecting CAPA Results Part 1 - General Information, MITRE and MAEC.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/3. Dissecting CAPA Results Part 1 - General Information, MITRE and MAEC.md",
+                          "parent": "2. CAPA - The Basics"
+                        },
+                        {
+                          "name": "4. Dissecting CAPA Results Part 2 - Malware Behavior Catalogue.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/4. Dissecting CAPA Results Part 2 - Malware Behavior Catalogue.md",
+                          "parent": "2. CAPA - The Basics"
+                        },
+                        {
+                          "name": "5. Dissecting CAPA Results Part 3 - Namespaces.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/5. Dissecting CAPA Results Part 3 - Namespaces.md",
+                          "parent": "2. CAPA - The Basics"
+                        },
+                        {
+                          "name": "6. Dissecting CAPA Results Part 4 - Capability.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/6. Dissecting CAPA Results Part 4 - Capability.md",
+                          "parent": "2. CAPA - The Basics"
+                        },
+                        {
+                          "name": "7. More Information, more fun!.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/2. CAPA - The Basics/7. More Information, more fun!.md",
+                          "parent": "2. CAPA - The Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. REMnux - Getting Started",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/3. REMnux - Getting Started/1. Introduction.md",
+                          "parent": "3. REMnux - Getting Started"
+                        },
+                        {
+                          "name": "2. File Analysis.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/3. REMnux - Getting Started/2. File Analysis.md",
+                          "parent": "3. REMnux - Getting Started"
+                        },
+                        {
+                          "name": "3. Fake Network to Aid Analysis.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/3. REMnux - Getting Started/3. Fake Network to Aid Analysis.md",
+                          "parent": "3. REMnux - Getting Started"
+                        },
+                        {
+                          "name": "4. Memory Investigation - Evidence Processing.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/3. REMnux - Getting Started/4. Memory Investigation - Evidence Processing.md",
+                          "parent": "3. REMnux - Getting Started"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. FlareVM - Arsenal of Tools",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/4. FlareVM - Arsenal of Tools/1. Introduction.md",
+                          "parent": "4. FlareVM - Arsenal of Tools"
+                        },
+                        {
+                          "name": "2. Arsenal of Tools.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/4. FlareVM - Arsenal of Tools/2. Arsenal of Tools.md",
+                          "parent": "4. FlareVM - Arsenal of Tools"
+                        },
+                        {
+                          "name": "3. Commonly Used Tools for Investigation - Overview.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/4. FlareVM - Arsenal of Tools/3. Commonly Used Tools for Investigation - Overview.md",
+                          "parent": "4. FlareVM - Arsenal of Tools"
+                        },
+                        {
+                          "name": "4. Analyzing Malicious Files!.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/12. Defensive Security Tooling/4. FlareVM - Arsenal of Tools/4. Analyzing Malicious Files!.md",
+                          "parent": "4. FlareVM - Arsenal of Tools"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "13. Build Your Cyber Security Career",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Security Principles",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/1. Security Principles/1. Introduction.md",
+                          "parent": "1. Security Principles"
+                        },
+                        {
+                          "name": "2. CIA.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/1. Security Principles/2. CIA.md",
+                          "parent": "1. Security Principles"
+                        },
+                        {
+                          "name": "3. DAD.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/1. Security Principles/3. DAD.md",
+                          "parent": "1. Security Principles"
+                        },
+                        {
+                          "name": "4. Fundamental Concepts of Security Models.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/1. Security Principles/4. Fundamental Concepts of Security Models.md",
+                          "parent": "1. Security Principles"
+                        },
+                        {
+                          "name": "5. Defence-in-Depth.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/1. Security Principles/5. Defence-in-Depth.md",
+                          "parent": "1. Security Principles"
+                        },
+                        {
+                          "name": "6. ISO - IEC 19249.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/1. Security Principles/6. ISO - IEC 19249.md",
+                          "parent": "1. Security Principles"
+                        },
+                        {
+                          "name": "7. Zero Trust versus Trust but Verify.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/1. Security Principles/7. Zero Trust versus Trust but Verify.md",
+                          "parent": "1. Security Principles"
+                        },
+                        {
+                          "name": "8. Threat versus Risk.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/1. Security Principles/8. Threat versus Risk.md",
+                          "parent": "1. Security Principles"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "13. Build Your Cyber Security Carreer.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/13. Build Your Cyber Security Carreer.md",
+                      "parent": "13. Build Your Cyber Security Career"
+                    },
+                    {
+                      "name": "2. Careers in Cyber",
+                      "type": "directory",
+                      "contents": []
+                    }
+                  ]
+                },
+                {
+                  "name": "2. Linux Fundamentals",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Linux Fundamentals 1",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "2. Linux Fundamentals 2",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "2. Linux Funadmentals 2.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/2. Linux Funadmentals 2.md",
+                          "parent": "2. Linux Fundamentals 2"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Linux Fundamentals 3",
+                      "type": "directory",
+                      "contents": []
+                    }
+                  ]
+                },
+                {
+                  "name": "3. Windows and AD Fundamentals",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Windows Fundamentals 1",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "2. Windows Fundamentals 2",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "3. Windows Fundamentals 3",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "4. Active Directory Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Windows Domains.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/1. Windows Domains.md",
+                          "parent": "4. Active Directory Basics"
+                        },
+                        {
+                          "name": "2. Active Directory.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/2. Active Directory.md",
+                          "parent": "4. Active Directory Basics"
+                        },
+                        {
+                          "name": "3. Managing Users in AD.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/3. Managing Users in AD.md",
+                          "parent": "4. Active Directory Basics"
+                        },
+                        {
+                          "name": "4. Managing Computers in AD.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/4. Managing Computers in AD.md",
+                          "parent": "4. Active Directory Basics"
+                        },
+                        {
+                          "name": "5. Group Policies.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/5. Group Policies.md",
+                          "parent": "4. Active Directory Basics"
+                        },
+                        {
+                          "name": "6. Authentification Methods.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/6. Authentification Methods.md",
+                          "parent": "4. Active Directory Basics"
+                        },
+                        {
+                          "name": "7. Trees, Forests and Trusts.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/7. Trees, Forests and Trusts.md",
+                          "parent": "4. Active Directory Basics"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "4. Command Line",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Windows Command Line",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/1. Windows Command Line/1. Introduction.md",
+                          "parent": "1. Windows Command Line"
+                        },
+                        {
+                          "name": "2. Basic System Information.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/1. Windows Command Line/2. Basic System Information.md",
+                          "parent": "1. Windows Command Line"
+                        },
+                        {
+                          "name": "3. Network Troubleshooting.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/1. Windows Command Line/3. Network Troubleshooting.md",
+                          "parent": "1. Windows Command Line"
+                        },
+                        {
+                          "name": "4. File and Disk Management.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/1. Windows Command Line/4. File and Disk Management.md",
+                          "parent": "1. Windows Command Line"
+                        },
+                        {
+                          "name": "5. Task and Process Management.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/1. Windows Command Line/5. Task and Process Management.md",
+                          "parent": "1. Windows Command Line"
+                        },
+                        {
+                          "name": "6. Conclusion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/1. Windows Command Line/6. Conclusion.md",
+                          "parent": "1. Windows Command Line"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Windows PowerShell",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/2. Windows PowerShell/1. Introduction.md",
+                          "parent": "2. Windows PowerShell"
+                        },
+                        {
+                          "name": "2. What is PowerShell.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/2. Windows PowerShell/2. What is PowerShell.md",
+                          "parent": "2. Windows PowerShell"
+                        },
+                        {
+                          "name": "3. PowerShell Basics.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/2. Windows PowerShell/3. PowerShell Basics.md",
+                          "parent": "2. Windows PowerShell"
+                        },
+                        {
+                          "name": "4. Navigating the File System and Working with Files.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/2. Windows PowerShell/4. Navigating the File System and Working with Files.md",
+                          "parent": "2. Windows PowerShell"
+                        },
+                        {
+                          "name": "5. Piping, Filtering, and Sorting Data.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/2. Windows PowerShell/5. Piping, Filtering, and Sorting Data.md",
+                          "parent": "2. Windows PowerShell"
+                        },
+                        {
+                          "name": "6. System and Network Information.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/2. Windows PowerShell/6. System and Network Information.md",
+                          "parent": "2. Windows PowerShell"
+                        },
+                        {
+                          "name": "7. Real-Time System Analysis.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/2. Windows PowerShell/7. Real-Time System Analysis.md",
+                          "parent": "2. Windows PowerShell"
+                        },
+                        {
+                          "name": "8. Scripting.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/2. Windows PowerShell/8. Scripting.md",
+                          "parent": "2. Windows PowerShell"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Linux Shells",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Linux Shells.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/3. Linux Shells/1. Introduction to Linux Shells.md",
+                          "parent": "3. Linux Shells"
+                        },
+                        {
+                          "name": "2. How to interact With a Shell?.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/3. Linux Shells/2. How to interact With a Shell?.md",
+                          "parent": "3. Linux Shells"
+                        },
+                        {
+                          "name": "3. Types of Linux Shells.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/3. Linux Shells/3. Types of Linux Shells.md",
+                          "parent": "3. Linux Shells"
+                        },
+                        {
+                          "name": "4. Shell Scripting and Components.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/3. Linux Shells/4. Shell Scripting and Components.md",
+                          "parent": "3. Linux Shells"
+                        },
+                        {
+                          "name": "5. The Locker Script.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/3. Linux Shells/5. The Locker Script.md",
+                          "parent": "3. Linux Shells"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "5. Networking",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Networking Concepts",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/1. Networking Concepts/1. Introduction.md",
+                          "parent": "1. Networking Concepts"
+                        },
+                        {
+                          "name": "2. OSI Model.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/1. Networking Concepts/2. OSI Model.md",
+                          "parent": "1. Networking Concepts"
+                        },
+                        {
+                          "name": "3. TCP-IP Model.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/1. Networking Concepts/3. TCP-IP Model.md",
+                          "parent": "1. Networking Concepts"
+                        },
+                        {
+                          "name": "4. IP Addresses and Subnets.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/1. Networking Concepts/4. IP Addresses and Subnets.md",
+                          "parent": "1. Networking Concepts"
+                        },
+                        {
+                          "name": "5. UDP and TCP.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/1. Networking Concepts/5. UDP and TCP.md",
+                          "parent": "1. Networking Concepts"
+                        },
+                        {
+                          "name": "6. Encapsulation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/1. Networking Concepts/6. Encapsulation.md",
+                          "parent": "1. Networking Concepts"
+                        },
+                        {
+                          "name": "7. Telnet.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/1. Networking Concepts/7. Telnet.md",
+                          "parent": "1. Networking Concepts"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Networking Essentials",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/2. Networking Essentials/1. Introduction.md",
+                          "parent": "2. Networking Essentials"
+                        },
+                        {
+                          "name": "2. DHCP - Give Me My Network Settings.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/2. Networking Essentials/2. DHCP - Give Me My Network Settings.md",
+                          "parent": "2. Networking Essentials"
+                        },
+                        {
+                          "name": "3. ARP - Bridging Layer 3 Addressing to Layer 2 Addressing.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/2. Networking Essentials/3. ARP - Bridging Layer 3 Addressing to Layer 2 Addressing.md",
+                          "parent": "2. Networking Essentials"
+                        },
+                        {
+                          "name": "4. ICMP - Troubleshooting Networks.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/2. Networking Essentials/4. ICMP - Troubleshooting Networks.md",
+                          "parent": "2. Networking Essentials"
+                        },
+                        {
+                          "name": "5. Routing.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/2. Networking Essentials/5. Routing.md",
+                          "parent": "2. Networking Essentials"
+                        },
+                        {
+                          "name": "6. NAT.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/2. Networking Essentials/6. NAT.md",
+                          "parent": "2. Networking Essentials"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Networking Core Protocols",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/1. Introduction.md",
+                          "parent": "3. Networking Core Protocols"
+                        },
+                        {
+                          "name": "2. DNS- Remembering Addresses.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/2. DNS- Remembering Addresses.md",
+                          "parent": "3. Networking Core Protocols"
+                        },
+                        {
+                          "name": "3. WHOIS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/3. WHOIS.md",
+                          "parent": "3. Networking Core Protocols"
+                        },
+                        {
+                          "name": "4. HTTP(S) - Accessing the Web.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/4. HTTP(S) - Accessing the Web.md",
+                          "parent": "3. Networking Core Protocols"
+                        },
+                        {
+                          "name": "5. FTP - Transferring Files.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/5. FTP - Transferring Files.md",
+                          "parent": "3. Networking Core Protocols"
+                        },
+                        {
+                          "name": "6. SMTP - Sending Email.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/6. SMTP - Sending Email.md",
+                          "parent": "3. Networking Core Protocols"
+                        },
+                        {
+                          "name": "7. POP3 - Receiving Email.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/7. POP3 - Receiving Email.md",
+                          "parent": "3. Networking Core Protocols"
+                        },
+                        {
+                          "name": "8. IMAP - Synchronizing Email.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/8. IMAP - Synchronizing Email.md",
+                          "parent": "3. Networking Core Protocols"
+                        },
+                        {
+                          "name": "9. Conclusion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/9. Conclusion.md",
+                          "parent": "3. Networking Core Protocols"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Networking Secure Protocols",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/4. Networking Secure Protocols/1. Introduction.md",
+                          "parent": "4. Networking Secure Protocols"
+                        },
+                        {
+                          "name": "2. TLS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/4. Networking Secure Protocols/2. TLS.md",
+                          "parent": "4. Networking Secure Protocols"
+                        },
+                        {
+                          "name": "3. HTTPS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/4. Networking Secure Protocols/3. HTTPS.md",
+                          "parent": "4. Networking Secure Protocols"
+                        },
+                        {
+                          "name": "4. SMPTS, POP3S and IMAPS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/4. Networking Secure Protocols/4. SMPTS, POP3S and IMAPS.md",
+                          "parent": "4. Networking Secure Protocols"
+                        },
+                        {
+                          "name": "5. SSH.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/4. Networking Secure Protocols/5. SSH.md",
+                          "parent": "4. Networking Secure Protocols"
+                        },
+                        {
+                          "name": "6. SFTP and FTPS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/4. Networking Secure Protocols/6. SFTP and FTPS.md",
+                          "parent": "4. Networking Secure Protocols"
+                        },
+                        {
+                          "name": "7. VPN.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/4. Networking Secure Protocols/7. VPN.md",
+                          "parent": "4. Networking Secure Protocols"
+                        },
+                        {
+                          "name": "8. Closing notes + Challenge.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/4. Networking Secure Protocols/8. Closing notes + Challenge.md",
+                          "parent": "4. Networking Secure Protocols"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5. Whireshark - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/5. Whireshark - The Basics/1. Introduction.md",
+                          "parent": "5. Whireshark - The Basics"
+                        },
+                        {
+                          "name": "2. Tool Overview.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/5. Whireshark - The Basics/2. Tool Overview.md",
+                          "parent": "5. Whireshark - The Basics"
+                        },
+                        {
+                          "name": "3. Packet Dissection.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/5. Whireshark - The Basics/3. Packet Dissection.md",
+                          "parent": "5. Whireshark - The Basics"
+                        },
+                        {
+                          "name": "4. Packet Navigation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/5. Whireshark - The Basics/4. Packet Navigation.md",
+                          "parent": "5. Whireshark - The Basics"
+                        },
+                        {
+                          "name": "5. Packet Filtering.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/5. Whireshark - The Basics/5. Packet Filtering.md",
+                          "parent": "5. Whireshark - The Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "6. Tcpdump - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/6. Tcpdump - The Basics/1. Introduction.md",
+                          "parent": "6. Tcpdump - The Basics"
+                        },
+                        {
+                          "name": "2. Basic Packet Capture.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/6. Tcpdump - The Basics/2. Basic Packet Capture.md",
+                          "parent": "6. Tcpdump - The Basics"
+                        },
+                        {
+                          "name": "3. Filtering Expressions.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/6. Tcpdump - The Basics/3. Filtering Expressions.md",
+                          "parent": "6. Tcpdump - The Basics"
+                        },
+                        {
+                          "name": "4. Advanced Filtering.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/6. Tcpdump - The Basics/4. Advanced Filtering.md",
+                          "parent": "6. Tcpdump - The Basics"
+                        },
+                        {
+                          "name": "5. Displaying Packets.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/6. Tcpdump - The Basics/5. Displaying Packets.md",
+                          "parent": "6. Tcpdump - The Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "7. Nmap - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/7. Nmap - The Basics/1. Introduction.md",
+                          "parent": "7. Nmap - The Basics"
+                        },
+                        {
+                          "name": "2. Host Discovery - Who is Online.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/7. Nmap - The Basics/2. Host Discovery - Who is Online.md",
+                          "parent": "7. Nmap - The Basics"
+                        },
+                        {
+                          "name": "3. Port Scanning - Who is Listening.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/7. Nmap - The Basics/3. Port Scanning - Who is Listening.md",
+                          "parent": "7. Nmap - The Basics"
+                        },
+                        {
+                          "name": "4. Version Detection - Extract More Information.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/7. Nmap - The Basics/4. Version Detection - Extract More Information.md",
+                          "parent": "7. Nmap - The Basics"
+                        },
+                        {
+                          "name": "5. Timing - How Fast is Fast.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/7. Nmap - The Basics/5. Timing - How Fast is Fast.md",
+                          "parent": "7. Nmap - The Basics"
+                        },
+                        {
+                          "name": "6. Output - Controlling What You See.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/7. Nmap - The Basics/6. Output - Controlling What You See.md",
+                          "parent": "7. Nmap - The Basics"
+                        },
+                        {
+                          "name": "7. Conclusion and Summary.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/7. Nmap - The Basics/7. Conclusion and Summary.md",
+                          "parent": "7. Nmap - The Basics"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "6. Cryptography",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Cryptography Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/1. Cryptography Basics/1. Introduction.md",
+                          "parent": "1. Cryptography Basics"
+                        },
+                        {
+                          "name": "2. Importance of Cryptography.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/1. Cryptography Basics/2. Importance of Cryptography.md",
+                          "parent": "1. Cryptography Basics"
+                        },
+                        {
+                          "name": "3. Plaintext to Ciphertext.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/1. Cryptography Basics/3. Plaintext to Ciphertext.md",
+                          "parent": "1. Cryptography Basics"
+                        },
+                        {
+                          "name": "4. Historical Ciphers.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/1. Cryptography Basics/4. Historical Ciphers.md",
+                          "parent": "1. Cryptography Basics"
+                        },
+                        {
+                          "name": "5. Types of Encryption.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/1. Cryptography Basics/5. Types of Encryption.md",
+                          "parent": "1. Cryptography Basics"
+                        },
+                        {
+                          "name": "6. Basic Math.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/1. Cryptography Basics/6. Basic Math.md",
+                          "parent": "1. Cryptography Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Public Key Cryptography Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/2. Public Key Cryptography Basics/1. Introduction.md",
+                          "parent": "2. Public Key Cryptography Basics"
+                        },
+                        {
+                          "name": "2. Common Use of Asymetric Encryption.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/2. Public Key Cryptography Basics/2. Common Use of Asymetric Encryption.md",
+                          "parent": "2. Public Key Cryptography Basics"
+                        },
+                        {
+                          "name": "3. RSA.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/2. Public Key Cryptography Basics/3. RSA.md",
+                          "parent": "2. Public Key Cryptography Basics"
+                        },
+                        {
+                          "name": "4. Diffie-Hellman Key Exchange.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/2. Public Key Cryptography Basics/4. Diffie-Hellman Key Exchange.md",
+                          "parent": "2. Public Key Cryptography Basics"
+                        },
+                        {
+                          "name": "5. SSH.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/2. Public Key Cryptography Basics/5. SSH.md",
+                          "parent": "2. Public Key Cryptography Basics"
+                        },
+                        {
+                          "name": "6. Digital Signatures and Certificates.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/2. Public Key Cryptography Basics/6. Digital Signatures and Certificates.md",
+                          "parent": "2. Public Key Cryptography Basics"
+                        },
+                        {
+                          "name": "7. PGP and GPG.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/2. Public Key Cryptography Basics/7. PGP and GPG.md",
+                          "parent": "2. Public Key Cryptography Basics"
+                        },
+                        {
+                          "name": "8. Conclusion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/2. Public Key Cryptography Basics/8. Conclusion.md",
+                          "parent": "2. Public Key Cryptography Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Hashing Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/3. Hashing Basics/1. Introduction.md",
+                          "parent": "3. Hashing Basics"
+                        },
+                        {
+                          "name": "2. Hash Functions.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/3. Hashing Basics/2. Hash Functions.md",
+                          "parent": "3. Hashing Basics"
+                        },
+                        {
+                          "name": "3. Insecure Password Storage for Authentication.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/3. Hashing Basics/3. Insecure Password Storage for Authentication.md",
+                          "parent": "3. Hashing Basics"
+                        },
+                        {
+                          "name": "4. Using Hashing for Secure Password Storage.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/3. Hashing Basics/4. Using Hashing for Secure Password Storage.md",
+                          "parent": "3. Hashing Basics"
+                        },
+                        {
+                          "name": "5. Recognising Password Hashes.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/3. Hashing Basics/5. Recognising Password Hashes.md",
+                          "parent": "3. Hashing Basics"
+                        },
+                        {
+                          "name": "6. Password Cracking.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/3. Hashing Basics/6. Password Cracking.md",
+                          "parent": "3. Hashing Basics"
+                        },
+                        {
+                          "name": "7. Hashing for Integrity Checking.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/3. Hashing Basics/7. Hashing for Integrity Checking.md",
+                          "parent": "3. Hashing Basics"
+                        },
+                        {
+                          "name": "8. Conclusion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/3. Hashing Basics/8. Conclusion.md",
+                          "parent": "3. Hashing Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. John the Ripper - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/1. Introduction.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "10. Cracking Password-Protected RAR Archives.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/10. Cracking Password-Protected RAR Archives.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "11. Cracking SSH Keys with John.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/11. Cracking SSH Keys with John.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "2. Basic Terms.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/2. Basic Terms.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "3. Setting Up Your system.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/3. Setting Up Your system.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "4. Cracking Basic Hashes.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/4. Cracking Basic Hashes.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "5. Cracking Windows Authentification Hashes.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/5. Cracking Windows Authentification Hashes.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "6. Cracking letclshadow Hashes.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/6. Cracking letclshadow Hashes.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "7. Single Crack Mode.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/7. Single Crack Mode.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "8. Custom Rules.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/8. Custom Rules.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        },
+                        {
+                          "name": "9. Cracking Password-Protected Files.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/9. Cracking Password-Protected Files.md",
+                          "parent": "4. John the Ripper - The Basics"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "7. Exploitation Basics",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Moniker Link (CVE-2024-21413)",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/1. Moniker Link (CVE-2024-21413)/1. Introduction.md",
+                          "parent": "1. Moniker Link (CVE-2024-21413)"
+                        },
+                        {
+                          "name": "3. Exploitation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/1. Moniker Link (CVE-2024-21413)/3. Exploitation.md",
+                          "parent": "1. Moniker Link (CVE-2024-21413)"
+                        },
+                        {
+                          "name": "4. Detection.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/1. Moniker Link (CVE-2024-21413)/4. Detection.md",
+                          "parent": "1. Moniker Link (CVE-2024-21413)"
+                        },
+                        {
+                          "name": "5. Remediation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/1. Moniker Link (CVE-2024-21413)/5. Remediation.md",
+                          "parent": "1. Moniker Link (CVE-2024-21413)"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Metasploit - Introduction",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Metasploit.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/2. Metasploit - Introduction/1. Introduction to Metasploit.md",
+                          "parent": "2. Metasploit - Introduction"
+                        },
+                        {
+                          "name": "2. Main Components of Metasploit.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/2. Metasploit - Introduction/2. Main Components of Metasploit.md",
+                          "parent": "2. Metasploit - Introduction"
+                        },
+                        {
+                          "name": "3. Msfconsole.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/2. Metasploit - Introduction/3. Msfconsole.md",
+                          "parent": "2. Metasploit - Introduction"
+                        },
+                        {
+                          "name": "4. Working with Modules.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/2. Metasploit - Introduction/4. Working with Modules.md",
+                          "parent": "2. Metasploit - Introduction"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Metasploit - Exploitation",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/1. Introduction.md",
+                          "parent": "3. Metasploit - Exploitation"
+                        },
+                        {
+                          "name": "2. Scanning.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/2. Scanning.md",
+                          "parent": "3. Metasploit - Exploitation"
+                        },
+                        {
+                          "name": "3. The Metasploit Database.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/3. The Metasploit Database.md",
+                          "parent": "3. Metasploit - Exploitation"
+                        },
+                        {
+                          "name": "4. Vulnerability Scanning.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/4. Vulnerability Scanning.md",
+                          "parent": "3. Metasploit - Exploitation"
+                        },
+                        {
+                          "name": "5. Exploitation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/5. Exploitation.md",
+                          "parent": "3. Metasploit - Exploitation"
+                        },
+                        {
+                          "name": "6. Msfvenom.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/6. Msfvenom.md",
+                          "parent": "3. Metasploit - Exploitation"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Metasploit - Meterpreter",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction to Meterpreter.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/4. Metasploit - Meterpreter/1. Introduction to Meterpreter.md",
+                          "parent": "4. Metasploit - Meterpreter"
+                        },
+                        {
+                          "name": "2. Meterpreter Flavors.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/4. Metasploit - Meterpreter/2. Meterpreter Flavors.md",
+                          "parent": "4. Metasploit - Meterpreter"
+                        },
+                        {
+                          "name": "3. Meterpreter Commands.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/4. Metasploit - Meterpreter/3. Meterpreter Commands.md",
+                          "parent": "4. Metasploit - Meterpreter"
+                        },
+                        {
+                          "name": "4. Post-Exploitation with Meterpreter.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/4. Metasploit - Meterpreter/4. Post-Exploitation with Meterpreter.md",
+                          "parent": "4. Metasploit - Meterpreter"
+                        },
+                        {
+                          "name": "5. Post-Exploitation Challenge.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/4. Metasploit - Meterpreter/5. Post-Exploitation Challenge.md",
+                          "parent": "4. Metasploit - Meterpreter"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5. Blue",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Recon.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/5. Blue/1. Recon.md",
+                          "parent": "5. Blue"
+                        },
+                        {
+                          "name": "2. Gain Access.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/5. Blue/2. Gain Access.md",
+                          "parent": "5. Blue"
+                        },
+                        {
+                          "name": "3. Escalate.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/5. Blue/3. Escalate.md",
+                          "parent": "5. Blue"
+                        },
+                        {
+                          "name": "4. Cracking.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/5. Blue/4. Cracking.md",
+                          "parent": "5. Blue"
+                        },
+                        {
+                          "name": "5. Find flags!.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/5. Blue/5. Find flags!.md",
+                          "parent": "5. Blue"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "8. Web Hacking",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Web Application Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/1. Introduction.md",
+                          "parent": "1. Web Application Basics"
+                        },
+                        {
+                          "name": "2. Web Application Overview.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/2. Web Application Overview.md",
+                          "parent": "1. Web Application Basics"
+                        },
+                        {
+                          "name": "3. Uniform Resource Locator.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/3. Uniform Resource Locator.md",
+                          "parent": "1. Web Application Basics"
+                        },
+                        {
+                          "name": "4. HTTP Messages.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/4. HTTP Messages.md",
+                          "parent": "1. Web Application Basics"
+                        },
+                        {
+                          "name": "5. HTTP Request - Request Line and Methods.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/5. HTTP Request - Request Line and Methods.md",
+                          "parent": "1. Web Application Basics"
+                        },
+                        {
+                          "name": "6. HTTP Request - Headers and Body.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/6. HTTP Request - Headers and Body.md",
+                          "parent": "1. Web Application Basics"
+                        },
+                        {
+                          "name": "7. HTTP Response - Status Line and Status Codes.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/7. HTTP Response - Status Line and Status Codes.md",
+                          "parent": "1. Web Application Basics"
+                        },
+                        {
+                          "name": "8. HTTP Response - Headers and Body.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/8. HTTP Response - Headers and Body.md",
+                          "parent": "1. Web Application Basics"
+                        },
+                        {
+                          "name": "9. Security Headers.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/1. Web Application Basics/9. Security Headers.md",
+                          "parent": "1. Web Application Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. JavaScript Essentials",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/2. JavaScript Essentials/1. Introduction.md",
+                          "parent": "2. JavaScript Essentials"
+                        },
+                        {
+                          "name": "2. Essential Concepts.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/2. JavaScript Essentials/2. Essential Concepts.md",
+                          "parent": "2. JavaScript Essentials"
+                        },
+                        {
+                          "name": "3. JavaScript Overview.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/2. JavaScript Essentials/3. JavaScript Overview.md",
+                          "parent": "2. JavaScript Essentials"
+                        },
+                        {
+                          "name": "4. Integrating JavaScript in HTML.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/2. JavaScript Essentials/4. Integrating JavaScript in HTML.md",
+                          "parent": "2. JavaScript Essentials"
+                        },
+                        {
+                          "name": "5. Abusing Dialogue Functions.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/2. JavaScript Essentials/5. Abusing Dialogue Functions.md",
+                          "parent": "2. JavaScript Essentials"
+                        },
+                        {
+                          "name": "6. Bypassing Control Flow Statementes.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/2. JavaScript Essentials/6. Bypassing Control Flow Statementes.md",
+                          "parent": "2. JavaScript Essentials"
+                        },
+                        {
+                          "name": "7. Exploring Minified Files.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/2. JavaScript Essentials/7. Exploring Minified Files.md",
+                          "parent": "2. JavaScript Essentials"
+                        },
+                        {
+                          "name": "8. Best Practices.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/2. JavaScript Essentials/8. Best Practices.md",
+                          "parent": "2. JavaScript Essentials"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. SQL Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/3. SQL Fundamentals/1. Introduction.md",
+                          "parent": "3. SQL Fundamentals"
+                        },
+                        {
+                          "name": "2. Databases 101.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/3. SQL Fundamentals/2. Databases 101.md",
+                          "parent": "3. SQL Fundamentals"
+                        },
+                        {
+                          "name": "3. SQL.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/3. SQL Fundamentals/3. SQL.md",
+                          "parent": "3. SQL Fundamentals"
+                        },
+                        {
+                          "name": "4. Database and Table Statements.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/3. SQL Fundamentals/4. Database and Table Statements.md",
+                          "parent": "3. SQL Fundamentals"
+                        },
+                        {
+                          "name": "5. CRUD Operations.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/3. SQL Fundamentals/5. CRUD Operations.md",
+                          "parent": "3. SQL Fundamentals"
+                        },
+                        {
+                          "name": "6. Clauses.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/3. SQL Fundamentals/6. Clauses.md",
+                          "parent": "3. SQL Fundamentals"
+                        },
+                        {
+                          "name": "7. Operators.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/3. SQL Fundamentals/7. Operators.md",
+                          "parent": "3. SQL Fundamentals"
+                        },
+                        {
+                          "name": "8. Functions.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/3. SQL Fundamentals/8. Functions.md",
+                          "parent": "3. SQL Fundamentals"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Burp Suite - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/1. Introduction.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "10. Site Map and Issue Definitions.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/10. Site Map and Issue Definitions.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "11. The Burp Suite Browser.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/11. The Burp Suite Browser.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "12. Scoping and Targeting.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/12. Scoping and Targeting.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "13. Proxying HTTPS.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/13. Proxying HTTPS.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "14. Example Attack.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/14. Example Attack.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "2. What is Burp Suite.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/2. What is Burp Suite.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "3. Features of Burp Community.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/3. Features of Burp Community.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "4. Installation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/4. Installation.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "5. The Dashboard.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/5. The Dashboard.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "6. Navigation.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/6. Navigation.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "7. Options.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/7. Options.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "8. Introduction to the Burp Proxy.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/8. Introduction to the Burp Proxy.md",
+                          "parent": "4. Burp Suite - The Basics"
+                        },
+                        {
+                          "name": "9. Connecting through the Proxy (FoxyProxy).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/9. Connecting through the Proxy (FoxyProxy).md",
+                          "parent": "4. Burp Suite - The Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5. OWASP Top 10 - 2021",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/1. Introduction.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "10. III.I. Command Injection.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/10. III.I. Command Injection.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "11. IV. Insecure Design.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/11. IV. Insecure Design.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "12. V. Security Misconfiguration.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/12. V. Security Misconfiguration.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "13. VI. Vulnerable and Outdated Components.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/13. VI. Vulnerable and Outdated Components.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "14. Vulnerable and Outdated Components - Exploit.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/14. Vulnerable and Outdated Components - Exploit.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "15. Vulnerable and Outdated Components - Lab.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/15. Vulnerable and Outdated Components - Lab.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "16. VII. Identification and Authentification Failures.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/16. VII. Identification and Authentification Failures.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "17. Identification and Authetification Failures Practical.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/17. Identification and Authetification Failures Practical.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "18. VIII. Softwares and Data Integrity Failures.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/18. VIII. Softwares and Data Integrity Failures.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "19. Software Integrity Failure.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/19. Software Integrity Failure.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "2. Accessing Machines.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/2. Accessing Machines.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "20. Data Integrity Failure.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/20. Data Integrity Failure.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "21. IX. Security Logging and Monitoring Failures.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/21. IX. Security Logging and Monitoring Failures.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "22. X. Server-Side Request Forgery (SSRF).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/22. X. Server-Side Request Forgery (SSRF).md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "3. I. Broken Access Control.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/3. I. Broken Access Control.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "4. Broken Access Control (IDOR Challenge).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/4. Broken Access Control (IDOR Challenge).md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "5. II. Cryptographic Failures.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/5. II. Cryptographic Failures.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "6. Cryptographic Failures (Supporting Material 1).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/6. Cryptographic Failures (Supporting Material 1).md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "7. Cryptographic Failures (Supporting Material 2).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/7. Cryptographic Failures (Supporting Material 2).md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "8. Cryptographic Failures Challenge.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/8. Cryptographic Failures Challenge.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        },
+                        {
+                          "name": "9. III. Injection.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/9. III. Injection.md",
+                          "parent": "5. OWASP Top 10 - 2021"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "9. Offensive Security Tooling",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Hydra",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Hydra Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/1. Hydra/1. Hydra Introduction.md",
+                          "parent": "1. Hydra"
+                        },
+                        {
+                          "name": "2. Using Hydra.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/1. Hydra/2. Using Hydra.md",
+                          "parent": "1. Hydra"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Gobuster - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/2. Gobuster - The Basics/1. Introduction.md",
+                          "parent": "2. Gobuster - The Basics"
+                        },
+                        {
+                          "name": "2. Environment and Setup.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/2. Gobuster - The Basics/2. Environment and Setup.md",
+                          "parent": "2. Gobuster - The Basics"
+                        },
+                        {
+                          "name": "3. Gobuster - Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/2. Gobuster - The Basics/3. Gobuster - Introduction.md",
+                          "parent": "2. Gobuster - The Basics"
+                        },
+                        {
+                          "name": "4. Use Case - Directory and File Enumeration.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/2. Gobuster - The Basics/4. Use Case - Directory and File Enumeration.md",
+                          "parent": "2. Gobuster - The Basics"
+                        },
+                        {
+                          "name": "5. Use Case - Subdomain Enumeration.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/2. Gobuster - The Basics/5. Use Case - Subdomain Enumeration.md",
+                          "parent": "2. Gobuster - The Basics"
+                        },
+                        {
+                          "name": "6. Use Case - Vhost Enumeration.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/2. Gobuster - The Basics/6. Use Case - Vhost Enumeration.md",
+                          "parent": "2. Gobuster - The Basics"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Shells Overview",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Room Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/3. Shells Overview/1. Room Introduction.md",
+                          "parent": "3. Shells Overview"
+                        },
+                        {
+                          "name": "2. Shell Overview.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/3. Shells Overview/2. Shell Overview.md",
+                          "parent": "3. Shells Overview"
+                        },
+                        {
+                          "name": "3. Reverse Shell.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/3. Shells Overview/3. Reverse Shell.md",
+                          "parent": "3. Shells Overview"
+                        },
+                        {
+                          "name": "4. Bind Shell.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/3. Shells Overview/4. Bind Shell.md",
+                          "parent": "3. Shells Overview"
+                        },
+                        {
+                          "name": "5. Shell Listeners.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/3. Shells Overview/5. Shell Listeners.md",
+                          "parent": "3. Shells Overview"
+                        },
+                        {
+                          "name": "6. Shell Payloads.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/3. Shells Overview/6. Shell Payloads.md",
+                          "parent": "3. Shells Overview"
+                        },
+                        {
+                          "name": "7. Web Shell.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/3. Shells Overview/7. Web Shell.md",
+                          "parent": "3. Shells Overview"
+                        },
+                        {
+                          "name": "8. Practical Task.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/3. Shells Overview/8. Practical Task.md",
+                          "parent": "3. Shells Overview"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. SQLMap - The Basics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/4. SQLMap - The Basics/1. Introduction.md",
+                          "parent": "4. SQLMap - The Basics"
+                        },
+                        {
+                          "name": "2. SQL Injection Vulnerability.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/4. SQLMap - The Basics/2. SQL Injection Vulnerability.md",
+                          "parent": "4. SQLMap - The Basics"
+                        },
+                        {
+                          "name": "3. Automated SQL Injection Tool.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/4. SQLMap - The Basics/3. Automated SQL Injection Tool.md",
+                          "parent": "4. SQLMap - The Basics"
+                        },
+                        {
+                          "name": "4. Practical Exercise.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/4. SQLMap - The Basics/4. Practical Exercise.md",
+                          "parent": "4. SQLMap - The Basics"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1. Career",
+          "type": "directory",
+          "contents": [
+            {
+              "name": "1. Security Analyst",
+              "type": "directory",
+              "contents": []
+            },
+            {
+              "name": "2. Penetration Tester",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "1. Jr Penetration Tester",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction to Cyber Security",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Offensive Security Intro",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "2. Defensive Security Intro",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "3. Careers in Cyber",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Introduction to Pentesting",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Pentesting Fundamentals",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. What is Penetration Testing?.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/1. What is Penetration Testing?.md",
+                              "parent": "1. Pentesting Fundamentals"
+                            },
+                            {
+                              "name": "2. Penetratioon Testing Ethics.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/2. Penetratioon Testing Ethics.md",
+                              "parent": "1. Pentesting Fundamentals"
+                            },
+                            {
+                              "name": "3. Penetration Testing Methodologies.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/3. Penetration Testing Methodologies.md",
+                              "parent": "1. Pentesting Fundamentals"
+                            },
+                            {
+                              "name": "4. Black box, White Box, Grey Box Penetration Testing.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/4. Black box, White Box, Grey Box Penetration Testing.md",
+                              "parent": "1. Pentesting Fundamentals"
+                            },
+                            {
+                              "name": "5. Practical - ACME Penetration Test.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/5. Practical - ACME Penetration Test.md",
+                              "parent": "1. Pentesting Fundamentals"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Principles of Security",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. The CIA Triad.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/2. Principles of Security/1. The CIA Triad.md",
+                              "parent": "2. Principles of Security"
+                            },
+                            {
+                              "name": "2. Principles of Privileges.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/2. Principles of Security/2. Principles of Privileges.md",
+                              "parent": "2. Principles of Security"
+                            },
+                            {
+                              "name": "3. Security Models Continued.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/2. Principles of Security/3. Security Models Continued.md",
+                              "parent": "2. Principles of Security"
+                            },
+                            {
+                              "name": "4. Threat Modelling & Incident Response.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/2. Principles of Security/4. Threat Modelling & Incident Response.md",
+                              "parent": "2. Principles of Security"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Introduction to Web Hacking",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "4. Burp Suite",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "5. Network Security",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "6. Vulnerability Research",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "7. Metasploit",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "8. Privilege Escalation",
+                      "type": "directory",
+                      "contents": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "3. Security Engineer",
+              "type": "directory",
+              "contents": []
+            }
+          ]
+        },
+        {
+          "name": "Maquinas",
+          "type": "directory",
+          "contents": [
+            {
+              "name": "1. Easy",
+              "type": "directory",
+              "contents": []
+            },
+            {
+              "name": "2. Medium",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "1. Mr. Robot",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. What is Key 1.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/1. Mr. Robot/1. What is Key 1.md",
+                      "parent": "1. Mr. Robot"
+                    },
+                    {
+                      "name": "2. What is Key 2.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/1. Mr. Robot/2. What is Key 2.md",
+                      "parent": "1. Mr. Robot"
+                    },
+                    {
+                      "name": "3. What is Key 3.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/1. Mr. Robot/3. What is Key 3.md",
+                      "parent": "1. Mr. Robot"
+                    },
+                    {
+                      "name": "fsocity_dic_unic.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/1. Mr. Robot/fsocity_dic_unic.md",
+                      "parent": "1. Mr. Robot"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "3. Hard",
+              "type": "directory",
+              "contents": []
+            },
+            {
+              "name": "4. Insane",
+              "type": "directory",
+              "contents": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

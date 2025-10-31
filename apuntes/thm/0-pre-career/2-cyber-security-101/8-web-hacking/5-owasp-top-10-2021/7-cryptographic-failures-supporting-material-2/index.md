@@ -9,6 +9,6 @@ Aunque kali ya tiene preinstaladas herramientas específicas para este proceso, 
 
 Si tratamos de descifrar la contraseña de Joy Paulson, `5f4dcc3b5aa765d61d8327deb882cf99`, obtenemos:
 
-![](/apuntes/img/Pasted image 20251009210426.png)
+!**Pasted image 20251009210426.png**
 
 Vemos que el hash ha sido crackeado y la contraseña expuesta. Crackstation funciona con diccionarios inmensos, si la contraseña no está en esos diccionarios será imposible descifrarla.

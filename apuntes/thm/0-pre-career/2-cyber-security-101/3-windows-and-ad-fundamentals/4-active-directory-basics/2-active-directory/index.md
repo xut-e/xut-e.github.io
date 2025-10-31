@@ -41,13 +41,13 @@ Los grupos pueden tener por miembros usuarios y máquinas. Muchos de estos son c
 <h2>Active Directory Users and Computers</h2>
 Para configurar usuarios, grupos o máquinas en AD, tenemos que entrar en el DC y ejecutar `Active Directory Users and Computers` desde el menú.
 
-![](/apuntes/img/048.png)
+!**048.png**
 
 Esto abrirá una ventana donde podemos ver la jerarquía de los usuarios, ordenadores y grupos que existen en el dominio. Estos objetos están organizados en OUs (Unidades de Organización u Organizational Units) que son objetos contenedores que nos permiten clasificar usuarios y máquinas. Los OUs se suelen usar parta definir sets de usuarios con políticas similares. Por ejemplo, los empleados de ventas de una compañía tendrán un set diferente que los empleados de IT.
 
 Algo muy común es que un OU tenga "hijos". Por ejemplo en nuestra máquina el OU `THM` tiene por hijos: IT, Management, Marketing y Sales.
 
-![](/apuntes/img/049.png)
+!**049.png**
 
 Al abrir cualquier OU podemos ver los usuarios que tiene este.
 

@@ -390,3 +390,8 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   word-break: break-word;
 }
 
+.tree-nav ul { list-style: none; padding-left: 0; margin: 0; }
+.tree-nav li { margin: 0.2rem 0; }
+.tree-nav a.tree-link { text-decoration: none; color: var(--accent); }
+.tree-nav a.tree-link:hover { text-decoration: underline; }
+

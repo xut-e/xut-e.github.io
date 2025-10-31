@@ -11,11 +11,11 @@ Todas las compañías requieren de intercambio privado de información. Los requ
 
 El diagrama de red de abajo muestra cómo una compañía con dos ramas remotas se conectan a la rama principal. Un cliente VPN se conectará al servidor VPN en la rama principal. En este caso, el cliente VPN encriptará el tráfico y lo pasará a esta por el túnel VPN (azul). El tráfico VPN se limita a las lineas azules, las verdes llevan el tráfico desencriptado.
 
-![](/apuntes/img/093 1.png)
+!**093 1.png**
 
 En el diagrama de abajo vemos cómo dos clientes se conectan a la rama principal usando la VPN:
 
-![](/apuntes/img/094 1.png)
+!**094 1.png**
 
 Una vez que el túnel VPN está establecido, todo el tráfico de Internet será routeado a la conexión VPN. De esta manera, cuando intentamos acceder a un servicio de Internet, no veremos nuestra IP sino la del servidor VPN. Esto se puede utilizar para bypassear ciertas restricciones geográficas, pues si un usuario en España se conecta a una VPN japonesa, para los servidores receptores de sus peticiones web aparecerá como que está en Japón.
 

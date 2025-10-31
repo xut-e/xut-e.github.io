@@ -18,23 +18,23 @@ Sigue el siguiente proceso:
    
    >[!NOTE] Fíjate que el TGT es encriptado usando el hash krbtgt de la contraseña.
    
-   ![](/apuntes/img/064.png)
+   !**064.png**
 2. Cuando un usuario quiere conectarse a un servicio de la red usará su TGT para pedirle al KDC por un TGS (Ticket Granting Service). Estos son tickets que permiten la conexión sólo al servicio específico para el que fue creado.
    
    Para pedir un TGS, el usuario mandará su nombre de usuario y un instante de tiempo encriptado usando la llave de sesión junto con el TGT y el SPN (Service Principal Name).
    
    Como resultado, el KDC mandará junto al TGT una Service Session Key. El TGS está encriptado usando una llave derivada del Hash del Propietario del dominio.
    
-   ![](/apuntes/img/065.png)
+   !**065.png**
 3. El TGS puede ser mandado al servicio deseado para autentificarse y establecer una conexión. El servicio usará los hashes de las contraseñas de sus cuentas configuradas para desencriptar el TGS y validar la llave de sesión de servicio.
    
-   ![](/apuntes/img/066.png)
+   !**066.png**
 
 ------------------
 <h2>Autentificación NetNTLM</h2>
 El proceso es el siguiente:
 
-![](/apuntes/img/067.png)
+!**067.png**
 
 1. El cliente manda una petición de verificación al servidor al que quieren acceder.
 2. El servidor genera un número aleatorio y lo manda como reto al cliente.

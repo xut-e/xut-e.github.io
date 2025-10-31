@@ -181,14 +181,14 @@ Veamos ahora el `URL Decode`. Esto funciona convirtiendo los caracteres encodead
 Descarga el archivo de ejercicio. Una vez descargado puedes copiar y pegar el contenido en el `Input` o usar `Open file as input`.
 
 1. Abrimos el archivo en CyberChef:
-   ![](/apuntes/img/Pasted image 20251026145256.png)
+   !**Pasted image 20251026145256.png**
 2. Arrastramos el `Extract email addresses` en el apartado de `Extractors` y como tenemos `Auto Bake` seleccionado lo vemos instantáneamente:
-   ![](/apuntes/img/Pasted image 20251026145409.png)
+   !**Pasted image 20251026145409.png**
 3. Hacemos lo mismo para la IP:
-   ![](/apuntes/img/Pasted image 20251026145503.png)
+   !**Pasted image 20251026145503.png**
 4. Y para el dominio:
-   ![](/apuntes/img/Pasted image 20251026145542.png)
+   !**Pasted image 20251026145542.png**
 5. Para convertir un número en otro usamos los conversores de decimal a binario de `Data Format`:
-   ![](/apuntes/img/Pasted image 20251026145754.png)
+   !**Pasted image 20251026145754.png**
 6. Del apartado de `Networking` cogemos `URL Encode` y seleccionamos que encodee todos los caracteres especiales:
-   ![](/apuntes/img/Pasted image 20251026150052.png)
+   !**Pasted image 20251026150052.png**

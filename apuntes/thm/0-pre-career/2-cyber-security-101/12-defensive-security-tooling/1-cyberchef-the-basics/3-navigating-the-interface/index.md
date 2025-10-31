@@ -10,7 +10,7 @@ CyberChef consiste de 4 áreas. Cada una de estas tiene diferentes componentes o
 3. Input
 4. Output
 
-![](/apuntes/img/Pasted image 20251026130851.png)
+!**Pasted image 20251026130851.png**
 
 Veamos lo que hace cada una de ellas.
 
@@ -41,7 +41,7 @@ Las funcionalidades incluyen:
 
 Las puedes encontrar en los iconos:
 
-![](/apuntes/img/Pasted image 20251026132259.png)
+!**Pasted image 20251026132259.png**
 
 La parte de abajo es `BAKE!` que significa ornear. Esto procesa la información con la receta dada.
 
@@ -51,16 +51,16 @@ Adicionalmente, puedes marcar la opción `Auto Bake`, lo que te permite cocinar 
 <h2>Input</h2>
 Ofrece un espacio donde puedes introducir fácilmente texto o archivos pegando, arrastrando o escribiendo directamente para realizar operaciones sobre ellos.
 
-![](/apuntes/img/Pasted image 20251026133558.png)
+!**Pasted image 20251026133558.png**
 
 Además, tiene las siguientes funcionalidades:
 
 - `Add a new input tab`: Aquí es donde la pestaña adicional se crea para que el usuario use diferentes valores de la pestaña anterior.
-  ![](/apuntes/img/Pasted image 20251026133604.png)
+  !**Pasted image 20251026133604.png**
 - `Open folder as input`: Esta funcionalidad permite subir un directorio entero como valor de input.
-  ![](/apuntes/img/Pasted image 20251026133615.png)
+  !**Pasted image 20251026133615.png**
 - `Open file as input`: Permite subir un archivo como input.
-  ![](/apuntes/img/Pasted image 20251026133629.png)
+  !**Pasted image 20251026133629.png**
 - `Clear input and output`: Esta funcionalidad permite al usuario limpiar cualquier valor de input insertados y su correspondiente valor output.
 - `Reset pane layout`: Esta funcionalidad trae la interfaz de herramientas a su valor de tamaño por defecto.
 
@@ -68,7 +68,7 @@ Además, tiene las siguientes funcionalidades:
 <h2>Output</h2>
 Es un espacio visual que muestra la información procesada. Presenta la salida de la receta de forma limpia y ordenada.
 
-![](/apuntes/img/Pasted image 20251026133637.png)
+!**Pasted image 20251026133637.png**
 
 Las funcionalidades incluyen:
 

@@ -9,7 +9,7 @@ Ya hemos visto los roles y responsabilidades de diferentes individuos trabajando
 <h2>Alert Triage</h2>
 Es la base del equipo SOC. La primera respuesta a cualquier alerta es realizar una clasificación de criticidad (triage). Se enfoca en analizar la alerta específica. Determina la severidad de la alerta y nos ayuda a priorizar. Se basa en responder a las 5 Ws: 
 
-![](/apuntes/img/Pasted image 20251019220532.png)
+!**Pasted image 20251019220532.png**
 Un ejemplo:
 
 >[!CAUTION] Alerta: Malware detectado en el Host George PC.

@@ -7,7 +7,7 @@ Una URL (Uniform Resource Locator) es una dirección web que te permite acceder 
 
 --------------
 <h2>Anatomía de una URL</h2>
-![](/apuntes/img/137.png)Una URL está compuesta de múltiples partes, cada una ayudando a una cosa. Aquí un desglose de los componentes:
+!**137.png**Una URL está compuesta de múltiples partes, cada una ayudando a una cosa. Aquí un desglose de los componentes:
 
 <h5>Scheme</h5>
 Es el protocolo usado para acceder a la web. El más común es HTTP/HTTPS, pero existen otros.

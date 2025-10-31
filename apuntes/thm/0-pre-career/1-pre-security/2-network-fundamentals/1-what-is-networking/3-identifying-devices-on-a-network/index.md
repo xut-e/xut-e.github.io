@@ -52,5 +52,5 @@ Las direcciones MAC identifican dispositivos, pero su suplantación revela vulne
 <h2>Practica</h2>
 >*El laboratorio simula una red Wi-Fi de cafetería donde tienes que pagar por el servicio.*
 
-1. ![](/apuntes/img/Pasted image 20250410220242.png)
-2. Cambiamos la MAC a la misma que la de Alice (MAC spoofing):![](/apuntes/img/Pasted image 20250410220339.png)
+1. !**Pasted image 20250410220242.png**
+2. Cambiamos la MAC a la misma que la de Alice (MAC spoofing):!**Pasted image 20250410220339.png**

@@ -50,17 +50,17 @@ Por ejemplo:
 -----------------------
 <h2>Challenge</h2>
 1. Abrimos la página dada:
-   ![](/apuntes/img/150.png)
+   !**150.png**
 2. Comprobamos el método, en este caso POST:
-   ![](/apuntes/img/151.png)
+   !**151.png**
 3. Lanzamos hydra con los parámetros correspondientes:
-   ![](/apuntes/img/152 1.png)
+   !**152 1.png**
 4. Obtenemos la contraseña:
-   ![](/apuntes/img/153.png)
+   !**153.png**
 5. Entramos y obtenemos la flag:
-   ![](/apuntes/img/154.png)
+   !**154.png**
 6. Usamos hydra para romper la contraseña ssh de molly:
-   ![](/apuntes/img/155.png)
+   !**155.png**
 7. Entramos por ssh y obtenemos la flag:
-   ![](/apuntes/img/156.png)
+   !**156.png**
 

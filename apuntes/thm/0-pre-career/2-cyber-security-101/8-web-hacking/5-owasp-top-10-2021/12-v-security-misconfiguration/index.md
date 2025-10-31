@@ -24,8 +24,8 @@ Un ejemplo de este tipo de vulnerabilidad es cuando Patreon fue hackeado en 2015
 -----------------
 <h2>Challenge</h2>
 1. Navegamos hasta la página proporcionada:
-   ![](/apuntes/img/Pasted image 20251010192138.png)
+   !**Pasted image 20251010192138.png**
 2. Allí ejecutamos el código que nos dan:
-   ![](/apuntes/img/Pasted image 20251010192245.png)
+   !**Pasted image 20251010192245.png**
 3. Vemos el código fuente de la app, por lo que podemos intentar leerlo:
-   ![](/apuntes/img/Pasted image 20251010192428.png)
+   !**Pasted image 20251010192428.png**

@@ -17,6 +17,6 @@ Usaríamos el comando `ssh <username>@<hostname>` para conectarnos al servidor S
 
 La imagen de abajo muestra un ejemplo ejecutando Wireshark en un sistema Kali Linux remoto. El argumento `-X` sirve para permitir interfaces gráficas, por ejemplo: `ssh 192.168.124.148 -X`. El sistema local necesita tener un sistema gráfico válido para que funcione.
 
-![](/apuntes/img/092.png)
+!**092.png**
 
 Mientras que telnet escucha en el puerto 23, SSH lo hace en el 22.

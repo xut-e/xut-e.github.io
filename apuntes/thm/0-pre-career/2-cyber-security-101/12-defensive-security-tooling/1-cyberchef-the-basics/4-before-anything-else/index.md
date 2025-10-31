@@ -5,7 +5,7 @@ title: "4. Before Anything Else"
 
 Tranquilidad! Antes de ir al meollo, veamos rápidamente el proceso de pensamiento al usar CyberChef. Este proceso consiste de cuatro pasos diferentes:
 
-![](/apuntes/img/Pasted image 20251026134118.png)
+!**Pasted image 20251026134118.png**
 Veamos cada paso un poco en detalle.
 
 Acordar un objetivo clave es esencial. Este paso incluye definir metas específicas y conseguibles. Ayuda a responder a la pregunta: **"¿Qué quiero lograr?"**. Los objetivos son vitales para ofrecer dirección, propósito y enfoque en las metas.
@@ -18,4 +18,4 @@ Por último, comprobamos el output de CyberChef. Esto responde a la pregunta: **
 
 Un ejemplo:
 
-![](/apuntes/img/Pasted image 20251026134700.png)
+!**Pasted image 20251026134700.png**

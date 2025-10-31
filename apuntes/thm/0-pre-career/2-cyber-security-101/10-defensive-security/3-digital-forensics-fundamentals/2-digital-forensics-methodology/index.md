@@ -5,7 +5,7 @@ title: "2. Digital Forensics Methodology"
 
 El equipo de forénsica digital tiene varios casos requiriendo herramientas y técnicas diferentes. Sin embargo, el Instituto Nacional de Estándares y Tecnología (NIST) define un proceso general para cada caso. ELl NIST funciona definiendo frameworks para diferentes areas de la tecnología, incluyendo la ciberseguridad, donde introducen el proceso de la forénsica digital en cuatro fases.
 
-![](/apuntes/img/Pasted image 20251020172734.png)
+!**Pasted image 20251020172734.png**
 
 1. **Recopilación:** La primera fase de la forénsica digital es la recopilación de información. Identificar todos los dispositivos de los que se puede recopilar información es clave. Usualmente un investigador encuentra portátiles, móviles, cámaras digitales, discos duros USBs, etc.
 2. **Examinación:** La información recolectada puede intimidar a los investigadores debido a su tamaño. Esta, usualmente necesita ser filtrada para extraer la información relevante.

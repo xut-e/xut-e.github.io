@@ -50,7 +50,7 @@ Vamos a explorar el Three-Way Handshake, el término usado para el proceso de co
 2. SYN/ACK - Server: Aquí está mi ISN (5000) y yo ACKnoledge (reconozco) tu ISN (0).
 3. ACK - Cliente: Yo ACK tu ISN (5000) y aquí hay algo de mi información ISN +1 (1).
 
-![](/apuntes/img/000.jpg)
+!**000.jpg**
 
 ------------------------
 <h3>Cerrando una conexión con TCP</h3>
@@ -58,4 +58,4 @@ TCP cerrará una conexión una vez que sea sabido que el otro dispositivo hay re
 
 Para iniciar la finalización de la comunicación se manda un paquete FIN. El otro dispositivo hace un ACK del FIN del otro y manda un FIN suyo. Por último el primer dispositivo hace un ACK del FIN del segundo.
 
-![](/apuntes/img/001.png)
+!**001.png**

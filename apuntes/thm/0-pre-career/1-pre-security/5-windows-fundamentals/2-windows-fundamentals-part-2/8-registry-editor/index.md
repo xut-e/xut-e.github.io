@@ -19,4 +19,4 @@ Contiene información que se referencia constantemente en procesos como:
 
 Para acceder podemos escribir `regedit`.
 
-![](/apuntes/img/045.png)
+!**045.png**

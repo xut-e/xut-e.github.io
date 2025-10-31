@@ -5,7 +5,7 @@ title: "5. HTTP Request - Request Line and Methods"
 
 Una petición HTTP es lo que un usuario manda a un servidor para interactuar con una aplicación web y hacer que algo pase. Ya que estas peticiones son normalmente el primer punto de contacto entre el usuario y el servidor es muy importante saber bien cómo funcionan.
 
-![](/apuntes/img/138.png)
+!**138.png**
 
 Imagina una petición HTTP mostrando las partes clave como el método, ruta y versión. Estos elementos hacen lo básico de cómo se comunican el servidor y el cliente.
 

@@ -7,7 +7,7 @@ La GUI (Graphical User Interface) es la pantalla que te da la bienvenida al sist
 
 Habitualmente debes pasar la pantalla de inicio de sesión primero. En la imagen de abajo vemos un escritorio de Windows 10.
 
-![](/apuntes/img/034.png)
+!**034.png**
 
 1. Escritorio.
 2. Menú de Inicio.
@@ -23,7 +23,7 @@ Es donde están son atajos a los programas, archivos, ficheros, etc. Al hacer cl
 <h2>El menú de inicio</h2>
 Otorga acceso a todas las apps, archivos y demás. Al hacer click en él se desplegará. Este está formado por varias secciones:
 
-![](/apuntes/img/035.png)
+!**035.png**
 
 1. Esta sección nos ofrece atajos rápidos a acciones que podemos realizar con nuestra cuenta.
 2. En esta otra sección vemos un atajo a todos aquellos programas que hayan sido añadidos recientemente.

@@ -9,7 +9,7 @@ Tomaremos un negocio como ejemplo, tenemos diferentes departamentos como:
 - Finanzas.
 - Recursos humanos.
 
-![](/apuntes/img/002.png)
+!**002.png**
 Los administradores utilizan las subredes para categorizar y asignar partes específicas de la red a sus respectivas funciones. 
 El subnetting se consigue partiendo el número de hosts que caben en la red representado por un número llamado la máscara de subred (32 bits). Debemos acordarnos aquí de lo que vimos en [3. Identifying Devices on a Network](/apuntes/thm/0-pre-career/1-pre-security/2-network-fundamentals/1-what-is-networking/3-identifying-devices-on-a-network/). 
 

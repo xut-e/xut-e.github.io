@@ -18,7 +18,7 @@ gen-msg.map            snort.conf        unicode.map
 <h2>Formato de las Reglas</h2>
 Veamos ahora cómo se crean las reglas en Snort. Hay una manera muy específica de escribir reglas. Esta es una regla de ejemplo que detecta paquetes ICMP viniente de cualquier dirección y puerto y alcanzando la red local en cualquier puerto. Una vez se detecta ese tráfico se lanza una alerta de "Ping Detected".
 
-![](/apuntes/img/Pasted image 20251025114149.png)
+!**Pasted image 20251025114149.png**
 
 - **Action:** Especifica qué acción tomar cuando la regla se dispara.
 - **Protocol:** Se refiere al protocolo que coincide con la regla.

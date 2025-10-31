@@ -4,9 +4,9 @@ title: "15. Vulnerable and Outdated Components - Lab"
 ---
 
 1. Navegamos a la página dada.
-   ![](/apuntes/img/Pasted image 20251011134021.png)
+   !**Pasted image 20251011134021.png**
 2. Buscamos por aplicaciones de tienda de libros (bookstore application):
-   ![](/apuntes/img/Pasted image 20251011134917.png)
+   !**Pasted image 20251011134917.png**
 3. El código que encontramos tiene ejemplo tanto por web como usando Burp Suite:
    ```bash
 # Exploit Title: CSE Bookstore Authentication Bypass
@@ -45,23 +45,23 @@ name=admin&pass=%25%27+or+%271%27%3D%271&submit=Submit+Query
 ```
 
 4. Probamos:
-   ![](/apuntes/img/Pasted image 20251011135154.png)
+   !**Pasted image 20251011135154.png**
 5. La contraseña funciona:
-   ![](/apuntes/img/Pasted image 20251011135812.png)
+   !**Pasted image 20251011135812.png**
 6. Buscamos más vulnerabilidades, ya que necesitamos acceder a `/opt/flag.txt`.
-   ![](/apuntes/img/Pasted image 20251011140737.png)
+   !**Pasted image 20251011140737.png**
 7. El ejecutable nos lanza un error:
-   ![](/apuntes/img/Pasted image 20251011143426.png)
+   !**Pasted image 20251011143426.png**
 8. Como el código no funciona a pesar de modificarlo lo leemos y vemos que está insertando una webshell en la imagen, por lo que vamos a hacerlo manualmente desde la página vulnerada de admin:
-   ![](/apuntes/img/Pasted image 20251011142510.png)
+   !**Pasted image 20251011142510.png**
 9. Activamos Burp Suite:
-   ![](/apuntes/img/Pasted image 20251011143810.png)
+   !**Pasted image 20251011143810.png**
 10. Cambiamos el valor de la imagen:
-    ![](/apuntes/img/Pasted image 20251011144637.png)
+    !**Pasted image 20251011144637.png**
 11. Vemos desde donde se están cargando las fotos:
-   ![](/apuntes/img/Pasted image 20251011143332.png)
+   !**Pasted image 20251011143332.png**
 12. Intentamos cargar la consola php:
-    ![](/apuntes/img/Pasted image 20251011144924.png)
+    !**Pasted image 20251011144924.png**
 13. Obtenemos la flag
-    ![](/apuntes/img/Pasted image 20251011145025.png)
+    !**Pasted image 20251011145025.png**
 

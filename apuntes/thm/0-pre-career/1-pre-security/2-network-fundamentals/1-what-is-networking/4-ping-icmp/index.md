@@ -9,4 +9,4 @@ Ping usa el protocolo ICMP (Internet Control Message Protocol) para determinar l
 ping -c 1 <ip/URL)>
 ```
 
-![](/apuntes/img/Pasted image 20250411201247.png)
+!**Pasted image 20250411201247.png**

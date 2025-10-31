@@ -91,7 +91,7 @@ Lo mismo para el namespace obfuscation:
 
 Recuerda que esto es bajo el TLN **Anti-Analysis**!
 
-![](/apuntes/img/Pasted image 20251028131522.png)
+!**Pasted image 20251028131522.png**
 
 Además de lo mencionado en la tabla de arriba, hay más namespaces bajo **Anti-Analysis** con sus correspondientes reglas. Si quieres investigar más consulta este [enlace](https://github.com/MBCProject/capa-rules-1/tree/master/anti-analysis).
 

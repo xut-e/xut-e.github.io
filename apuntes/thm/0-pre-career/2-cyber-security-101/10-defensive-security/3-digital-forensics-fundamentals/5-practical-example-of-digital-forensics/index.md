@@ -53,8 +53,8 @@ Si quieres buscar estas coordenadas en maps debes sustituir `deg` por `º`. `51 
 -----------------------
 <h2>Challenge</h2>
 1. Investigamos con `pdfinfo` la carta de rescate para conocer al autor:
-   ![](/apuntes/img/Pasted image 20251020222909.png)
+   !**Pasted image 20251020222909.png**
 2. Con `exiftool` investigamos las coordenadas de la foto del secuestro:
-   ![](/apuntes/img/Pasted image 20251020223053.png)
-   ![](/apuntes/img/Pasted image 20251020223327.png)
+   !**Pasted image 20251020223053.png**
+   !**Pasted image 20251020223327.png**
 3. Así también podemos ver el modelo de la cámara, que aparece arriba.

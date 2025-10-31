@@ -9,10 +9,10 @@ Capturar y registrar el tráfico puede resultar abrumador e inconveniente, espec
 
 Al configurar un scope a nuestro proyecto, podemos definir qué pasa por el proxy y queda registrado y qué no. La manera más fácil de hacerlo es cambiando a la pestaña `Target`, hacer click derecho en nuestro objetivo de la lista, a la izquierda, y seleccionar `Add to Scope`. Entonces Burp nos preguntará si queremos parar de registrar cualquier cosa que no esté en el scope, a lo que diremos `yes`.
 
-![](/apuntes/img/Pasted image 20251005194715.png)
+!**Pasted image 20251005194715.png**
 
 Para comprobar nuestro scope, podemos ir a la subpestaña **Scope settings** en la pestaña **Target**.
 
 Esto nos permite controlar incluyendo o excluyendo dominios o IPs. De todas formas, si desactivamos el registro para el tráfico fuera del scope, el proxy seguirá interceptando todo. Para evitar esto, debemos ir a **Proxy settings** y seleccionar `And URL Is in target scope` desde la sección "Intercept Client Requests".
 
-![](/apuntes/img/Pasted image 20251005195115.png)
+!**Pasted image 20251005195115.png**

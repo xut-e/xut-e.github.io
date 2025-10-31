@@ -25,7 +25,7 @@ Aquí cómo funciona HMAC:
 
 En la ilustración se muestra:
 
-![](/apuntes/img/133.jpg)
+!**133.jpg**
 
 Técnicamente hablando, la función HMAC se calcula de la siguiente manera:
 

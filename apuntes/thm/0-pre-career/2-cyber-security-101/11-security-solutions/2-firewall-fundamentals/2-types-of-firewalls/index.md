@@ -5,7 +5,7 @@ title: "2. Types of Firewalls"
 
 Desplegar un firewall se volvió habitual en las redes después de que las organizaciones descubrieran su habilidad para filtrar tráfico dañino de sus sistemas y redes. Hay varios tipos de firewalls. Estos diferentes tipos también pueden trabajar en capas OSI diferentes. Examinemos los más comunes.
 
-![](/apuntes/img/Pasted image 20251024125154.png)
+!**Pasted image 20251024125154.png**
 
 ---------------------------------------
 <h2>Stateless Firewall</h2>

@@ -9,7 +9,7 @@ A lo largo de los años se han experimentado e implementado varios diseños de r
 <h3>Topología en estrella</h3>
 La premisa principal es que los dispositivos están conectados individualmente a través de un dispositivo central. Es la topología más común hoy en día debido a su confiabilidad y escalabilidad.
 
-![](/apuntes/img/descargar (1).png)
+!**descargar (1).png**
 
 Ventajas:
 1. Muy escalable.
@@ -22,7 +22,7 @@ Desventajas:
 Se basa en una conexión que se conoce como cable troncal. Es similar a las hojas de un árbol.
 Debido a que todos los datos viajan por la misma conexión de red, es propensa a volverse lenta y originar un cuello de botella.
 
-![](/apuntes/img/27e9ff166d2d4ad5436e27c8c9b62e6d.png)
+!**27e9ff166d2d4ad5436e27c8c9b62e6d.png**
 
 Ventajas:
 1. Coste reducido.
@@ -37,7 +37,7 @@ Desventajas:
 También conocida como la topología de tokens. Los dispositivos están conectados entre sí para formar un bucle.
 Cada uno de los dispositivos enviará los paquetes recibidos al siguiente dispositivo hasta llegar a su destino (eso si éste no tiene datos que enviar suyos primero).
 
-![](/apuntes/img/4cea7a4b48eacbd4db0b0d5e32068596.png)
+!**4cea7a4b48eacbd4db0b0d5e32068596.png**
 
 Ventajas:
 1. Poco cableado.
@@ -53,7 +53,7 @@ Los switches son dispositivos dedicados dentro de una red a agregar muchos otros
 
 Son más eficientes que los hubs/repetidores ya que toman nota de los dispositivos conectados y a qué puerto lo están. De esta manera, en vez de reenviar un paquete a todos los puertos como haría un hub, lo manda directamente a aquel en el que está el dispositivo destino.
 
-![](/apuntes/img/000.png)
+!**000.png**
 Los switches y routers se pueden conectar los unos a los otros. Esto incrementa la fiabilidad y estabilidad de la red. Si un camino se tumba otro puede seguir funcionando. Aunque esto puede incrementar mínimamente la latencia de la red. *Un pequeño precio a pagar por una gran recompensa.*
 
 --------------
@@ -61,5 +61,5 @@ Los switches y routers se pueden conectar los unos a los otros. Esto incrementa 
 El trabajo de un router es conectar redes y pasar la información entre ellas. Esto lo hace mediante una técnica llamada routing.
 Esta es un proceso mediante el cual se crea un camino entre redes para que la información pueda ser entregada de manera exitosa.
 
-![](/apuntes/img/001.png)
+!**001.png**
 

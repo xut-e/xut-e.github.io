@@ -107,7 +107,7 @@ Sqtnew = Replace(Sqtnew, "^", "")
 
 Copiaremos la primera parte en CyberChef y seleccionas **Find/Replace** dos veces metiendo cada una de las instrucciones. En nuestro caso la primera es cambiar "* " por "" y el segundo "^" por "".
 
-![](/apuntes/img/Pasted image 20251029175423.png)
+!**Pasted image 20251029175423.png**
 
 Veamos el output:
 

@@ -26,7 +26,7 @@ En este contexto, remoto significa que al menos un router nos separa de esa red.
 - `192.168.11.1` está activa y respondió al paquete ICMP echo (ping).
 - `192.168.11.2` parece inactiva, nmap mandó dos paquetes ICMP echo, dos paquetes TCP con la flag SYN establecida y dos paquetes al puerto 80 con la flag ACK establecida. El objetivo no respondió ninguna.
 
-![](/apuntes/img/121.png)
+!**121.png**
 
 Es notable que podemos tener más control sobre cómo Nmap descubre dispositivos activos con `-PS[portlist]`, `-PA[portlist]`, `-PU[portlist]` para TCP SYN, TCP ACK, y UDP.
 

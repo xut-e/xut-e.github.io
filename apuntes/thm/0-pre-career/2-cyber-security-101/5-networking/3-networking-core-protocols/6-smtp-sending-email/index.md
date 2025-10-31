@@ -42,5 +42,5 @@ Connection closed by foreign host.
 
 Mandar un email por `telnet` es complicado e ineficiente, pero te ayuda a comprender mejor cómo funciona el protocolo. Una imagen de Wireshark (cliente en rojo y servidor en azul) para visualizarlo mejor:
 
-![](/apuntes/img/084.png)
+!**084.png**
 

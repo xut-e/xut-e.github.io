@@ -7,7 +7,7 @@ Este tipo de vulnerabilidad ocurre cuando un atacante convence a la aplicación 
 
 Piensa, por ejemplo, en una aplicación web que usa una API externa para mandar notificaciones SMS a sus clientes. Por cada email, la app tiene que realizar una petición web al servidor proveedor de SMS para mandar el mensaje.Ya que los proveedores de mensajería cobran por el uso de mensajes, nos piden añadir una clave secreta, que te preasignan. Los servidores API de claves como tokens de autentificación te permiten que el proveedor sepa quién eres.
 
-![](/apuntes/img/Pasted image 20251013232653.png)
+!**Pasted image 20251013232653.png**
 
 Mirando el diagrama arriba mostrado es fácil ver dónde está la vulnerabilidad. La aplicación expone el parámetro `server` a los usuarios, que define el nombre del servidor proveedor de SMS. Si un atacante quisiese, simplemente cambiaría el valor del parámetro `server` para apuntar a una máquina que ellos controlen. Como parte del mensaje, recibirían la clave API, permitiéndoles usar los servicios SMS a tu costa. Para hacerlo, sólo tendría que hace la siguiente petición a tu sitio web:
 
@@ -34,19 +34,19 @@ Aunque esto no parezca amenazante, SSRF se puede usar para:
 -----------------------
 <h2>Challenge</h2>
 1. Accedemos a la página web:
-   ![](/apuntes/img/Pasted image 20251013233709.png)
+   !**Pasted image 20251013233709.png**
 2. Después de investigar un poco encontramos "admin area":
-   ![](/apuntes/img/Pasted image 20251013233831.png)
+   !**Pasted image 20251013233831.png**
 3. Si nos fijamos, el servidor apunta a una dirección curiosa al descargar el CV:
-   ![](/apuntes/img/Pasted image 20251013234005.png)
+   !**Pasted image 20251013234005.png**
 4. Haciendo uso de lo que hemos aprendido, vamos a intentar SSRF:
-   ![](/apuntes/img/Pasted image 20251013234205.png)
+   !**Pasted image 20251013234205.png**
 5. Y voilà:
-   ![](/apuntes/img/Pasted image 20251013234231.png)
+   !**Pasted image 20251013234231.png**
 6. Para acceder a admin podemos modificar url de la descarga del CV y meter localhost con el endpoint `admin`:
-   ![](/apuntes/img/Pasted image 20251014000016.png)
+   !**Pasted image 20251014000016.png**
 7. La flag extra es:
-   ![](/apuntes/img/Pasted image 20251014000039.png)
+   !**Pasted image 20251014000039.png**
 
 >[!NOTE] The `#` symbol indicates a fragment identifier in a URL, which is often used by browsers to navigate to a specific part of a webpage. When you add `%23` (the URL-encoded version of `#`), it may be tricking the server into treating it as part of the URL, allowing the request to reach the `/admin` endpoint. Without it, the server might not recognize the path correctly or could return a different response.
 
