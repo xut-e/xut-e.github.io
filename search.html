@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buscar — xut</title>
+  <meta name="description" content="Resultados de búsqueda en los apuntes de ciberseguridad y TryHackMe en castellano.">
+  <meta name="keywords" content="buscar, ciberseguridad, tryhackme, xut, apuntes">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" type="img/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
+  <script defer src="assets/js/search.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-left">
+        <a class="site-brand" href="/" aria-label="xut - inicio">
+          <span aria-hidden="true">✱</span>
+          <span>xut</span>
+        </a>
+      </div>
+
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/sobre-mi.html">Sobre mí</a></li>
+          <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CAJA DE BÚSQUEDA -->
+  <div class="search-container">
+    <form class="site-search" role="search" action="/search.html" method="get">
+      <input
+        class="site-search-input"
+        type="search"
+        name="q"
+        placeholder="Buscar…"
+        aria-label="Buscar en los apuntes"
+      />
+      <button class="site-search-button" type="submit" aria-label="Buscar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="7" cy="7" r="5" />
+          <line x1="11" y1="11" x2="15" y2="15" />
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <!-- RESULTADOS -->
+  <main class="page-shell full-width">
+    <section class="content search-content">
+      <header class="main-content-header">
+        <h2>Resultados de la búsqueda</h2>
+        <p id="search-query-display" class="intro"></p>
+      </header>
+
+      <!-- Contenedor de resultados -->
+      <div id="results-container" class="results-container">
+        <!-- Los resultados se inyectarán aquí con JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <small>© <span id="year"></span> xut-e — Todos los derechos reservados</small>
+      <pre class="ascii" aria-hidden="true">
+             ..                      .....          
+   .H88x.  :~)88:                 .H8888888h.  ~-.  
+  x888888X ~:8888    x.    .      888888888888x  `> 
+ ~   "8888X  %88"  .@88k  z88u   X~     `?888888hx~ 
+      X8888       ~"8888 ^8888   '      x8.^"*88*"  
+   .xxX8888xxxd>    8888  888R    `-:- X8888x       
+  :88888888888"     8888  888R         488888>      
+  ~   '8888         8888  888R       .. `"88*       
+ xx.  X8888:    .   8888 ,888B .   x88888nX"      . 
+X888  X88888x.x"   "8888Y 8888"   !"*8888888n..  :  
+X88% : '%8888"      `Y"   'YP    '    "*88888888*   
+ "*=~    `""                             ^"***"`    
+      </pre>
+    </div>
+  </footer>
+
+  <!-- SCRIPT AUXILIAR: año automático -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

@@ -588,4 +588,68 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   }
 }
 
+/* ===== Página de búsqueda ===== */
+
+.search-content {
+  padding-bottom: 3rem;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 2rem auto;
+  width: min(90%, 800px);
+}
+
+.search-result-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 1.2rem 1.5rem;
+  width: 100%;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.search-result-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.search-result-card h3 {
+  margin-top: 0;
+}
+
+.search-result-card a {
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.search-result-card a:hover {
+  color: var(--accent);
+}
+
+.search-result-card .breadcrumb {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-result-card .snippet {
+  line-height: 1.5;
+}
+
+.search-result-card .snippet mark {
+  background: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.search-result-card .extra {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-top: 0.8rem;
+}
 
