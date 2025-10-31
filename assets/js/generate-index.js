@@ -140,5 +140,16 @@
     console.error("💥 Error generando índice:", err);
     container.innerHTML = `<p style="color:#f88;">Error al generar el índice.</p>`;
   }
+
+ // === Resalta la nota actual en el índice lateral ===
+window.addEventListener("DOMContentLoaded", () => {
+  const currentUrl = window.location.pathname;
+  document.querySelectorAll(".tree-nav a.tree-leaf").forEach(a => {
+    if (a.href.endsWith(currentUrl)) {
+      a.classList.add("current-page");
+    }
+  });
+});
+
 })();
 

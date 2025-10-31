@@ -390,8 +390,93 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   word-break: break-word;
 }
 
-.tree-nav ul { list-style: none; padding-left: 0; margin: 0; }
-.tree-nav li { margin: 0.2rem 0; }
-.tree-nav a.tree-link { text-decoration: none; color: var(--accent); }
-.tree-nav a.tree-link:hover { text-decoration: underline; }
+/* ======= Árbol tipo Obsidian (mejorado) ======= */
+.tree-nav {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+
+.tree-nav details {
+  border-left: 1px solid var(--border-color);
+  margin-left: 0.6rem;
+  padding-left: 0.8rem;
+}
+
+.tree-nav summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-main);
+  list-style: none;
+  position: relative;
+  margin: 0.3rem 0;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.tree-nav summary::marker {
+  display: none;
+}
+
+.tree-nav summary::before {
+  content: "▶";
+  position: absolute;
+  left: -1rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  transition: transform 0.2s ease;
+}
+
+.tree-nav details[open] > summary::before {
+  transform: rotate(90deg);
+  color: var(--accent);
+}
+
+/* Espaciado entre enlaces */
+.tree-nav .tree-children {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Enlaces de archivos (.md) */
+.tree-nav a.tree-leaf {
+  display: block;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.15rem 0.3rem;
+  margin-left: 0.8rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+  word-wrap: break-word;
+}
+
+.tree-nav a.tree-leaf:hover {
+  background: rgba(102, 161, 130, 0.1);
+  text-decoration: underline;
+}
+
+/* Enlace actual (resaltado verde pastel) */
+.tree-nav a.tree-leaf.current-page {
+  background-color: rgba(102, 161, 130, 0.2);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Separación clara entre directorios y hojas */
+.tree-dir {
+  margin-bottom: 0.4rem;
+}
+
+/* Evita que los enlaces se amontonen (por márgenes negativos en <details>) */
+.tree-nav a.tree-leaf + a.tree-leaf {
+  margin-top: 0.15rem;
+}
+
+/* Opcional: scroll suave si el árbol es largo */
+.sidebar {
+  scroll-behavior: smooth;
+}
 
