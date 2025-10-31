@@ -480,3 +480,112 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   scroll-behavior: smooth;
 }
 
+/* ===== Header layout: lado derecho (nav + buscador) ===== */
+.site-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;              /* separación entre menú y caja búsqueda */
+}
+
+/* En móviles el header ya está apretado, así que quepa todo en wrap elegante */
+@media (max-width: 600px) {
+  .site-header-inner {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .site-right {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
+  /* la caja ocupa el espacio disponible en móvil */
+  .site-search {
+    flex: 1;
+    order: 2;            /* menú primero, caja después en pantallas pequeñas */
+  }
+
+  .site-nav {
+    order: 1;
+  }
+}
+
+/* ===== Caja de búsqueda debajo del header ===== */
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem 0;
+}
+
+/* === Formulario de búsqueda === */
+.site-search {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* === Input === */
+.site-search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+}
+
+.site-search-input::placeholder {
+  color: var(--text-dim);
+  opacity: 0.8;
+}
+
+/* === Botón de lupa === */
+.site-search-button {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 0.5rem 0.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+
+.site-search-button:hover,
+.site-search-button:focus {
+  color: var(--accent);
+}
+
+.site-search:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(102, 161, 130, 0.3);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 700px) {
+  .search-container {
+    justify-content: center;
+    padding: 0.75rem 1rem 0;
+  }
+
+  .site-search {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .site-search-input {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.6rem;
+  }
+}
+
+
