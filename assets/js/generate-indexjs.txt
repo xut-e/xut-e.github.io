@@ -173,11 +173,6 @@
       }
     });
 
-    // 🔒 Cierra todos los <details> por defecto
-const allDetails = nav.querySelectorAll("details");
-allDetails.forEach(d => d.open = false);
-
-
     // === Cerrar las demás unidades al abrir una nueva ===
     document.addEventListener("click", e => {
       if (e.target.matches(".tree-nav summary")) {

@@ -36,6 +36,17 @@
   <footer class="layout-footer">
     <p>© 2025 xut-e — Todos los derechos reservados</p>
   </footer>
+<script>
+  window.addEventListener("load", () => {
+  document.querySelectorAll(".sidebar-tree details[open]").forEach(d => {
+    d.open = false;
+  });
+
+  const first = document.querySelector(".sidebar-tree > details");
+  if (first) first.open = true;
+});
+</script>
+
 </body>
 </html>
 

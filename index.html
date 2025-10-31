@@ -7,30 +7,30 @@
   <meta name="description" content="Apuntes técnicos de ciberseguridad y TryHackMe en castellano.">
   <meta name="keywords" content="ciberseguridad, tryhackme, apuntes, hacking, linux, xut">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="icon" type "img/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
+  <link rel="icon" type="img/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
 </head>
 
 <body>
   <!-- HEADER -->
-   <header class="site-header">
-   <div class="site-header-inner">
-     <div class="site-left">
-       <a class="site-brand" href="/" aria-label="xut - inicio">
-         <span aria-hidden="true">✱</span>
-         <span>xut</span>
-       </a>
-       <a id="toggle-index" class="site-link" href="#">Índice</a>
-     </div>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-left">
+        <a class="site-brand" href="/" aria-label="xut - inicio">
+          <span aria-hidden="true">✱</span>
+          <span>xut</span>
+        </a>
+        <a id="toggle-index" class="site-link" href="#">Índice</a>
+      </div>
 
-     <nav class="site-nav" aria-label="Principal">
-       <ul>
-         <li><a href="/" aria-current="page">Inicio</a></li>
-         <li><a href="/sobre-mi.html">Sobre mí</a></li>
-         <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
-       </ul>
-     </nav>
-   </div>
- </header>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="/" aria-current="page">Inicio</a></li>
+          <li><a href="/sobre-mi.html">Sobre mí</a></li>
+          <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <!-- LAYOUT PRINCIPAL -->
   <main class="page-shell with-sidebar">
@@ -92,66 +92,100 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </div>
   </footer>
 
-  <!-- SCRIPTS -->
+    <!-- SCRIPTS -->
   <script src="assets/js/generate-index.js"></script>
-
-
   <script>
-// ======== Mostrar / Ocultar índice con persistencia (por defecto oculto en index.html) ========
-window.addEventListener("load", () => {
-  const btn = document.getElementById("toggle-index");
-  const aside = document.getElementById("indice");
-  const pageShell = document.querySelector(".page-shell");
-  if (!btn || !aside || !pageShell) return;
+  // ======== Mostrar / Ocultar índice (en home siempre oculto al inicio) ========
+  window.addEventListener("load", () => {
+    const btn = document.getElementById("toggle-index");
+    const aside = document.getElementById("indice");
+    const pageShell = document.querySelector(".page-shell");
+    if (!btn || !aside || !pageShell) return;
 
-  // --- Leer estado previo de localStorage ---
-  // Si no hay valor guardado, por defecto lo ponemos en "false" (oculto)
-  const savedState = localStorage.getItem("indexVisible");
-  const isVisible = savedState === null ? false : savedState === "true";
-
-  // --- Aplicar estado inicial ---
-  if (isVisible) {
-    aside.classList.remove("hidden");
-    pageShell.classList.remove("full-width");
-    btn.textContent = "Ocultar índice";
-    btn.classList.add("active");
-  } else {
+    // 🔒 Siempre empieza oculto (ignorar localStorage)
+    localStorage.setItem("indexVisible", "false");
     aside.classList.add("hidden");
     pageShell.classList.add("full-width");
     btn.textContent = "Mostrar índice";
     btn.classList.remove("active");
-  }
 
-  // --- Escuchar clic para alternar estado ---
-  btn.addEventListener("click", e => {
-    e.preventDefault();
-    const currentlyHidden = aside.classList.contains("hidden");
+    // === helper: cerrar todo y abrir solo la primera raíz ("THM") ===
+    function collapseAllAndOpenOnlyFirstRoot() {
+  const treeNav = aside.querySelector(".tree-nav");
+  if (!treeNav) return false;
 
-    if (currentlyHidden) {
-      // Mostrar índice
-      aside.classList.remove("hidden");
-      pageShell.classList.remove("full-width");
-      btn.textContent = "Ocultar índice";
-      btn.classList.add("active");
-      localStorage.setItem("indexVisible", "true");
-    } else {
-      // Ocultar índice (con animación)
-      aside.classList.add("collapsing");
-      pageShell.classList.add("full-width");
-      btn.textContent = "Mostrar índice";
-      btn.classList.remove("active");
-      localStorage.setItem("indexVisible", "false");
+  // 🔒 Cierra todos los <details> del árbol, incluido el primero
+  const allDetails = treeNav.querySelectorAll("details");
+  allDetails.forEach(d => d.open = false);
 
-      setTimeout(() => {
-        aside.classList.remove("collapsing");
-        aside.classList.add("hidden");
-      }, 300); // coincide con la transición CSS
+  console.log("🟢 Índice reiniciado: todo colapsado (THM cerrado)");
+  return true;
+}
+
+
+    // Espera a que generate-index.js haya generado el árbol antes de aplicar el colapso
+    function waitForTreeThenCollapse() {
+      let tries = 0;
+      const interval = setInterval(() => {
+        tries++;
+        const treeNav = aside.querySelector(".tree-nav");
+        if (treeNav) {
+          collapseAllAndOpenOnlyFirstRoot();
+          setTimeout(collapseAllAndOpenOnlyFirstRoot, 400);
+          clearInterval(interval);
+        }
+        if (tries > 50) clearInterval(interval);
+      }, 100);
     }
+
+    // === Botón mostrar/ocultar ===
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      const hidden = aside.classList.contains("hidden");
+
+      if (hidden) {
+        aside.classList.remove("hidden");
+        pageShell.classList.remove("full-width");
+        btn.textContent = "Ocultar índice";
+        btn.classList.add("active");
+        localStorage.setItem("indexVisible", "true");
+        waitForTreeThenCollapse(); // aplica el colapso al mostrar
+      } else {
+        aside.classList.add("collapsing");
+        pageShell.classList.add("full-width");
+        btn.textContent = "Mostrar índice";
+        btn.classList.remove("active");
+        localStorage.setItem("indexVisible", "false");
+        setTimeout(() => {
+          aside.classList.remove("collapsing");
+          aside.classList.add("hidden");
+        }, 300);
+      }
+    });
+
+    // === NUEVO: forzar estado solo “THM” abierto al recargar o volver al inicio ===
+    function resetIndexState() {
+      localStorage.setItem("indexVisible", "false");
+      setTimeout(() => {
+        const treeNav = aside.querySelector(".tree-nav");
+        if (!treeNav) return;
+        collapseAllAndOpenOnlyFirstRoot();
+      }, 800);
+    }
+
+    // Ejecutar al cargar
+    resetIndexState();
+
+    // También al hacer clic en Inicio o en ✱ xut
+    document.querySelectorAll('a.site-brand, .site-nav a[href="/"]').forEach(link => {
+      link.addEventListener("click", () => {
+        resetIndexState();
+      });
+    });
   });
-});
-</script>
+  </script>
 
-
+  
 </body>
 </html>
 
