@@ -653,3 +653,21 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   margin-top: 0.8rem;
 }
 
+/* ===== Resaltado uniforme en resultados y visor ===== */
+mark {
+  background-color: rgba(102, 161, 130, 0.25); /* verde translúcido */
+  color: #66a182; /* mismo verde que var(--accent) */
+  font-weight: 600;
+  padding: 1px 3px;
+  border-radius: 3px;
+  text-shadow: none;
+}
+
+/* Asegura que ningún tema externo lo sobreescriba */
+.search-result-card mark,
+.content mark {
+  background-color: rgba(102, 161, 130, 0.25) !important;
+  color: #66a182 !important;
+  font-weight: 600 !important;
+}
+

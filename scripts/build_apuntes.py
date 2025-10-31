@@ -100,7 +100,7 @@ def copy_all_images():
 copy_all_images()
 
 # -----------------
-# Paso 4: sidebar.html (sin cambios)
+# Paso 4: sidebar.html
 # -----------------
 tree = {}
 for n in notes:
@@ -140,10 +140,9 @@ index_json = [{"title": n["title"], "path": n["url"]} for n in notes]
 write_file(OUTPUT_ROOT / "index.json", json.dumps(index_json, ensure_ascii=False, indent=2))
 
 # -----------------
-# Paso 6: arbol.json jerárquico (mantiene números + ignora .obsidian)
+# Paso 6: arbol.json jerárquico
 # -----------------
 def build_tree(path: Path, parent_is_leaf=False):
-    # Ignorar carpetas ocultas y Z Imagenes
     if path.name in ("Z Imagenes", ".obsidian") or path.name.startswith("."):
         print(f"⛔ Ignorada carpeta: {path.name}")
         return None
@@ -153,8 +152,6 @@ def build_tree(path: Path, parent_is_leaf=False):
     if path.is_dir():
         node["type"] = "directory"
         contents = []
-
-        # Detectar si el directorio es de último nivel (no tiene subcarpetas)
         has_subdirs = any(c.is_dir() for c in path.iterdir())
         is_leaf_dir = not has_subdirs
 
@@ -164,20 +161,16 @@ def build_tree(path: Path, parent_is_leaf=False):
                 if child.is_file():
                     child_node["parent"] = path.name
                 contents.append(child_node)
-
         node["contents"] = contents
 
     elif path.is_file() and path.suffix.lower() == ".md":
         name = path.stem
         parent = path.parent.name
 
-        # === Reglas de exclusión ===
-        # Ignorar archivos 0.*.md en último nivel
         if parent_is_leaf and name.startswith("0."):
             print(f"⛔ Ignorado índice local (último nivel): {path}")
             return None
 
-        # Ignorar índices de carpeta solo si son el único .md dentro
         clean_file = re.sub(r"^\d+\.\s*", "", name).strip().lower()
         clean_parent = re.sub(r"^\d+\.\s*", "", parent).strip().lower()
         same_name = clean_file == clean_parent
@@ -199,9 +192,50 @@ def build_tree(path: Path, parent_is_leaf=False):
 
     return node
 
-
 arbol = build_tree(CONTENT_ROOT)
 write_file(OUTPUT_ROOT / "arbol.json", json.dumps(arbol, ensure_ascii=False, indent=2))
 
-print("✅ Apuntes generados correctamente con index.json, sidebar.html y arbol.json (mantiene números, ignora .obsidian)")
+# -----------------
+# Paso 7: index_full.json (nuevo)
+# -----------------
+def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_full.json"):
+    """
+    Genera un índice extendido con el contenido completo de cada nota.
+    No modifica el index.json existente.
+    """
+    notes_full = []
+    base_path = Path(base_dir)
+
+    for file_path in base_path.rglob("*.md"):
+        try:
+            text = file_path.read_text(encoding="utf-8")
+        except Exception as e:
+            print(f"[!] Error leyendo {file_path}: {e}")
+            continue
+
+        rel = file_path.relative_to(base_path)
+        parts = list(rel.parts)
+        breadcrumb = " > ".join(parts[:-1]) if len(parts) > 1 else ""
+        title = file_path.stem
+
+        # Construir la URL igual que antes
+        url = build_url_for_file(file_path)
+
+        notes_full.append({
+            "title": title,
+            "path": url,
+            "breadcrumb": breadcrumb,
+            "content": text
+        })
+
+    output_path = Path(output_file)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as f:
+        json.dump(notes_full, f, ensure_ascii=False, indent=2)
+
+    print(f"[+] Índice extendido generado en: {output_file}")
+
+build_full_index()
+
+print("✅ Apuntes generados correctamente con index.json, index_full.json, sidebar.html y arbol.json (mantiene números, ignora .obsidian)")
 
