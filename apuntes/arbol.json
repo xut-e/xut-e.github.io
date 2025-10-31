@@ -131,6 +131,12 @@
                       "type": "directory",
                       "contents": [
                         {
+                          "name": "1. What is Networking.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/1. What is Networking/1. What is Networking.md",
+                          "parent": "1. What is Networking"
+                        },
+                        {
                           "name": "2. What is the Internet.md",
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/1. What is Networking/2. What is the Internet.md",
@@ -395,6 +401,12 @@
                       "type": "directory",
                       "contents": [
                         {
+                          "name": "1. How websites work.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/1. How websites work.md",
+                          "parent": "3. How Websites Work"
+                        },
+                        {
                           "name": "2. HTML.md",
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/2. HTML.md",
@@ -424,6 +436,12 @@
                       "name": "4. Putting it All Together",
                       "type": "directory",
                       "contents": [
+                        {
+                          "name": "1. Putting it All Together.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/4. Putting it All Together/1. Putting it All Together.md",
+                          "parent": "4. Putting it All Together"
+                        },
                         {
                           "name": "2. Other Components.md",
                           "type": "file",
@@ -2159,6 +2177,12 @@
                           "name": "1. Introduction.md",
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/1. Moniker Link (CVE-2024-21413)/1. Introduction.md",
+                          "parent": "1. Moniker Link (CVE-2024-21413)"
+                        },
+                        {
+                          "name": "2. Moniker Link (CVE-2024-21413).md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/1. Moniker Link (CVE-2024-21413)/2. Moniker Link (CVE-2024-21413).md",
                           "parent": "1. Moniker Link (CVE-2024-21413)"
                         },
                         {

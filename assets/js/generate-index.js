@@ -1,8 +1,9 @@
 // ======== generate-index.js ========
-// Renderiza el arbol lateral estilo Obsidian usando /apuntes/arbol.json
+// Renderiza el árbol lateral estilo Obsidian usando /apuntes/arbol.json
 // - Mantiene los números ("1. Pre Security", etc.)
 // - Ordena por número natural: 1,2,3,...,10,11,...
 // - Ignora .obsidian y Z Imagenes porque eso ya viene filtrado en arbol.json
+// - En el último nivel jerárquico, solo ignora los .md que comienzan con "0."
 
 (async function () {
   const container = document.getElementById("dynamic-index");
@@ -35,11 +36,17 @@
     });
   }
 
+  // 🔧 Detecta si un directorio es de último nivel (no tiene subcarpetas)
+  function isLeafDirectory(node) {
+    if (!node.contents) return true;
+    return !node.contents.some(c => c.type === "directory");
+  }
+
   // Construye DOM recursivamente
-  function buildTree(node) {
+  function buildTree(node, parentIsLeafDir = false) {
     if (!node) return null;
 
-    // Directorio
+    // === Directorio ===
     if (node.type === "directory") {
       const details = document.createElement("details");
       details.className = "tree-dir"; // no abrimos por defecto
@@ -53,8 +60,10 @@
       inner.className = "tree-children";
 
       const children = sortNodes(node.contents || []);
+      const leafDir = isLeafDirectory(node);
+
       children.forEach(child => {
-        const childEl = buildTree(child);
+        const childEl = buildTree(child, leafDir);
         if (childEl) inner.appendChild(childEl);
       });
 
@@ -62,8 +71,17 @@
       return details;
     }
 
-    // Archivo .md válido
+    // === Archivo .md válido ===
     if (node.type === "file") {
+      const isMd = node.name.toLowerCase().endsWith(".md");
+      if (!isMd) return null;
+
+      // ⛔ Ignorar solo si está en el último nivel y empieza por "0."
+      if (parentIsLeafDir && /^0\./.test(node.name)) {
+        console.log("⛔ Ignorado índice local:", node.path);
+        return null;
+      }
+
       const link = document.createElement("a");
       link.className = "tree-leaf";
       link.textContent = node.name.replace(/\.md$/i, ""); // quita .md visible
@@ -112,26 +130,21 @@
 
     // Recorremos todos los enlaces ya insertados en el índice
     const links = container.querySelectorAll(".tree-nav a.tree-leaf");
-
     let currentLink = null;
 
     links.forEach(a => {
       const linkUrl = new URL(a.href, window.location.origin);
       const linkFileRaw = linkUrl.searchParams.get("file") || "";
       const linkFileNorm = normalize(linkFileRaw);
-
-      // Coincidimos por igualdad normalizada
-      if (linkFileNorm === currentFileNorm) {
-        currentLink = a;
-      }
+      if (linkFileNorm === currentFileNorm) currentLink = a;
     });
 
     if (!currentLink) {
-      console.warn("⚠️ No se encontró el enlace actual en el índice:", currentFileRaw);
+      console.warn("⚠ No se encontró el enlace actual en el índice:", currentFileRaw);
       return;
     }
 
-    // Quitar highlights viejos si hubiera
+    // Quitar highlights viejos
     container.querySelectorAll(".tree-nav a.tree-leaf.current-page")
       .forEach(el => el.classList.remove("current-page"));
 
@@ -145,7 +158,7 @@
       parent = parent.parentElement?.closest("details");
     }
 
-    // Scroll hacia el enlace actual para centrarlo
+    // Scroll hacia el enlace actual
     setTimeout(() => {
       currentLink.scrollIntoView({ behavior: "smooth", block: "center" });
     }, 100);
@@ -174,9 +187,8 @@
     });
 
     // 🔒 Cierra todos los <details> por defecto
-const allDetails = nav.querySelectorAll("details");
-allDetails.forEach(d => d.open = false);
-
+    const allDetails = nav.querySelectorAll("details");
+    allDetails.forEach(d => (d.open = false));
 
     // === Cerrar las demás unidades al abrir una nueva ===
     document.addEventListener("click", e => {

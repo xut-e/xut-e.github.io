@@ -142,9 +142,10 @@ write_file(OUTPUT_ROOT / "index.json", json.dumps(index_json, ensure_ascii=False
 # -----------------
 # Paso 6: arbol.json jerárquico (mantiene números + ignora .obsidian)
 # -----------------
-def build_tree(path: Path):
+def build_tree(path: Path, parent_is_leaf=False):
     # Ignorar carpetas ocultas y Z Imagenes
     if path.name in ("Z Imagenes", ".obsidian") or path.name.startswith("."):
+        print(f"⛔ Ignorada carpeta: {path.name}")
         return None
 
     node = {"name": path.name}
@@ -152,12 +153,18 @@ def build_tree(path: Path):
     if path.is_dir():
         node["type"] = "directory"
         contents = []
+
+        # Detectar si el directorio es de último nivel (no tiene subcarpetas)
+        has_subdirs = any(c.is_dir() for c in path.iterdir())
+        is_leaf_dir = not has_subdirs
+
         for child in sorted(path.iterdir()):
-            child_node = build_tree(child)
+            child_node = build_tree(child, parent_is_leaf=is_leaf_dir)
             if child_node:
                 if child.is_file():
                     child_node["parent"] = path.name
                 contents.append(child_node)
+
         node["contents"] = contents
 
     elif path.is_file() and path.suffix.lower() == ".md":
@@ -165,19 +172,33 @@ def build_tree(path: Path):
         parent = path.parent.name
 
         # === Reglas de exclusión ===
-        if name.startswith("0."):
+        # Ignorar archivos 0.*.md en último nivel
+        if parent_is_leaf and name.startswith("0."):
+            print(f"⛔ Ignorado índice local (último nivel): {path}")
             return None
+
+        # Ignorar índices de carpeta solo si son el único .md dentro
         clean_file = re.sub(r"^\d+\.\s*", "", name).strip().lower()
         clean_parent = re.sub(r"^\d+\.\s*", "", parent).strip().lower()
-        if clean_file == clean_parent:
-            return None
+        same_name = clean_file == clean_parent
+
+        if same_name:
+            md_count = len([f for f in path.parent.glob("*.md")])
+            if md_count == 1:
+                print(f"⛔ Ignorado índice de carpeta (único .md): {path}")
+                return None
+            else:
+                print(f"✅ No ignorado (mismo nombre pero hay más archivos): {path}")
 
         node["type"] = "file"
         rel_path = path.relative_to(CONTENT_ROOT)
         node["path"] = f"content/Ciberseguridad/{rel_path.as_posix()}"
+
     else:
         return None
+
     return node
+
 
 arbol = build_tree(CONTENT_ROOT)
 write_file(OUTPUT_ROOT / "arbol.json", json.dumps(arbol, ensure_ascii=False, indent=2))
