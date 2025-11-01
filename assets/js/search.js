@@ -74,7 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const normalizedQuery = normalize(query);
       const escaped = normalizedQuery.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      const regexBase = new RegExp(`\\b${escaped}\\w*\\b`, "i");
+      // Permitir coincidencias con guiones (-) o flags tipo --flag-name
+      const regexBase = new RegExp(`[-]{0,2}${escaped}[\\w-]*`, "i");
+
 
       const results = [];
 
@@ -92,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (inContent) {
             // buscar coincidencias en versión normalizada
-            const ctxRegex = new RegExp(`.{0,120}\\b${escaped}\\w*\\b.{0,120}`, "gi");
+            const ctxRegex = new RegExp(`.{0,120}[-]{0,2}${escaped}[\\w-]*.{0,120}`, "gi"); 
             const matches = [];
             let m;
             while ((m = ctxRegex.exec(normContent)) !== null) {

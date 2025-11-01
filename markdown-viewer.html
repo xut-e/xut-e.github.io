@@ -7,13 +7,14 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
 
-  <!-- Librerías -->
+  <!-- Markdown & highlight -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
   />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
   <link rel="icon" type="img/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
 </head>
 
@@ -86,10 +87,12 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </div>
   </footer>
 
-  <!-- CARGAR AÑO -->
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <!-- AÑO -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
-  <!-- CARGAR ÍNDICE -->
+  <!-- GENERAR ÍNDICE LATERAL -->
   <script src="assets/js/generate-index.js"></script>
 
   <!-- MOSTRAR / OCULTAR ÍNDICE -->
@@ -100,6 +103,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     const pageShell = document.querySelector(".page-shell");
     if (!btn || !aside || !pageShell) return;
 
+    // estado inicial respetando localStorage
     const isVisible = localStorage.getItem("indexVisible") === "true";
     if (isVisible) {
       aside.classList.remove("hidden");
@@ -113,6 +117,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       btn.classList.remove("active");
     }
 
+    // toggle
     btn.addEventListener("click", e => {
       e.preventDefault();
       const hidden = aside.classList.contains("hidden");
@@ -137,7 +142,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   });
   </script>
 
-  <!-- CARGA Y RENDER DE MARKDOWN -->
+  <!-- CARGA Y RENDER DE MARKDOWN (.md / .pdf / otros) -->
   <script>
   (async function () {
     const params = new URLSearchParams(window.location.search);
@@ -151,9 +156,11 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       return;
     }
 
+    // normalizar ruta a "content/...":
     const realPath = fileParam.startsWith("content/") ? fileParam : "content/" + fileParam;
     const lower = realPath.toLowerCase();
 
+    // PDFs incrustados
     if (lower.endsWith(".pdf")) {
       const cleanName = realPath.split("/").pop().replace(/\.pdf$/i, "");
       titleEl.textContent = cleanName;
@@ -161,27 +168,39 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       return;
     }
 
+    // Markdown
     if (lower.endsWith(".md")) {
       try {
         const res = await fetch(realPath);
         if (!res.ok) throw new Error("No se pudo cargar el archivo");
         let mdText = await res.text();
 
+        // título = primer H1 o nombre de archivo
         const lines = mdText.split("\n");
         const h1Match = lines[0]?.match(/^#\s+(.+)/);
-        titleEl.textContent = h1Match ? h1Match[1].trim() : realPath.split("/").pop().replace(/\.md$/i, "");
+        titleEl.textContent = h1Match
+          ? h1Match[1].trim()
+          : realPath.split("/").pop().replace(/\.md$/i, "");
 
+        // markdown -> HTML
         mdText = marked.parse(mdText, { gfm: true, breaks: true });
 
+        // imágenes estilo ![[foo.png]]
         mdText = mdText.replace(/!\[\[(.+?)\]\]/g, (m, p1) => {
           const src = decodeURIComponent(p1.trim());
           return `<img src="/content/Ciberseguridad/Z%20Imagenes/${encodeURIComponent(src)}" alt="${src}">`;
         });
 
-        mdText = mdText.replace(/<a href="(https?:\/\/[^"]+)">/g,
-          '<a href="$1" target="_blank" rel="noopener">');
+        // abrir links externos en nueva pestaña
+        mdText = mdText.replace(
+          /<a href="(https?:\/\/[^"]+)">/g,
+          '<a href="$1" target="_blank" rel="noopener">'
+        );
 
+        // inyectar
         contentEl.innerHTML = mdText;
+
+        // resaltar bloques de código
         contentEl.querySelectorAll("pre code").forEach(b => hljs.highlightElement(b));
       } catch {
         titleEl.textContent = "Error";
@@ -190,6 +209,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       return;
     }
 
+    // fallback para otros tipos
     titleEl.textContent = realPath.split("/").pop();
     contentEl.innerHTML = `<p>No sé mostrar este tipo de archivo todavía.</p>
       <p><a href="${realPath}" target="_blank" rel="noopener noreferrer">Abrir directamente</a></p>`;
@@ -198,267 +218,277 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
 
   <!-- ÍNDICE PERSISTENTE + BREADCRUMB + FLECHAS -->
   <script>
-window.addEventListener("DOMContentLoaded", async () => {
-  const params = new URLSearchParams(window.location.search);
-  const currentFile = params.get("file");
-  const breadcrumbEl = document.getElementById("breadcrumb");
-  const prevBtn = document.getElementById("prev-note");
-  const nextBtn = document.getElementById("next-note");
-  const aside = document.getElementById("indice");
+  window.addEventListener("DOMContentLoaded", async () => {
+    const params = new URLSearchParams(window.location.search);
+    const currentFile = params.get("file");
+    const breadcrumbEl = document.getElementById("breadcrumb");
+    const prevBtn = document.getElementById("prev-note");
+    const nextBtn = document.getElementById("next-note");
+    const aside = document.getElementById("indice");
 
-  if (!currentFile) {
-    breadcrumbEl.textContent = "(Sin ruta)";
-    return;
-  }
-
-  try {
-    const res = await fetch("apuntes/arbol.json");
-    if (!res.ok) throw new Error("No se pudo cargar arbol.json");
-    const data = await res.json();
-
-    function flattenTree(node, path = "") {
-      if (!node) return [];
-      let files = [];
-      if (Array.isArray(node)) node.forEach(n => files.push(...flattenTree(n, path)));
-      else if (node.type === "directory") {
-        const newPath = path ? `${path}/${node.name}` : node.name;
-        if (node.name === "Z Imagenes") return files;
-        node.contents?.forEach(n => files.push(...flattenTree(n, newPath)));
-      } else if (node.type === "file" && node.name.endsWith(".md")) {
-        files.push(`${path}/${node.name}`);
-      }
-      return files;
+    if (!currentFile) {
+      breadcrumbEl.textContent = "(Sin ruta)";
+      return;
     }
 
-    const allFiles = flattenTree(data).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
-    const normalize = s => s.replace(/\\/g, "/").replace(/%20/g, " ").toLowerCase();
-    const idx = allFiles.findIndex(f => normalize(currentFile).endsWith(normalize(f)));
+    try {
+      const res = await fetch("apuntes/arbol.json");
+      if (!res.ok) throw new Error("No se pudo cargar arbol.json");
+      const data = await res.json();
 
-    const parts = currentFile.replace(/^content\/?/, "")
-      .split("/")
-      .filter(Boolean)
-      .map(seg => seg.replace(/\.md$/i, ""))
-      .map(seg => seg.replace(/-/g, " "))
-      .map(seg => seg.replace(/\b\w/g, c => c.toUpperCase()));
-    breadcrumbEl.textContent = parts.join(" > ") || "(Sin ruta)";
-
-    // --- Normalización consistente ---
-    function normalizePathLikeIndex(raw) {
-      if (!raw) return "";
-      let s = decodeURIComponent(raw);
-      s = s.replace(/\\/g, "/").trim().replace(/\/{2,}/g, "/");
-      if (!s.toLowerCase().startsWith("content/")) s = "content/" + s;
-      return s.toLowerCase();
-    }
-
-    // --- Actualizar índice ---
-    function updateIndexHighlight(targetFileRaw) {
-      const container = document.getElementById("dynamic-index");
-      if (!container) return;
-      const targetNorm = normalizePathLikeIndex(targetFileRaw);
-
-      const links = container.querySelectorAll("a.tree-leaf");
-      let currentLink = null;
-      links.forEach(a => {
-        const href = a.getAttribute("href") || "";
-        const fileParam = href.split("?file=")[1] || "";
-        const linkNorm = normalizePathLikeIndex(fileParam);
-        if (linkNorm === targetNorm) currentLink = a;
-      });
-      if (!currentLink) return;
-
-      container.querySelectorAll("a.tree-leaf.current-page").forEach(el => el.classList.remove("current-page"));
-      currentLink.classList.add("current-page");
-
-      container.querySelectorAll("details").forEach(d => (d.open = false));
-
-      const opened = [];
-      let parent = currentLink.closest("details");
-      while (parent) {
-        parent.open = true;
-        const sum = parent.querySelector(":scope > summary");
-        if (sum) opened.push(sum.textContent.trim());
-        parent = parent.parentElement?.closest("details");
-      }
-
-      localStorage.setItem("indexOpenBranches", JSON.stringify(opened));
-      localStorage.setItem("indexLastFile", targetFileRaw);
-
-      setTimeout(() => currentLink.scrollIntoView({ behavior: "smooth", block: "center" }), 100);
-    }
-
-    function waitForIndexThenHighlight(currentFileRaw) {
-      let tries = 0;
-      const interval = setInterval(() => {
-        tries++;
-        const ready = document.querySelectorAll("#dynamic-index a.tree-leaf").length > 0;
-        if (ready) {
-          clearInterval(interval);
-          updateIndexHighlight(currentFileRaw);
+      // aplana el árbol jerárquico a una lista ordenada de .md
+      function flattenTree(node, path = "") {
+        if (!node) return [];
+        let files = [];
+        if (Array.isArray(node)) {
+          node.forEach(n => files.push(...flattenTree(n, path)));
+        } else if (node.type === "directory") {
+          const newPath = path ? `${path}/${node.name}` : node.name;
+          if (node.name === "Z Imagenes") return files; // skip imágenes
+          node.contents?.forEach(n => files.push(...flattenTree(n, newPath)));
+        } else if (node.type === "file" && node.name.endsWith(".md")) {
+          files.push(`${path}/${node.name}`); // path relativo estilo "THM/0. Pre Career/.../note.md"
         }
-        if (tries > 60) clearInterval(interval);
-      }, 150);
+        return files;
+      }
+
+      const allFiles = flattenTree(data)
+        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+      const normalizeForCompare = s =>
+        s.replace(/\\/g, "/").replace(/%20/g, " ").toLowerCase();
+
+      // localizar índice de la nota actual en allFiles
+      const idx = allFiles.findIndex(f =>
+        normalizeForCompare(currentFile).endsWith(normalizeForCompare(f))
+      );
+
+      // pintar breadcrumb bonito
+      const parts = currentFile
+        .replace(/^content\/?/i, "")
+        .split("/")
+        .filter(Boolean)
+        .map(seg => seg.replace(/\.md$/i, ""))
+        .map(seg => seg.replace(/-/g, " "))
+        .map(seg =>
+          seg.replace(/\b\w/g, c => c.toUpperCase())
+        );
+      breadcrumbEl.textContent = parts.join(" > ") || "(Sin ruta)";
+
+      // helpers de normalización para el índice lateral
+      function normalizePathLikeIndex(raw) {
+        if (!raw) return "";
+        let s = decodeURIComponent(raw);
+        s = s.replace(/\\/g, "/").trim().replace(/\/{2,}/g, "/");
+        if (!s.toLowerCase().startsWith("content/")) s = "content/" + s;
+        return s.toLowerCase();
+      }
+
+      // resalta en el índice lateral la página actual
+      function updateIndexHighlight(targetFileRaw) {
+        const container = document.getElementById("dynamic-index");
+        if (!container) return;
+
+        const targetNorm = normalizePathLikeIndex(targetFileRaw);
+
+        const links = container.querySelectorAll("a.tree-leaf");
+        let currentLink = null;
+        links.forEach(a => {
+          const href = a.getAttribute("href") || "";
+          const fileParam = href.split("?file=")[1] || "";
+          const linkNorm = normalizePathLikeIndex(fileParam);
+          if (linkNorm === targetNorm) currentLink = a;
+        });
+        if (!currentLink) return;
+
+        // marca link activo
+        container
+          .querySelectorAll("a.tree-leaf.current-page")
+          .forEach(el => el.classList.remove("current-page"));
+        currentLink.classList.add("current-page");
+
+        // colapsa todo...
+        container.querySelectorAll("details").forEach(d => (d.open = false));
+
+        // ...y reabre sólo la rama hasta la nota actual
+        const opened = [];
+        let parent = currentLink.closest("details");
+        while (parent) {
+          parent.open = true;
+          const sum = parent.querySelector(":scope > summary");
+          if (sum) opened.push(sum.textContent.trim());
+          parent = parent.parentElement?.closest("details");
+        }
+
+        // persistir rama abierta y última nota
+        localStorage.setItem("indexOpenBranches", JSON.stringify(opened));
+        localStorage.setItem("indexLastFile", targetFileRaw);
+
+        // scroll suave al elemento activo
+        setTimeout(() => {
+          currentLink.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 100);
+      }
+
+      // esperar a que generate-index.js haya montado el índice en el DOM
+      function waitForIndexThenHighlight(currentFileRaw) {
+        let tries = 0;
+        const interval = setInterval(() => {
+          tries++;
+          const ready = document.querySelectorAll("#dynamic-index a.tree-leaf").length > 0;
+          if (ready) {
+            clearInterval(interval);
+            updateIndexHighlight(currentFileRaw);
+          }
+          if (tries > 60) clearInterval(interval);
+        }, 150);
+      }
+      waitForIndexThenHighlight(currentFile);
+
+      // Navegación con las flechas
+      const goTo = i => {
+        const target = allFiles[i];
+        if (!target) return;
+        localStorage.setItem("indexLastFile", target);
+        // al navegar, simplemente cambiamos de página
+        window.location.href = `markdown-viewer.html?file=${encodeURIComponent(target)}`;
+      };
+
+      if (idx > 0) {
+        prevBtn.onclick = () => goTo(idx - 1);
+      } else {
+        prevBtn.disabled = true;
+      }
+
+      if (idx < allFiles.length - 1) {
+        nextBtn.onclick = () => goTo(idx + 1);
+      } else {
+        nextBtn.disabled = true;
+      }
+
+      // respetar visibilidad previa del índice lateral
+      const indexVisible = localStorage.getItem("indexVisible") === "true";
+      if (indexVisible) {
+        aside.classList.remove("hidden", "collapsing");
+      } else {
+        aside.classList.add("hidden");
+      }
+
+    } catch (err) {
+      console.error("💥 Error índice/breadcrumb/navegación:", err);
+      breadcrumbEl.textContent = "(Error al generar ruta)";
     }
-    waitForIndexThenHighlight(currentFile);
+  });
+  </script>
 
-    // --- Navegación con flechas ---
-    const goTo = i => {
-      const target = allFiles[i];
-      if (!target) return;
-      localStorage.setItem("indexLastFile", target);
-      window.location.href = `markdown-viewer.html?file=${encodeURIComponent(target)}`;
-    };
+  <!-- RESALTADO VERDE + SCROLL CUANDO VENIMOS DESDE SEARCH -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+    if (!q) return; // si no venimos desde la búsqueda, no hacemos nada
 
-    if (idx > 0) prevBtn.onclick = () => goTo(idx - 1);
-    else prevBtn.disabled = true;
-
-    if (idx < allFiles.length - 1) nextBtn.onclick = () => goTo(idx + 1);
-    else nextBtn.disabled = true;
-
-    const indexVisible = localStorage.getItem("indexVisible") === "true";
-    if (indexVisible) {
-      aside.classList.remove("hidden", "collapsing");
-    } else {
-      aside.classList.add("hidden");
+    // normaliza texto (quita acentos, pasa a minúsculas)
+    function normalize(str) {
+      return str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
     }
 
-  } catch (err) {
-    console.error("💥 Error índice/breadcrumb/navegación:", err);
-    breadcrumbEl.textContent = "(Error al generar ruta)";
-  }
-});
-</script>
+    // resalta TODAS las apariciones de query dentro de #md-content,
+    // sin destruir event listeners ni machacar todo el innerHTML
+    function highlightInElement(root, query) {
+      const normQuery = normalize(query);
+      if (!normQuery) return;
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const q = params.get("q");
-  if (!q) return; // si no venimos desde una búsqueda, no hacemos nada
+      // recorremos todos los nodos de texto dentro de root
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      const textNodesToProcess = [];
 
-  // Normaliza: quita tildes y pasa a minúsculas
-  function normalize(str) {
-    return str
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase();
-  }
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        const original = node.textContent;
+        const normOriginal = normalize(original);
 
-  // Dado el HTML completo de la nota, devuelve ese mismo HTML
-  // con TODAS las coincidencias de q envueltas en <mark>
-  // (insensible a acentos y mayúsculas)
-  function highlightHTML(html, query) {
-    const normHtml = normalize(html);
-    const normQuery = normalize(query);
-    if (!normQuery) return html;
+        if (normOriginal.includes(normQuery)) {
+          textNodesToProcess.push({ node, original, normOriginal });
+        }
+      }
 
-    // escapamos la query para usarla como regex literal
-    const escaped = normQuery.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const regex = new RegExp(escaped, "gi");
+      textNodesToProcess.forEach(({ node, original, normOriginal }) => {
+        const normQueryLen = normQuery.length;
+        const ranges = [];
+        let searchStart = 0;
 
-    let out = "";
-    let lastIndex = 0;
-    let match;
+        // localizar TODAS las posiciones donde aparece la query normalizada
+        while (true) {
+          const idx = normOriginal.indexOf(normQuery, searchStart);
+          if (idx === -1) break;
+          ranges.push([idx, idx + normQueryLen]);
+          searchStart = idx + normQueryLen;
+        }
 
-    // IMPORTANTE:
-    // Trabajamos sobre la versión normalizada (sin tildes) para localizar
-    // las posiciones, pero aplicamos el <mark> sobre el HTML original,
-    // usando esos mismos índices. Esto funciona porque quitar acentos
-    // no cambia la longitud de la cadena, solo los combina.
-    while ((match = regex.exec(normHtml)) !== null) {
-      const start = match.index;
-      const end = regex.lastIndex;
-      out += html.slice(lastIndex, start) +
-             "<mark>" + html.slice(start, end) + "</mark>";
-      lastIndex = end;
+        if (!ranges.length) return;
+
+        // construir HTML seguro con <mark> envolviendo cada match
+        let resultHTML = "";
+        let lastPos = 0;
+        ranges.forEach(([start, end]) => {
+          resultHTML += original.slice(lastPos, start)
+            + "<mark>"
+            + original.slice(start, end)
+            + "</mark>";
+          lastPos = end;
+        });
+        resultHTML += original.slice(lastPos);
+
+        // reemplazar el nodo de texto por un span con ese HTML
+        const span = document.createElement("span");
+        span.innerHTML = resultHTML;
+        node.parentNode.replaceChild(span, node);
+      });
     }
 
-    out += html.slice(lastIndex);
-    return out;
-  }
-
-  // Intenta localizar el contenedor que tiene el markdown ya renderizado.
-  // Probamos varios selectores típicos de tu layout para no depender de un nombre fijo.
-  function getNoteContentElement() {
-    const candidates = [
-      ".markdown-body",
-      "#markdown-body",
-      "#viewer-content",
-      ".viewer-content",
-      ".apunte-contenido",
-      "#apunte-contenido"
-    ];
-    for (const sel of candidates) {
-      const el = document.querySelector(sel);
-      if (el) return el;
-    }
-    return null;
-  }
-
-  // Esta función se encarga de:
-  // 1. inyectar <mark> ... </mark>
-  // 2. hacer scroll a la primera coincidencia
-  // 3. darle un destello verde a esa primera coincidencia
-  function applyHighlightAndScroll() {
-    const el = getNoteContentElement();
-    if (!el) return false;
-
-    // Evitamos hacerlo sobre el placeholder "Cargando contenido..."
-    const txt = el.innerText.trim();
-    if (!txt || /^Cargando/i.test(txt)) {
-      return false;
-    }
-
-    // Evitar repetir marcado si ya lo hicimos
-    if (el.dataset.__marked === "1") {
-      return true;
-    }
-
-    const originalHTML = el.innerHTML;
-    const newHTML = highlightHTML(originalHTML, q);
-
-    el.innerHTML = newHTML;
-    el.dataset.__marked = "1";
-
-    // Scroll a la primera coincidencia
-    const firstMark = el.querySelector("mark");
-    if (firstMark) {
-      firstMark.scrollIntoView({ behavior: "smooth", block: "center" });
-
-      // Destello sutil para que el ojo lo encuentre
-      firstMark.animate(
+    // hace scroll a la primera coincidencia y la hace parpadear en verde
+    function focusFirstMatch(container) {
+      const first = container.querySelector("mark");
+      if (!first) return;
+      first.scrollIntoView({ behavior: "smooth", block: "center" });
+      first.animate(
         [
           { backgroundColor: "rgba(102,161,130,0.8)" },
           { backgroundColor: "rgba(102,161,130,0.25)" }
         ],
-        {
-          duration: 1500,
-          easing: "ease-out"
-        }
+        { duration: 1200, easing: "ease-out" }
       );
     }
 
-    return true;
-  }
+    // esperamos a que el markdown esté realmente cargado en #md-content
+    function waitUntilContentReady() {
+      const contentEl = document.getElementById("md-content");
+      if (!contentEl) return;
 
-  // 💡 Truco importante:
-  // El contenido del apunte llega de forma asíncrona (fetch X.md → lo metes en el DOM).
-  // Así que repetimos `applyHighlightAndScroll()` hasta que:
-  //  - el contenedor existe
-  //  - ya no está en modo "Cargando..."
-  //  - hemos podido marcarlo
-  let tries = 0;
-  const interval = setInterval(() => {
-    tries++;
-    const done = applyHighlightAndScroll();
-    if (done || tries > 50) {
-      clearInterval(interval);
+      const obs = new MutationObserver((mutList, observer) => {
+        // contenido ya está cargado (no es el placeholder "Cargando...")
+        const txt = contentEl.innerText.trim();
+        if (txt && !/^Cargando/i.test(txt)) {
+          observer.disconnect();
+
+          // aplicar resaltado
+          highlightInElement(contentEl, q);
+
+          // hacer scroll y destello
+          focusFirstMatch(contentEl);
+        }
+      });
+
+      obs.observe(contentEl, { childList: true, subtree: true });
     }
-  }, 200);
-});
-</script>
 
-
-
+    waitUntilContentReady();
+  });
+  </script>
 </body>
 </html>
 
