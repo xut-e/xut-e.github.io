@@ -329,6 +329,136 @@ window.addEventListener("DOMContentLoaded", async () => {
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get("q");
+  if (!q) return; // si no venimos desde una búsqueda, no hacemos nada
+
+  // Normaliza: quita tildes y pasa a minúsculas
+  function normalize(str) {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  }
+
+  // Dado el HTML completo de la nota, devuelve ese mismo HTML
+  // con TODAS las coincidencias de q envueltas en <mark>
+  // (insensible a acentos y mayúsculas)
+  function highlightHTML(html, query) {
+    const normHtml = normalize(html);
+    const normQuery = normalize(query);
+    if (!normQuery) return html;
+
+    // escapamos la query para usarla como regex literal
+    const escaped = normQuery.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(escaped, "gi");
+
+    let out = "";
+    let lastIndex = 0;
+    let match;
+
+    // IMPORTANTE:
+    // Trabajamos sobre la versión normalizada (sin tildes) para localizar
+    // las posiciones, pero aplicamos el <mark> sobre el HTML original,
+    // usando esos mismos índices. Esto funciona porque quitar acentos
+    // no cambia la longitud de la cadena, solo los combina.
+    while ((match = regex.exec(normHtml)) !== null) {
+      const start = match.index;
+      const end = regex.lastIndex;
+      out += html.slice(lastIndex, start) +
+             "<mark>" + html.slice(start, end) + "</mark>";
+      lastIndex = end;
+    }
+
+    out += html.slice(lastIndex);
+    return out;
+  }
+
+  // Intenta localizar el contenedor que tiene el markdown ya renderizado.
+  // Probamos varios selectores típicos de tu layout para no depender de un nombre fijo.
+  function getNoteContentElement() {
+    const candidates = [
+      ".markdown-body",
+      "#markdown-body",
+      "#viewer-content",
+      ".viewer-content",
+      ".apunte-contenido",
+      "#apunte-contenido"
+    ];
+    for (const sel of candidates) {
+      const el = document.querySelector(sel);
+      if (el) return el;
+    }
+    return null;
+  }
+
+  // Esta función se encarga de:
+  // 1. inyectar <mark> ... </mark>
+  // 2. hacer scroll a la primera coincidencia
+  // 3. darle un destello verde a esa primera coincidencia
+  function applyHighlightAndScroll() {
+    const el = getNoteContentElement();
+    if (!el) return false;
+
+    // Evitamos hacerlo sobre el placeholder "Cargando contenido..."
+    const txt = el.innerText.trim();
+    if (!txt || /^Cargando/i.test(txt)) {
+      return false;
+    }
+
+    // Evitar repetir marcado si ya lo hicimos
+    if (el.dataset.__marked === "1") {
+      return true;
+    }
+
+    const originalHTML = el.innerHTML;
+    const newHTML = highlightHTML(originalHTML, q);
+
+    el.innerHTML = newHTML;
+    el.dataset.__marked = "1";
+
+    // Scroll a la primera coincidencia
+    const firstMark = el.querySelector("mark");
+    if (firstMark) {
+      firstMark.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      // Destello sutil para que el ojo lo encuentre
+      firstMark.animate(
+        [
+          { backgroundColor: "rgba(102,161,130,0.8)" },
+          { backgroundColor: "rgba(102,161,130,0.25)" }
+        ],
+        {
+          duration: 1500,
+          easing: "ease-out"
+        }
+      );
+    }
+
+    return true;
+  }
+
+  // 💡 Truco importante:
+  // El contenido del apunte llega de forma asíncrona (fetch X.md → lo metes en el DOM).
+  // Así que repetimos `applyHighlightAndScroll()` hasta que:
+  //  - el contenedor existe
+  //  - ya no está en modo "Cargando..."
+  //  - hemos podido marcarlo
+  let tries = 0;
+  const interval = setInterval(() => {
+    tries++;
+    const done = applyHighlightAndScroll();
+    if (done || tries > 50) {
+      clearInterval(interval);
+    }
+  }, 200);
+});
+</script>
+
+
+
 </body>
 </html>
 
