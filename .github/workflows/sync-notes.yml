@@ -25,7 +25,7 @@ jobs:
 
       - name: Sync notes into content/
         run: |
-          rsync -av --delete notes/ site/content/
+          rsync -av --delete "notes/Ciberseguridad/" "site/content/Ciberseguridad/" 
           cd site
           python3 scripts/build_apuntes.py
 

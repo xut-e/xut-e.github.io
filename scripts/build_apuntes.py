@@ -2,7 +2,16 @@ import os, re, json, shutil, unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent  # repo root
-CONTENT_ROOT = ROOT / "content" / "Ciberseguridad"
+# Detectar carpeta 'Ciberseguridad' o 'ciberseguridad' automáticamente
+CONTENT_ROOT = None
+for name in ("Ciberseguridad", "ciberseguridad"):
+    candidate = Path(ROOT / "content" / name)
+    if candidate.exists():
+        CONTENT_ROOT = candidate
+        break
+if CONTENT_ROOT is None:
+    raise FileNotFoundError("❌ No se encontró la carpeta 'content/Ciberseguridad' ni 'content/ciberseguridad'")
+
 OUTPUT_ROOT = ROOT / "apuntes"
 INCLUDES_ROOT = ROOT / "_includes"
 IMG_OUTPUT_DIR = OUTPUT_ROOT / "img"
