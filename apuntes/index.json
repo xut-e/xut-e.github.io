@@ -108,7 +108,7 @@
     "path": "/apuntes/thm/0-pre-career/1-pre-security/4-linux-fundamentals/linux-fundamentals-part-1/3-running-your-first-few-commands/"
   },
   {
-    "title": "4. Interacting with the Filesystem!",
+    "title": "4. Interacting with the Filesystem",
     "path": "/apuntes/thm/0-pre-career/1-pre-security/4-linux-fundamentals/linux-fundamentals-part-1/4-interacting-with-the-filesystem/"
   },
   {
@@ -252,16 +252,16 @@
     "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/1-dns-in-detail/2-domain-hierarchy/"
   },
   {
+    "title": "1. What is DNS",
+    "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/1-dns-in-detail/1-what-is-dns/"
+  },
+  {
     "title": "5. Práctica",
     "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/1-dns-in-detail/5-practica/"
   },
   {
     "title": "3. Record Types",
     "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/1-dns-in-detail/3-record-types/"
-  },
-  {
-    "title": "1. What is DNS_",
-    "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/1-dns-in-detail/1-what-is-dns_/"
   },
   {
     "title": "4. Making a Request",
@@ -280,16 +280,16 @@
     "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/2-http-in-detail/3-http-methods/"
   },
   {
-    "title": "1. What is HTTP(S)_",
-    "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/2-http-in-detail/1-what-is-http-s-_/"
-  },
-  {
     "title": "0. HTTP in Detail",
     "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/2-http-in-detail/0-http-in-detail/"
   },
   {
     "title": "4. HTTP Status Codes",
     "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/2-http-in-detail/4-http-status-codes/"
+  },
+  {
+    "title": "1. What is HTTP(S)",
+    "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/2-http-in-detail/1-what-is-http-s/"
   },
   {
     "title": "5. Headers",
@@ -688,10 +688,6 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/10-defensive-security/3-digital-forensics-fundamentals/4-windows-forensics/"
   },
   {
-    "title": "2. What are Incidents?",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/10-defensive-security/4-incident-response-fundamentals/2-what-are-incidents/"
-  },
-  {
     "title": "4. Incident Response Process",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/10-defensive-security/4-incident-response-fundamentals/4-incident-response-process/"
   },
@@ -710,6 +706,10 @@
   {
     "title": "0. Incident Response Fundamentals",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/10-defensive-security/4-incident-response-fundamentals/0-incident-response-fundamentals/"
+  },
+  {
+    "title": "2. What are Incidents",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/10-defensive-security/4-incident-response-fundamentals/2-what-are-incidents/"
   },
   {
     "title": "5. Find flags!",
@@ -836,16 +836,16 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/4-command-line/3-linux-shells/0-linux-shells/"
   },
   {
+    "title": "2. How to interact With a Shell",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/4-command-line/3-linux-shells/2-how-to-interact-with-a-shell/"
+  },
+  {
     "title": "1. Introduction to Linux Shells",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/4-command-line/3-linux-shells/1-introduction-to-linux-shells/"
   },
   {
     "title": "3. Types of Linux Shells",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/4-command-line/3-linux-shells/3-types-of-linux-shells/"
-  },
-  {
-    "title": "2. How to interact With a Shell?",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/4-command-line/3-linux-shells/2-how-to-interact-with-a-shell/"
   },
   {
     "title": "4. Shell Scripting and Components",
@@ -968,12 +968,12 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/11-security-solutions/4-vulnerability-scanner-overview/0-vulnerability-scanner-overview/"
   },
   {
-    "title": "1. What Are Vulnerabilities?",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/11-security-solutions/4-vulnerability-scanner-overview/1-what-are-vulnerabilities/"
-  },
-  {
     "title": "5. OpenVAS",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/11-security-solutions/4-vulnerability-scanner-overview/5-openvas/"
+  },
+  {
+    "title": "1. What Are Vulnerabilities",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/11-security-solutions/4-vulnerability-scanner-overview/1-what-are-vulnerabilities/"
   },
   {
     "title": "2. Vulnerability Scanning",
@@ -2052,16 +2052,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/1-pentesting-fundamentals/5-practical-acme-penetration-test/"
   },
   {
-    "title": "1. What is Penetration Testing?",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/1-pentesting-fundamentals/1-what-is-penetration-testing/"
-  },
-  {
     "title": "3. Penetration Testing Methodologies",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/1-pentesting-fundamentals/3-penetration-testing-methodologies/"
   },
   {
     "title": "2. Penetration Testing Ethics",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/1-pentesting-fundamentals/2-penetration-testing-ethics/"
+  },
+  {
+    "title": "1. What is Penetration Testing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/1-pentesting-fundamentals/1-what-is-penetration-testing/"
   },
   {
     "title": "0. Defensive Security Intro",

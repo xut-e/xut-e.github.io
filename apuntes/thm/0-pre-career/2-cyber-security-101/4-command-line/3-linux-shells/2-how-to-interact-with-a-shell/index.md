@@ -1,6 +1,6 @@
 ---
 layout: apunte
-title: "2. How to interact With a Shell?"
+title: "2. How to interact With a Shell"
 ---
 
 La mayoría de distribuciones de Linux usan Bash (Bourne Again Shell).
