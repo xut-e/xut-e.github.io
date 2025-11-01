@@ -196,11 +196,13 @@ arbol = build_tree(CONTENT_ROOT)
 write_file(OUTPUT_ROOT / "arbol.json", json.dumps(arbol, ensure_ascii=False, indent=2))
 
 # -----------------
-# Paso 7: index_full.json (nuevo)
+# Paso 7: index_full.json (nuevo) — versión que incluye la ruta original (src)
 # -----------------
 def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_full.json"):
     """
     Genera un índice extendido con el contenido completo de cada nota.
+    Incluye además la ruta original del fichero fuente en `src` para que el viewer
+    pueda recibir exactamente el mismo `file=` que genera el índice tradicional.
     No modifica el index.json existente.
     """
     notes_full = []
@@ -213,17 +215,22 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
             print(f"[!] Error leyendo {file_path}: {e}")
             continue
 
-        rel = file_path.relative_to(base_path)
+        rel = file_path.relative_to(base_path)           # p. ej. THM/0. Pre Career/...
         parts = list(rel.parts)
         breadcrumb = " > ".join(parts[:-1]) if len(parts) > 1 else ""
         title = file_path.stem
 
-        # Construir la URL igual que antes
+        # Construir la URL tipo /apuntes/... (igual que antes)
         url = build_url_for_file(file_path)
+
+        # Ruta original relativa desde la raíz del repo (o desde content/) — la que espera el viewer
+        # Guardamos la ruta en el formato que usa el viewer: "content/Ciberseguridad/..."
+        content_src = f"content/Ciberseguridad/{rel.as_posix()}"
 
         notes_full.append({
             "title": title,
-            "path": url,
+            "path": url,                 # mantengo la URL de apunte por compatibilidad
+            "src": content_src,          # <-- ruta original del archivo (para pasar a markdown-viewer)
             "breadcrumb": breadcrumb,
             "content": text
         })
@@ -234,6 +241,7 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
         json.dump(notes_full, f, ensure_ascii=False, indent=2)
 
     print(f"[+] Índice extendido generado en: {output_file}")
+
 
 build_full_index()
 
