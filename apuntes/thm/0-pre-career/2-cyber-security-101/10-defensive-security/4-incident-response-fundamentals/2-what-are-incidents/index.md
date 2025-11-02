@@ -1,6 +1,6 @@
 ---
 layout: apunte
-title: "2. What are Incidents?"
+title: "2. What are Incidents"
 ---
 
 Muchos procesos diferentes corren en nuestros dispositivos como portátiles, móviles, etc. Algunos de estos procesos son interactivos, lo que significa que puedes realizar acciones como jugar a un juego o ver un vídeo. También hay algunos que no son interactivos corriendo en segundo plano, simplemente son necesarios. Cualquiera de estos dos tipos de procesos, al realizar acciones, deja un rastro llamado evento (log).

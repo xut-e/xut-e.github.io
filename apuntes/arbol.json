@@ -323,9 +323,9 @@
                       "type": "directory",
                       "contents": [
                         {
-                          "name": "1. What is DNS_.md",
+                          "name": "1. What is DNS.md",
                           "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/1. What is DNS_.md",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/1. What is DNS.md",
                           "parent": "1. DNS in Detail"
                         },
                         {
@@ -359,9 +359,9 @@
                       "type": "directory",
                       "contents": [
                         {
-                          "name": "1. What is HTTP(S)_.md",
+                          "name": "1. What is HTTP(S).md",
                           "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/1. What is HTTP(S)_.md",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/1. What is HTTP(S).md",
                           "parent": "2. HTTP in Detail"
                         },
                         {
@@ -485,9 +485,9 @@
                           "parent": "Linux Fundamentals Part 1"
                         },
                         {
-                          "name": "4. Interacting with the Filesystem!.md",
+                          "name": "4. Interacting with the Filesystem.md",
                           "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/4. Interacting with the Filesystem!.md",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/4. Interacting with the Filesystem.md",
                           "parent": "Linux Fundamentals Part 1"
                         },
                         {
@@ -938,9 +938,9 @@
                           "parent": "4. Incident Response Fundamentals"
                         },
                         {
-                          "name": "2. What are Incidents?.md",
+                          "name": "2. What are Incidents.md",
                           "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/4. Incident Response Fundamentals/2. What are Incidents?.md",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/4. Incident Response Fundamentals/2. What are Incidents.md",
                           "parent": "4. Incident Response Fundamentals"
                         },
                         {
@@ -1112,9 +1112,9 @@
                       "type": "directory",
                       "contents": [
                         {
-                          "name": "1. What Are Vulnerabilities?.md",
+                          "name": "1. What Are Vulnerabilities.md",
                           "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/4. Vulnerability Scanner Overview/1. What Are Vulnerabilities?.md",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/4. Vulnerability Scanner Overview/1. What Are Vulnerabilities.md",
                           "parent": "4. Vulnerability Scanner Overview"
                         },
                         {
@@ -1580,9 +1580,9 @@
                           "parent": "3. Linux Shells"
                         },
                         {
-                          "name": "2. How to interact With a Shell?.md",
+                          "name": "2. How to interact With a Shell.md",
                           "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/3. Linux Shells/2. How to interact With a Shell?.md",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/4. Command Line/3. Linux Shells/2. How to interact With a Shell.md",
                           "parent": "3. Linux Shells"
                         },
                         {
@@ -2954,9 +2954,9 @@
                           "type": "directory",
                           "contents": [
                             {
-                              "name": "1. What is Penetration Testing?.md",
+                              "name": "1. What is Penetration Testing.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/1. What is Penetration Testing?.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/1. What is Penetration Testing.md",
                               "parent": "1. Pentesting Fundamentals"
                             },
                             {
@@ -2975,12 +2975,6 @@
                               "name": "4. Black box, White Box, Grey Box Penetration Testing.md",
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/4. Black box, White Box, Grey Box Penetration Testing.md",
-                              "parent": "1. Pentesting Fundamentals"
-                            },
-                            {
-                              "name": "5. Practical - ACME Penetration Test.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/1. Pentesting Fundamentals/5. Practical - ACME Penetration Test.md",
                               "parent": "1. Pentesting Fundamentals"
                             }
                           ]
@@ -3020,7 +3014,542 @@
                     {
                       "name": "3. Introduction to Web Hacking",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Walking an Application",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Walking An Application.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/1. Walking An Application.md",
+                              "parent": "1. Walking an Application"
+                            },
+                            {
+                              "name": "2. Exploring the Website.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/2. Exploring the Website.md",
+                              "parent": "1. Walking an Application"
+                            },
+                            {
+                              "name": "3. Viewing The Page Source.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/3. Viewing The Page Source.md",
+                              "parent": "1. Walking an Application"
+                            },
+                            {
+                              "name": "4. Developer Tools - Inspector.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/4. Developer Tools - Inspector.md",
+                              "parent": "1. Walking an Application"
+                            },
+                            {
+                              "name": "5. Developer Tools - Debugger.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/5. Developer Tools - Debugger.md",
+                              "parent": "1. Walking an Application"
+                            },
+                            {
+                              "name": "6. Developer Tools - Network.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/6. Developer Tools - Network.md",
+                              "parent": "1. Walking an Application"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "10. Command Injection",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/1. Introduction.md",
+                              "parent": "10. Command Injection"
+                            },
+                            {
+                              "name": "2. Discovering Command Injection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/2. Discovering Command Injection.md",
+                              "parent": "10. Command Injection"
+                            },
+                            {
+                              "name": "3. Exploiting Command Injection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/3. Exploiting Command Injection.md",
+                              "parent": "10. Command Injection"
+                            },
+                            {
+                              "name": "4. Remediating Command Injection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/4. Remediating Command Injection.md",
+                              "parent": "10. Command Injection"
+                            },
+                            {
+                              "name": "5. Practical - Command Injection (Deploy).md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/5. Practical - Command Injection (Deploy).md",
+                              "parent": "10. Command Injection"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "11. SQL Injection",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Brief.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/1. Brief.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "10. Remediation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/10. Remediation.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "2. What is a Database.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/2. What is a Database.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "3. What is SQL.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/3. What is SQL.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "4. What is SQL Injection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/4. What is SQL Injection.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "5. In-Band SQLI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/5. In-Band SQLI.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "6. Blind SQLI - Authentication Bypass.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/6. Blind SQLI - Authentication Bypass.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "7. Blind SQLI - Boolean Based.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/7. Blind SQLI - Boolean Based.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "8. Blind SQLI - Time Based.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/8. Blind SQLI - Time Based.md",
+                              "parent": "11. SQL Injection"
+                            },
+                            {
+                              "name": "9. Out-of-Band SQLI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/9. Out-of-Band SQLI.md",
+                              "parent": "11. SQL Injection"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Content Discovery",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. What Is Content Discovery.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/1. What Is Content Discovery.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "10. OSINT - GitHub.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/10. OSINT - GitHub.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "11. OSINT - S3 Buckets.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/11. OSINT - S3 Buckets.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "12. Automated Discovery.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/12. Automated Discovery.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "2. Manual Discovery - Robots txt.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/2. Manual Discovery - Robots txt.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "3. Manual Discovery - Favicon.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/3. Manual Discovery - Favicon.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "4. Manual Discovery - Sitemap xml.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/4. Manual Discovery - Sitemap xml.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "5. Manual Discovery - HTTP Headers.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/5. Manual Discovery - HTTP Headers.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "6. Manual Discovery - Framework Stack.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/6. Manual Discovery - Framework Stack.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "7. OSINT - Google Hacking - Dorking.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/7. OSINT - Google Hacking - Dorking.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "8. OSINT - Wappalyzer.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/8. OSINT - Wappalyzer.md",
+                              "parent": "2. Content Discovery"
+                            },
+                            {
+                              "name": "9. OSINT - Wayback Machine.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/9. OSINT - Wayback Machine.md",
+                              "parent": "2. Content Discovery"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Subdomain Enumeration",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Brief.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Subdomain Enumeration/1. Brief.md",
+                              "parent": "3. Subdomain Enumeration"
+                            },
+                            {
+                              "name": "2. OSINT - SSL-TLS Certificates.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Subdomain Enumeration/2. OSINT - SSL-TLS Certificates.md",
+                              "parent": "3. Subdomain Enumeration"
+                            },
+                            {
+                              "name": "3. OSINT - Search Engines.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Subdomain Enumeration/3. OSINT - Search Engines.md",
+                              "parent": "3. Subdomain Enumeration"
+                            },
+                            {
+                              "name": "4. DNS Brute Force.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Subdomain Enumeration/4. DNS Brute Force.md",
+                              "parent": "3. Subdomain Enumeration"
+                            },
+                            {
+                              "name": "5. OSINT - Sublist3r.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Subdomain Enumeration/5. OSINT - Sublist3r.md",
+                              "parent": "3. Subdomain Enumeration"
+                            },
+                            {
+                              "name": "6. Virtual Hosts.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Subdomain Enumeration/6. Virtual Hosts.md",
+                              "parent": "3. Subdomain Enumeration"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Authentication Bypass",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Username Enumeration.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/4. Authentication Bypass/1. Username Enumeration.md",
+                              "parent": "4. Authentication Bypass"
+                            },
+                            {
+                              "name": "2. Brute Force.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/4. Authentication Bypass/2. Brute Force.md",
+                              "parent": "4. Authentication Bypass"
+                            },
+                            {
+                              "name": "3. Logic Flaw.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/4. Authentication Bypass/3. Logic Flaw.md",
+                              "parent": "4. Authentication Bypass"
+                            },
+                            {
+                              "name": "4. Cookie Tampering.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/4. Authentication Bypass/4. Cookie Tampering.md",
+                              "parent": "4. Authentication Bypass"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. IDOR",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. What is IDOR.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/1. What is IDOR.md",
+                              "parent": "5. IDOR"
+                            },
+                            {
+                              "name": "2. An IDOR Exaxmple.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/2. An IDOR Exaxmple.md",
+                              "parent": "5. IDOR"
+                            },
+                            {
+                              "name": "3. Finding IDORs in Encoded IDs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/3. Finding IDORs in Encoded IDs.md",
+                              "parent": "5. IDOR"
+                            },
+                            {
+                              "name": "4. Finding IDORs in Hashed IDs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/4. Finding IDORs in Hashed IDs.md",
+                              "parent": "5. IDOR"
+                            },
+                            {
+                              "name": "5. Finding IDORs in Unpredictable IDs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/5. Finding IDORs in Unpredictable IDs.md",
+                              "parent": "5. IDOR"
+                            },
+                            {
+                              "name": "6. Where are IDORs Located.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/6. Where are IDORs Located.md",
+                              "parent": "5. IDOR"
+                            },
+                            {
+                              "name": "7. A practical IDOR Example.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/7. A practical IDOR Example.md",
+                              "parent": "5. IDOR"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "6. File Inclusion",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/1. Introduction.md",
+                              "parent": "6. File Inclusion"
+                            },
+                            {
+                              "name": "2. Deploy the VM.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/2. Deploy the VM.md",
+                              "parent": "6. File Inclusion"
+                            },
+                            {
+                              "name": "3. Path Traversal.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/3. Path Traversal.md",
+                              "parent": "6. File Inclusion"
+                            },
+                            {
+                              "name": "4. Local File Inclusion - LFI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/4. Local File Inclusion - LFI.md",
+                              "parent": "6. File Inclusion"
+                            },
+                            {
+                              "name": "5. Local File Inclusion - LFI Continued.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/5. Local File Inclusion - LFI Continued.md",
+                              "parent": "6. File Inclusion"
+                            },
+                            {
+                              "name": "6. Remote File Inclusion - RFI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/6. Remote File Inclusion - RFI.md",
+                              "parent": "6. File Inclusion"
+                            },
+                            {
+                              "name": "7. Remediation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/7. Remediation.md",
+                              "parent": "6. File Inclusion"
+                            },
+                            {
+                              "name": "8. Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/8. Challenge.md",
+                              "parent": "6. File Inclusion"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "7. Intro to SSRF",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. What is SSRF.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/1. What is SSRF.md",
+                              "parent": "7. Intro to SSRF"
+                            },
+                            {
+                              "name": "2. SSRF Examples.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/2. SSRF Examples.md",
+                              "parent": "7. Intro to SSRF"
+                            },
+                            {
+                              "name": "3. Finding an SSRF.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/3. Finding an SSRF.md",
+                              "parent": "7. Intro to SSRF"
+                            },
+                            {
+                              "name": "4. Defeating Common SSRF Defenses.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/4. Defeating Common SSRF Defenses.md",
+                              "parent": "7. Intro to SSRF"
+                            },
+                            {
+                              "name": "5. SSRF Practical.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/5. SSRF Practical.md",
+                              "parent": "7. Intro to SSRF"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "8. Intro to Cross-site Scripting",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Brief.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/1. Brief.md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            },
+                            {
+                              "name": "2. XSS Payloads.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/2. XSS Payloads.md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            },
+                            {
+                              "name": "3. Reflected XSS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/3. Reflected XSS.md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            },
+                            {
+                              "name": "4. Stored XSS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/4. Stored XSS.md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            },
+                            {
+                              "name": "5. DOM Based XSS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/5. DOM Based XSS.md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            },
+                            {
+                              "name": "6. Blind XSS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/6. Blind XSS.md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            },
+                            {
+                              "name": "7. Perfecting Your Payload.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/7. Perfecting Your Payload.md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            },
+                            {
+                              "name": "8. Practical Example (Blind XSS).md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/8. Practical Example (Blind XSS).md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "9. Race Conditions",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/1. Introduction.md",
+                              "parent": "9. Race Conditions"
+                            },
+                            {
+                              "name": "2. Multi-Threading.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/2. Multi-Threading.md",
+                              "parent": "9. Race Conditions"
+                            },
+                            {
+                              "name": "3. Race Conditions.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/3. Race Conditions.md",
+                              "parent": "9. Race Conditions"
+                            },
+                            {
+                              "name": "4. Web Application Architecture.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/4. Web Application Architecture.md",
+                              "parent": "9. Race Conditions"
+                            },
+                            {
+                              "name": "5. Exploiting Race Conditions.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/5. Exploiting Race Conditions.md",
+                              "parent": "9. Race Conditions"
+                            },
+                            {
+                              "name": "6. Detection and Mitigation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/6. Detection and Mitigation.md",
+                              "parent": "9. Race Conditions"
+                            },
+                            {
+                              "name": "7. Challenge Web App.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/7. Challenge Web App.md",
+                              "parent": "9. Race Conditions"
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
                       "name": "4. Burp Suite",

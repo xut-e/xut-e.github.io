@@ -1,6 +1,6 @@
 ---
 layout: apunte
-title: "4. Interacting with the Filesystem!"
+title: "4. Interacting with the Filesystem"
 ---
 
 En esta lección veremos cómo navegar en el sistema de ficheros, leer y crear archivos.

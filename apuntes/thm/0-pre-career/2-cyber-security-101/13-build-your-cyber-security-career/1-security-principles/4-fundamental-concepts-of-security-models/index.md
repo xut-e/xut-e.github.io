@@ -23,6 +23,8 @@ El modelo Bell-LaPadula busca conseguir **confidencialidad** especificando tres 
 | Sujeto 2 | Leer/Escribir | Leer       |
 Las dos primeras reglas se pueden resumir como "write up, read down". Este modelo tiene ciertas limitaciones, ya que no fue diseñado para compartir archivos, por ejemplo.
 
+!**Pasted image 20251102143815.png**
+
 -------------------------------------
 <h2>Modelo Biba</h2>
 EL modelo Biba busca conseguir **integridad** especificando dos reglas:
@@ -31,6 +33,8 @@ EL modelo Biba busca conseguir **integridad** especificando dos reglas:
 - **Star Integrity Property:** Esta propiedad se llama "no write up". Establece que un sujeto con un nivel inferior de integridad no debe poder escribir en un objeto de nivel de integridad superior.
 
 Estas dos propiedades pueden ser resumidas como "read up, write down". Esta regla está en contraste con el modelo Bell-LaPadula, lo que no debería sorprendernos ya que uno se ocupa de la confidencialidad y otro de la integridad. Una de las limitaciones de este modelo es que no puede manejar amenazas internas.
+
+!**Pasted image 20251102143806.png**
 
 ----------------------------
 <h2>Modelo Clark-Wilson</h2>
