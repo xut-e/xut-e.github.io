@@ -7,7 +7,7 @@
   <meta name="description" content="Apuntes técnicos de ciberseguridad y TryHackMe en castellano.">
   <meta name="keywords" content="ciberseguridad, tryhackme, apuntes, hacking, linux, xut">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="icon" type="img/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
 </head>
 
 <body>
@@ -32,25 +32,25 @@
     </div>
   </header>
 
+  <!-- BUSCADOR -->
   <div class="search-container">
-  <form class="site-search" role="search" action="/search.html" method="get">
-    <input
-      class="site-search-input"
-      type="search"
-      name="q"
-      placeholder="Buscar…"
-      aria-label="Buscar en los apuntes"
-    />
-    <button class="site-search-button" type="submit" aria-label="Buscar">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="7" cy="7" r="5" />
-        <line x1="11" y1="11" x2="15" y2="15" />
-      </svg>
-    </button>
-  </form>
-</div>
-
+    <form class="site-search" role="search" action="/search.html" method="get">
+      <input
+        class="site-search-input"
+        type="search"
+        name="q"
+        placeholder="Buscar…"
+        aria-label="Buscar en los apuntes"
+      />
+      <button class="site-search-button" type="submit" aria-label="Buscar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="7" cy="7" r="5" />
+          <line x1="11" y1="11" x2="15" y2="15" />
+        </svg>
+      </button>
+    </form>
+  </div>
 
   <!-- LAYOUT PRINCIPAL -->
   <main class="page-shell with-sidebar">
@@ -71,15 +71,16 @@
         </p>
       </header>
 
-      <section class="card">
-        <h3>📘 Últimos apuntes</h3>
-        <ul id="latest-posts">
-          <li><a href="markdown-viewer.html?file=apuntes/thm/1-pre-security/1. Pre Security.md">1. Pre Security</a></li>
-          <li><a href="markdown-viewer.html?file=apuntes/thm/2-cyber-security-101/2. Cyber Security 101.md">2. Cyber Security 101</a></li>
-          <li><a href="markdown-viewer.html?file=apuntes/thm/maquinas/0. Maquinas.md">Máquinas</a></li>
-        </ul>
-      </section>
+       <!-- Últimos apuntes (dinámico) -->
+	<section class="card latest-posts-card">
+	  <h3>📘 Últimos apuntes</h3>
+	  <ul id="latest-posts">
+	    <li>Cargando últimos apuntes...</li>
+	  </ul>
+	</section>
+     
 
+      <!-- Sobre mí -->
       <section class="card">
         <h3>🧠 Sobre mí</h3>
         <p>
@@ -112,100 +113,100 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </div>
   </footer>
 
-    <!-- SCRIPTS -->
+  <!-- SCRIPTS -->
   <script src="assets/js/generate-index.js"></script>
+  <script src="assets/js/latest-posts.js"></script>
   <script>
-  // ======== Mostrar / Ocultar índice (en home siempre oculto al inicio) ========
-  window.addEventListener("load", () => {
-    const btn = document.getElementById("toggle-index");
-    const aside = document.getElementById("indice");
-    const pageShell = document.querySelector(".page-shell");
-    if (!btn || !aside || !pageShell) return;
+    // ======== Mostrar / Ocultar índice (en home siempre oculto al inicio) ========
+    window.addEventListener("load", () => {
+      const btn = document.getElementById("toggle-index");
+      const aside = document.getElementById("indice");
+      const pageShell = document.querySelector(".page-shell");
+      if (!btn || !aside || !pageShell) return;
 
-    // 🔒 Siempre empieza oculto (ignorar localStorage)
-    localStorage.setItem("indexVisible", "false");
-    aside.classList.add("hidden");
-    pageShell.classList.add("full-width");
-    btn.textContent = "Mostrar índice";
-    btn.classList.remove("active");
+      // 🔒 Siempre empieza oculto (ignorar localStorage)
+      localStorage.setItem("indexVisible", "false");
+      aside.classList.add("hidden");
+      pageShell.classList.add("full-width");
+      btn.textContent = "Mostrar índice";
+      btn.classList.remove("active");
 
-    // === helper: cerrar todo y abrir solo la primera raíz ("THM") ===
-    function collapseAllAndOpenOnlyFirstRoot() {
-  const treeNav = aside.querySelector(".tree-nav");
-  if (!treeNav) return false;
-
-  // 🔒 Cierra todos los <details> del árbol, incluido el primero
-  const allDetails = treeNav.querySelectorAll("details");
-  allDetails.forEach(d => d.open = false);
-
-  console.log("🟢 Índice reiniciado: todo colapsado (THM cerrado)");
-  return true;
-}
-
-
-    // Espera a que generate-index.js haya generado el árbol antes de aplicar el colapso
-    function waitForTreeThenCollapse() {
-      let tries = 0;
-      const interval = setInterval(() => {
-        tries++;
+      // === helper: cerrar todo y abrir solo la primera raíz ("THM") ===
+      function collapseAllAndOpenOnlyFirstRoot() {
         const treeNav = aside.querySelector(".tree-nav");
-        if (treeNav) {
-          collapseAllAndOpenOnlyFirstRoot();
-          setTimeout(collapseAllAndOpenOnlyFirstRoot, 400);
-          clearInterval(interval);
+        if (!treeNav) return false;
+
+        const allDetails = treeNav.querySelectorAll("details");
+        allDetails.forEach(d => d.open = false);
+
+        console.log("🟢 Índice reiniciado: todo colapsado (THM cerrado)");
+        return true;
+      }
+
+      // Espera a que generate-index.js haya generado el árbol antes de aplicar el colapso
+      function waitForTreeThenCollapse() {
+        let tries = 0;
+        const interval = setInterval(() => {
+          tries++;
+          const treeNav = aside.querySelector(".tree-nav");
+          if (treeNav) {
+            collapseAllAndOpenOnlyFirstRoot();
+            setTimeout(collapseAllAndOpenOnlyFirstRoot, 400);
+            clearInterval(interval);
+          }
+          if (tries > 50) clearInterval(interval);
+        }, 100);
+      }
+
+      // === Botón mostrar/ocultar ===
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        const hidden = aside.classList.contains("hidden");
+
+        if (hidden) {
+          aside.classList.remove("hidden");
+          pageShell.classList.remove("full-width");
+          btn.textContent = "Ocultar índice";
+          btn.classList.add("active");
+          localStorage.setItem("indexVisible", "true");
+          waitForTreeThenCollapse();
+        } else {
+          aside.classList.add("collapsing");
+          pageShell.classList.add("full-width");
+          btn.textContent = "Mostrar índice";
+          btn.classList.remove("active");
+          localStorage.setItem("indexVisible", "false");
+          setTimeout(() => {
+            aside.classList.remove("collapsing");
+            aside.classList.add("hidden");
+          }, 300);
         }
-        if (tries > 50) clearInterval(interval);
-      }, 100);
-    }
+      });
 
-    // === Botón mostrar/ocultar ===
-    btn.addEventListener("click", e => {
-      e.preventDefault();
-      const hidden = aside.classList.contains("hidden");
-
-      if (hidden) {
-        aside.classList.remove("hidden");
-        pageShell.classList.remove("full-width");
-        btn.textContent = "Ocultar índice";
-        btn.classList.add("active");
-        localStorage.setItem("indexVisible", "true");
-        waitForTreeThenCollapse(); // aplica el colapso al mostrar
-      } else {
-        aside.classList.add("collapsing");
-        pageShell.classList.add("full-width");
-        btn.textContent = "Mostrar índice";
-        btn.classList.remove("active");
+      // === Resetear estado del índice ===
+      function resetIndexState() {
         localStorage.setItem("indexVisible", "false");
         setTimeout(() => {
-          aside.classList.remove("collapsing");
-          aside.classList.add("hidden");
-        }, 300);
+          const treeNav = aside.querySelector(".tree-nav");
+          if (!treeNav) return;
+          collapseAllAndOpenOnlyFirstRoot();
+        }, 800);
       }
-    });
 
-    // === NUEVO: forzar estado solo “THM” abierto al recargar o volver al inicio ===
-    function resetIndexState() {
-      localStorage.setItem("indexVisible", "false");
-      setTimeout(() => {
-        const treeNav = aside.querySelector(".tree-nav");
-        if (!treeNav) return;
-        collapseAllAndOpenOnlyFirstRoot();
-      }, 800);
-    }
+      // Ejecutar al cargar
+      resetIndexState();
 
-    // Ejecutar al cargar
-    resetIndexState();
-
-    // También al hacer clic en Inicio o en ✱ xut
-    document.querySelectorAll('a.site-brand, .site-nav a[href="/"]').forEach(link => {
-      link.addEventListener("click", () => {
-        resetIndexState();
+      // También al hacer clic en Inicio o ✱ xut
+      document.querySelectorAll('a.site-brand, .site-nav a[href="/"]').forEach(link => {
+        link.addEventListener("click", () => {
+          resetIndexState();
+        });
       });
-    });
-  });
-  </script>
 
-  
+      // Actualizar año del footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>
 

@@ -1,5 +1,6 @@
 import os, re, json, shutil, unicodedata
 from pathlib import Path
+from datetime import datetime
 
 ROOT = Path(__file__).resolve().parent.parent  # repo root
 # Detectar carpeta 'Ciberseguridad' o 'ciberseguridad' automáticamente
@@ -209,10 +210,8 @@ write_file(OUTPUT_ROOT / "arbol.json", json.dumps(arbol, ensure_ascii=False, ind
 # -----------------
 def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_full.json"):
     """
-    Genera un índice extendido con el contenido completo de cada nota.
-    Incluye además la ruta original del fichero fuente en `src` para que el viewer
-    pueda recibir exactamente el mismo `file=` que genera el índice tradicional.
-    No modifica el index.json existente.
+    Genera un índice extendido con el contenido completo de cada nota y la fecha de última modificación.
+    Mantiene el orden original de recorrido de archivos.
     """
     notes_full = []
     base_path = Path(base_dir)
@@ -224,24 +223,24 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
             print(f"[!] Error leyendo {file_path}: {e}")
             continue
 
-        rel = file_path.relative_to(base_path)           # p. ej. THM/0. Pre Career/...
+        rel = file_path.relative_to(base_path)
         parts = list(rel.parts)
         breadcrumb = " > ".join(parts[:-1]) if len(parts) > 1 else ""
         title = file_path.stem
-
-        # Construir la URL tipo /apuntes/... (igual que antes)
         url = build_url_for_file(file_path)
+        content_src = f"content/ciberseguridad/{rel.as_posix()}"
 
-        # Ruta original relativa desde la raíz del repo (o desde content/) — la que espera el viewer
-        # Guardamos la ruta en el formato que usa el viewer: "content/Ciberseguridad/..."
-        content_src = f"content/Ciberseguridad/{rel.as_posix()}"
+        # fecha de modificación (en ISO8601 para legibilidad)
+        mtime = file_path.stat().st_mtime
+        modified_iso = datetime.fromtimestamp(mtime).isoformat(timespec="seconds")
 
         notes_full.append({
             "title": title,
-            "path": url,                 # mantengo la URL de apunte por compatibilidad
-            "src": content_src,          # <-- ruta original del archivo (para pasar a markdown-viewer)
+            "path": url,
+            "src": content_src,
             "breadcrumb": breadcrumb,
-            "content": text
+            "content": text.strip(),
+            "modified": modified_iso
         })
 
     output_path = Path(output_file)
@@ -249,7 +248,8 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(notes_full, f, ensure_ascii=False, indent=2)
 
-    print(f"[+] Índice extendido generado en: {output_file}")
+    print(f"[+] Índice extendido generado con campo 'modified' en: {output_file}")
+
 
 
 build_full_index()

@@ -671,3 +671,55 @@ mark {
   font-weight: 600 !important;
 }
 
+/* ===== Últimos apuntes estilo blog ===== */
+#latest-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.latest-note {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.latest-note:hover {
+  background: rgba(102, 161, 130, 0.08);
+  border-color: var(--accent);
+  transform: scale(1.01);
+}
+
+.latest-note-title {
+  display: block;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}
+
+.latest-note-title:hover {
+  text-decoration: underline;
+}
+
+.latest-note-date {
+  display: block;
+  font-size: 0.85em;
+  color: var(--text-dim);
+  margin-bottom: 0.4rem;
+}
+
+.latest-note-preview {
+  font-size: 0.9em;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin: 0;
+}
+
