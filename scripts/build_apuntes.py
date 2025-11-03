@@ -210,8 +210,8 @@ write_file(OUTPUT_ROOT / "arbol.json", json.dumps(arbol, ensure_ascii=False, ind
 # -----------------
 def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_full.json"):
     """
-    Genera un índice extendido con el contenido completo de cada nota y la fecha de última modificación.
-    Mantiene el orden original de recorrido de archivos.
+    Genera un índice extendido con el contenido completo de cada nota
+    e incluye la fecha real de última modificación (mtime del archivo).
     """
     notes_full = []
     base_path = Path(base_dir)
@@ -228,9 +228,9 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
         breadcrumb = " > ".join(parts[:-1]) if len(parts) > 1 else ""
         title = file_path.stem
         url = build_url_for_file(file_path)
-        content_src = f"content/ciberseguridad/{rel.as_posix()}"
+        content_src = f"content/Ciberseguridad/{rel.as_posix()}"
 
-        # fecha de modificación (en ISO8601 para legibilidad)
+        # 🔹 Fecha real de modificación del archivo (mtime)
         mtime = file_path.stat().st_mtime
         modified_iso = datetime.fromtimestamp(mtime).isoformat(timespec="seconds")
 
@@ -248,7 +248,7 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(notes_full, f, ensure_ascii=False, indent=2)
 
-    print(f"[+] Índice extendido generado con campo 'modified' en: {output_file}")
+    print(f"[+] Índice extendido generado con fecha real de modificación en: {output_file}")
 
 
 

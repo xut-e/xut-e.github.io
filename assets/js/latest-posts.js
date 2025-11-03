@@ -1,51 +1,68 @@
 (async function () {
-  console.group("🧠 Últimos apuntes – depuración (blog view)");
+  console.group("🧠 Últimos apuntes – corrección Ciberseguridad y rutas finales");
 
   try {
     console.log("📡 Cargando index_full.json...");
     const res = await fetch("apuntes/index_full.json");
+    if (!res.ok) throw new Error(`No se pudo cargar index_full.json (${res.status})`);
 
-    if (!res.ok) {
-      console.error("❌ No se pudo cargar index_full.json:", res.status, res.statusText);
-      throw new Error("No se pudo cargar el JSON");
-    }
+    let data = await res.json();
+    console.log(`✅ JSON cargado correctamente (${data.length} elementos)`);
 
-    const data = await res.json();
-    console.log(`✅ JSON cargado correctamente (${data.length} notas encontradas).`);
+    // === FILTRADO ===
+    data = data.filter(note => {
+      const src = note.src;
+      const srcLower = src.toLowerCase();
 
-    // Convertir el campo modified en objeto Date
-    data.forEach(n => {
-      n._modified = new Date(n.modified);
-      if (isNaN(n._modified)) {
-        console.warn(`⚠️ Fecha inválida en: ${n.title}`, n.modified);
-      }
+      // Ignorar carpetas o archivos innecesarios
+      if (srcLower.includes("/z imagenes/")) return false;
+      if (srcLower.includes(".obsidian")) return false;
+
+      const parts = src.split("/");
+      const filename = parts.at(-1).replace(".md", "").trim();
+      const parent = parts.at(-2)?.trim();
+      const normalize = s => s.replace(/^0\.\s*/, "").toLowerCase();
+
+      // Ignorar archivos índice y 0.*
+      if (normalize(filename) === normalize(parent)) return false;
+      if (filename.startsWith("0.")) return false;
+
+      // Ignorar archivos vacíos o muy cortos
+      if (!note.content || note.content.trim().length < 10) return false;
+
+      return true;
     });
 
-    // Ordenar globalmente por fecha más reciente
-    const sorted = [...data].sort((a, b) => b._modified - a._modified);
+    console.log(`🧹 Después del filtrado quedan ${data.length} notas válidas.`);
 
-    // Tomar las 5 últimas notas
+    // === ORDENACIÓN ===
+    data.forEach(n => (n._modified = new Date(n.modified)));
+    const sorted = [...data].sort((a, b) => {
+      const diff = b._modified - a._modified;
+      if (diff !== 0) return diff;
+      return b.src.split("/").length - a.src.split("/").length;
+    });
+
     const latestNotes = sorted.slice(0, 5);
     console.table(
       latestNotes.map(n => ({
         Título: n.title,
-        Modificado: n.modified,
+        Fecha: n.modified,
         Ruta: n.src
       }))
     );
 
-    // Contenedor del bloque
+    // === CONSTRUIR HTML ===
     const container = document.getElementById("latest-posts");
     if (!container) {
-      console.error("❌ No se encontró el contenedor #latest-posts en el HTML.");
+      console.error("❌ No se encontró el contenedor #latest-posts");
       return;
     }
-
     container.innerHTML = "";
 
     if (latestNotes.length === 0) {
       container.innerHTML = "<li>No hay notas recientes.</li>";
-      console.warn("⚠️ No hay notas con fechas válidas para mostrar.");
+      console.warn("⚠️ No hay notas válidas para mostrar.");
       console.groupEnd();
       return;
     }
@@ -54,10 +71,17 @@
       const li = document.createElement("li");
       li.classList.add("latest-note");
 
-      // --- título principal ---
+      // === Corregir ruta ===
+      // Si la ruta contiene "/ciberseguridad/", cámbiala a "/Ciberseguridad/"
+      let correctedSrc = note.src.replace("/ciberseguridad/", "/Ciberseguridad/");
+
+      // Generar URL codificada correctamente
+      const viewerUrl = `markdown-viewer.html?file=${encodeURIComponent(correctedSrc)}`;
+
+      // --- título ---
       const a = document.createElement("a");
-      a.href = `markdown-viewer.html?file=${note.src}`;
       a.classList.add("latest-note-title");
+      a.href = viewerUrl;
       a.textContent = note.title;
 
       // --- fecha ---
@@ -72,9 +96,10 @@
         minute: "2-digit",
       });
 
-      // --- preview del contenido ---
+      // --- preview limpio ---
       let previewText = note.content
-        .replace(/[#>*_`[\]]/g, "") // quita markdown
+        .replace(/[#>*_`[\]]/g, "")
+        .replace(/<\/?[^>]+(>|$)/g, "")
         .split(/\s+/)
         .slice(0, 25)
         .join(" ")
@@ -85,14 +110,14 @@
       preview.classList.add("latest-note-preview");
       preview.textContent = previewText;
 
-      // --- composición ---
+      // --- componer ---
       li.appendChild(a);
       li.appendChild(time);
       li.appendChild(preview);
       container.appendChild(li);
     });
 
-    console.log(`🟢 Mostradas ${latestNotes.length} notas recientes en la página.`);
+    console.log(`🟢 Mostradas ${latestNotes.length} notas reales en la página.`);
   } catch (err) {
     console.error("💥 Error al procesar las notas recientes:", err);
     const container = document.getElementById("latest-posts");

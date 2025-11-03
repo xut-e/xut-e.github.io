@@ -723,3 +723,86 @@ mark {
   margin: 0;
 }
 
+/* ===== Bloque "Sobre mí" en index ===== */
+.about-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.about-summary-content {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.about-summary-avatar {
+  flex: 0 0 auto;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.about-summary-text h3 {
+  margin: 0 0 0.4rem 0;
+}
+
+.about-summary-text p {
+  margin: 0.25rem 0;
+  color: var(--text-main);
+}
+
+.about-summary-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.about-summary-link:hover {
+  color: var(--accent-hover);
+  border-color: var(--accent);
+}
+
+/* Responsive: apilar en móvil */
+@media (max-width: 700px) {
+  .about-summary-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-summary-avatar {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* ===== Bloque "Sobre mí" en index (ajuste de enlace) ===== */
+.about-summary-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.about-summary-link:hover,
+.about-summary-link:focus {
+  color: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+/* Evita color azul heredado del navegador */
+.about-summary a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.about-summary a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
