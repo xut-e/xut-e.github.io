@@ -3,3 +3,6 @@ layout: apunte
 title: "1. What Is Content Discovery"
 ---
 
+Primero deberíamos preguntarnos, en concepto de aplicación web, ¿qué es el contenido? Puede ser muchas cosas, un archivo, un vídeo, una imagen, un backup, etc. Cuando hablamos de descubrimiento de contenido no estamos hablando de  las cosas obvias que podemos ver en la web, sino las que no se presentan inmediatamente al público.
+
+Este contenido podrían ser, por ejemplo, páginas o portales para uso del personal, versiones antiguas, archivos de backup, configuración, etc. Hay tres maneras principales: manualmente, automáticamente y mediante OSINT.

