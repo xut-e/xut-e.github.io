@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/6. Manual Discovery - Framework Stack.md",
+                "file": "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/3. Local File Inclusion - LFI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6. Manual Discovery - Framework Stack"
+              "title": "3. Local File Inclusion - LFI"
             }
           }
         ]
@@ -162,7 +162,14 @@
   },
   "active": "de843610a44737e0",
   "lastOpenFiles": [
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/2. Path Traversal.md",
+    "Z Imagenes/Pasted image 20251105002156.png",
+    "Z Imagenes/Pasted image 20251105002134.png",
+    "Z Imagenes/Pasted image 20251105001355.png",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/1. Introduction.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/8. OSINT - Wappalyzer.md",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/5. Manual Discovery - HTTP Headers.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/6. Manual Discovery - Framework Stack.md",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/4. Manual Discovery - Sitemap xml.md",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/3. Manual Discovery - Favicon.md",
     "Z Imagenes/Pasted image 20251103233753.png",
@@ -188,10 +195,6 @@
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/8. Blind SQLI - Time Based.md",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/7. Blind SQLI - Boolean Based.md",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/6. Blind SQLI - Authentication Bypass.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/5. In-Band SQLI.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/4. What is SQL Injection.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/3. What is SQL.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/2. What is a Database.md",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/Sin nombre",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/0. SQL Injection",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/0. Command Injection",
@@ -204,9 +207,6 @@
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF",
     "Z Imagenes/Pasted image 20251102154056.png",
     "Z Imagenes/Pasted image 20251102145041.png",
-    "Z Imagenes/Pasted image 20251102143815.png",
-    "Z Imagenes/Pasted image 20251102143806.png",
-    "Z Imagenes/Pasted image 20251030153045.png",
-    "Z Imagenes/Pasted image 20251030145704.png"
+    "Z Imagenes/Pasted image 20251102143815.png"
   ]
 }

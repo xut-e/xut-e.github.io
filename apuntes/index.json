@@ -2276,36 +2276,32 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/10-command-injection/1-introduction/"
   },
   {
-    "title": "7. Remediation",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/7-remediation/"
+    "title": "6. Remediation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/6-remediation/"
   },
   {
-    "title": "4. Local File Inclusion - LFI",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/4-local-file-inclusion-lfi/"
+    "title": "5. Remote File Inclusion - RFI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/5-remote-file-inclusion-rfi/"
   },
   {
-    "title": "5. Local File Inclusion - LFI Continued",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/5-local-file-inclusion-lfi-continued/"
+    "title": "4. Local File Inclusion - LFI Continued",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/4-local-file-inclusion-lfi-continued/"
   },
   {
-    "title": "6. Remote File Inclusion - RFI",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/6-remote-file-inclusion-rfi/"
+    "title": "2. Path Traversal",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/2-path-traversal/"
   },
   {
-    "title": "3. Path Traversal",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/3-path-traversal/"
-  },
-  {
-    "title": "8. Challenge",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/8-challenge/"
-  },
-  {
-    "title": "2. Deploy the VM",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/2-deploy-the-vm/"
+    "title": "3. Local File Inclusion - LFI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/3-local-file-inclusion-lfi/"
   },
   {
     "title": "0. File Inclusion",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/0-file-inclusion/"
+  },
+  {
+    "title": "7. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/6-file-inclusion/7-challenge/"
   },
   {
     "title": "1. Introduction",

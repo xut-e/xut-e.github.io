@@ -3,3 +3,5 @@ layout: apunte
 title: "10. OSINT - GitHub"
 ---
 
+<h2>GitHub</h2>
+Para comprender GitHub, necesitamos entender Git primero. Git es un sistema de control de versiones que guarda los cambios de los archivos de un proyecto. Trabajar en un equipo es más fácil porque puedes ver lo que está editando cada miembro y los cambios que han hecho en los archivos. Cuando los usuarios han terminado de hacer cambios, hacen un commit, con un comentario y luego un push para subir esos cambios a un repositorio para que otros usuarios puedan pullearlos en sus propias máquinas. GitHub es una versión de Git hosteada en internet.Los repositorios pueden ser públicos o privados. Puedes usar el buscador de github para buscar por compañías o dominios.

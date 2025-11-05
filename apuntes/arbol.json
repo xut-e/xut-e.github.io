@@ -3368,45 +3368,39 @@
                               "parent": "6. File Inclusion"
                             },
                             {
-                              "name": "2. Deploy the VM.md",
+                              "name": "2. Path Traversal.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/2. Deploy the VM.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/2. Path Traversal.md",
                               "parent": "6. File Inclusion"
                             },
                             {
-                              "name": "3. Path Traversal.md",
+                              "name": "3. Local File Inclusion - LFI.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/3. Path Traversal.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/3. Local File Inclusion - LFI.md",
                               "parent": "6. File Inclusion"
                             },
                             {
-                              "name": "4. Local File Inclusion - LFI.md",
+                              "name": "4. Local File Inclusion - LFI Continued.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/4. Local File Inclusion - LFI.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/4. Local File Inclusion - LFI Continued.md",
                               "parent": "6. File Inclusion"
                             },
                             {
-                              "name": "5. Local File Inclusion - LFI Continued.md",
+                              "name": "5. Remote File Inclusion - RFI.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/5. Local File Inclusion - LFI Continued.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/5. Remote File Inclusion - RFI.md",
                               "parent": "6. File Inclusion"
                             },
                             {
-                              "name": "6. Remote File Inclusion - RFI.md",
+                              "name": "6. Remediation.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/6. Remote File Inclusion - RFI.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/6. Remediation.md",
                               "parent": "6. File Inclusion"
                             },
                             {
-                              "name": "7. Remediation.md",
+                              "name": "7. Challenge.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/7. Remediation.md",
-                              "parent": "6. File Inclusion"
-                            },
-                            {
-                              "name": "8. Challenge.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/8. Challenge.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/7. Challenge.md",
                               "parent": "6. File Inclusion"
                             }
                           ]

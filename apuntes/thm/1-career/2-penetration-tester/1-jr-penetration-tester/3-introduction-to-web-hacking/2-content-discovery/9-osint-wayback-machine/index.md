@@ -3,3 +3,5 @@ layout: apunte
 title: "9. OSINT - Wayback Machine"
 ---
 
+<h2>Máquina Wayback</h2>
+La [Wayback Machine](https://archive.org/web/) es un archivo histórico que data de finales de los años 90 activo hasta hoy en día (2025). Puedes buscar un dominio y te mostrará las snapshots que tiene. Puede ayudar a descubrir páginas antiguas que sigan activas.

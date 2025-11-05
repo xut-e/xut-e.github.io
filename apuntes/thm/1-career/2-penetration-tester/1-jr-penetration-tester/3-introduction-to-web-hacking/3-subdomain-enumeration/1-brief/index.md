@@ -3,3 +3,6 @@ layout: apunte
 title: "1. Brief"
 ---
 
+La enumeración de subdominios es el proceso de encontrar subdominios válidos para un dominio. Pero ¿por qué hacemos esto? Para expandir la superficie de ataque y tratar de descubrir más puntos potenciales de vulnerabilidad.
+
+Exploraremos tres métodos de enumeración de subdominios diferentes: Fuerza Bruta, OSINT y Virtual Host.
