@@ -1,4 +1,4 @@
-import os, re, json, shutil, unicodedata
+import os, re, json, shutil, unicodedata, subprocess
 from pathlib import Path
 from datetime import datetime
 
@@ -44,6 +44,19 @@ def write_file(p: Path, data: str):
 def copy_image(src: Path, dst: Path):
     dst.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(src, dst)
+
+def git_last_modified(path: Path) -> str:
+    """Devuelve la fecha del último commit (segundos desde epoch) o actual si no existe."""
+    try:
+        ts = subprocess.check_output(
+            ["git", "log", "-1", "--format=%ct", str(path)],
+            stderr=subprocess.DEVNULL
+        ).decode().strip()
+        if ts:
+            return datetime.fromtimestamp(int(ts)).isoformat(timespec="seconds")
+    except Exception:
+        pass
+    return datetime.now().isoformat(timespec="seconds")
 
 # -----------------
 # Paso 1: indexar todas las notas
@@ -206,13 +219,9 @@ arbol = build_tree(CONTENT_ROOT)
 write_file(OUTPUT_ROOT / "arbol.json", json.dumps(arbol, ensure_ascii=False, indent=2))
 
 # -----------------
-# Paso 7: index_full.json (nuevo) — versión que incluye la ruta original (src)
+# Paso 7: index_full.json — versión extendida
 # -----------------
 def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_full.json"):
-    """
-    Genera un índice extendido con el contenido completo de cada nota
-    e incluye la fecha real de última modificación (mtime del archivo).
-    """
     notes_full = []
     base_path = Path(base_dir)
 
@@ -229,10 +238,7 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
         title = file_path.stem
         url = build_url_for_file(file_path)
         content_src = f"content/Ciberseguridad/{rel.as_posix()}"
-
-        # 🔹 Fecha real de modificación del archivo (mtime)
-        mtime = file_path.stat().st_mtime
-        modified_iso = datetime.fromtimestamp(mtime).isoformat(timespec="seconds")
+        modified_iso = git_last_modified(file_path)
 
         notes_full.append({
             "title": title,
@@ -243,16 +249,64 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
             "modified": modified_iso
         })
 
-    output_path = Path(output_file)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with output_path.open("w", encoding="utf-8") as f:
-        json.dump(notes_full, f, ensure_ascii=False, indent=2)
-
-    print(f"[+] Índice extendido generado con fecha real de modificación en: {output_file}")
-
-
+    write_file(output_file, json.dumps(notes_full, ensure_ascii=False, indent=2))
+    print(f"[+] Índice extendido generado con campo 'modified' (desde Git) en: {output_file}")
 
 build_full_index()
 
-print("✅ Apuntes generados correctamente con index.json, index_full.json, sidebar.html y arbol.json (mantiene números, ignora .obsidian)")
+# -----------------
+# Paso 8: generar latest_tmp.json / latest_notes.json (usando Git)
+# -----------------
+def build_latest_metadata():
+    """
+    Genera un JSON ligero con nombre de nota y fecha del último commit (Git).
+    Si difiere del anterior, actualiza latest_notes.json.
+    """
+    LATEST_TMP = OUTPUT_ROOT / "latest_tmp.json"
+    LATEST_NOTES = OUTPUT_ROOT / "latest_notes.json"
+
+    print("[*] Comprobando modificaciones recientes (Git)...")
+
+    meta = {}
+    for md in CONTENT_ROOT.rglob("*.md"):
+        if any(p in md.parts for p in [".obsidian", "Z Imagenes"]):
+            continue
+        name = str(md.relative_to(CONTENT_ROOT))
+        mtime = git_last_modified(md)
+        meta[name] = mtime
+
+    with open(LATEST_TMP, "w", encoding="utf-8") as f:
+        json.dump(meta, f, indent=2, ensure_ascii=False)
+
+    if LATEST_NOTES.exists():
+        prev = json.load(open(LATEST_NOTES, encoding="utf-8"))
+    else:
+        prev = {}
+
+    if meta == prev:
+        print("[✓] No hay cambios detectados. Eliminando temporal...")
+        LATEST_TMP.unlink(missing_ok=True)
+        return
+
+    print("[+] Se detectaron cambios. Actualizando latest_notes.json...")
+
+    sorted_items = sorted(meta.items(), key=lambda x: x[1], reverse=True)
+    top5 = []
+    for rel_path, mod in sorted_items[:5]:
+        path = CONTENT_ROOT / rel_path
+        top5.append({
+            "src": f"content/Ciberseguridad/{rel_path.replace(chr(92), '/')}",
+            "title": Path(rel_path).stem,
+            "modified": mod
+        })
+
+    with open(LATEST_NOTES, "w", encoding="utf-8") as f:
+        json.dump(top5, f, indent=2, ensure_ascii=False)
+
+    LATEST_TMP.unlink(missing_ok=True)
+    print(f"[✓] latest_notes.json actualizado con {len(top5)} notas (basado en commits).")
+
+build_latest_metadata()
+
+print("✅ Apuntes generados correctamente con todos los índices, latest_notes.json y fechas reales de Git.")
 

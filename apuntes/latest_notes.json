@@ -1,0 +1,27 @@
+[
+  {
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/4. Local File Inclusion - LFI Continued.md",
+    "title": "4. Local File Inclusion - LFI Continued",
+    "modified": "2025-11-06T01:55:52"
+  },
+  {
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/3. Local File Inclusion - LFI.md",
+    "title": "3. Local File Inclusion - LFI",
+    "modified": "2025-11-06T01:55:52"
+  },
+  {
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/5. Finding IDORs in Unpredictable IDs.md",
+    "title": "5. Finding IDORs in Unpredictable IDs",
+    "modified": "2025-11-05T01:56:54"
+  },
+  {
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/1. What is IDOR.md",
+    "title": "1. What is IDOR",
+    "modified": "2025-11-05T01:56:54"
+  },
+  {
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/3. Finding IDORs in Encoded IDs.md",
+    "title": "3. Finding IDORs in Encoded IDs",
+    "modified": "2025-11-05T01:56:54"
+  }
+]
