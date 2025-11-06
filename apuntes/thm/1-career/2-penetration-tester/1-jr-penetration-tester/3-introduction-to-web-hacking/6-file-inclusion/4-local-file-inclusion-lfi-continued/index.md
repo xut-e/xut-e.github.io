@@ -3,3 +3,85 @@ layout: apunte
 title: "4. Local File Inclusion - LFI Continued"
 ---
 
+Seguimos profundizando con LFI. Ya hemos visto un par de casos pero ahora vamos a meternos de lleno en el asunto.
+
+---------------------------------
+<h2>#3</h2>
+En los dos primeros casos hemos comprobado el código de la aplicación web y entonces supimos cómo explotarlo. Sin embargo, en este caso vamos a realizar un black box testing. En este caso, los errores son fundamentales para entender cómo se pasa y procesa la información en la web.
+
+En este caso, tenemos el siguiente punto de entrada: `http://webapp.thm/index.php?lang=EN`. Si introducimos un input inválido, como THM obtendremos el siguiente error:
+
+```php
+Warning: include(languages/THM.php): failed to open stream: No such file or directory in /var/www/html/THM-4/index.php on line 12
+```
+
+Este mensaje de error revela información relevante. La función de inclusión es `include(languages/THM.php)`, metiendo `THM`. Por lo que un input válido sería algo como `index.php?lang=EN`, donde el archivo `EN` está en el directorio `languages/` y se llama `EN.php`.
+
+Además, el error nos muestra otro detalle importante sobre el directorio web completo, que es `/var/www/html/THM-4/`.
+
+Para explotar esto vamos a usar el truco `../`. Si probamos lo siguiente: `http://webapp.thm/index.php?lang=../../../../etc/passwd`, obtendremos:
+
+>[!NOTE] Date cuenta de que hemos usado `../` 4 veces porque sabemos que hay cuatro niveles en `/var/www/html/THM-4`.
+
+```php
+Warning: include(languages/../../../../../etc/passwd.php): failed to open stream: No such file or directory in /var/www/html/THM-4/index.php on line 12
+```
+
+Parece que podemos movernos fuera del directorio, pero aún así la función lee el input con `.php` al final. Para sobrepasar este requerimiento podemos usar el `NULL BYTE`, que es `%00`.
+
+Usar el `NULL BYTE` es una técnica de inyección donde la representación URL-encodeada como `%00` o `0x00` (en hex), es usada para terminar la string. Esto engaña a la página para que descarte todo lo que venga detrás del `NULL BYTE`.
+
+>[!IMPORTANT] El truco del `NULL BYTE` no funciona en PHP 5.3.4 y superores.
+
+1. Vamos a la página dada y vemos el laboratorio.
+   !**Pasted image 20251105212814.png**
+2. Probamos con `../../../../../etc/passwd` y vemos el error viendo que nos fuerza a que el archivo sea `.php`.
+   !**Pasted image 20251105213038.png**
+3. Usamos el método del `NULL BYTE`.
+   !**Pasted image 20251105213110.png**
+
+----------------------------------
+<h2>#4</h2>
+En esta sección el desarrollador decidió filtrar las palabras clave para evitar divulgar información sensible. El archivo `/etc/passwd` ha sido filtrado. Hay dos métodos posibles para bypasear el filtro. Primero usando el truco del `NULL BYTE` o del directorio actual al final de `../`. El exploit es parecido a `http://webapp.thm/index.php?lang=/etc/passwd/`. También podemos usar `http://webapp.thm/index.php?lang=/etc/passwd%00`.
+
+Para hacerlo más claro, si probamos este concepto usando `cd ..`, iremos atrás un directorio pero si hacemos `cd .` seguiremos en el mismo. De forma similar, si probamos `/etc/passwd/..` acaba siendo `/etc/`, por lo que aplicaremos este concepto y probaremos `/etc/passwd/.` y el resultado será `/etc/passwd`.
+
+1. Llegamos al laboratorio dado y probamos `../../../../../etc/passwd`.
+   !**Pasted image 20251105213241.png**
+2. Metemos el punto al final: `../../../../../etc/passwd/.`:
+   !**Pasted image 20251105213329.png**
+
+---------------------------------------
+<h2>#5</h2>
+Ahora, en los siguientes escenarios, el desarrollador empieza a usar validación del input filtrando algunas palabras clave. Comprobemos el mensaje de error:
+
+`http://webapp.thm/index.php?lang=../../../../etc/passwd`
+
+Obtuvimos el siguiente error:
+
+```php
+Warning: include(languages/etc/passwd): failed to open stream: No such file or directory in /var/www/html/THM-5/index.php on line 15
+```
+
+Si comprobamos el mensaje de error en la sección `include(languages/etc/passwd)`, sabemos que la aplicación web cambia `../` por una string vacía. Así que vamos a añadir más puntos y barras:
+
+`../../../../etc/passwd` -------------> `....//....//....//....//etc/passwd`
+
+¿Por qué funciona esto? Porque PHP busca coincidencias y las cambia, pero sólo una vez:
+
+!**Pasted image 20251105212005.png**
+
+1. Llegamos al laboratorio y probamos `../../../../../etc/passwd`, comprobandoi que el output ha eliminado las strings `../`.
+   !**Pasted image 20251105213608.png**
+2. Probamos a meterle el doble de puntos y de barras: `../` ---> `....//`:
+   !**Pasted image 20251105213719.png**
+
+------------------------------------
+<h2>#6</h2>
+Finalmente veremos el caso donde el desarrollador fuerza el `include` a leer de un directorio determinado. Por ejemplo, si la aplicación te pide un input que tiene que incluir un directorio, como: `http://webapp.thm/index.php?lang=languages/EN.php` entonces, para explotar esto, necesitamos incluir el directorio en el payload como: `?lang=languages/../../../../../etc/passwd`.
+
+1. Vamos al laboratorio y probamos con `../../../../../etc/passwd` y vemos el error.
+   !**Pasted image 20251105214525.png**
+2. Nos obliga a poner el directorio así que lo incluimos.
+   !**Pasted image 20251105214834.png**
+
