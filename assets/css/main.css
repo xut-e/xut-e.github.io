@@ -806,3 +806,141 @@ mark {
   text-decoration: underline;
 }
 
+/* === Callouts estilo Obsidian Publish (SVG vector + colores suaves) === */
+.callout {
+  position: relative;
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  margin: 1.4em 0;
+  padding: 0.9em 1.2em 0.9em 2.8em;
+  background: rgba(255, 255, 255, 0.04);
+  color: #d6d6d6;
+  font-weight: 500;
+  line-height: 1.55;
+  transition: background 0.2s ease;
+}
+
+/* Icono SVG genérico */
+.callout::before {
+  content: "";
+  position: absolute;
+  top: 1.05em;
+  left: 1em;
+  width: 18px;
+  height: 18px;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: currentColor;
+  opacity: 0.9;
+}
+
+.callout-title {
+  font-weight: 600;
+  margin-bottom: 0.25em;
+  color: inherit;
+}
+
+.callout-body {
+  color: #c8c8c8;
+}
+
+/* ====== VARIANTES ====== */
+
+/* INFO */
+.callout-info {
+  --accent: #4589ff;
+  background: rgba(69, 137, 255, 0.08);
+  color: #a9c6ff;
+}
+.callout-info::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><circle cx='12' cy='12' r='9'/><path d='M12 16v-4M12 8h.01'/></svg>");
+}
+
+/* NOTE */
+.callout-note {
+  --accent: #5ac1ff;
+  background: rgba(90, 193, 255, 0.08);
+  color: #a8daff;
+}
+.callout-note::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><circle cx='12' cy='12' r='9'/><path d='M9 12h6'/></svg>");
+}
+
+/* TIP / SUCCESS */
+.callout-tip,
+.callout-success {
+  --accent: #2ecc71;
+  background: rgba(46, 204, 113, 0.08);
+  color: #9deabf;
+}
+.callout-tip::before,
+.callout-success::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'/></svg>");
+}
+
+/* IMPORTANT */
+.callout-important {
+  --accent: #ffb74d;
+  background: rgba(255, 183, 77, 0.08);
+  color: #ffdca1;
+}
+.callout-important::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path d='M12 9v4m0 4h.01M5.07 19h13.86a2 2 0 0 0 1.73-3L13.73 4a2 2 0 0 0-3.46 0L3.34 16a2 2 0 0 0 1.73 3z'/></svg>");
+}
+
+/* WARNING / CAUTION */
+.callout-warning,
+.callout-caution {
+  --accent: #e8a32b;
+  background: rgba(232, 163, 43, 0.08);
+  color: #ffdc99;
+}
+.callout-warning::before,
+.callout-caution::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M12 9v4m0 4h.01M10.29 3.86L1.82 18a1 1 0 0 0 .86 1.5h18.64a1 1 0 0 0 .86-1.5L13.71 3.86a1 1 0 0 0-1.72 0z'/></svg>");
+}
+
+/* DANGER / FAILURE */
+.callout-danger,
+.callout-failure {
+  --accent: #e74c3c;
+  background: rgba(231, 76, 60, 0.08);
+  color: #f3b2aa;
+}
+.callout-danger::before,
+.callout-failure::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M18 6L6 18M6 6l12 12'/></svg>");
+}
+
+/* QUESTION */
+.callout-question {
+  --accent: #ff9800;
+  background: rgba(255, 152, 0, 0.08);
+  color: #ffd699;
+}
+.callout-question::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M12 8c-1.657 0-3 1.343-3 3h1a2 2 0 1 1 4 0c0 2-3 2-3 4h1m0 3h.01M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z'/></svg>");
+}
+
+/* EXAMPLE */
+.callout-example {
+  --accent: #9370db;
+  background: rgba(147, 112, 219, 0.08);
+  color: #cdb5ff;
+}
+.callout-example::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M4 6h16M4 12h16M4 18h7'/></svg>");
+}
+
+/* QUOTE */
+.callout-quote {
+  --accent: #9e9e9e;
+  background: rgba(255, 255, 255, 0.03);
+  color: #bcbcbc;
+}
+.callout-quote::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path d='M7 9h4v4H7zm6 0h4v4h-4z'/></svg>");
+}
+
+

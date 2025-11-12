@@ -42,22 +42,15 @@
 
   <!-- LAYOUT -->
   <main class="page-shell">
-    <!-- SIDEBAR -->
     <aside class="sidebar" id="indice">
       <h2 id="indice-label">Índice</h2>
-      <div id="dynamic-index">
-        <p>Cargando índice...</p>
-      </div>
+      <div id="dynamic-index"><p>Cargando índice...</p></div>
     </aside>
 
-    <!-- CONTENIDO MARKDOWN -->
     <section class="markdown-body">
       <div id="breadcrumb" class="breadcrumb">Cargando ruta...</div>
       <h1 id="md-title">Cargando…</h1>
-
-      <div id="md-content" style="font-size:.95rem; line-height:1.5;">
-        Cargando contenido del apunte…
-      </div>
+      <div id="md-content" style="font-size:.95rem; line-height:1.5;">Cargando contenido del apunte…</div>
 
       <div class="nav-buttons">
         <button id="prev-note" title="Anterior">&lt;</button>
@@ -87,15 +80,11 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </div>
   </footer>
 
-  <!-- AÑO -->
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
-  <!-- GENERAR ÍNDICE LATERAL -->
   <script src="assets/js/generate-index.js"></script>
 
-  <!-- MOSTRAR / OCULTAR ÍNDICE -->
+  <!-- TOGGLE DEL ÍNDICE -->
   <script>
   window.addEventListener("load", () => {
     const btn = document.getElementById("toggle-index");
@@ -103,7 +92,6 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     const pageShell = document.querySelector(".page-shell");
     if (!btn || !aside || !pageShell) return;
 
-    // estado inicial respetando localStorage
     const isVisible = localStorage.getItem("indexVisible") === "true";
     if (isVisible) {
       aside.classList.remove("hidden");
@@ -117,7 +105,6 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       btn.classList.remove("active");
     }
 
-    // toggle
     btn.addEventListener("click", e => {
       e.preventDefault();
       const hidden = aside.classList.contains("hidden");
@@ -142,7 +129,7 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   });
   </script>
 
-  <!-- CARGA Y RENDER DE MARKDOWN (.md / .pdf / otros) -->
+  <!-- RENDER MARKDOWN SIN EMOJIS -->
   <script>
   (async function () {
     const params = new URLSearchParams(window.location.search);
@@ -156,11 +143,9 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       return;
     }
 
-    // normalizar ruta a "content/...":
     const realPath = fileParam.startsWith("content/") ? fileParam : "content/" + fileParam;
     const lower = realPath.toLowerCase();
 
-    // PDFs incrustados
     if (lower.endsWith(".pdf")) {
       const cleanName = realPath.split("/").pop().replace(/\.pdf$/i, "");
       titleEl.textContent = cleanName;
@@ -168,39 +153,49 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       return;
     }
 
-    // Markdown
     if (lower.endsWith(".md")) {
       try {
         const res = await fetch(realPath);
         if (!res.ok) throw new Error("No se pudo cargar el archivo");
         let mdText = await res.text();
 
-        // título = primer H1 o nombre de archivo
+        // título
         const lines = mdText.split("\n");
         const h1Match = lines[0]?.match(/^#\s+(.+)/);
         titleEl.textContent = h1Match
           ? h1Match[1].trim()
           : realPath.split("/").pop().replace(/\.md$/i, "");
 
-        // markdown -> HTML
+        // ✅ Detectar callouts y reemplazar por HTML con icono SVG
+        mdText = mdText.replace(
+          /^>\s*\[!(\w+)\](.*?)(?:\n(?!>)([\s\S]*?))?(?=\n{2,}|$)/gm,
+          (match, type, title, body = "") => {
+            const t = type.toLowerCase();
+            const header = title.trim() || t.toUpperCase();
+            const content = body ? body.replace(/^> ?/gm, "") : "";
+            return `
+<div class="callout callout-${t}">
+  <div class="callout-title"><span class="callout-icon" data-type="${t}"></span>${header}</div>
+  <div class="callout-body">${content.trim()}</div>
+</div>`;
+          }
+        );
+
         mdText = marked.parse(mdText, { gfm: true, breaks: true });
 
-        // imágenes estilo ![[foo.png]]
+        // imágenes estilo Obsidian
         mdText = mdText.replace(/!\[\[(.+?)\]\]/g, (m, p1) => {
           const src = decodeURIComponent(p1.trim());
           return `<img src="/content/Ciberseguridad/Z%20Imagenes/${encodeURIComponent(src)}" alt="${src}">`;
         });
 
-        // abrir links externos en nueva pestaña
+        // links externos
         mdText = mdText.replace(
           /<a href="(https?:\/\/[^"]+)">/g,
           '<a href="$1" target="_blank" rel="noopener">'
         );
 
-        // inyectar
         contentEl.innerHTML = mdText;
-
-        // resaltar bloques de código
         contentEl.querySelectorAll("pre code").forEach(b => hljs.highlightElement(b));
       } catch {
         titleEl.textContent = "Error";
@@ -209,284 +204,51 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       return;
     }
 
-    // fallback para otros tipos
     titleEl.textContent = realPath.split("/").pop();
     contentEl.innerHTML = `<p>No sé mostrar este tipo de archivo todavía.</p>
       <p><a href="${realPath}" target="_blank" rel="noopener noreferrer">Abrir directamente</a></p>`;
   })();
   </script>
 
-  <!-- ÍNDICE PERSISTENTE + BREADCRUMB + FLECHAS -->
+  <!-- ÍNDICE / RUTA -->
   <script>
   window.addEventListener("DOMContentLoaded", async () => {
     const params = new URLSearchParams(window.location.search);
     const currentFile = params.get("file");
     const breadcrumbEl = document.getElementById("breadcrumb");
-    const prevBtn = document.getElementById("prev-note");
-    const nextBtn = document.getElementById("next-note");
-    const aside = document.getElementById("indice");
-
-    if (!currentFile) {
-      breadcrumbEl.textContent = "(Sin ruta)";
-      return;
-    }
+    if (!currentFile) { breadcrumbEl.textContent = "(Sin ruta)"; return; }
 
     try {
       const res = await fetch("apuntes/arbol.json");
       if (!res.ok) throw new Error("No se pudo cargar arbol.json");
       const data = await res.json();
 
-      // aplana el árbol jerárquico a una lista ordenada de .md
       function flattenTree(node, path = "") {
         if (!node) return [];
         let files = [];
-        if (Array.isArray(node)) {
-          node.forEach(n => files.push(...flattenTree(n, path)));
-        } else if (node.type === "directory") {
+        if (Array.isArray(node)) node.forEach(n => files.push(...flattenTree(n, path)));
+        else if (node.type === "directory") {
           const newPath = path ? `${path}/${node.name}` : node.name;
-          if (node.name === "Z Imagenes") return files; // skip imágenes
+          if (node.name === "Z Imagenes") return files;
           node.contents?.forEach(n => files.push(...flattenTree(n, newPath)));
         } else if (node.type === "file" && node.name.endsWith(".md")) {
-          files.push(`${path}/${node.name}`); // path relativo estilo "THM/0. Pre Career/.../note.md"
+          files.push(`${path}/${node.name}`);
         }
         return files;
       }
 
-      const allFiles = flattenTree(data)
-        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
-
-      const normalizeForCompare = s =>
-        s.replace(/\\/g, "/").replace(/%20/g, " ").toLowerCase();
-
-      // localizar índice de la nota actual en allFiles
-      const idx = allFiles.findIndex(f =>
-        normalizeForCompare(currentFile).endsWith(normalizeForCompare(f))
-      );
-
-      // pintar breadcrumb bonito
+      const allFiles = flattenTree(data).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
       const parts = currentFile
         .replace(/^content\/?/i, "")
         .split("/")
         .filter(Boolean)
-        .map(seg => seg.replace(/\.md$/i, ""))
-        .map(seg => seg.replace(/-/g, " "))
-        .map(seg =>
-          seg.replace(/\b\w/g, c => c.toUpperCase())
-        );
+        .map(seg => seg.replace(/\.md$/i, "").replace(/-/g, " "))
+        .map(seg => seg.replace(/\b\w/g, c => c.toUpperCase()));
       breadcrumbEl.textContent = parts.join(" > ") || "(Sin ruta)";
-
-      // helpers de normalización para el índice lateral
-      function normalizePathLikeIndex(raw) {
-        if (!raw) return "";
-        let s = decodeURIComponent(raw);
-        s = s.replace(/\\/g, "/").trim().replace(/\/{2,}/g, "/");
-        if (!s.toLowerCase().startsWith("content/")) s = "content/" + s;
-        return s.toLowerCase();
-      }
-
-      // resalta en el índice lateral la página actual
-      function updateIndexHighlight(targetFileRaw) {
-        const container = document.getElementById("dynamic-index");
-        if (!container) return;
-
-        const targetNorm = normalizePathLikeIndex(targetFileRaw);
-
-        const links = container.querySelectorAll("a.tree-leaf");
-        let currentLink = null;
-        links.forEach(a => {
-          const href = a.getAttribute("href") || "";
-          const fileParam = href.split("?file=")[1] || "";
-          const linkNorm = normalizePathLikeIndex(fileParam);
-          if (linkNorm === targetNorm) currentLink = a;
-        });
-        if (!currentLink) return;
-
-        // marca link activo
-        container
-          .querySelectorAll("a.tree-leaf.current-page")
-          .forEach(el => el.classList.remove("current-page"));
-        currentLink.classList.add("current-page");
-
-        // colapsa todo...
-        container.querySelectorAll("details").forEach(d => (d.open = false));
-
-        // ...y reabre sólo la rama hasta la nota actual
-        const opened = [];
-        let parent = currentLink.closest("details");
-        while (parent) {
-          parent.open = true;
-          const sum = parent.querySelector(":scope > summary");
-          if (sum) opened.push(sum.textContent.trim());
-          parent = parent.parentElement?.closest("details");
-        }
-
-        // persistir rama abierta y última nota
-        localStorage.setItem("indexOpenBranches", JSON.stringify(opened));
-        localStorage.setItem("indexLastFile", targetFileRaw);
-
-        // scroll suave al elemento activo
-        setTimeout(() => {
-          currentLink.scrollIntoView({ behavior: "smooth", block: "center" });
-        }, 100);
-      }
-
-      // esperar a que generate-index.js haya montado el índice en el DOM
-      function waitForIndexThenHighlight(currentFileRaw) {
-        let tries = 0;
-        const interval = setInterval(() => {
-          tries++;
-          const ready = document.querySelectorAll("#dynamic-index a.tree-leaf").length > 0;
-          if (ready) {
-            clearInterval(interval);
-            updateIndexHighlight(currentFileRaw);
-          }
-          if (tries > 60) clearInterval(interval);
-        }, 150);
-      }
-      waitForIndexThenHighlight(currentFile);
-
-      // Navegación con las flechas
-      const goTo = i => {
-        const target = allFiles[i];
-        if (!target) return;
-        localStorage.setItem("indexLastFile", target);
-        // al navegar, simplemente cambiamos de página
-        window.location.href = `markdown-viewer.html?file=${encodeURIComponent(target)}`;
-      };
-
-      if (idx > 0) {
-        prevBtn.onclick = () => goTo(idx - 1);
-      } else {
-        prevBtn.disabled = true;
-      }
-
-      if (idx < allFiles.length - 1) {
-        nextBtn.onclick = () => goTo(idx + 1);
-      } else {
-        nextBtn.disabled = true;
-      }
-
-      // respetar visibilidad previa del índice lateral
-      const indexVisible = localStorage.getItem("indexVisible") === "true";
-      if (indexVisible) {
-        aside.classList.remove("hidden", "collapsing");
-      } else {
-        aside.classList.add("hidden");
-      }
-
     } catch (err) {
-      console.error("💥 Error índice/breadcrumb/navegación:", err);
+      console.error("💥 Error breadcrumb:", err);
       breadcrumbEl.textContent = "(Error al generar ruta)";
     }
-  });
-  </script>
-
-  <!-- RESALTADO VERDE + SCROLL CUANDO VENIMOS DESDE SEARCH -->
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get("q");
-    if (!q) return; // si no venimos desde la búsqueda, no hacemos nada
-
-    // normaliza texto (quita acentos, pasa a minúsculas)
-    function normalize(str) {
-      return str
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase();
-    }
-
-    // resalta TODAS las apariciones de query dentro de #md-content,
-    // sin destruir event listeners ni machacar todo el innerHTML
-    function highlightInElement(root, query) {
-      const normQuery = normalize(query);
-      if (!normQuery) return;
-
-      // recorremos todos los nodos de texto dentro de root
-      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-      const textNodesToProcess = [];
-
-      while (walker.nextNode()) {
-        const node = walker.currentNode;
-        const original = node.textContent;
-        const normOriginal = normalize(original);
-
-        if (normOriginal.includes(normQuery)) {
-          textNodesToProcess.push({ node, original, normOriginal });
-        }
-      }
-
-      textNodesToProcess.forEach(({ node, original, normOriginal }) => {
-        const normQueryLen = normQuery.length;
-        const ranges = [];
-        let searchStart = 0;
-
-        // localizar TODAS las posiciones donde aparece la query normalizada
-        while (true) {
-          const idx = normOriginal.indexOf(normQuery, searchStart);
-          if (idx === -1) break;
-          ranges.push([idx, idx + normQueryLen]);
-          searchStart = idx + normQueryLen;
-        }
-
-        if (!ranges.length) return;
-
-        // construir HTML seguro con <mark> envolviendo cada match
-        let resultHTML = "";
-        let lastPos = 0;
-        ranges.forEach(([start, end]) => {
-          resultHTML += original.slice(lastPos, start)
-            + "<mark>"
-            + original.slice(start, end)
-            + "</mark>";
-          lastPos = end;
-        });
-        resultHTML += original.slice(lastPos);
-
-        // reemplazar el nodo de texto por un span con ese HTML
-        const span = document.createElement("span");
-        span.innerHTML = resultHTML;
-        node.parentNode.replaceChild(span, node);
-      });
-    }
-
-    // hace scroll a la primera coincidencia y la hace parpadear en verde
-    function focusFirstMatch(container) {
-      const first = container.querySelector("mark");
-      if (!first) return;
-      first.scrollIntoView({ behavior: "smooth", block: "center" });
-      first.animate(
-        [
-          { backgroundColor: "rgba(102,161,130,0.8)" },
-          { backgroundColor: "rgba(102,161,130,0.25)" }
-        ],
-        { duration: 1200, easing: "ease-out" }
-      );
-    }
-
-    // esperamos a que el markdown esté realmente cargado en #md-content
-    function waitUntilContentReady() {
-      const contentEl = document.getElementById("md-content");
-      if (!contentEl) return;
-
-      const obs = new MutationObserver((mutList, observer) => {
-        // contenido ya está cargado (no es el placeholder "Cargando...")
-        const txt = contentEl.innerText.trim();
-        if (txt && !/^Cargando/i.test(txt)) {
-          observer.disconnect();
-
-          // aplicar resaltado
-          highlightInElement(contentEl, q);
-
-          // hacer scroll y destello
-          focusFirstMatch(contentEl);
-        }
-      });
-
-      obs.observe(contentEl, { childList: true, subtree: true });
-    }
-
-    waitUntilContentReady();
   });
   </script>
 </body>
