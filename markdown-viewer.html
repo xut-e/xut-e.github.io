@@ -251,6 +251,88 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     }
   });
   </script>
+  <script>
+/* =============================
+   Navegación con < y >
+   ============================= */
+window.addEventListener("DOMContentLoaded", async () => {
+  const btnPrev = document.getElementById("prev-note");
+  const btnNext = document.getElementById("next-note");
+  if (!btnPrev || !btnNext) return;
+
+  const params = new URLSearchParams(location.search);
+  const currentFile = params.get("file");
+  if (!currentFile) return;
+
+  // --- 1) Cargar arbol.json ---
+  let tree;
+  try {
+    const res = await fetch("apuntes/arbol.json");
+    tree = await res.json();
+  } catch (err) {
+    console.error("Error cargando arbol.json", err);
+    return;
+  }
+
+  // --- 2) Aplanar árbol en una lista ordenada ---
+  function flattenTree(node) {
+    let files = [];
+    if (Array.isArray(node)) {
+      node.forEach(n => files.push(...flattenTree(n)));
+    } else if (node.type === "directory") {
+      node.contents?.forEach(n => files.push(...flattenTree(n)));
+    } else if (node.type === "file" && node.path.endsWith(".md")) {
+      files.push(node.path);
+    }
+    return files;
+  }
+
+  const allFiles = flattenTree(tree)
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+  // --- 3) Normalizar para que coincida con file= ---
+  const normalizedCurrent = currentFile
+    .replace(/^content\/?/i, "")
+    .replace(/^Ciberseguridad\//i, "");
+
+  const normalizedList = allFiles.map(p =>
+    p.replace(/^content\/?/i, "")
+     .replace(/^Ciberseguridad\//i, "")
+  );
+
+  const index = normalizedList.indexOf(normalizedCurrent);
+  if (index === -1) {
+    console.warn("Archivo actual no encontrado en arbol.json");
+    return;
+  }
+
+  const prev = index > 0 ? allFiles[index - 1] : null;
+  const next = index < allFiles.length - 1 ? allFiles[index + 1] : null;
+
+  // --- 4) Función de navegación ---
+  function goTo(path) {
+    const cleaned = path.replace(/^content\//i, "");
+    window.location.href = `markdown-viewer.html?file=${cleaned}`;
+  }
+
+  // --- 5) Asignar eventos ---
+  if (prev) {
+    btnPrev.disabled = false;
+    btnPrev.addEventListener("click", () => goTo(prev));
+  } else {
+    btnPrev.disabled = true;
+  }
+
+  if (next) {
+    btnNext.disabled = false;
+    btnNext.addEventListener("click", () => goTo(next));
+  } else {
+    btnNext.disabled = true;
+  }
+
+});
+</script>
+
 </body>
 </html>
 
