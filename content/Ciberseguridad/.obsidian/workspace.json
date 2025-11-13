@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/5. Remote File Inclusion - RFI.md",
+                "file": "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/4. What is SQL Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Remote File Inclusion - RFI"
+              "title": "4. What is SQL Injection"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.5
+    "width": 356.5,
+    "collapsed": true
   },
   "right": {
     "id": "faed7e75b1bafdc2",
@@ -94,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/2. What is a Database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de 2. What is a Database"
             }
           },
           {
@@ -112,11 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/2. What is a Database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes"
+              "title": "Enlaces salientes de 2. What is a Database"
             }
           },
           {
@@ -126,7 +129,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Etiquetas"
@@ -137,9 +142,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/2. What is a Database.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de 2. What is a Database"
             }
           }
         ]
@@ -160,44 +170,44 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "de843610a44737e0",
+  "active": "799014e09666d4e9",
   "lastOpenFiles": [
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/4. Local File Inclusion - LFI Continued.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/3. Local File Inclusion - LFI.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/5. Remote File Inclusion - RFI.md",
-    "Z Imagenes/Pasted image 20251105214834.png",
-    "Z Imagenes/Pasted image 20251105214525.png",
-    "Z Imagenes/Pasted image 20251105213719.png",
-    "Z Imagenes/Pasted image 20251105213608.png",
-    "Z Imagenes/Pasted image 20251105213329.png",
-    "Z Imagenes/Pasted image 20251105213241.png",
-    "Z Imagenes/Pasted image 20251105213110.png",
-    "Z Imagenes/Pasted image 20251105213038.png",
-    "Z Imagenes/Pasted image 20251105212942.png",
-    "Z Imagenes/Pasted image 20251105212814.png",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/2. Path Traversal.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/1. Introduction.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/8. OSINT - Wappalyzer.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/5. Manual Discovery - HTTP Headers.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/6. Manual Discovery - Framework Stack.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/4. Manual Discovery - Sitemap xml.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/3. Manual Discovery - Favicon.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/2. Manual Discovery - Robots txt.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/1. What Is Content Discovery.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/0. Content Discovery.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/4. Authentication Bypass/4. Cookie Tampering.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/4. Authentication Bypass/1. Username Enumeration.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/4. Authentication Bypass/2. Brute Force.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/4. Authentication Bypass/3. Logic Flaw.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/6. Developer Tools - Network.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/2. Content Discovery/11. OSINT - S3 Buckets.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/2. Exploring the Website.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/0. File Inclusion.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/1. Walking an Application/1. Walking An Application.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/0. SQL Injection.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Jr Penetration Tester.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/10. Remediation.md",
-    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/9. Out-of-Band SQLI.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/4. What is SQL Injection.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/3. What is SQL.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/2. What is a Database.md",
+    "Z Imagenes/Pasted image 20251113202848.png",
+    "Z Imagenes/Pasted image 20251113202650.png",
+    "Z Imagenes/Pasted image 20251113202512.png",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/1. Brief.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/5. Practical - Command Injection (Deploy).md",
+    "Z Imagenes/Pasted image 20251113173028.png",
+    "Z Imagenes/Pasted image 20251113172706.png",
+    "Z Imagenes/Pasted image 20251113172551.png",
+    "Z Imagenes/Pasted image 20251113172337.png",
+    "Z Imagenes/Pasted image 20251113172302.png",
+    "Z Imagenes/Pasted image 20251113172152.png",
+    "Z Imagenes/Pasted image 20251113172035.png",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/4. Remediating Command Injection.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/3. Exploiting Command Injection.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/2. Discovering Command Injection.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/1. Introduction.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/7. Challenge Web App.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/6. Blind XSS.md",
+    "THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/4. Filesystem Interaction Continued.md",
+    "THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/2. Active Directory.md",
+    "THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/1. Introduction.md",
+    "THM/0. Pre Career/2. Cyber Security 101/9. Offensive Security Tooling/4. SQLMap - The Basics/2. SQL Injection Vulnerability.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/2. Multi-Threading.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/6. Detection and Mitigation.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/5. Exploiting Race Conditions.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/4. Web Application Architecture.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/3. Race Conditions.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/1. Introduction.md",
+    "THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics.md",
+    "THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/4. Packets and Frames/0. Packets and Frames.md",
+    "THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How the Web Works.md",
+    "THM/0. Pre Career/1. Pre Security/1. Pre Security.md",
+    "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/8. Practical Example (Blind XSS).md",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/Sin nombre",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/0. SQL Injection",
     "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/0. Command Injection",

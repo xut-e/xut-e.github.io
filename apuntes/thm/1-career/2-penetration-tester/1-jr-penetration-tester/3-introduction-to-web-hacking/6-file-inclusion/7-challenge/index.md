@@ -3,3 +3,83 @@ layout: apunte
 title: "7. Challenge"
 ---
 
+<h2>Pasos para encontrar una LFI</h2>
+1. Encuentra un punto de entrada que podría ser vía `GET`, `POST`, `COOKIE` o `HTTP`.
+2. Mete un input válido para ver cómo se comporta el servidor.
+3. Mete inputs inválidos para ver cómo es el manejo de errores.
+4. No siempre de fíes de los formularios. Puedes usar una herramienta como Burp Suite para ver qué pasa por detrás.
+5. Busca errores para encontrar la ruta de la aplicación. Si no hay errores, puede que tu mejor opción sea prueba y error.
+6. Entiende la validación de input y si hay filtros.
+7. Prueba a inyectar una entrada válida para leer archivos sensibles.
+
+-------------------------------
+<h2>#1</h2>
+Debes capturar la flag en `/etc/flag1`.
+
+1. Vamos a la página dada.
+   !**Pasted image 20251106131837.png**
+2. El input `welcome.php` no hace nada.
+   !**Pasted image 20251106132046.png**
+3. Mandamos `POST welcome.php` pero no pasa nada asique vamos a ver qué está pasando en burpsuite.
+   !**Pasted image 20251106132202.png**
+4. Volvemos a probar pero ahora con `intercept on` en Burp Suite.
+   !**Pasted image 20251106132323.png**
+5. En Burp Suite vemos que se está enviando por `GET` y que no pasa nada, vamos a cambiar el método de envío:
+   !**Pasted image 20251106132504.png**
+   !**Pasted image 20251106132605.png**
+6. Vemos que en la respuesta se ha cargado el contenido de `welcome.php`:
+   !**Pasted image 20251106132743.png**
+7. Vamos a probar a cargar el contenido de `/etc/flag1`:
+   !**Pasted image 20251106132842.png**
+8. Obtenemos la flag.
+   !**Pasted image 20251106133111.png**
+
+------------------------------------------
+<h2>#2</h2>
+Debes capturar la flag en `/etc/flag2`.
+
+1. Vamos al laboratorio 2, donde vemos el siguiente mensaje:
+   !**Pasted image 20251106133258.png**
+2. Miramos en las herramientas de desarrollador:
+   !**Pasted image 20251106133355.png**
+3. Vamos a probar cambiando ese valor a "Admin". Al refrescar la página:
+   !**Pasted image 20251106133455.png**
+4. Vemos que está intentando cargar el archivo "Admin.php":
+   !**Pasted image 20251106133653.png**
+5. Vamos a intentar cargar el archivo `/etc/flag2`:
+   !**Pasted image 20251106133738.png**
+6. Parece que sólo comprueba que la cookie no sea `Guest` y carga el nombre del archivo de la `cookie + .php`. Vamos a probar a usar `NULL BYTE`.
+   !**Pasted image 20251106133915.png**
+7. Parece que nos hemos librado de la extensión `.php` pero no puede llegar al directorio, haremos uso de `../`.
+   !**Pasted image 20251106134040.png**
+
+--------------------------------------
+<h2>#3</h2>
+Debes capturar la flag en `/etc/flag3`.
+
+1. Vamos al laboratorio indicado y probamos con un input válido `welcome`:
+   !**Pasted image 20251106134338.png**
+2. Probaremos con un input inválido `/etc/flag3`.
+   !**Pasted image 20251106134415.png**
+3. Vemos que se están suprimiendo las `/`. Probaremos a meter dos (`//etc//flag3`):
+   !**Pasted image 20251106134524.png**
+4. Vemos que también se borran, y que además hay extensión `.php` forzada. Vamos a probar con el `NULL BYTE`:
+   !**Pasted image 20251106134714.png**
+   !**Pasted image 20251106134737.png**
+5. Vamos a probar a ver si no filtra algún carácter.
+   !**Pasted image 20251106140648.png**
+6. Probaremos en la URL la siguiente lista de los 128 caracteres ASCII URL-encodeados: `%00%01%02%03%04%05%06%07%08%09%0A%0B%0C%0D%0E%0F%10%11%12%13%14%15%16%17%18%19%1A%1B%1C%1D%1E%1F%20%21%22%23%24%25%26%27%28%29%2A%2B%2C%2D%2E%2F%30%31%32%33%34%35%36%37%38%39%3A%3B%3C%3D%3E%3F%40%41%42%43%44%45%46%47%48%49%4A%4B%4C%4D%4E%4F%50%51%52%53%54%55%56%57%58%59%5A%5B%5C%5D%5E%5F%60%61%62%63%64%65%66%67%68%69%6A%6B%6C%6D%6E%6F%70%71%72%73%74%75%76%77%78%79%7A%7B%7C%7D%7E%7F`
+   !**Pasted image 20251106142647.png**
+7. Los únicos caracteres no filtrados son a-z. Vamos a intentar cargar un php remoto para leer al flag.
+   !**Pasted image 20251106143959.png**
+8. Cargamos un servidor python que liste el archivo:
+   !**Pasted image 20251106144313.png**
+9. Probamos desde la URL:
+   !**Pasted image 20251106144436.png**
+10. Vamos a probar con curl:
+    `curl http://10.10.19.115/challenges/chall3.php -d "method=post&file=../../../../etc/flag3" --output -`
+    !**Pasted image 20251106150747.png**
+11. Vemos que sale con `.php` así que probaremos el `NULL BYTE`:
+    `curl http://10.10.19.115/challenges/chall3.php -d "method=post&file=../../../../etc/flag3%00" --output -`
+    !**Pasted image 20251106150856.png**
+

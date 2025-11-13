@@ -1,27 +1,27 @@
 [
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/4. Local File Inclusion - LFI Continued.md",
-    "title": "4. Local File Inclusion - LFI Continued",
-    "modified": "2025-11-06T01:55:52"
+    "src": "content/Ciberseguridad/THM/0. Pre Career/0. Pre Career.md",
+    "title": "0. Pre Career",
+    "modified": "2025-11-13T23:36:35"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/6. File Inclusion/3. Local File Inclusion - LFI.md",
-    "title": "3. Local File Inclusion - LFI",
-    "modified": "2025-11-06T01:55:52"
+    "src": "content/Ciberseguridad/THM/Maquinas/0. Maquinas.md",
+    "title": "0. Maquinas",
+    "modified": "2025-11-13T23:36:35"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/5. Finding IDORs in Unpredictable IDs.md",
-    "title": "5. Finding IDORs in Unpredictable IDs",
-    "modified": "2025-11-05T01:56:54"
+    "src": "content/Ciberseguridad/THM/1. Career/1. Career.md",
+    "title": "1. Career",
+    "modified": "2025-11-13T23:36:35"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/1. What is IDOR.md",
-    "title": "1. What is IDOR",
-    "modified": "2025-11-05T01:56:54"
+    "src": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Pre Security.md",
+    "title": "1. Pre Security",
+    "modified": "2025-11-13T23:36:35"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/5. IDOR/3. Finding IDORs in Encoded IDs.md",
-    "title": "3. Finding IDORs in Encoded IDs",
-    "modified": "2025-11-05T01:56:54"
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md",
+    "title": "2. Cyber Security 101",
+    "modified": "2025-11-13T23:36:35"
   }
 ]

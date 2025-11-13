@@ -3,3 +3,175 @@ layout: apunte
 title: "3. What is SQL"
 ---
 
+SQL es un lenguaje rico en funcionalidades usado para realizar queries a las bases de datos. Estas queries se conocen como statements.
+
+El comando más simple que cubriremos en esta tarea será **SELECT** (para que nos devuelva algo que le pidamos), **UPDATE** (para actualizar la información guardada en una tabla), **INSERT** (para meter información en una tabla) y **DELETE** (para borrar información de una tabla).
+
+>[!CAUTION] SQL no es case-sentitive (no distigue entre mayúsculas y minúsculas).
+
+-----------------------------------------
+<h2>SELECT</h2>
+El primer tipo de query que aprenderemos sera SELECT. Usado para recuperar información de una base de datos.
+
+`SELECT * FROM users;`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 1      | jon          | pass123      |
+| 2      | admin        | p4ssword     |
+| 3      | martin       | secret123    |
+El statement SELECT le dice a la base de datos que seleccione datos. El `*` le dice que queremos seleccionar todos. El `FROM` le dice de dónde queremos rescatar los datos. Por último indicamos la tabla, en este caso `users`.
+
+La siguiente se parece a la de arriba pero en este caso en lugar de usar `*` le pedimos una (o más) en específico.
+
+`SELECT username,password FROM users;`
+
+| **username** | **password** |
+| ------------ | ------------ |
+| jon          | pass123      |
+| admin        | p4ssword     |
+| martin       | secret123    |
+
+La siguiente query, al igual que la primera, devuelve todas las columnas usando el selector `*`. La cláusula `LIMIT 1` fuerza a la base de datos a sólo devolver una fila de información. Cambiar la query a `LIMIT1,1` fuerza a la base de datos a saltarse el primer resultado y luego, la query `LIMIT 2,1` fuerza a la base de datos a saltarse los dos primeros resultados. Recuerda, el primer número le dice a la base de datos cuántas lineas saltar y el segundo cuántas devolver.
+
+`SELECT * FROM users LIMIT 1;`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 1      | jon          | pass123      |
+
+Finalmente vamos a utilizar la cláusula `WHERE`. Así es como podemos escoger exactamente la información que queremos extraer.
+
+`SELECT * FROM users WHERE username='admin';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 2      | admin        | p4ssword     |
+Esto sólo devolverá filas donde el username sea "admin".
+
+Si queremos que se devuelvan las columnas donde el username **NO** es admin:
+
+`SELECT * FROM users WHERE username != 'admin';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 1      | jon          | pass123      |
+| 3      | martin       | secret123    |
+Si queremos seleccionar varias condiciones:
+
+`SELECT * FROM users WHERE username='admin' OR username='jon';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 1      | jon          | pass123      |
+| 2      | admin        | p4ssword     |
+También se pueden juntar varias columnas:
+
+`SELECT * FROM users WHERE username='admin' AND password='p4ssword';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 2      | admin        | p4ssword     |
+
+Usar la cláusula `LIKE` te permite especificar información que no coincida exactamente pero que comience, termine o contenga ciertos caracteres.
+
+`SELECT * FROM users WHERE username LIKE 'a%';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 2      | admin        | p4ssword     |
+Este devuelve aquellos usuarios cuyo nombre comience por "a". Mientras es la siguiente sentencia devuelve aquellos que acaban con "n":
+
+`SELECT * FROM users WHERE username LIKE '%n';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 1      | jon          | pass123      |
+| 2      | admin        | p4ssword     |
+| 3      | martin       | secret123    |
+Esta otra hace que devuelva aquellos usuarios que contengan "mi" en su nombre:
+
+`SELECT * FROM users WHERE username LIKE '%mi%';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 2      | admin        | p4ssword     |
+
+<h5>UNION</h5>
+El statement UNION combina los resultados de dos o más queries SELECT para recuperar información de una sóla o múltiples tablas. La regla para este statement es que debe recuperar el mismo número de columnas en cada statement SELECT, las columnas deben tener un tipo de dato similar y el orden de la columna tiene que ser el mismo. Puede sonar lioso, veamos la siguiente analogía.
+
+Imagina que una compañía quiere crear una lista de direcciones de todos los clientes y distribuidores para mandar un nuevo catálogo. Tenemos una tabla llamada "**customers**" con los siguientes contenidos:
+
+| **id** | **name**         | **address**     | **city**   | **postcode** |
+| ------ | ---------------- | --------------- | ---------- | ------------ |
+| 1      | Mr John Smith    | 123 Fake Street | Manchester | M2 3FJ       |
+| 2      | Mrs Jenny Palmer | 99 Green Road   | Birmingham | B2 4KL       |
+| 3      | Miss Sarah Lewis | 15 Fore Street  | London     | NW12 3GH     |
+Y otra llamada "**suppliers**" con los siguientes contenidos:
+
+| **id** | **company**      | **address**                 | **city** | **postcode** |
+| ------ | ---------------- | --------------------------- | -------- | ------------ |
+| 1      | Widgets Ltd      | Unit 1a, Newby Estate       | Bristol  | BS19 4RT     |
+| 2      | The Tool Company | 75 Industrial Road          | Norwich  | N22 3DR      |
+| 3      | Axe Makers Ltd   | 2b Makers Unit, Market Road | London   | SE9 1KK      |
+Usando el siguiente statement, podemos recoger resultados de las dos tablas y ponerlos en una sola:
+
+`SELECT name,address,city,postcode FROM customers UNION SELECT company,address,city,postcode FROM suppliers;`
+
+| **name**         | **address**                 | **city**   | **postcode** |
+| ---------------- | --------------------------- | ---------- | ------------ |
+| Mr John Smith    | 123 Fake Street             | Manchester | M2 3FJ       |
+| Mrs Jenny Palmer | 99 Green Road               | Birmingham | B2 4KL       |
+| Miss Sarah Lewis | 15 Fore Street              | London     | NW12 3GH     |
+| Widgets Ltd      | Unit 1a, Newby Estate       | Bristol    | BS19 4RT     |
+| The Tool Company | 75 Industrial Road          | Norwich    | N22 3DR      |
+| Axe Makers Ltd   | 2b Makers Unit, Market Road | London     | SE9 1KK      |
+
+----------------------------
+<h2>INSERT</h2>
+El statement INSERT le dice a la base de datos que vamos a introducir información. La cláusula INTO le dice en qué tabla la vamos a introducir. Después se mete el nombre de las columnas entre paréntesis y la cláusula VALUES indica lo que introduciremos seguido de los valores entre paréntesis.
+
+`INSERT INTO users (username, password) VALUES ('bob', 'password123');`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 1      | jon          | pass123      |
+| 2      | admin        | p4ssword     |
+| 3      | martin       | secret123    |
+| 4      | bob          | password123  |
+
+>[!IMPORTANT] No hace falta introducir id en la columna porque es `AUTO_INCREMENT`, pero si estuviera definido como `NOT NULL` en la descripción de la tabla habría que introducirlo aunque no quisiéramos.
+
+-------------------------------------
+<h2>UPDATE</h2>
+El statement UPDATE le dice a la base de datos que queremos actualizar una o más filas de información en una tabla. Primero se especifica la tabla, luego con SET especificamos los campos que cambiaremos y su nuevo valor y con la cláusula WHERE indicamos en qué fila lo cambiaremos.
+
+`UPDATE users SET username='root',password='pass123' WHERE username='admin';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 1      | jon          | pass123      |
+| 2      | root         | pass123      |
+| 3      | martin       | secret123    |
+| 4      | bob          | password123  |
+
+---------------------------------
+<h2>DELETE</h2>
+El statement DELETE le dice a la base de datos que queremos borrar una o más filas de datos. Este tipo de query es muy similar a la de SELECT. Puedes especificar qué fila borrar haciendo uso de WHERE y limitar el número de filas borrado con LIMIT.
+
+`DELETE FROM users WHERE username='martin';`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+| 1      | jon          | pass123      |
+| 2      | root         | pass123      |
+| 4      | bob          | password123  |
+Si no especificas con la cláusula WHERE borrarás toda la tabla de datos.
+
+`DELETE FROM users;`
+
+| **id** | **username** | **password** |
+| ------ | ------------ | ------------ |
+
+>[!IMPORTANT] RECUERDA: [NO OLVIDES EL WHERE EN EL DELETE FROM](https://www.youtube.com/watch?v=i_cVJgIz_Cs), porfa :)
+

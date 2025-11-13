@@ -3,3 +3,34 @@ layout: apunte
 title: "3. Reflected XSS"
 ---
 
+EL XSS reflejado ocurre cuando información ofrecida por el usuario en una petición HTTP es incluida en la página web sin ninguna validación.
+
+-------------------------------------
+<h2>Escenario de ejemplo</h2>
+Un servidor donde si introduces el input incorrecto, se muestra un mensaje de error. El contenido del mensaje de error se toma del parámetro **error** en la query string y se construye directamente en el código fuente.
+
+!**Pasted image 20251106195837.png**
+!**Pasted image 20251106195841.png**
+
+La aplicación no comprueba el contenido del parámetro **error**, lo que permite al atacante insertar código malicioso.
+
+!**Pasted image 20251106195929.png**
+!**Pasted image 20251106195931.png**
+
+La vulnerabilidad puede ser usada para un caso como el de la imagen de abajo:
+
+!**Pasted image 20251106195958.png**
+
+------------------------------
+<h2>Impacto Potencial</h2>
+El atacante podría mandar links o incrustarlos en otra página web que contenga un payload JavaScript a víctimas potenciales haciendo que lo ejecuten en sus navegadores, potencialmente revelando información de cliente o sesión.
+
+----------------------------
+<h2>Cómo Comprobar Reflected XSS</h2>
+Necesitarás comprobar cada posible punto de entrada, estos incluyen:
+
+- Parámetros en la query string de la URL.
+- Ruta de Archivo de la URL.
+- A veces Headers HTTP (aunque poco probable explotación práctica).
+
+Una vez hayas encontrado información reflejada en la aplicación web, debes confirmar que puedes ejecutar tu payload JavaScript. Este será dependiente de dónde en la aplicación se refleje tu código.

@@ -3,3 +3,28 @@ layout: apunte
 title: "5. Practical - Command Injection (Deploy)"
 ---
 
+Prueba algunos de los payloads vistos en la aplicación proporcionada. Mira en esta [chuleta](https://github.com/payloadbox/command-injection-payload-list) si te atascas o deseas saber comandos más complejos.
+
+Encuentra los contenidos de `/home/tryhackme/flag.txt`.
+
+-------------------------------
+<h2>Challenge</h2>
+1. Vamos a la página que nos dan.
+   !**Pasted image 20251113172035.png**
+2. Probamos con lo que nos dan y vemos lo que sale.
+   !**Pasted image 20251113172302.png**
+3. Es un verbose command injection así que probaremos a introducir `whoami`.
+   !**Pasted image 20251113172337.png**
+   No sale nada, parece que o bien filtra el output, o sólo nos deja meter números o está metiendo nuestro input dentro del comando `ping`.
+   
+4. Probamos a meter la dirección de google y luego otra IP que no exista.
+   !**Pasted image 20251113172551.png**
+5. Parece que la máquina no tiene conexión a Internet o servicio DNS configurado, probaremos con el hostname de google.
+   !**Pasted image 20251113172706.png**
+   Esto nos confirma que efectivamente no tiene conectividad directa a internet pero también nos deja claro que se está parseando el input del usuario hacia el comando `ping` de la siguiente manera: `ping <UserInput>`. Y además no muestra los errores, por eso si no metemos una dirección IP/hostname no sale nada en el output. 
+   
+6. Vamos a probar a meter una dirección IP y luego inyectar otro comando para leer la flag.
+   !**Pasted image 20251113173028.png**
+
+>[!NOTE] Lo podríamos haber hecho con `&&` porque el primer comando se ejecuta correctamente como ya habíamos visto.
+
