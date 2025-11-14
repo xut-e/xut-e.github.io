@@ -1,5 +1,13 @@
 [
   {
+    "title": "0. Pre Career",
+    "path": "/apuntes/thm/0-pre-career/0-pre-career/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/0. Pre Career.md",
+    "breadcrumb": "THM > 0. Pre Career",
+    "content": "[[1. Pre Security]]\n[[2. Cyber Security 101]]",
+    "modified": "2025-11-14T02:08:45"
+  },
+  {
     "title": "0. Maquinas",
     "path": "/apuntes/thm/maquinas/0-maquinas/",
     "src": "content/Ciberseguridad/THM/Maquinas/0. Maquinas.md",
@@ -13,14 +21,6 @@
     "src": "content/Ciberseguridad/THM/1. Career/1. Career.md",
     "breadcrumb": "THM > 1. Career",
     "content": "[[1. Security Analyst]]\n[[2. Penetration Tester]]\n[[3. Security Engineer]]",
-    "modified": "2025-11-14T02:08:45"
-  },
-  {
-    "title": "0. Pre Career",
-    "path": "/apuntes/thm/0-pre-career/0-pre-career/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/0. Pre Career.md",
-    "breadcrumb": "THM > 0. Pre Career",
-    "content": "[[1. Pre Security]]\n[[2. Cyber Security 101]]",
     "modified": "2025-11-14T02:08:45"
   },
   {
