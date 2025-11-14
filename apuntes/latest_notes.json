@@ -1,27 +1,42 @@
 [
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/4. Defeating Common SSRF Defenses.md",
-    "title": "4. Defeating Common SSRF Defenses",
-    "modified": "2025-11-14T00:41:57"
+    "title": "0. Maquinas",
+    "path": "/apuntes/thm/maquinas/0-maquinas/",
+    "src": "content/Ciberseguridad/THM/Maquinas/0. Maquinas.md",
+    "breadcrumb": "THM > Maquinas",
+    "content": "- [[1. Easy]]\n- [[2. Medium]]\n- [[3. Hard]]\n- [[4. Insane]]",
+    "modified": "2025-11-14T02:08:45"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/5. SSRF Practical.md",
-    "title": "5. SSRF Practical",
-    "modified": "2025-11-14T00:41:57"
+    "title": "1. Career",
+    "path": "/apuntes/thm/1-career/1-career/",
+    "src": "content/Ciberseguridad/THM/1. Career/1. Career.md",
+    "breadcrumb": "THM > 1. Career",
+    "content": "[[1. Security Analyst]]\n[[2. Penetration Tester]]\n[[3. Security Engineer]]",
+    "modified": "2025-11-14T02:08:45"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/1. What is SSRF.md",
-    "title": "1. What is SSRF",
-    "modified": "2025-11-14T00:41:57"
+    "title": "0. Pre Career",
+    "path": "/apuntes/thm/0-pre-career/0-pre-career/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/0. Pre Career.md",
+    "breadcrumb": "THM > 0. Pre Career",
+    "content": "[[1. Pre Security]]\n[[2. Cyber Security 101]]",
+    "modified": "2025-11-14T02:08:45"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/3. Finding an SSRF.md",
-    "title": "3. Finding an SSRF",
-    "modified": "2025-11-14T00:41:57"
+    "title": "1. Pre Security",
+    "path": "/apuntes/thm/0-pre-career/1-pre-security/1-pre-security/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Pre Security.md",
+    "breadcrumb": "THM > 0. Pre Career > 1. Pre Security",
+    "content": "[[1. Introduction to cybersecurity]]\n[[2. Network Fundamentals]]\n[[3. How the Web Works]]\n[[4. Linux Fundamentals]]\n[[5. Windows Fundamentals]]",
+    "modified": "2025-11-14T02:08:45"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/2. SSRF Examples.md",
-    "title": "2. SSRF Examples",
-    "modified": "2025-11-14T00:41:57"
+    "title": "2. Cyber Security 101",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-cyber-security-101/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101",
+    "content": "[[1. Start Your Cyber Security Journey]]\n[[2. Linux Fundamentals]]\n[[3. Windows and AD Fundamentals]]\n[[4. Command Line]]\n[[5. Networking]]\n[[6. Cryptography]]\n[[7. Exploitation Basics]]\n[[8. Web Hacking]]\n[[9. Offensive Security Tooling]]\n[[10. Defensive Security]]\n[[11. Security Solutions]]\n[[12. Defensive Security Tooling]]\n[[13. Build Your Cyber Security Carreer]]",
+    "modified": "2025-11-14T02:08:45"
   }
 ]
