@@ -9,10 +9,8 @@
 
   <!-- Markdown & highlight -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
-  />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
   <link rel="icon" type="img/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
@@ -34,7 +32,7 @@
         <ul>
           <li><a href="/">Inicio</a></li>
           <li><a href="/sobre-mi.html">Sobre mí</a></li>
-          <li><a href="https://github.com/xut-e" rel="noopener" target="_blank">GitHub</a></li>
+          <li><a href="https://github.com/xut-e" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </nav>
     </div>
@@ -50,7 +48,9 @@
     <section class="markdown-body">
       <div id="breadcrumb" class="breadcrumb">Cargando ruta...</div>
       <h1 id="md-title">Cargando…</h1>
-      <div id="md-content" style="font-size:.95rem; line-height:1.5;">Cargando contenido del apunte…</div>
+      <div id="md-content" style="font-size:.95rem; line-height:1.5;">
+        Cargando contenido del apunte…
+      </div>
 
       <div class="nav-buttons">
         <button id="prev-note" title="Anterior">&lt;</button>
@@ -80,8 +80,11 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     </div>
   </footer>
 
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
+  <!-- INDEX GENERATOR -->
   <script src="assets/js/generate-index.js"></script>
 
   <!-- TOGGLE DEL ÍNDICE -->
@@ -89,18 +92,18 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   window.addEventListener("load", () => {
     const btn = document.getElementById("toggle-index");
     const aside = document.getElementById("indice");
-    const pageShell = document.querySelector(".page-shell");
-    if (!btn || !aside || !pageShell) return;
+    const shell = document.querySelector(".page-shell");
 
-    const isVisible = localStorage.getItem("indexVisible") === "true";
-    if (isVisible) {
+    const visible = localStorage.getItem("indexVisible") === "true";
+
+    if (visible) {
       aside.classList.remove("hidden");
-      pageShell.classList.remove("full-width");
+      shell.classList.remove("full-width");
       btn.textContent = "Ocultar índice";
       btn.classList.add("active");
     } else {
       aside.classList.add("hidden");
-      pageShell.classList.add("full-width");
+      shell.classList.add("full-width");
       btn.textContent = "Mostrar índice";
       btn.classList.remove("active");
     }
@@ -108,18 +111,20 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
     btn.addEventListener("click", e => {
       e.preventDefault();
       const hidden = aside.classList.contains("hidden");
+
       if (hidden) {
         aside.classList.remove("hidden");
-        pageShell.classList.remove("full-width");
+        shell.classList.remove("full-width");
         btn.textContent = "Ocultar índice";
         btn.classList.add("active");
         localStorage.setItem("indexVisible", "true");
       } else {
         aside.classList.add("collapsing");
-        pageShell.classList.add("full-width");
+        shell.classList.add("full-width");
         btn.textContent = "Mostrar índice";
         btn.classList.remove("active");
         localStorage.setItem("indexVisible", "false");
+
         setTimeout(() => {
           aside.classList.remove("collapsing");
           aside.classList.add("hidden");
@@ -129,11 +134,12 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
   });
   </script>
 
-  <!-- RENDER MARKDOWN SIN EMOJIS -->
+  <!-- RENDER MARKDOWN -->
   <script>
   (async function () {
     const params = new URLSearchParams(window.location.search);
     const fileParam = params.get("file");
+
     const titleEl = document.getElementById("md-title");
     const contentEl = document.getElementById("md-content");
 
@@ -143,13 +149,16 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       return;
     }
 
-    const realPath = fileParam.startsWith("content/") ? fileParam : "content/" + fileParam;
+    const realPath = fileParam.startsWith("content/") ?
+                     fileParam : "content/" + fileParam;
     const lower = realPath.toLowerCase();
 
     if (lower.endsWith(".pdf")) {
-      const cleanName = realPath.split("/").pop().replace(/\.pdf$/i, "");
-      titleEl.textContent = cleanName;
-      contentEl.innerHTML = `<iframe src="${realPath}" width="100%" height="80vh" style="border:1px solid var(--border-color,#444)"></iframe>`;
+      const clean = realPath.split("/").pop().replace(/\.pdf$/i, "");
+      titleEl.textContent = clean;
+      contentEl.innerHTML =
+        `<iframe src="${realPath}" width="100%" height="80vh"
+          style="border:1px solid var(--border-color,#444)"></iframe>`;
       return;
     }
 
@@ -157,181 +166,149 @@ X88% : '%8888"      `Y"   'YP    '    "*88888888*
       try {
         const res = await fetch(realPath);
         if (!res.ok) throw new Error("No se pudo cargar el archivo");
-        let mdText = await res.text();
+        let md = await res.text();
 
-        // título
-        const lines = mdText.split("\n");
-        const h1Match = lines[0]?.match(/^#\s+(.+)/);
-        titleEl.textContent = h1Match
-          ? h1Match[1].trim()
-          : realPath.split("/").pop().replace(/\.md$/i, "");
+        const lines = md.split("\n");
+        const h1 = lines[0]?.match(/^#\s+(.+)/);
+        titleEl.textContent = h1 ? h1[1].trim() :
+                               realPath.split("/").pop().replace(/\.md$/i, "");
 
-        // ✅ Detectar callouts y reemplazar por HTML con icono SVG
-        mdText = mdText.replace(
+        md = md.replace(
           /^>\s*\[!(\w+)\](.*?)(?:\n(?!>)([\s\S]*?))?(?=\n{2,}|$)/gm,
-          (match, type, title, body = "") => {
-            const t = type.toLowerCase();
-            const header = title.trim() || t.toUpperCase();
+          (m, type, title, body = "") => {
+            const header = title.trim() || type.toUpperCase();
             const content = body ? body.replace(/^> ?/gm, "") : "";
             return `
-<div class="callout callout-${t}">
-  <div class="callout-title"><span class="callout-icon" data-type="${t}"></span>${header}</div>
+<div class="callout callout-${type.toLowerCase()}">
+  <div class="callout-title">${header}</div>
   <div class="callout-body">${content.trim()}</div>
 </div>`;
           }
         );
 
-        mdText = marked.parse(mdText, { gfm: true, breaks: true });
+        md = marked.parse(md, { gfm: true, breaks: true });
 
-        // imágenes estilo Obsidian
-        mdText = mdText.replace(/!\[\[(.+?)\]\]/g, (m, p1) => {
+        md = md.replace(/!\[\[(.+?)\]\]/g, (m, p1) => {
           const src = decodeURIComponent(p1.trim());
           return `<img src="/content/Ciberseguridad/Z%20Imagenes/${encodeURIComponent(src)}" alt="${src}">`;
         });
 
-        // links externos
-        mdText = mdText.replace(
+        md = md.replace(
           /<a href="(https?:\/\/[^"]+)">/g,
           '<a href="$1" target="_blank" rel="noopener">'
         );
 
-        contentEl.innerHTML = mdText;
+        contentEl.innerHTML = md;
         contentEl.querySelectorAll("pre code").forEach(b => hljs.highlightElement(b));
+
       } catch {
         titleEl.textContent = "Error";
         contentEl.textContent = "No se pudo cargar el archivo seleccionado.";
       }
+
       return;
     }
 
     titleEl.textContent = realPath.split("/").pop();
-    contentEl.innerHTML = `<p>No sé mostrar este tipo de archivo todavía.</p>
-      <p><a href="${realPath}" target="_blank" rel="noopener noreferrer">Abrir directamente</a></p>`;
+    contentEl.innerHTML = `
+      <p>No sé mostrar este tipo de archivo todavía.</p>
+      <p><a href="${realPath}" target="_blank" rel="noopener noreferrer">
+         Abrir directamente</a></p>`;
   })();
   </script>
 
-  <!-- ÍNDICE / RUTA -->
+  <!-- BREADCRUMB -->
   <script>
   window.addEventListener("DOMContentLoaded", async () => {
     const params = new URLSearchParams(window.location.search);
-    const currentFile = params.get("file");
-    const breadcrumbEl = document.getElementById("breadcrumb");
-    if (!currentFile) { breadcrumbEl.textContent = "(Sin ruta)"; return; }
+    const file = params.get("file");
+    const el = document.getElementById("breadcrumb");
+
+    if (!file) { el.textContent = "(Sin ruta)"; return; }
 
     try {
       const res = await fetch("apuntes/arbol.json");
-      if (!res.ok) throw new Error("No se pudo cargar arbol.json");
-      const data = await res.json();
+      if (!res.ok) throw new Error();
+      await res.json();
 
-      function flattenTree(node, path = "") {
-        if (!node) return [];
-        let files = [];
-        if (Array.isArray(node)) node.forEach(n => files.push(...flattenTree(n, path)));
-        else if (node.type === "directory") {
-          const newPath = path ? `${path}/${node.name}` : node.name;
-          if (node.name === "Z Imagenes") return files;
-          node.contents?.forEach(n => files.push(...flattenTree(n, newPath)));
-        } else if (node.type === "file" && node.name.endsWith(".md")) {
-          files.push(`${path}/${node.name}`);
-        }
-        return files;
-      }
-
-      const allFiles = flattenTree(data).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
-      const parts = currentFile
+      const parts = file
         .replace(/^content\/?/i, "")
         .split("/")
         .filter(Boolean)
-        .map(seg => seg.replace(/\.md$/i, "").replace(/-/g, " "))
-        .map(seg => seg.replace(/\b\w/g, c => c.toUpperCase()));
-      breadcrumbEl.textContent = parts.join(" > ") || "(Sin ruta)";
-    } catch (err) {
-      console.error("💥 Error breadcrumb:", err);
-      breadcrumbEl.textContent = "(Error al generar ruta)";
+        .map(s => s.replace(/\.md$/i, "").replace(/-/g, " "))
+        .map(s => s.replace(/\b\w/g, c => c.toUpperCase()));
+
+      el.textContent = parts.join(" > ") || "(Sin ruta)";
+
+    } catch {
+      el.textContent = "(Error al generar ruta)";
     }
   });
   </script>
+
+  <!-- NAVEGACIÓN ENTRE NOTAS (CORREGIDA) -->
   <script>
-/* =============================
-   Navegación con < y >
-   ============================= */
-window.addEventListener("DOMContentLoaded", async () => {
-  const btnPrev = document.getElementById("prev-note");
-  const btnNext = document.getElementById("next-note");
-  if (!btnPrev || !btnNext) return;
+  window.addEventListener("DOMContentLoaded", async () => {
+    const btnPrev = document.getElementById("prev-note");
+    const btnNext = document.getElementById("next-note");
 
-  const params = new URLSearchParams(location.search);
-  const currentFile = params.get("file");
-  if (!currentFile) return;
+    const params = new URLSearchParams(location.search);
+    const current = params.get("file");
+    if (!current) return;
 
-  // --- 1) Cargar arbol.json ---
-  let tree;
-  try {
-    const res = await fetch("apuntes/arbol.json");
-    tree = await res.json();
-  } catch (err) {
-    console.error("Error cargando arbol.json", err);
-    return;
-  }
-
-  // --- 2) Aplanar árbol en una lista ordenada ---
-  function flattenTree(node) {
-    let files = [];
-    if (Array.isArray(node)) {
-      node.forEach(n => files.push(...flattenTree(n)));
-    } else if (node.type === "directory") {
-      node.contents?.forEach(n => files.push(...flattenTree(n)));
-    } else if (node.type === "file" && node.path.endsWith(".md")) {
-      files.push(node.path);
+    let tree;
+    try {
+      const res = await fetch("apuntes/arbol.json");
+      tree = await res.json();
+    } catch {
+      return;
     }
-    return files;
-  }
 
-  const allFiles = flattenTree(tree)
-    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+    function flatten(node) {
+      let out = [];
+      if (Array.isArray(node)) {
+        node.forEach(n => out.push(...flatten(n)));
+      } else if (node.type === "directory") {
+        node.contents?.forEach(n => out.push(...flatten(n)));
+      } else if (node.type === "file" && node.path.endsWith(".md")) {
+        out.push(node.path);
+      }
+      return out;
+    }
 
-  // --- 3) Normalizar para que coincida con file= ---
-  const normalizedCurrent = currentFile
-    .replace(/^content\/?/i, "")
-    .replace(/^Ciberseguridad\//i, "");
+    const allFiles = flatten(tree)
+      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
-  const normalizedList = allFiles.map(p =>
-    p.replace(/^content\/?/i, "")
-     .replace(/^Ciberseguridad\//i, "")
-  );
+    const normalizedCurrent = current
+      .replace(/^content\//i, "")
+      .replace(/^Ciberseguridad\//i, "");
 
-  const index = normalizedList.indexOf(normalizedCurrent);
-  if (index === -1) {
-    console.warn("Archivo actual no encontrado en arbol.json");
-    return;
-  }
+    const normalizedList = allFiles.map(p =>
+      p.replace(/^content\//i, "").replace(/^Ciberseguridad\//i, "")
+    );
 
-  const prev = index > 0 ? allFiles[index - 1] : null;
-  const next = index < allFiles.length - 1 ? allFiles[index + 1] : null;
+    const index = normalizedList.indexOf(normalizedCurrent);
+    if (index === -1) return;
 
-  // --- 4) Función de navegación ---
-  function goTo(path) {
-    const cleaned = path.replace(/^content\//i, "");
-    window.location.href = `markdown-viewer.html?file=${cleaned}`;
-  }
+    const prev = index > 0 ? allFiles[index - 1] : null;
+    const next = index < allFiles.length - 1 ? allFiles[index + 1] : null;
 
-  // --- 5) Asignar eventos ---
-  if (prev) {
-    btnPrev.disabled = false;
-    btnPrev.addEventListener("click", () => goTo(prev));
-  } else {
-    btnPrev.disabled = true;
-  }
+    function goTo(path) {
+      /* 🔥 FIX REAL: conservar el path EXACTO del JSON */
+      window.location.href = `markdown-viewer.html?file=${encodeURIComponent(path)}`;
+    }
 
-  if (next) {
-    btnNext.disabled = false;
-    btnNext.addEventListener("click", () => goTo(next));
-  } else {
-    btnNext.disabled = true;
-  }
+    if (prev) {
+      btnPrev.disabled = false;
+      btnPrev.addEventListener("click", () => goTo(prev));
+    }
 
-});
-</script>
+    if (next) {
+      btnNext.disabled = false;
+      btnNext.addEventListener("click", () => goTo(next));
+    }
+  });
+  </script>
 
 </body>
 </html>

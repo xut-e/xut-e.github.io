@@ -942,5 +942,11 @@ mark {
 .callout-quote::before {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path d='M7 9h4v4H7zm6 0h4v4h-4z'/></svg>");
 }
+.sidebar-link.current-page {
+  background-color: rgba(102, 161, 130, 0.2);
+  color: var(--accent);
+  font-weight: 600;
+  border-radius: 4px;
+}
 
 
