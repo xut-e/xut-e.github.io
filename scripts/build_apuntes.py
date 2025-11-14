@@ -1,15 +1,17 @@
-import os, re, json, shutil, unicodedata, subprocess
+import os, re, json, shutil, unicodedata
 from pathlib import Path
 from datetime import datetime
 
 ROOT = Path(__file__).resolve().parent.parent  # repo root
-# Detectar carpeta 'Ciberseguridad' o 'ciberseguridad' automáticamente
+
+# Detectar carpeta 'Ciberseguridad' o 'ciberseguridad'
 CONTENT_ROOT = None
 for name in ("Ciberseguridad", "ciberseguridad"):
     candidate = Path(ROOT / "content" / name)
     if candidate.exists():
         CONTENT_ROOT = candidate
         break
+
 if CONTENT_ROOT is None:
     raise FileNotFoundError("❌ No se encontró la carpeta 'content/Ciberseguridad' ni 'content/ciberseguridad'")
 
@@ -18,7 +20,7 @@ INCLUDES_ROOT = ROOT / "_includes"
 IMG_OUTPUT_DIR = OUTPUT_ROOT / "img"
 
 # -----------------
-# helpers
+# Helpers
 # -----------------
 
 def slugify(name: str) -> str:
@@ -33,33 +35,18 @@ def slugify(name: str) -> str:
     return re.sub(r"-+", "-", cleaned).strip("-")
 
 def read_file(p: Path) -> str:
-    with p.open("r", encoding="utf-8") as f:
-        return f.read()
+    return p.read_text(encoding="utf-8")
 
 def write_file(p: Path, data: str):
     p.parent.mkdir(parents=True, exist_ok=True)
-    with p.open("w", encoding="utf-8") as f:
-        f.write(data)
+    p.write_text(data, encoding="utf-8")
 
 def copy_image(src: Path, dst: Path):
     dst.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(src, dst)
 
-def git_last_modified(path: Path) -> str:
-    """Devuelve la fecha del último commit (segundos desde epoch) o actual si no existe."""
-    try:
-        ts = subprocess.check_output(
-            ["git", "log", "-1", "--format=%ct", str(path)],
-            stderr=subprocess.DEVNULL
-        ).decode().strip()
-        if ts:
-            return datetime.fromtimestamp(int(ts)).isoformat(timespec="seconds")
-    except Exception:
-        pass
-    return datetime.now().isoformat(timespec="seconds")
-
 # -----------------
-# Paso 1: indexar todas las notas
+# Paso 1: Indexar notas
 # -----------------
 
 notes = []
@@ -82,11 +69,10 @@ def walk_md_files():
         notes.append({"title": title, "src": p, "url": url})
 
 walk_md_files()
-
 title_to_url = {n["title"]: n["url"] for n in notes}
 
 # -----------------
-# Paso 2: procesar notas
+# Paso 2: Convertir notas
 # -----------------
 
 def fix_internal_links(md_text: str) -> str:
@@ -103,7 +89,7 @@ def convert_one_note(note):
     raw = read_file(note["src"])
     body = fix_images(fix_internal_links(raw))
     front = f"---\nlayout: apunte\ntitle: \"{note['title'].replace('\"','\\\"')}\"\n---\n\n"
-    out_rel = note["url"].replace("/apuntes/","").strip("/")
+    out_rel = note["url"].replace("/apuntes/", "").strip("/")
     out_dir = OUTPUT_ROOT / out_rel
     write_file(out_dir / "index.md", front + body)
 
@@ -111,7 +97,7 @@ for n in notes:
     convert_one_note(n)
 
 # -----------------
-# Paso 3: copiar imágenes
+# Paso 3: Copiar imágenes
 # -----------------
 
 def copy_all_images():
@@ -120,22 +106,28 @@ def copy_all_images():
         for img in src_img_dir.iterdir():
             if img.is_file():
                 copy_image(img, IMG_OUTPUT_DIR / img.name)
+
 copy_all_images()
 
 # -----------------
 # Paso 4: sidebar.html
 # -----------------
+
 tree = {}
+
 for n in notes:
     rel = n["src"].relative_to(CONTENT_ROOT)
     parts = rel.parts
-    if len(parts) == 0:
+    if not parts:
         continue
+
     plat = parts[0]
     tree.setdefault(plat, {})
     cursor = tree[plat]
-    for i, part in enumerate(parts[1:-1]):
+
+    for part in parts[1:-1]:
         cursor = cursor.setdefault(part, {})
+
     cursor.setdefault("_notes", []).append({"title": n["title"], "url": n["url"]})
 
 def render_node(node, depth=0):
@@ -144,7 +136,7 @@ def render_node(node, depth=0):
         if name == "_notes":
             continue
         html.append(f"<details{' open' if depth==0 else ''}><summary>{name}</summary>")
-        html.append(render_node(child, depth+1))
+        html.append(render_node(child, depth + 1))
         html.append("</details>")
     for note in sorted(node.get("_notes", []), key=lambda x: x["title"]):
         html.append(f'<a class="sidebar-link" href="{note["url"]}">{note["title"]}</a>')
@@ -152,22 +144,24 @@ def render_node(node, depth=0):
 
 sidebar_html = "<nav class=\"sidebar-tree\">\n"
 for plat_name, plat_node in sorted(tree.items()):
-    sidebar_html += f"<details open><summary>{plat_name}</summary>\n{render_node(plat_node,1)}\n</details>\n"
+    sidebar_html += f"<details open><summary>{plat_name}</summary>\n{render_node(plat_node, 1)}\n</details>\n"
 sidebar_html += "</nav>\n"
+
 write_file(INCLUDES_ROOT / "sidebar.html", sidebar_html)
 
 # -----------------
-# Paso 5: index.json plano
+# Paso 5: index.json
 # -----------------
+
 index_json = [{"title": n["title"], "path": n["url"]} for n in notes]
 write_file(OUTPUT_ROOT / "index.json", json.dumps(index_json, ensure_ascii=False, indent=2))
 
 # -----------------
-# Paso 6: arbol.json jerárquico
+# Paso 6: arbol.json
 # -----------------
+
 def build_tree(path: Path, parent_is_leaf=False):
     if path.name in ("Z Imagenes", ".obsidian") or path.name.startswith("."):
-        print(f"⛔ Ignorada carpeta: {path.name}")
         return None
 
     node = {"name": path.name}
@@ -175,6 +169,7 @@ def build_tree(path: Path, parent_is_leaf=False):
     if path.is_dir():
         node["type"] = "directory"
         contents = []
+
         has_subdirs = any(c.is_dir() for c in path.iterdir())
         is_leaf_dir = not has_subdirs
 
@@ -184,6 +179,7 @@ def build_tree(path: Path, parent_is_leaf=False):
                 if child.is_file():
                     child_node["parent"] = path.name
                 contents.append(child_node)
+
         node["contents"] = contents
 
     elif path.is_file() and path.suffix.lower() == ".md":
@@ -191,7 +187,6 @@ def build_tree(path: Path, parent_is_leaf=False):
         parent = path.parent.name
 
         if parent_is_leaf and name.startswith("0."):
-            print(f"⛔ Ignorado índice local (último nivel): {path}")
             return None
 
         clean_file = re.sub(r"^\d+\.\s*", "", name).strip().lower()
@@ -199,12 +194,9 @@ def build_tree(path: Path, parent_is_leaf=False):
         same_name = clean_file == clean_parent
 
         if same_name:
-            md_count = len([f for f in path.parent.glob("*.md")])
+            md_count = len(list(path.parent.glob("*.md")))
             if md_count == 1:
-                print(f"⛔ Ignorado índice de carpeta (único .md): {path}")
                 return None
-            else:
-                print(f"✅ No ignorado (mismo nombre pero hay más archivos): {path}")
 
         node["type"] = "file"
         rel_path = path.relative_to(CONTENT_ROOT)
@@ -219,8 +211,9 @@ arbol = build_tree(CONTENT_ROOT)
 write_file(OUTPUT_ROOT / "arbol.json", json.dumps(arbol, ensure_ascii=False, indent=2))
 
 # -----------------
-# Paso 7: index_full.json — versión extendida
+# Paso 7: index_full.json (con fecha REAL, sin Git)
 # -----------------
+
 def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_full.json"):
     notes_full = []
     base_path = Path(base_dir)
@@ -228,17 +221,19 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
     for file_path in base_path.rglob("*.md"):
         try:
             text = file_path.read_text(encoding="utf-8")
-        except Exception as e:
-            print(f"[!] Error leyendo {file_path}: {e}")
+        except Exception:
             continue
 
         rel = file_path.relative_to(base_path)
         parts = list(rel.parts)
+
         breadcrumb = " > ".join(parts[:-1]) if len(parts) > 1 else ""
         title = file_path.stem
         url = build_url_for_file(file_path)
         content_src = f"content/Ciberseguridad/{rel.as_posix()}"
-        modified_iso = git_last_modified(file_path)
+
+        mtime = file_path.stat().st_mtime
+        modified_iso = datetime.fromtimestamp(mtime).isoformat(timespec="seconds")
 
         notes_full.append({
             "title": title,
@@ -250,63 +245,41 @@ def build_full_index(base_dir=CONTENT_ROOT, output_file=OUTPUT_ROOT / "index_ful
         })
 
     write_file(output_file, json.dumps(notes_full, ensure_ascii=False, indent=2))
-    print(f"[+] Índice extendido generado con campo 'modified' (desde Git) en: {output_file}")
+    print(f"[+] index_full.json generado correctamente (usando mtime real).")
 
 build_full_index()
 
 # -----------------
-# Paso 8: generar latest_tmp.json / latest_notes.json (usando Git)
+# Paso 8: latest_notes.json (top 5 más recientes por mtime)
 # -----------------
+
 def build_latest_metadata():
-    """
-    Genera un JSON ligero con nombre de nota y fecha del último commit (Git).
-    Si difiere del anterior, actualiza latest_notes.json.
-    """
-    LATEST_TMP = OUTPUT_ROOT / "latest_tmp.json"
     LATEST_NOTES = OUTPUT_ROOT / "latest_notes.json"
 
-    print("[*] Comprobando modificaciones recientes (Git)...")
+    md_files = []
 
-    meta = {}
     for md in CONTENT_ROOT.rglob("*.md"):
         if any(p in md.parts for p in [".obsidian", "Z Imagenes"]):
             continue
-        name = str(md.relative_to(CONTENT_ROOT))
-        mtime = git_last_modified(md)
-        meta[name] = mtime
 
-    with open(LATEST_TMP, "w", encoding="utf-8") as f:
-        json.dump(meta, f, indent=2, ensure_ascii=False)
+        mtime = md.stat().st_mtime
+        md_files.append((md, mtime))
 
-    if LATEST_NOTES.exists():
-        prev = json.load(open(LATEST_NOTES, encoding="utf-8"))
-    else:
-        prev = {}
+    md_files.sort(key=lambda x: x[1], reverse=True)
 
-    if meta == prev:
-        print("[✓] No hay cambios detectados. Eliminando temporal...")
-        LATEST_TMP.unlink(missing_ok=True)
-        return
-
-    print("[+] Se detectaron cambios. Actualizando latest_notes.json...")
-
-    sorted_items = sorted(meta.items(), key=lambda x: x[1], reverse=True)
     top5 = []
-    for rel_path, mod in sorted_items[:5]:
-        path = CONTENT_ROOT / rel_path
+    for md, ts in md_files[:5]:
+        rel_path = md.relative_to(CONTENT_ROOT)
         top5.append({
-            "src": f"content/Ciberseguridad/{rel_path.replace(chr(92), '/')}",
-            "title": Path(rel_path).stem,
-            "modified": mod
+            "src": f"content/Ciberseguridad/{rel_path.as_posix()}",
+            "title": md.stem,
+            "modified": datetime.fromtimestamp(ts).isoformat(timespec="seconds")
         })
 
-    with open(LATEST_NOTES, "w", encoding="utf-8") as f:
-        json.dump(top5, f, indent=2, ensure_ascii=False)
-
-    LATEST_TMP.unlink(missing_ok=True)
-    print(f"[✓] latest_notes.json actualizado con {len(top5)} notas (basado en commits).")
+    write_file(LATEST_NOTES, json.dumps(top5, ensure_ascii=False, indent=2))
+    print("[+] latest_notes.json generado correctamente (sin Git, mtime real).")
 
 build_latest_metadata()
 
-print("✅ Apuntes generados correctamente con todos los índices, latest_notes.json y fechas reales de Git.")
+print("✅ Apuntes generados correctamente usando fechas reales (mtime)")
 

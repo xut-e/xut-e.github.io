@@ -1,27 +1,27 @@
 [
   {
-    "src": "content/Ciberseguridad/THM/0. Pre Career/0. Pre Career.md",
-    "title": "0. Pre Career",
-    "modified": "2025-11-13T23:36:35"
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/4. Defeating Common SSRF Defenses.md",
+    "title": "4. Defeating Common SSRF Defenses",
+    "modified": "2025-11-14T00:41:57"
   },
   {
-    "src": "content/Ciberseguridad/THM/Maquinas/0. Maquinas.md",
-    "title": "0. Maquinas",
-    "modified": "2025-11-13T23:36:35"
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/5. SSRF Practical.md",
+    "title": "5. SSRF Practical",
+    "modified": "2025-11-14T00:41:57"
   },
   {
-    "src": "content/Ciberseguridad/THM/1. Career/1. Career.md",
-    "title": "1. Career",
-    "modified": "2025-11-13T23:36:35"
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/1. What is SSRF.md",
+    "title": "1. What is SSRF",
+    "modified": "2025-11-14T00:41:57"
   },
   {
-    "src": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Pre Security.md",
-    "title": "1. Pre Security",
-    "modified": "2025-11-13T23:36:35"
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/3. Finding an SSRF.md",
+    "title": "3. Finding an SSRF",
+    "modified": "2025-11-14T00:41:57"
   },
   {
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md",
-    "title": "2. Cyber Security 101",
-    "modified": "2025-11-13T23:36:35"
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/2. SSRF Examples.md",
+    "title": "2. SSRF Examples",
+    "modified": "2025-11-14T00:41:57"
   }
 ]
