@@ -4172,8 +4172,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/11-sql-injection/4-what-is-sql-injection/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/4. What is SQL Injection.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 3. Introduction to Web Hacking > 11. SQL Injection",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "<h2>¿Qué es SQL Injection?</h2>\nEl punto donde una aplicación web que usa SQL se puede transformar en SQL Injection es cuando se incluye en una query SQL información proporcionada por el usuario.\n\n----------------------------------\n<h2>¿Cómo se ve?</h2>",
+    "modified": "2025-11-14T01:15:38"
   },
   {
     "title": "7. Blind SQLI - Boolean Based",
