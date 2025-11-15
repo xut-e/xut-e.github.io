@@ -1116,8 +1116,8 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/8-web-hacking/8-web-hacking/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/8. Web Hacking.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 8. Web Hacking",
-    "content": "1. [[0. Web Application Basics]]\n2. [[0. JavaScript Essentials]]\n3. [[0. SQL Fundamentals]]\n4. [[0. Burp Suite - The Basics]]\n5. [[0. OWASP Top 10 - 2021]]",
-    "modified": "2025-11-14T02:08:45"
+    "content": "1. [[0. Web Application Basics]]\n2. [[0. JavaScript Essentials]]\n3. [[0. SQL Fundamentals]]\n4. [[THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n5. [[0. OWASP Top 10 - 2021]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "12. Defensive Security Tooling",
@@ -3764,8 +3764,8 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/3-networking-core-protocols/0-networking-core-protocols/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/0. Networking Core Protocols.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 5. Networking > 3. Networking Core Protocols",
-    "content": "[[THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/1. Introduction]]\n[[2. DNS- Remembering Addresses]]\n[[3. WHOIS]]\n[[4. HTTP(S) - Accessing the Web]]\n[[5. FTP - Transferring Files]]\n[[6. SMTP - Sending Email]]\n[[7. POP3 - Receiving Email]]\n[[8. IMAP - Synchronizing Email]]\n[[9. Conclusion]]",
-    "modified": "2025-11-14T02:08:45"
+    "content": "[[THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/1. Introduction]]\n[[2. DNS- Remembering Addresses]]\n[[THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/3. WHOIS]]\n[[4. HTTP(S) - Accessing the Web]]\n[[5. FTP - Transferring Files]]\n[[6. SMTP - Sending Email]]\n[[7. POP3 - Receiving Email]]\n[[8. IMAP - Synchronizing Email]]\n[[9. Conclusion]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "4. HTTP(S) - Accessing the Web",
@@ -3884,8 +3884,8 @@
     "path": "/apuntes/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2.",
-    "modified": "2025-11-14T02:08:45"
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "3. Hard",
@@ -3952,6 +3952,30 @@
     "modified": "2025-11-14T02:08:45"
   },
   {
+    "title": "0. Net Sec Challenge",
+    "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/0-net-sec-challenge/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 2. Net Sec Challenge",
+    "content": "[[THM/Maquinas/2. Medium/2. Net Sec Challenge/1. Introduction]]\n[[2. Challenge Questions]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Challenge Questions",
+    "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/2-challenge-questions/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/2. Challenge Questions.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 2. Net Sec Challenge",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 2. Net Sec Challenge",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
     "title": "3. Security Engineer",
     "path": "/apuntes/thm/1-career/3-security-engineer/3-security-engineer/",
     "src": "content/Ciberseguridad/THM/1. Career/3. Security Engineer/3. Security Engineer.md",
@@ -3996,8 +4020,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-network-security/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Network Security.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "1. [[0. Passive Reconnaissance]]\n2. [[0. Active Reconnaissance]]\n3. [[0. Nmao Live Host Discovery]]\n4. [[0. Nmap Basic Port Scans]]\n5. [[0. Nmap Advanced Port Scans]]\n6. [[0. Nmap Post Port Scans]]\n7. [[0. Protocols and Servers]]\n8. [[0. Protocols and Servers 2]]\n9. [[THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "8. Privilege Escalation",
@@ -4036,8 +4060,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "1. [[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/1. Brup Suite - The Basics/0. Burp Suite - The Basics]]\n2. [[0. Burp Suite - Repeater]]\n3. [[0. Burp Suite - Intruder]]\n4. [[0. Brup Suite - Other Modules]]\n5. [[0. Burp Suite - Extensions]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "1. Introduction to Cyber Security",
@@ -4124,16 +4148,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/11-sql-injection/6-blind-sqli-authentication-bypass/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/6. Blind SQLI - Authentication Bypass.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 3. Introduction to Web Hacking > 11. SQL Injection",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "Al contrario que la SQLi In-Band, donde podemos ver los resultados de nuestro ataque en la pantalla, las vulnerabilidades SQLi Blind son aquellas en las que tenemos muy poco o nada de feedback para confirmar si las queries inyectadas fueron o no exitosas.\n\n-------------------------------------\n<h2>Bypasseo de Autentificación</h2>\nUna de las técnicas más directas de SQLi Blind es al bypassear los métodos de autentificación como los formularios de log in. Aquí no nos interesa recuperar información, sino simplemente sobrepasar el formulario.\n\nEstos formularios están conectados a la base de datos y normalmente por la forma de desarrollo no le interesa cuáles son los usuario y contraseña introducidos sino más bien si ese par existe a la vez en la base de datos.\n\n----------------------\n<h2>Práctica</h2>\nVamos a ver algunos ejemplos prácticos.\n\n--------------------------------------\n<h2>Nivel 2</h2>\n1. Hacemos pruebas para ver si hay parámetros.\n   ![[Pasted image 20251114103243.png]]\n2. Vemos que no los hay, por lo que trabajaremos con los campos de input. También podríamos haber mandado una query como: `SELECT * FROM users WHERE username='' AND password='' OR 1=1;`\n   ![[Pasted image 20251114103357.png]]\n\n>[!CAUTION] Si \"admin\" no existiera, no nos hubiera valido la primera query.",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "10. Remediation",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/11-sql-injection/10-remediation/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/10. Remediation.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 3. Introduction to Web Hacking > 11. SQL Injection",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "Los desarrolladores tienen maneras de proteger sus aplicaciones web de ser vulnerables a SQLi siguiendo los siguientes consejos.\n\n----------------------\n<h2>Prepared Statements</h2>\nEn una query preparada, lo primero que escribe un desarrollador es la query, luego el input del usuario se añade. Escribir statements preparados asegura que el código no cambie la estructura o información de la base de datos.\n\n----------------------------\n<h2>Input Validation</h2>\nEmplear una lista de strings permitidas o un sistema de reemplazo de strings es un buen sistema para validar el input.\n\n--------------------------------\n<h2>Escaping User Input</h2>\nEscapar el input del usuario es un método mediante el cual evitamos que el usuario pueda introducir ciertos caracteres como `'`, `\"`, etc. Como ya hemos visto, estos pueden llevar a un ataque y exfiltración masiva de datos.",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "0. SQL Injection",
@@ -4148,16 +4172,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/11-sql-injection/5-in-band-sqli/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/5. In-Band SQLI.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 3. Introduction to Web Hacking > 11. SQL Injection",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "La SQLi In-Band es el tipo más fácil de detectar y explotar. Se refiere al mismo método de comunicación para explotar la vulnerabilidad y recibir los resultados, por ejemplo, descubrir una vulnerabilidad de inyección SQL en un sitio web y ser capaz de extraer información de la base de datos en la propia página.\n\n---------------------------\n<h2>SQLi Basada en Errores</h2>\nEste tipo es la más útil para obtener información sobre la estructura de la base de datos, ya que los errores de la base de datos se imprimen en el navegador directamente. Puede ser usado para enumerar una base de datos entera.\n\nLa clave para descubrirlas es romper el código SQL probando caracteres especiales hasta que salga un mensaje de error. Normalmente se hace con `'` o `\"`.\n\n-------------------------------------\n<h2>SQLi Basada en Unión</h2>\nEste tipo de inyección usa el operador SQL \"UNION\" junto a SELECT para devolver resultados adicionales a la página. Este método es la forma más común de extraer grandes cantidades de información vía SQLi.\n\n----------------------------------\n<h2>Práctica</h2>\nVamos a ver algunos ejemplos prácticos.\n\n-------------------------------\n<h2>Nivel 1</h2>\n\n![[Pasted image 20251114100228.png]]\n\nProbamos a meter una comilla simple. Esto nos devuelve un error:\n\n![[Pasted image 20251114100410.png]]\n\nEsto deja constancia de que hay una vulnerabilidad SQLi y ahora toca explotarla. Intentaremos que nos devuelva información usando el operador UNION: `1 UNION SELECT 1`\n\n![[Pasted image 20251114100748.png]]\n\nAñadimos otra columna:\n\n![[Pasted image 20251114100828.png]]\n\nY así hasta que acertemos:\n\n![[Pasted image 20251114100950.png]]\n\nLa query nos devuelve el artículo porque es lo primero con lo que se encuentra (`id=1`), pero si modificamos la query para que muestre un artículo que no existe (`id=0`) entonces nos mostrará nuestra información.\n\n![[Pasted image 20251114101443.png]]\n\nPodemos ver que el 1, el 2 y el 3 aparecen en el resultado. Si cambiamos alguno de esos números por un término existente nos devolverá ese término en el sitio que le corresponde, por ejemplo el 3: `https://website.thm/article?id=0 UNION SELECT 1,2,database()`\n\n![[Pasted image 20251114101607.png]]\n\nAhora que sabemos el nombre de la base de datos (**sqli_one**), toca obtener el nombre de las tablas. Para ello vamos a usar la siguiente query: `0 UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables WHERE table_schema = 'sqli_one'`\n\n![[Pasted image 20251114101909.png]]\n\n>[!TIP] Si no entiendes las sentencias revisa [[0. SQL Fundamentals]] y estudia SQL, es la mejor manera de entenderlo todo.\n\nComo nos interesa descubrir la contraseña de Martin vamos a buscar en **staff_users** que significa usuarios del equipo.\n\nVolvemos a utilizar **information_schema** pero ahora con **columns** y en group_concat() metemos **column_name** en lugar de **table_name**.\n\n`0 UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_name = 'staff_users'`\n\n![[Pasted image 20251114102247.png]]\n\nAhora toca obtener los datos que nos interesan:\n\n`0 UNION SELECT 1,2,group_concat(username,':',password SEPARATOR '<br>') FROM staff_users`\n\n![[Pasted image 20251114102519.png]]\n\nHabiendo obtenido la contraseña de Martin nos movemos hacia el siguiente nivel y obtenemos la flag.\n\n![[Pasted image 20251114102643.png]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "9. Out-of-Band SQLI",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/11-sql-injection/9-out-of-band-sqli/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/9. Out-of-Band SQLI.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 3. Introduction to Web Hacking > 11. SQL Injection",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "La SQLi Out-of-Band no es tan común ya que depende o en funcionalidades específicas siendo habilitadas en el servidor o en la lógica de negocio de la aplicación.\n\nUn ataque Out-of-Band se clasifica como tener dos canales de comunicación diferentes, uno para lanzar el ataque y otro para recoger la información. Por ejemplo, el canal de ataque podría ser una petición web y el otro canal monitorizar peticiones HTTP/DNS hechas a un servidor que tu controles.\n\n1. Un atacante hace una petición a un sitio web vulnerable a SQLi Out-of-Band.\n2. El sitio web hace una query SQL a la base de datos pasando el payload del atacante.\n3. El payload contiene una petición HTTP forzada a una máquina del atacante conteniendo datos de la base de datos.\n\n![[Pasted image 20251114130345.png]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "2. What is a Database",
@@ -4172,24 +4196,24 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/11-sql-injection/4-what-is-sql-injection/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/4. What is SQL Injection.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 3. Introduction to Web Hacking > 11. SQL Injection",
-    "content": "<h2>¿Qué es SQL Injection?</h2>\nEl punto donde una aplicación web que usa SQL se puede transformar en SQL Injection es cuando se incluye en una query SQL información proporcionada por el usuario.\n\n----------------------------------\n<h2>¿Cómo se ve?</h2>",
-    "modified": "2025-11-14T01:15:38"
+    "content": "<h2>¿Qué es SQL Injection?</h2>\nEl punto donde una aplicación web que usa SQL se puede transformar en SQL Injection es cuando se incluye en una query SQL información proporcionada por el usuario.\n\n----------------------------------\n<h2>¿Cómo se ve?</h2>\nToma el siguiente escenario. Te cruzas con un blog online y cada entrada del bloque tiene un ID único. Las entradas del blog pueden ser públicas o privadas, dependiendo de si están listas para que el público las vea. La URL de cada entrada de blog pude verse algo como:\n\n`https://website.thm/blog?id=1`\n\nDe la URL de arriba, podemos ver que hay un parámetro id. La aplicación web necesita recuperar el artículo de una base de datos y puede que use un statement SQL de parezca lo siguiente:\n\n`SELECT * FROM blog WHERE id=1 AND private=0 LIMIT 1;`\n\nDe lo que has aprendido deberías saber que la query de arriba busca un artículo en la tabla `blog` con el `id=1` y la columna `private=0`, que significa que puede ser vista por el público (0:false;1:true).\n\nImaginemos ahora que hay un artículo con `id=2` que es privado pero nosotros introducimos lo siguiente:\n\n`http://website.thm/blog?id=2;-- -`\n\nEsto se transformaría en la query:\n\n`SELECT * FROM blog WHERE id=2;-- - AND private=0 LIMIT 1;`\n\nEl punto y coma (`;`) hace que termine el statement actual y el `-- -` hace que lo que viene después sea un comentario, por lo que la query de arriba en realidad es:\n\n`SELECT * FROM blog WHERE id=2;`\n\nEsto devolverá el artículo con `id=2` sin importar si este es público o no.\n\nEsto fue un ejemplo de una vulnerabilidad SQLi conocida como In-Band SQL Injection. Hay tres tipos: In-Band, Blind y Out-of-Band, que veremos en adelante.",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "7. Blind SQLI - Boolean Based",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/11-sql-injection/7-blind-sqli-boolean-based/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/7. Blind SQLI - Boolean Based.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 3. Introduction to Web Hacking > 11. SQL Injection",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "Las SQLi basadas en booleanos se refiere a la respuesta que recibimos de nuestros intentos de inyección, que podrían volver como true/false, 1/0, o cualquier output binario. Parece que con una respuesta tan limitada no podemos hacer nada, sin embargo, podemos enumerar la base de datos entera.\n\n----------------------\n<h2>Práctica</h2>\nVamos a ver algunos ejemplos prácticos.\n\n--------------------------------------\n<h2>Nivel 3</h2>\n![[Pasted image 20251114114104.png]]\n\nEn este nivel nos encontramos con un enlace: `https://website.thm/checkuser?username=admin`. Al que responde una API con **{\"taken\":true}**. Esto es un comportamiento bastante habitual que lo que hace comprobar si un usuario ya está registrado. Si cambiamos el usuario a **admin123** veremos que se pone en false.\n\n![[Pasted image 20251114114130.png]]\n\nLa query que se procesa se ve así:\n\n`SELECT * FROM users WHERE username='%username%' LIMIT 1;\n\nLo único que podemos controlar es el input de username. Manteniendo **admin123**, podemos  empezar a añadir sentencias para hacer que la base de datos confirme cosas verdaderas.\n\nPrimero debemos de establecer el número de columnas:\n\n![[Pasted image 20251114120757.png]]\n\nAl acertar el número de columnas cambia de false a true. Al saber el número de columnas, podemos empezar a listar la base de datos. Solo que ahora debemos basarnos en las respuestas por lo que implementaremos `LIKE '%'`. Esto devolverá true o false y después vamos probando diferentes letras.\n\n![[Pasted image 20251114121036.png]]\n\n![[Pasted image 20251114121053.png]]\n\nAhora sabemos que la base de datos no empieza por \"a\", por lo que seguimos probando. Si vamos probando llegaremos a que `'s%'` devuelve `true`. Por lo que seguimos con `'sa%'`, `'sb%'`, etc. Si seguimos llegaremos a que la base de datos es `sqli_three`\n\nPor lo que ahora debemos hacer lo de las tablas de antes pero implementando `LIKE '%'` otra vez:\n\n`admin123' UNION SELECT 1,2,3 FROM information_schema.tables WHERE table_schema = 'sqli_three' and table_name like 'a%';--`\n\nSi seguimos descubriremos que la tabla es `users`. Hacemos lo mismo para las columnas:\n\n`admin123' UNION SELECT 1,2,3 FROM information_schema.COLUMNS WHERE TABLE_SCHEMA='sqli_three' and TABLE_NAME='users' and COLUMN_NAME like 'a%' and COLUMN_NAME !='id';`\n\nCon la única diferencia que para encontrar todas las columnas debemos añadir al condición de '`COLUMN_NAME != 'columna_encontada'`.\n\nSi seguimos descubriremos que hay una columna llamada username, de donde podemos confirmar si algún usuario 'admin' existe: `admin123' UNION SELECT 1,2,3 from users where username like 'a%`\n\nUna vez confirmado nos podemos centrar en la extracción de la contraseña:\n\n`admin123' UNION SELECT 1,2,3 from users where username='admin' and password like 'a%`\n\nDe esta manera descubriremos que la contraseña es `3845`.",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "8. Blind SQLI - Time Based",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/11-sql-injection/8-blind-sqli-time-based/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/8. Blind SQLI - Time Based.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 3. Introduction to Web Hacking > 11. SQL Injection",
-    "content": "",
-    "modified": "2025-11-14T02:08:45"
+    "content": "Una SQLi basada en tiempo es muy similar a la de arriba ya que se mandan las mismas peticiones solo que no hay indicador visual que indique si estamos o no en lo correcto, por lo que tenemos que basarnos en el tiempo que tarda en llegar la respuesta. Este retraso en la respuesta la introducimos con el comando SLEEP(), que sólo se ejecutará con un statement exitoso de UNION SELECT.\n\nPara investigar el número de columnas de una tabla usaríamos por ejemplo: \n\n`admin123' UNION SELECT SLEEP(5);-- -`\n\nSi no hay pausa en la respuesta sabemos que no es esa, por lo que añadimos otra columna:\n\n`admin123' UNION SELECT SLEEP(5),2;-- -`\n\nSi se produce una espera confirmamos que estamos en lo cierto. Ahora podemos repetir el proceso de la SQLi basada en booleanos añadiendo el método SLEEP().\n\n---------------------------\n<h2>Práctica</h2>\nVamos a ver un ejemplo práctico.\n\n-----------------------\n<h2>Nivel 4</h2>\nLlegamos a lo siguiente.\n![[Pasted image 20251114124556.png]]\n\nSi vamos probando todos los caracteres llegamos a:\n\n![[Pasted image 20251114124938.png]]\n\nObtenemos uno de los nombres de columna y hacemos lo mismo para 'password':\n\n![[Pasted image 20251114125126.png]]\n\nObtenemos el nombre de un usuario 'admin':\n\n![[Pasted image 20251114125306.png]]\n\nVamos a por la contraseña:\n\n![[Pasted image 20251114125613.png]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "5. SSRF Practical",
@@ -4752,6 +4776,566 @@
     "modified": "2025-11-14T02:08:45"
   },
   {
+    "title": "0. Net Sec Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/9-net-sec-challenge/0-net-sec-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/9. Net Sec Challenge/0. Net Sec Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 9. Net Sec Challenge",
+    "content": "[[THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Whois",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/3-whois/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/3. Whois.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 1. Passive Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Shodan.io",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/6-shodan-io/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/6. Shodan.io.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 1. Passive Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. nslookup and dig",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/4-nslookup-and-dig/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/4. nslookup and dig.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 1. Passive Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. DNSDumpster",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/5-dnsdumpster/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/5. DNSDumpster.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 1. Passive Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Passive Reconnaissance",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/0-passive-reconnaissance/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/0. Passive Reconnaissance.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 1. Passive Reconnaissance",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/1. Introduction]]\n[[2. Passive Versus Active Recon]]\n[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/3. Whois]]\n[[4. nslookup and dig]]\n[[5. DNSDumpster]]\n[[6. Shodan.io]]\n[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/7. Summary]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Passive Versus Active Recon",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/2-passive-versus-active-recon/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/2. Passive Versus Active Recon.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 1. Passive Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/7-summary/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/7. Summary.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 1. Passive Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 1. Passive Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Ping",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/3-ping/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/3. Ping.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Web Browser",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/2-web-browser/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/2. Web Browser.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Active Reconnaissance",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/0-active-reconnaissance/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/0. Active Reconnaissance.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/1. Introduction]]\n[[2. Web Browser]]\n[[3. Ping]]\n[[4. Traceroute]]\n[[5. Telnet]]\n[[6. Netcat]]\n[[7. Putting It All Together]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. Traceroute",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/4-traceroute/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/4. Traceroute.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Telnet",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/5-telnet/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/5. Telnet.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Putting It All Together",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/7-putting-it-all-together/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/7. Putting It All Together.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Netcat",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/6-netcat/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/6. Netcat.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Nmap Post Port Scans",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/0-nmap-post-port-scans/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/0. Nmap Post Port Scans.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 6. Nmap Post Port Scans",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/1. Introduction]]\n[[2. Service Detection]]\n[[3. OS Detection and Traceroute]]\n[[4. Nmap Scripting Engine (NSE)]]\n[[5. Saving the Output]]\n[[6. Summary]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. Nmap Scripting Engine (NSE)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/4-nmap-scripting-engine-nse/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/4. Nmap Scripting Engine (NSE).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 6. Nmap Post Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Service Detection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/2-service-detection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/2. Service Detection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 6. Nmap Post Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. OS Detection and Traceroute",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/3-os-detection-and-traceroute/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/3. OS Detection and Traceroute.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 6. Nmap Post Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Saving the Output",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/5-saving-the-output/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/5. Saving the Output.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 6. Nmap Post Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/6-summary/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/6. Summary.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 6. Nmap Post Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 6. Nmap Post Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Man-in-the-Middle (MITM) Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/3-man-in-the-middle-mitm-attack/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/3. Man-in-the-Middle (MITM) Attack.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 8. Protocols and Servers 2",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. Transport Layer Security (TLS)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/4-transport-layer-security-tls/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/4. Transport Layer Security (TLS).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 8. Protocols and Servers 2",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Password Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/6-password-attack/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/6. Password Attack.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 8. Protocols and Servers 2",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Sniffing Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/2-sniffing-attack/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/2. Sniffing Attack.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 8. Protocols and Servers 2",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Protocols and Servers 2",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/0-protocols-and-servers-2/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/0. Protocols and Servers 2.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 8. Protocols and Servers 2",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/1. Introduction]]\n[[2. Sniffing Attack]]\n[[3. Man-in-the-Middle (MITM) Attack]]\n[[4. Transport Layer Security (TLS)]]\n[[5. Secure Shell (SSH)]]\n[[6. Password Attack]]\n[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/7. Summary]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Secure Shell (SSH)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/5-secure-shell-ssh/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/5. Secure Shell (SSH).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 8. Protocols and Servers 2",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/7-summary/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/7. Summary.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 8. Protocols and Servers 2",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/8. Protocols and Servers 2/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 8. Protocols and Servers 2",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Nmap Host Discovery Using TCP and UDP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/7-nmap-host-discovery-using-tcp-and-udp/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/7. Nmap Host Discovery Using TCP and UDP.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Subnetworks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/2-subnetworks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/2. Subnetworks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "9. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/9-summary/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/9. Summary.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "8. Using Reverse-DNS Lookup",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/8-using-reverse-dns-lookup/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/8. Using Reverse-DNS Lookup.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Enumerating Targets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/3-enumerating-targets/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/3. Enumerating Targets.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Nmap Host Discovery Using ICMP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/6-nmap-host-discovery-using-icmp/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/6. Nmap Host Discovery Using ICMP.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Nmap Host Discovery Using ARP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/5-nmap-host-discovery-using-arp/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/5. Nmap Host Discovery Using ARP.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Nmao Live Host Discovery",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/0-nmao-live-host-discovery/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/0. Nmao Live Host Discovery.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/1. Introduction]]\n[[2. Subnetworks]]\n[[3. Enumerating Targets]]\n[[4. Discovering Live Hosts]]\n[[5. Nmap Host Discovery Using ARP]]\n[[6. Nmap Host Discovery Using ICMP]]\n[[7. Nmap Host Discovery Using TCP and UDP]]\n[[8. Using Reverse-DNS Lookup]]\n[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/9. Summary]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. Discovering Live Hosts",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/4-discovering-live-hosts/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/4. Discovering Live Hosts.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "8. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/8-summary/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/8. Summary.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Internet Message Access Protocol (IMAP)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/7-internet-message-access-protocol-imap/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/7. Internet Message Access Protocol (IMAP).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. File Transfer Protocol (FTP)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/4-file-transfer-protocol-ftp/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/4. File Transfer Protocol (FTP).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Simple Mail Transfer Protocol (SMTP)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/5-simple-mail-transfer-protocol-smtp/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/5. Simple Mail Transfer Protocol (SMTP).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Telnet",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/2-telnet/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/2. Telnet.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Protocols and Servers",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/0-protocols-and-servers/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/0. Protocols and Servers.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/1. Introduction]]\n[[2. Telnet]]\n[[3. Hypertext Transfer Protocol (HTTP)]]\n[[4. File Transfer Protocol (FTP)]]\n[[5. Simple Mail Transfer Protocol (SMTP)]]\n[[6. Post Office Protocol 3 (POP3)]]\n[[7. Internet Message Access Protocol (IMAP)]]\n[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/8. Summary]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Post Office Protocol 3 (POP3)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/6-post-office-protocol-3-pop3/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/6. Post Office Protocol 3 (POP3).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Hypertext Transfer Protocol (HTTP)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/3-hypertext-transfer-protocol-http/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/3. Hypertext Transfer Protocol (HTTP).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 7. Protocols and Servers",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "8. Getting More Details",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/8-getting-more-details/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/8. Getting More Details.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Spoofing and Decoys",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/5-spoofing-and-decoys/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/5. Spoofing and Decoys.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "9. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/9-summary/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/9. Summary.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. TCP Mainmon Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/3-tcp-mainmon-scan/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/3. TCP Mainmon Scan.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. TCP ACK, Window, and Custom Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/4-tcp-ack-window-and-custom-scan/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/4. TCP ACK, Window, and Custom Scan.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Fragmented Packets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/6-fragmented-packets/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/6. Fragmented Packets.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Nmap Advanced Port Scans",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/0-nmap-advanced-port-scans/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/0. Nmap Advanced Port Scans.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/1. Introduction]]\n[[2. TCP Null Scan, FIN Scan, and Xmas Scan]]\n[[3. TCP Mainmon Scan]]\n[[4. TCP ACK, Window, and Custom Scan]]\n[[5. Spoofing and Decoys]]\n[[6. Fragmented Packets]]\n[[7. Idle-Zombie Scan]]\n[[8. Getting More Details]]\n[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/9. Summary]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. TCP Null Scan, FIN Scan, and Xmas Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/2-tcp-null-scan-fin-scan-and-xmas-scan/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/2. TCP Null Scan, FIN Scan, and Xmas Scan.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Idle-Zombie Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/7-idle-zombie-scan/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/7. Idle-Zombie Scan.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Nmap Advanced Port Scans/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 5. Nmap Advanced Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. TCP SYN Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/5-tcp-syn-scan/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/5. TCP SYN Scan.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "8. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/8-summary/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/8. Summary.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. TCP Flags",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/3-tcp-flags/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/3. TCP Flags.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Fine-Tuning Scope and Performance",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/7-fine-tuning-scope-and-performance/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/7. Fine-Tuning Scope and Performance.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. TCP Connect Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/4-tcp-connect-scan/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/4. TCP Connect Scan.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Nmap Basic Port Scans",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/0-nmap-basic-port-scans/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/0. Nmap Basic Port Scans.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/1. Introduction]]\n[[2. TCP and UDP Ports]]\n[[3. TCP Flags]]\n[[4. TCP Connect Scan]]\n[[5. TCP SYN Scan]]\n[[6. UDP Scan]]\n[[7. Fine-Tuning Scope and Performance]]\n[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/8. Summary]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. UDP Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/6-udp-scan/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/6. UDP Scan.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. TCP and UDP Ports",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/2-tcp-and-udp-ports/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/2. TCP and UDP Ports.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/4. Nmap Basic Port Scans/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 4. Nmap Basic Port Scans",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
     "title": "0. Principles of Security",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/2-principles-of-security/0-principles-of-security/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/2. Principles of Security/0. Principles of Security.md",
@@ -4830,6 +5414,294 @@
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 2. Introduction to Pentesting > 1. Pentesting Fundamentals",
     "content": "Antes de enseñar cosas técnicas debemos entender cuáles son las responsabilidades y procesos seguidos de un pentester en su realización de estos tests de penetración.\n\nLa importancia y relevancia de la ciberseguridad están creciendo a pasos agigantados. Las noticias sobre brechas e incidentes llenan las pantallas. La ciberseguridad es relevante para todas las personas en el mundo moderno.\n\nUn test de penetración o pentest es un intento ético de comprobar y analizar la seguridad y resiliencia de un sistema o red y de sus métodos de defensa para proteger la información que alberga.\n\nUn pentest implica usar las mismas herramientas, técnicas y metodologías que un agente malintencionado usaría. \n\nDe acuerdo a varias fuentes, hay alrededor de 2200 ciberataques al día, uno cada 39 segundos.",
     "modified": "2025-11-14T02:08:45"
+  },
+  {
+    "title": "0. Burp Suite - Intruder",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/0-burp-suite-intruder/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/0. Burp Suite - Intruder.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "[[1. What is Intruder]]\n[[2. Positions]]\n[[3. Payloads]]\n[[4. Instroduction to Attack Types]]\n[[5. Sniper]]\n[[6. Battering Ram]]\n[[7. Pitchfork]]\n[[8. Cluster Bomb]]\n[[9. Practical Example]]\n[[10. Practical Challenge]]\n[[11. Extra-mile Challenge]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "10. Practical Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/10-practical-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/10. Practical Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "11. Extra-mile Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/11-extra-mile-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/11. Extra-mile Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Pitchfork",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/7-pitchfork/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/7. Pitchfork.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. What is Intruder",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/1-what-is-intruder/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/1. What is Intruder.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "Intruder es una herramienta incorporada en Burp Suite de fuzzeo que permite la modificación automatizada de peticiones y el testeo repetitivo de estas. Usando una petición capturada, el Intruder puede mandar múltiples peticiones con valores ligeramente alterados. Sirve para varios propósitos, como bruteforcear formularios de login o realizar ataques de fuzzeo en subdirectorios, endpoints o hosts virtuales.\n\nAunque puede ser usado, Burp de edición de Comunidad tiene limitada la frecuencia de peticiones por lo que no es la mejor herramienta para este propósito. Sin embargo, sigue siendo una herramienta muy útil.\n\nExploremos la interfaz del Intruder:\n\n![[Pasted image 20251114215310.png]]\n\nLa vista inicial presenta una interfaz simple donde podemos seleccionar nuestro objetivo. Este campo se rellenará automáticamente si redireccionamos una petición desde el proxy con `Ctrl + I` o click derecho y `Send to Intruder`.\n\nHay cuatro subpestañas en el Intruder:\n\n- **Positions:** Esta pestaña nos permite seleccionar un tipo de ataque y configurar dónde queremos insertar nuestro payload en una plantilla de peticiones.\n- **Payload:** Aquí podemos seleccionar valores para insertarlos en las posiciones definidas en la pestaña **Positions**. Tenemos varias opciones de payload, como cargar ítems de una lista. La forma en la que se insertan los payloads depende del tipo de ataque seleccionado. También nos permite modificar el comportamiento del intruder respecto a los payloads, como definir reglas de preprocesado para cada payload (agregar prefijos o sufijos, realizar match&replace o saltar payloads por definición RegEx).\n- **Resource Pool:** Esta pestaña no es particularmente útil en la edición de Comunidad. Permite la asignación de recursos entre diversas tareas automatizadas. Sin acceso a estas tareas automatizadas pierde su importancia.\n- **Settings:** Esta pestaña nos permite configurar comportamiento de ataque. Lidia con cómo Burp maneja los resultados y el ataque en sí mismo. Por ejemplo, podemos destacar peticiones que contengan texto específico o definir una respuesta de Burp para redireccionarlas (3xx).",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Payloads",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/3-payloads/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/3. Payloads.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "9. Practical Example",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/9-practical-example/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/9. Practical Example.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "8. Cluster Bomb",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/8-cluster-bomb/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/8. Cluster Bomb.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Sniper",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/5-sniper/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/5. Sniper.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Positions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/2-positions/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/2. Positions.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Battering Ram",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/6-battering-ram/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/6. Battering Ram.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. Instroduction to Attack Types",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/4-instroduction-to-attack-types/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/4. Instroduction to Attack Types.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 3. Burp Suite - Intruder",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Brup Suite - Other Modules",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/0-brup-suite-other-modules/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/0. Brup Suite - Other Modules.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "[[1. Decoder - Overview]]\n[[2. Decoder - Encoding-Decoding]]\n[[3. Decoder - Hashing]]\n[[4. Comparer - Overview]]\n[[5. Comparer - Example]]\n[[6. Sequencer - Overview]]\n[[7. Sequencer - Live Capture]]\n[[8. Sequencer - Analysis]]\n[[9. Organizer - Overview]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. Decoder - Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/1-decoder-overview/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/1. Decoder - Overview.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "8. Sequencer - Analysis",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/8-sequencer-analysis/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/8. Sequencer - Analysis.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Decoder - Hashing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/3-decoder-hashing/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/3. Decoder - Hashing.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. Comparer - Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/4-comparer-overview/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/4. Comparer - Overview.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Sequencer - Live Capture",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/7-sequencer-live-capture/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/7. Sequencer - Live Capture.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Sequencer - Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/6-sequencer-overview/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/6. Sequencer - Overview.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Decoder - Encoding-Decoding",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/2-decoder-encoding-decoding/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/2. Decoder - Encoding-Decoding.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "9. Organizer - Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/9-organizer-overview/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/9. Organizer - Overview.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Comparer - Example",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/5-comparer-example/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/5. Comparer - Example.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 4. Burp Suite - Other Modules",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Burp Suite - Extensions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/0-burp-suite-extensions/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/0. Burp Suite - Extensions.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 5. Burp Suite - Extensions",
+    "content": "[[1. The Extensions Interface]]\n[[2. Te BApp Store]]\n[[3. Jython]]\n[[4. The Burp Suite API]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Jython",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/3-jython/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/3. Jython.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 5. Burp Suite - Extensions",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. The Burp Suite API",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/4-the-burp-suite-api/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/4. The Burp Suite API.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 5. Burp Suite - Extensions",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. The Extensions Interface",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/1-the-extensions-interface/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/1. The Extensions Interface.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 5. Burp Suite - Extensions",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Te BApp Store",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/2-te-bapp-store/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/2. Te BApp Store.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 5. Burp Suite - Extensions",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Burp Suite - The Basics",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/1-brup-suite-the-basics/0-burp-suite-the-basics/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/1. Brup Suite - The Basics/0. Burp Suite - The Basics.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 1. Brup Suite - The Basics",
+    "content": "[[THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "5. Practical Example",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/5-practical-example/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/5. Practical Example.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
+    "content": "El repetidor está particularmente bien equipado para tareas repetitivas de peticiones similares, típicamente con modificaciones menores. Esto es particularmente útil para actividades como el testeo manual de SQLi, intentar sobrepasar los filtros del firewall o ajustar parámetros en un formulario.\n\nComencemos por una actividad sencilla, manipular los headers que una aplicación manda a un servidor. Abre Burp Suite, captura una petición y añádele un header nuevo llamado `FlagAuthorised` y configúrala en `True`.\n\n------------------------\n<h2>Challenge</h2>\n1. Abrimos Burp Suite.\n   ![[Pasted image 20251114202144.png]]\n2. Nos dirigimos a proxy, abrimos el navegador, le damos a interceptar y vamos a la página dada.\n   ![[Pasted image 20251114202312.png]]\n3. La mandamos al repetidor.\n   ![[Pasted image 20251114202343.png]]\n4. Añadimos el header que nos piden.\n   ![[Pasted image 20251114202536.png]]\n5. Vemos la petición y le damos a mandar.\n   ![[Pasted image 20251114202615.png]]\n6. Observamos que la respuesta contiene la flag.\n   ![[Pasted image 20251114202642.png]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "2. Basic Usage",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/2-basic-usage/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/2. Basic Usage.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
+    "content": "Ahora que sabemos cómo se ve la interfaz, ¿cómo la usamos eficientemente? Aunque la composición manual de peticiones es una opción, es más común capturar una petición y modificarla.\n\nUna vez que se ha capturado la petición deseada la podemos mandar al repetidor haciendo `Ctrl + R` o click derecho sobre ella y `Redirigir al Repetidor`. Volviendo al repetidor, podemos ver que ahora la petición se puede ver en él.\n\n![[Pasted image 20251114163722.png]]\n\nAmbas secciones, Target e Inspector muestran ahora información relevante, aunque carecemos de respuesta. Para mostrarla le damos al botón de mandar, **Send**.\n\n![[Pasted image 20251114164058.png]]\n\nSi queremos modificar cualquier aspecto de la petición, sólo tenemos que escribir en ella y darle a mandar de nuevo. El cambio en la respuesta se verá reflejado, por ejemplo si en esta cambiamos close por open:\n\n![[Pasted image 20251114164306.png]]\n\nAdemás, podemos usar los botones de historial situados a la derecha del botón de mandar para navegar por el historial de modificaciones, permitiéndonos ir y volver entre unas y otras.",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "1. What is Repeater",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/1-what-is-repeater/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/1. What is Repeater.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
+    "content": "Antes de usar el repetidor de Burp Suite, familiaricémonos con su propósito y funcionalidades.\n\nEn esencia, el repetidor de Burp Suite nos permite modificar y remandar peticiones interceptadas a un objetivo de nuestra elección. Nos permite tomar peticiones capturadas en el proxy de Burp Suite y manipularlas, mandarlas repetidamente, etc. De forma alternativa, podemos crear peticiones manualmente desde 0, similar a usar una herramienta de línea de comandos como cURL.\n\nLa habilidad de editar y remandar peticiones varias veces hace que el repetidor sea de valor incalculable para la exploración y testeo de endpoints. Ofrece una interfaz gráfica de usuario para montar peticiones de payloads y ofrece varias vistas de la respuesta, incluyendo un motor de renderizado para una representación gráfica.\n\nLa interfaz del repetidor consiste en seis secciones principales, como se ve en la imagen de abajo.\n\n![[Pasted image 20251114154529.png]]\n\n1. **Lista de Peticiones:** Situado en la parte superior izquierda de la pestaña, muestra la lista de peticiones del repetidor. Se pueden gestionar varias peticiones a la vez y cada nueva petición que se mande al repetidor aparecerá aquí.\n2. **Controles de Petición:** Posicionado directamente debajo de la lista de peticiones, estos controles nos permiten mandar peticiones, cancelar peticiones pendientes y navegar por el historial de peticiones.\n3. **Vista de Peticiones y Respuestas:** Ocupando la mayoría de la interfaz, esta sección muestra las peticiones y respuestas detalladamente. Podemos editar las peticiones en ella y luego mandarlas mientras que la correspondiente respuesta se mostrará en su respectiva parte.\n4. **Opciones de Visualización:** Situado en la parte superior derecha, estas opciones nos permiten personalizar la visualización del apartado anterior.\n5. **Inspector:** Situado en la parte derecha, el inspector nos permite analizar y modificar peticiones de una manera más intuitiva que usando el visor raw. Exploraremos esta funcionalidad más adelante.\n6. **Target:** Situado por encima del inspector, el campo target especifica la IP o dominio al que las peticiones son mandadas. Cuando las peticiones se mandan al repetidor desde otros componentes de Burp Suite este campo se rellena automáticamente.",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "0. Burp Suite - Repeater",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/0-burp-suite-repeater/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/0. Burp Suite - Repeater.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
+    "content": "[[1. What is Repeater]]\n[[2. Basic Usage]]\n[[3. Message Analysis Toolbar]]\n[[4. Inspector]]\n[[5. Practical Example]]\n[[6. Challenge]]\n[[7. Extra-mile Challenge]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "6. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/6-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/6. Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
+    "content": "En el reto anterior hemos demostrado nuestro manejo del repetidor añadiendo un header a la petición. Ahora es momento del reto de verdad.\n\n------------------------------\n1. Navegamos a la página dada.\n   ![[Pasted image 20251114205004.png]]\n2. Observamos que los links nos redirigen a endpoints numéricos.\n   ![[Pasted image 20251114205035.png]]\n3. Vemos que 5 es el último endpoint válido, más altos dan error 404 not found.\n   ![[Pasted image 20251114205114.png]]\n4. El objetivo es conseguir un error 500 internal server error.\n\t1. Probamos con un número muy grande.\n\t   ![[Pasted image 20251114205313.png]]\n\t   \n\t   Parece que no acaba en error 500.\n\t2. Probaremos con un número más pequeño.\n\t   ![[Pasted image 20251114205405.png]]\n\t   \n\t   Parece ser que tampoco resulta en error 500.\n\t3. Probaremos con una letra.\n\t   ![[Pasted image 20251114205519.png]]\n\t4. Tampoco pasa nada así que probaremos con un carácter especial.\n\t   ![[Pasted image 20251114205619.png]]\n\t5. Tampoco funciona, puede que esté validando números enteros, probemos a meter un número negativo.\n\t   ![[Pasted image 20251114205722.png]]\n\t   ¡BINGO!\n5. Obtenemos la flag.\n   ![[Pasted image 20251114205823.png]]",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "4. Inspector",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/4-inspector/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/4. Inspector.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
+    "content": "El Inspector es una funcionalidad complementaria para la vista de peticiones y respuestas. También se usa para obtener un desglose organizado visualmente de las peticiones y respuestas, así como para experimentar para ver cómo los cambios hechos usando el Inspector de alto nivel afectan a las respectivas versiones raw.\n\nEl inspector puede utilizarse en los módulos proxy y repetidor. En ambos está situado a la derecha de la ventana, presentando una lista de componentes de petición y respuesta.\n\n![[Pasted image 20251114181114.png]]\n\nEntre estos componentes, las secciones pertenecientes a la petición pueden ser modificadas activando la adición, edición y eliminación de ítems. Por ejemplo en la sección de **Request Attributes**, podemos alterar elementos relacionados con la localización, método y protocolo de la petición. Esto incluye modificar el recurso a recuperar, cambiar el método de `GET` a otro o cambiar entre protocolos de HTTP/1 a HTTP/2, por ejemplo.\n\n![[Pasted image 20251114181519.png]]\n\nOtras secciones disponibles para ver o editar incluyen:\n\n1. **Request Query Parameters:** Estos se refieren a la información mandada a través de la URL en forma de parámetros, como `https://admin.tryhackme.com/?redirect=false`. El parámetro query es **redirect**.\n2. **Request Body Parameters:** Similar a los parámetros query, pero específico de las peticiones POST. Cualquier información mandada como parte de una petición POST será mostrada en esta sección, permitiéndonos modificar los parámetros antes de mandarlos.\n3. **Request Cookies:** Esta sección contiene una lista modificable de cookies mandadas con cada petición.\n4. **Request Headers:** Nos permite ver, acceder y modificar (incluyendo añadir o eliminar) cualquier header mandado con las peticiones. Editar estos headers puede ser valioso cuando examinamos cómo responde in servidor web a headers inesperados.\n5. **Response Headers:** Esta sección muestra los headers devueltos por el servidor en respuesta a nuestra petición. No puede ser modificado, ya que no tenemos control sobre los headers mandados por el servidor.\n\nMientras que la representación textual de estos componentes puede encontrarse en las vistas de petición y respuesta, el formato tabular del Inspector nos ofrece una manera conveniente de visualizar e interactuar con ellos.",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "3. Message Analysis Toolbar",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/3-message-analysis-toolbar/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/3. Message Analysis Toolbar.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
+    "content": "El repetidor nos ofrece varias opciones de presentación de petición y respuesta, desde hexadecimal a página renderizada.\n\nPara explorar estas opciones, podemos ir a la sección situada encima de la caja de respuesta, donde podemos ver los siguientes botones:\n\n![[Pasted image 20251114165239.png]]\n\nSe nos presentan 4 opciones:\n\n1. **Pretty:** Esta es la opción por defecto, que toma la respuesta raw y le aplica mejoras leves de formato para mejorar su legibilidad.\n2. **Raw:** Esta opción muestra la respuesta tal cual es recibida desde el servidor.\n3. **Hex:** Al seleccionar esta opción, podemos examinar la respuesta en un nivel de byte que es particularmente útil al lidiar con archivos binarios.\n4. **Render:** La opción de renderizado nos permite visualizar la página como aparecería en un navegador web.\n\nJunto a estos botones, en la parte derecha, podemos encontrar la opción de **Mostrar los Caracteres no Imprimibles**, en el botón `\\n`. Esta funcionalidad activa la vista de caracteres que puede que no sean visibles con las opciones **Pretty** o **Raw**. Por ejemplo, cada línea en la respuesta normalmente acaba con los caracteres `\\r\\n`. Estos caracteres juegan un papel importante en la interpretación de headers HTTP.\n\n>[!TIP] Aunque no es obligatorio para todas las tareas, esta opción puede ser muy útil en ciertas situaciones.",
+    "modified": "2025-11-15T00:54:35"
+  },
+  {
+    "title": "7. Extra-mile Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/7-extra-mile-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/7. Extra-mile Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
+    "content": "Esta tarea está diseñada para poner a prueba tus capacidades en un escenario más desafiante y realista utilizando Burp Suite. El objetivo del reto es identificar y explotar una vulnerabilidad SQLi de UNION presente en el parámetro ID del endpoint `/about/ID`. Explotando dicha vulnerabilidad debes conseguir las notas sobre el CEO guardadas en la base de datos.\n\n¡A por ello!\n\n---------------------------------------\n<h2>Challenge</h2>\n1. Vamos a la página dada.\n   ![[Pasted image 20251114211231.png]]\n2. Seleccionamos una persona.\n   ![[Pasted image 20251114211256.png]]\n3. Hemos llegado al endpoint del que se nos hablaba al principio por lo que vamos a activar la intercepción de Burp Suite y a ver qué obtenemos.\n   ![[Pasted image 20251114211353.png]]\n4. Una vez aquí, ya que sabemos que se trata de una vulnerabilidad SQLi de tipo UNION vamos al lío. Primero buscamos romper la query, con algo tan simple como una comilla simple `'`.\n   ![[Pasted image 20251114211729.png]]\n5. Si investigamos la respuesta del servidor observamos algo muy interesante. Nos están dando la query que hemos intentado ejecutar.\n   ![[Pasted image 20251114211817.png]]\n   De aquí extraemos información muy valiosa:\n   - La tabla que contiene los datos se llama `people`.\n   - La query solicita cinco campos:\n\t   - `firstName` \n\t   - `lastName`\n\t   - `pfpLink`\n\t   - `role`\n\t   - `bio`\n   Es bastante fácil interpretar dónde se coloca cada uno lo que nos será muy útil a la hora de modificar los statements después para obtener datos.\n6. Como sabemos que el ID=0 no existe vamos a usarlo para generar un error.\n   ![[Pasted image 20251114212303.png]]\n7. Como se puede ver, eran correcto el número de columnas. Ahora vamos a usar nuestros conocimientos en SQLi para obtener los nombres de todas las columnas. Con la siguiente query: `0 UNION SELECT group_concay(column_name),null,null,null,null FROM information_schema.columns WHERE table_name='people';-- -`\n   ![[Pasted image 20251114212641.png]]\n8. Ahí podemos ver que hay una columna llamada `notes`. Vamos a extraer su contenido. Para ello utilizaremos la query: `0 UNION ALL SELECT notes,null,null,null,null FROM people WHERE id='1';-- -`\n   ![[Pasted image 20251114212912.png]]\n   Así conseguimos la flag.",
+    "modified": "2025-11-15T00:54:35"
   },
   {
     "title": "0. Defensive Security Intro",

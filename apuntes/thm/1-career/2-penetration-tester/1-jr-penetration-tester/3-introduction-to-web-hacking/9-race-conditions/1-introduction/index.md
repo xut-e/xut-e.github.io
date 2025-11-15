@@ -20,4 +20,4 @@ Después de completar esta habitación, aprenderás lo siguiente:
 <h2>Pre-requisitos</h2>
 - [3. How the Web Works](/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/3-how-the-web-works/)
 - [0. Packets and Frames](/apuntes/thm/0-pre-career/1-pre-security/2-network-fundamentals/4-packets-and-frames/0-packets-and-frames/)
-- [0. Burp Suite - The Basics](/apuntes/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/0-burp-suite-the-basics/)
+- [0. Burp Suite - The Basics](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/1-brup-suite-the-basics/0-burp-suite-the-basics/)

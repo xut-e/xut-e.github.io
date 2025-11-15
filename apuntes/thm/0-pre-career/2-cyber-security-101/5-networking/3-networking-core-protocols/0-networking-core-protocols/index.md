@@ -5,7 +5,7 @@ title: "0. Networking Core Protocols"
 
 **THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/1. Introduction**
 [2. DNS- Remembering Addresses](/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/3-networking-core-protocols/2-dns-remembering-addresses/)
-[3. WHOIS](/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/3-networking-core-protocols/3-whois/)
+**THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/3. WHOIS**
 [4. HTTP(S) - Accessing the Web](/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/3-networking-core-protocols/4-http-s-accessing-the-web/)
 [5. FTP - Transferring Files](/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/3-networking-core-protocols/5-ftp-transferring-files/)
 [6. SMTP - Sending Email](/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/3-networking-core-protocols/6-smtp-sending-email/)

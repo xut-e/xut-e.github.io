@@ -1,42 +1,42 @@
 [
   {
-    "title": "0. Pre Career",
-    "path": "/apuntes/thm/0-pre-career/0-pre-career/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/0. Pre Career.md",
-    "breadcrumb": "THM > 0. Pre Career",
-    "content": "[[1. Pre Security]]\n[[2. Cyber Security 101]]",
-    "modified": "2025-11-14T02:08:45"
+    "title": "8. Web Hacking",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/8-web-hacking/8-web-hacking/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/8. Web Hacking.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 8. Web Hacking",
+    "content": "1. [[0. Web Application Basics]]\n2. [[0. JavaScript Essentials]]\n3. [[0. SQL Fundamentals]]\n4. [[THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n5. [[0. OWASP Top 10 - 2021]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
-    "title": "0. Maquinas",
-    "path": "/apuntes/thm/maquinas/0-maquinas/",
-    "src": "content/Ciberseguridad/THM/Maquinas/0. Maquinas.md",
-    "breadcrumb": "THM > Maquinas",
-    "content": "- [[1. Easy]]\n- [[2. Medium]]\n- [[3. Hard]]\n- [[4. Insane]]",
-    "modified": "2025-11-14T02:08:45"
+    "title": "0. Networking Core Protocols",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/3-networking-core-protocols/0-networking-core-protocols/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/0. Networking Core Protocols.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 5. Networking > 3. Networking Core Protocols",
+    "content": "[[THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/1. Introduction]]\n[[2. DNS- Remembering Addresses]]\n[[THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/3. WHOIS]]\n[[4. HTTP(S) - Accessing the Web]]\n[[5. FTP - Transferring Files]]\n[[6. SMTP - Sending Email]]\n[[7. POP3 - Receiving Email]]\n[[8. IMAP - Synchronizing Email]]\n[[9. Conclusion]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
-    "title": "1. Career",
-    "path": "/apuntes/thm/1-career/1-career/",
-    "src": "content/Ciberseguridad/THM/1. Career/1. Career.md",
-    "breadcrumb": "THM > 1. Career",
-    "content": "[[1. Security Analyst]]\n[[2. Penetration Tester]]\n[[3. Security Engineer]]",
-    "modified": "2025-11-14T02:08:45"
+    "title": "2. Medium",
+    "path": "/apuntes/thm/maquinas/2-medium/2-medium/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium",
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
-    "title": "1. Pre Security",
-    "path": "/apuntes/thm/0-pre-career/1-pre-security/1-pre-security/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Pre Security.md",
-    "breadcrumb": "THM > 0. Pre Career > 1. Pre Security",
-    "content": "[[1. Introduction to cybersecurity]]\n[[2. Network Fundamentals]]\n[[3. How the Web Works]]\n[[4. Linux Fundamentals]]\n[[5. Windows Fundamentals]]",
-    "modified": "2025-11-14T02:08:45"
+    "title": "0. Net Sec Challenge",
+    "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/0-net-sec-challenge/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 2. Net Sec Challenge",
+    "content": "[[THM/Maquinas/2. Medium/2. Net Sec Challenge/1. Introduction]]\n[[2. Challenge Questions]]",
+    "modified": "2025-11-15T00:54:35"
   },
   {
-    "title": "2. Cyber Security 101",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-cyber-security-101/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md",
-    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101",
-    "content": "[[1. Start Your Cyber Security Journey]]\n[[2. Linux Fundamentals]]\n[[3. Windows and AD Fundamentals]]\n[[4. Command Line]]\n[[5. Networking]]\n[[6. Cryptography]]\n[[7. Exploitation Basics]]\n[[8. Web Hacking]]\n[[9. Offensive Security Tooling]]\n[[10. Defensive Security]]\n[[11. Security Solutions]]\n[[12. Defensive Security Tooling]]\n[[13. Build Your Cyber Security Carreer]]",
-    "modified": "2025-11-14T02:08:45"
+    "title": "2. Challenge Questions",
+    "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/2-challenge-questions/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/2. Challenge Questions.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 2. Net Sec Challenge",
+    "content": "",
+    "modified": "2025-11-15T00:54:35"
   }
 ]

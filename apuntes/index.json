@@ -1976,6 +1976,18 @@
     "path": "/apuntes/thm/maquinas/2-medium/1-mr-robot/0-mr-robot-ctf/"
   },
   {
+    "title": "0. Net Sec Challenge",
+    "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/0-net-sec-challenge/"
+  },
+  {
+    "title": "2. Challenge Questions",
+    "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/2-challenge-questions/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/1-introduction/"
+  },
+  {
     "title": "3. Security Engineer",
     "path": "/apuntes/thm/1-career/3-security-engineer/3-security-engineer/"
   },
@@ -2376,6 +2388,286 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/3-introduction-to-web-hacking/5-idor/6-where-are-idors-located/"
   },
   {
+    "title": "0. Net Sec Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/9-net-sec-challenge/0-net-sec-challenge/"
+  },
+  {
+    "title": "3. Whois",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/3-whois/"
+  },
+  {
+    "title": "6. Shodan.io",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/6-shodan-io/"
+  },
+  {
+    "title": "4. nslookup and dig",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/4-nslookup-and-dig/"
+  },
+  {
+    "title": "5. DNSDumpster",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/5-dnsdumpster/"
+  },
+  {
+    "title": "0. Passive Reconnaissance",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/0-passive-reconnaissance/"
+  },
+  {
+    "title": "2. Passive Versus Active Recon",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/2-passive-versus-active-recon/"
+  },
+  {
+    "title": "7. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/7-summary/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/1-introduction/"
+  },
+  {
+    "title": "3. Ping",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/3-ping/"
+  },
+  {
+    "title": "2. Web Browser",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/2-web-browser/"
+  },
+  {
+    "title": "0. Active Reconnaissance",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/0-active-reconnaissance/"
+  },
+  {
+    "title": "4. Traceroute",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/4-traceroute/"
+  },
+  {
+    "title": "5. Telnet",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/5-telnet/"
+  },
+  {
+    "title": "7. Putting It All Together",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/7-putting-it-all-together/"
+  },
+  {
+    "title": "6. Netcat",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/6-netcat/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/1-introduction/"
+  },
+  {
+    "title": "0. Nmap Post Port Scans",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/0-nmap-post-port-scans/"
+  },
+  {
+    "title": "4. Nmap Scripting Engine (NSE)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/4-nmap-scripting-engine-nse/"
+  },
+  {
+    "title": "2. Service Detection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/2-service-detection/"
+  },
+  {
+    "title": "3. OS Detection and Traceroute",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/3-os-detection-and-traceroute/"
+  },
+  {
+    "title": "5. Saving the Output",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/5-saving-the-output/"
+  },
+  {
+    "title": "6. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/6-summary/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/1-introduction/"
+  },
+  {
+    "title": "3. Man-in-the-Middle (MITM) Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/3-man-in-the-middle-mitm-attack/"
+  },
+  {
+    "title": "4. Transport Layer Security (TLS)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/4-transport-layer-security-tls/"
+  },
+  {
+    "title": "6. Password Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/6-password-attack/"
+  },
+  {
+    "title": "2. Sniffing Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/2-sniffing-attack/"
+  },
+  {
+    "title": "0. Protocols and Servers 2",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/0-protocols-and-servers-2/"
+  },
+  {
+    "title": "5. Secure Shell (SSH)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/5-secure-shell-ssh/"
+  },
+  {
+    "title": "7. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/7-summary/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/8-protocols-and-servers-2/1-introduction/"
+  },
+  {
+    "title": "7. Nmap Host Discovery Using TCP and UDP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/7-nmap-host-discovery-using-tcp-and-udp/"
+  },
+  {
+    "title": "2. Subnetworks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/2-subnetworks/"
+  },
+  {
+    "title": "9. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/9-summary/"
+  },
+  {
+    "title": "8. Using Reverse-DNS Lookup",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/8-using-reverse-dns-lookup/"
+  },
+  {
+    "title": "3. Enumerating Targets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/3-enumerating-targets/"
+  },
+  {
+    "title": "6. Nmap Host Discovery Using ICMP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/6-nmap-host-discovery-using-icmp/"
+  },
+  {
+    "title": "5. Nmap Host Discovery Using ARP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/5-nmap-host-discovery-using-arp/"
+  },
+  {
+    "title": "0. Nmao Live Host Discovery",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/0-nmao-live-host-discovery/"
+  },
+  {
+    "title": "4. Discovering Live Hosts",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/4-discovering-live-hosts/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/1-introduction/"
+  },
+  {
+    "title": "8. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/8-summary/"
+  },
+  {
+    "title": "7. Internet Message Access Protocol (IMAP)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/7-internet-message-access-protocol-imap/"
+  },
+  {
+    "title": "4. File Transfer Protocol (FTP)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/4-file-transfer-protocol-ftp/"
+  },
+  {
+    "title": "5. Simple Mail Transfer Protocol (SMTP)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/5-simple-mail-transfer-protocol-smtp/"
+  },
+  {
+    "title": "2. Telnet",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/2-telnet/"
+  },
+  {
+    "title": "0. Protocols and Servers",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/0-protocols-and-servers/"
+  },
+  {
+    "title": "6. Post Office Protocol 3 (POP3)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/6-post-office-protocol-3-pop3/"
+  },
+  {
+    "title": "3. Hypertext Transfer Protocol (HTTP)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/3-hypertext-transfer-protocol-http/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/7-protocols-and-servers/1-introduction/"
+  },
+  {
+    "title": "8. Getting More Details",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/8-getting-more-details/"
+  },
+  {
+    "title": "5. Spoofing and Decoys",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/5-spoofing-and-decoys/"
+  },
+  {
+    "title": "9. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/9-summary/"
+  },
+  {
+    "title": "3. TCP Mainmon Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/3-tcp-mainmon-scan/"
+  },
+  {
+    "title": "4. TCP ACK, Window, and Custom Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/4-tcp-ack-window-and-custom-scan/"
+  },
+  {
+    "title": "6. Fragmented Packets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/6-fragmented-packets/"
+  },
+  {
+    "title": "0. Nmap Advanced Port Scans",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/0-nmap-advanced-port-scans/"
+  },
+  {
+    "title": "2. TCP Null Scan, FIN Scan, and Xmas Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/2-tcp-null-scan-fin-scan-and-xmas-scan/"
+  },
+  {
+    "title": "7. Idle-Zombie Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/7-idle-zombie-scan/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/1-introduction/"
+  },
+  {
+    "title": "5. TCP SYN Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/5-tcp-syn-scan/"
+  },
+  {
+    "title": "8. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/8-summary/"
+  },
+  {
+    "title": "3. TCP Flags",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/3-tcp-flags/"
+  },
+  {
+    "title": "7. Fine-Tuning Scope and Performance",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/7-fine-tuning-scope-and-performance/"
+  },
+  {
+    "title": "4. TCP Connect Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/4-tcp-connect-scan/"
+  },
+  {
+    "title": "0. Nmap Basic Port Scans",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/0-nmap-basic-port-scans/"
+  },
+  {
+    "title": "6. UDP Scan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/6-udp-scan/"
+  },
+  {
+    "title": "2. TCP and UDP Ports",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/2-tcp-and-udp-ports/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/1-introduction/"
+  },
+  {
     "title": "0. Principles of Security",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/2-principles-of-security/0-principles-of-security/"
   },
@@ -2414,6 +2706,150 @@
   {
     "title": "1. What is Penetration Testing",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/1-pentesting-fundamentals/1-what-is-penetration-testing/"
+  },
+  {
+    "title": "0. Burp Suite - Intruder",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/0-burp-suite-intruder/"
+  },
+  {
+    "title": "10. Practical Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/10-practical-challenge/"
+  },
+  {
+    "title": "11. Extra-mile Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/11-extra-mile-challenge/"
+  },
+  {
+    "title": "7. Pitchfork",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/7-pitchfork/"
+  },
+  {
+    "title": "1. What is Intruder",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/1-what-is-intruder/"
+  },
+  {
+    "title": "3. Payloads",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/3-payloads/"
+  },
+  {
+    "title": "9. Practical Example",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/9-practical-example/"
+  },
+  {
+    "title": "8. Cluster Bomb",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/8-cluster-bomb/"
+  },
+  {
+    "title": "5. Sniper",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/5-sniper/"
+  },
+  {
+    "title": "2. Positions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/2-positions/"
+  },
+  {
+    "title": "6. Battering Ram",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/6-battering-ram/"
+  },
+  {
+    "title": "4. Instroduction to Attack Types",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/3-burp-suite-intruder/4-instroduction-to-attack-types/"
+  },
+  {
+    "title": "0. Brup Suite - Other Modules",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/0-brup-suite-other-modules/"
+  },
+  {
+    "title": "1. Decoder - Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/1-decoder-overview/"
+  },
+  {
+    "title": "8. Sequencer - Analysis",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/8-sequencer-analysis/"
+  },
+  {
+    "title": "3. Decoder - Hashing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/3-decoder-hashing/"
+  },
+  {
+    "title": "4. Comparer - Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/4-comparer-overview/"
+  },
+  {
+    "title": "7. Sequencer - Live Capture",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/7-sequencer-live-capture/"
+  },
+  {
+    "title": "6. Sequencer - Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/6-sequencer-overview/"
+  },
+  {
+    "title": "2. Decoder - Encoding-Decoding",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/2-decoder-encoding-decoding/"
+  },
+  {
+    "title": "9. Organizer - Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/9-organizer-overview/"
+  },
+  {
+    "title": "5. Comparer - Example",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/4-burp-suite-other-modules/5-comparer-example/"
+  },
+  {
+    "title": "0. Burp Suite - Extensions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/0-burp-suite-extensions/"
+  },
+  {
+    "title": "3. Jython",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/3-jython/"
+  },
+  {
+    "title": "4. The Burp Suite API",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/4-the-burp-suite-api/"
+  },
+  {
+    "title": "1. The Extensions Interface",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/1-the-extensions-interface/"
+  },
+  {
+    "title": "2. Te BApp Store",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/2-te-bapp-store/"
+  },
+  {
+    "title": "0. Burp Suite - The Basics",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/1-brup-suite-the-basics/0-burp-suite-the-basics/"
+  },
+  {
+    "title": "5. Practical Example",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/5-practical-example/"
+  },
+  {
+    "title": "2. Basic Usage",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/2-basic-usage/"
+  },
+  {
+    "title": "1. What is Repeater",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/1-what-is-repeater/"
+  },
+  {
+    "title": "0. Burp Suite - Repeater",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/0-burp-suite-repeater/"
+  },
+  {
+    "title": "6. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/6-challenge/"
+  },
+  {
+    "title": "4. Inspector",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/4-inspector/"
+  },
+  {
+    "title": "3. Message Analysis Toolbar",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/3-message-analysis-toolbar/"
+  },
+  {
+    "title": "7. Extra-mile Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/7-extra-mile-challenge/"
   },
   {
     "title": "0. Defensive Security Intro",
