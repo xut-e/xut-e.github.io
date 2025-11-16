@@ -3,3 +3,28 @@ layout: apunte
 title: "3. Payloads"
 ---
 
+En la pestaña Payloads de Burp Suite, podemos crear, asignar y configurar payloads para nuestro ataque. Esta subpestaña está dividida en 4 secciones.
+
+!**Pasted image 20251115141048.png**
+
+1. **Payload sets:**
+	- Esta sección nos permite elegir la posición para la cual queremos configurar el conjunto de payloads y seleccionar el tipo de payload que queremos usar.
+	- Al usar tipos de ataque que sólo permiten un tipo de conjunto de payloads (como Sniper o Battering Ram), el desplegable de payload set sólo tendrá una opción.
+	- Si usamos tipos de ataque que requieran múltiples conjuntos de payloads (como Pitchfork o Cluster Bomb), habrá un ítem en el desplegable para cada posición.
+2. **Payload settings:**
+	- Esta sección ofrece opciones específicas del payload seleccionado para el set de payloads actual.
+	- Por ejemplo, al usar el tipo de payload "Simple List", podemos añadir o eliminar manualmente payloads del set usando **Add**, **Paste**, **Load** y **Remove** o **Clear**.
+	- Cada tipo de payload tendrá su propio set de opciones y funcionalidad. Explora las opciones disponibles para entender las posibilidades.
+	  
+	  !**Pasted image 20251115175908.png**
+	  
+3. **Payload processing:**
+	- En esta sección, podemos definir reglas para que se apliquen a cada payload en el set antes de mandarse al objetivo.
+	- Podemos por ejemplo poner cada palabra en mayúscula, saltar payloads que coincidan con una regex o aplicar otras transformaciones o filtros.
+	- Aunque probablemente no uses esta sección muy a menudo tiene bastante valor cuando se requiere un procesado de un payload concreto para tu ataque.
+4. **Payload encoding:**
+	- Esta sección nos permite personalizar el tipo de encoding de nuestros payloads.
+	- Por defecto, Burp Suite aplica URLencoding para asegurar la transmisión de los payloads.
+	- Podemos eliminar el encoding por defecto modificando la lista de caracteres que tengan que ser encodeados o desmarcando la opción "URL-encode there characters".
+
+Haciendo uso de estas secciones podemos crear y personalizar conjuntos de payloads para ajustarse a nuestras necesidades.
