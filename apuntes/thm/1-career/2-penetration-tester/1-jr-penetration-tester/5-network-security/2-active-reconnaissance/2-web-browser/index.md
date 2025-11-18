@@ -3,3 +3,19 @@ layout: apunte
 title: "2. Web Browser"
 ---
 
+El navegador puede ser una herramienta conveniente. Hay múltiples maneras en las que podemos usar el navegador web para recopilar información sobre el objetivo.
+
+A nivel de transporte, el navegador se conecta a:
+
+- Puerto 80 TCP por defecto cuando el sitio web es accedido por HTTP.
+- Puerto 443 TCP por defecto cuando el sitio web es accedido por HtTPS.
+
+Ya que los puertos 80 y 443 son por defecto, el navegador no los muestra en la barra de direcciones. Sin embargo, es posible usar puertos personalizados para acceder a servicios.
+
+Mientras que navegamos una página web, podemos presionar `Ctrl+Shift+I` para abrir las herramientas de desarrollador.
+
+También hay muchos add-ons para Firefox y Chrome que pueden ayudar en el pentest. Aquí algunos ejemplos:
+
+- **FoxyProxy:** Te permite cambiar el servidr proxy que estás usando para acceder al sitio web. Es conveniente al usar Burp Suite, por ejemplo. Descárgalo [aquí](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard).
+- **User-Agent Switcher and Manager:** Te da la habilidad de pretender estar accediendo a la página web desde diferentes sistemas operativos o navegadores web. Te lo puedes descargar [aquí](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher).
+- **Wappalyzer:** Ofrece una vista interna sobre las tecnologías usadas en los sitios web visitados. Es útil para recolectar información mientras navegas. Descárgatela [aquí](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer).

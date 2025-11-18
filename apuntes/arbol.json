@@ -3745,9 +3745,9 @@
                               "parent": "5. Burp Suite - Extensions"
                             },
                             {
-                              "name": "2. Te BApp Store.md",
+                              "name": "2. The BApp Store.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/2. Te BApp Store.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/2. The BApp Store.md",
                               "parent": "5. Burp Suite - Extensions"
                             },
                             {
@@ -4194,17 +4194,492 @@
                     {
                       "name": "6. Vulnerability Research",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Vulnerabilities 101",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction to Vulnerabilities.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/1. Introduction to Vulnerabilities.md",
+                              "parent": "1. Vulnerabilities 101"
+                            },
+                            {
+                              "name": "2. Scoring Vulnerabilities (CVSS & VPR).md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/2. Scoring Vulnerabilities (CVSS & VPR).md",
+                              "parent": "1. Vulnerabilities 101"
+                            },
+                            {
+                              "name": "3. Vulnerability Databases.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/3. Vulnerability Databases.md",
+                              "parent": "1. Vulnerabilities 101"
+                            },
+                            {
+                              "name": "4. And Example of Finding a Vulnerability.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/4. And Example of Finding a Vulnerability.md",
+                              "parent": "1. Vulnerabilities 101"
+                            },
+                            {
+                              "name": "5. Showcase - Exploiting Ackme's Application.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/5. Showcase - Exploiting Ackme's Application.md",
+                              "parent": "1. Vulnerabilities 101"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Exploit Vulnerabilities",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Automated Vs. Manual Vulnerability Research.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/1. Automated Vs. Manual Vulnerability Research.md",
+                              "parent": "2. Exploit Vulnerabilities"
+                            },
+                            {
+                              "name": "2. Finding Manual Exploits.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/2. Finding Manual Exploits.md",
+                              "parent": "2. Exploit Vulnerabilities"
+                            },
+                            {
+                              "name": "3. Example of Manual Exploit.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/3. Example of Manual Exploit.md",
+                              "parent": "2. Exploit Vulnerabilities"
+                            },
+                            {
+                              "name": "4. Practical - Manual Exploitation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/4. Practical - Manual Exploitation.md",
+                              "parent": "2. Exploit Vulnerabilities"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Vulnerability Capstone",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
                     },
                     {
                       "name": "7. Metasploit",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Metasploit - Introduction",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "2. Metasploit - Exploitation",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "3. Metasploit - Meterpreter",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
                     },
                     {
                       "name": "8. Privilege Escalation",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. What the Shell",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. What is a Shell.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/1. What is a Shell.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "10. Metasploit multi-handler.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/10. Metasploit multi-handler.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "11. Webshells.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/11. Webshells.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "12. Next Steps.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/12. Next Steps.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "13. Practice and Examples.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/13. Practice and Examples.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "14. Linux Practice Box.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/14. Linux Practice Box.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "15. Windows Practice Box.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/15. Windows Practice Box.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "2. Tools.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/2. Tools.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "3. Types of Shell.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/3. Types of Shell.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "4. Netcat.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/4. Netcat.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "5. Netcat Shell Stabilisation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/5. Netcat Shell Stabilisation.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "6. Socat.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/6. Socat.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "7. Socat Encrypted Shells.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/7. Socat Encrypted Shells.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "8. Common Shell Payloads.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/8. Common Shell Payloads.md",
+                              "parent": "1. What the Shell"
+                            },
+                            {
+                              "name": "9. msfvenom.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/9. msfvenom.md",
+                              "parent": "1. What the Shell"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Linux Privilege Escalation",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. What is Privilege Escalation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/1. What is Privilege Escalation.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "10. Privilege Escalation - NFS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/10. Privilege Escalation - NFS.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "11. Capstone Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/11. Capstone Challenge.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "2. Enumeration.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/2. Enumeration.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "3. Automated Enumeration Tools.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/3. Automated Enumeration Tools.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "4. Privilege Escalation - Kernel Exploits.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/4. Privilege Escalation - Kernel Exploits.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "5. Privilege Escalation - Sudo.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/5. Privilege Escalation - Sudo.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "6. Privilege Escalation - SUID.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/6. Privilege Escalation - SUID.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "7. Privilege Escalation - Capabilities.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/7. Privilege Escalation - Capabilities.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "8. Privilege Escalation Cron Jobs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/8. Privilege Escalation Cron Jobs.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            },
+                            {
+                              "name": "9. Privilege Escalation - PATH.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/9. Privilege Escalation - PATH.md",
+                              "parent": "2. Linux Privilege Escalation"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Windows Privilege Escalation",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Windows Privilege Escalation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/1. Windows Privilege Escalation.md",
+                              "parent": "3. Windows Privilege Escalation"
+                            },
+                            {
+                              "name": "2. Harvesting Passwords from Usual Spots.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/2. Harvesting Passwords from Usual Spots.md",
+                              "parent": "3. Windows Privilege Escalation"
+                            },
+                            {
+                              "name": "3. Other Quick Wins.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/3. Other Quick Wins.md",
+                              "parent": "3. Windows Privilege Escalation"
+                            },
+                            {
+                              "name": "4. Abusing Service Misconfigurations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/4. Abusing Service Misconfigurations.md",
+                              "parent": "3. Windows Privilege Escalation"
+                            },
+                            {
+                              "name": "5. Abusing Dangerous Privileges.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/5. Abusing Dangerous Privileges.md",
+                              "parent": "3. Windows Privilege Escalation"
+                            },
+                            {
+                              "name": "6. Abusing Vulnerable Software.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/6. Abusing Vulnerable Software.md",
+                              "parent": "3. Windows Privilege Escalation"
+                            },
+                            {
+                              "name": "7. Tools of the Trade.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/7. Tools of the Trade.md",
+                              "parent": "3. Windows Privilege Escalation"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "2. Web Fundamentals",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. How The Web Works",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. DNS in Detail",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "2. HTTP in Detail",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "3. How Websites Work",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "4. Putting It All Together",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Introduction to Web Hacking",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Walking An Application",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "10. Command Injection",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "11. SQL Injection",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "2. Content Discovery",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "3. Subdomain Enumeration",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "4. Authentication Bypass",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "5. IDOR",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "6. File Inclusion",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "7. Intro to SSRF",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "8. Intro to Cross-site Scripting",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "9. Race Conditions",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Burp Suite",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Burp Suite - The Basics",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "2. Burp Suite - Repeater",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "3. Burp Suite - Intruder",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "4. Burp Suite - Other Modules",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "5. Burp Suite - Extensions",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Web Hacking Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. How Websites Work",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "2. HTTP in Detail",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "3. Burp Suite - The Basics",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "4. OWASP Top 10 - 2021",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "5. OWASP API Security Top 10 - 1",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "6. OWASP Juice Shop",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "7. Upload Vulnerabilities",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "8. Pickle Rick",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
                     }
                   ]
                 }
@@ -4224,7 +4699,38 @@
             {
               "name": "1. Easy",
               "type": "directory",
-              "contents": []
+              "contents": [
+                {
+                  "name": "1. Vulnerability Capstone",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/1. Introduction.md",
+                      "parent": "1. Vulnerability Capstone"
+                    },
+                    {
+                      "name": "2. Exploit the Machine.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/2. Exploit the Machine.md",
+                      "parent": "1. Vulnerability Capstone"
+                    }
+                  ]
+                },
+                {
+                  "name": "2. Pickle Rick",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Pickle Rick.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Pickle Rick.md",
+                      "parent": "2. Pickle Rick"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "2. Medium",

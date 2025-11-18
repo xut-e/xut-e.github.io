@@ -40,12 +40,12 @@
     "hash": "b7e5d9337929fb3de4b85215a728d2d4ee5f917abd7ed97107b591ec483cc6df"
   },
   "THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/8. Web Hacking.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "5c10da7de8d211a6d724766d92b3294286663192c0485c5415e716dead9c4e5a"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "ba042fae6bfe6145f61c0d99d7e4775d00b70a2231a31bcf186175358f238383"
   },
   "THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/7. Exploitation Basics.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "ce6bd7900a40da7af8757041077d327644032ade78a6bdbc2cf227239ec6d5e5"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "0adec137a467af3fb910525d43dcf98e17b78566cb79d8beb3e8c611212de88a"
   },
   "THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/11. Security Solutions.md": {
     "modified": "2025-11-14T02:08:45",
@@ -1444,8 +1444,8 @@
     "hash": "8bf6fa37bd2d30fb6459c241baf579d5fcd5295a81c20985f61846db84f59d99"
   },
   "THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How the Web Works.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "b49beb464a1bb540d8017cd96dc9c60fab35d4ffde195a930cd6e470eea789a6"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "b8fc620bdd9c0678274fae961d4214314a80fe865e1912e912578c92ab515dc2"
   },
   "THM/0. Pre Career/1. Pre Security/2. Network Fundamentals/2. Network Fundamentals.md": {
     "modified": "2025-11-14T02:08:45",
@@ -1948,24 +1948,24 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/2. Penetration Tester.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "f446e991fd3070d44b6434c0f04bb909216eb7de97c7f8396f55a301cce3039f"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "2d2486e998cbe3b5f3377df68e58bb0e6de04b4c1238990dc57ae7dbc85f0320"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Jr Penetration Tester.md": {
     "modified": "2025-11-14T02:08:45",
     "hash": "1d748ec3f16fe50a902dc255cb082586b21f92d7c9b88dc08b23072ed0ae1b30"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/8. Privilege Escalation.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "a529f883a5860218b81a3013a2a7c9d00ed6eb8533964bfe1cd4aca6b4aa9522"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Introduction to Web Hacking.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "2e9a800da5acf72c03b2ee907fafed68a7b76d883c099141b4e3796b98e27d69"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "942cbd4d11e08ac3491fd4a4e6c6177de9c7ec21f4cca1be9b7cafbe70b0ffc3"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "16f69e7896e5ee7ee1a7f9b3d057228a2577bb4bdd7ff8e22c039c29d01c6c9a"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "eb9d9634f074ddf77187923b2338681c45f0624bb797e0db3d43822e50c9afbb"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/5. Network Security.md": {
     "modified": "2025-11-15T00:54:35",
@@ -1976,12 +1976,12 @@
     "hash": "87ad319bb7882e0237f01212d22c83b8b5d11d50099dbf730db8e47c5956a557"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/7. Metasploit.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "1df43064b3d4806a3208a49f6d38a944d1471e5ca9dd5e788564bfea1265dbfe"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/6. Vulnerability Research.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "c35b349c3719ed10bc936753a4563ba04e19a63e9b01b71b7ebc004e87f465f1"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/2. Introduction to Pentesting/2. Introduction to Pentesting.md": {
     "modified": "2025-11-14T02:08:45",
@@ -2392,8 +2392,8 @@
     "hash": "cd48e80b66604a45b5cbd26153f79662dd1b0fc6af05e2fc315af097ddcf4328"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "476be8b0f0a817d1117d768f5d855197d2aaa3eab6f1ec6c5f247f50de7def80"
   },
   "THM/Maquinas/4. Insane/4. Insane.md": {
     "modified": "2025-11-14T02:08:45",
@@ -2444,68 +2444,68 @@
     "hash": "6e691ff618ef086754cf87863284e7df64a396df05ef30e58cb785a6f07abcfe"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/3. Whois.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "1af47f8156d7deb5109c749bb2136f84b7e3b1cd092a00066f65dc37a829d273"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/6. Shodan.io.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "290ed6cfddfffa0d6662d123477daa7308c6e926ec1b442db3f70bfb757a56c0"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/4. nslookup and dig.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "aa3da4bcf86d8a44e43609e2ed4769aa45488bef3dea28dc67d8938def94bd7a"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/5. DNSDumpster.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "9c4f296842ef4732fb9dc67d3293347f566fb8ae8d4730acd9764bcb43c9d96b"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/0. Passive Reconnaissance.md": {
     "modified": "2025-11-15T00:54:35",
     "hash": "8a671409e70b6f1350c0f1af3827a6225643a06c9b4e63afd4c3545d82a67ea5"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/2. Passive Versus Active Recon.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "f7f80992a9711768ed66a7fde589ec12e6a51aa2d145eb9be9ccec4925a94cd6"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/7. Summary.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "9a79066d0cabea1a1cb6ba2e7d47b893a70443b3760089b1a52f513a34aeb514"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/1. Passive Reconnaissance/1. Introduction.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "43d3f3b24360eccabc133d8331789981508cb9db54dae150e87061ec3295876a"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/3. Ping.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "64a67bf2061968ab475488d026ae0a2f09c0e117b16c54928fae234a491add70"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/2. Web Browser.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "19cfc6bdfa8dfe65417eb9867403f9ba0326d1bfa4c7754fdc62d59787192117"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/0. Active Reconnaissance.md": {
     "modified": "2025-11-15T00:54:35",
     "hash": "753768f479199efd6adcdcead4429e245c6c47ebeeb4acd689c409ead8a49b53"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/4. Traceroute.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "9ca4cdc3768ea56eb7032d99d73df5237d76faaaaedccf55cb748d1423f6a37c"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/5. Telnet.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "83ed04295373a20062e9cdce6ae2ef9e6bb1bbfeb75b1e68b331d46e5a10bca6"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/7. Putting It All Together.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "d933a6a845409d721e97c227f4ac2922fe41d7ea8ccb8a069ddd3621c8eeda5f"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/6. Netcat.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "a9c70241c8c31c9eeb0d382ff9f72c1dec2888936d384c058385ab6594215336"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/1. Introduction.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "c4cf6ef632f8dd9659eaf651a2a313069bf57cc6ff797bf55740bd6693eb1c85"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/0. Nmap Post Port Scans.md": {
     "modified": "2025-11-15T00:54:35",
@@ -2572,8 +2572,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/2. Subnetworks.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "7d9d2cda4bf57dd3f0f0640b1f20a4046ab1a06e96218f5fcfb2244df7c5f1b7"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/9. Summary.md": {
     "modified": "2025-11-15T00:54:35",
@@ -2584,8 +2584,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/3. Enumerating Targets.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "b86b577957977d58cc537f1668cfd3d841289c97bc633765e06ade3bd01fd55c"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/6. Nmap Host Discovery Using ICMP.md": {
     "modified": "2025-11-15T00:54:35",
@@ -2604,8 +2604,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/1. Introduction.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "cc386e6eea7625ead2fb9b04067b53f90a84fcc44302944c22115bd0529b348c"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/7. Protocols and Servers/8. Summary.md": {
     "modified": "2025-11-15T00:54:35",
@@ -2808,20 +2808,20 @@
     "hash": "abb822bf276d0bd39fbe081af03c078ba23b93a4349bd0ec047d3195269483fb"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/0. Burp Suite - Extensions.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "5ca69a1ae5b4712c3d733a6aabdc4e67d719ed95bb8b0f37f7f7c0797f687eee"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "41f32f4a70f5e8743ea1c4cca8e024a6e55ee6f2b8dd8bad0c98dbb2afd007e2"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/3. Jython.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "b6f743a089735be8a975b66232279c4f2f146e3c6843931e671a04f58e3cafb4"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/4. The Burp Suite API.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "74121d736a3dd3595ca2137b4513b223ab37a20be022ca32ec434051c6655d2c"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/1. The Extensions Interface.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T00:55:39",
+    "hash": "751531f958a357b6fa3168a5409a04ebb5a963846c55d63844474e78a5386567"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/2. Te BApp Store.md": {
     "modified": "2025-11-15T00:54:35",
@@ -2862,5 +2862,365 @@
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/7. Extra-mile Challenge.md": {
     "modified": "2025-11-15T00:54:35",
     "hash": "599b9aa6942116b544fa52a86c036d0fb8647bbdfb715f1972ae0ff7437a439b"
+  },
+  "THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "5f0cc0d4b955dfc27347f49d73172ae3e2e31693fa97432e7f2be470dc2cebc2"
+  },
+  "THM/Maquinas/1. Easy/2. Pickle Rick/1. Pickle Rick.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/1. Easy/1. Vulnerability Capstone/2. Exploit the Machine.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "beec2fcf7f8de5d6929edeac63712e48b23d4e0183e513d68101b4d6635259bf"
+  },
+  "THM/Maquinas/1. Easy/1. Vulnerability Capstone/1. Introduction.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Web Fundamentals.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/2. Introduction to Web Hacking.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "4e8a1db9b8b549a5096c340eb46a65d6c78644baaf36ef6e265def69c22d711b"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. Web Hacking Fundamentals.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "17f3ad71836d65431518d4aeace1d8a5185e5ee2ea95794bff4c73d6085af32b"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/1. How The Web Works.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "5301dfb11124c230f27051fd718d5ecdca266bcc3a2ac52cb4a68afe6c4df5e4"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/3. Burp Suite.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "95755dba78ce1f47c0c7e250624f492e918eeb9cec3ab6588ee45bfe73b926eb"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/11. SQL Injection/0. SQL Injection.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "b05a66cb2e2b571c140e9e350503e0aa4fb29fb8fa58fa6f7e11768bb8b278a4"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF/0. Intro to SSRF.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "9aef4ef7030c4a58b06c9b55952d9832db7247e98c0f96e052fcfec2ad35b33a"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/3. Subdomain Enumeration/0. Subdomain Enumeration.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "9cd74c638cd7b77f6051bcf909d46a8a30028043bddbca7652500b9a15f69b25"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/2. Content Discovery/0. Content Discovery.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "06889e241b11b9188ac75a83275b6657c4a78e422d4a2b313d3980f5cc04426f"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/4. Authentication Bypass/0. Authentication Bypass.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "9097446bf585ee2ab37bdb3613342f612b982045a3cf035f19e8fe68132f564e"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/1. Walking An Application/0. Walking An Application.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "a2ca252e073fe5916dba6b59764d6926d719ede20352cb1cc177a75fb24e9d5c"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/9. Race Conditions/0. Race Conditions.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "dc41f22be9539750af0ec9e760e083f58ccaba39b65383c39d2ea434691ef10d"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/10. Command Injection/0. Command Injection.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "6b0b8f94c89741551011e334f805cc0e87ef6ca065c90ebac738987e29260f71"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/6. File Inclusion/0. File Inclusion.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "7c3b13471f5fef01e71fb862a6c15f076a743001059c6734546c5bfe3cb5ca7d"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/8. Intro to Cross-site Scripting/0. Intro to Cross-site Scripting.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "84e6615f476eced8943b00ba9dcce0792dcd96c4e682ee0a9b574bd610c0e7c5"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/5. IDOR/0. IDOR.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "3969636406c840f573e0321f7e443d474b8f2d460b8c3f2d70a862600c33f3d9"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/0. Burp Suite - The Basics.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "c0d81bb6925e20230b328c7e2e5ae1c2c98d70dc71a3612c723e343e06257063"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/0. HTTP in Detail.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "3c73ec69c1491ef82f365c8275a231addd1d0e259796149c941c0ed2c82ce56d"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/0. OWASP API Security Top 10 - 1.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/0. Pickle Rick.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "11877eaf2703d7d4ecfd48facef9272ca30110c2572b8ba57b3c610c95466da9"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "080b7b602bfa8f30427c63347bad71bb5d709abb0456b56a4f4feee76485e914"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP Juice Shop/0. OWASP Juice Shop.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. Upload Vulnerabilities/0. Upload Vulnerabilities.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/1. How Websites Work/0. How Websites Work.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "a0c1a1353829bed634d58f81be92ae2301cf4187bcb9b82f55e8a7eb349ac984"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/1. DNS in Detail/0. DNS in Detail.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "38b5f08cb54e40742390bddb944ea4c91b5234b6d389831701c81fdfe55a8630"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/2. HTTP in Detail/0. HTTP in Detail.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "c7fe35f248128e8b079f33637c29ed26ca6607629f9b3746deb437c894331683"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/3. How Websites Work/0. How Websites Work.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "a0c1a1353829bed634d58f81be92ae2301cf4187bcb9b82f55e8a7eb349ac984"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/4. Putting It All Together/0. Putting It All Together.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "94fb0ef70a74b766adf005c590df2eefd359ae88362fd23f4ea12f74fd05b267"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/3. Burp Suite - Intruder/0. Burp Suite - Intruder.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "1eb8dd4c0f7b3f91f7af6e24791510e5a85cb732ced6f35de686223a3b7f4428"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/4. Burp Suite - Other Modules/0. Burp Suite - Other Modules.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "37813a984cbd2cdd9a94fa3fb26cbdfba0047c9ef9a898498635da80664fe57f"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/5. Burp Suite - Extensions/0. Burp Suite - Extensions.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "5661df996c3f4b5c7685b66a7892a39e8ffd194f7f2601e0fe387b4d9936b4b2"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/2. Burp Suite - Repeater/0. Burp Suite - Repeater.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "0aca1f6b3afb97e440f38369549ae14fcd26351f6fb885c15eab1e65f1d8fa60"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/0. Burp Suite - The Basics.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "c0d81bb6925e20230b328c7e2e5ae1c2c98d70dc71a3612c723e343e06257063"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/0. Windows Privilege Escalation.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "fdd232cf12b396d6016a3d0d5afeb1a77d00648620c2ea696fb8e9c79df0994a"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/5. Abusing Dangerous Privileges.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/3. Other Quick Wins.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/7. Tools of the Trade.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/4. Abusing Service Misconfigurations.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/6. Abusing Vulnerable Software.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/2. Harvesting Passwords from Usual Spots.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/1. Windows Privilege Escalation.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/9. Privilege Escalation - PATH.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/4. Privilege Escalation - Kernel Exploits.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/7. Privilege Escalation - Capabilities.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/8. Privilege Escalation Cron Jobs.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/3. Automated Enumeration Tools.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/11. Capstone Challenge.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/2. Enumeration.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/1. What is Privilege Escalation.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/10. Privilege Escalation - NFS.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/0. Linux Privilege Escalation.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "fd5dfb4136879290efd95701fc25952899c12e320117d00b7271ae8798150c81"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/5. Privilege Escalation - Sudo.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/6. Privilege Escalation - SUID.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/14. Linux Practice Box.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/5. Netcat Shell Stabilisation.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/8. Common Shell Payloads.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/4. Netcat.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/2. Tools.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/1. What is a Shell.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/7. Socat Encrypted Shells.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/13. Practice and Examples.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/9. msfvenom.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/3. Types of Shell.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/0. What the Shell.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "032d800e872ff3da045d8058b1762511d7bd77b11e785d7c6f6744008955c52c"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/15. Windows Practice Box.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/11. Webshells.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/12. Next Steps.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/6. Socat.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/10. Metasploit multi-handler.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/2. Metasploit - Exploitation/0. Metasploit - Exploitation.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "9b36942dd4bba07cb36e724d8dec42763c8e6cc12bd3d3175f467c869a47c23d"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/1. Metasploit - Introduction/0. Metasploit - Introduction.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "c9103ab2bc52a91561ac42cb18f28671c178f18459a542283240871c4a427ac2"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/3. Metasploit - Meterpreter/0. Metasploit - Meterpreter.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "881c8393afdc9731a32a6429ef873ded829aac59074c093560e0db17c19ad983"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/4. And Example of Finding a Vulnerability.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/1. Introduction to Vulnerabilities.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/2. Scoring Vulnerabilities (CVSS & VPR).md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/0. Vulnerabilities 101.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "6e581556cfb21a3070c6db60bdd648b4df0483cf3870113b2a36d98bef5e1bdb"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/3. Vulnerability Databases.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/5. Showcase - Exploiting Ackme's Application.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/3. Vulnerability Capstone/0. Vulnerability Capstone.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "06914569cdeadfee2e469c5fc9c3efdcde92f90486d55dc75dab052a19e91016"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/2. Finding Manual Exploits.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/4. Practical - Manual Exploitation.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/0. Exploit Vulnerabilities.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "1fac7660e406581749fdf1250100832cc2e071f2ae54dbf3a44364bfcd374f36"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/1. Automated Vs. Manual Vulnerability Research.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/3. Example of Manual Exploit.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/2. The BApp Store.md": {
+    "modified": "2025-11-18T00:55:39",
+    "hash": "1e9c78c1d316aa5b1cbfff25fd6111471ea421ef07339e90d4a0ee8a759a12ec"
   }
 }

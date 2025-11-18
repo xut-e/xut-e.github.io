@@ -1988,6 +1988,26 @@
     "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/1-introduction/"
   },
   {
+    "title": "0. Pickle Rick",
+    "path": "/apuntes/thm/maquinas/1-easy/2-pickle-rick/0-pickle-rick/"
+  },
+  {
+    "title": "1. Pickle Rick",
+    "path": "/apuntes/thm/maquinas/1-easy/2-pickle-rick/1-pickle-rick/"
+  },
+  {
+    "title": "2. Exploit the Machine",
+    "path": "/apuntes/thm/maquinas/1-easy/1-vulnerability-capstone/2-exploit-the-machine/"
+  },
+  {
+    "title": "0. Vulnerability Capstone",
+    "path": "/apuntes/thm/maquinas/1-easy/1-vulnerability-capstone/0-vulnerability-capstone/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/1-vulnerability-capstone/1-introduction/"
+  },
+  {
     "title": "3. Security Engineer",
     "path": "/apuntes/thm/1-career/3-security-engineer/3-security-engineer/"
   },
@@ -2000,8 +2020,140 @@
     "path": "/apuntes/thm/1-career/1-security-analyst/1-security-analyst/"
   },
   {
+    "title": "2. Web Fundamentals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-web-fundamentals/"
+  },
+  {
     "title": "1. Jr Penetration Tester",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-jr-penetration-tester/"
+  },
+  {
+    "title": "2. Introduction to Web Hacking",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/2-introduction-to-web-hacking/"
+  },
+  {
+    "title": "4. Web Hacking Fundamentals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/4-web-hacking-fundamentals/"
+  },
+  {
+    "title": "1. How The Web Works",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/1-how-the-web-works/"
+  },
+  {
+    "title": "3. Burp Suite",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/3-burp-suite/"
+  },
+  {
+    "title": "0. SQL Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/11-sql-injection/0-sql-injection/"
+  },
+  {
+    "title": "0. Intro to SSRF",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/7-intro-to-ssrf/0-intro-to-ssrf/"
+  },
+  {
+    "title": "0. Subdomain Enumeration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/3-subdomain-enumeration/0-subdomain-enumeration/"
+  },
+  {
+    "title": "0. Content Discovery",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/2-content-discovery/0-content-discovery/"
+  },
+  {
+    "title": "0. Authentication Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/4-authentication-bypass/0-authentication-bypass/"
+  },
+  {
+    "title": "0. Walking An Application",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/1-walking-an-application/0-walking-an-application/"
+  },
+  {
+    "title": "0. Race Conditions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/9-race-conditions/0-race-conditions/"
+  },
+  {
+    "title": "0. Command Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/10-command-injection/0-command-injection/"
+  },
+  {
+    "title": "0. File Inclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/6-file-inclusion/0-file-inclusion/"
+  },
+  {
+    "title": "0. Intro to Cross-site Scripting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/8-intro-to-cross-site-scripting/0-intro-to-cross-site-scripting/"
+  },
+  {
+    "title": "0. IDOR",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/5-idor/0-idor/"
+  },
+  {
+    "title": "0. Burp Suite - The Basics",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/0-burp-suite-the-basics/"
+  },
+  {
+    "title": "0. HTTP in Detail",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/2-http-in-detail/0-http-in-detail/"
+  },
+  {
+    "title": "0. OWASP API Security Top 10 - 1",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/0-owasp-api-security-top-10-1/"
+  },
+  {
+    "title": "0. Pickle Rick",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/0-pickle-rick/"
+  },
+  {
+    "title": "0. OWASP Top 10 - 2021",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/4-owasp-top-10-2021/0-owasp-top-10-2021/"
+  },
+  {
+    "title": "0. OWASP Juice Shop",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-juice-shop/0-owasp-juice-shop/"
+  },
+  {
+    "title": "0. Upload Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-upload-vulnerabilities/0-upload-vulnerabilities/"
+  },
+  {
+    "title": "0. How Websites Work",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/1-how-websites-work/0-how-websites-work/"
+  },
+  {
+    "title": "0. DNS in Detail",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/1-dns-in-detail/0-dns-in-detail/"
+  },
+  {
+    "title": "0. HTTP in Detail",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/2-http-in-detail/0-http-in-detail/"
+  },
+  {
+    "title": "0. How Websites Work",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/3-how-websites-work/0-how-websites-work/"
+  },
+  {
+    "title": "0. Putting It All Together",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/4-putting-it-all-together/0-putting-it-all-together/"
+  },
+  {
+    "title": "0. Burp Suite - Intruder",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/3-burp-suite-intruder/0-burp-suite-intruder/"
+  },
+  {
+    "title": "0. Burp Suite - Other Modules",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/4-burp-suite-other-modules/0-burp-suite-other-modules/"
+  },
+  {
+    "title": "0. Burp Suite - Extensions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/5-burp-suite-extensions/0-burp-suite-extensions/"
+  },
+  {
+    "title": "0. Burp Suite - Repeater",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/2-burp-suite-repeater/0-burp-suite-repeater/"
+  },
+  {
+    "title": "0. Burp Suite - The Basics",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/1-burp-suite-the-basics/0-burp-suite-the-basics/"
   },
   {
     "title": "3. Introduction to Web Hacking",
@@ -2668,6 +2820,210 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/1-introduction/"
   },
   {
+    "title": "0. Windows Privilege Escalation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/0-windows-privilege-escalation/"
+  },
+  {
+    "title": "5. Abusing Dangerous Privileges",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/5-abusing-dangerous-privileges/"
+  },
+  {
+    "title": "3. Other Quick Wins",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/3-other-quick-wins/"
+  },
+  {
+    "title": "7. Tools of the Trade",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/7-tools-of-the-trade/"
+  },
+  {
+    "title": "4. Abusing Service Misconfigurations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/4-abusing-service-misconfigurations/"
+  },
+  {
+    "title": "6. Abusing Vulnerable Software",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/6-abusing-vulnerable-software/"
+  },
+  {
+    "title": "2. Harvesting Passwords from Usual Spots",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/2-harvesting-passwords-from-usual-spots/"
+  },
+  {
+    "title": "1. Windows Privilege Escalation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/1-windows-privilege-escalation/"
+  },
+  {
+    "title": "9. Privilege Escalation - PATH",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/9-privilege-escalation-path/"
+  },
+  {
+    "title": "4. Privilege Escalation - Kernel Exploits",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/4-privilege-escalation-kernel-exploits/"
+  },
+  {
+    "title": "7. Privilege Escalation - Capabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/7-privilege-escalation-capabilities/"
+  },
+  {
+    "title": "8. Privilege Escalation Cron Jobs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/8-privilege-escalation-cron-jobs/"
+  },
+  {
+    "title": "3. Automated Enumeration Tools",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/3-automated-enumeration-tools/"
+  },
+  {
+    "title": "11. Capstone Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/11-capstone-challenge/"
+  },
+  {
+    "title": "2. Enumeration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/2-enumeration/"
+  },
+  {
+    "title": "1. What is Privilege Escalation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/1-what-is-privilege-escalation/"
+  },
+  {
+    "title": "10. Privilege Escalation - NFS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/10-privilege-escalation-nfs/"
+  },
+  {
+    "title": "0. Linux Privilege Escalation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/0-linux-privilege-escalation/"
+  },
+  {
+    "title": "5. Privilege Escalation - Sudo",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/5-privilege-escalation-sudo/"
+  },
+  {
+    "title": "6. Privilege Escalation - SUID",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/6-privilege-escalation-suid/"
+  },
+  {
+    "title": "14. Linux Practice Box",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/14-linux-practice-box/"
+  },
+  {
+    "title": "5. Netcat Shell Stabilisation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/5-netcat-shell-stabilisation/"
+  },
+  {
+    "title": "8. Common Shell Payloads",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/8-common-shell-payloads/"
+  },
+  {
+    "title": "4. Netcat",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/4-netcat/"
+  },
+  {
+    "title": "2. Tools",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/2-tools/"
+  },
+  {
+    "title": "1. What is a Shell",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/1-what-is-a-shell/"
+  },
+  {
+    "title": "7. Socat Encrypted Shells",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/7-socat-encrypted-shells/"
+  },
+  {
+    "title": "13. Practice and Examples",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/13-practice-and-examples/"
+  },
+  {
+    "title": "9. msfvenom",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/9-msfvenom/"
+  },
+  {
+    "title": "3. Types of Shell",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/3-types-of-shell/"
+  },
+  {
+    "title": "0. What the Shell",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/0-what-the-shell/"
+  },
+  {
+    "title": "15. Windows Practice Box",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/15-windows-practice-box/"
+  },
+  {
+    "title": "11. Webshells",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/11-webshells/"
+  },
+  {
+    "title": "12. Next Steps",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/12-next-steps/"
+  },
+  {
+    "title": "6. Socat",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/6-socat/"
+  },
+  {
+    "title": "10. Metasploit multi-handler",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/10-metasploit-multi-handler/"
+  },
+  {
+    "title": "0. Metasploit - Exploitation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/2-metasploit-exploitation/0-metasploit-exploitation/"
+  },
+  {
+    "title": "0. Metasploit - Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/1-metasploit-introduction/0-metasploit-introduction/"
+  },
+  {
+    "title": "0. Metasploit - Meterpreter",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/3-metasploit-meterpreter/0-metasploit-meterpreter/"
+  },
+  {
+    "title": "4. And Example of Finding a Vulnerability",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/4-and-example-of-finding-a-vulnerability/"
+  },
+  {
+    "title": "1. Introduction to Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/1-introduction-to-vulnerabilities/"
+  },
+  {
+    "title": "2. Scoring Vulnerabilities (CVSS & VPR)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/2-scoring-vulnerabilities-cvss-vpr/"
+  },
+  {
+    "title": "0. Vulnerabilities 101",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/0-vulnerabilities-101/"
+  },
+  {
+    "title": "3. Vulnerability Databases",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/3-vulnerability-databases/"
+  },
+  {
+    "title": "5. Showcase - Exploiting Ackme's Application",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/5-showcase-exploiting-ackme-s-application/"
+  },
+  {
+    "title": "0. Vulnerability Capstone",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/3-vulnerability-capstone/0-vulnerability-capstone/"
+  },
+  {
+    "title": "2. Finding Manual Exploits",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/2-finding-manual-exploits/"
+  },
+  {
+    "title": "4. Practical - Manual Exploitation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/4-practical-manual-exploitation/"
+  },
+  {
+    "title": "0. Exploit Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/0-exploit-vulnerabilities/"
+  },
+  {
+    "title": "1. Automated Vs. Manual Vulnerability Research",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/1-automated-vs-manual-vulnerability-research/"
+  },
+  {
+    "title": "3. Example of Manual Exploit",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/3-example-of-manual-exploit/"
+  },
+  {
     "title": "0. Principles of Security",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/2-introduction-to-pentesting/2-principles-of-security/0-principles-of-security/"
   },
@@ -2808,12 +3164,12 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/4-the-burp-suite-api/"
   },
   {
-    "title": "1. The Extensions Interface",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/1-the-extensions-interface/"
+    "title": "2. The BApp Store",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/2-the-bapp-store/"
   },
   {
-    "title": "2. Te BApp Store",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/2-te-bapp-store/"
+    "title": "1. The Extensions Interface",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/5-burp-suite-extensions/1-the-extensions-interface/"
   },
   {
     "title": "0. Burp Suite - The Basics",
