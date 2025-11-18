@@ -3,7 +3,10 @@ name: Update THM Badge
 on:
   schedule:
     - cron: '0 */6 * * *'   # cada 6 horas
-  workflow_dispatch:         # permite ejecutarlo manualmente
+  workflow_dispatch:         # para lanzarlo a mano
+
+permissions:
+  contents: write
 
 jobs:
   update-badge:
@@ -11,19 +14,21 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Ensure badge dir exists
+        run: mkdir -p assets/badge
 
       - name: Download THM badge
         run: |
-          curl -L "https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3084093" -o assets/badge/thm-badge.svg
+          curl -L "https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3084093" \
+            -o assets/badge/thm-badge.svg
 
       - name: Commit changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/badge/thm-badge.svg
           git commit -m "Auto-update THM badge" || echo "No changes to commit"
-
-      - name: Push
-        run: |
           git push
+
