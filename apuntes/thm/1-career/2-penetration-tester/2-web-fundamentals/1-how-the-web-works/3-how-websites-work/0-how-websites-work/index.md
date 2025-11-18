@@ -4,3 +4,4 @@ title: "0. How Websites Work"
 ---
 
 **THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/3. How Websites Work/1. Redireccion**

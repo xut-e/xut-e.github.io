@@ -4524,22 +4524,50 @@
                         {
                           "name": "1. DNS in Detail",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/1. DNS in Detail/1. Redireccion.md",
+                              "parent": "1. DNS in Detail"
+                            }
+                          ]
                         },
                         {
                           "name": "2. HTTP in Detail",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/2. HTTP in Detail/1. Redireccion.md",
+                              "parent": "2. HTTP in Detail"
+                            }
+                          ]
                         },
                         {
                           "name": "3. How Websites Work",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/3. How Websites Work/1. Redireccion.md",
+                              "parent": "3. How Websites Work"
+                            }
+                          ]
                         },
                         {
                           "name": "4. Putting It All Together",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/4. Putting It All Together/1. Redireccion.md",
+                              "parent": "4. Putting It All Together"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -4550,57 +4578,134 @@
                         {
                           "name": "1. Walking An Application",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/1. Walking An Application/1. Redireccion.md",
+                              "parent": "1. Walking An Application"
+                            }
+                          ]
                         },
                         {
                           "name": "10. Command Injection",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/10. Command Injection/1. Redireccion.md",
+                              "parent": "10. Command Injection"
+                            }
+                          ]
                         },
                         {
                           "name": "11. SQL Injection",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/11. SQL Injection/1. Redireccion.md",
+                              "parent": "11. SQL Injection"
+                            }
+                          ]
                         },
                         {
                           "name": "2. Content Discovery",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/2. Content Discovery/1. Redireccion.md",
+                              "parent": "2. Content Discovery"
+                            }
+                          ]
                         },
                         {
                           "name": "3. Subdomain Enumeration",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirección.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/3. Subdomain Enumeration/1. Redirección.md",
+                              "parent": "3. Subdomain Enumeration"
+                            }
+                          ]
                         },
                         {
                           "name": "4. Authentication Bypass",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/4. Authentication Bypass/1. Redireccion.md",
+                              "parent": "4. Authentication Bypass"
+                            }
+                          ]
                         },
                         {
                           "name": "5. IDOR",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirección.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/5. IDOR/1. Redirección.md",
+                              "parent": "5. IDOR"
+                            }
+                          ]
                         },
                         {
                           "name": "6. File Inclusion",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/6. File Inclusion/1. Redireccion.md",
+                              "parent": "6. File Inclusion"
+                            }
+                          ]
                         },
                         {
                           "name": "7. Intro to SSRF",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF/1. Redireccion.md",
+                              "parent": "7. Intro to SSRF"
+                            }
+                          ]
                         },
                         {
                           "name": "8. Intro to Cross-site Scripting",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/8. Intro to Cross-site Scripting/1. Redireccion.md",
+                              "parent": "8. Intro to Cross-site Scripting"
+                            }
+                          ]
                         },
                         {
                           "name": "9. Race Conditions",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/9. Race Conditions/1. Redireccion.md",
+                              "parent": "9. Race Conditions"
+                            }
+                          ]
                         }
                       ]
                     },

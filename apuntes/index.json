@@ -2044,8 +2044,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/3-burp-suite/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/11-sql-injection/1-redireccion/"
+  },
+  {
     "title": "0. SQL Injection",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/11-sql-injection/0-sql-injection/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/7-intro-to-ssrf/1-redireccion/"
   },
   {
     "title": "0. Intro to SSRF",
@@ -2056,8 +2064,20 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/3-subdomain-enumeration/0-subdomain-enumeration/"
   },
   {
+    "title": "1. Redirección",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/3-subdomain-enumeration/1-redireccion/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/2-content-discovery/1-redireccion/"
+  },
+  {
     "title": "0. Content Discovery",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/2-content-discovery/0-content-discovery/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/4-authentication-bypass/1-redireccion/"
   },
   {
     "title": "0. Authentication Bypass",
@@ -2068,16 +2088,36 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/1-walking-an-application/0-walking-an-application/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/1-walking-an-application/1-redireccion/"
+  },
+  {
     "title": "0. Race Conditions",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/9-race-conditions/0-race-conditions/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/9-race-conditions/1-redireccion/"
   },
   {
     "title": "0. Command Injection",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/10-command-injection/0-command-injection/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/10-command-injection/1-redireccion/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/6-file-inclusion/1-redireccion/"
+  },
+  {
     "title": "0. File Inclusion",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/6-file-inclusion/0-file-inclusion/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/8-intro-to-cross-site-scripting/1-redireccion/"
   },
   {
     "title": "0. Intro to Cross-site Scripting",
@@ -2086,6 +2126,10 @@
   {
     "title": "0. IDOR",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/5-idor/0-idor/"
+  },
+  {
+    "title": "1. Redirección",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/5-idor/1-redireccion/"
   },
   {
     "title": "0. Burp Suite - The Basics",
@@ -2120,16 +2164,32 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/1-how-websites-work/0-how-websites-work/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/1-dns-in-detail/1-redireccion/"
+  },
+  {
     "title": "0. DNS in Detail",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/1-dns-in-detail/0-dns-in-detail/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/2-http-in-detail/1-redireccion/"
   },
   {
     "title": "0. HTTP in Detail",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/2-http-in-detail/0-http-in-detail/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/3-how-websites-work/1-redireccion/"
+  },
+  {
     "title": "0. How Websites Work",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/3-how-websites-work/0-how-websites-work/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/4-putting-it-all-together/1-redireccion/"
   },
   {
     "title": "0. Putting It All Together",

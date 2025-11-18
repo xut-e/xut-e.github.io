@@ -1,42 +1,42 @@
 [
   {
-    "title": "3. How the Web Works",
-    "path": "/apuntes/thm/0-pre-career/1-pre-security/3-how-the-web-works/3-how-the-web-works/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How the Web Works.md",
-    "breadcrumb": "THM > 0. Pre Career > 1. Pre Security > 3. How the Web Works",
-    "content": "1. [[THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/0. DNS in Detail]]\n2. [[THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/0. HTTP in Detail]]\n3. [[THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n4. [[THM/0. Pre Career/1. Pre Security/3. How the Web Works/4. Putting it All Together/0. Putting it All Together]]",
-    "modified": "2025-11-18T00:55:39"
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/11-sql-injection/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/11. SQL Injection/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 2. Introduction to Web Hacking > 11. SQL Injection",
+    "content": "Para ver este curso ve a **THM -> 1. Career -> 2. Penetration Tester -> 1. Jr Penetration Tester -> 3. Introduction to Web Hacking -> 11. SQL Injection**",
+    "modified": "2025-11-18T19:19:05"
   },
   {
-    "title": "7. Exploitation Basics",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/7-exploitation-basics/7-exploitation-basics/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/7. Exploitation Basics.md",
-    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 7. Exploitation Basics",
-    "content": "1. [[0. Moniker Link (CVE-2024-21413)]]\n2. [[THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/2. Metasploit - Introduction/0. Metasploit - Introduction]]\n3. [[THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/0. Metasploit - Exploitation]]\n4. [[THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/4. Metasploit - Meterpreter/0. Metasploit - Meterpreter]]\n5. [[0. Blue]]",
-    "modified": "2025-11-18T00:55:39"
+    "title": "0. SQL Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/11-sql-injection/0-sql-injection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/11. SQL Injection/0. SQL Injection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 2. Introduction to Web Hacking > 11. SQL Injection",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/11. SQL Injection/0. SQL Injection]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/11. SQL Injection/1. Redireccion]]",
+    "modified": "2025-11-18T19:19:05"
   },
   {
-    "title": "8. Web Hacking",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/8-web-hacking/8-web-hacking/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/8. Web Hacking.md",
-    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 8. Web Hacking",
-    "content": "1. [[0. Web Application Basics]]\n2. [[0. JavaScript Essentials]]\n3. [[0. SQL Fundamentals]]\n4. [[THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n5. [[THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]",
-    "modified": "2025-11-18T00:55:39"
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/7-intro-to-ssrf/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 2. Introduction to Web Hacking > 7. Intro to SSRF",
+    "content": "Para ver este curso ve a **THM -> 1. Career -> 2. Penetration Tester -> 1. Jr Penetration Tester -> 3. Introduction to Web Hacking -> 7. Intro to SSRF**",
+    "modified": "2025-11-18T19:19:05"
   },
   {
-    "title": "1. Easy",
-    "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy",
-    "content": "1. [[THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3.",
-    "modified": "2025-11-18T00:55:39"
+    "title": "0. Intro to SSRF",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/7-intro-to-ssrf/0-intro-to-ssrf/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF/0. Intro to SSRF.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 2. Introduction to Web Hacking > 7. Intro to SSRF",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/7. Intro to SSRF/0. Intro to SSRF]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF/1. Redireccion]]",
+    "modified": "2025-11-18T19:19:05"
   },
   {
-    "title": "0. Pickle Rick",
-    "path": "/apuntes/thm/maquinas/1-easy/2-pickle-rick/0-pickle-rick/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 2. Pickle Rick",
-    "content": "[[1. Pickle Rick]]",
-    "modified": "2025-11-18T00:55:39"
+    "title": "0. Subdomain Enumeration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/3-subdomain-enumeration/0-subdomain-enumeration/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/3. Subdomain Enumeration/0. Subdomain Enumeration.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 2. Introduction to Web Hacking > 3. Subdomain Enumeration",
+    "content": "[[THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Subdomain Enumeration/0. Subdomain Enumeration]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/3. Subdomain Enumeration/1. Redirección]]",
+    "modified": "2025-11-18T19:19:05"
   }
 ]

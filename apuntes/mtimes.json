@@ -2592,16 +2592,16 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/5. Nmap Host Discovery Using ARP.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "a945cafa6ad87231b5b29ad940b8c44551c675f66f98b00836c9d048b40c365b"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/0. Nmao Live Host Discovery.md": {
     "modified": "2025-11-15T00:54:35",
     "hash": "6e8ca91c4728a5df85df6e362eaab31a968e3f57dc2bbd0c23604efe54f90db5"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/4. Discovering Live Hosts.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "651fde3fe7d8ab0af9e0ff13ddc66ae86d11b538b3cd45a688b703ffc07637ac"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/1. Introduction.md": {
     "modified": "2025-11-18T00:55:39",
@@ -2904,48 +2904,48 @@
     "hash": "95755dba78ce1f47c0c7e250624f492e918eeb9cec3ab6588ee45bfe73b926eb"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/11. SQL Injection/0. SQL Injection.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "b05a66cb2e2b571c140e9e350503e0aa4fb29fb8fa58fa6f7e11768bb8b278a4"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "6a4987be1653bcb4c73ebb41bb9ca6272e3dfcec32b6a8926a2e6dbc3ef6f64b"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF/0. Intro to SSRF.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "9aef4ef7030c4a58b06c9b55952d9832db7247e98c0f96e052fcfec2ad35b33a"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "ec5b8a7d46146f83c7ffb1ded6dab5c00c36debd6d0b49620bab7a12d2f97a74"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/3. Subdomain Enumeration/0. Subdomain Enumeration.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "9cd74c638cd7b77f6051bcf909d46a8a30028043bddbca7652500b9a15f69b25"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "e155b503196c01ce59a8410b8ecee654744796ce7f6384e5c2b18f17ddad302a"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/2. Content Discovery/0. Content Discovery.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "06889e241b11b9188ac75a83275b6657c4a78e422d4a2b313d3980f5cc04426f"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "dd00c22f53deb06e0afa0c945734b7930b08f0155f0ded08797bef1701c5b9d2"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/4. Authentication Bypass/0. Authentication Bypass.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "9097446bf585ee2ab37bdb3613342f612b982045a3cf035f19e8fe68132f564e"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "83d88025ba061e8f1abb126f497aa1555838d5b7cf9245fc89dcbd023276fe4c"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/1. Walking An Application/0. Walking An Application.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "a2ca252e073fe5916dba6b59764d6926d719ede20352cb1cc177a75fb24e9d5c"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "913b0711f71676895e2eca7b91e69846423900223c361b8e9d9524c213f30a7f"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/9. Race Conditions/0. Race Conditions.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "dc41f22be9539750af0ec9e760e083f58ccaba39b65383c39d2ea434691ef10d"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "7c1d7481baf1cba23598d0d143f678eccde4c0b094914d8226b218858a577c50"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/10. Command Injection/0. Command Injection.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "6b0b8f94c89741551011e334f805cc0e87ef6ca065c90ebac738987e29260f71"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "4306253d8a1cb16e7d1504d4e2b450ed5edf9353eb8a8e86a5de7fdc57629627"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/6. File Inclusion/0. File Inclusion.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "7c3b13471f5fef01e71fb862a6c15f076a743001059c6734546c5bfe3cb5ca7d"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "1351b678faac5b8af4687d1f5500efd493f2750808505e41bb543c10edc9d3c4"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/8. Intro to Cross-site Scripting/0. Intro to Cross-site Scripting.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "84e6615f476eced8943b00ba9dcce0792dcd96c4e682ee0a9b574bd610c0e7c5"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "42b0fee7ed33ea2ab2c43c178ac0f606f94c0c85c3831e58be378e9a468e66b9"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/5. IDOR/0. IDOR.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "3969636406c840f573e0321f7e443d474b8f2d460b8c3f2d70a862600c33f3d9"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "5e1818b027fa77466612490466064d7e7d3a0a05d6aa1dfa4b323907d71ed9e6"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/0. Burp Suite - The Basics.md": {
     "modified": "2025-11-18T00:55:39",
@@ -2980,20 +2980,20 @@
     "hash": "a0c1a1353829bed634d58f81be92ae2301cf4187bcb9b82f55e8a7eb349ac984"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/1. DNS in Detail/0. DNS in Detail.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "38b5f08cb54e40742390bddb944ea4c91b5234b6d389831701c81fdfe55a8630"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "ad0d915a5069c28156e713952acaf81cb806c2be31084adf1efdd7d2bfcce25d"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/2. HTTP in Detail/0. HTTP in Detail.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "c7fe35f248128e8b079f33637c29ed26ca6607629f9b3746deb437c894331683"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "20b762123469585bca4c447613a19e449bdae59458917af229f18706866f41af"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/3. How Websites Work/0. How Websites Work.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "a0c1a1353829bed634d58f81be92ae2301cf4187bcb9b82f55e8a7eb349ac984"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "8294d7fed4ae4eb212d76ec5b7887bf9448269cecc249002096209c6ecd503af"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/4. Putting It All Together/0. Putting It All Together.md": {
-    "modified": "2025-11-18T00:55:39",
-    "hash": "94fb0ef70a74b766adf005c590df2eefd359ae88362fd23f4ea12f74fd05b267"
+    "modified": "2025-11-18T19:19:05",
+    "hash": "5f00eb696a5409d885cc93b9c5d319f12b4e0b6b6378003e40d8f28e11f1dcc0"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/3. Burp Suite - Intruder/0. Burp Suite - Intruder.md": {
     "modified": "2025-11-18T00:55:39",
@@ -3222,5 +3222,65 @@
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/2. The BApp Store.md": {
     "modified": "2025-11-18T00:55:39",
     "hash": "1e9c78c1d316aa5b1cbfff25fd6111471ea421ef07339e90d4a0ee8a759a12ec"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/11. SQL Injection/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "07e983b6bddf85e4f1ac47c548f9340871fd349cc98c27f43657dcdeebc6e051"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "dd420b1538106c135ee95e85cd2188c7f08efa6155936b4ce7fe7717bc6429b9"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/3. Subdomain Enumeration/1. Redirección.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "1ac2ae8c3f0f43116f1be4ad0c75347b5002976b500f08e79799cbf756239b64"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/2. Content Discovery/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "3e74b3067aaea654baf0e7f224f2b02dcdfaf80f20990a61d4c2a33b20f80346"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/4. Authentication Bypass/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "bb0f61ec86bcab09aa9d18677b07eb858361027f7e78999b9f574c08d1722471"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/1. Walking An Application/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "b9912e09f0cdb24702e272730f208129f77cb2617267c8f82e4c3a8cca1d20eb"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/9. Race Conditions/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "adf0d54b9b89ba5c1a4bf3c81fd1dd78c870878b3a28e27e7ca00243d5b83680"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/10. Command Injection/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "fe691f20ed39a914dacf2e00d3c3ba15ac5f82d935d978829873f5ac8cb88461"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/6. File Inclusion/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "ea36d459b015dbef07bc6e6d3b71cde421d8c1b61fa1a1599fddfb3f5c936050"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/8. Intro to Cross-site Scripting/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "641668cef4472628a4f902cfd58d36248b5a1b84e3e715368b05e29eb88ffd48"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/5. IDOR/1. Redirección.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "479c71754c0187c0457eb14f87ad174b316d9ffb678ac12857a4d42e5544c081"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/1. DNS in Detail/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "7c446ed4d2c442aae8e2d1ef44b6c9dd746299370bfc9cc48d7458f802f29b4a"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/2. HTTP in Detail/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "77e0c4ad2cb503d1ed2facc01fdd595a93b99e849d54cb99cb75742d44773a83"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/3. How Websites Work/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "2f55ad748f8ebb8e613107cbffa1c06cbf287cdaa8ef91ef77643bb399b93047"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/4. Putting It All Together/1. Redireccion.md": {
+    "modified": "2025-11-18T19:19:05",
+    "hash": "09ca634e1f3a016637e07c28f5f84e514fa794fc334ffed641f67a0afce1818a"
   }
 }
