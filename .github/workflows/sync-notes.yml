@@ -8,15 +8,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
-    # 1) Checkout del repositorio actual (xut-e/xut-e.github.io)
     - name: Checkout Pages repo
       uses: actions/checkout@v4
       with:
         fetch-depth: 1
 
-    # 2) Checkout del repositorio privado (xut-e/Notes)
     - name: Checkout private Notes repo
       uses: actions/checkout@v4
       with:
@@ -24,16 +24,13 @@ jobs:
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         path: notes
 
-    # 3) Ejecutar build_apuntes.py desde Notes
     - name: Build apuntes
       run: python build_apuntes.py
       working-directory: notes
 
-    # 4) Copiar los apuntes generados a este repo
     - name: Copy apuntes
       run: rsync -av notes/apuntes/ ./apuntes/
 
-    # 5) Commit + push
     - name: Commit & Push changes
       run: |
         git config --global user.name "github-actions"
