@@ -36,8 +36,8 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-cyber-security-101/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101",
-    "content": "[[1. Start Your Cyber Security Journey]]\n[[2. Linux Fundamentals]]\n[[3. Windows and AD Fundamentals]]\n[[4. Command Line]]\n[[5. Networking]]\n[[6. Cryptography]]\n[[7. Exploitation Basics]]\n[[8. Web Hacking]]\n[[9. Offensive Security Tooling]]\n[[10. Defensive Security]]\n[[11. Security Solutions]]\n[[12. Defensive Security Tooling]]\n[[13. Build Your Cyber Security Carreer]]",
-    "modified": "2025-11-14T02:08:45"
+    "content": "[[1. Start Your Cyber Security Journey]]\n[[2. Linux Fundamentals]]\n[[3. Windows and AD Fundamentals]]\n[[4. Command Line]]\n[[5. Networking]]\n[[6. Cryptography]]\n[[7. Exploitation Basics]]\n[[8. Web Hacking]]\n[[9. Offensive Security Tooling]]\n[[10. Defensive Security]]\n[[11. Security Solutions]]\n[[12. Defensive Security Tooling]]\n[[13. Build Your Cyber Security Career]]",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "4. Linux Fundamentals",
@@ -1056,12 +1056,12 @@
     "modified": "2025-11-14T02:08:45"
   },
   {
-    "title": "13. Build Your Cyber Security Carreer",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/13-build-your-cyber-security-carreer/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/13. Build Your Cyber Security Carreer.md",
+    "title": "13. Build Your Cyber Security Career",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/13-build-your-cyber-security-career/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/13. Build Your Cyber Security Career.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 13. Build Your Cyber Security Career",
     "content": "1. [[0. Security Principles]]\n2. [[THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/2. Careers in Cyber/0. Careers in Cyber]]",
-    "modified": "2025-11-14T02:08:45"
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "10. Defensive Security",
@@ -1140,8 +1140,8 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 2. Linux Fundamentals",
-    "content": "[[1. Linux Fundamentals 1]]\n[[2. Linux Funadmentals 2]]\n[[3. Linux Fundamentals 3]]",
-    "modified": "2025-11-14T02:08:45"
+    "content": "[[1. Linux Fundamentals 1]]\n[[2. Linux Fundamentals 2]]\n[[3. Linux Fundamentals 3]]",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "9. Offensive Security Tooling",
@@ -1158,6 +1158,14 @@
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 5. Networking",
     "content": "1. [[0. Networking Concepts]]\n2. [[0. Networking Essentials]]\n3. [[0. Networking Core Protocols]]\n4. [[0. Networking Secure Protocols]]\n5. [[0. Whireshark - The Basics]]\n6. [[0. Tcpdump - The Basics]]\n7. [[0. Nmap - The Basics]]",
     "modified": "2025-11-14T02:08:45"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/2-careers-in-cyber/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/2. Careers in Cyber/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 13. Build Your Cyber Security Career > 2. Careers in Cyber",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 1. Introduction to cybersecurity -> 3. Careers in Cyber**",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "0. Careers in Cyber",
@@ -1238,6 +1246,14 @@
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 13. Build Your Cyber Security Career > 1. Security Principles",
     "content": "La seguridad se ha convertido en una prioridad para todas las empresas.Todas quieren afirmar que sus productos son seguros, pero ¿por qué?\n\nAntes de comenzar, es vital saber cuál es el adversario contra el que debemos proteger nuestros activos. ¿Tratas de evitar que un bebé coja tu ordenador? ¿O tratas de proteger un portátil que contiene diseños técnicos que valen millones de dólares? Usar el mismo tipo de protección ante diferentes adversarios puede ser ridículo y contraproducente. Por esto, conocer a nuestro adversario es clave.\n\nEs imposible conseguir un estado de seguridad del 100%. Por eso debemos de tratar mejorar nuestra postura de seguridad para hacerlo cada vez más difícil para los adversarios.\n\n--------------------------------\n<h2>Objetivos de Aprendizaje</h2>\n- Explicar las funciones de seguridad: Confidencialidad, Integridad y Disponibilidad (Availability), CIA.\n- Presentar la tríada opuesta a CIA: Divulgación, Alteración y Destrucción/Denegación (DAD).\n- Presentar los conceptos fundamentales de los modelos de seguridad como el modelo Bell-LaPadula.\n- Explicar principios de seguridad como Defensa en Profundidad, Zero Trust y Trust but Verify.\n- Introducir a ISO/IEC 19249.\n- Explicar las diferencias principales entre vulnerabilidad, amenaza y riesgo.",
     "modified": "2025-11-14T02:08:45"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/10-defensive-security/1-defensive-security-intro/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/1. Defensive Security Intro/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 10. Defensive Security > 1. Defensive Security Intro",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 1. Introduction to cybersecurity -> 2. Deffensive Security Intro**",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "0. Defensive Security Intro",
@@ -1912,6 +1928,14 @@
     "modified": "2025-11-14T02:08:45"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/2-windows-fundamentals-2/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 3. Windows and AD Fundamentals > 2. Windows Fundamentals 2",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 5. Windows Fundamentals -> 1. Windows Fundamentals Part 2**",
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
     "title": "2. Windows Fundamentals 2",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/2-windows-fundamentals-2/2-windows-fundamentals-2/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/2. Windows Fundamentals 2.md",
@@ -1920,12 +1944,28 @@
     "modified": "2025-11-14T02:08:45"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/1-windows-fundamentals-1/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 3. Windows and AD Fundamentals > 1. Windows Fundamentals 1",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 5. Windows Fundamentals -> 1. Windows Fundamentals Part 1**",
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
     "title": "1. Windows Fundamentals 1",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/1-windows-fundamentals-1/1-windows-fundamentals-1/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/1. Windows Fundamentals 1.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 3. Windows and AD Fundamentals > 1. Windows Fundamentals 1",
     "content": "[[0. Windows Fundamentals 1]]",
     "modified": "2025-11-14T02:08:45"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/3-windows-fundamentals-3/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 3. Windows and AD Fundamentals > 3. Windows Fundamentals 3",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 5. Windows Fundamentals -> 1. Windows Fundamentals Part 3**",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "3. Windows Fundamentals 3",
@@ -3160,6 +3200,14 @@
     "modified": "2025-11-14T02:08:45"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/2-defensive-security-intro/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/2. Defensive Security Intro/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 1. Start Your Cyber Security Journey > 2. Defensive Security Intro",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 1. Introduction to cybersecurity -> 2. Deffensive Security Intro**",
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
     "title": "3. Search Engines",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/3-search-skills/3-search-engines/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/3. Search Engines.md",
@@ -3228,16 +3276,40 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-offensive-security-intro/1-offensive-security-intro/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Offensive Security Intro.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 1. Start Your Cyber Security Journey > 1. Offensive Security Intro",
-    "content": "[[THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/1. Offensive Security Intro/0. Offensive Security Intro]]",
-    "modified": "2025-11-14T02:08:45"
+    "content": "[[THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/1. Offensive Security Intro/0. Offensive Security Intro]]\n[[THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Redireccion]]",
+    "modified": "2025-11-19T09:20:19"
   },
   {
-    "title": "2. Linux Funadmentals 2",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/2-linux-funadmentals-2/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/2. Linux Funadmentals 2.md",
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-offensive-security-intro/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 1. Start Your Cyber Security Journey > 1. Offensive Security Intro",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 1. Introduction to cybersecurity -> 1. Offensive Security Intro**",
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 2. Linux Fundamentals > 2. Linux Fundamentals 2",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 4. Linux Fundamentals -> Linux Fundamentals Part 2**",
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
+    "title": "2. Linux Fundamentals 2",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/2-linux-fundamentals-2/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/2. Linux Fundamentals 2.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 2. Linux Fundamentals > 2. Linux Fundamentals 2",
     "content": "[[0. Linux Fundamentals 2]]",
-    "modified": "2025-11-14T02:08:45"
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/1-linux-fundamentals-1/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/1. Linux Fundamentals 1/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 2. Linux Fundamentals > 1. Linux Fundamentals 1",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 4. Linux Fundamentals -> Linux Fundamentals Part 1**",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "1. Linux Fundamentals 1",
@@ -3254,6 +3326,14 @@
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 2. Linux Fundamentals > 3. Linux Fundamentals 3",
     "content": "[[0. Linux Fundamentals 3]]",
     "modified": "2025-11-14T02:08:45"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/3-linux-fundamentals-3/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/3. Linux Fundamentals 3/1. Redireccion.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 2. Linux Fundamentals > 3. Linux Fundamentals 3",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 4. Linux Fundamentals -> Linux Fundamentals Part 3**",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "0. SQLMap - The Basics",
@@ -5460,8 +5540,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/7-nmap-host-discovery-using-tcp-and-udp/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/7. Nmap Host Discovery Using TCP and UDP.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
-    "content": "",
-    "modified": "2025-11-15T00:54:35"
+    "content": "<h2>TCP SYN Ping</h2>\nPodemos mandar un paquete con la flag SYN (Synchronize) al puerto TCP 80 (por defecto) y esperar una respuesta. Un puerto abierto debe responder con SYN/ACK (Acknowledge), mientras que uno cerrado responderá con RST (Reset). En este caso sólo comprobamos que obtengamos alguna respuesta, el estado específico del puerto es irrelevante.\n\n![[Pasted image 20251119001336.png]]\n\nSi quieres que Nmap use el TCP SYN ping, debes usar `-PS` seguido del número del puerto (`-PS21` o `-PS21-25`). Los usuarios con privilegios pueden mandarlo sin completar el 3-way handshake. aunque el puerto esté abierto.\n\n![[Pasted image 20251119001536.png]]\n\nVeamos un ejemplo:\n\n```shell\npentester@TryHackMe$ sudo nmap -PS -sn 10.10.68.220/24\nStarting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 13:45 EEST\nNmap scan report for 10.10.68.52\nHost is up (0.10s latency).\nNmap scan report for 10.10.68.121\nHost is up (0.16s latency).\nNmap scan report for 10.10.68.125\nHost is up (0.089s latency).\nNmap scan report for 10.10.68.134\nHost is up (0.13s latency).\nNmap scan report for 10.10.68.220\nHost is up (0.11s latency).\nNmap done: 256 IP addresses (5 hosts up) scanned in 17.38 seconds\n```\n\nVeamos como aparece la captura de paquetes en Wireshark:\n\n![[Pasted image 20251119001626.png]]\n\n------------------------------------\n<h2>TCP ACK Ping</h2>\nComo puedes haber adivinado, esto manda un paquete con la flag ACK. Debes correr Nmap como usuario privilegiado.\n\nSe usa el puerto 80 por defecto. La sintaxis es similar a la de TCP SYN ping, solo que ahora la opción es `-PA`. El puerto, si está activo, responde con un RST ya que el paquete no forma parte de ninguna comunicación activa.\n\n![[Pasted image 20251119001920.png]]\n\nVeamos un ejemplo:\n\n```shell\npentester@TryHackMe$ sudo nmap -PA -sn 10.10.68.220/24\nStarting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 13:46 EEST\nNmap scan report for 10.10.68.52\nHost is up (0.11s latency).\nNmap scan report for 10.10.68.121\nHost is up (0.12s latency).\nNmap scan report for 10.10.68.125\nHost is up (0.10s latency).\nNmap scan report for 10.10.68.134\nHost is up (0.10s latency).\nNmap scan report for 10.10.68.220\nHost is up (0.10s latency).\nNmap done: 256 IP addresses (5 hosts up) scanned in 29.89 seconds\n```\n\nSi le echamos un vistazo al tráfico de red descubriremos varios paquetes con la flag ACK.\n\n![[Pasted image 20251119002017.png]]\n\n---------------------------------------------\n<h2>UDP Ping</h2>\nFinalmente, podemos usar UDP para descubrir si el host está online. Al contrario que con TCP SYN ping, mandar un paquete UDP a un puerto abierto no espera respuesta alguna. Sin embargo, si mandamos un paquete UDP a un puerto UDP cerrado, recibiremos un ICMP port unreachable, lo cual indica que el host está activo.\n\n![[Pasted image 20251119002454.png]]\n\nLa sintaxis específica es similar a las anteriores pero con la opción `-PU`.\n\n```shell\npentester@TryHackMe$ sudo nmap -PU -sn 10.10.68.220/24\nStarting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 13:45 EEST\nNmap scan report for 10.10.68.52\nHost is up (0.10s latency).\nNmap scan report for 10.10.68.121\nHost is up (0.10s latency).\nNmap scan report for 10.10.68.125\nHost is up (0.14s latency).\nNmap scan report for 10.10.68.134\nHost is up (0.096s latency).\nNmap scan report for 10.10.68.220\nHost is up (0.11s latency).\nNmap done: 256 IP addresses (5 hosts up) scanned in 9.20 seconds\n```\n\nInspeccionemos los paquetes UDP generados con Wireshark:\n\n![[Pasted image 20251119002558.png]]\n\n---------------------------------------------\n<h2>Masscan</h2>\nMasscan usa un acercamiento similar para descubrir los sistemas disponibles. Sin embargo, para acabar este escaneo rápido, Masscan es bastante agresivo con la cantidad de paquetes que genera. La sintaxis es similar, `-p` puede ir seguido de un puerto, lista o rango.\n\n- `masscan MACHINE_IP/24 -p443`\n- `masscan MACHINE_IP/24 -p80,443`\n- `masscan MACHINE_IP/24 -p22-25`\n- `masscan MACHINE_IP/24 ‐‐top-ports 100`\n\nPuedes instalar Masscan haciendo `sudo apt install masscan`.",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "2. Subnetworks",
@@ -5476,16 +5556,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/9-summary/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/9. Summary.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
-    "content": "",
-    "modified": "2025-11-15T00:54:35"
+    "content": "Hemos aprendido como ARP, ICMP, TCP y UDP pueden detectar hosts  activos.\n\n| Tipo de Escaneo        | Comando de Ejemplo                          |\n| ---------------------- | ------------------------------------------- |\n| ARP Scan               | `sudo nmap -PR -sn MACHINE_IP/24`           |\n| ICMP Echo Scan         | `sudo nmap -PE -sn MACHINE_IP/24`           |\n| ICMP Timestamp Scan    | `sudo nmap -PP -sn MACHINE_IP/24`           |\n| ICMP Address Mask Scan | `sudo nmap -PM -sn MACHINE_IP/24`           |\n| TCP SYN Ping Scan      | `sudo nmap -PS22,80,443 -sn MACHINE_IP/30`  |\n| TCP ACK Ping Scan      | `sudo nmap -PA22,80,443 -sn MACHINE_IP/30`  |\n| UDP Ping Scan          | `sudo nmap -PU53,161,162 -sn MACHINE_IP/30` |\n\nRecuerda añadir `-sn` si sólo estás interesado en los hosts sin el escaneo de puertos.\n\n| Opción | Propósito                                      |\n| ------ | ---------------------------------------------- |\n| `-n`   | No mira DNS                                    |\n| `-R`   | Mira reverse-DNS para todos los posibles hosts |\n| `-sn`  | Sólo descubrimiento de hosts                   |",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "8. Using Reverse-DNS Lookup",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/8-using-reverse-dns-lookup/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/8. Using Reverse-DNS Lookup.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
-    "content": "",
-    "modified": "2025-11-15T00:54:35"
+    "content": "El comportamiento por defecto de Nmap es usar reverse-DNS. Esto es porque los hostnames pueden revelar mucho. Sin embargo, si no quieres mandar estas queries DNS puedes usar `-n`.\n\nPor defecto, Nmap mirará los hosts activos, sin embargo, puedes usar la opción `-R` para hacer una query al servidor DNS incluso para los hosts offline. Si quieres usar un servidor DNS específico, puedes añadir la opción `--dns-servers <DNS_SERVER>`.",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "3. Enumerating Targets",
@@ -5500,8 +5580,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/6-nmap-host-discovery-using-icmp/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/6. Nmap Host Discovery Using ICMP.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 3. Nmap Live Host Discovery",
-    "content": "",
-    "modified": "2025-11-15T00:54:35"
+    "content": "Podemos hacer ping a cada dirección IP en la red objetivo y ver quién responde. Aunque sería el enfoque más directo, no siempre es confiable. Muchos firewalls bloquean los paquetes ICMP echo (las nuevas versiones de MS Windows la bloquean por defecto). Recuerda que antes de una petición ICMP va una petición ARP.\n\nPara usar ICMP echo, añade la opción `-PE`.\n\n![[Pasted image 20251118232901.png]]\n\nEn el ejemplo de abajo podemos ver un ejemplo en el que mandaremos paquetes ICMP echo a cada dirección IP en la subred objetivo. Añadimos `-sn` para que no realice un escaneo de puertos.\n\n```shell\npentester@TryHackMe$ sudo nmap -PE -sn 10.10.68.220/24  \n\nStarting Nmap 7.60 ( https://nmap.org ) at 2021-09-02 10:16 BST \nNmap scan report for ip-10-10-68-50.eu-west-1.compute.internal (10.10.68.50) \nHost is up (0.00017s latency). \nMAC Address: 02:95:36:71:5B:87 (Unknown) \nNmap scan report for ip-10-10-68-52.eu-west-1.compute.internal (10.10.68.52) \nHost is up (0.00017s latency). \nMAC Address: 02:48:E8:BF:78:E7 (Unknown) \nNmap scan report for ip-10-10-68-77.eu-west-1.compute.internal (10.10.68.77) \nHost is up (-0.100s latency). \nMAC Address: 02:0F:0A:1D:76:35 (Unknown) \nNmap scan report for ip-10-10-68-110.eu-west-1.compute.internal (10.10.68.110) \nHost is up (-0.10s latency). \nMAC Address: 02:6B:50:E9:C2:91 (Unknown) \nNmap scan report for ip-10-10-68-140.eu-west-1.compute.internal (10.10.68.140) \nHost is up (0.00021s latency). \nMAC Address: 02:58:59:63:0B:6B (Unknown) \nNmap scan report for ip-10-10-68-142.eu-west-1.compute.internal (10.10.68.142) \nHost is up (0.00016s latency). \nMAC Address: 02:C6:41:51:0A:0F (Unknown) \nNmap scan report for ip-10-10-68-220.eu-west-1.compute.internal (10.10.68.220) \nHost is up (0.00026s latency). \nMAC Address: 02:25:3F:DB:EE:0B (Unknown) \nNmap scan report for ip-10-10-68-222.eu-west-1.compute.internal (10.10.68.222) \nHost is up (0.00025s latency). \nMAC Address: 02:28:B1:2E:B0:1B (Unknown) \nNmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds\n```\n\nEl output del escaneo muestra que 8 hosts están activos. Además, muestra sus direcciones MAC. No esperamos recibir direcciones MAC a no ser que estemos en la misma red por lo que el output de arriba revela que estamos en la misma subred ya que hemos recibido las respuestas ARP.\n\nAhora realizaremos el mismo escaneo pero desde una máquina de otra subred.\n\n```shell\npentester@TryHackMe$ sudo nmap -PE -sn 10.10.68.220/24  \n\nStarting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 12:16 EEST \nNmap scan report for 10.10.68.50 \nHost is up (0.12s latency). \nNmap scan report for 10.10.68.52 \nHost is up (0.12s latency). \nNmap scan report for 10.10.68.77 \nHost is up (0.11s latency). \nNmap scan report for 10.10.68.110 \nHost is up (0.11s latency). \nNmap scan report for 10.10.68.140 \nHost is up (0.11s latency). \nNmap scan report for 10.10.68.142 \nHost is up (0.11s latency). \nNmap scan report for 10.10.68.220 \nHost is up (0.11s latency). \nNmap scan report for 10.10.68.222 \nHost is up (0.11s latency). \nNmap done: 256 IP addresses (8 hosts up) scanned in 8.26 seconds\n```\n\nSi miras los paquetes de red usando una herramienta como Wireshark verás lo siguiente:\n\n![[Pasted image 20251118233427.png]]\n\nDebido a que las peticiones ICMP Echo suelen ser bloqueadas, puedes considerar ICMP Timestamp o ICMP Address Mask para averiguar si está activo. Nmap usa estas, tipo 13 y 14, respectivamente, añadiendo la opción `-PP` para determinar si el host está activo.\n\n![[Pasted image 20251118233623.png]]\n\nEn el siguiente ejemplo ejecutamos esto mismo.\n\n```shell\npentester@TryHackMe$ sudo nmap -PP -sn 10.10.68.220/24  \n\nStarting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 12:06 EEST \nNmap scan report for 10.10.68.50 \nHost is up (0.13s latency). \nNmap scan report for 10.10.68.52 \nHost is up (0.25s latency). \nNmap scan report for 10.10.68.77 \nHost is up (0.14s latency). \nNmap scan report for 10.10.68.110 \nHost is up (0.14s latency). \nNmap scan report for 10.10.68.140 \nHost is up (0.15s latency). \nNmap scan report for 10.10.68.209 \nHost is up (0.14s latency). \nNmap scan report for 10.10.68.220 \nHost is up (0.14s latency). \nNmap scan report for 10.10.68.222 \nHost is up (0.14s latency). \nNmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds\n```\n\nSi capturamos los paquetes en Wireshark vemos lo siguiente:\n\n![[Pasted image 20251118233815.png]]\n\nNmap usa las queries de Address Mask (tipo 17) y su respuesta (tipo 18) con la opción `-PM`. de la siguiente manera.\n\n![[Pasted image 20251118233912.png]]\n\nAquí podemos ver un ejemplo. Aunque por escaneos pasados sabemos que está activo en este escaneo no devolvió nada. La razón es que hay un FireWall bloqueando este tipo de tráfico.\n\n```shell\npentester@TryHackMe$ sudo nmap -PM -sn 10.10.68.220/24\n\nStarting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 12:13 EEST\nNmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds\n```\n\nAunque no obtuvimos respuesta, aquí podemos ver una captura del tráfico:\n\n![[Pasted image 20251118234053.png]]",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "5. Nmap Host Discovery Using ARP",
@@ -6048,12 +6128,28 @@
     "modified": "2025-11-18T00:55:39"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/2-metasploit-exploitation/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/2. Metasploit - Exploitation/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 7. Metasploit > 2. Metasploit - Exploitation",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 7. Exploitation Basics -> 3. Metasploit - Exploitation**",
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
     "title": "0. Metasploit - Exploitation",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/2-metasploit-exploitation/0-metasploit-exploitation/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/2. Metasploit - Exploitation/0. Metasploit - Exploitation.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 7. Metasploit > 2. Metasploit - Exploitation",
     "content": "[[THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/0. Metasploit - Exploitation]]",
     "modified": "2025-11-18T00:55:39"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/1-metasploit-introduction/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/1. Metasploit - Introduction/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 7. Metasploit > 1. Metasploit - Introduction",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 7. Exploitation Basics -> 2. Metasploit - Introduction**",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "0. Metasploit - Introduction",
@@ -6070,6 +6166,14 @@
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 7. Metasploit > 3. Metasploit - Meterpreter",
     "content": "[[THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/4. Metasploit - Meterpreter/0. Metasploit - Meterpreter]]",
     "modified": "2025-11-18T00:55:39"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/3-metasploit-meterpreter/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/3. Metasploit - Meterpreter/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 7. Metasploit > 3. Metasploit - Meterpreter",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 7. Exploitation Basics -> 4. Metasploit - Meterpreter**",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "4. And Example of Finding a Vulnerability",
@@ -6472,6 +6576,14 @@
     "modified": "2025-11-15T00:54:35"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/1-brup-suite-the-basics/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/1. Brup Suite - The Basics/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 1. Brup Suite - The Basics",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 8. Web Hacking -> 4. Burp Suite - The Basics**",
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
     "title": "5. Practical Example",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/5-practical-example/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/5. Practical Example.md",
@@ -6536,12 +6648,28 @@
     "modified": "2025-11-15T00:54:35"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/2-defensive-security-intro/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/2. Defensive Security Intro/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 1. Introduction to Cyber Security > 2. Defensive Security Intro",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 1. Introduction to cybersecurity -> 2. Defensive Security Intro**",
+    "modified": "2025-11-19T09:20:19"
+  },
+  {
     "title": "0. Defensive Security Intro",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/2-defensive-security-intro/0-defensive-security-intro/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/2. Defensive Security Intro/0. Defensive Security Intro.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 1. Introduction to Cyber Security > 2. Defensive Security Intro",
     "content": "[[0. Deffensive Security Intro]]",
     "modified": "2025-11-14T02:08:45"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/3-careers-in-cyber/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/3. Careers in Cyber/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 1. Introduction to Cyber Security > 3. Careers in Cyber",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 1. Introduction to cybersecurity -> 3. Careers in Cyber**",
+    "modified": "2025-11-19T09:20:19"
   },
   {
     "title": "0. Careers in Cyber",
@@ -6558,5 +6686,13 @@
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 1. Introduction to Cyber Security > 1. Offensive Security Intro",
     "content": "[[THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/1. Offensive Security Intro/0. Offensive Security Intro]]",
     "modified": "2025-11-14T02:08:45"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/1-offensive-security-intro/1-redireccion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/1. Offensive Security Intro/1. Redireccion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 1. Introduction to Cyber Security > 1. Offensive Security Intro",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 1. Introduction to cybersecurity -> 1. Offensive Security Intro**",
+    "modified": "2025-11-19T09:20:19"
   }
 ]

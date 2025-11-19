@@ -789,12 +789,38 @@
                     {
                       "name": "1. Offensive Security Intro",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Offensive Security Intro.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Offensive Security Intro.md",
+                          "parent": "1. Offensive Security Intro"
+                        },
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Redireccion.md",
+                          "parent": "1. Offensive Security Intro"
+                        }
+                      ]
                     },
                     {
                       "name": "2. Defensive Security Intro",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/2. Defensive Security Intro/1. Redireccion.md",
+                          "parent": "2. Defensive Security Intro"
+                        },
+                        {
+                          "name": "2. Defensive Security Intro.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/2. Defensive Security Intro/2. Defensive Security Intro.md",
+                          "parent": "2. Defensive Security Intro"
+                        }
+                      ]
                     },
                     {
                       "name": "3. Search Skills",
@@ -853,7 +879,14 @@
                     {
                       "name": "1. Defensive Security Intro",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/1. Defensive Security Intro/1. Redireccion.md",
+                          "parent": "1. Defensive Security Intro"
+                        }
+                      ]
                     },
                     {
                       "name": "2. SOC Fundamentals",
@@ -1360,15 +1393,16 @@
                       ]
                     },
                     {
-                      "name": "13. Build Your Cyber Security Carreer.md",
-                      "type": "file",
-                      "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/13. Build Your Cyber Security Carreer.md",
-                      "parent": "13. Build Your Cyber Security Career"
-                    },
-                    {
                       "name": "2. Careers in Cyber",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/2. Careers in Cyber/1. Redireccion.md",
+                          "parent": "2. Careers in Cyber"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1379,16 +1413,35 @@
                     {
                       "name": "1. Linux Fundamentals 1",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Linux Fundamentals 1.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/1. Linux Fundamentals 1/1. Linux Fundamentals 1.md",
+                          "parent": "1. Linux Fundamentals 1"
+                        },
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/1. Linux Fundamentals 1/1. Redireccion.md",
+                          "parent": "1. Linux Fundamentals 1"
+                        }
+                      ]
                     },
                     {
                       "name": "2. Linux Fundamentals 2",
                       "type": "directory",
                       "contents": [
                         {
-                          "name": "2. Linux Funadmentals 2.md",
+                          "name": "1. Redireccion.md",
                           "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/2. Linux Funadmentals 2.md",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/1. Redireccion.md",
+                          "parent": "2. Linux Fundamentals 2"
+                        },
+                        {
+                          "name": "2. Linux Fundamentals 2.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/2. Linux Fundamentals 2.md",
                           "parent": "2. Linux Fundamentals 2"
                         }
                       ]
@@ -1396,7 +1449,20 @@
                     {
                       "name": "3. Linux Fundamentals 3",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/3. Linux Fundamentals 3/1. Redireccion.md",
+                          "parent": "3. Linux Fundamentals 3"
+                        },
+                        {
+                          "name": "3. Linux Fundamentals 3.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/3. Linux Fundamentals 3/3. Linux Fundamentals 3.md",
+                          "parent": "3. Linux Fundamentals 3"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1407,17 +1473,56 @@
                     {
                       "name": "1. Windows Fundamentals 1",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/1. Redireccion.md",
+                          "parent": "1. Windows Fundamentals 1"
+                        },
+                        {
+                          "name": "1. Windows Fundamentals 1.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/1. Windows Fundamentals 1.md",
+                          "parent": "1. Windows Fundamentals 1"
+                        }
+                      ]
                     },
                     {
                       "name": "2. Windows Fundamentals 2",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/1. Redireccion.md",
+                          "parent": "2. Windows Fundamentals 2"
+                        },
+                        {
+                          "name": "2. Windows Fundamentals 2.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/2. Windows Fundamentals 2.md",
+                          "parent": "2. Windows Fundamentals 2"
+                        }
+                      ]
                     },
                     {
                       "name": "3. Windows Fundamentals 3",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Redireccion.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/1. Redireccion.md",
+                          "parent": "3. Windows Fundamentals 3"
+                        },
+                        {
+                          "name": "3. Windows Fundamentals 3.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/3. Windows Fundamentals 3.md",
+                          "parent": "3. Windows Fundamentals 3"
+                        }
+                      ]
                     },
                     {
                       "name": "4. Active Directory Basics",
@@ -2931,17 +3036,38 @@
                         {
                           "name": "1. Offensive Security Intro",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/1. Offensive Security Intro/1. Redireccion.md",
+                              "parent": "1. Offensive Security Intro"
+                            }
+                          ]
                         },
                         {
                           "name": "2. Defensive Security Intro",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/2. Defensive Security Intro/1. Redireccion.md",
+                              "parent": "2. Defensive Security Intro"
+                            }
+                          ]
                         },
                         {
                           "name": "3. Careers in Cyber",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/3. Careers in Cyber/1. Redireccion.md",
+                              "parent": "3. Careers in Cyber"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -3552,7 +3678,14 @@
                         {
                           "name": "1. Brup Suite - The Basics",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/1. Brup Suite - The Basics/1. Redireccion.md",
+                              "parent": "1. Brup Suite - The Basics"
+                            }
+                          ]
                         },
                         {
                           "name": "2. Burp Suite - Repeater",
@@ -4275,17 +4408,38 @@
                         {
                           "name": "1. Metasploit - Introduction",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/1. Metasploit - Introduction/1. Redireccion.md",
+                              "parent": "1. Metasploit - Introduction"
+                            }
+                          ]
                         },
                         {
                           "name": "2. Metasploit - Exploitation",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/2. Metasploit - Exploitation/1. Redireccion.md",
+                              "parent": "2. Metasploit - Exploitation"
+                            }
+                          ]
                         },
                         {
                           "name": "3. Metasploit - Meterpreter",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redireccion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/3. Metasploit - Meterpreter/1. Redireccion.md",
+                              "parent": "3. Metasploit - Meterpreter"
+                            }
+                          ]
                         }
                       ]
                     },

@@ -15,4 +15,4 @@ title: "2. Cyber Security 101"
 [10. Defensive Security](/apuntes/thm/0-pre-career/2-cyber-security-101/10-defensive-security/10-defensive-security/)
 [11. Security Solutions](/apuntes/thm/0-pre-career/2-cyber-security-101/11-security-solutions/11-security-solutions/)
 [12. Defensive Security Tooling](/apuntes/thm/0-pre-career/2-cyber-security-101/12-defensive-security-tooling/12-defensive-security-tooling/)
-[13. Build Your Cyber Security Carreer](/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/13-build-your-cyber-security-carreer/)
+[13. Build Your Cyber Security Career](/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/13-build-your-cyber-security-career/)

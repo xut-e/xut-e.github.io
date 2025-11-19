@@ -16,12 +16,12 @@
     "hash": "9f168f7f657d091d20b5f7c85bb1151bc50f2f4f39da99225ec0d4dde7189378"
   },
   "THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "71d10c5790d55f8f329f32e419c2f4d55bcaa022ac6bb01f109ac2fd63783158"
+    "modified": "2025-11-19T09:20:19",
+    "hash": "caa52b2aa7c0ba65ea8985b65709dd693622cb7b4534913666809131fbe945f9"
   },
   "THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "0063cd46e8c7fd9f395ccc5fbadfa009e8d8f157ea44a7c01a7e4a11182334bb"
+    "modified": "2025-11-19T09:20:19",
+    "hash": "4e1b4cee54d16a3bb591b43b0064027dbbcaddda5390981962ae1e975dab28aa"
   },
   "THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/6. Cryptography.md": {
     "modified": "2025-11-14T02:08:45",
@@ -116,8 +116,8 @@
     "hash": "2b25c31f0a7925612399c9ee37f152e8e3c3234f2615921ab7ec1866fcc167ed"
   },
   "THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Offensive Security Intro.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "6088657cd7ff959659e729c0fc88a71d17549a174d39bcd462b8496a90f06be9"
+    "modified": "2025-11-19T09:20:19",
+    "hash": "bf50cc573aff3b7ca0651ad8e0feb37d101e0afe980ad71d6df8c629c665d8c5"
   },
   "THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/3. Search Skills/3. Search Engines.md": {
     "modified": "2025-11-14T02:08:45",
@@ -2568,28 +2568,28 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/7. Nmap Host Discovery Using TCP and UDP.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-19T09:20:19",
+    "hash": "feb73f3b7bc48315de9a98eb754a874c93f4b316ca96a356ceb19ffc5afd2dd9"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/2. Subnetworks.md": {
     "modified": "2025-11-18T00:55:39",
     "hash": "7d9d2cda4bf57dd3f0f0640b1f20a4046ab1a06e96218f5fcfb2244df7c5f1b7"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/9. Summary.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-19T09:20:19",
+    "hash": "6971cef384ea202014df9fd47641dddb2c18e99b26ec3722e4525f72b8191077"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/8. Using Reverse-DNS Lookup.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-19T09:20:19",
+    "hash": "aa86eab0ef736e41233698224cc7f95612929834111fc6f39afd920b7128f9df"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/3. Enumerating Targets.md": {
     "modified": "2025-11-18T00:55:39",
     "hash": "b86b577957977d58cc537f1668cfd3d841289c97bc633765e06ade3bd01fd55c"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/6. Nmap Host Discovery Using ICMP.md": {
-    "modified": "2025-11-15T00:54:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-19T09:20:19",
+    "hash": "a9fab1643e840120bfb518ceadd0c767df6c2e276c3b4c1b2ab079cc4dc6c961"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/3. Nmap Live Host Discovery/5. Nmap Host Discovery Using ARP.md": {
     "modified": "2025-11-18T19:19:05",
@@ -3282,5 +3282,81 @@
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/4. Putting It All Together/1. Redireccion.md": {
     "modified": "2025-11-18T19:19:05",
     "hash": "09ca634e1f3a016637e07c28f5f84e514fa794fc334ffed641f67a0afce1818a"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/13. Build Your Cyber Security Career.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "d4e06bc12ec9388bbda65ef273ddf1a27037b2ab4fb58d30030b25afd0a0c57a"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/2. Careers in Cyber/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "e6e63938ecfa08bc335732388beb8391915f154fc0926e2dd84af9d4d17a0e61"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/10. Defensive Security/1. Defensive Security Intro/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "23f80d16ee6ec2f36139cf77c2f0496787c89d2c40cce47bed4621f983bd5427"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "5312917b92c9412a90b6ce0a8636d6836a56f4343ae395bd5296912e48b8de19"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "f78ba48bada25aad88df4d78be4e0856c96f15075017fc26f51ad911d17e3d2c"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "9e4c43715aaaef8a7a8bea254d74e23c5b93fa5c455b04b1daefda62f0433243"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/2. Defensive Security Intro/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "756a9ed285456569cd28029cb2cd147c0a57ff8639fa43d75f0dc6448950f1d3"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "7c467597888491c350f6cf126d9bfefb401757534a0e919149b8e1d73a45f7a5"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "0063fb1783280a759b3398dd7196cf68683d46b36fac4c2752e51ceee42b8957"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/2. Linux Fundamentals 2.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "c76bfcf49240fc36d5f955140140af70bf02c2c5ce57572329075c980b7d4257"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/1. Linux Fundamentals 1/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "8eb7adae890dd1cd3a377181908a34beebe46b1d0bf8ae4f8c50ccc4100655e1"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/3. Linux Fundamentals 3/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "d12036aad44ccb79fbe20512a4d7b7b81bdff70aa5b40e8f10df53e878c0560c"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/2. Metasploit - Exploitation/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "afaf89b7eaf4fdad2c950e9035aa85c3756af7bfaee275e37da38f96f44e6288"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/1. Metasploit - Introduction/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "831dd876403f903e053a45ed569f0feabc1b7d83a96cabe37db000941479635f"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/3. Metasploit - Meterpreter/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "4bef9cf2db65fbf44c43d2c054c6a85c363f6e162bff69137d28149c9cfbc963"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/1. Brup Suite - The Basics/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "514e7079c929d3e95608378c64b7c7a75079b6a25715d9684f5bae65befcbca6"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/2. Defensive Security Intro/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "034b4030f20bc0c18fc3c01a5a05de787f97e4945c4767f234a97568c58bdf70"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/3. Careers in Cyber/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "d62a5fca9939d6e320ac7dcdc313b2c5f2578426fa442bc2ff89357e3ef1a7ed"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/1. Offensive Security Intro/1. Redireccion.md": {
+    "modified": "2025-11-19T09:20:19",
+    "hash": "3eeef39a4e1a3c46909e0a8a2df7a7ecad2764b78e487a5429a87a98662ceb9b"
   }
 }

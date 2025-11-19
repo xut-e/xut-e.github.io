@@ -528,8 +528,8 @@
     "path": "/apuntes/thm/0-pre-career/1-pre-security/5-windows-fundamentals/1-windows-fundamentals-part-1/8-settings-and-the-control-panel/"
   },
   {
-    "title": "13. Build Your Cyber Security Carreer",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/13-build-your-cyber-security-carreer/"
+    "title": "13. Build Your Cyber Security Career",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/13-build-your-cyber-security-career/"
   },
   {
     "title": "10. Defensive Security",
@@ -580,6 +580,10 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/5-networking/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/2-careers-in-cyber/1-redireccion/"
+  },
+  {
     "title": "0. Careers in Cyber",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/2-careers-in-cyber/0-careers-in-cyber/"
   },
@@ -618,6 +622,10 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/1-security-principles/1-introduction/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/10-defensive-security/1-defensive-security-intro/1-redireccion/"
   },
   {
     "title": "0. Defensive Security Intro",
@@ -956,12 +964,24 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/4-active-directory-basics/0-active-directory-basics/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/2-windows-fundamentals-2/1-redireccion/"
+  },
+  {
     "title": "2. Windows Fundamentals 2",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/2-windows-fundamentals-2/2-windows-fundamentals-2/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/1-windows-fundamentals-1/1-redireccion/"
+  },
+  {
     "title": "1. Windows Fundamentals 1",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/1-windows-fundamentals-1/1-windows-fundamentals-1/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/3-windows-fundamentals-3/1-redireccion/"
   },
   {
     "title": "3. Windows Fundamentals 3",
@@ -1580,6 +1600,10 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/2-defensive-security-intro/2-defensive-security-intro/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/2-defensive-security-intro/1-redireccion/"
+  },
+  {
     "title": "3. Search Engines",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/3-search-skills/3-search-engines/"
   },
@@ -1616,8 +1640,20 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-offensive-security-intro/1-offensive-security-intro/"
   },
   {
-    "title": "2. Linux Funadmentals 2",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/2-linux-funadmentals-2/"
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-offensive-security-intro/1-redireccion/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/1-redireccion/"
+  },
+  {
+    "title": "2. Linux Fundamentals 2",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/2-linux-fundamentals-2/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/1-linux-fundamentals-1/1-redireccion/"
   },
   {
     "title": "1. Linux Fundamentals 1",
@@ -1626,6 +1662,10 @@
   {
     "title": "3. Linux Fundamentals 3",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/3-linux-fundamentals-3/3-linux-fundamentals-3/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/3-linux-fundamentals-3/1-redireccion/"
   },
   {
     "title": "0. SQLMap - The Basics",
@@ -3024,8 +3064,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/10-metasploit-multi-handler/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/2-metasploit-exploitation/1-redireccion/"
+  },
+  {
     "title": "0. Metasploit - Exploitation",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/2-metasploit-exploitation/0-metasploit-exploitation/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/1-metasploit-introduction/1-redireccion/"
   },
   {
     "title": "0. Metasploit - Introduction",
@@ -3034,6 +3082,10 @@
   {
     "title": "0. Metasploit - Meterpreter",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/3-metasploit-meterpreter/0-metasploit-meterpreter/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/3-metasploit-meterpreter/1-redireccion/"
   },
   {
     "title": "4. And Example of Finding a Vulnerability",
@@ -3236,6 +3288,10 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/1-brup-suite-the-basics/0-burp-suite-the-basics/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/1-brup-suite-the-basics/1-redireccion/"
+  },
+  {
     "title": "5. Practical Example",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/5-practical-example/"
   },
@@ -3268,8 +3324,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/7-extra-mile-challenge/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/2-defensive-security-intro/1-redireccion/"
+  },
+  {
     "title": "0. Defensive Security Intro",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/2-defensive-security-intro/0-defensive-security-intro/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/3-careers-in-cyber/1-redireccion/"
   },
   {
     "title": "0. Careers in Cyber",
@@ -3278,5 +3342,9 @@
   {
     "title": "0. Offensive Security Intro",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/1-offensive-security-intro/0-offensive-security-intro/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/1-offensive-security-intro/1-redireccion/"
   }
 ]
