@@ -1132,8 +1132,8 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-start-your-cyber-security-journey/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Start Your Cyber Security Journey.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 1. Start Your Cyber Security Journey",
-    "content": "1. [[1. Offensive Security Intro]]\n2. [[2. Defensive Security Intro]]\n3. [[0. Search Skills]]",
-    "modified": "2025-11-14T02:08:45"
+    "content": "1. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/0. Offensive Security Intro]]\n2. [[2. Defensive Security Intro]]\n3. [[0. Search Skills]]",
+    "modified": "2025-11-19T09:24:06"
   },
   {
     "title": "2. Linux Fundamentals",
@@ -3272,12 +3272,12 @@
     "modified": "2025-11-14T02:08:45"
   },
   {
-    "title": "1. Offensive Security Intro",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-offensive-security-intro/1-offensive-security-intro/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Offensive Security Intro.md",
+    "title": "0. Offensive Security Intro",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-offensive-security-intro/0-offensive-security-intro/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/0. Offensive Security Intro.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 1. Start Your Cyber Security Journey > 1. Offensive Security Intro",
     "content": "[[THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/1. Offensive Security Intro/0. Offensive Security Intro]]\n[[THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Redireccion]]",
-    "modified": "2025-11-19T09:20:19"
+    "modified": "2025-11-19T09:24:06"
   },
   {
     "title": "1. Redireccion",

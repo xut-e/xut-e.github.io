@@ -64,8 +64,8 @@
     "hash": "acf62811b637927f70e1c4985bed867b81cba87ddac0f1ee7ba5af2bd0358185"
   },
   "THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Start Your Cyber Security Journey.md": {
-    "modified": "2025-11-14T02:08:45",
-    "hash": "ad05dad2c60a3290c84f29b826f313860ccd50fe507db6e064e1b346f187ff19"
+    "modified": "2025-11-19T09:24:06",
+    "hash": "5e37642cef18be12cc50615b7ea9302ef6ecdb1c4f1d2ee1d791a39328248e60"
   },
   "THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/13. Build Your Cyber Security Carreer.md": {
     "modified": "2025-11-14T02:08:45",
@@ -3358,5 +3358,9 @@
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/1. Offensive Security Intro/1. Redireccion.md": {
     "modified": "2025-11-19T09:20:19",
     "hash": "3eeef39a4e1a3c46909e0a8a2df7a7ecad2764b78e487a5429a87a98662ceb9b"
+  },
+  "THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/0. Offensive Security Intro.md": {
+    "modified": "2025-11-19T09:24:06",
+    "hash": "bf50cc573aff3b7ca0651ad8e0feb37d101e0afe980ad71d6df8c629c665d8c5"
   }
 }

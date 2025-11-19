@@ -791,12 +791,6 @@
                       "type": "directory",
                       "contents": [
                         {
-                          "name": "1. Offensive Security Intro.md",
-                          "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Offensive Security Intro.md",
-                          "parent": "1. Offensive Security Intro"
-                        },
-                        {
                           "name": "1. Redireccion.md",
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Redireccion.md",
