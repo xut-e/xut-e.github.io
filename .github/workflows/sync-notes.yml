@@ -1,40 +1,44 @@
 name: Sync Notes
 
 on:
-  schedule:
-    - cron: '0 0 * * *' #Ejecuta todos los días a las 00:00h
   workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
-  sync:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout target repository (xut-e.github.io)
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          path: site
+    # 1) Checkout del repositorio actual (xut-e/xut-e.github.io)
+    - name: Checkout Pages repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
 
-      - name: Checkout source notes repository
-        uses: actions/checkout@v4
-        with:
-          repository: xut-e/Notes
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          path: notes
+    # 2) Checkout del repositorio privado (xut-e/Notes)
+    - name: Checkout private Notes repo
+      uses: actions/checkout@v4
+      with:
+        repository: xut-e/Notes
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        path: notes
 
-      - name: Sync notes into content/
-        run: |
-          rsync -av --delete "notes/Ciberseguridad/" "site/content/Ciberseguridad/" 
-          cd site
-          python3 scripts/build_apuntes.py
+    # 3) Ejecutar build_apuntes.py desde Notes
+    - name: Build apuntes
+      run: python build_apuntes.py
+      working-directory: notes
 
-      - name: Commit and push changes
-        run: |
-          cd site
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Sync notes and rebuild" || echo "No changes to commit"
-          git push
+    # 4) Copiar los apuntes generados a este repo
+    - name: Copy apuntes
+      run: rsync -av notes/apuntes/ ./apuntes/
+
+    # 5) Commit + push
+    - name: Commit & Push changes
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add .
+        git commit -m "Auto-update apuntes" || echo "No changes"
+        git push
 
