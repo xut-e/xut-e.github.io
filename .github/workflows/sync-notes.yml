@@ -1,42 +1,40 @@
 name: Sync Notes
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: '0 0 * * *' #Ejecuta todos los días a las 00:00h
+  workflow_dispatch:
 
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
 
     steps:
-    - name: Checkout Pages repo
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 1
-        token: ${{ secrets.TOKEN_GITHUB }}
+      - name: Checkout target repository (xut-e.github.io)
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          path: site
 
-    - name: Checkout private Notes repo
-      uses: actions/checkout@v4
-      with:
-        repository: xut-e/Notes
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        path: notes
+      - name: Checkout source notes repository
+        uses: actions/checkout@v4
+        with:
+          repository: xut-e/Notes
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          path: notes
 
-    - name: Build apuntes
-      run: python build_apuntes.py
-      working-directory: notes
+      - name: Sync notes into content/
+        run: |
+          rsync -av --delete "notes/Ciberseguridad/" "site/content/Ciberseguridad/" 
+          cd site
+          python3 scripts/build_apuntes.py
 
-    - name: Copy apuntes
-      run: rsync -av notes/apuntes/ ./apuntes/
-
-    - name: Commit & Push changes
-      run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-        git add .
-        git commit -m "Auto-update apuntes" || echo "No changes"
-        git push
+      - name: Commit and push changes
+        run: |
+          cd site
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Sync notes and rebuild" || echo "No changes to commit"
+          git push
 
