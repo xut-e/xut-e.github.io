@@ -1,42 +1,42 @@
 [
   {
+    "title": "4. Linux Fundamentals",
+    "path": "/apuntes/thm/0-pre-career/1-pre-security/4-linux-fundamentals/4-linux-fundamentals/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/4. Linux Fundamentals.md",
+    "breadcrumb": "THM > 0. Pre Career > 1. Pre Security > 4. Linux Fundamentals",
+    "content": "1. [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/0. Linux Fundamentals 1]]\n2. [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/0. Linux Fundamentals 2]]\n3. [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/0. Linux Fundamentals 3]]",
+    "modified": "2025-11-20T00:48:54"
+  },
+  {
+    "title": "5. Windows Fundamentals",
+    "path": "/apuntes/thm/0-pre-career/1-pre-security/5-windows-fundamentals/5-windows-fundamentals/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/5. Windows Fundamentals.md",
+    "breadcrumb": "THM > 0. Pre Career > 1. Pre Security > 5. Windows Fundamentals",
+    "content": "1. [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/1. Windows Fundamentals Part 1/0. Windows Fundamentals 1]]\n2. [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/2. Windows Fundamentals Part 2/0. Windows Fundamentals 2]]\n3. [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/5. Windows Fundamentals/3. Windows Fundamentals Part 3/0. Windows Fundamentals 3]]",
+    "modified": "2025-11-20T00:48:54"
+  },
+  {
+    "title": "3. Windows and AD Fundamentals",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/3-windows-and-ad-fundamentals/",
+    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows and AD Fundamentals.md",
+    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 3. Windows and AD Fundamentals",
+    "content": "1. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/0. Windows Fundamentals 1]]\n2. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/0. Windows Fundamentals 2]]\n3. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/0. Windows Fundamentals 3]]\n4. [[0. Active Directory Basics]]",
+    "modified": "2025-11-20T00:48:54"
+  },
+  {
     "title": "1. Start Your Cyber Security Journey",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-start-your-cyber-security-journey/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Start Your Cyber Security Journey.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 1. Start Your Cyber Security Journey",
-    "content": "1. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/0. Offensive Security Intro]]\n2. [[2. Defensive Security Intro]]\n3. [[0. Search Skills]]",
-    "modified": "2025-11-19T09:24:06"
-  },
-  {
-    "title": "0. Offensive Security Intro",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/1-offensive-security-intro/0-offensive-security-intro/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/0. Offensive Security Intro.md",
-    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 1. Start Your Cyber Security Journey > 1. Offensive Security Intro",
-    "content": "[[THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/1. Offensive Security Intro/0. Offensive Security Intro]]\n[[THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/1. Redireccion]]",
-    "modified": "2025-11-19T09:24:06"
-  },
-  {
-    "title": "2. Cyber Security 101",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-cyber-security-101/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md",
-    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101",
-    "content": "[[1. Start Your Cyber Security Journey]]\n[[2. Linux Fundamentals]]\n[[3. Windows and AD Fundamentals]]\n[[4. Command Line]]\n[[5. Networking]]\n[[6. Cryptography]]\n[[7. Exploitation Basics]]\n[[8. Web Hacking]]\n[[9. Offensive Security Tooling]]\n[[10. Defensive Security]]\n[[11. Security Solutions]]\n[[12. Defensive Security Tooling]]\n[[13. Build Your Cyber Security Career]]",
-    "modified": "2025-11-19T09:20:19"
-  },
-  {
-    "title": "13. Build Your Cyber Security Career",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/13-build-your-cyber-security-career/13-build-your-cyber-security-career/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/13. Build Your Cyber Security Career.md",
-    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 13. Build Your Cyber Security Career",
-    "content": "1. [[0. Security Principles]]\n2. [[THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/2. Careers in Cyber/0. Careers in Cyber]]",
-    "modified": "2025-11-19T09:20:19"
+    "content": "1. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/1. Offensive Security Intro/0. Offensive Security Intro]]\n2. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/2. Defensive Security Intro/0. Defensive Security Intro]]\n3. [[0. Search Skills]]",
+    "modified": "2025-11-20T00:48:54"
   },
   {
     "title": "2. Linux Fundamentals",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 2. Linux Fundamentals",
-    "content": "[[1. Linux Fundamentals 1]]\n[[2. Linux Fundamentals 2]]\n[[3. Linux Fundamentals 3]]",
-    "modified": "2025-11-19T09:20:19"
+    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/1. Linux Fundamentals 1/0. Linux Fundamentals 1]]\n[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/0. Linux Fundamentals 2]]\n[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/3. Linux Fundamentals 3/0. Linux Fundamentals 3]]",
+    "modified": "2025-11-20T00:48:54"
   }
 ]

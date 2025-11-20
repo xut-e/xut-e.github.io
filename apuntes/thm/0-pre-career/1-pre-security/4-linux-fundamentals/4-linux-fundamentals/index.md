@@ -3,6 +3,6 @@ layout: apunte
 title: "4. Linux Fundamentals"
 ---
 
-1. [0. Linux Fundamentals 1](/apuntes/thm/0-pre-career/1-pre-security/4-linux-fundamentals/linux-fundamentals-part-1/0-linux-fundamentals-1/)
-2. [0. Linux Fundamentals 2](/apuntes/thm/0-pre-career/1-pre-security/4-linux-fundamentals/linux-fundamentals-part-2/0-linux-fundamentals-2/)
-3. [0. Linux Fundamentals 3](/apuntes/thm/0-pre-career/1-pre-security/4-linux-fundamentals/linux-fundamentals-part-3/0-linux-fundamentals-3/)
+1. **Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 1/0. Linux Fundamentals 1**
+2. **Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/0. Linux Fundamentals 2**
+3. **Ciberseguridad/THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 3/0. Linux Fundamentals 3**

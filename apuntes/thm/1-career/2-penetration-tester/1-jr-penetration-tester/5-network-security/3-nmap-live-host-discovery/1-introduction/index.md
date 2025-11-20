@@ -10,10 +10,10 @@ Cuando queremos tomar como objetivo una red, necesitamos una herramienta eficien
 
 La herramienta en la que confiamos es Nmap. Esta es la primera unidad de una serie de 4 sobre Nmap:
 
-- [0. Nmao Live Host Discovery](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/0-nmao-live-host-discovery/)
-- [0. Nmap Basic Port Scans](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/0-nmap-basic-port-scans/)
-- [0. Nmap Advanced Port Scans](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/0-nmap-advanced-port-scans/)
-- [0. Nmap Post Port Scans](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/0-nmap-post-port-scans/)
+1.  [0. Nmap Live Host Discovery](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/0-nmap-live-host-discovery/)
+2. [0. Nmap Basic Port Scans](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/4-nmap-basic-port-scans/0-nmap-basic-port-scans/)
+3. [0. Nmap Advanced Port Scans](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-nmap-advanced-port-scans/0-nmap-advanced-port-scans/)
+4. [0. Nmap Post Port Scans](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/6-nmap-post-port-scans/0-nmap-post-port-scans/)
 
 En esta en concreto veremos cómo descubrir hosts activos además de ver los diferentes acercamientos que realiza Nmap con este propósito:
 

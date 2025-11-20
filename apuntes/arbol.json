@@ -807,12 +807,6 @@
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/2. Defensive Security Intro/1. Redireccion.md",
                           "parent": "2. Defensive Security Intro"
-                        },
-                        {
-                          "name": "2. Defensive Security Intro.md",
-                          "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/1. Start Your Cyber Security Journey/2. Defensive Security Intro/2. Defensive Security Intro.md",
-                          "parent": "2. Defensive Security Intro"
                         }
                       ]
                     },
@@ -1409,12 +1403,6 @@
                       "type": "directory",
                       "contents": [
                         {
-                          "name": "1. Linux Fundamentals 1.md",
-                          "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/1. Linux Fundamentals 1/1. Linux Fundamentals 1.md",
-                          "parent": "1. Linux Fundamentals 1"
-                        },
-                        {
                           "name": "1. Redireccion.md",
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/1. Linux Fundamentals 1/1. Redireccion.md",
@@ -1431,12 +1419,6 @@
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/1. Redireccion.md",
                           "parent": "2. Linux Fundamentals 2"
-                        },
-                        {
-                          "name": "2. Linux Fundamentals 2.md",
-                          "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/2. Linux Fundamentals 2.md",
-                          "parent": "2. Linux Fundamentals 2"
                         }
                       ]
                     },
@@ -1448,12 +1430,6 @@
                           "name": "1. Redireccion.md",
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/3. Linux Fundamentals 3/1. Redireccion.md",
-                          "parent": "3. Linux Fundamentals 3"
-                        },
-                        {
-                          "name": "3. Linux Fundamentals 3.md",
-                          "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/3. Linux Fundamentals 3/3. Linux Fundamentals 3.md",
                           "parent": "3. Linux Fundamentals 3"
                         }
                       ]
@@ -1473,12 +1449,6 @@
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/1. Redireccion.md",
                           "parent": "1. Windows Fundamentals 1"
-                        },
-                        {
-                          "name": "1. Windows Fundamentals 1.md",
-                          "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/1. Windows Fundamentals 1.md",
-                          "parent": "1. Windows Fundamentals 1"
                         }
                       ]
                     },
@@ -1491,12 +1461,6 @@
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/1. Redireccion.md",
                           "parent": "2. Windows Fundamentals 2"
-                        },
-                        {
-                          "name": "2. Windows Fundamentals 2.md",
-                          "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/2. Windows Fundamentals 2.md",
-                          "parent": "2. Windows Fundamentals 2"
                         }
                       ]
                     },
@@ -1508,12 +1472,6 @@
                           "name": "1. Redireccion.md",
                           "type": "file",
                           "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/1. Redireccion.md",
-                          "parent": "3. Windows Fundamentals 3"
-                        },
-                        {
-                          "name": "3. Windows Fundamentals 3.md",
-                          "type": "file",
-                          "path": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/3. Windows Fundamentals 3.md",
                           "parent": "3. Windows Fundamentals 3"
                         }
                       ]

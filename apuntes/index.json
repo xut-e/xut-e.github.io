@@ -964,28 +964,28 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/4-active-directory-basics/0-active-directory-basics/"
   },
   {
+    "title": "0. Windows Fundamentals 2",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/2-windows-fundamentals-2/0-windows-fundamentals-2/"
+  },
+  {
     "title": "1. Redireccion",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/2-windows-fundamentals-2/1-redireccion/"
   },
   {
-    "title": "2. Windows Fundamentals 2",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/2-windows-fundamentals-2/2-windows-fundamentals-2/"
+    "title": "0. Windows Fundamentals 1",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/1-windows-fundamentals-1/0-windows-fundamentals-1/"
   },
   {
     "title": "1. Redireccion",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/1-windows-fundamentals-1/1-redireccion/"
   },
   {
-    "title": "1. Windows Fundamentals 1",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/1-windows-fundamentals-1/1-windows-fundamentals-1/"
+    "title": "0. Windows Fundamentals 3",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/3-windows-fundamentals-3/0-windows-fundamentals-3/"
   },
   {
     "title": "1. Redireccion",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/3-windows-fundamentals-3/1-redireccion/"
-  },
-  {
-    "title": "3. Windows Fundamentals 3",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/3-windows-fundamentals-3/3-windows-fundamentals-3/"
   },
   {
     "title": "0. Vulnerability Scanner Overview",
@@ -1596,12 +1596,12 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/12-defensive-security-tooling/3-remnux-getting-started/1-introduction/"
   },
   {
-    "title": "2. Defensive Security Intro",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/2-defensive-security-intro/2-defensive-security-intro/"
-  },
-  {
     "title": "1. Redireccion",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/2-defensive-security-intro/1-redireccion/"
+  },
+  {
+    "title": "0. Defensive Security Intro",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/1-start-your-cyber-security-journey/2-defensive-security-intro/0-defensive-security-intro/"
   },
   {
     "title": "3. Search Engines",
@@ -1648,24 +1648,24 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/1-redireccion/"
   },
   {
-    "title": "2. Linux Fundamentals 2",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/2-linux-fundamentals-2/"
+    "title": "0. Linux Fundamentals 2",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/0-linux-fundamentals-2/"
+  },
+  {
+    "title": "0. Linux Fundamentals 1",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/1-linux-fundamentals-1/0-linux-fundamentals-1/"
   },
   {
     "title": "1. Redireccion",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/1-linux-fundamentals-1/1-redireccion/"
   },
   {
-    "title": "1. Linux Fundamentals 1",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/1-linux-fundamentals-1/1-linux-fundamentals-1/"
-  },
-  {
-    "title": "3. Linux Fundamentals 3",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/3-linux-fundamentals-3/3-linux-fundamentals-3/"
-  },
-  {
     "title": "1. Redireccion",
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/3-linux-fundamentals-3/1-redireccion/"
+  },
+  {
+    "title": "0. Linux Fundamentals 3",
+    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/3-linux-fundamentals-3/0-linux-fundamentals-3/"
   },
   {
     "title": "0. SQLMap - The Basics",
@@ -2780,6 +2780,10 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/9-summary/"
   },
   {
+    "title": "0. Nmap Live Host Discovery",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/0-nmap-live-host-discovery/"
+  },
+  {
     "title": "8. Using Reverse-DNS Lookup",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/8-using-reverse-dns-lookup/"
   },
@@ -2794,10 +2798,6 @@
   {
     "title": "5. Nmap Host Discovery Using ARP",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/5-nmap-host-discovery-using-arp/"
-  },
-  {
-    "title": "0. Nmao Live Host Discovery",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/3-nmap-live-host-discovery/0-nmao-live-host-discovery/"
   },
   {
     "title": "4. Discovering Live Hosts",

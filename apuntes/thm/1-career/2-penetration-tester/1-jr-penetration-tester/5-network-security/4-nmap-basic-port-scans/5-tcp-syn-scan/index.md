@@ -3,3 +3,15 @@ layout: apunte
 title: "5. TCP SYN Scan"
 ---
 
+Los usuarios no privilegiados están limitados al escaneo TPC connect. Sin embargo, el modo de escaneo por defecto es SYN scan, el cual requiere privilegios. El escaneo SYN no necesita completar el 3-way handshake TCP. En su lugar, termina la conexión una vez que recibe una respuesta del servidor. Como no establecemos una conexión TCP, esto reduce la posibilidad de ser registrado. Podemos seleccionar este escaneo con la opción `-sS` La figura de abajo muestra cómo el escaneo TCP SYN funciona sin completar el 3-way handshake.
+
+!**Pasted image 20251119153549.png**
+
+La siguiente captura de pantalla de Wireshark muestra este tipo de conexión.
+
+!**Pasted image 20251119153727.png**
+
+Para entender mejor la diferencia considera la siguiente captura donde la primera mitad está hecha usando la opción `-sT` y la segunda con `-sS`.
+
+!**Pasted image 20251119153825.png**
+
