@@ -4994,6 +4994,30 @@
                       "parent": "2. Net Sec Challenge"
                     }
                   ]
+                },
+                {
+                  "name": "3. Revenge",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Message from Billy Joel.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/1. Message from Billy Joel.md",
+                      "parent": "3. Revenge"
+                    },
+                    {
+                      "name": "2. Revengeee.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/2. Revengeee.md",
+                      "parent": "3. Revenge"
+                    },
+                    {
+                      "name": "3. Finding the flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/3. Finding the flags.md",
+                      "parent": "3. Revenge"
+                    }
+                  ]
                 }
               ]
             },

@@ -3,3 +3,93 @@ layout: apunte
 title: "4. TCP ACK, Window, and Custom Scan"
 ---
 
+En esta tarea veremos cómo realizar un escaneo TCP ACK, uno TCP window y cómo crear un escaneo con flags personalizadas.
+
+------------------------------------
+<h2>TCP ACK Scan</h2>
+Como su proopio nombre indica, mandará un paquete TCP con la flag ACK configurada. Usa la opción `-sA` para seleccionar este escaneo. El objetivo responde con RST independientemente del estado del puerto. Esto pasa porque sólo debería mandarse un paquete ACK después de haber iniciado una conexión con TCP SYN.
+
+!**Pasted image 20251120130932.png**
+
+En el ejemplo de abajo, vemos la respuesta del servidor antes de instalar en él un FireWall.
+
+```shell
+pentester@TryHackMe$ sudo nmap -sA 10.82.177.232
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:37 BST
+Nmap scan report for 10.82.177.232
+Host is up (0.0013s latency).
+All 1000 scanned ports on 10.82.177.232 are unfiltered
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.68 seconds
+```
+
+Este escaneo es más útil para descubrir reglas de firewall ya que dependiendo de la respuesta que recibamos podemos corroborar si un Firewall está bloqueando el tráfico.
+
+Después d econfigurar un Firewall y repetir el escaneo:
+
+```shell
+pentester@TryHackMe$ sudo nmap -sA 10.82.177.232
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-09-07 11:34 BST
+Nmap scan report for 10.82.177.232
+Host is up (0.00046s latency).
+Not shown: 997 filtered ports
+PORT    STATE      SERVICE
+22/tcp  unfiltered ssh
+25/tcp  unfiltered smtp
+80/tcp  unfiltered http
+MAC Address: 02:78:C0:D0:4E:E9 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 15.45 seconds
+```
+
+
+-------------------------------------
+<h2>Window Scan</h2>
+Otro escaneo similar es el escaneo TCP window. Este es casi lo mismo que el ACK, sin embargo, examina el campo TCP Window de los paquetes RST devueltos. En sistemas específicos, esto puede revelar que el puerto está abierto. Para seleccionar este tipo de escaneo usamos la opción `-sW`.
+
+!**Pasted image 20251120131503.png**
+
+Lanzar un escaneo TCP window contra un sistema Linux sin firewall no hará mucho. 
+
+```shell
+pentester@TryHackMe$ sudo nmap -sW 10.82.177.232
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:38 BST
+Nmap scan report for 10.82.177.232
+Host is up (0.0011s latency).
+All 1000 scanned ports on ip-10-10-252-27.eu-west-1.compute.internal (10.10.252.27) are closed
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
+```
+
+Sin embargo, con un firewall:
+
+```shell
+pentester@TryHackMe$ sudo nmap -sW 10.82.177.232
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-09-07 11:39 BST
+Nmap scan report for 10.82.177.232
+Host is up (0.00040s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+25/tcp  closed smtp
+80/tcp  closed http
+MAC Address: 02:78:C0:D0:4E:E9 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 14.84 seconds
+```
+
+Aunque respondió con "closed" nosotros sabemos que no están cerrados por lo que sabemos que respondieron diferente al escaneo TCP ACK. Por eso podemos determinar que no está bloqueados por el firewall.
+
+----------------------------------
+<h2>Custom Scan</h2>
+Si quieres experimentar con combinaciones nuevas de flags TCP, puedes hacerlo usando `--scanflags`. Por ejemplo, si quisieras mandar SYN, RST, y FIN lo harías así: `--scanflags SYNRSTFIN`. Si haces esto, debes saber cómo se comportarán los puertos para analizar objetivos más adelante:
+
+!**Pasted image 20251120131926.png**
+
+Aunque los escaneos TCP ACK y TCP Window nos sirvieron para mapear reglas del firewall, es importante tener en cuenta que que el firewall no bloquee un puerto no quiere decir que haya un servicio escuchando en dicho puerto.
