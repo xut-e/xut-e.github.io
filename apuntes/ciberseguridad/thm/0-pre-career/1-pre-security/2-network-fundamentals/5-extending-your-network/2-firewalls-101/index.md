@@ -1,0 +1,20 @@
+---
+layout: apunte
+title: "2. Firewalls 101"
+---
+
+un firewall es un dispositivo dentro de una red responsable d determinar qué tráfico tiene permitida la entrada y la salida. Es básicamente una frontera de seguridad. El administrador de la red puede configurar el firewall para permitir o no al tráfico entrar o salir basándose en:
+
+- ¿De dónde viene el tráfico?
+- ¿Hacia dónde va el tráfico?
+- ¿En qué puerto se maneja el tráfico?
+- ¿Qué protocolo utiliza el tráfico?
+
+Los firewalls realizan inspección de paquetes para responder a estas preguntas. Además vienen en un montón de formas. Puede ser un dispositivo de hardware dedicado, como en una red gigante, o un router como en  una red doméstica, hasta sofware, como *Snort*.
+
+Cubriremos las dos categorías principales:
+
+| **Categoría de Firewall** | **Descripción**                                                                                                                                                                                                                                                                         |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stateful                  | Este tipo de firewall usa toda la información de una conexión más que inspeccionar un paquete individual.<br><br>Consume muchos recursos en comparación a un firewall sin estado porque la toma de decisiones es dinámica.                                                              |
+| Stateless                 | Este tipo de firewall usa un set de reglas estáticas para determinar si los paquetes individuales son aceptados o no<br><br>Estos usan menos recursos, pero también son menos audaces.<br><br>De cualquier forma, estos frewalls son buenos recibiendo un elevado número de peticiones. |

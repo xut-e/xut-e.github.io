@@ -1,0 +1,22 @@
+---
+layout: apunte
+title: "5. SSH"
+---
+
+Hemos usado el protocolo telnet en la primera lección de esta unidad. Aunque es conveniente para loguearse y administrar sistemas, es arriesgado cuando todo el tráfico se manda en texto claro. En 1995, Tatu Ylönen desarrolló Secure Shell (SSH) y lo lanzó de manera abierta. Una versión más segura fue lanzada en 1996 (SSH-2). Hoy en día, al usar SSH, lo más probable es que estés usando OpenSSH, una implementación de código abierto de SSH hecha por los desarrolladores de OpenBSD. 
+
+OpenSSH ofrece algunos beneficios. Veamos los puntos clave:
+
+- **Autentificación segura:** A parte de la autentificación basada en contraseña, soporta public key y autentificación en dos factores.
+- **Confidencialidad:** Otorga encriptación end-to-end, protegiendo ante espionaje. Además te notifica de nuevas claves de servidor para proteger contra ataque MITM (Man In The Middle).
+- **Integridad:** Además de proteger la confidencialidad, protege y asegura la integridad de la información (no modificaciones).
+- **Tunneling:** SSH puede crear un "túnel" seguro para routear otros protocolos a través de SSH. Esto conlleva un set-up parecido a la VPN.
+- **Redireccionamiento X11:** Permite usar interfaz gráfica a través de la red si te conectas a un sistema UNIX.
+
+Usaríamos el comando `ssh <username>@<hostname>` para conectarnos al servidor SSH. Si el nombre de usuario es el mismo que tu nombre actual, sólo necesitas `ssh hostname`. Entonces, se te pedirá la contraseña. De todas formas, si la autentificación de llave pública es usada, serás logueado automáticamente.
+
+La imagen de abajo muestra un ejemplo ejecutando Wireshark en un sistema Kali Linux remoto. El argumento `-X` sirve para permitir interfaces gráficas, por ejemplo: `ssh 192.168.124.148 -X`. El sistema local necesita tener un sistema gráfico válido para que funcione.
+
+!**092.png**
+
+Mientras que telnet escucha en el puerto 23, SSH lo hace en el 22.

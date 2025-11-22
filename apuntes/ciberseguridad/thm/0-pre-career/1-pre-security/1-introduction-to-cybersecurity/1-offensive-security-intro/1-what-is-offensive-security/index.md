@@ -1,0 +1,15 @@
+---
+layout: apunte
+title: "1. What is Offensive Security"
+---
+
+><em>"Para vencer a un hacker necesitas pensar como él"</em>
+
+A continuación una guía para hackear nuestra primera web en un entorno seguro y legal.
+Aunque antes debemos responder:
+
+1. Cuál de las siguientes opciones representa mejor el proceso donde simulas ser un hacker para encontrar vulnerabilidades en un sistema?
+>Seguridad Ofensiva
+
+
+

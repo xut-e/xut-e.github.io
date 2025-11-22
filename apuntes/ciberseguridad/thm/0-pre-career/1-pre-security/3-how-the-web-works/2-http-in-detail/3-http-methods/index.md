@@ -1,0 +1,11 @@
+---
+layout: apunte
+title: "3. HTTP Methods"
+---
+
+Los métodos HTTP son una manera para el cliente de enseñar sus intenciones al hacer una petición. Los más comunes son:
+
+- GET: Toma información del servidor web.
+- POST: Sube información al servidor, creando nuevos records.
+- PUT: Es usado para subir datos para actualizar la información.
+- DELETE: Usado parra borrar registros/información del servidor.

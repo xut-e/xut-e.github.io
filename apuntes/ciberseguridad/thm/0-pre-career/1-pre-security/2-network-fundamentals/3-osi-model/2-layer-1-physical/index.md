@@ -1,0 +1,6 @@
+---
+layout: apunte
+title: "2. Layer 1 - Physical"
+---
+
+Este nivel se refiere a los componentes físicos del hardware usado en el networking y es el más bajo que hay. Los dispositivos usan señales eléctricas para transmitir información entre ellos utilizando el sistema binario (0's y 1's).

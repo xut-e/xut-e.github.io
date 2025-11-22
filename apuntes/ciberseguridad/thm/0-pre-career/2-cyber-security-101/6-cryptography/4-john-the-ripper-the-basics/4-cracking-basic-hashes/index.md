@@ -1,0 +1,54 @@
+---
+layout: apunte
+title: "4. Cracking Basic Hashes"
+---
+
+Hay muchas maneras de usar John the Ripper para crackear hashes simples. Veremos unas cuantas antes de ponernos a crackear nosotros mismos.
+
+------------------
+<h2>Sintaxis Básica de John</h2>
+La sintaxis básica de John the Ripper es la siguiente:
+
+`john [opciones] [ruta de archivo]`
+
+- `john`: Para llamar a la herramienta John the Ripper.
+- `[opciones]`: Especifica las opciones que queremos usar.
+- `[ruta al archivo]`: El archivo que contiene el hash que queremos crackear.
+
+-----------------
+<h2>Crackeo Automático</h2>
+John tiene propiedades internas que detectan el tipo de hash que tiene delante para aplicar las reglas necesarias. Aunque esta no siempre es la mejor idea porque puede no ser preciso. Para usarlo hacemos: `john --wordlist=[ruta a diccionario] [ruta al archivo]`.
+
+- `--wordlist=`: Indica que vamos a proporcionar un diccionario.
+- `[ruta a diccionario]`: La ruta al diccionario que vamos a usar.
+
+Por ejemplo:
+
+`john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt`.
+
+----------------
+<h2>Identificar el Hash</h2>
+A veces John no lo hace bien con el reconocimiento automático del hash, pero podemos usar otras herramientas para identificar el formato. Hay varias maneras de hacerlo, como usando un identificador de hash online como [este](https://hashes.com/en/tools/hash_identifier). También hay herramientas de consola como [esta](https://gitlab.com/kalilinux/packages/hash-identifier/-/tree/kali/master), llamada hash-identifier, hecha con Python.
+
+Para obtenerla puedes usar `wget` o `curl`, para descargarte el `.py` de la página web.
+
+```bash
+user@TryHackMe$ wget https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/hash-id.py $ python3 hash-id.py    #########################################################################    #     __  __                     __           ______    _____           #    #    /\ \/\ \                   /\ \         /\__  _\  /\  _ `\         #    #    \ \ \_\ \     __      ____ \ \ \___     \/_/\ \/  \ \ \/\ \        #    #     \ \  _  \  /'__`\   / ,__\ \ \  _ `\      \ \ \   \ \ \ \ \       #    #      \ \ \ \ \/\ \_\ \_/\__, `\ \ \ \ \ \      \_\ \__ \ \ \_\ \      #    #       \ \_\ \_\ \___ \_\/\____/  \ \_\ \_\     /\_____\ \ \____/      #    #        \/_/\/_/\/__/\/_/\/___/    \/_/\/_/     \/_____/  \/___/  v1.2 #    #                                                             By Zion3R #    #                                                    www.Blackploit.com #    #                                                   Root@Blackploit.com #    ######################################################################### 
+--------------------------------------------------  HASH: 2e728dd31fb5949bc39cac5a9f066498  Possible Hashs: [+] MD5 [+] Domain Cached Credentials - MD4(MD4(($pass)).(strtolower($username)))
+```
+
+----------------
+<h2>Crackeo de Formatos Específicos</h2>
+Una vez que hemos identificado el formato del hash, podemos decirle a John de qué tipo de hash se trata:
+
+`john --format=[formato] --wordlist=[ruta a diccionario] [ruta al archivo]`
+
+- `--format=`: Especifica que vamos a introducir el tipo de hash.
+- `[format]`: El formato del hash.
+
+Por ejemplo:
+
+`john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashToCrack.txt`
+
+>[!NOTE] Cuando le decimos a John el formato, si este es estándar, debemos precederlo de un "raw-". Para asegurarnos de si tenemos que poner el "raw-" o no podemos consultarlo con `john --list=formats | grep -iF "md5"`, por ejemplo.
+

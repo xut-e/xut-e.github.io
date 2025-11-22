@@ -1,0 +1,29 @@
+---
+layout: apunte
+title: "6. Fragmented Packets"
+---
+
+<h2>Firewall</h2>
+Un firewall es una pieza de software o hardware que permite a los paquetes pasar o no. Funciona basado en reglas, o bien permite todo el tráfico con excepciones o bien lo bloquea todo con excepciones.
+
+-----------------------------------
+<h2>IDS</h2>
+Intrusion Detection System (IDS) inspecciona los paquetes de red en busca de patrones de comportamiento o firmas específicas en su contenido. Lanza una alerta si alguna regla coincide. Un IDS puede inspeccionar la información de los paquetes. Para poder sobreasar algunos filtros de firewalls/IDSs respecto a Nmap una solución es hacer los paquetes más pequeños.
+
+-----------------------------
+<h2>Fragmented Packets</h2>
+Nmap ofrece la opción `-f` para fragmentar paquetes. Una vez elegida, la información IP se dividirá en 8 bytes o menos. Añadir otra f (`-ff` o `-f -f`), hará que la información se divida en 16 bytes. Puedes cambiar el valor por defecto usando la opción `--mtu`. Sin embargo, deberías siempre escoger un múltiplo de 8.
+
+Para entender esto debemos recordar cómo se ve un paquete IP:
+
+!**Pasted image 20251120160303.png**
+
+Vamos a comparar primero sin fragmentar y luego fragmentado.
+
+!**Pasted image 20251120160425.png**
+
+En esta imagen podemos ver primero una solicitud ARP y luego los paquetes TCP/IP. Mientras que con la fragmentación se ve de la siguiente manera:
+
+!**Pasted image 20251120160548.png**
+
+Si quieres incrementar el tamaño del paquete puedes hacerlo con `--data-length NUM` donde el número es la cantidad de bytes que quieres añadir al paquete.

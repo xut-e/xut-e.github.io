@@ -1,0 +1,27 @@
+---
+layout: apunte
+title: "9. Cracking Password-Protected Files"
+---
+
+Sí, lo has leído bien, podemos usar John para crackear las contraseñas de los archivos zip protegidos por contraseña. Usaremos herramientas separadas de la suite de John para convertir los archivos `zip` a algo que John pueda entender.
+
+--------------------
+<h2>Zip2John</h2>
+Similar a la herramienta `unshadow`, usaremos `zip2john` para convertir el archivo `zip` a un formato de hash que John pueda entender y con suerte crackear. El uso primario es:
+
+`zip2john [opciones] [archivo zip] > [archivo de salida]`
+
+- `[opciones]`: Permite pasarle opciones específicas a `zip2john`, aunque no debería de ser necesario.
+- `[archivo zip]`: La ruta al archivo zip que queremos crackear.
+- `>`: Redirección, crea un nuevo documento si no existe y lo sobreescribe si sí.
+- `[archivo de salida]`: Archivo en el que se guardará la salida del comando.
+
+Por ejemplo:
+
+`zip2john zipfile.zip > zip_hash.txt`
+
+-----------------
+<h2>Crackeo</h2>
+Una vez tenemos el hash, podemos dárselo directamente a John, como hicimos con `unshadow`.
+
+`john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt`

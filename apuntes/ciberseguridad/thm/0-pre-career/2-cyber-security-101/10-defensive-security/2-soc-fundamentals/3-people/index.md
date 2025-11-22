@@ -1,0 +1,19 @@
+---
+layout: apunte
+title: "3. People"
+---
+
+Sin importar cuánto evolucione la automatización de la mayoría de actividades de seguridad, la gente en un SOC siempre será importante. Una solución de seguridad puede generar numerosas flags rojas, lo que puede generar mucho ruido.
+
+En un SOC, con soluciones de seguridad sin intervención humana, acabarás centrándote demasiado en problemas más irrelevantes. Es la gente la que ayuda a la solución de seguridad a identificar amenazas reales.
+
+A la gente se la conoce como equipo SOC y se divide en:
+
+!**Pasted image 20251019211812.png**
+
+- **Analista SOC (L1):** Cualquier cosa detectada por la solución de seguridad pasará primero por estos analistas. Llevan a cabo disparos de alerta básicos para determinar si una detección es maliciosa. Reportan dichas detecciones por los canales correspondientes.
+- **Analista SOC (L2):** Algunas detecciones pueden requerir de investigación más exhaustiva. Los analistas de nivel 2 ayudan a los de nivel 1 a correlacionar la información de múltiples fuentes para realizar un análisis como es debido.
+- **Analista SOC (L3):** Son profesionales con experiencia que buscan proactivamente cualquier indicador de amenaza y ayudan en las actividades de respuesta a incidentes.
+- **Ingeniero de Seguridad:** Los ingenieros de seguridad despliegan y configuran las soluciones de seguridad con las que trabajan los analistas y aseguran su funcionamiento correcto.
+- **Ingeniero de Detección:** Las reglas de seguridad son la lógica construida detrás de las soluciones de seguridad para detectar actividad maliciosa.
+- **Manager del SOC:** Gestiona los procesos que siguen los integrantes del SOC y ofrece apoyo. Se mantiene en contacto con el CISO (Chief Information Security Officer) de la organización para ofrecerle actualizaciones en la postura y esfuerzos del SOC.

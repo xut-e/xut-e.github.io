@@ -1,0 +1,26 @@
+---
+layout: apunte
+title: "3. Evidence Acquisition"
+---
+
+Adquirir evidencia es una tarea crítica. El quipo de forense debe recolectar toda la evidencia de manera segura sin interferir con la información original. Los métodos de adquisición de evidencia para dispositivos digitaless depende del tipo de dispositivo digital. Sin embargo, algunas prácticas generales deben seguirse mientras se adquiere la evidencia. Veamos algunos de los más importantes.
+
+---------------------------
+<h2>Autorización Debida</h2>
+El qeuipo de forense debería obtener la autorización pertinente de las autoridades relevantes antes de recopilar cualquier información. La evidencia recolectada sin aprovación previa puede y será desestimada en la corte. La evidencia forénsica contiene información sensible y privada de una organización o individuo. Por esto la correcta y debida autorización es esencial y necesaria para poder investigar los dispositivos.
+
+------------------------------
+<h2>Cadena de Custodia</h2>
+Imagina que un equipo de investigadores recolecta toda la evidencia de la escena de un crímen y alguna de las pruebas se extravía a los pocos días o hay algún cambio en la evidencia. Ningún individuo puede ser culpado porque no hay un proceso adecuado de documentación de duenños de evidencias. Este problema puede ser resuelto manteniendo un documento de cadena de custodia. Es un documento formal que contiene todos los detalles de la evidencia:
+
+- Descripción de la evidencia.
+- Nombre de los individuos que recolectaron la evidencia.
+- Día y hora de la recolección de la evidencia.
+- Lugar de almacenamiento de cada pieza de evidencia.
+- Horas de acceso e individuo que accede a la evidencia.
+
+Esto crea un debido rastreo de evidencia y ayuda a preservar las pruebas. Puede ser usado para probar la integridad y confianza de la evidencia presentada en la corte. Puedes ver un ejemplo de Chain of Custody en el archivo siguiente.
+
+-----------------------------
+<h2>Uso de Bloqueadores de Escritura</h2>
+Los bloqueadores de escritura son una parte esencialde la caja de herramientas del equipo de forénsica digital. Supón que estás recolectando evidencia del disco duro de un sospechoso. Mientras la recolección toma lugar, algunas tareas en el background pueden alterar los timestamps de los archivos en el hard drive. Esto puede conllevar a obstáculos en la investigación. Es por esto que se utilizan los write blockers.

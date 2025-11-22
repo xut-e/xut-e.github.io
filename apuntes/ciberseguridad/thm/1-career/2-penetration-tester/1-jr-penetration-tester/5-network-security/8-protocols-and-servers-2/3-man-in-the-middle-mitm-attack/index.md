@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "3. Man-in-the-Middle (MITM) Attack"
+---
+
+Un ataque MITM ocurre cuando la víctima (A) piensa que se está comunicando con el receptor (B) pero hay un atacante (E) interceptando (y modificando, si quiere) todas las comunicaciones.
+
+!**Pasted image 20251121142531.png**
+
+Este ataque es relativamente simple de realizar si las dos partes no confirman la autenticidad e integridad de cada mensaje. En algunos casos, el protocolo elegido no ofrece autentificación segura o comprobación de integridad. Además, algunos protocolos tienen inseguridades inherentes que los hacen susceptibles a este tipo de ataques.
+
+Siempre que navegas a través de HTTP en lugar de HTTPS, por ejemplo, eres susceptible de recibir este tipo de ataque y lo preocupante es que no puedes saberlo. Además hay varias herramientas que ayudan a los atacantes a realizar este tipo de ataques como [Ettercap](https://www.ettercap-project.org/) o [Bettercap](https://www.bettercap.org/).
+
+La solución recae en el uso de criptografía, la correcta autentificación y firma de paquetes. Con la ayuda de PKI (Private Key Infrastructure) y certificados de raíz confiables, el TLS (Transport Layer Security) puede proteger contra ataques MITM.

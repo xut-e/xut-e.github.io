@@ -1,0 +1,64 @@
+---
+layout: apunte
+title: "3. Hypertext Transfer Protocol (HTTP)"
+---
+
+HyperText Transfer Protocol (HTTP) es el protocolo usado para transferir páginas web. Tu navegador web se conecta al servidor web y usa HTTP para pedir el HTML de las páginas, imágenes y más elementos.
+
+!**Pasted image 20251121105109.png**
+
+HTTP manda y recibe la información en texto plano. Por lo que puedes usar una herramienta como Telnet (o Netcat) para comunicarte con un servidor y actuar como un navegador. La única diferencia es que necesitas introducir los comandos relacionados a HTTP en lugar de que lo haga el navegador por tí.
+
+En el siguiente ejemplo veremos cómo podemos usar Telnet para simular ser un navegador web y comunicarnos con el servidor.
+
+1. Nos conectamos al puerto 80 (HTTP por defecto) usando `telnet <IP_SERVIDOR> 80`.
+2. Después, necesitamos escribir `GET /index.html HTTP/1.1` para recibir la página `index.html` o `GET / HTTP/1.1` para recibir la página por defecto.
+3. Por último, necesitamos ofrecer algún valor de host, como `host: telnet` y darle a `Enter` dos veces.
+
+```html
+pentester@TryHackMe$ telnet 10.80.185.10 80
+Trying 10.80.185.10...
+Connected to 10.80.185.10.
+Escape character is '^]'.
+GET /index.html HTTP/1.1
+host: telnet
+
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Wed, 15 Sep 2021 08:56:20 GMT
+Content-Type: text/html
+Content-Length: 234
+Last-Modified: Wed, 15 Sep 2021 08:53:59 GMT
+Connection: keep-alive
+ETag: "6141b4a7-ea"
+Accept-Ranges: bytes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to my Web Server</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <h1>Coming Soon<h1>
+</body>
+</html>
+```
+
+Se necesita un cliente HTTP y un servidor HTTP para establecer la conexión. Algunas opciones populares de servidor son:
+
+- [Apache](https://www.apache.org/)
+- [Internet Information Services (IIS)](https://www.iis.net/)
+- [nginx](https://nginx.org/)
+
+Apache y nginx son gratis y de código abierto mientras que IIS es propiedad de Microsoft y requiere licencia.
+
+Hay muchos navegadores web disponibles. En este momento, los navegadores más populares son:
+
+- Chrome (Google)
+- Edge (Microsoft)
+- FireFox (Mozilla)
+- Safari (Apple)
+
+Los navegadores son gratuitos de usar e instalar.

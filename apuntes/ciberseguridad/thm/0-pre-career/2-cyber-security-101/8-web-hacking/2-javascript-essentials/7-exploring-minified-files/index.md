@@ -1,0 +1,71 @@
+---
+layout: apunte
+title: "7. Exploring Minified Files"
+---
+
+Hemos entendido cómo JS funciona y cómo podemos leerlo, pero ¿qué pasa si no es leíble por humanos (ha sido minified)?
+
+La minificación en JS es el proceso de comprimir archivos JS eliminando todos los caracteres inservibles, como espacios, comentarios, etc. Esto ayuda a reducir el tamaño del archivo y a mejorar el tiempo de carga de las páginas web. Hace el código más compacto y más difícil de leer para humanos.
+
+De forma similar, la ofuscación es comúnmente usada para hacer JS más difícil de entender, renombrando variables y funciones a nombres sin sentido, incluso integrando código falso.
+
+---------------------
+<h2>Ejemplo Práctico</h2>
+Creamos un documento `hello.html` con el siguiente contenido:
+
+```html
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+	 <title>Obfuscated JS Code</title> 
+</head> 
+<body>     
+	<h1>Obfuscated JS Code</h1>     
+	<script src="hello.js"></script> 
+</body> 
+</html>
+```
+
+Y un `hello.js` con el contenido:
+
+```js
+function hi() {
+	alert("Welcome to THM");
+}
+hi();
+```
+
+Abre la página, haz click en `OK` y dirígete a `Inspeccionar`. Entonces navega hasta `Sources` y haz click en `hello.js`. Verás así que el código `.js` es visible y accesible.
+
+--------------------
+<h2>Ofuscación en Acción</h2>
+Ahora, trataremos de minificarlo y ofuscarlo usando una herramienta [online](https://codebeautify.org/javascript-obfuscator). Copia y pega el código de `hello.js`. El resultado:
+
+```javascript
+(function(_0x114713,_0x2246f2){var _0x51a830=_0x33bf,_0x4ce60b=_0x114713();while(!![]){try
+{var _0x51ecd3=-parseInt(_0x51a830(0x88))/(-0x1bd3+-0x9a+0x2*0xe37)*(parseInt(_0x51a830(0x94))/
+(-0x15c1+-0x2*-0x3b3+0xe5d))+parseInt(_0x51a830(0x8d))/(0x961*0x1+0x2*0x4cb+0x4bd*-0x4)*
+(-parseInt(_0x51a830(0x97))/(-0x22b3+0x16e9+0x1*0xbce))+parseInt(_0x51a830(0x89))/
+(-0x631+0x20cd+0x8dd*-0x3)*(-parseInt(_0x51a830(0x95))/(-0x8fc+0x161+0x7a1))+-
+parseInt(_0x51a830(0x93))/(-0x1c38+0x193+0x1aac)*(parseInt(_0x51a830(0x8e))/
+(-0x1*-0x17a6+-0x167e+-0x3*0x60))+-parseInt(_0x51a830(0x91))/(-0x2*-0x1362+-0x4a8*0x5+-0xf73)*
+(parseInt(_0x51a830(0x8b))/(-0xb31*0x2+0x493*0x5+0x1*-0x73))+parseInt(_0x51a830(0x8f))/
+(-0x257a+-0x1752+0x3cd7)+parseInt(_0x51a830(0x90))/(-0x2244+-0x15f9+0x3849);if(_0x51ecd3
+===_0x2246f2)break;else _0x4ce60b['push'](_0x4ce60b['shift']());}catch(_0x38d15c)
+{_0x4ce60b['push'](_0x4ce60b['shift']());}}}(_0x11ed,-0x17d11*-0x1+0x2*0x2e27+0x100f*0x17));
+function hi(){var _0x48257e=_0x33bf,_0xab1127={'xMVHQ':function(_0x4eefa0,_0x4e5f74)
+{return _0x4eefa0(_0x4e5f74);},'FvtWc':_0x48257e(0x96)+_0x48257e(0x92)};_0xab1127[_0x48257e(0x8c)
+](alert,_0xab1127[_0x48257e(0x8a)]);}function _0x33bf(_0xb07259,_0x5949fe){var _0x3a386b
+=_0x11ed();return _0x33bf=function(_0x4348ee,_0x1bbf73){_0x4348ee=_0x4348ee-(0x11f7+-
+0x1*0x680+-0x3a5*0x3);var _0x423ccd=_0x3a386b[_0x4348ee];return _0x423ccd;},_0x33bf
+(_0xb07259,_0x5949fe);}function _0x11ed(){var _0x4c8fa8=['7407EbJESQ','\x20THM',
+'2700698TTmqXC','10ILFtfZ','190500QONgph','Welcome\x20to',
+'4492QOmepo','21623eEAyaP','65XMlsxw','FvtWc','2410qfnGAy','xMVHQ','321PfYXZg',
+'8XBaIAe','1946483GviJfa','15167592PYYhTN'];_0x11ed=function(){return _0x4c8fa8;};return _0x11ed();}hi();
+```
+
+Pega ahora el nuevo código eliminando el antiguo de `hello.js`. Recarga la página. Debería de seguir funcionando exactamente igual.
+
+-------------------
+<h2>Des-Ofuscar un Código</h2>
+Podemos también desofuscar un código ofuscado con una herramienta [online](https://obf-io.deobfuscate.io/). Copia y pega el código ofuscado en ella y obtén el resultado desofuscado.

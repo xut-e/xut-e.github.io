@@ -1,0 +1,29 @@
+---
+layout: apunte
+title: "3. Plaintext to Ciphertext"
+---
+
+El método de encriptación es el siguiente:
+
+1. El emisor manda el texto en texto plano (claro), que puede ser texto, una foto, etc.
+2. Se pasa el mensaje en texto plano por una llave.
+3. Se obtiene el mensaje encriptado.
+
+!**125.jpg**
+
+Para recuperar el mensaje:
+
+1. Se coge el texto cifrado.
+2. Se pasa por la llave de desencriptación.
+3. Se obtiene el mensaje en texto plano.
+
+!**126.jpg**
+
+Términos que acabamos de ver:
+
+- **Plaintext:** Es el mensaje original antes de ser encriptado.
+- **Ciphertext:** Es la versión inleíble del mensaje original (encriptado).
+- **Cipher:** Es un algoritmo o método de cifrado y descifrado.
+- **Key:** Es una string de bits que se usa para cifrar y descifrar. Por lo general el cipher es de dominio público, pero la llave debe permanecer secreta.
+- **Encryption:** Es el proceso de convertir el plaintext en ciphertext.
+- **Decryption:** Es el proceso de desconvertir el ciphertext de vuelta en plaintext.

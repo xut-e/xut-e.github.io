@@ -1,0 +1,119 @@
+---
+layout: apunte
+title: "7. Perfecting Your Payload"
+---
+
+El payload es el código JavaScript que queremos ejecutar en el navegador de otro usuario o como prueba para demostrar una vulnerabilidad en una página web.
+
+El payload puede tener varias intenciones, desde sólo mostrar una alerta en una caja a probar que podemos ejecutar código JavaScript en la página del usuario para extraer información de la página o de la sesión del usuario.
+
+Cómo se refleja el payload JavaScript en la web del objetivo, determina el payload que debes usar. 
+
+-------------------------------------
+<h2>Nivel 1</h2>
+Se te presenta un formulario pidiéndote que introduzcas tu nombre y una vez lo haces se te mostrará en una línea abajo, por ejemplo:
+
+!**Pasted image 20251108213217.png**
+
+Si ves el código fuente de la página verás tu nombre reflejado allí:
+
+!**Pasted image 20251108213302.png**
+
+En vez de introducir tu nombre vamos a introducir una alerta JavaScript: `<script>alert('THM');</script>`.
+
+Ahora cuando hacemos click en subir, recibiremos un pop up de alerta. Con la string **THM**.
+
+!**Pasted image 20251108213527.png**
+
+Y el código fuente reflejará lo siguiente:
+
+!**Pasted image 20251108213632.png**
+
+------------------------------
+<h2>Nivel 2</h2>
+Como el primer nivel se nos pide que metamos un nombre, pero ahora ya no sale reflejado en el HTML de la misma manera, sino dentro de una etiqueta de input:
+
+!**Pasted image 20251108213908.png**
+
+Miramos el código fuente y vemos que aparece dentro del atributo "value":
+
+!**Pasted image 20251108213955.png**
+
+Si intentáramos meter aquí el mismo payload no funcionaría debido a que no se puede ejecutar desde dentro de una etiqueta de input, pero lo que podemos hacer es algo parecido a lo que hacemos en la SQL Injection, cerrar el atributo: `"><script>alert('THM');</script>`
+
+!**Pasted image 20251108214150.png**
+
+Si miramos el código fuente veremos cómo hemos modificado la página:
+
+!**Pasted image 20251108214240.png**
+
+---------------------------------------
+<h2>Nivel 3</h2>
+Se te muestra otro formulario para meter tu nombre, pero ahora se refleja dentro de una etiqueta de área de texto:
+
+!**Pasted image 20251108214541.png**
+
+Si miramos el código fuente vemos cómo está introducido:
+
+!**Pasted image 20251108214633.png**
+
+Debemos hacer algo muy parecido al nivel anterior, salir manualmente de la etiqueta: `</textarea><script>alert('THM');</script>`
+
+!**Pasted image 20251108214739.png**
+
+Si ahora miramos el código fuente:
+
+!**Pasted image 20251108214812.png**
+
+--------------------------------------
+<h2>Nivel 4</h2>
+Metiendo tu nombre en el formulario, verás cómo se refleja en la página. Parece similar, pero al inspeccionar la página, ves que tu nombre sale reflejado en algún código JavaScript.
+
+!**Pasted image 20251108215023.png**
+
+!**Pasted image 20251108215048.png**
+
+Tendremos que escapar el comando de JavaScript actual para poder correr nuestro código, podemos hacer esto con el payload siguiente: `';alert('THM');//`. EL `'` cierra el campo especificando el nombre, `;` termina el comando actual de JavaScript, luego viene nuestro comando, y luego `//` indica que lo que venga después será un comentario.
+
+!**Pasted image 20251108215319.png**
+
+Si miramos el código fuente:
+
+!**Pasted image 20251108215346.png**
+
+---------------------------------------
+<h2>Nivel 5</h2>
+Este nivel se ve igual que el nivel 1 y tu nombre también se refleja en el mismo sitio, pero si pruebas el payload `<script>alert('THM');</script>` no funcionará. Cuando vemos el código fuente sale lo siguiente:
+
+!**Pasted image 20251108215652.png**
+
+Vemos que se está filtrando la palabra "script". Para bypassear esto, introduciremos un payload que cuando se quite la palabra "script" quede "script" donde lo necesitamos, por ejemplo:
+
+`<sscriptcript>alert('THM');</sscriptcript>`
+
+!**Pasted image 20251108215840.png**
+
+Si ahora miramos el código fuente:
+
+!**Pasted image 20251108215905.png**
+
+--------------------------------
+<h2>Nivel 6</h2>
+Similar al nivel 2, donde teníamos que escapar de un atributo "value" de una etiqueta de input, podemos probar `"><script>alert('THM');</script>`, pero no parece funcionar. Miremos el código fuente:
+
+!**Pasted image 20251108220121.png**
+
+Vemos que está filtrando los símbolos `<` y `>`. Podemos aprovechar el atributo "onload" de la etiqueta "img". El evento "onload" ejecuta código de tu elección una vez la imagen especificada en el atributo "src" se haya cargado en la página. 
+
+Cambiemos el payload a esto: `/images/cat.jpg" onload="alert('THM');` y miramos el código fuente:
+
+!**Pasted image 20251108220426.png**
+
+!**Pasted image 20251108220440.png**
+
+-------------------------------------
+<h2>Polyglots</h2>
+Un polyglot XSS es una string de texto que puede escapar atributos, etiquetas y bypassear filtros de una sentada. Podrías haber usado el polyglot de aquí abajo en todos los 6 niveles que acabamos de ver y habría ejecutado el código exitosamente.
+
+``jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e``
+

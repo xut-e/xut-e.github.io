@@ -1,0 +1,24 @@
+---
+layout: apunte
+title: "5. Comparer - Example"
+---
+
+Ya sabemos lo que hace el Comparer, pero ¿cómo lo vamos a utilizar?
+
+Hay varias situaciones en la que es de ayuda comparar rápidamente entre dos archivos potencialmente largos.
+
+Por ejemplo al realizar un ataque de login de fuerza bruta, o credential stuffing, puedes querer comparar dos respuestas con diferentes longitudes para ver dónde la diferencia está.
+
+----------------------------------
+<h2>Challenge</h2>
+1. Vamos a la página dada.
+   !**Pasted image 20251116214501.png**
+2. Capturamos una petición de loguin y la mandamos al repetidor.
+   !**Pasted image 20251116214615.png**
+3. Mandamos la petición y redireccionamos la respuesta al Comparer.
+   !**Pasted image 20251116214754.png**
+4. El el repetidor introducimos las siguientes credenciales: `support_admin` y `w58ySK4W` y mandamos la respuesta al Comparer.
+   !**Pasted image 20251116214952.png**
+5. Comparamos para identificar diferencias.
+   !**Pasted image 20251116215100.png**
+

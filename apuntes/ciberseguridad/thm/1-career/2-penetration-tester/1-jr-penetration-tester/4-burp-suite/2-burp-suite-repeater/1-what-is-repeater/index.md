@@ -1,0 +1,21 @@
+---
+layout: apunte
+title: "1. What is Repeater"
+---
+
+Antes de usar el repetidor de Burp Suite, familiaricémonos con su propósito y funcionalidades.
+
+En esencia, el repetidor de Burp Suite nos permite modificar y remandar peticiones interceptadas a un objetivo de nuestra elección. Nos permite tomar peticiones capturadas en el proxy de Burp Suite y manipularlas, mandarlas repetidamente, etc. De forma alternativa, podemos crear peticiones manualmente desde 0, similar a usar una herramienta de línea de comandos como cURL.
+
+La habilidad de editar y remandar peticiones varias veces hace que el repetidor sea de valor incalculable para la exploración y testeo de endpoints. Ofrece una interfaz gráfica de usuario para montar peticiones de payloads y ofrece varias vistas de la respuesta, incluyendo un motor de renderizado para una representación gráfica.
+
+La interfaz del repetidor consiste en seis secciones principales, como se ve en la imagen de abajo.
+
+!**Pasted image 20251114154529.png**
+
+1. **Lista de Peticiones:** Situado en la parte superior izquierda de la pestaña, muestra la lista de peticiones del repetidor. Se pueden gestionar varias peticiones a la vez y cada nueva petición que se mande al repetidor aparecerá aquí.
+2. **Controles de Petición:** Posicionado directamente debajo de la lista de peticiones, estos controles nos permiten mandar peticiones, cancelar peticiones pendientes y navegar por el historial de peticiones.
+3. **Vista de Peticiones y Respuestas:** Ocupando la mayoría de la interfaz, esta sección muestra las peticiones y respuestas detalladamente. Podemos editar las peticiones en ella y luego mandarlas mientras que la correspondiente respuesta se mostrará en su respectiva parte.
+4. **Opciones de Visualización:** Situado en la parte superior derecha, estas opciones nos permiten personalizar la visualización del apartado anterior.
+5. **Inspector:** Situado en la parte derecha, el inspector nos permite analizar y modificar peticiones de una manera más intuitiva que usando el visor raw. Exploraremos esta funcionalidad más adelante.
+6. **Target:** Situado por encima del inspector, el campo target especifica la IP o dominio al que las peticiones son mandadas. Cuando las peticiones se mandan al repetidor desde otros componentes de Burp Suite este campo se rellena automáticamente.

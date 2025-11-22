@@ -1,0 +1,27 @@
+---
+layout: apunte
+title: "7. Fine-Tuning Scope and Performance"
+---
+
+Puedes especificar los puertos que quieres escanear en lugar de quedarte con los 1000 puertos por defecto. Especificar puertos debería resultarte intuitivo:
+
+- Lista de puertos: `-p22,80,443` escaneará los puertos 22, 80 y 443.
+- Rango de puertos: `-p1-1023` escaneará los puertos entre 1 y 1023 ambos incluidos.
+
+Puedes pedir el escaneo de todos los puertos con la opción `-p-` (no es una errata, guión delante y detrás) para escanear los 65535 puertos. Si quieres escanear los 100 más comunes usa `-F` y si quieres escanear los 10 más comunes usa `--top-ports 10`.
+
+Puedes controlar el timing del escaneo con `-T<0-5>`. Con `0` será el más lento (y menos detectable) mientras que con `5` será el más rápido (y agresivo).
+
+- Paranoid (0)
+- Sneaky (Sigiloso; 1)
+- Polite (Educado; 2)
+- Normal (3)
+- Aggressive (4)
+- Insane (5)
+
+Para evitar alertas IDS, puedes considerar usar `-T0` o `-T1`. `-T0` escanea un puerto cada vez y tarda 5 minutos entre uno y otro, así que ya puedes imaginarte cuánto tarda en escanear un objetivo completo. Si no especificas nada, Nmap escanea usando `-T3`.
+
+También puedes controlar la frecuencia de mandado de paquetes usando `--min-rate <número>` y `--max-rate <número>`.
+
+Además, puedes controlar la cantidad de hilos en paralelo que mandan paquetes con `--min-parallelism <número>` y `--max-parallelism <número>`.
+

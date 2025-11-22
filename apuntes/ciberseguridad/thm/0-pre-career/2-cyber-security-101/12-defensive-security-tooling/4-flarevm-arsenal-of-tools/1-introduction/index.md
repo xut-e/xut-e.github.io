@@ -1,0 +1,17 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+FlareVM o "Forensics, Logic Analysis, and Reverse Engineering", destaca como una colección curada de herramientas especializadas únicamente para responder a los requisitos de los ingenieros, analistas de malware, incident responders, investigadores forenses y pentesters. Este kit de herramientas diseñado de manera experta por el equipo FLARE de FireEye, es una poderosa ayuda al investigar o destapar misterios digitales y ganar visión dentro del comportamiento del malware.
+
+---------------------------
+<h2>Objetivos de Aprendizaje</h2>
+- Explorar herramientas dentro de FlareVM.
+- Aprender cómo usar herramientas para analizar procesos potencialmente maliciosos.
+- Familiarizarse con las herramientas usadas por el análisis estático de documentos y binarios maliciosos.
+
+-------------------------
+<h2>Pre-requisitos</h2>
+Se espera que estés familiarizado con Windows y procesos. Si no lo estás considera estudiar primero [1. Pre Security](/apuntes/ciberseguridad/thm/0-pre-career/1-pre-security/1-pre-security/).
+

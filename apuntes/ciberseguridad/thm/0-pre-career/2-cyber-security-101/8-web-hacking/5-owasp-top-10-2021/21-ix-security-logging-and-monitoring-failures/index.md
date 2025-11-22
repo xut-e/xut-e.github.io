@@ -1,0 +1,28 @@
+---
+layout: apunte
+title: "21. IX. Security Logging and Monitoring Failures"
+---
+
+Cuando las aplicaciones web son configuradas, cada acción hecha por el usuario debería ser registrada. Logging es importante porque, en caso de incidente, la actividad del atacante puede ser rastreada. Una vez rastreado, su impacto y riesgo puede ser valorado. Sin logs, no habría manera de decir qué acciones ha realizado un atacante. Los impactos más significativos serían:
+
+- **Daño regulatorio:** Si un atacante gana acceso a información identificable de un usuario, los usuarios finales pueden sufrir de ello, y en consecuencia, los desarrolladores enfrentarse a multas o penas más severas.
+- **Riesgo de ataques futuros:** La presencia de un atacante puede pasar desapercibida sin logging. Esto podría permitirle ganar persistencia.
+
+La información contenida en logs debería incluir lo siguiente:
+
+- Códigos de estado HTTP.
+- Time Stamps (momentos de tiempo).
+- Nombres de Usuario.
+- Endpoints API/page locations.
+- Direcciones IP.
+
+Estos logs tienen algo de información sensible por lo que se requiere guardarlos de forma segura y que múltiples copias estén guardadas en diferentes localizaciones.
+
+Como debes haberte dado cuenta, el logging es más importante después de que haya ocurrido un incidente o brecha. El escenario ideal es tener monitoreo para detectar cualquier actividad sospechosa con el objetivo de detener al atacante o reducir el impacto que pueda tener. Ejemplos comunes de actividad maliciosa incluyen:
+
+- Múltiples intentos de acceso no autorizado para una acción en particular (usualmente autentificación o acceso a recursos no autorizados).
+- Peticiones desde una IP anómala (aunque también puede dar falsos positivos).
+- Uso de herramientas automatizadas. Usando el valor de los headers User-Agent o la velocidad pueden ser indicativos de esto.
+- Payloads comunes, en aplicaciones web, es común para los atacantes usar los payloads conocidos.
+
+Aunque sólo detectar actividad sospechosa no es útil, hay que tener un plan de actuación en concordancia a su nivel de impacto.
