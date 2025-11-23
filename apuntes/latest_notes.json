@@ -1,42 +1,42 @@
 [
   {
-    "title": "0. Pre Career",
-    "path": "/apuntes/ciberseguridad/thm/0-pre-career/0-pre-career/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/0. Pre Career/0. Pre Career.md",
-    "breadcrumb": "Ciberseguridad > THM > 0. Pre Career",
-    "content": "[[1. Pre Security]]\n[[2. Cyber Security 101]]",
-    "modified": "2025-11-22T00:47:14"
+    "title": "2. Exploit the Machine",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-vulnerability-capstone/2-exploit-the-machine/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/2. Exploit the Machine.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 1. Vulnerability Capstone",
+    "content": "1. Vamos a la página dada.\n   ![[Pasted image 20251122173014.png]]\n   De entrada ya podemos ver tanto el nombre del servicio que corre (Fuel CMS) como la versión (1.4).\n2. Buscamos estos términos en Exploit-DB.\n   ![[Pasted image 20251122173312.png]]\n3. Nos metamos en el RCE exploit que nos metamos, el CVE es el mismo.\n   ![[Pasted image 20251122173409.png]]\n4. Probando los tres no funciona ninguno, por lo que vamos a buscar en github.\n   ![[Pasted image 20251122174846.png]]\n5. Seguimos los pasos especificados.\n   ![[Pasted image 20251122174959.png]]\n6. Probamos el comando.\n   ![[Pasted image 20251122175253.png]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
-    "title": "0. Maquinas",
-    "path": "/apuntes/ciberseguridad/thm/maquinas/0-maquinas/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/0. Maquinas.md",
-    "breadcrumb": "Ciberseguridad > THM > Maquinas",
-    "content": "- [[1. Easy]]\n- [[2. Medium]]\n- [[3. Hard]]\n- [[4. Insane]]",
-    "modified": "2025-11-22T00:47:14"
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-vulnerability-capstone/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 1. Vulnerability Capstone",
+    "content": "![[Pasted image 20251122172059.png]]\n\nPara ver las habilidades aprendidas en el módulo [[6. Vulnerability Research]], vamos a realizar esta máquina.\n\nAckme Support ha incorporado recientemente un blog. Su equipo de desarrolladores ha pedido una auditoría de seguridad antes de crear y publicar artículos al público.\n\nEs tu tarea realizar una auditoría de seguridad en el blog buscando y explotando cualquier vulnerabilidad que encuentres.",
+    "modified": "2025-11-23T00:57:27"
   },
   {
-    "title": "1. Career",
-    "path": "/apuntes/ciberseguridad/thm/1-career/1-career/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/1. Career.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career",
-    "content": "[[1. Security Analyst]]\n[[2. Penetration Tester]]\n[[3. Security Engineer]]",
-    "modified": "2025-11-22T00:47:14"
+    "title": "0. Burp Suite - The Basics",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/0-burp-suite-the-basics/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/0. Burp Suite - The Basics.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 3. Burp Suite - The Basics",
+    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/1. Redireccion]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
-    "title": "1. Pre Security",
-    "path": "/apuntes/ciberseguridad/thm/0-pre-career/1-pre-security/1-pre-security/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Pre Security.md",
-    "breadcrumb": "Ciberseguridad > THM > 0. Pre Career > 1. Pre Security",
-    "content": "[[1. Introduction to cybersecurity]]\n[[2. Network Fundamentals]]\n[[3. How the Web Works]]\n[[4. Linux Fundamentals]]\n[[5. Windows Fundamentals]]",
-    "modified": "2025-11-22T00:47:14"
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 3. Burp Suite - The Basics",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 8. Web Hacking -> 4. Burp Suite - The Basics**",
+    "modified": "2025-11-23T00:57:27"
   },
   {
-    "title": "2. Cyber Security 101",
-    "path": "/apuntes/ciberseguridad/thm/0-pre-career/2-cyber-security-101/2-cyber-security-101/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/2. Cyber Security 101.md",
-    "breadcrumb": "Ciberseguridad > THM > 0. Pre Career > 2. Cyber Security 101",
-    "content": "[[1. Start Your Cyber Security Journey]]\n[[2. Linux Fundamentals]]\n[[3. Windows and AD Fundamentals]]\n[[4. Command Line]]\n[[5. Networking]]\n[[6. Cryptography]]\n[[7. Exploitation Basics]]\n[[8. Web Hacking]]\n[[9. Offensive Security Tooling]]\n[[10. Defensive Security]]\n[[11. Security Solutions]]\n[[12. Defensive Security Tooling]]\n[[13. Build Your Cyber Security Career]]",
-    "modified": "2025-11-22T00:47:14"
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/2-http-in-detail/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 2. HTTP in Detail",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 3. How the Web Works -> 2. HTTP in Detail**",
+    "modified": "2025-11-23T00:57:27"
   }
 ]

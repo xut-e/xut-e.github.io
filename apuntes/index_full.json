@@ -4108,8 +4108,8 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-vulnerability-capstone/2-exploit-the-machine/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/2. Exploit the Machine.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 1. Vulnerability Capstone",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "1. Vamos a la página dada.\n   ![[Pasted image 20251122173014.png]]\n   De entrada ya podemos ver tanto el nombre del servicio que corre (Fuel CMS) como la versión (1.4).\n2. Buscamos estos términos en Exploit-DB.\n   ![[Pasted image 20251122173312.png]]\n3. Nos metamos en el RCE exploit que nos metamos, el CVE es el mismo.\n   ![[Pasted image 20251122173409.png]]\n4. Probando los tres no funciona ninguno, por lo que vamos a buscar en github.\n   ![[Pasted image 20251122174846.png]]\n5. Seguimos los pasos especificados.\n   ![[Pasted image 20251122174959.png]]\n6. Probamos el comando.\n   ![[Pasted image 20251122175253.png]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "0. Vulnerability Capstone",
@@ -4124,8 +4124,8 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-vulnerability-capstone/1-introduction/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/1. Introduction.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 1. Vulnerability Capstone",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "![[Pasted image 20251122172059.png]]\n\nPara ver las habilidades aprendidas en el módulo [[6. Vulnerability Research]], vamos a realizar esta máquina.\n\nAckme Support ha incorporado recientemente un blog. Su equipo de desarrolladores ha pedido una auditoría de seguridad antes de crear y publicar artículos al público.\n\nEs tu tarea realizar una auditoría de seguridad en el blog buscando y explotando cualquier vulnerabilidad que encuentres.",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "3. Security Engineer",
@@ -4380,16 +4380,32 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/0-burp-suite-the-basics/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/0. Burp Suite - The Basics.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 3. Burp Suite - The Basics",
-    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/1. Redireccion]]",
+    "modified": "2025-11-23T00:57:27"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 3. Burp Suite - The Basics",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 8. Web Hacking -> 4. Burp Suite - The Basics**",
+    "modified": "2025-11-23T00:57:27"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/2-http-in-detail/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 2. HTTP in Detail",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 3. How the Web Works -> 2. HTTP in Detail**",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "0. HTTP in Detail",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/2-http-in-detail/0-http-in-detail/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/0. HTTP in Detail.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 2. HTTP in Detail",
-    "content": "[[Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/0. HTTP in Detail]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/0. HTTP in Detail]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/1. Redireccion]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "0. OWASP API Security Top 10 - 1",
@@ -4400,20 +4416,36 @@
     "modified": "2025-11-22T00:47:14"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Pickle Rick",
+    "content": "Para ver este curso ve a **THM -> Maquinas -> 1. Easy -> 2. Pickle Rick**",
+    "modified": "2025-11-23T00:57:27"
+  },
+  {
     "title": "0. Pickle Rick",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/0-pickle-rick/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/0. Pickle Rick.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Pickle Rick",
-    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/1. Redireccion]]",
+    "modified": "2025-11-23T00:57:27"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/4-owasp-top-10-2021/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. OWASP Top 10 - 2021/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 4. OWASP Top 10 - 2021",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 8. Web Hacking -> 5. OWASP Top 10 - 2021**",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "0. OWASP Top 10 - 2021",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/4-owasp-top-10-2021/0-owasp-top-10-2021/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 4. OWASP Top 10 - 2021",
-    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. OWASP Top 10 - 2021/1. Redireccion]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "0. OWASP Juice Shop",
@@ -4432,12 +4464,20 @@
     "modified": "2025-11-22T00:47:14"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/1-how-websites-work/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/1. How Websites Work/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 1. How Websites Work",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 3. How the Web Works -> 3. How Websites Work**",
+    "modified": "2025-11-23T00:57:27"
+  },
+  {
     "title": "0. How Websites Work",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/1-how-websites-work/0-how-websites-work/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/1. How Websites Work/0. How Websites Work.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 1. How Websites Work",
-    "content": "[[Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/1. How Websites Work/1. Redireccion]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "1. Redireccion",
@@ -5356,8 +5396,16 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/9-net-sec-challenge/0-net-sec-challenge/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/9. Net Sec Challenge/0. Net Sec Challenge.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 9. Net Sec Challenge",
-    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/9. Net Sec Challenge/1. Redireccion]]",
+    "modified": "2025-11-23T00:57:27"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/9-net-sec-challenge/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/9. Net Sec Challenge/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 9. Net Sec Challenge",
+    "content": "Para ver este curso ve a **THM -> Maquinas -> 2. Medium -> 2. Net Sec Challenge**",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "3. Whois",
@@ -6252,8 +6300,8 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/4-and-example-of-finding-a-vulnerability/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/4. And Example of Finding a Vulnerability.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 1. Vulnerabilities 101",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "Vamos a ver cómo es el proceso de encontrar una vulnerabilidad menor, junto con algo de investigación sobre las bases de datos de vulnerabilidades que llevan a una vulnerabilidad mucho mayor y finalmente exploit.\n\nNormalmente combinarás múltiples vulnerabilidades para obtener resultados. Por ejemplo, en esta tarea usaremos la vulnerabilidad de \"Version Disclosure\" para exponer la versión de la aplicación, lo que nos permitirá encontrar una vulnerabilidad más grave.\n\nPor ejemplo, en la foto de abajo podemos ver que se está usando la versión **9.0.17** de **Apache Tomcat**.\n\n![[Pasted image 20251122144147.png]]\n\nCon esta información en la mano, vamos a Exploit-DB e introducimos los detalles:\n\n![[Pasted image 20251122144216.png]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "1. Introduction to Vulnerabilities",
@@ -6276,48 +6324,48 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/0-vulnerabilities-101/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/0. Vulnerabilities 101.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 1. Vulnerabilities 101",
-    "content": "[[1. Introduction to Vulnerabilities]]\n[[2. Scoring Vulnerabilities (CVSS & VPR)]]\n[[3. Vulnerability Databases]]\n[[4. And Example of Finding a Vulnerability]]\n[[5. Showcase - Exploiting Ackme's Application]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[1. Introduction to Vulnerabilities]]\n[[2. Scoring Vulnerabilities (CVSS & VPR)]]\n[[3. Vulnerability Databases]]\n[[4. And Example of Finding a Vulnerability]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "3. Vulnerability Databases",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/3-vulnerability-databases/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/3. Vulnerability Databases.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 1. Vulnerabilities 101",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
-  },
-  {
-    "title": "5. Showcase - Exploiting Ackme's Application",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/5-showcase-exploiting-ackme-s-application/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/5. Showcase - Exploiting Ackme's Application.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 1. Vulnerabilities 101",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "Hay recursos en internet que llevan un conteo de las vulnerabilidades para todo tipo de software, sistemas operativos y más. En esta tarea veremos dos bases de datos en las que podemos ver vulnerabilidades existentes.\n\n1. [NVD (National Vulnerability Database)](https://nvd.nist.gov/vuln)\n2. [Exploit-DB](http://exploit-db.com/)\n\nAntes de adentrarnos en estas dos vamos a asegurarnos de que entendemos algunos términos clave.\n\n| Término                | Definición                                                                                            |\n| ---------------------- | ----------------------------------------------------------------------------------------------------- |\n| Vulnerabilidad         | Debilidad o fallo en el diseño, implementación o comportamientos de un sistema o aplicación.          |\n| Exploit                | Acción o comportamiento que utiliza una vulnerabilidad.                                               |\n| Proof of Concept (PoC) | La prueba de concepto es una técnica o herramienta que demuestra la explotación de la vulnerabilidad. |\n\n--------------------------------------------\n<h2>NVD -National Vulnerability Database</h2>\nEs un sitio web que lista todas las vulnerabilidades públicas por categoría. En ciberseguridad, las vulnerabilidades se clasifican bajo \"Common Vulnerabilities and Exploits (CVE)\".\n\nEstos CVEs tienen el formato: `CVE-AÑO-NÚMERO_ID`. Por ejemplo, la vulnerabilidad que el famoso malware usó fue `CVE-2017-0144`.\n\nNVD nos permite ver todos los CVEs que han sido confirmados, usando filtros por categoría y mes de subida.\n\n![[Pasted image 20251122141802.png]]\n\nAunque esta web lleva la cuenta de todas las vulnerabilidades nuevas, no es muy buena para buscar por escenarios o aplicaciones específicas.\n\n----------------------------------\n<h2>Exploit-DB</h2>\nExploit-DB es un recurso que encontraremos mucho más de ayuda durante nuestros pentests. Retiene exploits para software y aplicaciones bajo el nombre, autor y versión del software o la aplicación.\n\nPodemos usar Exploit-DB para buscar trazas de código (PoC) que se usan para explotar una vulnerabilidad en específico.\n\n![[Pasted image 20251122142028.png]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "0. Vulnerability Capstone",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/3-vulnerability-capstone/0-vulnerability-capstone/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/3. Vulnerability Capstone/0. Vulnerability Capstone.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 3. Vulnerability Capstone",
-    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/3. Vulnerability Capstone/1. Redireccion]]",
+    "modified": "2025-11-23T00:57:27"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/3-vulnerability-capstone/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/3. Vulnerability Capstone/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 3. Vulnerability Capstone",
+    "content": "Para ver este curso ve a **THM -> Maquinas -> 1. Easy -> 1. Vulnerability Capstone**",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "2. Finding Manual Exploits",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/2-finding-manual-exploits/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/2. Finding Manual Exploits.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 2. Exploit Vulnerabilities",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "<h2>Rapid7</h2>\nComo cualquier otro servicio como Exploit-DB y NVD, Rapid7 es una base de datos de búsqueda de vulnerabilidades. La única diferencia es que también actúa como una base de datos de exploits. Usando este servicio puedes filtrar por tipo de vulnerabilidad (aplicación, sistema operativo, etc.).\n\n![[Pasted image 20251122154218.png]]\n\nAdemás, la base de datos contiene instrucciones para explotar aplicaciones usando la herramienta metasploit. Por ejemplo, la imagen de abajo son las instrucciones de cómo usar una vulnerabilidad en WordPress.\n\n![[Pasted image 20251122154458.png]]\n\n--------------------------------------\n<h2>GitHub</h2>\nGithub es un servicio web muy popular diseñado para desarrolladores de software. El sitio se usa para albergar y compartir código fuente de aplicaciones para permitir la colaboración. Los investigadores de ciberseguridad guardan y comparten PoCs en Github, convirtiéndolo en una base de datos de exploits.\n\nEs extremadamente útil para encontrar exploits raros o nuevos porque cualquiera puede crear una cuenta y subir lo que sea.\n\n![[Pasted image 20251122164636.png]]\n\nGithub usa un sistema de etiquetado y palabras clave lo que hace la búsqueda más sencilla.\n\n----------------------------\n<h2>Searchsploit</h2>\nEs una herramienta disponible pare varias distribuciones de Linux, como Kali Linux. Es una copia offline de Exploit -DB.\n\nPuedes buscar por aplicación o por tipo de vulnerabilidad. En el ejemplo de abajo estamos buscando exploits relacionados a WordPress que podemos usar.\n\n```python\nsearchsploit wordpress\nWordPress Theme Think Responsive 1.0 - Arbitr | php/webapps/29332.txt\nWordPress Theme This Way - 'upload_settings_i | php/webapps/38820.php\nWordPress Theme Toolbox - 'mls' SQL Injection | php/webapps/38077.txt\nWordPress Theme Trending 0.1 - 'cpage' Cross- | php/webapps/36195.txt\nWordPress Theme Uncode 1.3.1 - Arbitrary File | php/webapps/39895.php\nWordPress Theme Urban City - 'download.php' A | php/webapps/39296.txt\nWordPress Theme Web Minimalist 1.1 - 'index.p | php/webapps/36184.txt\nWordPress Theme White-Label Framework 2.0.6 - | php/webapps/38105.txt\nWordPress Theme Wp-ImageZoom - 'id' SQL Injec | php/webapps/38063.txt\nWordPress Theme Zoner Real Estate - 4.1.1 Per | php/webapps/47436.txt\n```",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "4. Practical - Manual Exploitation",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/4-practical-manual-exploitation/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/4. Practical - Manual Exploitation.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 2. Exploit Vulnerabilities",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "1. Vamos a la página que nos dan:\n   ![[Pasted image 20251122171305.png]]\n2. Encontramos la versión de la tienda.\n   ![[Pasted image 20251122171416.png]]\n3. Buscamos en Exploit-DB.\n   ![[Pasted image 20251122171532.png]]\n4. Vamos a usar este exploit contra la página.\n\t1. Guardamos el exploit y le damos permisos de ejecución.\n\t   ![[Pasted image 20251122171911.png]]\n\t2. Lo intentamos usar\n\t   ![[Pasted image 20251122171937.png]]\n\t3. Nos dice lo que necesita y lo introducimos.\n\t   ![[Pasted image 20251122172006.png]]",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "0. Exploit Vulnerabilities",
@@ -6332,16 +6380,16 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/1-automated-vs-manual-vulnerability-research/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/1. Automated Vs. Manual Vulnerability Research.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 2. Exploit Vulnerabilities",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "Hay muchos servicios y herramientas disponibles para escanear vulnerabilidades. Desde comerciales a código abierto, se han convertido en la principal forma de buscar vulnerabilidades en un sistema. Por ejemplo el escáner [Nesus](https://www.tenable.com/products/nessus) tiene los dos, uno de comunidad gratuito y otro de pago.\n\nAquí algunas ventajas y desventajas de usar un escáner de vulnerabilidades.\n\n| Ventajas                                                                                   | Desventajas                                                                                                                |\n| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |\n| Fácilemente repetibles y con resultados compartibles.                                      | La gente se puede volver dependiente de estas.                                                                             |\n| Son rápidos y pueden comprobar varias aplicaciones a la vez.                               | Son extremadamente ruidosos y producen mucho tráfico y registros.                                                          |\n| Hay soluciones de código abierto.                                                          | Las soluciones de código abierto suelen ser básicas y requerir altos costes para tener acceso a funcionalidades completas. |\n| Cubren un amplio rango de vulnerabilidades que pueden ser difíciles para buscarlas a mano. | Normalmente no encuentran todas las vulnerabilidades.                                                                      |\n\nFrameworks como Metasploit tienen escáners de vulnerabilidades en algunos módulos. \n\nEl escaneo manual de vulnerabilidades es a menudo la elección de muchos pentesters al comprobar una aplicación o programa en específico. \n\nLas vulnerabilidades que se buscan incluyen:\n\n| Vulnerabilidad             | Decripción                                                                                     |\n| -------------------------- | ---------------------------------------------------------------------------------------------- |\n| Security Misconfigurations | Las malas configuraciones incluyen vulnerabilidades debidas a que el desarrollador no las vió. |\n| Broken Access Control      | Ocurre cuando un atacante es capaz de acceder a partes de la aplicación que no debería poder.  |\n| Insecure Deserialization   | Procesamiento inseguro de información.                                                         |\n| Injection                  | Existe cuando un atacante es capaz de introducir información maliciosa en la aplicación.       |",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "3. Example of Manual Exploit",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/2-exploit-vulnerabilities/3-example-of-manual-exploit/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/2. Exploit Vulnerabilities/3. Example of Manual Exploit.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 6. Vulnerability Research > 2. Exploit Vulnerabilities",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "Podemos usar la información extraída de la tarea 1 de esta unidad para explotar un servicio vulnerable. Una de las vulnerabilidades más cotizadas son aquellas que nos permiten la ejecución remota de comandos.\n\nVamos a usar un exploit para realizar una RCE (Remote Command Execution) en la aplicación de la unidad 1.\n\n>[!IMPORTANT] La mayoría de exploits necesitan un poco de configuración inicial para funcionar.\n\nPor ejemplo:\n\n1. Antes:\n   ```shell\n   nano exploit.py\n   mymachine=\"192.168.1.10\"\n   port=\"1337\"\n   ```\n\n2. Después:\n```shell\n   nano exploit.py\n   mymachine=\"10.13.37.10\"\n   port=\"1337\"\n   ```\n\nUna vez que hemos preparado el exploit, debemos ver cómo utilizarlo:\n\n```shell\nexploit.py --help\nTo use this exploit, provide the following arguments:\n-u The URL of the application\n-c the command that you wish to execute\n```\n\nCon esta información podemos usarlo:\n\n1. Primero vamos a ejecutar un comando sencillo para asegurarnos de que funcione.\n   ```shell\n   exploit.py -u http://10.10.10.10 -c \"whoami\"\n   www-data\n   ```\n2. Luego vamos a leer un archivo que nos interese (una vez que sabemos que funciona).\n   ```shell\n   exploit.py -u http://10.10.10.10 -c \"cat flag.txt\"\n   THM{EXPLOIT_COMPLETE}\n   ```",
+    "modified": "2025-11-23T00:57:27"
   },
   {
     "title": "0. Principles of Security",

@@ -2192,6 +2192,14 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/0-burp-suite-the-basics/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/1-redireccion/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/2-http-in-detail/1-redireccion/"
+  },
+  {
     "title": "0. HTTP in Detail",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/2-http-in-detail/0-http-in-detail/"
   },
@@ -2200,8 +2208,16 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/0-owasp-api-security-top-10-1/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/1-redireccion/"
+  },
+  {
     "title": "0. Pickle Rick",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/0-pickle-rick/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/4-owasp-top-10-2021/1-redireccion/"
   },
   {
     "title": "0. OWASP Top 10 - 2021",
@@ -2214,6 +2230,10 @@
   {
     "title": "0. Upload Vulnerabilities",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-upload-vulnerabilities/0-upload-vulnerabilities/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/1-how-websites-work/1-redireccion/"
   },
   {
     "title": "0. How Websites Work",
@@ -2680,6 +2700,10 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/9-net-sec-challenge/0-net-sec-challenge/"
   },
   {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/9-net-sec-challenge/1-redireccion/"
+  },
+  {
     "title": "3. Whois",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/1-passive-reconnaissance/3-whois/"
   },
@@ -3144,12 +3168,12 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/3-vulnerability-databases/"
   },
   {
-    "title": "5. Showcase - Exploiting Ackme's Application",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/1-vulnerabilities-101/5-showcase-exploiting-ackme-s-application/"
-  },
-  {
     "title": "0. Vulnerability Capstone",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/3-vulnerability-capstone/0-vulnerability-capstone/"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/3-vulnerability-capstone/1-redireccion/"
   },
   {
     "title": "2. Finding Manual Exploits",

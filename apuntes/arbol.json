@@ -4276,7 +4276,14 @@
                             {
                               "name": "9. Net Sec Challenge",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/9. Net Sec Challenge/1. Redireccion.md",
+                                  "parent": "9. Net Sec Challenge"
+                                }
+                              ]
                             }
                           ]
                         },
@@ -4310,12 +4317,6 @@
                                   "name": "4. And Example of Finding a Vulnerability.md",
                                   "type": "file",
                                   "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/4. And Example of Finding a Vulnerability.md",
-                                  "parent": "1. Vulnerabilities 101"
-                                },
-                                {
-                                  "name": "5. Showcase - Exploiting Ackme's Application.md",
-                                  "type": "file",
-                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/1. Vulnerabilities 101/5. Showcase - Exploiting Ackme's Application.md",
                                   "parent": "1. Vulnerabilities 101"
                                 }
                               ]
@@ -4353,7 +4354,14 @@
                             {
                               "name": "3. Vulnerability Capstone",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/3. Vulnerability Capstone/1. Redireccion.md",
+                                  "parent": "3. Vulnerability Capstone"
+                                }
+                              ]
                             }
                           ]
                         },
@@ -4892,22 +4900,50 @@
                             {
                               "name": "1. How Websites Work",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/1. How Websites Work/1. Redireccion.md",
+                                  "parent": "1. How Websites Work"
+                                }
+                              ]
                             },
                             {
                               "name": "2. HTTP in Detail",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/1. Redireccion.md",
+                                  "parent": "2. HTTP in Detail"
+                                }
+                              ]
                             },
                             {
                               "name": "3. Burp Suite - The Basics",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/1. Redireccion.md",
+                                  "parent": "3. Burp Suite - The Basics"
+                                }
+                              ]
                             },
                             {
                               "name": "4. OWASP Top 10 - 2021",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. OWASP Top 10 - 2021/1. Redireccion.md",
+                                  "parent": "4. OWASP Top 10 - 2021"
+                                }
+                              ]
                             },
                             {
                               "name": "5. OWASP API Security Top 10 - 1",
@@ -4927,7 +4963,14 @@
                             {
                               "name": "8. Pickle Rick",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/1. Redireccion.md",
+                                  "parent": "8. Pickle Rick"
+                                }
+                              ]
                             }
                           ]
                         }
