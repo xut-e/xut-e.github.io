@@ -5022,6 +5022,42 @@
                           "parent": "2. Pickle Rick"
                         }
                       ]
+                    },
+                    {
+                      "name": "3. Lookup",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/1. Introduction.md",
+                          "parent": "3. Lookup"
+                        },
+                        {
+                          "name": "2. Finding the flags.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/2. Finding the flags.md",
+                          "parent": "3. Lookup"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Res",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/4. Res/1. Introduction.md",
+                          "parent": "4. Res"
+                        },
+                        {
+                          "name": "2. Resy Set Go.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/4. Res/2. Resy Set Go.md",
+                          "parent": "4. Res"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -5098,6 +5134,24 @@
                           "type": "file",
                           "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/3. Finding the flags.md",
                           "parent": "3. Revenge"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Rabbit Store",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction.md",
+                          "parent": "4. Rabbit Store"
+                        },
+                        {
+                          "name": "2. Finding the flags.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags.md",
+                          "parent": "4. Rabbit Store"
                         }
                       ]
                     }

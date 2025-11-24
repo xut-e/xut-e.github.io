@@ -5392,8 +5392,8 @@
     "hash": "65740dcb69b00e476a2c31afebee8cf4268adf421a5d02cf26093f1a569e7fdf"
   },
   "Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "2f1ef749a65ada0a2277daac2657821f59c37c35b1522a47f1aaaf3e337367cb"
+    "modified": "2025-11-24T00:53:59",
+    "hash": "ae2cdfc83fc244a04d2fa5a2c07a74ad90bebab27b4eafb1ed2c84c9abbf7da4"
   },
   "Ciberseguridad/THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2025-11-22T00:47:14",
@@ -5404,8 +5404,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "1ae0aee010ea357767f94d98c6c69d689705ec85d08b27c76aea393031c78ea8"
+    "modified": "2025-11-24T00:53:59",
+    "hash": "f22a116213f9af3de2f6b941014fb814b222504462fdb09ce92dcb6f6fa7e3dd"
   },
   "Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/3. Finding the flags.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6464,12 +6464,12 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/2. Tools.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-24T00:53:59",
+    "hash": "9e7d7db05be9e14cf9365b48fbc3fa6d426de577cab78794b1abbe27e8abd49b"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/1. What is a Shell.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-24T00:53:59",
+    "hash": "4a5bbb6dbed278a5bed7d212d6e1ff40d19b1a034d42072c220981439428c61d"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/7. Socat Encrypted Shells.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6484,8 +6484,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/3. Types of Shell.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-24T00:53:59",
+    "hash": "28e02740c4effa6ffda579eade11e437567a962fdc10b1583a452c9e0446803e"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/0. What the Shell.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6822,5 +6822,41 @@
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/6. Vulnerability Research/3. Vulnerability Capstone/1. Redireccion.md": {
     "modified": "2025-11-23T00:57:27",
     "hash": "bb2c2207d41399d698167d456774c531f942da237b4b71a1ef26400d2fc98269"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/0. Rabbit Store.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "a76f91bcb3b86dfe8dfe0816e005794e032beab83a8efcd1b704efa766373d33"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "65daa2240b8218f6333fb6a3c2f4e2330615dcd68a34eee2af05d8b52d8961da"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "5785b65575f4a0e9defc849235d141ee9f5d88358148867525369570842d0eda"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/2. Finding the flags.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "1c165dbfc38cadad2d8684ddaa680551ac6577011cbeee6688b7bd96e11d9e8e"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/0. Lookup.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "27e5c269abc7264d4b4f6e2c2a9980ecd6e7061cbc20f743d96a701fabbce7b6"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/1. Introduction.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "4da243cc4c3baa947b6aee20da0a16502a37f52a471a103d6177bf97102dca6e"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/4. Res/0. Res.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "e9edc00fee80318bedd0a7affba985e5183ff130dd48b508278956a8718b4614"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/4. Res/2. Resy Set Go.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "7da05d45563a134654f6208780e4209b08b4ccc1531aa41f7f05cf47498cd71b"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/4. Res/1. Introduction.md": {
+    "modified": "2025-11-24T00:53:59",
+    "hash": "d2b7c351a557ab9cf724f5937fe3f48ff67e4a64a984e38d73ff23356c652811"
   }
 }

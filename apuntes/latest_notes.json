@@ -1,42 +1,42 @@
 [
   {
-    "title": "2. Exploit the Machine",
-    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-vulnerability-capstone/2-exploit-the-machine/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/2. Exploit the Machine.md",
-    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 1. Vulnerability Capstone",
-    "content": "1. Vamos a la página dada.\n   ![[Pasted image 20251122173014.png]]\n   De entrada ya podemos ver tanto el nombre del servicio que corre (Fuel CMS) como la versión (1.4).\n2. Buscamos estos términos en Exploit-DB.\n   ![[Pasted image 20251122173312.png]]\n3. Nos metamos en el RCE exploit que nos metamos, el CVE es el mismo.\n   ![[Pasted image 20251122173409.png]]\n4. Probando los tres no funciona ninguno, por lo que vamos a buscar en github.\n   ![[Pasted image 20251122174846.png]]\n5. Seguimos los pasos especificados.\n   ![[Pasted image 20251122174959.png]]\n6. Probamos el comando.\n   ![[Pasted image 20251122175253.png]]",
-    "modified": "2025-11-23T00:57:27"
+    "title": "2. Medium",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-medium/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium",
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5.",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "1. Easy",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-easy/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy",
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5.",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "0. Rabbit Store",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/0-rabbit-store/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/0. Rabbit Store.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags]]",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "2. Finding the flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/2-finding-the-flags/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
+    "content": "1. Vamos a escanear la IP que nos dan.\n   ![[Pasted image 20251123154638.png]]\n2. Vamos a mirar qué es el servicio epmd.\n   ![[Pasted image 20251123154913.png]]\n   Esto puede ser interesante más adelante. Como aparece open sabemos que en principio no hay un firewall.\n3. Vamos a escanear los puertos abiertos.\n   ![[Pasted image 20251123155400.png]]\n4. Vamos a ver la página web.\n   ![[Pasted image 20251123155551.png]]\n   Al escribir esta dirección nos redirige a:\n   ![[Pasted image 20251123155618.png]]\n5. Vamos a añadirla en nuestro `/etc/hosts`.\n   ![[Pasted image 20251123155749.png]]\n6. Volvemos a la página.\n   ![[Pasted image 20251123155825.png]]\n   Ahora sí obtenemos la página web.\n7. Exploramos la página con una herramienta de descubrimiento activo como `gobuster`.\n   ![[Pasted image 20251123160442.png]]\n   Además, hemos encontrado moviéndonos entre botones en la web la página de contacto que podría llegar a ser susceptible de XSS. \n8. También hay un apartado de login, pero no nos ha dejado entrar, por lo que inspeccionaremos el botón.\n   ![[Pasted image 20251123160721.png]]\n9. Vamos a meter este subdominio en nuestro `/etc/hosts` y a ir a ver qué hay.\n\t1. Tenemos la página de login.\n\t   ![[Pasted image 20251123161635.png]]\n\t2. Y la página de register.\n\t   ![[Pasted image 20251123161702.png]]\n10. Vamos a ver qué pasa si intentamos registrarnos.",
+    "modified": "2025-11-24T00:53:59"
   },
   {
     "title": "1. Introduction",
-    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-vulnerability-capstone/1-introduction/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/1. Introduction.md",
-    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 1. Vulnerability Capstone",
-    "content": "![[Pasted image 20251122172059.png]]\n\nPara ver las habilidades aprendidas en el módulo [[6. Vulnerability Research]], vamos a realizar esta máquina.\n\nAckme Support ha incorporado recientemente un blog. Su equipo de desarrolladores ha pedido una auditoría de seguridad antes de crear y publicar artículos al público.\n\nEs tu tarea realizar una auditoría de seguridad en el blog buscando y explotando cualquier vulnerabilidad que encuentres.",
-    "modified": "2025-11-23T00:57:27"
-  },
-  {
-    "title": "0. Burp Suite - The Basics",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/0-burp-suite-the-basics/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/0. Burp Suite - The Basics.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 3. Burp Suite - The Basics",
-    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/1. Redireccion]]",
-    "modified": "2025-11-23T00:57:27"
-  },
-  {
-    "title": "1. Redireccion",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/3-burp-suite-the-basics/1-redireccion/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/1. Redireccion.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 3. Burp Suite - The Basics",
-    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 8. Web Hacking -> 4. Burp Suite - The Basics**",
-    "modified": "2025-11-23T00:57:27"
-  },
-  {
-    "title": "1. Redireccion",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/2-http-in-detail/1-redireccion/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/1. Redireccion.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 2. HTTP in Detail",
-    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 3. How the Web Works -> 2. HTTP in Detail**",
-    "modified": "2025-11-23T00:57:27"
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
+    "content": "![[Pasted image 20251123154340.png]]\nEn esta máquina se nos pide encontrar el contenido de:\n\n- user.txt\n- root.txt",
+    "modified": "2025-11-24T00:53:59"
   }
 ]

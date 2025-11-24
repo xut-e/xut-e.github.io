@@ -2032,6 +2032,18 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/1-mr-robot/0-mr-robot-ctf/"
   },
   {
+    "title": "0. Rabbit Store",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/0-rabbit-store/"
+  },
+  {
+    "title": "2. Finding the flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/2-finding-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/1-introduction/"
+  },
+  {
     "title": "0. Net Sec Challenge",
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-net-sec-challenge/0-net-sec-challenge/"
   },
@@ -2044,12 +2056,36 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-net-sec-challenge/1-introduction/"
   },
   {
+    "title": "2. Finding the flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/3-lookup/2-finding-the-flags/"
+  },
+  {
+    "title": "0. Lookup",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/3-lookup/0-lookup/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/3-lookup/1-introduction/"
+  },
+  {
     "title": "0. Pickle Rick",
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/0-pickle-rick/"
   },
   {
     "title": "1. Pickle Rick",
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/1-pickle-rick/"
+  },
+  {
+    "title": "0. Res",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/4-res/0-res/"
+  },
+  {
+    "title": "2. Resy Set Go",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/4-res/2-resy-set-go/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/4-res/1-introduction/"
   },
   {
     "title": "2. Exploit the Machine",

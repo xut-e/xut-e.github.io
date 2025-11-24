@@ -3964,8 +3964,8 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4.",
-    "modified": "2025-11-22T00:47:14"
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5.",
+    "modified": "2025-11-24T00:53:59"
   },
   {
     "title": "3. Hard",
@@ -3988,8 +3988,8 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-easy/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy",
-    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3.",
-    "modified": "2025-11-22T00:47:14"
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5.",
+    "modified": "2025-11-24T00:53:59"
   },
   {
     "title": "3. Finding the flags",
@@ -4064,6 +4064,30 @@
     "modified": "2025-11-22T00:47:14"
   },
   {
+    "title": "0. Rabbit Store",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/0-rabbit-store/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/0. Rabbit Store.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags]]",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "2. Finding the flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/2-finding-the-flags/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
+    "content": "1. Vamos a escanear la IP que nos dan.\n   ![[Pasted image 20251123154638.png]]\n2. Vamos a mirar qué es el servicio epmd.\n   ![[Pasted image 20251123154913.png]]\n   Esto puede ser interesante más adelante. Como aparece open sabemos que en principio no hay un firewall.\n3. Vamos a escanear los puertos abiertos.\n   ![[Pasted image 20251123155400.png]]\n4. Vamos a ver la página web.\n   ![[Pasted image 20251123155551.png]]\n   Al escribir esta dirección nos redirige a:\n   ![[Pasted image 20251123155618.png]]\n5. Vamos a añadirla en nuestro `/etc/hosts`.\n   ![[Pasted image 20251123155749.png]]\n6. Volvemos a la página.\n   ![[Pasted image 20251123155825.png]]\n   Ahora sí obtenemos la página web.\n7. Exploramos la página con una herramienta de descubrimiento activo como `gobuster`.\n   ![[Pasted image 20251123160442.png]]\n   Además, hemos encontrado moviéndonos entre botones en la web la página de contacto que podría llegar a ser susceptible de XSS. \n8. También hay un apartado de login, pero no nos ha dejado entrar, por lo que inspeccionaremos el botón.\n   ![[Pasted image 20251123160721.png]]\n9. Vamos a meter este subdominio en nuestro `/etc/hosts` y a ir a ver qué hay.\n\t1. Tenemos la página de login.\n\t   ![[Pasted image 20251123161635.png]]\n\t2. Y la página de register.\n\t   ![[Pasted image 20251123161702.png]]\n10. Vamos a ver qué pasa si intentamos registrarnos.",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
+    "content": "![[Pasted image 20251123154340.png]]\nEn esta máquina se nos pide encontrar el contenido de:\n\n- user.txt\n- root.txt",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
     "title": "0. Net Sec Challenge",
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-net-sec-challenge/0-net-sec-challenge/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge.md",
@@ -4088,6 +4112,30 @@
     "modified": "2025-11-22T00:47:14"
   },
   {
+    "title": "2. Finding the flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/3-lookup/2-finding-the-flags/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/2. Finding the flags.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 3. Lookup",
+    "content": "1. Analizamos la dirección que nos dan.\n   ![[Pasted image 20251123192421.png]]\n2. Vamos a ver la página web.\n   ![[Pasted image 20251123192534.png]]\n3.",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "0. Lookup",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/3-lookup/0-lookup/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/0. Lookup.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 3. Lookup",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/2. Finding the flags]]",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/3-lookup/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 3. Lookup",
+    "content": "![[Pasted image 20251123191552.png]]\n\nLookup ofrece un tesoro de oportunidades de aprendizaje para aspirantes a hackers. Esta fascinante máquina muestra diversas vulnerabilidades reales, desde debilidades en aplicaciones web hasta técnicas de escalada de privilegios. Al explorar y explotar estas vulnerabilidades, los hackers pueden perfeccionar sus habilidades y adquirir una valiosa experiencia en hacking ético. Gracias a \"Lookup\", los hackers pueden dominar el arte del reconocimiento, el escaneo y la enumeración para descubrir servicios y subdominios ocultos. Aprenderán a explotar vulnerabilidades en aplicaciones web, como la inyección de comandos, y comprenderán la importancia de las prácticas de codificación segura. La máquina también desafía a los hackers a automatizar tareas, demostrando el poder del scripting en las pruebas de penetración.",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
     "title": "0. Pickle Rick",
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/0-pickle-rick/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick.md",
@@ -4102,6 +4150,30 @@
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 2. Pickle Rick",
     "content": "",
     "modified": "2025-11-22T00:47:14"
+  },
+  {
+    "title": "0. Res",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/4-res/0-res/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/4. Res/0. Res.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 4. Res",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/4. Res/1. Introduction]]\n[[2. Resy Set Go]]",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "2. Resy Set Go",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/4-res/2-resy-set-go/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/4. Res/2. Resy Set Go.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 4. Res",
+    "content": "1. ¿Cuántos puertos abiertos tiene la máquina?\n   ![[Pasted image 20251123203402.png]]\n2. ¿Cuál es el sistema gestor de bases de datos instalado en el sistema?\n   Basándonos en el escaneo anterior, vamos a informarnos.\n   ![[Pasted image 20251123232520.png]]\n3. ¿En qué puerto corre el DBMS?\n   En el 6379.\n4. ¿Cuál es la versión del DBMS instalado en el servidor?\n   ![[Pasted image 20251123232944.png]]\n5. Compromete la máquina y localiza `user.txt`.\n\t1. Comprobamos la dirección IP en el puerto 80.\n\t   ![[Pasted image 20251123234610.png]]\n\t2. Después de investigar vi que había una herramienta para conectarse a bases de datos redis.\n\t   ![[Pasted image 20251123235106.png]]\n\t3. Vamos a usar la primera opción para indicarle al host que nos conectaremos.\n\t   ![[Pasted image 20251123235259.png]]\n\t   Salen más cosas pero si nos fijamos, ahí hay un nombre de usuario (vianka): `/home/vianka/redis-stable/src/redis-server`.\n\t4. Investigando más sobre redis y sus comandos podemos hacer varias cosas.\n\t   ![[Pasted image 20251123235923.png]]\n\t5. Ahora vamos a ver si ha funcionado.\n\t   ![[Pasted image 20251124000002.png]]\n\t   Vemos que podemos inyectar comandos así que vamos a mandarnos una reverse shell.\n\t6. Nos ponemos en escucha.\n\t   ![[Pasted image 20251124003530.png]]\n\t7. Le metemos el payload a nuestro archivo.\n\t   ![[Pasted image 20251124003554.png]]\n\t8. Cargamos el archivo y le metemos el payload en la variable `cmd`.\n\t   ![[Pasted image 20251124003705.png]]\n\t9. Esperamos conexión.\n\t   ![[Pasted image 20251124003727.png]]\n\t10. Escalamos la shell.\n\t    ![[Pasted image 20251124003755.png]]\n\t    Este método de cambiar/escalar la shell es muy útil para obtener una interactiva.\n\t11. Navegamos para encontrar la flag.\n\t    ![[Pasted image 20251124003918.png]]\n6. ¿Cuál es la contraseña del usuario local?\n\t1. Al intentar obtener la contraseña nos encontramos con un problema.\n\t   ![[Pasted image 20251124004049.png]]\n\t2. Por lo tanto seguimos en la pregunta siete y después volveremos aquí.\n\t3. \n7. Escala privilegios y obtén `root.txt`.\n\t1. Buscamos archivos SUID.\n\t   ![[Pasted image 20251124004421.png]]",
+    "modified": "2025-11-24T00:53:59"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/4-res/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/4. Res/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 4. Res",
+    "content": "![[Pasted image 20251123202923.png]]\n\nHackea un servidor de base de datos vulnerable con una estructura en memoria en este reto semiguiado.",
+    "modified": "2025-11-24T00:53:59"
   },
   {
     "title": "2. Exploit the Machine",
@@ -6156,16 +6228,16 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/2-tools/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/2. Tools.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 8. Privilege Escalation > 1. What the Shell",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "Hay una variedad de herramientas que usaremos para recibir reverse shells y mandar bind shells. En términos generales, necesitamos código malicioso y una forma de interactuar con la shell resultante.\n\n-----------------------------------\n<h2>Netcat</h2>\nNetcat es la navaja suiza del networking. Se usa para realizar manualmente todo tipo de interacciones, incluyendo la recopilación de banners durante la enumeración, pero más importantemente para nuestros usos, puede ser usado para recibir reverse shells y conectarnos a puertos remotos conectados a bind shells en el sistema objetivo. Son bastante inestables.\n\n--------------------------------------\n<h2>Socat</h2>\nEs como un Netcat con esteroides. Puede hacer todas las cosas anteriores y más. Suelen ser más estables que las de Netcat. Es superior a Netcat, pero hay dos peros:\n\n1. La sintaxis es más complicada.\n2. Netcat suele estar instalado en las distros pero Socat no.\n\n---------------------------------\n<h2>Metasploit - multi/handler</h2>\nEl módulo `exploit/multi/handler` de Metasploit es como socat y netcat, usado para recibir reverse shells. Es la única manera de interactuar con la shell meterpreter.\n\n--------------------------------------\n<h2>Msfvenom</h2>\nEs parte del framework Metasploit. Se usa para generar payloads. \n\n------------------------------\nKali viene con una cantidad de payloads de reverse shell preinstalados en `/usr/share/webshells`.",
+    "modified": "2025-11-24T00:53:59"
   },
   {
     "title": "1. What is a Shell",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/1-what-is-a-shell/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/1. What is a Shell.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 8. Privilege Escalation > 1. What the Shell",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "Antes de entrar en detalle a cerca de mandar y recibir shells, es importante entender lo que es una shell. En los términos más simples, las shells son lo que usamos para interactuar con el entorno de linea de comandos. En Linux, las más comunes son bash o sh mientras que en Windows son cmd.exe y Powershell.\n\nPara obtener una shell  del servidor en nuestra máquina, podemos conseguirlo de dos maneras:\n\n1. Mandando una shell desde el servidor a nuestra máquina (sólo si podemos inyectar comandos en el servidor), se conoce como reverse shell.\n2. Abriendo un puerto para que escuche y conectándonos a él (bind shell).",
+    "modified": "2025-11-24T00:53:59"
   },
   {
     "title": "7. Socat Encrypted Shells",
@@ -6196,8 +6268,8 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/1-what-the-shell/3-types-of-shell/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/3. Types of Shell.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 8. Privilege Escalation > 1. What the Shell",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "A alto nivel, estamos interesados en dos tipos de shell cuando se refiere a explotar un objetivo:\n\n- **Reverse shells:** Es cuando el objetivo es forzado a ejecutar código que le conecta a nuestro ordenador. En nuestra máquina, configuraríamos un listener con alguna de las herramientas antes vistas, el cual recibiría la conexión. Son una buena manera de sobrepasar reglas de firewall. Hacer esto a través de internet tiene la complicación de que necesitas configurar tu propia red para que acepte esta shell.\n- **Bind shells:** Es cuando el código ejecutado en la máquina se usa para abrir un listener en un puerto. Tiene la ventaja de que no tienes que hacer configuraciones extra en tu red. Sin embargo, puede ser prevenida debido a reglas de firewall.\n\n---------------------------\n<h2>Ejemplo de Reverse Shell</h2>\nNueve de cada diez veces será la que usemos.\n\nMira la siguiente imagen. A la izquierda tenemos el listener. A la derecha la simulación de mandar una reverse shell.\n\n![[Pasted image 20251123201348.png]]\n\n----------------------------\n<h2>Ejemplo de Bind Shell</h2>\nSon menos comunes pero muy útiles también. A la izquierda volvemos a tener la máquina del atacante y a la derecha la objetivo.\n\n![[Pasted image 20251123201439.png]]\n\n------------------------------------\nEl último concepto importante es el de interactividad.\n\nEn las shells interactivas, podemos ejecutar comandos como `ssh` para conectarnos a otra máquina. Sin embargo, en una shell no interactiva sólo podremos introducir comandos como `whoami`, los cuales no necesitan una interacción del usuario.\n\nEn máquinas futuras veremos el comando `listener`. Este no existe por defecto, sino que es un alias configurado que apunta a `sudo rlwrap nc -lvnp 443`.",
+    "modified": "2025-11-24T00:53:59"
   },
   {
     "title": "0. What the Shell",
