@@ -1996,6 +1996,26 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-easy/"
   },
   {
+    "title": "0. Ultra Tech",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/0-ultra-tech/"
+  },
+  {
+    "title": "2. Enumeration Time",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/2-enumeration-time/"
+  },
+  {
+    "title": "3. Let the Fun Begin",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/3-let-the-fun-begin/"
+  },
+  {
+    "title": "4. The Root of All Evil",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/4-the-root-of-all-evil/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/1-introduction/"
+  },
+  {
     "title": "3. Finding the flags",
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/3-revenge/3-finding-the-flags/"
   },
@@ -2054,6 +2074,18 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-net-sec-challenge/1-introduction/"
+  },
+  {
+    "title": "2. Finding the flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/5-brooklyn-nine-nine/2-finding-the-flags/"
+  },
+  {
+    "title": "0. Brooklyn Nine Nine",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/5-brooklyn-nine-nine/0-brooklyn-nine-nine/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/5-brooklyn-nine-nine/1-introduction/"
   },
   {
     "title": "2. Finding the flags",

@@ -7,4 +7,5 @@ title: "2. Medium"
 2. **Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge**
 3. [0. Revenge](/apuntes/ciberseguridad/thm/maquinas/2-medium/3-revenge/0-revenge/)
 4. [0. Rabbit Store](/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/0-rabbit-store/)
-5. 
+5. [0. Ultra Tech](/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/0-ultra-tech/)
+6. 

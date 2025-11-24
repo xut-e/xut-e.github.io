@@ -46,3 +46,4 @@ title: "2. Resy Set Go"
 7. Escala privilegios y obtén `root.txt`.
 	1. Buscamos archivos SUID.
 	   !**Pasted image 20251124004421.png**
+	2. 

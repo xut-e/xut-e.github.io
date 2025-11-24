@@ -4,39 +4,39 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5.",
-    "modified": "2025-11-24T00:53:59"
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6.",
+    "modified": "2025-11-24T20:06:19"
   },
   {
     "title": "1. Easy",
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/1-easy/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy",
-    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5.",
-    "modified": "2025-11-24T00:53:59"
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6.",
+    "modified": "2025-11-24T20:06:19"
   },
   {
-    "title": "0. Rabbit Store",
-    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/0-rabbit-store/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/0. Rabbit Store.md",
-    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
-    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags]]",
-    "modified": "2025-11-24T00:53:59"
+    "title": "0. Ultra Tech",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/0-ultra-tech/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/0. Ultra Tech.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 5. Ultra Tech",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/1. Introduction]]\n[[2. Enumeration Time]]\n[[3. Let the Fun Begin]]\n[[4. The Root of All Evil]]",
+    "modified": "2025-11-24T20:06:19"
   },
   {
-    "title": "2. Finding the flags",
-    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/2-finding-the-flags/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags.md",
-    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
-    "content": "1. Vamos a escanear la IP que nos dan.\n   ![[Pasted image 20251123154638.png]]\n2. Vamos a mirar qué es el servicio epmd.\n   ![[Pasted image 20251123154913.png]]\n   Esto puede ser interesante más adelante. Como aparece open sabemos que en principio no hay un firewall.\n3. Vamos a escanear los puertos abiertos.\n   ![[Pasted image 20251123155400.png]]\n4. Vamos a ver la página web.\n   ![[Pasted image 20251123155551.png]]\n   Al escribir esta dirección nos redirige a:\n   ![[Pasted image 20251123155618.png]]\n5. Vamos a añadirla en nuestro `/etc/hosts`.\n   ![[Pasted image 20251123155749.png]]\n6. Volvemos a la página.\n   ![[Pasted image 20251123155825.png]]\n   Ahora sí obtenemos la página web.\n7. Exploramos la página con una herramienta de descubrimiento activo como `gobuster`.\n   ![[Pasted image 20251123160442.png]]\n   Además, hemos encontrado moviéndonos entre botones en la web la página de contacto que podría llegar a ser susceptible de XSS. \n8. También hay un apartado de login, pero no nos ha dejado entrar, por lo que inspeccionaremos el botón.\n   ![[Pasted image 20251123160721.png]]\n9. Vamos a meter este subdominio en nuestro `/etc/hosts` y a ir a ver qué hay.\n\t1. Tenemos la página de login.\n\t   ![[Pasted image 20251123161635.png]]\n\t2. Y la página de register.\n\t   ![[Pasted image 20251123161702.png]]\n10. Vamos a ver qué pasa si intentamos registrarnos.",
-    "modified": "2025-11-24T00:53:59"
+    "title": "2. Enumeration Time",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/2-enumeration-time/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/2. Enumeration Time.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 5. Ultra Tech",
+    "content": "1. ¿Qué software está usando el puerto 8081?\n   ![[Pasted image 20251124195639.png]]\n2. ¿Qué otro puerto no estándar está siendo usado?\n   ![[Pasted image 20251124195529.png]]\n3. ¿Qué software usa ese puerto?\n   ![[Pasted image 20251124195842.png]]\n4. ¿Qué distro de GNU/Linux está usándose?\n   Ubuntu. Lo dice en el servicio del puerto 31331.\n5. El software usando el puerto 8081 es una api REST, ¿cuántas de sus rutas son usadas por la aplicación web?\n   ![[Pasted image 20251124200053.png]]\n   Son 2, las que se ven ahí.",
+    "modified": "2025-11-24T20:06:19"
   },
   {
-    "title": "1. Introduction",
-    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/1-introduction/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction.md",
-    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 4. Rabbit Store",
-    "content": "![[Pasted image 20251123154340.png]]\nEn esta máquina se nos pide encontrar el contenido de:\n\n- user.txt\n- root.txt",
-    "modified": "2025-11-24T00:53:59"
+    "title": "3. Let the Fun Begin",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/5-ultra-tech/3-let-the-fun-begin/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/3. Let the Fun Begin.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 5. Ultra Tech",
+    "content": "Ahora que sabes qué servicios están disponibles es hora de explotarlos.\n\n------------------\n1. Hay una base de datos por algún lado, ¿cuál es su filename?\n\t1. Vamos a la URL de la base de datos.\n\t   ![[Pasted image 20251124200959.png]]\n\t2. Vamos a enumerar las páginas de esta URL.\n\t   ![[Pasted image 20251124202106.png]]\n\t   Parece que `robots.txt` está disponible, vamos a mirar a ver qué hay en ella.\n\t3. Vamos a `http:<ip>:31331/robots.txt`.\n\t   ![[Pasted image 20251124202221.png]]\n\t4. Seguimos los puntos que vamos obteniendo.\n\t   ![[Pasted image 20251124202256.png]]\n\t5. En la única que hay algo interesante es en partners.html.\n\t   ![[Pasted image 20251124202343.png]]\n\t   Parece que hemos encontrado el área de login.\n\t6. Vamos a intentar entrar con `test`:`test`.\n\t   ![[Pasted image 20251124202428.png]]\n\t   Después de trastear un poco con Burp Suite nos damos cuenta de que por aquí no llegamos a ningún lado. Ni siquiera con hydra, no obtenemos ninguna contraseña para los usuarios obtenidos de la primera página:\n\t\t- r00t\n\t\t- P4c0\n\t\t- Sq4l\n\t7. Por esto volvemos a la página de inicio de sesión a ver si nos hemos dejado algo, vamos a inspeccionar la página.\n\t   ![[Pasted image 20251124202916.png]]\n\t   Aquí no parece haber nada, vamos a ver en la sección de red.\n\t8. Nos metemos en la sección de red de las herramientas de desarrollador.\n\t   ![[Pasted image 20251124203009.png]]\n\t   Parece que está llamando a una función, vamos a investigarlo.\n\t9. Vamos a intentar hacer ping a la máquina localhost del servidor.\n\t   ![[Pasted image 20251124203154.png]]\n\t   Pues parece que podemos inyectar comandos.\n\t10. Vamos a intentar listar archivos.\n\t    ![[Pasted image 20251124203510.png]]\n\t    Hemos encontrado el filename.\n2. ¿Cuál es el hash de la contraseña del primer usuario?\n\t1. Vamos a leer el archivo `utech.db.sqlite`.\n\t   ![[Pasted image 20251124204342.png]]\n\t2. Sabemos que hay un usuario llamado `r00t` gracias a la página principal, por lo que el hash debe ser lo que sigue.\n\t   ![[Pasted image 20251124204431.png]]\n3. ¿Cuál es la contraseña asociada a este hash?\n\t1. Para crackear la contraseña vamos a ir a [CrackStation](https://crackstation.net/).\n\t   ![[Pasted image 20251124204534.png]]",
+    "modified": "2025-11-24T20:06:19"
   }
 ]

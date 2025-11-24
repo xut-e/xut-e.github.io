@@ -5392,8 +5392,8 @@
     "hash": "65740dcb69b00e476a2c31afebee8cf4268adf421a5d02cf26093f1a569e7fdf"
   },
   "Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2025-11-24T00:53:59",
-    "hash": "ae2cdfc83fc244a04d2fa5a2c07a74ad90bebab27b4eafb1ed2c84c9abbf7da4"
+    "modified": "2025-11-24T20:06:19",
+    "hash": "e0bc9abf5f3b94bd2f97a3d01cdf0212f617d013d939e05e94b9641b5e2a1af5"
   },
   "Ciberseguridad/THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2025-11-22T00:47:14",
@@ -5404,8 +5404,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2025-11-24T00:53:59",
-    "hash": "f22a116213f9af3de2f6b941014fb814b222504462fdb09ce92dcb6f6fa7e3dd"
+    "modified": "2025-11-24T20:06:19",
+    "hash": "0a82ea261c9fb4c02c1a3e8aa19f7ed17028e760fd464c81c073c8e6bbdd8fad"
   },
   "Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/3. Finding the flags.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6452,16 +6452,16 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/5. Netcat Shell Stabilisation.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-24T20:06:19",
+    "hash": "bce61755f8cf12c9695662f151f1210af07f9fde99b99f19263a3336492aab3e"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/8. Common Shell Payloads.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-24T20:06:19",
+    "hash": "5988ab8d88a8d02a08ce7f43f25c3a99f92b926f3875bd74c0560d3f125a639c"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/4. Netcat.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-24T20:06:19",
+    "hash": "76f51a1ab082f854f404f621d91c5cabaef619cac71ab79c0a5f25c4c5ace8b8"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/2. Tools.md": {
     "modified": "2025-11-24T00:53:59",
@@ -6472,8 +6472,8 @@
     "hash": "4a5bbb6dbed278a5bed7d212d6e1ff40d19b1a034d42072c220981439428c61d"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/7. Socat Encrypted Shells.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-24T20:06:19",
+    "hash": "4ef647e165859ee3a90826225218724b52f6c41b5a6e2280222e9087e4823f3a"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/13. Practice and Examples.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6504,8 +6504,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/6. Socat.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-24T20:06:19",
+    "hash": "6c3bae304749d225a336562ae892fbd57ed9a6f06c042d2114b36557ff441858"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/10. Metasploit multi-handler.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6852,11 +6852,43 @@
     "hash": "e9edc00fee80318bedd0a7affba985e5183ff130dd48b508278956a8718b4614"
   },
   "Ciberseguridad/THM/Maquinas/1. Easy/4. Res/2. Resy Set Go.md": {
-    "modified": "2025-11-24T00:53:59",
-    "hash": "7da05d45563a134654f6208780e4209b08b4ccc1531aa41f7f05cf47498cd71b"
+    "modified": "2025-11-24T20:06:19",
+    "hash": "3dafa224b191b0c7732445bdbedbf37194c30a8fb5b38c1768eb72f9732800ab"
   },
   "Ciberseguridad/THM/Maquinas/1. Easy/4. Res/1. Introduction.md": {
     "modified": "2025-11-24T00:53:59",
     "hash": "d2b7c351a557ab9cf724f5937fe3f48ff67e4a64a984e38d73ff23356c652811"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/0. Ultra Tech.md": {
+    "modified": "2025-11-24T20:06:19",
+    "hash": "b28f9d208fd6c5d0f50c4d68c45183a322ac67ac510012b773117eb7c82e89b4"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/2. Enumeration Time.md": {
+    "modified": "2025-11-24T20:06:19",
+    "hash": "007b1a9124b37431e019fab33d73c1070afc74d3ea174f03834c7e9ec09add51"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/3. Let the Fun Begin.md": {
+    "modified": "2025-11-24T20:06:19",
+    "hash": "7d16cc134281111a1b3b4478505f9c479958593c850141f0e6919cb6d68be81e"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/4. The Root of All Evil.md": {
+    "modified": "2025-11-24T20:06:19",
+    "hash": "cfee63d7c336bfefe9b13e90f356e7f4c27fb9519a9f52233aab66639a10a1ca"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/1. Introduction.md": {
+    "modified": "2025-11-24T20:06:19",
+    "hash": "6e993d9091f65be13c6cdc0e04b0746c9dedca857057eec706b9a0d7c127a101"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/5. Brooklyn Nine Nine/2. Finding the flags.md": {
+    "modified": "2025-11-24T20:06:19",
+    "hash": "b5f5572f9aec74aa02b951ad9ab78ad4c2b25f9f38c7f00a1a801d87e6dd421b"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/5. Brooklyn Nine Nine/0. Brooklyn Nine Nine.md": {
+    "modified": "2025-11-24T20:06:19",
+    "hash": "34a4d2c4407adaa65d5b20b4cb7b011bb6efae0ead8844662028db1c49219fbd"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/5. Brooklyn Nine Nine/1. Introduction.md": {
+    "modified": "2025-11-24T20:06:19",
+    "hash": "7ddbdf10309e530c74e6c4ddbcddcaf4cc53a8891000cdd4a72840941cb6a53c"
   }
 }

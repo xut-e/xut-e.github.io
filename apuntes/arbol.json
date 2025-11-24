@@ -5058,6 +5058,24 @@
                           "parent": "4. Res"
                         }
                       ]
+                    },
+                    {
+                      "name": "5. Brooklyn Nine Nine",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/5. Brooklyn Nine Nine/1. Introduction.md",
+                          "parent": "5. Brooklyn Nine Nine"
+                        },
+                        {
+                          "name": "2. Finding the flags.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/5. Brooklyn Nine Nine/2. Finding the flags.md",
+                          "parent": "5. Brooklyn Nine Nine"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -5152,6 +5170,36 @@
                           "type": "file",
                           "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/2. Finding the flags.md",
                           "parent": "4. Rabbit Store"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5. Ultra Tech",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/1. Introduction.md",
+                          "parent": "5. Ultra Tech"
+                        },
+                        {
+                          "name": "2. Enumeration Time.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/2. Enumeration Time.md",
+                          "parent": "5. Ultra Tech"
+                        },
+                        {
+                          "name": "3. Let the Fun Begin.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/3. Let the Fun Begin.md",
+                          "parent": "5. Ultra Tech"
+                        },
+                        {
+                          "name": "4. The Root of All Evil.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/4. The Root of All Evil.md",
+                          "parent": "5. Ultra Tech"
                         }
                       ]
                     }
