@@ -52,7 +52,6 @@ body {
   background: var(--accent-hover);
 }
 
-
 .site-brand {
   text-decoration: none;
   font-weight: 600;
@@ -179,14 +178,13 @@ body {
   line-height: 1.4;
 }
 
-/* Limitar visualmente la altura a ~3 líneas */
+/* Height limit */
 .tree-nav a.tree-link {
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* máx. 3 líneas */
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
 
 .tree-nav a.tree-link:hover {
   text-decoration: underline;
@@ -210,11 +208,6 @@ body {
 .index-toggle:hover {
   background: var(--accent-hover);
 }
-/*@media (min-width: 900px) {
-  .index-toggle {
-    display: none;
-  }
-}*/
 
 /* ===== Cards ===== */
 .card {
@@ -240,6 +233,7 @@ body {
   color: var(--text-dim);
 }
 
+/* ===== MARKDOWN BODY ===== */
 .markdown-body {
   font-family: system-ui, sans-serif;
   line-height: 1.6;
@@ -265,6 +259,7 @@ body {
   text-decoration: underline;
 }
 
+/* === BLOQUES DE CÓDIGO === */
 .markdown-body pre {
   background: #2d2d2d;
   padding: 1em;
@@ -272,13 +267,43 @@ body {
   overflow-x: auto;
 }
 
-.markdown-body code {
-  background: #2d2d2d;
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
+.markdown-body pre code {
+  background: transparent !important;
+  padding: 0;
   font-family: 'Fira Code', monospace;
 }
 
+/* === INLINE CODE (FIX) === */
+.markdown-body code {
+  background: #2d2d2d;
+  padding: 0.25em 0.45em;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  white-space: pre-wrap; /* FIX: código inline largo dentro de listas */
+}
+
+/* === LISTAS (FIX COMPLETO) === */
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 1.6em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.markdown-body li {
+  margin: 0.4em 0;
+}
+
+.markdown-body li > p {
+  margin: 0.25em 0; /* evita dobles saltos */
+}
+
+.markdown-body li pre {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* === BLOCKQUOTE === */
 .markdown-body blockquote {
   border-left: 4px solid #555;
   padding-left: 1em;
@@ -286,6 +311,7 @@ body {
   font-style: italic;
 }
 
+/* === TABLAS === */
 .markdown-body table {
   border-collapse: collapse;
   margin: 1em 0;
@@ -296,35 +322,46 @@ body {
   padding: 0.5em;
 }
 
+/* === IMÁGENES === */
 .markdown-body img {
-  display: block; margin: 1em auto; max-width: 100%; border-radius: 8px;
-box-shadow: 0 0 10px rgba(0,0,0,0.3); }
+  display: block;
+  margin: 1em auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
 
-/* enlace del apunte actual en el índice */
-.tree-nav a.tree-link.current-page { background-color: rgba(102,161,130,0.15);
-/* verde pastel semi-transparente */ color: var(--accent); border-radius: 4px;
-padding-left: 1rem; /* mantener alineación */ font-weight: 600; }
+/* === INDICE === */
+.tree-nav a.tree-link.current-page {
+  background-color: rgba(102,161,130,0.15);
+  color: var(--accent);
+  border-radius: 4px;
+  padding-left: 1rem;
+  font-weight: 600;
+}
 
-/* ===== Botón Índice estilo enlace, junto a xut ===== */
-.site-left { display: flex; align-items: center; gap: 1rem; /* misma separación
-que las pestañas del nav */ }
+/* ===== Botón Índice estilo enlace ===== */
+.site-left { display: flex; align-items: center; gap: 1rem; }
 
-.site-link { text-decoration: none; color: var(--text-main); font-weight: 500;
-border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
-0.2s ease; }
+.site-link { 
+  text-decoration: none; 
+  color: var(--text-main); 
+  font-weight: 500;
+  border-bottom: 2px solid transparent; 
+  transition: color 0.2s ease, border-color 0.2s ease; 
+}
 
-.site-link:hover { color: var(--accent);
+.site-link:hover { 
+  color: var(--accent);
   border-color: var(--accent);
 }
 
-
-/* Botón Índice activo (verde cuando el índice está visible) */
 .site-link.active {
   color: var(--accent);
   border-color: var(--accent);
 }
 
-/* ===== Reestructuración cuando el índice está oculto ===== */
+/* ===== Full width ===== */
 .page-shell.full-width .content,
 .page-shell.full-width .markdown-body {
   margin: 0 auto;
@@ -338,19 +375,20 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
 }
 
 .page-shell.full-width .markdown-body {
-  max-width: 1100px; /* aumenta el ancho del contenido */
+  max-width: 1100px;
   padding: 2rem 3rem;
 }
 
-/* ===== Sidebar ajustable a su contenido ===== */
+/* ===== Sidebar ===== */
 .page-shell {
-  align-items: flex-start; /* evita que el aside se estire verticalmente */
+  align-items: flex-start;
 }
 
 .sidebar {
-  height: auto; /* altura según contenido */
-  max-height: 90vh; /* con límite para evitar desbordes */
-  overflow-y: auto; /* si hay mucho contenido, se puede hacer scroll */
+  height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 /* ===== Navegación entre notas ===== */
@@ -379,6 +417,7 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   transform: scale(1.1);
 }
 
+/* ===== Breadcrumb ===== */
 .breadcrumb {
   font-size: 0.85rem;
   color: var(--text-dim);
@@ -386,11 +425,10 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border-color);
   font-family: var(--font-mono);
-  white-space: normal;
   word-break: break-word;
 }
 
-/* ======= Árbol tipo Obsidian (mejorado) ======= */
+/* ======= Árbol tipo Obsidian mejorado ======= */
 .tree-nav {
   font-size: 0.95rem;
   line-height: 1.5;
@@ -433,7 +471,7 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   color: var(--accent);
 }
 
-/* Espaciado entre enlaces */
+/* ===== Links ===== */
 .tree-nav .tree-children {
   margin-top: 0.3rem;
   display: flex;
@@ -441,7 +479,6 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   gap: 0.25rem;
 }
 
-/* Enlaces de archivos (.md) */
 .tree-nav a.tree-leaf {
   display: block;
   color: var(--accent);
@@ -458,68 +495,27 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   text-decoration: underline;
 }
 
-/* Enlace actual (resaltado verde pastel) */
 .tree-nav a.tree-leaf.current-page {
   background-color: rgba(102, 161, 130, 0.2);
   color: var(--accent);
   font-weight: 700;
 }
 
-/* Separación clara entre directorios y hojas */
 .tree-dir {
   margin-bottom: 0.4rem;
 }
 
-/* Evita que los enlaces se amontonen (por márgenes negativos en <details>) */
 .tree-nav a.tree-leaf + a.tree-leaf {
   margin-top: 0.15rem;
 }
 
-/* Opcional: scroll suave si el árbol es largo */
-.sidebar {
-  scroll-behavior: smooth;
-}
-
-/* ===== Header layout: lado derecho (nav + buscador) ===== */
-.site-right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;              /* separación entre menú y caja búsqueda */
-}
-
-/* En móviles el header ya está apretado, así que quepa todo en wrap elegante */
-@media (max-width: 600px) {
-  .site-header-inner {
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-  .site-right {
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    row-gap: 0.75rem;
-  }
-
-  /* la caja ocupa el espacio disponible en móvil */
-  .site-search {
-    flex: 1;
-    order: 2;            /* menú primero, caja después en pantallas pequeñas */
-  }
-
-  .site-nav {
-    order: 1;
-  }
-}
-
-/* ===== Caja de búsqueda debajo del header ===== */
-
+/* ===== Buscador ===== */
 .search-container {
   display: flex;
   justify-content: flex-end;
   padding: 1rem 2rem 0;
 }
 
-/* === Formulario de búsqueda === */
 .site-search {
   display: flex;
   align-items: center;
@@ -530,7 +526,6 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* === Input === */
 .site-search-input {
   flex: 1;
   background: transparent;
@@ -547,7 +542,6 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   opacity: 0.8;
 }
 
-/* === Botón de lupa === */
 .site-search-button {
   background: transparent;
   border: none;
@@ -570,7 +564,7 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   box-shadow: 0 0 0 2px rgba(102, 161, 130, 0.3);
 }
 
-/* ===== Responsivo ===== */
+/* Responsivo */
 @media (max-width: 700px) {
   .search-container {
     justify-content: center;
@@ -588,8 +582,7 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   }
 }
 
-/* ===== Página de búsqueda ===== */
-
+/* ===== Resultados ===== */
 .search-content {
   padding-bottom: 3rem;
 }
@@ -653,17 +646,16 @@ border-bottom: 2px solid transparent; transition: color 0.2s ease, border-color
   margin-top: 0.8rem;
 }
 
-/* ===== Resaltado uniforme en resultados y visor ===== */
+/* ===== Resaltado uniforme ===== */
 mark {
-  background-color: rgba(102, 161, 130, 0.25); /* verde translúcido */
-  color: #66a182; /* mismo verde que var(--accent) */
+  background-color: rgba(102, 161, 130, 0.25);
+  color: #66a182;
   font-weight: 600;
   padding: 1px 3px;
   border-radius: 3px;
   text-shadow: none;
 }
 
-/* Asegura que ningún tema externo lo sobreescriba */
 .search-result-card mark,
 .content mark {
   background-color: rgba(102, 161, 130, 0.25) !important;
@@ -671,7 +663,7 @@ mark {
   font-weight: 600 !important;
 }
 
-/* ===== Últimos apuntes estilo blog ===== */
+/* ===== Últimos apuntes ===== */
 #latest-posts {
   list-style: none;
   padding: 0;
@@ -723,7 +715,7 @@ mark {
   margin: 0;
 }
 
-/* ===== Bloque "Sobre mí" en index ===== */
+/* ===== Sobre mí ===== */
 .about-summary {
   display: flex;
   align-items: center;
@@ -769,33 +761,6 @@ mark {
   border-color: var(--accent);
 }
 
-/* Responsive: apilar en móvil */
-@media (max-width: 700px) {
-  .about-summary-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-summary-avatar {
-    margin-bottom: 0.75rem;
-  }
-}
-
-/* ===== Bloque "Sobre mí" en index (ajuste de enlace) ===== */
-.about-summary-link {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.about-summary-link:hover,
-.about-summary-link:focus {
-  color: var(--accent-hover);
-  border-color: var(--accent-hover);
-}
-
-/* Evita color azul heredado del navegador */
 .about-summary a {
   color: var(--accent);
   text-decoration: none;
@@ -806,7 +771,18 @@ mark {
   text-decoration: underline;
 }
 
-/* === Callouts estilo Obsidian Publish (SVG vector + colores suaves) === */
+/* Responsive */
+@media (max-width: 700px) {
+  .about-summary-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-summary-avatar {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Callouts */
 .callout {
   position: relative;
   border-left: 3px solid var(--accent);
@@ -820,7 +796,6 @@ mark {
   transition: background 0.2s ease;
 }
 
-/* Icono SVG genérico */
 .callout::before {
   content: "";
   position: absolute;
@@ -845,9 +820,7 @@ mark {
   color: #c8c8c8;
 }
 
-/* ====== VARIANTES ====== */
-
-/* INFO */
+/* Info */
 .callout-info {
   --accent: #4589ff;
   background: rgba(69, 137, 255, 0.08);
@@ -857,7 +830,7 @@ mark {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><circle cx='12' cy='12' r='9'/><path d='M12 16v-4M12 8h.01'/></svg>");
 }
 
-/* NOTE */
+/* Note */
 .callout-note {
   --accent: #5ac1ff;
   background: rgba(90, 193, 255, 0.08);
@@ -867,7 +840,7 @@ mark {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><circle cx='12' cy='12' r='9'/><path d='M9 12h6'/></svg>");
 }
 
-/* TIP / SUCCESS */
+/* Tip */
 .callout-tip,
 .callout-success {
   --accent: #2ecc71;
@@ -879,7 +852,7 @@ mark {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'/></svg>");
 }
 
-/* IMPORTANT */
+/* Important */
 .callout-important {
   --accent: #ffb74d;
   background: rgba(255, 183, 77, 0.08);
@@ -889,7 +862,7 @@ mark {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path d='M12 9v4m0 4h.01M5.07 19h13.86a2 2 0 0 0 1.73-3L13.73 4a2 2 0 0 0-3.46 0L3.34 16a2 2 0 0 0 1.73 3z'/></svg>");
 }
 
-/* WARNING / CAUTION */
+/* Warning */
 .callout-warning,
 .callout-caution {
   --accent: #e8a32b;
@@ -901,7 +874,7 @@ mark {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M12 9v4m0 4h.01M10.29 3.86L1.82 18a1 1 0 0 0 .86 1.5h18.64a1 1 0 0 0 .86-1.5L13.71 3.86a1 1 0 0 0-1.72 0z'/></svg>");
 }
 
-/* DANGER / FAILURE */
+/* Danger */
 .callout-danger,
 .callout-failure {
   --accent: #e74c3c;
@@ -913,7 +886,7 @@ mark {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M18 6L6 18M6 6l12 12'/></svg>");
 }
 
-/* QUESTION */
+/* Question */
 .callout-question {
   --accent: #ff9800;
   background: rgba(255, 152, 0, 0.08);
@@ -923,17 +896,17 @@ mark {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M12 8c-1.657 0-3 1.343-3 3h1a2 2 0 1 1 4 0c0 2-3 2-3 4h1m0 3h.01M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z'/></svg>");
 }
 
-/* EXAMPLE */
+/* Example */
 .callout-example {
   --accent: #9370db;
   background: rgba(147, 112, 219, 0.08);
   color: #cdb5ff;
 }
 .callout-example::before {
-  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M4 6h16M4 12h16M4 18h7'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path d='M4 6h16M4 12h16M4 18h7'/></svg>");
 }
 
-/* QUOTE */
+/* Quote */
 .callout-quote {
   --accent: #9e9e9e;
   background: rgba(255, 255, 255, 0.03);
@@ -942,11 +915,56 @@ mark {
 .callout-quote::before {
   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'><path d='M7 9h4v4H7zm6 0h4v4h-4z'/></svg>");
 }
+
 .sidebar-link.current-page {
   background-color: rgba(102, 161, 130, 0.2);
   color: var(--accent);
   font-weight: 600;
   border-radius: 4px;
 }
+.md-img img {
+  display: block;
+  margin: 0.5rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+/* ============================
+   Obsidian-like Ordered Lists
+   ============================ */
 
+.olist-item {
+  position: relative;
+  padding-left: 2rem;
+  margin: 0.4rem 0;
+}
+
+.olist-item::before {
+  content: attr(data-number) ".";
+  position: absolute;
+  left: 0;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.olist-level {
+  margin-left: 1.2rem;
+}
+
+
+/* ============================
+   Obsidian-like Unordered Lists
+   ============================ */
+
+.ulist-item {
+  position: relative;
+  padding-left: 1.4rem;
+  margin: 0.3rem 0;
+}
+
+.ulist-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--text-dim);
+}
 

@@ -15,9 +15,6 @@
   <!-- markdown-it -->
   <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 
-  <!-- 🔥 PREPROCESSOR OBSIDIAN -->
-  <script src="assets/js/obsidian-preprocessor.js"></script>
-
   <link rel="icon" type="img/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
 </head>
 
@@ -140,13 +137,13 @@ window.addEventListener("load", () => {
 });
 </script>
 
-
 <!-- ===================================================================================== -->
-<!-- =========================== 🔥 MOTOR MARKDOWN & PREPROCESSOR ========================= -->
+<!-- =========================== 🔥 MOTOR MARKDOWN OBSIDIAN ================================ -->
 <!-- ===================================================================================== -->
 
 <script>
-// Parser markdown-it
+/* ------------------------------ 1) Creamos parser markdown-it ---------------------------- */
+
 const mdParser = window.markdownit({
   html: true,
   linkify: true,
@@ -154,7 +151,9 @@ const mdParser = window.markdownit({
   breaks: false
 });
 
-// Callouts estilo Obsidian
+
+/* ------------------------------ 2) CALL OUTS TIPO OBSIDIAN ----------------------------- */
+
 function renderCallouts(md) {
   return md.replace(
     /^>\s*\[!(\w+)\](.*?)(?:\n(?!>)([\s\S]*?))?(?=\n{2,}|$)/gm,
@@ -169,6 +168,25 @@ function renderCallouts(md) {
     }
   );
 }
+
+
+/* ------------------------------ 3) LISTAS OBSIDIAN-LIKE ------------------------------ */
+
+function fixLists(md) {
+  md = md.replace(/\t/g, "    "); // Obsidian implícito
+  return md;
+}
+
+
+/* ------------------------------ 4) IMAGENES ![[...]] ------------------------------ */
+
+function fixObsidianImages(html) {
+  return html.replace(/!\[\[(.+?)\]\]/g, (m, file) => {
+    const clean = encodeURIComponent(file.trim());
+    return `<img src="/content/Ciberseguridad/Ciberseguridad/Z%20Imagenes/${clean}" alt="${file}">`;
+  });
+}
+
 </script>
 
 
@@ -202,22 +220,25 @@ function renderCallouts(md) {
       if (!res.ok) throw new Error();
       let md = await res.text();
 
-      // Título
-      const lines = md.split("\n");
-      const h1 = lines[0]?.match(/^#\s+(.+)/);
-      titleEl.textContent = h1 ? h1[1].trim() : realPath.split("/").pop();
+      // título
+      const first = md.split("\n")[0];
+      const match = first.match(/^#\s+(.+)/);
+      titleEl.textContent = match
+        ? match[1].trim()
+        : realPath.split("/").pop().replace(/\.md$/i, "");
 
-      // 🔥 PROCESADOR OBSIDIAN — Listas, sublistas, imágenes, párrafos
-      md = ObsidianPreprocessor.process(md);
-
-      // Callouts
+      // aplicar transformaciones
+      md = md.replace(/\r\n/g, "\n");
+      md = fixLists(md);
       md = renderCallouts(md);
 
-      // markdown-it
+      // render final
       let html = mdParser.render(md);
 
-      // Resaltado código
+      html = fixObsidianImages(html);
+
       contentEl.innerHTML = html;
+
       contentEl.querySelectorAll("pre code").forEach(b => hljs.highlightElement(b));
 
     } catch {
@@ -228,9 +249,8 @@ function renderCallouts(md) {
     return;
   }
 
-  // PDFs
   if (realPath.toLowerCase().endsWith(".pdf")) {
-    const clean = realPath.split("/").pop().replace(/\.pdf$/, "");
+    const clean = realPath.split("/").pop().replace(/\.pdf$/i, "");
     titleEl.textContent = clean;
     contentEl.innerHTML =
       `<iframe src="${realPath}" width="100%" height="80vh"
@@ -252,10 +272,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const file = params.get("file");
   const el = document.getElementById("breadcrumb");
 
-  if (!file) { 
-    el.textContent = "(Sin ruta)";
-    return;
-  }
+  if (!file) { el.textContent = "(Sin ruta)"; return; }
 
   try {
     const res = await fetch("apuntes/arbol.json");

@@ -140,9 +140,8 @@ window.addEventListener("load", () => {
 });
 </script>
 
-
 <!-- ===================================================================================== -->
-<!-- =========================== 🔥 MOTOR MARKDOWN & PREPROCESSOR ========================= -->
+<!-- =========================== 🔥 MOTOR MARKDOWN OBSIDIAN ================================ -->
 <!-- ===================================================================================== -->
 
 <script>
@@ -169,8 +168,16 @@ function renderCallouts(md) {
     }
   );
 }
-</script>
 
+// Imágenes ![[...]]
+function fixObsidianImages(html) {
+  return html.replace(/!\[\[(.+?)\]\]/g, (m, file) => {
+    const clean = encodeURIComponent(file.trim());
+    return `<img src="/content/Ciberseguridad/Ciberseguridad/Z%20Imagenes/${clean}" alt="${file}">`;
+  });
+}
+
+</script>
 
 <!-- ===================================================================================== -->
 <!-- ============================= 🔥 RENDER DE MARKDOWN ================================== -->
@@ -202,22 +209,25 @@ function renderCallouts(md) {
       if (!res.ok) throw new Error();
       let md = await res.text();
 
-      // Título
       const lines = md.split("\n");
       const h1 = lines[0]?.match(/^#\s+(.+)/);
       titleEl.textContent = h1 ? h1[1].trim() : realPath.split("/").pop();
 
-      // 🔥 PROCESADOR OBSIDIAN — Listas, sublistas, imágenes, párrafos
-      md = ObsidianPreprocessor.process(md);
+      // 🔥 PROCESADOR OBSIDIAN-LIKE
+      md = md.replace(/\r\n/g, "\n");
+      md = ObsidianPreprocessor.process(md);   // ← ← ← AQUÍ
 
-      // Callouts
+      // callouts
       md = renderCallouts(md);
 
       // markdown-it
       let html = mdParser.render(md);
 
-      // Resaltado código
+      // imágenes
+      html = fixObsidianImages(html);
+
       contentEl.innerHTML = html;
+
       contentEl.querySelectorAll("pre code").forEach(b => hljs.highlightElement(b));
 
     } catch {
@@ -228,7 +238,6 @@ function renderCallouts(md) {
     return;
   }
 
-  // PDFs
   if (realPath.toLowerCase().endsWith(".pdf")) {
     const clean = realPath.split("/").pop().replace(/\.pdf$/, "");
     titleEl.textContent = clean;
@@ -241,7 +250,6 @@ function renderCallouts(md) {
 })();
 </script>
 
-
 <!-- ===================================================================================== -->
 <!-- ==============================  🔥 BREADCRUMB & NAV  ================================= -->
 <!-- ===================================================================================== -->
@@ -252,10 +260,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const file = params.get("file");
   const el = document.getElementById("breadcrumb");
 
-  if (!file) { 
-    el.textContent = "(Sin ruta)";
-    return;
-  }
+  if (!file) { el.textContent = "(Sin ruta)"; return; }
 
   try {
     const res = await fetch("apuntes/arbol.json");

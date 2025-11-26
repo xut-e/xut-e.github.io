@@ -169,6 +169,14 @@ function renderCallouts(md) {
     }
   );
 }
+
+// Imágenes ![[...]] → HTML directo
+function fixObsidianImages(md) {
+  return md.replace(/!\[\[(.+?)\]\]/g, (m, file) => {
+    const clean = encodeURIComponent(file.trim());
+    return `<img src="/content/Ciberseguridad/Ciberseguridad/Z%20Imagenes/${clean}" alt="${file}">`;
+  });
+}
 </script>
 
 
@@ -202,18 +210,19 @@ function renderCallouts(md) {
       if (!res.ok) throw new Error();
       let md = await res.text();
 
-      // Título
+      // Título automático
       const lines = md.split("\n");
       const h1 = lines[0]?.match(/^#\s+(.+)/);
       titleEl.textContent = h1 ? h1[1].trim() : realPath.split("/").pop();
 
-      // 🔥 PROCESADOR OBSIDIAN — Listas, sublistas, imágenes, párrafos
+      // 🔥 PROCESADOR OBSIDIAN (listas + imágenes + texto)
+      md = md.replace(/\r\n/g, "\n");
       md = ObsidianPreprocessor.process(md);
 
       // Callouts
       md = renderCallouts(md);
 
-      // markdown-it
+      // Markdown-it render
       let html = mdParser.render(md);
 
       // Resaltado código
@@ -240,8 +249,6 @@ function renderCallouts(md) {
 
 })();
 </script>
-
-
 <!-- ===================================================================================== -->
 <!-- ==============================  🔥 BREADCRUMB & NAV  ================================= -->
 <!-- ===================================================================================== -->
@@ -253,8 +260,8 @@ window.addEventListener("DOMContentLoaded", async () => {
   const el = document.getElementById("breadcrumb");
 
   if (!file) { 
-    el.textContent = "(Sin ruta)";
-    return;
+    el.textContent = "(Sin ruta)"; 
+    return; 
   }
 
   try {
