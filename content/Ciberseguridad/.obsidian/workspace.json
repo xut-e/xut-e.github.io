@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/15. Windows Practice Box.md",
+                "file": "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/4. Privilege Escalation - Kernel Exploits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "15. Windows Practice Box"
+              "title": "4. Privilege Escalation - Kernel Exploits"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.5,
-    "collapsed": true
+    "width": 356.5
   },
   "right": {
     "id": "faed7e75b1bafdc2",
@@ -170,25 +169,30 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3cbd531657d5e531",
+  "active": "de843610a44737e0",
   "lastOpenFiles": [
-    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/6. Socat.md",
-    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/15. Windows Practice Box.md",
-    "Pasted image 20251125214017.png",
-    "Pasted image 20251125213058.png",
-    "Pasted image 20251125212702.png",
-    "Pasted image 20251125212356.png",
-    "Pasted image 20251125211713.png",
-    "Pasted image 20251125211653.png",
-    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/11. Webshells.md",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126215100.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126215023.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126214932.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126214902.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126214548.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126214529.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126214128.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126214047.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126213923.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126213805.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251126213558.png",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/3. Automated Enumeration Tools.md",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/2. Enumeration.md",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/5. Netcat Shell Stabilisation.md",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/4. Privilege Escalation - Kernel Exploits.md",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/5. Privilege Escalation - Sudo.md",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/15. Windows Practice Box.md",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/6. Socat.md",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/11. Webshells.md",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/4. Netcat.md",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/8. Common Shell Payloads.md",
-    "Ciberseguridad/Z Imagenes/Pasted image 20251124231408.png",
-    "Ciberseguridad/Z Imagenes/Pasted image 20251124230849.png",
-    "Ciberseguridad/Z Imagenes/Pasted image 20251124230612.png",
     "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/4. The Root of All Evil.md",
-    "Ciberseguridad/Z Imagenes/Pasted image 20251124205652.png",
     "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/3. Let the Fun Begin.md",
     "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/2. Enumeration Time.md",
     "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/1. Introduction.md",
@@ -205,11 +209,7 @@
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/3. Types of Shell.md",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/6. Nmap Post Port Scans/2. Service Detection.md",
     "Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/7. Nmap - The Basics/1. Introduction.md",
-    "Ciberseguridad/THM/Maquinas/1. Easy/4. Res/1. Introduction.md",
-    "Ciberseguridad/THM/Maquinas/1. Easy/4. Res/0. Res.md",
     "Ciberseguridad/THM/Maquinas/1. Easy/4. Res",
-    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/2. Tools.md",
-    "Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup/2. Finding the flags.md",
     "Ciberseguridad/THM/Maquinas/1. Easy/3. Lookup",
     "Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/5. Burp Suite - Extensions/Sin nombre",

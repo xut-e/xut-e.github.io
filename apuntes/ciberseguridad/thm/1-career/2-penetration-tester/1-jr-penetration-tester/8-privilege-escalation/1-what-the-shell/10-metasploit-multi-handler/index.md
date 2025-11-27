@@ -8,7 +8,7 @@ Multi/handler es una herramienta genial para capturar reverse shells. Es esencia
 Por suerte es relativamente fácil de usar:
 
 1. Abre Metasploit con `msfconsole`.
-2. Escribe `use multi/handler` y presiona enter.
+2. Escribe `use exploit/multi/handler` y presiona enter.
 
 Se mostrará una sesión de multi/handler empezada. Veamos las opciones disponibles usando `options`:
 
