@@ -8,11 +8,13 @@ const ObsidianPreprocessor = {
 
   process(md) {
 
-    // Normalizar saltos y tabs
+    // Normalizar saltos y tabs → tabs = 4 spaces
     md = md.replace(/\r\n/g, "\n")
            .replace(/\t/g, "    ");
 
-    // === PROTEGER INLINE CODE `...` ===
+    /* ==================================================================
+       🔒 PROTEGER INLINE CODE `...`
+       ================================================================== */
     const INLINE_CODE = [];
     md = md.replace(/`([^`]+)`/g, (m, code) => {
       const placeholder = `@@INLINECODE${INLINE_CODE.length}@@`;
@@ -20,17 +22,25 @@ const ObsidianPreprocessor = {
       return placeholder;
     });
 
-    // Sustituir imágenes Obsidian ![[...]] por HTML embebido
+    /* ==================================================================
+       🖼 Sustituir imágenes Obsidian ![[file.png]]
+       ================================================================== */
     md = md.replace(/!\[\[(.+?)\]\]/g, (m, file) =>
       `<img class="md-img" src="/content/Ciberseguridad/Ciberseguridad/Z%20Imagenes/${encodeURIComponent(file.trim())}" alt="${file.trim()}">`
     );
 
-    // Línea horizontal
+    /* ==================================================================
+       ─── HR: líneas horizontales ─────────────────────────────────────
+       ================================================================== */
     md = md.replace(/^[-]{3,}$/gm, "<hr>");
+
+    /* ==================================================================
+       🔧 PREPROCESADO MANUAL DE LISTAS (versión Obsidian 100%)
+       ================================================================== */
 
     const lines = md.split("\n");
     let html = [];
-    let stack = []; // tipo de listas abiertas: "olist" o "ulist"
+    let stack = []; // niveles abiertos: "olist" or "ulist"
 
     function open(type, level) {
       if (type === "olist") {
@@ -44,50 +54,56 @@ const ObsidianPreprocessor = {
 
     function close(level) {
       while (stack.length > level) {
-        let t = stack.pop();
-        html.push(`</div>`);
+        const closing = stack.pop();
+        html.push(closing === "olist" ? "</div>" : "</ul>");
       }
     }
 
     for (let raw of lines) {
-      let indent = raw.match(/^\s*/)[0].length;
-      let level = Math.floor(indent / 4);
+
+      // Número de espacios REALES
+      let matchSpaces = raw.match(/^( +)/);
+      let spaces = matchSpaces ? matchSpaces[0].length : 0;
+
+      // REGLA OBSIDIAN: solo 4 espacios = 1 nivel
+      let level = Math.floor(spaces / 4);
+
       let trimmed = raw.trim();
 
-      // Ordered list item
+      /* ===== Ordered list ===== */
       let ol = trimmed.match(/^(\d+)\.\s+(.*)$/);
       if (ol) {
         close(level);
         if (stack.length === level) open("olist", level);
-        html.push(
-          `<div class="olist-item" data-number="${ol[1]}">${ol[2]}</div>`
-        );
+        html.push(`<div class="olist-item" data-number="${ol[1]}">${ol[2]}</div>`);
         continue;
       }
 
-      // Unordered list item
+      /* ===== Unordered list ===== */
       let ul = trimmed.match(/^[-+*]\s+(.*)$/);
       if (ul) {
         close(level);
         if (stack.length === level) open("ulist", level);
-        html.push(`<div class="ulist-item">- ${ul[1]}</div>`);
+        html.push(`<div class="ulist-item">${ul[1]}</div>`);
         continue;
       }
 
-      // Texto dentro de una lista
+      /* ===== Texto dentro de una lista ===== */
       if (stack.length > 0 && trimmed.length > 0) {
         html.push(`<p>${trimmed}</p>`);
         continue;
       }
 
-      // Línea normal
+      /* ===== Línea normal ===== */
       close(0);
       html.push(trimmed);
     }
 
     close(0);
 
-    // === RESTAURAR INLINE CODE PROTEGIDO ===
+    /* ==================================================================
+       🔄 REINSERTAR INLINE CODE PROTEGIDO
+       ================================================================== */
     let out = html.join("\n");
 
     out = out.replace(/@@INLINECODE(\d+)@@/g, (m, i) => {
