@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapa de Conexiones — xut</title>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <style>
+    :root {
+      --footer-height: 190px;
+    }
+
+    body {
+      margin: 0;
+      background: #1a1a1a;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    #graph-root {
+      position: absolute;
+      left: 0;
+      width: 100vw;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+
+    #graph-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    footer.site-footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: var(--footer-height);
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-color);
+      color: var(--text-dim);
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    footer pre.ascii {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      white-space: pre;
+      margin-top: 0.8rem;
+      opacity: 0.85;
+    }
+  </style>
+
+  <link rel="icon" type="img/png" href="https://avatars.githubusercontent.com/u/172497238?v=4">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/" aria-label="xut - inicio">
+        <span aria-hidden="true">✱</span>
+        <span>xut</span>
+      </a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/sobre-mi.html">Sobre mí</a></li>
+          <li><a href="https://github.com/xut-e" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAPA -->
+  <main id="graph-root">
+    <div id="graph-container"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div>
+      <small>© <span id="year"></span> xut-e — Todos los derechos reservados</small>
+      <pre class="ascii">
+             ..                      .....          
+   .H88x.  :~)88:                 .H8888888h.  ~-.  
+  x888888X ~:8888    x.    .      888888888888x  `> 
+ ~   "8888X  %88"  .@88k  z88u   X~     `?888888hx~ 
+      X8888       ~"8888 ^8888   '      x8.^"*88*"  
+   .xxX8888xxxd>    8888  888R    `-:- X8888x       
+  :88888888888"     8888  888R         488888>      
+  ~   '8888         8888  888R       .. `"88*        
+ xx.  X8888:    .   8888 ,888B .   x88888nX"      .  
+X888  X88888x.x"   "8888Y 8888"   !"*8888888n..  :   
+X88% : '%8888"      `Y"   'YP    '    "*88888888*    
+ "*=~    `""                             ^"***"`     
+      </pre>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Ajuste real sin huecos
+    const headerHeight = document.querySelector(".site-header").offsetHeight;
+    const graphRoot = document.getElementById("graph-root");
+    graphRoot.style.top = headerHeight + "px";
+    graphRoot.style.height =
+      `calc(100vh - ${headerHeight}px - var(--footer-height))`;
+  </script>
+
+  <script src="assets/js/graph.js"></script>
+</body>
+</html>
+
