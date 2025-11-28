@@ -211,6 +211,9 @@ function renderCallouts(md) {
       const lines = md.split("\n");
       const h1 = lines[0]?.match(/^#\s+(.+)/);
       titleEl.textContent = h1 ? h1[1].trim() : realPath.split("/").pop();
+      // Quitar ".md" del título si existe
+      titleEl.textContent = titleEl.textContent.replace(/\.md$/i, "");
+
 
       // 🔥 PROCESADOR OBSIDIAN — Listas, sublistas, imágenes, párrafos
       md = ObsidianPreprocessor.process(md);
