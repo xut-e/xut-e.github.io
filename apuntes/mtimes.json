@@ -6396,20 +6396,20 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/1. Windows Privilege Escalation.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "3f3604fa274e9dc24956f7f67ce892bccf4a01e897911c6a276ef998c683e7cb"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/9. Privilege Escalation - PATH.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "ba26df91cbe9be2a9a1267ce2ceb0dbe8ee247d5aca30633b87845196c8b0b6d"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/4. Privilege Escalation - Kernel Exploits.md": {
     "modified": "2025-11-27T00:49:31",
     "hash": "b7c25bf36d2ebaf481d1634a25dacbc5f6d60f7875c151d54d42bc3563410d24"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/7. Privilege Escalation - Capabilities.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "df845e0a955b875101150bf9190aefa728b52691758ec239f9a3176eca5f0d32"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/8. Privilege Escalation Cron Jobs.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6420,32 +6420,32 @@
     "hash": "beb403986715eed06aac37abd2a42ddbf84da84fd57ce2ca8efcfa27e21f6576"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/11. Capstone Challenge.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "494f5e6b8af2c0686cde74b50375c75d39b30ae20621a95aa0c9caeabf60011e"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/2. Enumeration.md": {
-    "modified": "2025-11-27T00:49:31",
-    "hash": "8bc163bac6072b15451a356f2ed75db861fbb8e9b674f675a9f6073be7a5160e"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "91d14147ef88125c7959a4de5928152b6d8b3797bf43bc4758597cbb5b2ebb59"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/1. What is Privilege Escalation.md": {
     "modified": "2025-11-27T00:49:31",
     "hash": "38cb77c27f25c02c1f5e92122b806c6a10901d194025837b72d0d14e91267322"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/10. Privilege Escalation - NFS.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "f3bafeaac9ced8540ee6e69758435b220c1e3963ada80097bafb426cebb081d0"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/0. Linux Privilege Escalation.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "fd5dfb4136879290efd95701fc25952899c12e320117d00b7271ae8798150c81"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "daad7899e933915d6584714927ed195b9466fcc716b63c241d7245b9dd995bf8"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/5. Privilege Escalation - Sudo.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "803b7c61aeee9f323e923772ff1630a1a8d1f091a88e73c3bd86631dc448b627"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/6. Privilege Escalation - SUID.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-11-28T00:48:12",
+    "hash": "552c18538ca82b99600b9fdec300a41205b7fdc817c65e647bf1120e7e5405db"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/14. Linux Practice Box.md": {
     "modified": "2025-11-26T00:50:43",
@@ -6890,5 +6890,9 @@
   "Ciberseguridad/THM/Maquinas/1. Easy/5. Brooklyn Nine Nine/1. Introduction.md": {
     "modified": "2025-11-24T20:06:19",
     "hash": "7ddbdf10309e530c74e6c4ddbcddcaf4cc53a8891000cdd4a72840941cb6a53c"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/8. Privilege Escalation - Cron Jobs.md": {
+    "modified": "2025-11-28T00:48:12",
+    "hash": "7dc85b478d0fc895405001e63d461c70d40ecbe060c1f07db363e500d178dc0e"
   }
 }

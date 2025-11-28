@@ -1,5 +1,38 @@
 ---
 layout: apunte
-title: "8. Privilege Escalation Cron Jobs"
+title: "8. Privilege Escalation - Cron Jobs"
 ---
+
+La tareas Cron se usan para ejecutar scripts o binarios en momentos específicos. Por defecto, corren con los privilegios de sus dueños y no del usuario actual. Mientras que las tareas cron bien configuradas no son vulnerables, pueden ofrecer un vector de escalada de privilegios bajo ciertas condiciones. La idea es simple, si hay una tarea programada que corre con permisos de administrador y podemos cambiar el script que se ejecuta, entonces nuestro script correrá con permisos de administrador.
+
+Las configuraciones de las tareas cron se guardan como "crontabs" (cron tables) para ver cuándo será la próxima vez que correrá una tarea.
+
+Cada usuario del sistema tiene su archivo crontab y puede correr tareas específicas estén logueados o no. Como puedes esperar, nuestra meta es encontrar una tarea cron configurada por root que lea nuestro script.
+
+Cualquier usuario puede leer el archivo haciendo `cat /etc/crontab`.
+
+Aunque algunos entornos CTF tengan tareas cron cada minuto o cada 5 minutos, más normalmente verás tareas ejecutándose cada día, semana o mes.
+
+!**Pasted image 20251127152548.png**
+
+Puedes ver el script `backup.sh` configurado para ejecutarse cada minuto. El contenido del archivo muestra un script simple que crea un backup del archivo `prices.xls`.
+
+!**Pasted image 20251127152727.png**
+
+Como nuestro usuario puede acceder a este script, podemos modificarlo para crear una reverse shell.
+
+El script usará herramientas disponibles en el sistema para establecerla por lo que es importante saber qué opciones hay disponibles. En nuestro caso, el archivo se verá así:
+
+!**Pasted image 20251127152910.png**
+
+Después ejecutamos un listener en nuestra máquina:
+
+!**Pasted image 20251127152932.png**
+
+Siempre merece la pena comprobar crontab ya que a veces puede llevar a vectores de escalada de privilegios fácilmente. Este escenario no es raro en empresas:
+
+1. Los sysadmins necesitan ejecutar un script regularmente.
+2. Crean un trabajo cron para hacerlo.
+3. Después de un tiempo, el script se vuelve inútil y lo borran.
+4. No limpian la tarea cron.
 

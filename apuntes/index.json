@@ -3080,6 +3080,10 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/1-windows-privilege-escalation/"
   },
   {
+    "title": "8. Privilege Escalation - Cron Jobs",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/8-privilege-escalation-cron-jobs/"
+  },
+  {
     "title": "9. Privilege Escalation - PATH",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/9-privilege-escalation-path/"
   },
@@ -3090,10 +3094,6 @@
   {
     "title": "7. Privilege Escalation - Capabilities",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/7-privilege-escalation-capabilities/"
-  },
-  {
-    "title": "8. Privilege Escalation Cron Jobs",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/2-linux-privilege-escalation/8-privilege-escalation-cron-jobs/"
   },
   {
     "title": "3. Automated Enumeration Tools",

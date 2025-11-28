@@ -3,7 +3,7 @@ layout: apunte
 title: "2. Enumeration"
 ---
 
-La enumeración es el primer paso qeu debes tomar una vez ganas acceso a cualquier sistema. En entornos reales, el test no acaba cuando ganas acceso al sistema.
+La enumeración es el primer paso que debes tomar una vez ganas acceso a cualquier sistema. En entornos reales, el test no acaba cuando ganas acceso al sistema.
 
 -----------------------------------
 <h2>hostname</h2>
@@ -19,7 +19,7 @@ El filesystem proc (procfs) nos ofrece información sobre los procesos del siste
 
 ---------------------------------------
 <h2>/etc/issue</h2>
-También se puede indentificar sistemas mirando el archivo `/etc/issue`. Este normalmente contiene algo de información sobre el sistema operativo pero puede ser personalizado/cambiado.
+También se puede identificar sistemas mirando el archivo `/etc/issue`. Este normalmente contiene algo de información sobre el sistema operativo pero puede ser personalizado/cambiado.
 
 ------------------------------------
 <h2>Comando ps</h2>
@@ -32,10 +32,10 @@ El output de `ps` (Process Status) muestra:
 - **Time:** Cantidad de tiempo de CPU usado por el proceso (no es el tiempo que lleva corriendo).
 - **CMD:** Comando o archivo ejecutable corriendo.
 
-El comando `ps` ofrece unas cuantas opciones dde ayuda.
+El comando `ps` ofrece unas cuantas opciones de ayuda.
 
 - `ps -A`: Muestra todos los procesos.
-- `ps axjf`: Muestra el arbol de procesos.
+- `ps axjf`: Muestra el árbol de procesos.
 - `ps aux`: La opción `aux` mostrará los procesos de todos los usuarios (a), el usuario que lanzó el proceso (u) y procesos que no están atados a la terminal (x).
 
 -------------------------------------------------

@@ -3,3 +3,27 @@ layout: apunte
 title: "7. Privilege Escalation - Capabilities"
 ---
 
+Otro método que los sysadmins pueden usar para incrementar el nivel de privilegios de un proceso o binario son las "Capabilities". Las capabilities ayudan a manejar privilegios a un nivel más granular. Por ejemplo, si el analista SOC necesita usar una herramienta que necesite iniciar conexiones socket, un usuario normal no debería ser capaz de hacerlo. Si el sysadmin no quiere darle privilegios elevados a este usuario, pueden cambiar las capabilities del binario. Como resultado, el binario podría ejecutar el proceso sin la necesidad de un usuario con privilegios superiores.
+
+Podemos usar la herramienta `getcap` para listar capabilities habilitadas.
+
+!**Pasted image 20251127130635.png**
+
+Cuando se ejecuta como usuario no privilegiado, `getcap -r /` genera una cantidad inmensa de errores por lo que conviene redirigirlos a la basura (`2>/dev/null`).
+
+Ni vim ni su copia tienen el bit SUID configurado por lo que este vector no es descubrible listando archivos en busca de SUID.
+
+!**Pasted image 20251127130928.png**
+
+GTFOBins tiene una buena lista de binarios que pueden ser usados para la escalada de privilegios si encontramos alguna capability configurada.
+
+Notamos que vim puede ser usada con el siguiente comando y payload:
+
+!**Pasted image 20251127131036.png**
+
+Esto lanzará una shell root:
+
+!**Pasted image 20251127131056.png**
+
+>[!TIP] Esto funciona: `./vim -c ':py3 import os; os.setuid(0); os.execl("/bin/sh", "sh", "-c", "exec /bin/bash -p")'` y después `python3 -c 'import pty; pty.spawn("/bin/bash")'` para estabilizarla.
+
