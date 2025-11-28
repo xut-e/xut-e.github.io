@@ -185,6 +185,11 @@ function renderCallouts(md) {
   const titleEl = document.getElementById("md-title");
   const contentEl = document.getElementById("md-content");
 
+  // === Guardar siempre la página actual (FIX MÁS IMPORTANTE) ===
+  if (fileParam) {
+    localStorage.setItem("indexLastFile", fileParam);
+  }
+
   if (!fileParam) {
     titleEl.textContent = "Sin archivo";
     contentEl.textContent = "No se ha especificado ningún archivo.";
