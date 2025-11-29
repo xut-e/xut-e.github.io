@@ -25,4 +25,14 @@ Los sistemas Windows tienen principalmente 2 tipos de usuarios. Dependiendo del 
 | **Administrators** | Estos usuarios tienen los mayores privilegios. Pueden cambiar cualquier parámetro de configuración y acceder a cualquier archivo del sistema.                                                            |
 | **Standard Users** | Estos usuarios pueden acceder al ordenador pero sólo realizar tareas limitadas. Típicamente estos usuarios no pueden hacer cambios permanentes o esenciales al sistema y están limitados a sus archivos. |
 
-Cualquier usuario con privilegios administrativos, será parte del grupo **Administrators**.
+Cualquier usuario con privilegios administrativos, será parte del grupo **Administrators**. Por el otro lado, aquellos usuarios estándar serán parte del grupo **Users**.
+
+En adición a eso, normalmente escucharás sobre algunas cuentas especialmente construidas usadas por el sistema operativo en el contexto de la escalada de privilegios.
+
+| Usuario                  | Explicación                                                                                                                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SYSTEM / LocalSystem** | Una cuenta usada por el sistema operativo para realizar tareas internas. Tiene accesos totales a los archivos y recursos disponibles en el host incluso con privilegios más elevados. |
+| **Local Service**        | Cuenta usada por defecto para correr servicios de Windows con los mínimos privilegios posibles. Usará conexiones anónimas en la red.                                                  |
+| **Network Service**      | Cuenta por defecto usada para correr servicios de Windows con los mínimos privilegios posibles. Usará credenciales para autentificarse a través de la red.                            |
+
+Estas cuentas se crean y se gestionan por Windows y no serás capaz de usarlas como cuentas normales. Aunque en algunas situaciones puedes ganar sus privilegios debido a la explotación de ciertos servicios.

