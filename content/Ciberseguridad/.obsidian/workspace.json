@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/11. Webshells.md",
+                "file": "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/4. Abusing Service Misconfigurations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11. Webshells"
+              "title": "4. Abusing Service Misconfigurations"
             }
           }
         ]
@@ -172,14 +172,16 @@
   },
   "active": "3cbd531657d5e531",
   "lastOpenFiles": [
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/15. Windows Practice Box.md",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/4. Abusing Service Misconfigurations.md",
-    "Ciberseguridad/Z Imagenes/Pasted image 20251128225919.png",
-    "Ciberseguridad/Z Imagenes/Pasted image 20251128225827.png",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/11. Capstone Challenge.md",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/3. Other Quick Wins.md",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/2. Harvesting Passwords from Usual Spots.md",
+    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/11. Webshells.md",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251128225919.png",
+    "Ciberseguridad/Z Imagenes/Pasted image 20251128225827.png",
     "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/1. Windows Privilege Escalation.md",
     "Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021.md",
-    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/11. Capstone Challenge.md",
     "Ciberseguridad/Z Imagenes/Pasted image 20251127203215.png",
     "Ciberseguridad/Z Imagenes/Pasted image 20251127203033.png",
     "Ciberseguridad/Z Imagenes/Pasted image 20251127202918.png",
@@ -206,8 +208,6 @@
     "Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/4. Cracking Basic Hashes.md",
     "Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/3. Setting Up Your system.md",
     "Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/1. Introduction.md",
-    "Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/6. Cryptography/4. John the Ripper - The Basics/2. Basic Terms.md",
-    "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/3. Automated Enumeration Tools.md",
     "Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech",
     "Ciberseguridad/THM/Maquinas/1. Easy/5. Brooklyn Nine Nine",
     "Ciberseguridad/THM/Maquinas/1. Easy/4. Res",

