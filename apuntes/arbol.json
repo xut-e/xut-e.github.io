@@ -4624,6 +4624,12 @@
                                   "type": "file",
                                   "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/7. Tools of the Trade.md",
                                   "parent": "3. Windows Privilege Escalation"
+                                },
+                                {
+                                  "name": "8. Conclusion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/8. Conclusion.md",
+                                  "parent": "3. Windows Privilege Escalation"
                                 }
                               ]
                             }
@@ -4969,6 +4975,192 @@
                                   "type": "file",
                                   "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/1. Redireccion.md",
                                   "parent": "8. Pickle Rick"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. OWASP Top 10 - 2025",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. OWASP Top 10 2025 - IAAA Failures",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. What is IAAA.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/1. What is IAAA.md",
+                                  "parent": "1. OWASP Top 10 2025 - IAAA Failures"
+                                },
+                                {
+                                  "name": "2. A01 - Broken Access Control.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/2. A01 - Broken Access Control.md",
+                                  "parent": "1. OWASP Top 10 2025 - IAAA Failures"
+                                },
+                                {
+                                  "name": "3. A07 - Authentification Failures.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/3. A07 - Authentification Failures.md",
+                                  "parent": "1. OWASP Top 10 2025 - IAAA Failures"
+                                },
+                                {
+                                  "name": "4. A09 - Logging & Alerting Features.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/4. A09 - Logging & Alerting Features.md",
+                                  "parent": "1. OWASP Top 10 2025 - IAAA Failures"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "2. OWASP Top 10 2025 - Application Design Flaws",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. AS02 - Security Missconfigurations.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/1. AS02 - Security Missconfigurations.md",
+                                  "parent": "2. OWASP Top 10 2025 - Application Design Flaws"
+                                },
+                                {
+                                  "name": "2. AS03 - Software Supply Chain Failures.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/2. AS03 - Software Supply Chain Failures.md",
+                                  "parent": "2. OWASP Top 10 2025 - Application Design Flaws"
+                                },
+                                {
+                                  "name": "3. AS04 - Cryptographic Failures.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/3. AS04 - Cryptographic Failures.md",
+                                  "parent": "2. OWASP Top 10 2025 - Application Design Flaws"
+                                },
+                                {
+                                  "name": "4. AS06 - Insecure Design.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/4. AS06 - Insecure Design.md",
+                                  "parent": "2. OWASP Top 10 2025 - Application Design Flaws"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "3. OWASP Top 10 2025 - Insecure Data Handling",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. A04 - Cryptographic Failures.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/1. A04 - Cryptographic Failures.md",
+                                  "parent": "3. OWASP Top 10 2025 - Insecure Data Handling"
+                                },
+                                {
+                                  "name": "2. A05 - Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/2. A05 - Injection.md",
+                                  "parent": "3. OWASP Top 10 2025 - Insecure Data Handling"
+                                },
+                                {
+                                  "name": "3. A08 - Software or Data Integrity Failures.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/3. A08 - Software or Data Integrity Failures.md",
+                                  "parent": "3. OWASP Top 10 2025 - Insecure Data Handling"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Web Application Pentesting",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Authentication",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Enumeration & Brute Force",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/1. Introduction.md",
+                                  "parent": "1. Enumeration & Brute Force"
+                                },
+                                {
+                                  "name": "2. Authentication Enumeration.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/2. Authentication Enumeration.md",
+                                  "parent": "1. Enumeration & Brute Force"
+                                },
+                                {
+                                  "name": "3. Enumerating Users via Verbose Errors.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/3. Enumerating Users via Verbose Errors.md",
+                                  "parent": "1. Enumeration & Brute Force"
+                                },
+                                {
+                                  "name": "4. Exploiting Vulnerable Password Reset Logic.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/4. Exploiting Vulnerable Password Reset Logic.md",
+                                  "parent": "1. Enumeration & Brute Force"
+                                },
+                                {
+                                  "name": "5. Exploiting HTTP Basic Authentication.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/5. Exploiting HTTP Basic Authentication.md",
+                                  "parent": "1. Enumeration & Brute Force"
+                                },
+                                {
+                                  "name": "6. OSINT.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/6. OSINT.md",
+                                  "parent": "1. Enumeration & Brute Force"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "2. Session Management",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/1. Introduction.md",
+                                  "parent": "2. Session Management"
+                                },
+                                {
+                                  "name": "2. What is Session Management.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/2. What is Session Management.md",
+                                  "parent": "2. Session Management"
+                                },
+                                {
+                                  "name": "3. Authentication vs Authorisation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/3. Authentication vs Authorisation.md",
+                                  "parent": "2. Session Management"
+                                },
+                                {
+                                  "name": "4. Cookies vs Tokens.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/4. Cookies vs Tokens.md",
+                                  "parent": "2. Session Management"
+                                },
+                                {
+                                  "name": "5. Securing the Session Lifecycle.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/5. Securing the Session Lifecycle.md",
+                                  "parent": "2. Session Management"
+                                },
+                                {
+                                  "name": "6. Exploiting Insecure Session Management.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/6. Exploiting Insecure Session Management.md",
+                                  "parent": "2. Session Management"
                                 }
                               ]
                             }

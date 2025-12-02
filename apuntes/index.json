@@ -2152,6 +2152,10 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-jr-penetration-tester/"
   },
   {
+    "title": "3. Web Application Pentesting",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-web-application-pentesting/"
+  },
+  {
     "title": "2. Introduction to Web Hacking",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/2-introduction-to-web-hacking/2-introduction-to-web-hacking/"
   },
@@ -2166,6 +2170,10 @@
   {
     "title": "3. Burp Suite",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/3-burp-suite/"
+  },
+  {
+    "title": "5. OWASP Top 10 - 2025",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/5-owasp-top-10-2025/"
   },
   {
     "title": "1. Redireccion",
@@ -2378,6 +2386,62 @@
   {
     "title": "1. Redirección",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/1-burp-suite-the-basics/1-redireccion/"
+  },
+  {
+    "title": "2. A01 - Broken Access Control",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/2-a01-broken-access-control/"
+  },
+  {
+    "title": "0. OWASP Top 10 2025 - IAAA Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/0-owasp-top-10-2025-iaaa-failures/"
+  },
+  {
+    "title": "1. What is IAAA",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/1-what-is-iaaa/"
+  },
+  {
+    "title": "3. A07 - Authentification Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/3-a07-authentification-failures/"
+  },
+  {
+    "title": "4. A09 - Logging & Alerting Features",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/4-a09-logging-alerting-features/"
+  },
+  {
+    "title": "3. AS04 - Cryptographic Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/3-as04-cryptographic-failures/"
+  },
+  {
+    "title": "4. AS06 - Insecure Design",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/4-as06-insecure-design/"
+  },
+  {
+    "title": "0. OWASP Top 10 2025 - Application Design Flaws",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/0-owasp-top-10-2025-application-design-flaws/"
+  },
+  {
+    "title": "1. AS02 - Security Missconfigurations",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/1-as02-security-missconfigurations/"
+  },
+  {
+    "title": "2. AS03 - Software Supply Chain Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/2-as03-software-supply-chain-failures/"
+  },
+  {
+    "title": "3. A08 - Software or Data Integrity Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/3-owasp-top-10-2025-insecure-data-handling/3-a08-software-or-data-integrity-failures/"
+  },
+  {
+    "title": "2. A05 - Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/3-owasp-top-10-2025-insecure-data-handling/2-a05-injection/"
+  },
+  {
+    "title": "0. OWASP Top 10 2025 - Insecure Data Handling",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/3-owasp-top-10-2025-insecure-data-handling/0-owasp-top-10-2025-insecure-data-handling/"
+  },
+  {
+    "title": "1. A04 - Cryptographic Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/3-owasp-top-10-2025-insecure-data-handling/1-a04-cryptographic-failures/"
   },
   {
     "title": "3. Introduction to Web Hacking",
@@ -3060,6 +3124,10 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/3-other-quick-wins/"
   },
   {
+    "title": "8. Conclusion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/8-conclusion/"
+  },
+  {
     "title": "7. Tools of the Trade",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/7-tools-of-the-trade/"
   },
@@ -3474,5 +3542,65 @@
   {
     "title": "1. Redireccion",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-introduction-to-cyber-security/1-offensive-security-intro/1-redireccion/"
+  },
+  {
+    "title": "1. Authentication",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-authentication/"
+  },
+  {
+    "title": "4. Exploiting Vulnerable Password Reset Logic",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/4-exploiting-vulnerable-password-reset-logic/"
+  },
+  {
+    "title": "2. Authentication Enumeration",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/2-authentication-enumeration/"
+  },
+  {
+    "title": "0. Enumeration & Brute Force",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/0-enumeration-brute-force/"
+  },
+  {
+    "title": "3. Enumerating Users via Verbose Errors",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/3-enumerating-users-via-verbose-errors/"
+  },
+  {
+    "title": "5. Exploiting HTTP Basic Authentication",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/5-exploiting-http-basic-authentication/"
+  },
+  {
+    "title": "6. OSINT",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/6-osint/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/1-introduction/"
+  },
+  {
+    "title": "3. Authentication vs Authorisation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/3-authentication-vs-authorisation/"
+  },
+  {
+    "title": "4. Cookies vs Tokens",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/4-cookies-vs-tokens/"
+  },
+  {
+    "title": "0. Session Management",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/0-session-management/"
+  },
+  {
+    "title": "2. What is Session Management",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/2-what-is-session-management/"
+  },
+  {
+    "title": "5. Securing the Session Lifecycle",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/5-securing-the-session-lifecycle/"
+  },
+  {
+    "title": "6. Exploiting Insecure Session Management",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/6-exploiting-insecure-session-management/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/1-introduction/"
   }
 ]

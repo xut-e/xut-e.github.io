@@ -10,3 +10,4 @@ title: "0. Windows Privilege Escalation"
 [5. Abusing Dangerous Privileges](/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/5-abusing-dangerous-privileges/)
 [6. Abusing Vulnerable Software](/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/6-abusing-vulnerable-software/)
 [7. Tools of the Trade](/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/7-tools-of-the-trade/)
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/8. Conclusion**

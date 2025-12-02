@@ -5480,16 +5480,16 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Penetration Tester.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "2d2486e998cbe3b5f3377df68e58bb0e6de04b4c1238990dc57ae7dbc85f0320"
+    "modified": "2025-12-02T00:51:52",
+    "hash": "362952c5001b598ea24ee344063e4aedbf5d83f4da2f56ee36ea9829634a5dda"
   },
   "Ciberseguridad/THM/1. Career/1. Security Analyst/1. Security Analyst.md": {
     "modified": "2025-11-22T00:47:14",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Web Fundamentals.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-02T00:51:52",
+    "hash": "5ac21ab5c7a64806d31f5cdfe06c84fbbd69fd981662bd68e8a54a225fc7bf91"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Jr Penetration Tester.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6368,28 +6368,28 @@
     "hash": "99399f9adf42e4677c52146ed3d133505c3dc099b1978ed7c577d40184082bc3"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/0. Windows Privilege Escalation.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "fdd232cf12b396d6016a3d0d5afeb1a77d00648620c2ea696fb8e9c79df0994a"
+    "modified": "2025-12-02T00:51:52",
+    "hash": "417cf6cf40c389c4a03012452b252d7316d2e67cbc284d5fb9abdc692ae2a2eb"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/5. Abusing Dangerous Privileges.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-02T00:51:52",
+    "hash": "17621510c50b9b773d8caa7611cc146effcdb295947d58c8b4ad99198f3b8307"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/3. Other Quick Wins.md": {
     "modified": "2025-11-29T00:48:12",
     "hash": "89c49fec9e4a35e724539c9614675eb6981363682c80e1ddfed2aaa0fb279b31"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/7. Tools of the Trade.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-02T00:51:52",
+    "hash": "8b78778d22aaebe6a239e70915fb27c8d7f46349ea227c42c2f03e0b0532baf6"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/4. Abusing Service Misconfigurations.md": {
     "modified": "2025-11-30T00:57:02",
     "hash": "986441b6d3e89f1149d4a0e1a9c613003cf393296fb6cb35a69a3819572e594d"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/6. Abusing Vulnerable Software.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-02T00:51:52",
+    "hash": "ba3e07ed760b6618656c617bdba7d467e041611c15720f9d41ca6f48bf59ebb4"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/2. Harvesting Passwords from Usual Spots.md": {
     "modified": "2025-11-29T00:48:12",
@@ -6894,5 +6894,133 @@
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/8. Privilege Escalation - Cron Jobs.md": {
     "modified": "2025-11-28T00:48:12",
     "hash": "7dc85b478d0fc895405001e63d461c70d40ecbe060c1f07db363e500d178dc0e"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Web Application Pentesting.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "dc51e9fb832b9ded7a3d4a8e3cd13907eafa50f5ce9d0a978aafa4408c9b8d87"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/5. OWASP Top 10 - 2025.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "d431f2ee11f7dd34c3f15266c75aac792b83c05a1d0ea9b33006ef012dcc4a51"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/2. A01 - Broken Access Control.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/0. OWASP Top 10 2025 - IAAA Failures.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "c16f59a47acd9a910e90e9a3df4325477884c5ddbd0f4c41fabfcae47422959e"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/1. What is IAAA.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/3. A07 - Authentification Failures.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/1. OWASP Top 10 2025 - IAAA Failures/4. A09 - Logging & Alerting Features.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/3. AS04 - Cryptographic Failures.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/4. AS06 - Insecure Design.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/0. OWASP Top 10 2025 - Application Design Flaws.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "dc4eae9f3c0f3f07e90067e627f9732480770b14e44e8661a16345907c1402f1"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/1. AS02 - Security Missconfigurations.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/2. AS03 - Software Supply Chain Failures.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/3. A08 - Software or Data Integrity Failures.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/2. A05 - Injection.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/0. OWASP Top 10 2025 - Insecure Data Handling.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "7d3ca8db122abfb1fb51442624254c7b821eb4732a91a37e397c68a42f6b9e20"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/1. A04 - Cryptographic Failures.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/8. Conclusion.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "3dbc8be060a37ec0dd2fae69fcc6d907fdc560e1ab831078c642213564ed8895"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Authentication.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "99f3a74b66d579098b22945129843e9bd9ad7f0b4d70f9791404b9398b6b25c6"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/4. Exploiting Vulnerable Password Reset Logic.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/2. Authentication Enumeration.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/0. Enumeration & Brute Force.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "3b30b146be7d86b5445b9958a324a156cc0c573f4a4158f7f36893b527277a34"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/3. Enumerating Users via Verbose Errors.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/5. Exploiting HTTP Basic Authentication.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/6. OSINT.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/1. Introduction.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/3. Authentication vs Authorisation.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/4. Cookies vs Tokens.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/0. Session Management.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "4c764174720c22d53992decb996e148a081166c308e7ad8a2643b580fa2f1503"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/2. What is Session Management.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/5. Securing the Session Lifecycle.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/6. Exploiting Insecure Session Management.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/1. Introduction.md": {
+    "modified": "2025-12-02T00:51:52",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }
