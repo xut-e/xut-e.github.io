@@ -5178,6 +5178,95 @@
               ]
             },
             {
+              "name": "Advent of Cyber",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "2025",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Day 1",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Day 1 Machine",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/1. Day 1 Machine/1. Introduction.md",
+                              "parent": "1. Day 1 Machine"
+                            },
+                            {
+                              "name": "2. Linux CLI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/1. Day 1 Machine/2. Linux CLI.md",
+                              "parent": "1. Day 1 Machine"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Side Quest 1",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Flag Discovery",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery/1. Introduction.md",
+                                  "parent": "1. Flag Discovery"
+                                },
+                                {
+                                  "name": "2. Finding the Fragments.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery/2. Finding the Fragments.md",
+                                  "parent": "1. Flag Discovery"
+                                },
+                                {
+                                  "name": "3. Finding the Flag.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery/3. Finding the Flag.md",
+                                  "parent": "1. Flag Discovery"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "2. Side Quest 1 Machine",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/2. Side Quest 1 Machine/1. Introduction.md",
+                                  "parent": "2. Side Quest 1 Machine"
+                                },
+                                {
+                                  "name": "2. Escape.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/2. Side Quest 1 Machine/2. Escape.md",
+                                  "parent": "2. Side Quest 1 Machine"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Day 2",
+                      "type": "directory",
+                      "contents": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "name": "Maquinas",
               "type": "directory",
               "contents": [

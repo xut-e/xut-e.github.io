@@ -7012,15 +7012,79 @@
     "hash": "0af5903e772a313c4b6dd8863f6a0614870138c67d4bdbfcb7e469bb78a01ebd"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/5. Securing the Session Lifecycle.md": {
-    "modified": "2025-12-03T00:51:44",
-    "hash": "1f54dd1a5c985f016aff734a0d050b8d8d5803f330ea12d15b73d427faaae542"
+    "modified": "2025-12-03T00:59:29",
+    "hash": "eac5f156c9f97a37b82e22a35796d3af1534a94ce6fcab8e92b247a2df628e76"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/6. Exploiting Insecure Session Management.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:59:29",
+    "hash": "6c8c2547664afdf918e34ffcb27b847dacd11482c1c8cb977052557a90455493"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/1. Introduction.md": {
     "modified": "2025-12-03T00:51:44",
     "hash": "91ecda4b52f8217b8740dcff2fcde9060ae923d2f66e2438ef440b3b0cc01439"
+  },
+  "Ciberseguridad/THM/0. THM.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "436346fd3f31e37435ebf753e062657bc37c82551c5c2a97c6f5b5881a338044"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/0. Advent of Cyber.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "bd38b7224267c30cb8386ff5af755e6815c569fc093e626ef7eab0e7f830083e"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/2025.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "ed51e51dd38d86c68b63379b21ba660267443f7b16b4b76dc468537637656b2b"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/1. Day 1.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "36c677f1dea838f5fef8cdeaed9c49e0599c043a6b0eb76f695cc05e36c61bf4"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/2. Side Quest 1.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "97f6a3c15dde782032bb009960e27e37d99c3334afca8ae0ad9f9bd9e6e4e3ae"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/1. Day 1 Machine/2. Linux CLI.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "89e0a6945a7b10b9d095837f5c760f63804765b4615b0002e276e703ce0d97c0"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/1. Day 1 Machine/0. Day 1 Machine.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "396e225ad90427c550efda98b6d69c9ceb463607f696abf5fc7ae74fc389c6ae"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/1. Day 1 Machine/1. Introduction.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "4f7987b78351fde03ee26df7f6dbe7a0662370c673bcf7101428db0bcc830355"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/2. Side Quest 1 Machine/0. Side Quest 1 Machine.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "611e09456fdb4064212f45d9ae05fda207840174964b26f74a14221edb716d54"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/2. Side Quest 1 Machine/2. Escape.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "56c03bcf00c2b36fe3e9510ad5c4a10573166a594fc1862604994cada81859d4"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/2. Side Quest 1 Machine/1. Introduction.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "ef8306f5adc4423d49b869c6b5e4948588206fee86fb4805f1d65e56c8d0c30d"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery/0. Side Quest 1.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "aa2fc343ce346963f5b15094628e7830412d4d9a91920bdda8ff4137a3cdde5d"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery/3. Finding the Flag.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "c3ae721e0ef8f877b023df0d3231ccb462e07e44d296da2f7a8ed5cf3217244f"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery/1. Introduction.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "5ef42103e9e883caab83587c0679d8113cbe63ad05447991cafc022a500631e7"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery/2. Finding the Fragments.md": {
+    "modified": "2025-12-03T00:59:29",
+    "hash": "f48158fdda6f983dffe80eb765f85e80efa916860204094383de183f51ae319b"
   }
 }

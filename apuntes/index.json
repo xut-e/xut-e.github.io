@@ -1,7 +1,15 @@
 [
   {
+    "title": "0. THM",
+    "path": "/apuntes/ciberseguridad/thm/0-thm/"
+  },
+  {
     "title": "0. Pre Career",
     "path": "/apuntes/ciberseguridad/thm/0-pre-career/0-pre-career/"
+  },
+  {
+    "title": "0. Advent of Cyber",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/0-advent-of-cyber/"
   },
   {
     "title": "0. Maquinas",
@@ -1978,6 +1986,62 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/ciberseguridad/thm/0-pre-career/2-cyber-security-101/5-networking/5-whireshark-the-basics/1-introduction/"
+  },
+  {
+    "title": "2025",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2025/"
+  },
+  {
+    "title": "1. Day 1",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/1-day-1/"
+  },
+  {
+    "title": "1. Day 2",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2/"
+  },
+  {
+    "title": "2. Side Quest 1",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/2-side-quest-1/"
+  },
+  {
+    "title": "2. Linux CLI",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/1-day-1-machine/2-linux-cli/"
+  },
+  {
+    "title": "0. Day 1 Machine",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/1-day-1-machine/0-day-1-machine/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/1-day-1-machine/1-introduction/"
+  },
+  {
+    "title": "0. Side Quest 1 Machine",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/2-side-quest-1-machine/0-side-quest-1-machine/"
+  },
+  {
+    "title": "2. Escape",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/2-side-quest-1-machine/2-escape/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/2-side-quest-1-machine/1-introduction/"
+  },
+  {
+    "title": "0. Side Quest 1",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/1-flag-discovery/0-side-quest-1/"
+  },
+  {
+    "title": "3. Finding the Flag",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/1-flag-discovery/3-finding-the-flag/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/1-flag-discovery/1-introduction/"
+  },
+  {
+    "title": "2. Finding the Fragments",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/1-flag-discovery/2-finding-the-fragments/"
   },
   {
     "title": "2. Medium",
