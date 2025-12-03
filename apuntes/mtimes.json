@@ -6380,8 +6380,8 @@
     "hash": "89c49fec9e4a35e724539c9614675eb6981363682c80e1ddfed2aaa0fb279b31"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/7. Tools of the Trade.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "8b78778d22aaebe6a239e70915fb27c8d7f46349ea227c42c2f03e0b0532baf6"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "d338b754296a7518f20b08388c85b0efe7556c97ddfa0546daea578e05bae2d4"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/4. Abusing Service Misconfigurations.md": {
     "modified": "2025-11-30T00:57:02",
@@ -6968,59 +6968,59 @@
     "hash": "99f3a74b66d579098b22945129843e9bd9ad7f0b4d70f9791404b9398b6b25c6"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/4. Exploiting Vulnerable Password Reset Logic.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "3f4f64615f429dd6a2f71ee4a23b4a4016e37f5e877545e14713e94b6cf1eb5c"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/2. Authentication Enumeration.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "c30caa17e891a5e5d5631a7442eb02e0bdbabad0152811e2177b27015fe4fe91"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/0. Enumeration & Brute Force.md": {
     "modified": "2025-12-02T00:51:52",
     "hash": "3b30b146be7d86b5445b9958a324a156cc0c573f4a4158f7f36893b527277a34"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/3. Enumerating Users via Verbose Errors.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "a5828be730de47a0de66b48070a7f00af2278b311545c00f40a4561a1f08324c"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/5. Exploiting HTTP Basic Authentication.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "40bc59a5afbc7ede88accfe299e8a3e52c5b7b6239dde241eb06e9d02781fbc9"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/6. OSINT.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "d166cb90bb0d8dd21374aec377529579f62377e802df1edbb40cb446d436868a"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/1. Introduction.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "21c7cc96c0c34e54c7cee10f5a8a74fc6f91abcf39dffaf7e07f008626651ce4"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/3. Authentication vs Authorisation.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "cc573532153f5d5dd0cd01b1379c18dd2ae18bc422bfab391de2b272b8f525a1"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/4. Cookies vs Tokens.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "bd9c840fd8ee47138598bc1da6b46c06105bd0a02c683d1769bf89cd4ae30102"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/0. Session Management.md": {
     "modified": "2025-12-02T00:51:52",
     "hash": "4c764174720c22d53992decb996e148a081166c308e7ad8a2643b580fa2f1503"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/2. What is Session Management.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "0af5903e772a313c4b6dd8863f6a0614870138c67d4bdbfcb7e469bb78a01ebd"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/5. Securing the Session Lifecycle.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "1f54dd1a5c985f016aff734a0d050b8d8d5803f330ea12d15b73d427faaae542"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/6. Exploiting Insecure Session Management.md": {
     "modified": "2025-12-02T00:51:52",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/2. Session Management/1. Introduction.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-03T00:51:44",
+    "hash": "91ecda4b52f8217b8740dcff2fcde9060ae923d2f66e2438ef440b3b0cc01439"
   }
 }
