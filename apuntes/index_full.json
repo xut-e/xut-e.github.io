@@ -1,11 +1,59 @@
 [
   {
+    "title": "0. Recursos Web",
+    "path": "/apuntes/ciberseguridad/recursos-web/0-recursos-web/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/0. Recursos Web.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web",
+    "content": "[[1. DVWA]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
     "title": "0. THM",
     "path": "/apuntes/ciberseguridad/thm/0-thm/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/0. THM.md",
     "breadcrumb": "Ciberseguridad > THM",
     "content": "1. [[0. Pre Career]]\n2. [[1. Career]]\n3. \n4. [[0. Advent of Cyber]]\n5. [[0. Maquinas]]",
     "modified": "2025-12-03T00:59:29"
+  },
+  {
+    "title": "1. DVWA",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-dvwa/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA",
+    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3.",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "0. Configuration",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/0-configuration/0-configuration/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/0. Configuration/0. Configuration.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 0. Configuration",
+    "content": "[[1. Configuration]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "1. Configuration",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/0-configuration/1-configuration/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/0. Configuration/1. Configuration.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 0. Configuration",
+    "content": "<h2>AVISO IMPORTANTE</h2>\n>[!CAUTION] ATENCIÓN!: No sirvas DVWA en un servidor público, ten cuidado y lee la documentación de su página web oficial. Esto es sólo una guía rápida para aquellos que entienden los riesgos de instalar aplicaciones vulnerables y no me hago responsable de nada\n\n-------------------------------------\n<h2>Pasos</h2>\n1. Clonamos el [repositorio oficial](https://github.com/digininja/DVWA?tab=readme-ov-file) desde GitHub en `/var/www/html/`.\n   ![[Pasted image 20251203163530.png]]\n2. Iniciamos el servicio `apache2`.\n   ![[Pasted image 20251203163939.png]]\n3. Nos metemos en el directorio DVWA y ejecutamos el siguiente comando.\n   ![[Pasted image 20251203164154.png]]\n4. Podemos mirar la contraseña y el usuario en este archivo`php`.\n5. Comenzamos el servicio `mariadb` (en kali).\n   ![[Pasted image 20251203164515.png]]\n6. Iniciamos sesión como root en mariaDB.\n   ![[Pasted image 20251203164822.png]]\n7. Seguimos los pasos de configuración de la base de datos.\n\t1. Creamos la base de datos `dvwa`.\n\t   ![[Pasted image 20251203164939.png]]\n\t2. Creamos en usuario con la contraseña.\n\t   ![[Pasted image 20251203165151.png]]\n\t3. Le damos permisos al usuario en la base de datos correspondiente.\n\t   ![[Pasted image 20251203165638.png]]\n\t4. Recargamos la caché de privilegios (necesario después de editar manualmente privilegios).\n\t   ![[Pasted image 20251203165758.png]]\n8. Ya podemos iniciar sesión en la base de datos.\n   ![[Pasted image 20251203170008.png]]\n9. Usamos la base de datos `dvwa`.\n   ![[Pasted image 20251203171107.png]]\n10. Vamos a `http://localhost/DVWA/login.php`.\n    ![[Pasted image 20251203171243.png]]\n11. Iniciamos sesión y le damos al botón `Create / Reset Database` abajo del todo y nos logueamos con `admin:password` (tal cual, no es un placeholder).\n    ![[Pasted image 20251203171631.png]]\n\n>[!CAUTION] Recuerda configurar la dificultad al nivel que quieras.\n\nEn mi caso yo la pondré en `low` y le darè a `submit`.\n\n![[Pasted image 20251203174130.png]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "1. Breaking the Loging Form",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/1-breaking-the-loging-form/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Loging Form.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 1. Brute Force",
+    "content": "Para romper este portal de login, vamos a usar dos herramientas distintas:\n\n- FFUF\n- WFUZZ\n\n![[Pasted image 20251203172440.png]]\n\n---------------------------------\n<h2>FFUF</h2>\n1. Si abrimos las herramientas de desarrollador, podemos ver que en la petición se mandan los parámetros `username` y `password` por GET.\n   ![[Pasted image 20251203174307.png]]\n2. Podemos ver que hay una cookie de sesión además.\n   ![[Pasted image 20251203174358.png]]\n3. Usamos `ffuf` para el ataque.\n   ![[Pasted image 20251203175228.png]]\n   Como la longitud es siempre la misma, vamos a restringirla.\n4. Arreglamos el comando y le añadimos `time` para poder compararla después.\n   ![[Pasted image 20251203180015.png]]\n5. Iniciamos sesión con las credenciales.\n   ![[Pasted image 20251203175900.png]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "0. Brute Force",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/0-brute-force/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/0. Brute Force.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 1. Brute Force",
+    "content": "[[1. Breaking the Loging Form]]",
+    "modified": "2025-12-04T00:51:46"
   },
   {
     "title": "0. Pre Career",
@@ -3996,8 +4044,8 @@
     "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2.md",
     "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 2. Day 2",
-    "content": "",
-    "modified": "2025-12-03T00:59:29"
+    "content": "[[0. Day 2 Machine]]",
+    "modified": "2025-12-04T00:51:46"
   },
   {
     "title": "2. Side Quest 1",
@@ -4086,6 +4134,30 @@
     "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 1. Day 1 > 2. Side Quest 1 > 1. Flag Discovery",
     "content": "1. Iniciamos sesión en la cuenta de eddi.\n   ![[Pasted image 20251203005439.png]]\n2. La primera pista nos habla de algo que va con nuestra sesión y no con nuestros archivos, por lo que se nos viene a la cabeza la configuración de Bash. Eso siempre está con nuestra shell cuando llegamos.\n   ![[Pasted image 20251203005623.png]]\n3. La segunda pista nos habla de un \"árbol\" que podría interpretarse como el comando `tree`. Sin embargo el hecho de que haga referencia a cosas pasadas nos indica que debe ser algún tipo de log.\n\t1. Vamos a listar todos los directorios.\n\t   ![[Pasted image 20251203005747.png]]\n\t2. Enseguida hay uno que nos llama la atención: `.secret`.\n\t   ![[Pasted image 20251203005825.png]]\n\t   Parece que hay un archivo gpg cifredo al que no tenemos acceso todavía.\n\t3. Pero vemos un directorio `.secret_git`. Github tiene un historial de commits, tiraremos por ahí.\n\t   ![[Pasted image 20251203010005.png]]\n\t   Parece un commit interesante, ¿no? Ojalá hubiera una forma de recuperarlo...\n\t4. Espera, tenemos el hash de commit justo al lado.\n\t   ![[Pasted image 20251203010133.png]]\n4. La tercera pista nos dice algo sobre píxeles y colas (tails). Podría ser algo relacionado con el comando `tail`.\n\t1. Si investigamos un poco podemos ver lo siguiente.\n\t   ![[Pasted image 20251203010325.png]]\n\t2. Vamos a leer los documentos.\n\t   ![[Pasted image 20251203010420.png]]\n\t   Parece que no hay nada interesante, pero ya que habla de fotos vamos a ver qué hay en ese directorio.\n\t3. Vamos al directorio y usamos `ls -la`.\n\t   ![[Pasted image 20251203010516.png]]\n\t   Parece que hemos encontrado un archivo oculto.\n\t4. Vamos a leerlo.\n\t   ![[Pasted image 20251203010550.png]]\n5. Con esto ya tenemos los tres fragmentos\n\t1. `3ast3r`\n\t2. `-1s-`\n\t3. `c0M1nG`\n6. Vamos a descifrar el documento del que nos hablaba en la pista del principio.\n\t1. Introducimos el comando para desencriptar de GPG.\n\t   ![[Pasted image 20251203010815.png]]\n\t2. Introducimos la contraseña.\n\t   ![[Pasted image 20251203010843.png]]\n\t3. Leemos el documento.\n\t   ![[Pasted image 20251203010916.png]]",
     "modified": "2025-12-03T00:59:29"
+  },
+  {
+    "title": "0. Day 2 Machine",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2-machine/0-day-2-machine/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/0. Day 2 Machine.md",
+    "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 2. Day 2 > 1. Day 2 Machine",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "2. Phishing Exercise for TBFC",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2-machine/2-phishing-exercise-for-tbfc/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/2. Phishing Exercise for TBFC.md",
+    "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 2. Day 2 > 1. Day 2 Machine",
+    "content": "1. Descargamos, descomprimimos y ponemos en la misma carpeta los archivos dados.\n   ![[Pasted image 20251203114717.png]]\n2. Usamos `sudo setoolkit` para elaborar el correo de phishing. Primero le damos al 1 para seleccionar Ataque de Ingeniería Social y luego:\n   ![[Pasted image 20251203115641.png]]\n3. Abrimos el servidor.\n   ![[Pasted image 20251203115229.png]]\n   Ahora se puede ver el portal de inicio:\n   ![[Pasted image 20251203115446.png]]\n4. Seguimos configurando el ataque.\n   ![[Pasted image 20251203120417.png]]\n5. Esperamos por las credenciales.\n   ![[Pasted image 20251203120626.png]]\n6. Navegamos a la página real.\n   ![[Pasted image 20251203120815.png]]\n7. Vamos a ver si se ha usado la misma contraseña para `factory`.\n   ![[Pasted image 20251203120851.png]]\n   Parece que sí.\n   ![[Pasted image 20251203120910.png]]\n8. Buscamos cuántos juguetes van a entregarse.\n   ![[Pasted image 20251203121113.png]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2-machine/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 2. Day 2 > 1. Day 2 Machine",
+    "content": "![[Pasted image 20251203112421.png]]\n\nEn vista de varias amenazas de ciberseguridad recientes contra TBFC, el red team local ha programado varios tests de penetración. Los intengrantes del red team llevan a cabo un pentest contra TBFC. Parte de este ejercicio es asegurarse de que los empleados son cuidadosos al hacer click en links y que la compañía está bien protegida contra los últimos ataques de phishing.",
+    "modified": "2025-12-04T00:51:46"
   },
   {
     "title": "2. Medium",
@@ -4328,20 +4400,28 @@
     "modified": "2025-11-24T00:53:59"
   },
   {
+    "title": "2. Finding the Ingredients",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/2-finding-the-ingredients/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/2. Finding the Ingredients.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 2. Pickle Rick",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
     "title": "0. Pickle Rick",
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/0-pickle-rick/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 2. Pickle Rick",
-    "content": "[[1. Pickle Rick]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Introduction]]\n[[2. Finding the Ingredients]]",
+    "modified": "2025-12-04T00:51:46"
   },
   {
-    "title": "1. Pickle Rick",
-    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/1-pickle-rick/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Pickle Rick.md",
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Introduction.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy > 2. Pickle Rick",
     "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "modified": "2025-12-04T00:51:46"
   },
   {
     "title": "0. Res",
@@ -4452,8 +4532,8 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/4-web-hacking-fundamentals/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. Web Hacking Fundamentals.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals",
-    "content": "1. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/1. How Websites Work/0. How Websites Work]]\n2. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/0. HTTP in Detail]]\n3. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n4. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]\n5. [[0. OWASP API Security Top 10 - 1]]\n6. [[0. OWASP Juice Shop]]\n7. [[0. Upload Vulnerabilities]]\n8. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/0. Pickle Rick]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "1. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/1. How Websites Work/0. How Websites Work]]\n2. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/2. HTTP in Detail/0. HTTP in Detail]]\n3. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/3. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n4. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]\n5. [[0. OWASP API Security Top 10 - 1]]\n6. [[0. OWASP API Security Top 10 - 2]]\n7. [[0. OWASP Juice Shop]]\n8. [[0. Upload Vulnerabilities]]\n9. [[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/9. Pickle Rick/0. Pickle Rick]]",
+    "modified": "2025-12-04T00:51:46"
   },
   {
     "title": "1. How The Web Works",
@@ -4688,28 +4768,116 @@
     "modified": "2025-11-23T00:57:27"
   },
   {
+    "title": "2. Vulnerability VII - Security Misconfiguration",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/2-vulnerability-vii-security-misconfiguration/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/2. Vulnerability VII - Security Misconfiguration.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 6. OWASP API Security Top 10 - 2",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "3. Vulnerability VIII - Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/3-vulnerability-viii-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/3. Vulnerability VIII - Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 6. OWASP API Security Top 10 - 2",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "4. Vulnerability IX - Improper Assets Management",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/4-vulnerability-ix-improper-assets-management/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/4. Vulnerability IX - Improper Assets Management.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 6. OWASP API Security Top 10 - 2",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "1. Vulnerability VI - Mass Assignment",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/1-vulnerability-vi-mass-assignment/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/1. Vulnerability VI - Mass Assignment.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 6. OWASP API Security Top 10 - 2",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "0. OWASP API Security Top 10 - 2",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/0-owasp-api-security-top-10-2/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/0. OWASP API Security Top 10 - 2.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 6. OWASP API Security Top 10 - 2",
+    "content": "[[1. Vulnerability VI - Mass Assignment]]\n[[2. Vulnerability VII - Security Misconfiguration]]\n[[3. Vulnerability VIII - Injection]]\n[[4. Vulnerability IX - Improper Assets Management]]\n[[5. Vulnerability X - Insufficient Logging & Monitoring]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "5. Vulnerability X - Insufficient Logging & Monitoring",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/5-vulnerability-x-insufficient-logging-monitoring/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/5. Vulnerability X - Insufficient Logging & Monitoring.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 6. OWASP API Security Top 10 - 2",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "5. Vulnerability III - Excessive Data Exposure",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/5-vulnerability-iii-excessive-data-exposure/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/5. Vulnerability III - Excessive Data Exposure.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
     "title": "0. OWASP API Security Top 10 - 1",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/0-owasp-api-security-top-10-1/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/0. OWASP API Security Top 10 - 1.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/1. Introduction]]\n[[2. Understanding APIs - A Refresher]]\n[[3. Vulnerability I - Broken Object Level Authorisation (BOLA)]]\n[[4. Vulnerability II - Broken User Authentication (BUA)]]\n[[5. Vulnerability III - Excessive Data Exposure]]\n[[6. Vulnerability IV - Lack of Resources & Rate Limiting]]\n[[7. Vulnerability V - Broken Function Level Authorisation]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "6. Vulnerability IV - Lack of Resources & Rate Limiting",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/6-vulnerability-iv-lack-of-resources-rate-limiting/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/6. Vulnerability IV - Lack of Resources & Rate Limiting.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
     "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "modified": "2025-12-04T00:51:46"
   },
   {
-    "title": "1. Redireccion",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/1-redireccion/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/1. Redireccion.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Pickle Rick",
-    "content": "Para ver este curso ve a **THM -> Maquinas -> 1. Easy -> 2. Pickle Rick**",
-    "modified": "2025-11-23T00:57:27"
+    "title": "4. Vulnerability II - Broken User Authentication (BUA)",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/4-vulnerability-ii-broken-user-authentication-bua/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/4. Vulnerability II - Broken User Authentication (BUA).md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
   },
   {
-    "title": "0. Pickle Rick",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/0-pickle-rick/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/0. Pickle Rick.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Pickle Rick",
-    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/1. Redireccion]]",
-    "modified": "2025-11-23T00:57:27"
+    "title": "2. Understanding APIs - A Refresher",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/2-understanding-apis-a-refresher/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/2. Understanding APIs - A Refresher.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
+    "content": "<h2>¿Qué es una API y Por Qué es Importante?</h2>\nAPI significa Application Programming Interface. Es un medio que facilita la comunicación de dos componentes de software usando un conjunto de protocolos y definiciones. En el contexto de una API, una **Application** se refiere a cualquier software que tiene una funcionalidad específica e **Interface** se refiere a contrato entre dos apps que hace la comunicación posible mediante peticiones y respuestas. La documentación de cada API recoge cómo han estructurado dichas peticiones y respuestas los desarrolladores. **Las APIs son los bloques con los que se construyen aplicaciones complejas de nivel empresarial.**\n\n-------------------------\n<h2>Brechas de Seguridad Recientes a través de APIs</h2>\n- **LinkedIn:** en Junio de 2021, los datos de más de 700 millones de usuarios de LinkedIn fueron puestos en venta en un foro de la dark web, los cuales fueron recopilados mediante la API de LinkedIn. El hacker publicó un registro de 1 millón para confirmar la legitimidad del ataque.\n- **Twitter (X):** En Junio de 2022, la información de más de 5,4 millones de usuarios de Twitter fue puesta a la venta en la dark web. Los hacker explotaron un zero-day en la API de Twitter.\n- **PIXLR:** En Enero de 2021, PXLR sufrió una brecha de datos que impactó a 1,9 millones de usuarios. Toda la información fue dumpeada por los hackers en un foro de la dark web.",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "7. Vulnerability V - Broken Function Level Authorisation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/7-vulnerability-v-broken-function-level-authorisation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/7. Vulnerability V - Broken Function Level Authorisation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "3. Vulnerability I - Broken Object Level Authorisation (BOLA)",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/3-vulnerability-i-broken-object-level-authorisation-bola/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/3. Vulnerability I - Broken Object Level Authorisation (BOLA).md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
+    "content": "<h2>¿Cómo Ocurre?</h2>\nGeneralmente, los endpoints de las APIs se utilizan para recuperar y manipular información a través de identificadores. BOLA se refiere al Insecure Direct Object Reference (IDOR), que crea un escenario donde el usuario usa la funcionalidad de input y obtiene acceso al recurso que no están autorizados a acceder. En una API, dichos controles son implementados normalmente mediante la programación en modelos (Arquitectura Model-View-Controller) a nivel de código.\n\n---------------------------------\n<h2>Impacto Posible</h2>\nLa absencia de controles para prevenir el acceso no autorizado a objetos puede llevar a una exfiltración de información y en algunos casos a la pérdida total de control sobre la cuenta. La información de los usuarios o suscriptores juega un papel crítico en la reputación de la marca. Si dicha información se filtra, resultará en una gran pérdida económica.\n\n--------------------------------\n<h2>Ejemplo Práctico</h2>\n\n\n-------------------------------\n<h2>Medidas de Mitigación</h2>\n- Un mecanismo de autorización que confíe en políticas de usuario y jerarquías debería de ser implementado adecuadamente.\n- Controles de acceso estricto para comprobar si el usuario registrado está autorizado para realizar acciones específicas.\n- Promover el uso de valores completamente aleatorios para que sean imposibles de predecir.",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
+    "content": "Open WorldWide Application Security Project (OWASP) es una comunidad online y colaborativa sin ánimo de lucro que busca mejorar la seguridad de aplicación mediante un conjuntos de principios de seguridad, artículos, documentación, etc. En 2019, OWASP publicó el top 10 de vulnerabilidades en APIs.\n\n---------------------------------\n<h2>Pre-requisitos</h2>\n- [[Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n- [[0. Protocols and Servers]]\n- [[0. Protocols and Servers 2]]\n- [[0. Principles of Security]]\n- [[Ciberseguridad/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]\n\n--------------------------\n<h2>Credenciales</h2>\n- Username: `Administrator`\n- Password: `Owasp@123`",
+    "modified": "2025-12-04T00:51:46"
   },
   {
     "title": "1. Redireccion",
@@ -4728,20 +4896,196 @@
     "modified": "2025-11-23T00:57:27"
   },
   {
-    "title": "0. OWASP Juice Shop",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-juice-shop/0-owasp-juice-shop/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP Juice Shop/0. OWASP Juice Shop.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 6. OWASP Juice Shop",
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/9-pickle-rick/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/9. Pickle Rick/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 9. Pickle Rick",
+    "content": "Para ver este curso ve a **THM -> Maquinas -> 1. Easy -> 2. Pickle Rick**",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "0. Pickle Rick",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/9-pickle-rick/0-pickle-rick/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/9. Pickle Rick/0. Pickle Rick.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 9. Pickle Rick",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/9. Pickle Rick/1. Redireccion]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "8. Bypassing Server-Side Filtering - File Extensions",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/8-bypassing-server-side-filtering-file-extensions/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/8. Bypassing Server-Side Filtering - File Extensions.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
     "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "3. General Methodology",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/3-general-methodology/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/3. General Methodology.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "12. Coclusion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/12-coclusion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/12. Coclusion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "9. Bypassing Server-Side Filtering - Magic Numbers",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/9-bypassing-server-side-filtering-magic-numbers/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/9. Bypassing Server-Side Filtering - Magic Numbers.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "5. Remote Code Execution",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/5-remote-code-execution/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/5. Remote Code Execution.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "4. Overwriting Existing Files",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/4-overwriting-existing-files/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/4. Overwriting Existing Files.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "10. Example Methodology",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/10-example-methodology/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/10. Example Methodology.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "1. Getting Started",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/1-getting-started/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/1. Getting Started.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "11. Challenge",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/11-challenge/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/11. Challenge.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "7. Bypassing Client-Side Filtering",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/7-bypassing-client-side-filtering/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/7. Bypassing Client-Side Filtering.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "2. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/2-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/2. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
   },
   {
     "title": "0. Upload Vulnerabilities",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-upload-vulnerabilities/0-upload-vulnerabilities/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. Upload Vulnerabilities/0. Upload Vulnerabilities.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. Upload Vulnerabilities",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/0-upload-vulnerabilities/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/0. Upload Vulnerabilities.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "[[1. Getting Started]]\n[[2. Introduction]]\n[[3. General Methodology]]\n[[4. Overwriting Existing Files]]\n[[5. Remote Code Execution]]\n[[6. Filtering]]\n[[7. Bypassing Client-Side Filtering]]\n[[8. Bypassing Server-Side Filtering - File Extensions]]\n[[9. Bypassing Server-Side Filtering - Magic Numbers]]\n[[10. Example Methodology]]\n[[11. Challenge]]\n[[12. Coclusion]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "6. Filtering",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/6-filtering/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/6. Filtering.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
     "content": "",
-    "modified": "2025-11-22T00:47:14"
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "2. Lets Go on an Adventure",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/2-lets-go-on-an-adventure/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/2. Lets Go on an Adventure.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "3. Inject the Juice",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/3-inject-the-juice/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/3. Inject the Juice.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "8. Exploration",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/8-exploration/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/8. Exploration.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "0. OWASP Juice Shop",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/0-owasp-juice-shop/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/0. OWASP Juice Shop.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "[[1. Open for Business]]\n[[2. Lets Go on an Adventure]]\n[[3. Inject the Juice]]\n[[4. Who Broke my Lock]]\n[[5. AH Dont Look]]\n[[6. Whos Flying this Thing]]\n[[7. Where did that Come From]]\n[[8. Exploration]]",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "4. Who Broke my Lock",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/4-who-broke-my-lock/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/4. Who Broke my Lock.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "1. Open for Business",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/1-open-for-business/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/1. Open for Business.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "5. AH Dont Look",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/5-ah-dont-look/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/5. AH Dont Look.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "6. Whos Flying this Thing",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/6-whos-flying-this-thing/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/6. Whos Flying this Thing.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
+  },
+  {
+    "title": "7. Where did that Come From",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/7-where-did-that-come-from/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/7. Where did that Come From.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
+    "content": "",
+    "modified": "2025-12-04T00:51:46"
   },
   {
     "title": "1. Redireccion",

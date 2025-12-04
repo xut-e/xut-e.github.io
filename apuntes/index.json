@@ -1,7 +1,31 @@
 [
   {
+    "title": "0. Recursos Web",
+    "path": "/apuntes/ciberseguridad/recursos-web/0-recursos-web/"
+  },
+  {
     "title": "0. THM",
     "path": "/apuntes/ciberseguridad/thm/0-thm/"
+  },
+  {
+    "title": "1. DVWA",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-dvwa/"
+  },
+  {
+    "title": "0. Configuration",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/0-configuration/0-configuration/"
+  },
+  {
+    "title": "1. Configuration",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/0-configuration/1-configuration/"
+  },
+  {
+    "title": "1. Breaking the Loging Form",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/1-breaking-the-loging-form/"
+  },
+  {
+    "title": "0. Brute Force",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/0-brute-force/"
   },
   {
     "title": "0. Pre Career",
@@ -2044,6 +2068,18 @@
     "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/1-day-1/2-side-quest-1/1-flag-discovery/2-finding-the-fragments/"
   },
   {
+    "title": "0. Day 2 Machine",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2-machine/0-day-2-machine/"
+  },
+  {
+    "title": "2. Phishing Exercise for TBFC",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2-machine/2-phishing-exercise-for-tbfc/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2-machine/1-introduction/"
+  },
+  {
     "title": "2. Medium",
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-medium/"
   },
@@ -2164,12 +2200,16 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/3-lookup/1-introduction/"
   },
   {
+    "title": "2. Finding the Ingredients",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/2-finding-the-ingredients/"
+  },
+  {
     "title": "0. Pickle Rick",
     "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/0-pickle-rick/"
   },
   {
-    "title": "1. Pickle Rick",
-    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/1-pickle-rick/"
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/1-easy/2-pickle-rick/1-introduction/"
   },
   {
     "title": "0. Res",
@@ -2344,16 +2384,60 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/2-http-in-detail/0-http-in-detail/"
   },
   {
+    "title": "2. Vulnerability VII - Security Misconfiguration",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/2-vulnerability-vii-security-misconfiguration/"
+  },
+  {
+    "title": "3. Vulnerability VIII - Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/3-vulnerability-viii-injection/"
+  },
+  {
+    "title": "4. Vulnerability IX - Improper Assets Management",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/4-vulnerability-ix-improper-assets-management/"
+  },
+  {
+    "title": "1. Vulnerability VI - Mass Assignment",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/1-vulnerability-vi-mass-assignment/"
+  },
+  {
+    "title": "0. OWASP API Security Top 10 - 2",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/0-owasp-api-security-top-10-2/"
+  },
+  {
+    "title": "5. Vulnerability X - Insufficient Logging & Monitoring",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-api-security-top-10-2/5-vulnerability-x-insufficient-logging-monitoring/"
+  },
+  {
+    "title": "5. Vulnerability III - Excessive Data Exposure",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/5-vulnerability-iii-excessive-data-exposure/"
+  },
+  {
     "title": "0. OWASP API Security Top 10 - 1",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/0-owasp-api-security-top-10-1/"
   },
   {
-    "title": "1. Redireccion",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/1-redireccion/"
+    "title": "6. Vulnerability IV - Lack of Resources & Rate Limiting",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/6-vulnerability-iv-lack-of-resources-rate-limiting/"
   },
   {
-    "title": "0. Pickle Rick",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-pickle-rick/0-pickle-rick/"
+    "title": "4. Vulnerability II - Broken User Authentication (BUA)",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/4-vulnerability-ii-broken-user-authentication-bua/"
+  },
+  {
+    "title": "2. Understanding APIs - A Refresher",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/2-understanding-apis-a-refresher/"
+  },
+  {
+    "title": "7. Vulnerability V - Broken Function Level Authorisation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/7-vulnerability-v-broken-function-level-authorisation/"
+  },
+  {
+    "title": "3. Vulnerability I - Broken Object Level Authorisation (BOLA)",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/3-vulnerability-i-broken-object-level-authorisation-bola/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/1-introduction/"
   },
   {
     "title": "1. Redireccion",
@@ -2364,12 +2448,100 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/4-owasp-top-10-2021/0-owasp-top-10-2021/"
   },
   {
-    "title": "0. OWASP Juice Shop",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/6-owasp-juice-shop/0-owasp-juice-shop/"
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/9-pickle-rick/1-redireccion/"
+  },
+  {
+    "title": "0. Pickle Rick",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/9-pickle-rick/0-pickle-rick/"
+  },
+  {
+    "title": "8. Bypassing Server-Side Filtering - File Extensions",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/8-bypassing-server-side-filtering-file-extensions/"
+  },
+  {
+    "title": "3. General Methodology",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/3-general-methodology/"
+  },
+  {
+    "title": "12. Coclusion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/12-coclusion/"
+  },
+  {
+    "title": "9. Bypassing Server-Side Filtering - Magic Numbers",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/9-bypassing-server-side-filtering-magic-numbers/"
+  },
+  {
+    "title": "5. Remote Code Execution",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/5-remote-code-execution/"
+  },
+  {
+    "title": "4. Overwriting Existing Files",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/4-overwriting-existing-files/"
+  },
+  {
+    "title": "10. Example Methodology",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/10-example-methodology/"
+  },
+  {
+    "title": "1. Getting Started",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/1-getting-started/"
+  },
+  {
+    "title": "11. Challenge",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/11-challenge/"
+  },
+  {
+    "title": "7. Bypassing Client-Side Filtering",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/7-bypassing-client-side-filtering/"
+  },
+  {
+    "title": "2. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/2-introduction/"
   },
   {
     "title": "0. Upload Vulnerabilities",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-upload-vulnerabilities/0-upload-vulnerabilities/"
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/0-upload-vulnerabilities/"
+  },
+  {
+    "title": "6. Filtering",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/6-filtering/"
+  },
+  {
+    "title": "2. Lets Go on an Adventure",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/2-lets-go-on-an-adventure/"
+  },
+  {
+    "title": "3. Inject the Juice",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/3-inject-the-juice/"
+  },
+  {
+    "title": "8. Exploration",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/8-exploration/"
+  },
+  {
+    "title": "0. OWASP Juice Shop",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/0-owasp-juice-shop/"
+  },
+  {
+    "title": "4. Who Broke my Lock",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/4-who-broke-my-lock/"
+  },
+  {
+    "title": "1. Open for Business",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/1-open-for-business/"
+  },
+  {
+    "title": "5. AH Dont Look",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/5-ah-dont-look/"
+  },
+  {
+    "title": "6. Whos Flying this Thing",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/6-whos-flying-this-thing/"
+  },
+  {
+    "title": "7. Where did that Come From",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/7-where-did-that-come-from/"
   },
   {
     "title": "1. Redireccion",

@@ -7,6 +7,42 @@
       "type": "directory",
       "contents": [
         {
+          "name": "Recursos Web",
+          "type": "directory",
+          "contents": [
+            {
+              "name": "1. DVWA",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "0. Configuration",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Configuration.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/0. Configuration/1. Configuration.md",
+                      "parent": "0. Configuration"
+                    }
+                  ]
+                },
+                {
+                  "name": "1. Brute Force",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Breaking the Loging Form.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Loging Form.md",
+                      "parent": "1. Brute Force"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "THM",
           "type": "directory",
           "contents": [
@@ -4954,27 +4990,228 @@
                             {
                               "name": "5. OWASP API Security Top 10 - 1",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/1. Introduction.md",
+                                  "parent": "5. OWASP API Security Top 10 - 1"
+                                },
+                                {
+                                  "name": "2. Understanding APIs - A Refresher.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/2. Understanding APIs - A Refresher.md",
+                                  "parent": "5. OWASP API Security Top 10 - 1"
+                                },
+                                {
+                                  "name": "3. Vulnerability I - Broken Object Level Authorisation (BOLA).md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/3. Vulnerability I - Broken Object Level Authorisation (BOLA).md",
+                                  "parent": "5. OWASP API Security Top 10 - 1"
+                                },
+                                {
+                                  "name": "4. Vulnerability II - Broken User Authentication (BUA).md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/4. Vulnerability II - Broken User Authentication (BUA).md",
+                                  "parent": "5. OWASP API Security Top 10 - 1"
+                                },
+                                {
+                                  "name": "5. Vulnerability III - Excessive Data Exposure.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/5. Vulnerability III - Excessive Data Exposure.md",
+                                  "parent": "5. OWASP API Security Top 10 - 1"
+                                },
+                                {
+                                  "name": "6. Vulnerability IV - Lack of Resources & Rate Limiting.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/6. Vulnerability IV - Lack of Resources & Rate Limiting.md",
+                                  "parent": "5. OWASP API Security Top 10 - 1"
+                                },
+                                {
+                                  "name": "7. Vulnerability V - Broken Function Level Authorisation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/7. Vulnerability V - Broken Function Level Authorisation.md",
+                                  "parent": "5. OWASP API Security Top 10 - 1"
+                                }
+                              ]
                             },
                             {
-                              "name": "6. OWASP Juice Shop",
+                              "name": "6. OWASP API Security Top 10 - 2",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Vulnerability VI - Mass Assignment.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/1. Vulnerability VI - Mass Assignment.md",
+                                  "parent": "6. OWASP API Security Top 10 - 2"
+                                },
+                                {
+                                  "name": "2. Vulnerability VII - Security Misconfiguration.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/2. Vulnerability VII - Security Misconfiguration.md",
+                                  "parent": "6. OWASP API Security Top 10 - 2"
+                                },
+                                {
+                                  "name": "3. Vulnerability VIII - Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/3. Vulnerability VIII - Injection.md",
+                                  "parent": "6. OWASP API Security Top 10 - 2"
+                                },
+                                {
+                                  "name": "4. Vulnerability IX - Improper Assets Management.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/4. Vulnerability IX - Improper Assets Management.md",
+                                  "parent": "6. OWASP API Security Top 10 - 2"
+                                },
+                                {
+                                  "name": "5. Vulnerability X - Insufficient Logging & Monitoring.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/5. Vulnerability X - Insufficient Logging & Monitoring.md",
+                                  "parent": "6. OWASP API Security Top 10 - 2"
+                                }
+                              ]
                             },
                             {
-                              "name": "7. Upload Vulnerabilities",
+                              "name": "7. OWASP Juice Shop",
                               "type": "directory",
-                              "contents": []
+                              "contents": [
+                                {
+                                  "name": "1. Open for Business.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/1. Open for Business.md",
+                                  "parent": "7. OWASP Juice Shop"
+                                },
+                                {
+                                  "name": "2. Lets Go on an Adventure.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/2. Lets Go on an Adventure.md",
+                                  "parent": "7. OWASP Juice Shop"
+                                },
+                                {
+                                  "name": "3. Inject the Juice.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/3. Inject the Juice.md",
+                                  "parent": "7. OWASP Juice Shop"
+                                },
+                                {
+                                  "name": "4. Who Broke my Lock.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/4. Who Broke my Lock.md",
+                                  "parent": "7. OWASP Juice Shop"
+                                },
+                                {
+                                  "name": "5. AH Dont Look.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/5. AH Dont Look.md",
+                                  "parent": "7. OWASP Juice Shop"
+                                },
+                                {
+                                  "name": "6. Whos Flying this Thing.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/6. Whos Flying this Thing.md",
+                                  "parent": "7. OWASP Juice Shop"
+                                },
+                                {
+                                  "name": "7. Where did that Come From.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/7. Where did that Come From.md",
+                                  "parent": "7. OWASP Juice Shop"
+                                },
+                                {
+                                  "name": "8. Exploration.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/8. Exploration.md",
+                                  "parent": "7. OWASP Juice Shop"
+                                }
+                              ]
                             },
                             {
-                              "name": "8. Pickle Rick",
+                              "name": "8. Upload Vulnerabilities",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Getting Started.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/1. Getting Started.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "10. Example Methodology.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/10. Example Methodology.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "11. Challenge.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/11. Challenge.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "12. Coclusion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/12. Coclusion.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "2. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/2. Introduction.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "3. General Methodology.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/3. General Methodology.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "4. Overwriting Existing Files.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/4. Overwriting Existing Files.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "5. Remote Code Execution.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/5. Remote Code Execution.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "6. Filtering.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/6. Filtering.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "7. Bypassing Client-Side Filtering.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/7. Bypassing Client-Side Filtering.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "8. Bypassing Server-Side Filtering - File Extensions.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/8. Bypassing Server-Side Filtering - File Extensions.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                },
+                                {
+                                  "name": "9. Bypassing Server-Side Filtering - Magic Numbers.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/9. Bypassing Server-Side Filtering - Magic Numbers.md",
+                                  "parent": "8. Upload Vulnerabilities"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "9. Pickle Rick",
                               "type": "directory",
                               "contents": [
                                 {
                                   "name": "1. Redireccion.md",
                                   "type": "file",
-                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/1. Redireccion.md",
-                                  "parent": "8. Pickle Rick"
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/9. Pickle Rick/1. Redireccion.md",
+                                  "parent": "9. Pickle Rick"
                                 }
                               ]
                             }
@@ -5260,7 +5497,26 @@
                     {
                       "name": "2. Day 2",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Day 2 Machine",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/1. Introduction.md",
+                              "parent": "1. Day 2 Machine"
+                            },
+                            {
+                              "name": "2. Phishing Exercise for TBFC.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/2. Phishing Exercise for TBFC.md",
+                              "parent": "1. Day 2 Machine"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -5297,9 +5553,15 @@
                       "type": "directory",
                       "contents": [
                         {
-                          "name": "1. Pickle Rick.md",
+                          "name": "1. Introduction.md",
                           "type": "file",
-                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Pickle Rick.md",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Introduction.md",
+                          "parent": "2. Pickle Rick"
+                        },
+                        {
+                          "name": "2. Finding the Ingredients.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/2. Finding the Ingredients.md",
                           "parent": "2. Pickle Rick"
                         }
                       ]

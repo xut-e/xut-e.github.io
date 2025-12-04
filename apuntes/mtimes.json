@@ -5456,8 +5456,8 @@
     "hash": "c855cec86d4cd56da2dbdacf83620f808d355b0971dd2db827a9d4b91ecd4a7c"
   },
   "Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "5f0cc0d4b955dfc27347f49d73172ae3e2e31693fa97432e7f2be470dc2cebc2"
+    "modified": "2025-12-04T00:51:46",
+    "hash": "0285c2c4da5bc1590dfa4356dc668dbd8bd337df16a4a10f1369906932c52a5a"
   },
   "Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Pickle Rick.md": {
     "modified": "2025-11-22T00:47:14",
@@ -5500,8 +5500,8 @@
     "hash": "7fac9285864fc89af5e421b9c436eeea130c6e8a101d311e9bc7fc5dc1c8ac6d"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/4. Web Hacking Fundamentals.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "39e79c541eedfad579b0b2f51e54b51b441cdf33e2933e0220ce221980346e75"
+    "modified": "2025-12-04T00:51:46",
+    "hash": "f8b8e0ad8563b5f09ad9f921e0c91e98838b6eeffbc0e84c27bf488f78b38096"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/1. How The Web Works.md": {
     "modified": "2025-11-22T00:47:14",
@@ -5608,8 +5608,8 @@
     "hash": "91c83cdad15d9b60865d8f9eebfc2b2449fc4d5ec75421d43233215d1c4f2c7b"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/0. OWASP API Security Top 10 - 1.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-04T00:51:46",
+    "hash": "9a66b2b69bae0a12d7277535a47c1275dd79994ef41e0d9d377062d32dabdcb7"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Pickle Rick/0. Pickle Rick.md": {
     "modified": "2025-11-23T00:57:27",
@@ -7040,8 +7040,8 @@
     "hash": "36c677f1dea838f5fef8cdeaed9c49e0599c043a6b0eb76f695cc05e36c61bf4"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2.md": {
-    "modified": "2025-12-03T00:59:29",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-04T00:51:46",
+    "hash": "b822ba0e7be4e0e528c9664c3659a3f8abc96a16ba16da95cf79da5b33c9ac9f"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/2. Side Quest 1.md": {
     "modified": "2025-12-03T00:59:29",
@@ -7086,5 +7086,197 @@
   "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery/2. Finding the Fragments.md": {
     "modified": "2025-12-03T00:59:29",
     "hash": "f48158fdda6f983dffe80eb765f85e80efa916860204094383de183f51ae319b"
+  },
+  "Ciberseguridad/Recursos Web/0. Recursos Web.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "631412b9a4254ac7043acabfa996a2725b018bf73571c1b0bd5552e838ea6e26"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "6c587c3a43eeee11f841bbb06ff8c1d8f04af830b29ab898f438686bd199f0e2"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/0. Configuration/0. Configuration.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "2e60e413b4a0ec71a34cfa51617382cfc64114db89f9a5fea4cacffae37a8b64"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/0. Configuration/1. Configuration.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "49884cc939070ca27b5f2af94d18c2d605c3a8ee7e14d9940dd2fc675057f717"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Loging Form.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "70b7ce937e5bf9b7ebb5d4a97bf34e62eb997fe3b13c0079e00e2bf5a9799962"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/0. Brute Force.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "b7ea7957c767554e16336165552eaa2e0df76e652aea4876997077852c86feba"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/0. Day 2 Machine.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/2. Phishing Exercise for TBFC.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "c952388f231eaa1d5f11d2359e95a57121066e3704b2dc679438e7c4ec65ff76"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/1. Introduction.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/2. Finding the Ingredients.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Introduction.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/2. Vulnerability VII - Security Misconfiguration.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/3. Vulnerability VIII - Injection.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/4. Vulnerability IX - Improper Assets Management.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/1. Vulnerability VI - Mass Assignment.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/0. OWASP API Security Top 10 - 2.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "6a6470b195afa1faa396c2d8601fca65d02cf47661d7478c3790c14c77bfccef"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/6. OWASP API Security Top 10 - 2/5. Vulnerability X - Insufficient Logging & Monitoring.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/5. Vulnerability III - Excessive Data Exposure.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/6. Vulnerability IV - Lack of Resources & Rate Limiting.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/4. Vulnerability II - Broken User Authentication (BUA).md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/2. Understanding APIs - A Refresher.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "bb54cec04fea71abce4e44854d595d0e75a6d6ec92d95783a4f135486d23b30e"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/7. Vulnerability V - Broken Function Level Authorisation.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/3. Vulnerability I - Broken Object Level Authorisation (BOLA).md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "695d81c2344033687de74f79aa576fb46de211268175aaddeb5e4df8362d484a"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/1. Introduction.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "bee47103c88371b37ae0ba15aa1028ff9adc1bd09c1546de3007f42b42d256de"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/9. Pickle Rick/1. Redireccion.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "0b27d840acac2bb268ced74f490d28238ac3106aa26e26301a0c798b543c9d69"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/9. Pickle Rick/0. Pickle Rick.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "13b7db934c7a6b2bec24c7e53bdcb097499e2269e989d24895e63fab7335d501"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/8. Bypassing Server-Side Filtering - File Extensions.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/3. General Methodology.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/12. Coclusion.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/9. Bypassing Server-Side Filtering - Magic Numbers.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/5. Remote Code Execution.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/4. Overwriting Existing Files.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/10. Example Methodology.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/1. Getting Started.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/11. Challenge.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/7. Bypassing Client-Side Filtering.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/2. Introduction.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/0. Upload Vulnerabilities.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "5215d698478452962835800cb1e8cad5e1df1b9a8292a9dd7253a0582ac00c64"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/6. Filtering.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/2. Lets Go on an Adventure.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/3. Inject the Juice.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/8. Exploration.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/0. OWASP Juice Shop.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "cc4a5311ac3b16092c3107af0a128156818929db02ace417abc400202ee9b36c"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/4. Who Broke my Lock.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/1. Open for Business.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/5. AH Dont Look.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/6. Whos Flying this Thing.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/7. Where did that Come From.md": {
+    "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }
