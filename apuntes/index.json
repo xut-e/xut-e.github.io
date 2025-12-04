@@ -12,6 +12,74 @@
     "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-dvwa/"
   },
   {
+    "title": "0. File Inclusion",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/4-file-inclusion/0-file-inclusion/"
+  },
+  {
+    "title": "0. CSP Bypass",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/13-csp-bypass/0-csp-bypass/"
+  },
+  {
+    "title": "0. Open HTTP Redirect",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/16-open-http-redirect/0-open-http-redirect/"
+  },
+  {
+    "title": "0. Cryptography",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/17-cryptography/0-cryptography/"
+  },
+  {
+    "title": "0. API",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/18-api/0-api/"
+  },
+  {
+    "title": "0. Weak Session IDs",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/9-weak-session-ids/0-weak-session-ids/"
+  },
+  {
+    "title": "0. JavaScript Attacks",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/14-javascripts-attacks/0-javascript-attacks/"
+  },
+  {
+    "title": "0. Authorisation Bypass",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/15-authorisation-bypass/0-authorisation-bypass/"
+  },
+  {
+    "title": "0. XSS - Reflected",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/11-xss-reflected/0-xss-reflected/"
+  },
+  {
+    "title": "0. Insecure CAPTCHA",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/6-insecure-captcha/0-insecure-captcha/"
+  },
+  {
+    "title": "0. XSS - Stored",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/12-xss-stored/0-xss-stored/"
+  },
+  {
+    "title": "1. Breaking the Messaging Service",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/12-xss-stored/1-breaking-the-messaging-service/"
+  },
+  {
+    "title": "0. CSRF",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/3-csrf/0-csrf/"
+  },
+  {
+    "title": "0. File Upload",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/5-file-upload/0-file-upload/"
+  },
+  {
+    "title": "0. SQL Injection",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/7-sql-injection/0-sql-injection/"
+  },
+  {
+    "title": "1. Breaking the Logging Form",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/7-sql-injection/1-breaking-the-logging-form/"
+  },
+  {
+    "title": "0. Command Injection",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/2-command-injection/0-command-injection/"
+  },
+  {
     "title": "0. Configuration",
     "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/0-configuration/0-configuration/"
   },
@@ -20,12 +88,20 @@
     "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/0-configuration/1-configuration/"
   },
   {
-    "title": "1. Breaking the Loging Form",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/1-breaking-the-loging-form/"
+    "title": "1. Breaking the Logging Form",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/1-breaking-the-logging-form/"
   },
   {
     "title": "0. Brute Force",
     "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/0-brute-force/"
+  },
+  {
+    "title": "0. XSS - DOM",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/10-xss-dom/0-xss-dom/"
+  },
+  {
+    "title": "0. SQL Injection - Blind",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/8-sql-injection-blind/0-sql-injection-blind/"
   },
   {
     "title": "0. Pre Career",

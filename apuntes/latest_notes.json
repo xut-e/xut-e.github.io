@@ -1,42 +1,42 @@
 [
   {
-    "title": "0. Recursos Web",
-    "path": "/apuntes/ciberseguridad/recursos-web/0-recursos-web/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/0. Recursos Web.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web",
-    "content": "[[1. DVWA]]",
-    "modified": "2025-12-04T00:51:46"
-  },
-  {
     "title": "1. DVWA",
     "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-dvwa/",
     "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md",
     "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA",
-    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3.",
-    "modified": "2025-12-04T00:51:46"
+    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection]]\n4. [[0. CSRF]]\n5. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion]]\n6. [[0. File Upload]]\n7. [[0. Insecure CAPTCHA]]\n8. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection]]\n9. [[0. SQL Injection - Blind]]\n10. [[0. Weak Session IDs]]\n11. [[0. XSS - DOM]]\n12. [[0. XSS - Reflected]]\n13. [[0. XSS - Stored]]\n14. [[0. CSP Bypass]]\n15. [[0. JavaScript Attacks]]\n16. [[0. Authorisation Bypass]]\n17. [[0. Open HTTP Redirect]]\n18. [[0. Cryptography]]\n19. [[0. API]]",
+    "modified": "2025-12-04T16:17:56"
   },
   {
-    "title": "0. Configuration",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/0-configuration/0-configuration/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/0. Configuration/0. Configuration.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 0. Configuration",
-    "content": "[[1. Configuration]]",
-    "modified": "2025-12-04T00:51:46"
+    "title": "0. File Inclusion",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/4-file-inclusion/0-file-inclusion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 4. File Inclusion",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
   },
   {
-    "title": "1. Configuration",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/0-configuration/1-configuration/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/0. Configuration/1. Configuration.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 0. Configuration",
-    "content": "<h2>AVISO IMPORTANTE</h2>\n>[!CAUTION] ATENCIÓN!: No sirvas DVWA en un servidor público, ten cuidado y lee la documentación de su página web oficial. Esto es sólo una guía rápida para aquellos que entienden los riesgos de instalar aplicaciones vulnerables y no me hago responsable de nada\n\n-------------------------------------\n<h2>Pasos</h2>\n1. Clonamos el [repositorio oficial](https://github.com/digininja/DVWA?tab=readme-ov-file) desde GitHub en `/var/www/html/`.\n   ![[Pasted image 20251203163530.png]]\n2. Iniciamos el servicio `apache2`.\n   ![[Pasted image 20251203163939.png]]\n3. Nos metemos en el directorio DVWA y ejecutamos el siguiente comando.\n   ![[Pasted image 20251203164154.png]]\n4. Podemos mirar la contraseña y el usuario en este archivo`php`.\n5. Comenzamos el servicio `mariadb` (en kali).\n   ![[Pasted image 20251203164515.png]]\n6. Iniciamos sesión como root en mariaDB.\n   ![[Pasted image 20251203164822.png]]\n7. Seguimos los pasos de configuración de la base de datos.\n\t1. Creamos la base de datos `dvwa`.\n\t   ![[Pasted image 20251203164939.png]]\n\t2. Creamos en usuario con la contraseña.\n\t   ![[Pasted image 20251203165151.png]]\n\t3. Le damos permisos al usuario en la base de datos correspondiente.\n\t   ![[Pasted image 20251203165638.png]]\n\t4. Recargamos la caché de privilegios (necesario después de editar manualmente privilegios).\n\t   ![[Pasted image 20251203165758.png]]\n8. Ya podemos iniciar sesión en la base de datos.\n   ![[Pasted image 20251203170008.png]]\n9. Usamos la base de datos `dvwa`.\n   ![[Pasted image 20251203171107.png]]\n10. Vamos a `http://localhost/DVWA/login.php`.\n    ![[Pasted image 20251203171243.png]]\n11. Iniciamos sesión y le damos al botón `Create / Reset Database` abajo del todo y nos logueamos con `admin:password` (tal cual, no es un placeholder).\n    ![[Pasted image 20251203171631.png]]\n\n>[!CAUTION] Recuerda configurar la dificultad al nivel que quieras.\n\nEn mi caso yo la pondré en `low` y le darè a `submit`.\n\n![[Pasted image 20251203174130.png]]",
-    "modified": "2025-12-04T00:51:46"
+    "title": "0. CSP Bypass",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/13-csp-bypass/0-csp-bypass/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/13. CSP Bypass/0. CSP Bypass.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 13. CSP Bypass",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
   },
   {
-    "title": "1. Breaking the Loging Form",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/1-breaking-the-loging-form/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Loging Form.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 1. Brute Force",
-    "content": "Para romper este portal de login, vamos a usar dos herramientas distintas:\n\n- FFUF\n- WFUZZ\n\n![[Pasted image 20251203172440.png]]\n\n---------------------------------\n<h2>FFUF</h2>\n1. Si abrimos las herramientas de desarrollador, podemos ver que en la petición se mandan los parámetros `username` y `password` por GET.\n   ![[Pasted image 20251203174307.png]]\n2. Podemos ver que hay una cookie de sesión además.\n   ![[Pasted image 20251203174358.png]]\n3. Usamos `ffuf` para el ataque.\n   ![[Pasted image 20251203175228.png]]\n   Como la longitud es siempre la misma, vamos a restringirla.\n4. Arreglamos el comando y le añadimos `time` para poder compararla después.\n   ![[Pasted image 20251203180015.png]]\n5. Iniciamos sesión con las credenciales.\n   ![[Pasted image 20251203175900.png]]",
-    "modified": "2025-12-04T00:51:46"
+    "title": "0. Open HTTP Redirect",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/16-open-http-redirect/0-open-http-redirect/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/16. Open HTTP Redirect/0. Open HTTP Redirect.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 16. Open HTTP Redirect",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. Cryptography",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/17-cryptography/0-cryptography/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/17. Cryptography/0. Cryptography.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 17. Cryptography",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
   }
 ]

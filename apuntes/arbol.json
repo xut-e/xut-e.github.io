@@ -31,12 +31,111 @@
                   "type": "directory",
                   "contents": [
                     {
-                      "name": "1. Breaking the Loging Form.md",
+                      "name": "1. Breaking the Logging Form.md",
                       "type": "file",
-                      "path": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Loging Form.md",
+                      "path": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Logging Form.md",
                       "parent": "1. Brute Force"
                     }
                   ]
+                },
+                {
+                  "name": "10. XSS - DOM",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "11. XSS - Reflected",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "12. XSS - Stored",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Breaking the Messaging Service.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/12. XSS - Stored/1. Breaking the Messaging Service.md",
+                      "parent": "12. XSS - Stored"
+                    }
+                  ]
+                },
+                {
+                  "name": "13. CSP Bypass",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "14. JavaScripts Attacks",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "15. Authorisation Bypass",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "16. Open HTTP Redirect",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "17. Cryptography",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "18. API",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "2. Command Injection",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "3. CSRF",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "4. File Inclusion",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "5. File Upload",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "6. Insecure CAPTCHA",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "7. SQL Injection",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Breaking the Logging Form.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/1. Breaking the Logging Form.md",
+                      "parent": "7. SQL Injection"
+                    }
+                  ]
+                },
+                {
+                  "name": "8. SQL Injection - Blind",
+                  "type": "directory",
+                  "contents": []
+                },
+                {
+                  "name": "9. Weak Session IDs",
+                  "type": "directory",
+                  "contents": []
                 }
               ]
             }

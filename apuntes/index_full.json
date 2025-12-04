@@ -20,8 +20,144 @@
     "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-dvwa/",
     "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md",
     "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA",
-    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3.",
-    "modified": "2025-12-04T00:51:46"
+    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection]]\n4. [[0. CSRF]]\n5. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion]]\n6. [[0. File Upload]]\n7. [[0. Insecure CAPTCHA]]\n8. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection]]\n9. [[0. SQL Injection - Blind]]\n10. [[0. Weak Session IDs]]\n11. [[0. XSS - DOM]]\n12. [[0. XSS - Reflected]]\n13. [[0. XSS - Stored]]\n14. [[0. CSP Bypass]]\n15. [[0. JavaScript Attacks]]\n16. [[0. Authorisation Bypass]]\n17. [[0. Open HTTP Redirect]]\n18. [[0. Cryptography]]\n19. [[0. API]]",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. File Inclusion",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/4-file-inclusion/0-file-inclusion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 4. File Inclusion",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. CSP Bypass",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/13-csp-bypass/0-csp-bypass/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/13. CSP Bypass/0. CSP Bypass.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 13. CSP Bypass",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. Open HTTP Redirect",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/16-open-http-redirect/0-open-http-redirect/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/16. Open HTTP Redirect/0. Open HTTP Redirect.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 16. Open HTTP Redirect",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. Cryptography",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/17-cryptography/0-cryptography/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/17. Cryptography/0. Cryptography.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 17. Cryptography",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. API",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/18-api/0-api/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/18. API/0. API.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 18. API",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. Weak Session IDs",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/9-weak-session-ids/0-weak-session-ids/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/9. Weak Session IDs/0. Weak Session IDs.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 9. Weak Session IDs",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. JavaScript Attacks",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/14-javascripts-attacks/0-javascript-attacks/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/14. JavaScripts Attacks/0. JavaScript Attacks.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 14. JavaScripts Attacks",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. Authorisation Bypass",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/15-authorisation-bypass/0-authorisation-bypass/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/15. Authorisation Bypass/0. Authorisation Bypass.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 15. Authorisation Bypass",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. XSS - Reflected",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/11-xss-reflected/0-xss-reflected/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/11. XSS - Reflected/0. XSS - Reflected.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 11. XSS - Reflected",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. Insecure CAPTCHA",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/6-insecure-captcha/0-insecure-captcha/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/6. Insecure CAPTCHA/0. Insecure CAPTCHA.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 6. Insecure CAPTCHA",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. XSS - Stored",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/12-xss-stored/0-xss-stored/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/12. XSS - Stored/0. XSS - Stored.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 12. XSS - Stored",
+    "content": "[[1. Breaking the Messaging Service]]",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "1. Breaking the Messaging Service",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/12-xss-stored/1-breaking-the-messaging-service/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/12. XSS - Stored/1. Breaking the Messaging Service.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 12. XSS - Stored",
+    "content": "Para romper este servicio de mensajería y poder mandar ataques contra el navegador de la víctima, vamos a descargarnos la herramienta [BeEF](https://github.com/beefproject/beef) (The Browser Exploitation Framework).\n\n![[Pasted image 20251204165821.png]]\n\n------------------------------------------\n1. Instalamos BeEF.\n   - `sudo apt update`\n   - `sudo apt install beef-xss`\n   - `sudo beef-xss`\n     ![[Pasted image 20251204170837.png]]\n     Con esto hemos iniciado el servicio beef-xss, que contiene el script `hook.js`. \n2. Ahora inyectamos el código malicioso en la aplicación vulnerable.\n   ![[Pasted image 20251204171522.png]]",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. CSRF",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/3-csrf/0-csrf/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/3. CSRF/0. CSRF.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 3. CSRF",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. File Upload",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/5-file-upload/0-file-upload/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/5. File Upload/0. File Upload.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 5. File Upload",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. SQL Injection",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/7-sql-injection/0-sql-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 7. SQL Injection",
+    "content": "[[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/1. Breaking the Logging Form]]",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "1. Breaking the Logging Form",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/7-sql-injection/1-breaking-the-logging-form/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/1. Breaking the Logging Form.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 7. SQL Injection",
+    "content": "Vamos a intentar una inyección SQL manual aprovechndo que esta es vista (hay otra Blind para más adelante).\n\n![[Pasted image 20251204121001.png]]\n\n--------------------------------------------\n1. Vamos a introducir una consulta \"válida\".\n   ![[Pasted image 20251204121253.png]]\n2. Recibimos esta respuesta.\n   ![[Pasted image 20251204121418.png]]\n   La URL queda tal que así:\n   ![[Pasted image 20251204122131.png]]\n   Por lo tanto sabemos que mínimo hay tres campos, que son los que nos está mostrando la web.\n3. Sabemos qu ees vulnerable a SQLI porque si metemos una comilla nos da error 500.\n   ![[Pasted image 20251204122328.png]]\n4. Vamos a hacer un ejercicio para ver cuántas columnas hay.\n\t1. Empezamos con `1' UNION SELECT 1,2,3-- -` que sabemos que es válido, pues mínimo hay 3 campos basándonos en el output de antes.\n\t   ![[Pasted image 20251204124300.png]]\n\t   Parece ser que hemos errado en nuestra suposición. Estudiaremos por qué.\n\t2. Vamos a probar con el `1' UNION SELECT 1,2-- -`.\n\t   ![[Pasted image 20251204124351.png]]\n\t   Parece que ahora si que hemos obtenido información relevante.\n5. Para obtener información sobre la base de datos, empezaremos a sustituir y en lugar del 1, pondremos la query que queramos ver.\n\t1. Empezamos sustituyendo el 1 por `database()`:  `1' UNION SELECT database(),2-- -`.\n\t   ![[Pasted image 20251204124647.png]]\n\t   Ahí podemos ver que el nombre de la base de datos es `dvwa`.\n\t2. Seguimos indagando en el nombre de las tablas con: `1' UNION SELECT 1,group_concat(table_name) FROM information_schema.tables WHERE table_schema = 'dvwa'-- -`.\n\t   ![[Pasted image 20251204163630.png]]\n\t   Parece que nos puede interesar la tabla \"users\".\n\t3. Vamos a sacar el nombre de las columnas con la query: `1' UNION SELECT 1,group_concat(column_name) FROM information_schema.columns WHERE table_name = 'users'-- -`.\n\t   ![[Pasted image 20251204164241.png]]\n\t   Los campos que más nos interesan a priori son `user` y `password`. Y el de `role` puede estar interesante para diferenciar posibles admins sin tener que mirar el nombre.\n\t4. Los extraemos con la query: `1' UNION SELECT 1,group_concat(user,':',password,':',role SEPARATOR '<br>') FROM users -- -`.\n\t   ![[Pasted image 20251204164608.png]]\n\n>[!SUCCESS] Hemos conseguido vulnerar la base de datos y obtener nombre, contraseña y rol de todos los usuarios registrados en ella.",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. Command Injection",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/2-command-injection/0-command-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 2. Command Injection",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
   },
   {
     "title": "0. Configuration",
@@ -40,20 +176,36 @@
     "modified": "2025-12-04T00:51:46"
   },
   {
-    "title": "1. Breaking the Loging Form",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/1-breaking-the-loging-form/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Loging Form.md",
+    "title": "1. Breaking the Logging Form",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/1-breaking-the-logging-form/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Logging Form.md",
     "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 1. Brute Force",
-    "content": "Para romper este portal de login, vamos a usar dos herramientas distintas:\n\n- FFUF\n- WFUZZ\n\n![[Pasted image 20251203172440.png]]\n\n---------------------------------\n<h2>FFUF</h2>\n1. Si abrimos las herramientas de desarrollador, podemos ver que en la petición se mandan los parámetros `username` y `password` por GET.\n   ![[Pasted image 20251203174307.png]]\n2. Podemos ver que hay una cookie de sesión además.\n   ![[Pasted image 20251203174358.png]]\n3. Usamos `ffuf` para el ataque.\n   ![[Pasted image 20251203175228.png]]\n   Como la longitud es siempre la misma, vamos a restringirla.\n4. Arreglamos el comando y le añadimos `time` para poder compararla después.\n   ![[Pasted image 20251203180015.png]]\n5. Iniciamos sesión con las credenciales.\n   ![[Pasted image 20251203175900.png]]",
-    "modified": "2025-12-04T00:51:46"
+    "content": "Para romper este portal de login, vamos a usar dos herramientas distintas:\n\n- FFUF\n- WFUZZ\n\n![[Pasted image 20251203172440.png]]\n\n---------------------------------\n<h2>FFUF</h2>\n1. Si abrimos las herramientas de desarrollador, podemos ver que en la petición se mandan los parámetros `username` y `password` por GET.\n   ![[Pasted image 20251203174307.png]]\n2. Podemos ver que hay una cookie de sesión además.\n   ![[Pasted image 20251203174358.png]]\n3. Usamos `ffuf` para el ataque.\n   ![[Pasted image 20251203175228.png]]\n   Como la longitud es siempre la misma, vamos a restringirla.\n4. Arreglamos el comando y le añadimos `time` para poder compararla después.\n   ![[Pasted image 20251203180015.png]]\n5. Iniciamos sesión con las credenciales.\n   ![[Pasted image 20251203175900.png]]\n\n-----------------------------------------------\n<h2>WFUZZ</h2>\n1. Cerramos y volvemos a iniciar sesión, mandamos una petición y vemos que seguimos teniendo una cookie y el método es GET con parámetros `username` y `password`.\n   ![[Pasted image 20251204105136.png]]\n2. Metemos el comando correspondiente:\n   ![[Pasted image 20251204113336.png]]\n3. Obtenemos las mismas credenciales con ambos, nos registramos.\n   ![[Pasted image 20251203175900.png]]\n\n----------------------------------------------------\n\n>[!NOTE] Conclusión:\n>Aunque ambos sirven y nos han reportado correctamente el usuario:contraseña, WFUZZ ha demostrado ser más eficiente. \n>\n>Sin embargo, la documentación CLI está mejor redactada (y tiene más ejemplos, por lo que es más clara) del lado de FFUF.\n>\n>Cada una tiene sus ventajas, queda a preferencia del usuario.",
+    "modified": "2025-12-04T16:17:56"
   },
   {
     "title": "0. Brute Force",
     "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-brute-force/0-brute-force/",
     "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/0. Brute Force.md",
     "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 1. Brute Force",
-    "content": "[[1. Breaking the Loging Form]]",
-    "modified": "2025-12-04T00:51:46"
+    "content": "[[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Logging Form]]",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. XSS - DOM",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/10-xss-dom/0-xss-dom/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/10. XSS - DOM/0. XSS - DOM.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 10. XSS - DOM",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
+  },
+  {
+    "title": "0. SQL Injection - Blind",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/8-sql-injection-blind/0-sql-injection-blind/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/8. SQL Injection - Blind/0. SQL Injection - Blind.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 8. SQL Injection - Blind",
+    "content": "",
+    "modified": "2025-12-04T16:17:56"
   },
   {
     "title": "0. Pre Career",

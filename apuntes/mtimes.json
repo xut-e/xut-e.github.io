@@ -7092,8 +7092,8 @@
     "hash": "631412b9a4254ac7043acabfa996a2725b018bf73571c1b0bd5552e838ea6e26"
   },
   "Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md": {
-    "modified": "2025-12-04T00:51:46",
-    "hash": "6c587c3a43eeee11f841bbb06ff8c1d8f04af830b29ab898f438686bd199f0e2"
+    "modified": "2025-12-04T16:17:56",
+    "hash": "0f1a1608b95fd4c929d84f9560bee26fcfded8cd50b576054e1aabfa1c824cb6"
   },
   "Ciberseguridad/Recursos Web/1. DVWA/0. Configuration/0. Configuration.md": {
     "modified": "2025-12-04T00:51:46",
@@ -7108,8 +7108,8 @@
     "hash": "70b7ce937e5bf9b7ebb5d4a97bf34e62eb997fe3b13c0079e00e2bf5a9799962"
   },
   "Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/0. Brute Force.md": {
-    "modified": "2025-12-04T00:51:46",
-    "hash": "b7ea7957c767554e16336165552eaa2e0df76e652aea4876997077852c86feba"
+    "modified": "2025-12-04T16:17:56",
+    "hash": "c61486ceb381abfd757b627c96f80303a1feade1b85ead3e63c400995d119096"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/0. Day 2 Machine.md": {
     "modified": "2025-12-04T00:51:46",
@@ -7277,6 +7277,86 @@
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/7. Where did that Come From.md": {
     "modified": "2025-12-04T00:51:46",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/13. CSP Bypass/0. CSP Bypass.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/16. Open HTTP Redirect/0. Open HTTP Redirect.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/17. Cryptography/0. Cryptography.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/18. API/0. API.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/9. Weak Session IDs/0. Weak Session IDs.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/14. JavaScripts Attacks/0. JavaScript Attacks.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/15. Authorisation Bypass/0. Authorisation Bypass.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/11. XSS - Reflected/0. XSS - Reflected.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/6. Insecure CAPTCHA/0. Insecure CAPTCHA.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/12. XSS - Stored/0. XSS - Stored.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "22402be1065848b161195e001415ec0f19d87a30a6d968cef6dac8d9fd7935bb"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/12. XSS - Stored/1. Breaking the Messaging Service.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "48f52aaae8927f804a612df5bae707abcc4cdddff632778d950b12c1e6c07926"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/3. CSRF/0. CSRF.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/5. File Upload/0. File Upload.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e4d0627788e429ff53f07c47f03f5e9c1d3c662d9af1b73b26b6a5e0c66b6641"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/1. Breaking the Logging Form.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "3793d8b41a0429a23aae160754613fd12ae28b8a774c50be600a57196b2d0fa9"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/1. Brute Force/1. Breaking the Logging Form.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "90bf0d8b840bbc20d3d7eb6d37031453c3cb77d0ab35c729465633620d050bd9"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/10. XSS - DOM/0. XSS - DOM.md": {
+    "modified": "2025-12-04T16:17:56",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/Recursos Web/1. DVWA/8. SQL Injection - Blind/0. SQL Injection - Blind.md": {
+    "modified": "2025-12-04T16:17:56",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }

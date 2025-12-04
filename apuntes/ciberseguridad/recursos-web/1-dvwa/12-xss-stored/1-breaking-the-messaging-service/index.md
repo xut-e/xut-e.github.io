@@ -1,0 +1,18 @@
+---
+layout: apunte
+title: "1. Breaking the Messaging Service"
+---
+
+Para romper este servicio de mensajería y poder mandar ataques contra el navegador de la víctima, vamos a descargarnos la herramienta [BeEF](https://github.com/beefproject/beef) (The Browser Exploitation Framework).
+
+!**Pasted image 20251204165821.png**
+
+------------------------------------------
+1. Instalamos BeEF.
+   - `sudo apt update`
+   - `sudo apt install beef-xss`
+   - `sudo beef-xss`
+     !**Pasted image 20251204170837.png**
+     Con esto hemos iniciado el servicio beef-xss, que contiene el script `hook.js`. 
+2. Ahora inyectamos el código malicioso en la aplicación vulnerable.
+   !**Pasted image 20251204171522.png**
