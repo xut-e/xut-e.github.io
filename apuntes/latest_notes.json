@@ -1,42 +1,42 @@
 [
   {
-    "title": "1. DVWA",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/1-dvwa/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA",
-    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection]]\n4. [[0. CSRF]]\n5. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion]]\n6. [[0. File Upload]]\n7. [[0. Insecure CAPTCHA]]\n8. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection]]\n9. [[0. SQL Injection - Blind]]\n10. [[0. Weak Session IDs]]\n11. [[0. XSS - DOM]]\n12. [[0. XSS - Reflected]]\n13. [[0. XSS - Stored]]\n14. [[0. CSP Bypass]]\n15. [[0. JavaScript Attacks]]\n16. [[0. Authorisation Bypass]]\n17. [[0. Open HTTP Redirect]]\n18. [[0. Cryptography]]\n19. [[0. API]]",
-    "modified": "2025-12-04T16:17:56"
+    "title": "2025",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2025/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2025.md",
+    "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025",
+    "content": "1. [[1. Day 1]]\n2. [[1. Day 2]]\n3. [[1. Day 3]]\n4.",
+    "modified": "2025-12-06T00:48:47"
   },
   {
-    "title": "0. File Inclusion",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/4-file-inclusion/0-file-inclusion/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 4. File Inclusion",
-    "content": "",
-    "modified": "2025-12-04T16:17:56"
+    "title": "1. Day 3",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/3-day-3/1-day-3/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3.md",
+    "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 3. Day 3",
+    "content": "[[0. Day 3 Machine]]",
+    "modified": "2025-12-06T00:48:47"
   },
   {
-    "title": "0. CSP Bypass",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/13-csp-bypass/0-csp-bypass/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/13. CSP Bypass/0. CSP Bypass.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 13. CSP Bypass",
-    "content": "",
-    "modified": "2025-12-04T16:17:56"
+    "title": "0. Day 3 Machine",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/3-day-3/1-day-3-machine/0-day-3-machine/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/0. Day 3 Machine.md",
+    "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 3. Day 3 > 1. Day 3 Machine",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/1. Introduction]]",
+    "modified": "2025-12-06T00:48:47"
   },
   {
-    "title": "0. Open HTTP Redirect",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/16-open-http-redirect/0-open-http-redirect/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/16. Open HTTP Redirect/0. Open HTTP Redirect.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 16. Open HTTP Redirect",
-    "content": "",
-    "modified": "2025-12-04T16:17:56"
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/3-day-3/1-day-3-machine/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 3. Day 3 > 1. Day 3 Machine",
+    "content": "![[Pasted image 20251205175200.png]]\n\nCasi es Navidad en Wareville y el equipo de TBFC está ocupado preparándose para la gran celebración. Todo está yendo sobre ruedas hasta que el dashboard del SOC se pone de color rojo y un mensaje de rescate aparece: \n\n![[Pasted image 20251205175330.png]]\n\nEl mensaje viene de King Malhare, el celoso dominador de la isla HopSec, que está cansado de que la pascua sea olvidada. Ha mandado a sus Bandit Bunnies que ataquen los sistemas de la compañía y convertir la Navidad en la pascu-idad.\n\nCon McSkidy desaparecida y la red bajo ataque, el SOC de TBFC tendrá que usar Splunk para determinar cómo el ransomware se infiltró en el sistema y evitar el plan de King Malhare.",
+    "modified": "2025-12-06T00:48:47"
   },
   {
-    "title": "0. Cryptography",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/17-cryptography/0-cryptography/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/17. Cryptography/0. Cryptography.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 17. Cryptography",
-    "content": "",
-    "modified": "2025-12-04T16:17:56"
+    "title": "1. Breaking the Messaging Service",
+    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/12-xss-stored/1-breaking-the-messaging-service/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/12. XSS - Stored/1. Breaking the Messaging Service.md",
+    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 12. XSS - Stored",
+    "content": "Para romper este servicio de mensajería y poder mandar ataques contra el navegador de la víctima, vamos a descargarnos la herramienta [BeEF](https://github.com/beefproject/beef) (The Browser Exploitation Framework).\n\n![[Pasted image 20251204165821.png]]\n\n------------------------------------------\n1. Instalamos BeEF.\n   - `sudo apt update`\n   - `sudo apt install beef-xss`\n   - `sudo beef-xss`\n     ![[Pasted image 20251204170837.png]]\n     Con esto hemos iniciado el servicio beef-xss, que contiene el script `hook.js`. \n2. Ahora inyectamos el código malicioso en la aplicación vulnerable.\n   ![[Pasted image 20251205181207.png]]",
+    "modified": "2025-12-06T00:48:46"
   }
 ]

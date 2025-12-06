@@ -15,4 +15,4 @@ Para romper este servicio de mensajería y poder mandar ataques contra el navega
      !**Pasted image 20251204170837.png**
      Con esto hemos iniciado el servicio beef-xss, que contiene el script `hook.js`. 
 2. Ahora inyectamos el código malicioso en la aplicación vulnerable.
-   !**Pasted image 20251204171522.png**
+   !**Pasted image 20251205181207.png**

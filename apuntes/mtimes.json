@@ -7032,8 +7032,8 @@
     "hash": "bd38b7224267c30cb8386ff5af755e6815c569fc093e626ef7eab0e7f830083e"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/2025.md": {
-    "modified": "2025-12-03T00:59:29",
-    "hash": "ed51e51dd38d86c68b63379b21ba660267443f7b16b4b76dc468537637656b2b"
+    "modified": "2025-12-06T00:48:47",
+    "hash": "8bf69e13c9662b0a1df5a4bae77231f5e12fab02084e49b8916de5efb1192692"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/1. Day 1.md": {
     "modified": "2025-12-03T00:59:29",
@@ -7324,8 +7324,8 @@
     "hash": "22402be1065848b161195e001415ec0f19d87a30a6d968cef6dac8d9fd7935bb"
   },
   "Ciberseguridad/Recursos Web/1. DVWA/12. XSS - Stored/1. Breaking the Messaging Service.md": {
-    "modified": "2025-12-04T16:17:56",
-    "hash": "48f52aaae8927f804a612df5bae707abcc4cdddff632778d950b12c1e6c07926"
+    "modified": "2025-12-06T00:48:46",
+    "hash": "4d28b34a155b01c4cf145a0019b6d2db56251e35ab7a5812bea7f8f43f9d6f7b"
   },
   "Ciberseguridad/Recursos Web/1. DVWA/3. CSRF/0. CSRF.md": {
     "modified": "2025-12-04T16:17:56",
@@ -7358,5 +7358,17 @@
   "Ciberseguridad/Recursos Web/1. DVWA/8. SQL Injection - Blind/0. SQL Injection - Blind.md": {
     "modified": "2025-12-04T16:17:56",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3.md": {
+    "modified": "2025-12-06T00:48:47",
+    "hash": "fa0b206a0a625ba38592a6bb6937f21f863295e4da41d1cdb8ef370a3a5d66c1"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/0. Day 3 Machine.md": {
+    "modified": "2025-12-06T00:48:47",
+    "hash": "c1e51c37367c7ea495a7d34028c4298619ba4b0bf36b422b493eb47667ea1829"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/1. Introduction.md": {
+    "modified": "2025-12-06T00:48:47",
+    "hash": "19ccc2a981401d3ed6f0be1ed0a3e85dcc646606ce803cc4330a68f77a76a59d"
   }
 }
