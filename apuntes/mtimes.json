@@ -7370,5 +7370,9 @@
   "Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/1. Introduction.md": {
     "modified": "2025-12-06T00:48:47",
     "hash": "19ccc2a981401d3ed6f0be1ed0a3e85dcc646606ce803cc4330a68f77a76a59d"
+  },
+  "Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/2. Analysing Logs with Splunk.md": {
+    "modified": "2025-12-09T00:52:02",
+    "hash": "eaef80e61380a6c4888459da0677e3ed196b4d12d3531424501f49a8499068e0"
   }
 }

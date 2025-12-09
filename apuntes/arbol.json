@@ -5630,6 +5630,12 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/1. Introduction.md",
                               "parent": "1. Day 3 Machine"
+                            },
+                            {
+                              "name": "2. Analysing Logs with Splunk.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/2. Analysing Logs with Splunk.md",
+                              "parent": "1. Day 3 Machine"
                             }
                           ]
                         }

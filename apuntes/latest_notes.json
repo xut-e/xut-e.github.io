@@ -1,5 +1,13 @@
 [
   {
+    "title": "2. Analysing Logs with Splunk",
+    "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/3-day-3/1-day-3-machine/2-analysing-logs-with-splunk/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/2. Analysing Logs with Splunk.md",
+    "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 3. Day 3 > 1. Day 3 Machine",
+    "content": "1. Vamos a la página dada.\n   ![[Pasted image 20251207214052.png]]\n2. Le damos a \"Search and Reporting\".\n   ![[Pasted image 20251207214159.png]]\n3. Allí intentaremos ver los logs. Para ellos escribimos `index=main`, seleccionamos a`all time` a la derecha y le damos a buscar.\n   ![[Pasted image 20251207214432.png]]\n4. Si le damos a `sorcetype`, podemos ver los tipos de tráfico.\n   ![[Pasted image 20251207214653.png]]\n   Ahora mismo nos interesa el tráfico web, que es por donde seguramente entró el malware.\n5. Lo metemos en la query.\n   ![[Pasted image 20251207214948.png]]\n6. Si filtramos por días con `| timechart span=1d count` y le damos a \"Visualization\" podemos hacernos una idea de cuándo ocurrió el ataque.\n   ![[Pasted image 20251207221358.png]]\n   Podemos ver que parece empezar el 10 de Octubre.\n7. Para tener más claro qué días debemos investigar, podemos ordenarlos de mayor a menor con `|sort by count` y `| reverse`. Vamos a \"Statistics\" y:\n   \n   ![[Pasted image 20251207221641.png]]\n   Podemos observar que los días 12, 10, 14, 11 y 13 son anómalos, con el día 12 siendo el que más logs tiene.\n8. Ahora empezamos nuestra búsqueda de IoCs (Indicator of Compromise). Si le damos a \"Events\" de nuevo y luego a `user_agent`, podremos ver de donde viene el tráfico.\n   ![[Pasted image 20251208012837.png]]\n   Algunas como Mozilla son normales (de navegadores) pero `Havij` y `sqlmap` no.\n9. Ahora comprobamos las IPs dándole a `client_ip`.\n   ![[Pasted image 20251208014421.png]]\n   Y vemos que claramente la proporción no tiene sentido por lo que podemos intuir de qué IP provienen el ataque.\n10. Si comprobamos `paths`, podemos ver las rutas que se intentaron acceder.\n    ![[Pasted image 20251208014607.png]]\n    Vemos a bote pronto intentos de Path Traversal y de de SQLi.\n11. Para asegurarnos, podemos filtrar aquellos navegadores comunes.\n    ![[Pasted image 20251208015343.png]]\n    Y efectivamente, corroboramos que es todo el ataque proveniente de la misma dirección IP, sospechoso...\n12. Para ver los mayores ejecutores de logs de otra manera más rápida (si hubiera muchos) podríamos hacer lo siguiente:\n    ![[Pasted image 20251208015638.png]]\n13. Para examinar los logs del firewall tenemos que cambiar el `sourcetype`, añadir la dirección de salida (nuestro servidor) la de destino (la del atacante) y establecer el filtro de opción permitida. Además debemos aplicar los campos que se mostrarán en la tabla.\n    ![[Pasted image 20251208021654.png]]\n14. Ahora agruparemos dichos bytes para ver cuánto se ha exfiltrado. Para ello eliminamos la tabla y aplicamos un sumatorio de los bytes con `stats sum()`.\n    ![[Pasted image 20251208021834.png]]\n\nY",
+    "modified": "2025-12-09T00:52:02"
+  },
+  {
     "title": "2025",
     "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2025/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2025.md",
@@ -30,13 +38,5 @@
     "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 3. Day 3 > 1. Day 3 Machine",
     "content": "![[Pasted image 20251205175200.png]]\n\nCasi es Navidad en Wareville y el equipo de TBFC está ocupado preparándose para la gran celebración. Todo está yendo sobre ruedas hasta que el dashboard del SOC se pone de color rojo y un mensaje de rescate aparece: \n\n![[Pasted image 20251205175330.png]]\n\nEl mensaje viene de King Malhare, el celoso dominador de la isla HopSec, que está cansado de que la pascua sea olvidada. Ha mandado a sus Bandit Bunnies que ataquen los sistemas de la compañía y convertir la Navidad en la pascu-idad.\n\nCon McSkidy desaparecida y la red bajo ataque, el SOC de TBFC tendrá que usar Splunk para determinar cómo el ransomware se infiltró en el sistema y evitar el plan de King Malhare.",
     "modified": "2025-12-06T00:48:47"
-  },
-  {
-    "title": "1. Breaking the Messaging Service",
-    "path": "/apuntes/ciberseguridad/recursos-web/1-dvwa/12-xss-stored/1-breaking-the-messaging-service/",
-    "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/12. XSS - Stored/1. Breaking the Messaging Service.md",
-    "breadcrumb": "Ciberseguridad > Recursos Web > 1. DVWA > 12. XSS - Stored",
-    "content": "Para romper este servicio de mensajería y poder mandar ataques contra el navegador de la víctima, vamos a descargarnos la herramienta [BeEF](https://github.com/beefproject/beef) (The Browser Exploitation Framework).\n\n![[Pasted image 20251204165821.png]]\n\n------------------------------------------\n1. Instalamos BeEF.\n   - `sudo apt update`\n   - `sudo apt install beef-xss`\n   - `sudo beef-xss`\n     ![[Pasted image 20251204170837.png]]\n     Con esto hemos iniciado el servicio beef-xss, que contiene el script `hook.js`. \n2. Ahora inyectamos el código malicioso en la aplicación vulnerable.\n   ![[Pasted image 20251205181207.png]]",
-    "modified": "2025-12-06T00:48:46"
   }
 ]
