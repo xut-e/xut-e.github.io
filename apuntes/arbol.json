@@ -4977,9 +4977,9 @@
                               "type": "directory",
                               "contents": [
                                 {
-                                  "name": "1. Redirección.md",
+                                  "name": "1. Redireccion.md",
                                   "type": "file",
-                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redirección.md",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redireccion.md",
                                   "parent": "1. Burp Suite - The Basics"
                                 }
                               ]
@@ -5499,8 +5499,799 @@
                                   "parent": "2. Session Management"
                                 }
                               ]
+                            },
+                            {
+                              "name": "3. JWT Security",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Token-Based Authentication.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/1. Token-Based Authentication.md",
+                                  "parent": "3. JWT Security"
+                                },
+                                {
+                                  "name": "2. JSON Web Tokens.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/2. JSON Web Tokens.md",
+                                  "parent": "3. JWT Security"
+                                },
+                                {
+                                  "name": "3. Sensitive Information Disclosure.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/3. Sensitive Information Disclosure.md",
+                                  "parent": "3. JWT Security"
+                                },
+                                {
+                                  "name": "4. Signature Validation Mistakes.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/4. Signature Validation Mistakes.md",
+                                  "parent": "3. JWT Security"
+                                },
+                                {
+                                  "name": "5. JWT Lifetimes.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/5. JWT Lifetimes.md",
+                                  "parent": "3. JWT Security"
+                                },
+                                {
+                                  "name": "6. Cross-Service Relay Attacks.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/6. Cross-Service Relay Attacks.md",
+                                  "parent": "3. JWT Security"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "4. OAuth Vulnerabilities",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Key Concepts.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/1. Key Concepts.md",
+                                  "parent": "4. OAuth Vulnerabilities"
+                                },
+                                {
+                                  "name": "2. OAuth Grant Types.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/2. OAuth Grant Types.md",
+                                  "parent": "4. OAuth Vulnerabilities"
+                                },
+                                {
+                                  "name": "3. How OAuth Flow Works.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/3. How OAuth Flow Works.md",
+                                  "parent": "4. OAuth Vulnerabilities"
+                                },
+                                {
+                                  "name": "4. Identifying the OAuth Services.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/4. Identifying the OAuth Services.md",
+                                  "parent": "4. OAuth Vulnerabilities"
+                                },
+                                {
+                                  "name": "5. Exploiting OAuth - Stealing OAuth Token.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/5. Exploiting OAuth - Stealing OAuth Token.md",
+                                  "parent": "4. OAuth Vulnerabilities"
+                                },
+                                {
+                                  "name": "6. Exploiting OAuth - CSRF in OAuth.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/6. Exploiting OAuth - CSRF in OAuth.md",
+                                  "parent": "4. OAuth Vulnerabilities"
+                                },
+                                {
+                                  "name": "7. Exploiting OAuth - Implicit Grant Flow.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/7. Exploiting OAuth - Implicit Grant Flow.md",
+                                  "parent": "4. OAuth Vulnerabilities"
+                                },
+                                {
+                                  "name": "8. Other Vulnerabilities and Evolution of OAuth 2.1.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/8. Other Vulnerabilities and Evolution of OAuth 2.1.md",
+                                  "parent": "4. OAuth Vulnerabilities"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "5. Multi-Factor Authentication",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. How MFA Works.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/1. How MFA Works.md",
+                                  "parent": "5. Multi-Factor Authentication"
+                                },
+                                {
+                                  "name": "2. Implementations and Applications.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/2. Implementations and Applications.md",
+                                  "parent": "5. Multi-Factor Authentication"
+                                },
+                                {
+                                  "name": "3. Common Vulnerabilities in MFA.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/3. Common Vulnerabilities in MFA.md",
+                                  "parent": "5. Multi-Factor Authentication"
+                                },
+                                {
+                                  "name": "4. Practical - OTP Leakage.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/4. Practical - OTP Leakage.md",
+                                  "parent": "5. Multi-Factor Authentication"
+                                },
+                                {
+                                  "name": "5. Practical - Insecure Coding.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/5. Practical - Insecure Coding.md",
+                                  "parent": "5. Multi-Factor Authentication"
+                                },
+                                {
+                                  "name": "6. Practical Beating the Auto-Logout Feature.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/6. Practical Beating the Auto-Logout Feature.md",
+                                  "parent": "5. Multi-Factor Authentication"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "6. Hammer",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/1. Redireccion.md",
+                                  "parent": "6. Hammer"
+                                }
+                              ]
                             }
                           ]
+                        },
+                        {
+                          "name": "2. Injection Attacks",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Advanced SQL Injection",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/1. Introduction.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                },
+                                {
+                                  "name": "2. Quick Recap.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/2. Quick Recap.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                },
+                                {
+                                  "name": "3. Second-Order SQL Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/3. Second-Order SQL Injection.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                },
+                                {
+                                  "name": "4. Filter Evasion Techniques.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/4. Filter Evasion Techniques.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                },
+                                {
+                                  "name": "5. Filter Evasion Techniques - continued.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/5. Filter Evasion Techniques - continued.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                },
+                                {
+                                  "name": "6. Out-of-band SQL Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/6. Out-of-band SQL Injection.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                },
+                                {
+                                  "name": "7. Other Techniques.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/7. Other Techniques.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                },
+                                {
+                                  "name": "8. Automation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/8. Automation.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                },
+                                {
+                                  "name": "9. Best Practices.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/9. Best Practices.md",
+                                  "parent": "1. Advanced SQL Injection"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "2. NoSQL Injection",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. What is NoSQL.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/1. What is NoSQL.md",
+                                  "parent": "2. NoSQL Injection"
+                                },
+                                {
+                                  "name": "2. NoSQL Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/2. NoSQL Injection.md",
+                                  "parent": "2. NoSQL Injection"
+                                },
+                                {
+                                  "name": "3. Operator Injection - Bypassing the Login Screen.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/3. Operator Injection - Bypassing the Login Screen.md",
+                                  "parent": "2. NoSQL Injection"
+                                },
+                                {
+                                  "name": "4. Operator Injection - Logging in as Other Users.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/4. Operator Injection - Logging in as Other Users.md",
+                                  "parent": "2. NoSQL Injection"
+                                },
+                                {
+                                  "name": "5. Operator Injection - Extracting Users Passwords.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/5. Operator Injection - Extracting Users Passwords.md",
+                                  "parent": "2. NoSQL Injection"
+                                },
+                                {
+                                  "name": "6. Syntax Injection - Identification and Data Extraction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/6. Syntax Injection - Identification and Data Extraction.md",
+                                  "parent": "2. NoSQL Injection"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "3. XXE Injection",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/1. Introduction.md",
+                                  "parent": "3. XXE Injection"
+                                },
+                                {
+                                  "name": "2. Exploring XML.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/2. Exploring XML.md",
+                                  "parent": "3. XXE Injection"
+                                },
+                                {
+                                  "name": "3. XML Parsing Mechanisms.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/3. XML Parsing Mechanisms.md",
+                                  "parent": "3. XXE Injection"
+                                },
+                                {
+                                  "name": "4. Exploiting XXE - In-Band.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/4. Exploiting XXE - In-Band.md",
+                                  "parent": "3. XXE Injection"
+                                },
+                                {
+                                  "name": "5. Exploiting XXE - Out-of-Band.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/5. Exploiting XXE - Out-of-Band.md",
+                                  "parent": "3. XXE Injection"
+                                },
+                                {
+                                  "name": "6. SSRF and XXE.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/6. SSRF and XXE.md",
+                                  "parent": "3. XXE Injection"
+                                },
+                                {
+                                  "name": "7. Mitigation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/7. Mitigation.md",
+                                  "parent": "3. XXE Injection"
+                                },
+                                {
+                                  "name": "8. Conclusion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/8. Conclusion.md",
+                                  "parent": "3. XXE Injection"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "4. Server-Side Template Injection",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/1. Introduction.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                },
+                                {
+                                  "name": "2. SSTI Overview.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/2. SSTI Overview.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                },
+                                {
+                                  "name": "3. Template Engines.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/3. Template Engines.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                },
+                                {
+                                  "name": "4. PHP - Smarty.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/4. PHP - Smarty.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                },
+                                {
+                                  "name": "5. NodeJS - Pug.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/5. NodeJS - Pug.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                },
+                                {
+                                  "name": "6. Python - Jinja2.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/6. Python - Jinja2.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                },
+                                {
+                                  "name": "7. Automating the Exploitation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/7. Automating the Exploitation.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                },
+                                {
+                                  "name": "8. Extra-Mile Challenge.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/8. Extra-Mile Challenge.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                },
+                                {
+                                  "name": "9. Mitigation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/9. Mitigation.md",
+                                  "parent": "4. Server-Side Template Injection"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "5. LDAP Injection",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/1. Introduction.md",
+                                  "parent": "5. LDAP Injection"
+                                },
+                                {
+                                  "name": "2. Structure.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/2. Structure.md",
+                                  "parent": "5. LDAP Injection"
+                                },
+                                {
+                                  "name": "3. Search Queries.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/3. Search Queries.md",
+                                  "parent": "5. LDAP Injection"
+                                },
+                                {
+                                  "name": "4. Injection Fundamentals.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/4. Injection Fundamentals.md",
+                                  "parent": "5. LDAP Injection"
+                                },
+                                {
+                                  "name": "5. Exploiting LDAP.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/5. Exploiting LDAP.md",
+                                  "parent": "5. LDAP Injection"
+                                },
+                                {
+                                  "name": "6. Blind LDAP Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/6. Blind LDAP Injection.md",
+                                  "parent": "5. LDAP Injection"
+                                },
+                                {
+                                  "name": "7. Automating the Exploitation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/7. Automating the Exploitation.md",
+                                  "parent": "5. LDAP Injection"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "6. ORM Injection",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/1. Introduction.md",
+                                  "parent": "6. ORM Injection"
+                                },
+                                {
+                                  "name": "2. Understanding ORM.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/2. Understanding ORM.md",
+                                  "parent": "6. ORM Injection"
+                                },
+                                {
+                                  "name": "3. How ORM Works.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/3. How ORM Works.md",
+                                  "parent": "6. ORM Injection"
+                                },
+                                {
+                                  "name": "4. Identifying ORM Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/4. Identifying ORM Injection.md",
+                                  "parent": "6. ORM Injection"
+                                },
+                                {
+                                  "name": "5. ORM Injection - Weak Implementation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/5. ORM Injection - Weak Implementation.md",
+                                  "parent": "6. ORM Injection"
+                                },
+                                {
+                                  "name": "6. ORM Injection - Vulnerable Implementation.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/6. ORM Injection - Vulnerable Implementation.md",
+                                  "parent": "6. ORM Injection"
+                                },
+                                {
+                                  "name": "7. Best Practices.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/7. Best Practices.md",
+                                  "parent": "6. ORM Injection"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "7. Injectics",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Redirection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/7. Injectics/1. Redirection.md",
+                                  "parent": "7. Injectics"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Advanced Server-Side Attacks",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Insecure Deserialisation",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/1. Introduction.md",
+                                  "parent": "1. Insecure Deserialisation"
+                                },
+                                {
+                                  "name": "2. Some Important Concepts.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/2. Some Important Concepts.md",
+                                  "parent": "1. Insecure Deserialisation"
+                                },
+                                {
+                                  "name": "3. Serialisation Formats.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/3. Serialisation Formats.md",
+                                  "parent": "1. Insecure Deserialisation"
+                                },
+                                {
+                                  "name": "4. Identification.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/4. Identification.md",
+                                  "parent": "1. Insecure Deserialisation"
+                                },
+                                {
+                                  "name": "5. Exploitation - Update Properties.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/5. Exploitation - Update Properties.md",
+                                  "parent": "1. Insecure Deserialisation"
+                                },
+                                {
+                                  "name": "6. Exploitation - Object Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/6. Exploitation - Object Injection.md",
+                                  "parent": "1. Insecure Deserialisation"
+                                },
+                                {
+                                  "name": "7. Automation Scripts.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/7. Automation Scripts.md",
+                                  "parent": "1. Insecure Deserialisation"
+                                },
+                                {
+                                  "name": "8. Mitigation Measures.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/8. Mitigation Measures.md",
+                                  "parent": "1. Insecure Deserialisation"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "2. SSRF",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/1. Introduction.md",
+                                  "parent": "2. SSRF"
+                                },
+                                {
+                                  "name": "2. Anatomy of SSRF Attack.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/2. Anatomy of SSRF Attack.md",
+                                  "parent": "2. SSRF"
+                                },
+                                {
+                                  "name": "3. Types of SSRF - Basic.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/3. Types of SSRF - Basic.md",
+                                  "parent": "2. SSRF"
+                                },
+                                {
+                                  "name": "4. Types of SSRF - Basic - continued.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/4. Types of SSRF - Basic - continued.md",
+                                  "parent": "2. SSRF"
+                                },
+                                {
+                                  "name": "5. Types of SSRF - Blind.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/5. Types of SSRF - Blind.md",
+                                  "parent": "2. SSRF"
+                                },
+                                {
+                                  "name": "6. A Classic Example - Crashing the Server.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/6. A Classic Example - Crashing the Server.md",
+                                  "parent": "2. SSRF"
+                                },
+                                {
+                                  "name": "7. Remedial Measures.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/7. Remedial Measures.md",
+                                  "parent": "2. SSRF"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "3. File Inclusion and Path Traversal",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Web Application Architecture.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/1. Web Application Architecture.md",
+                                  "parent": "3. File Inclusion and Path Traversal"
+                                },
+                                {
+                                  "name": "2. File Inclusion Types.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/2. File Inclusion Types.md",
+                                  "parent": "3. File Inclusion and Path Traversal"
+                                },
+                                {
+                                  "name": "3. PHP Wrappers.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/3. PHP Wrappers.md",
+                                  "parent": "3. File Inclusion and Path Traversal"
+                                },
+                                {
+                                  "name": "4. Base Directory Breakouts.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/4. Base Directory Breakouts.md",
+                                  "parent": "3. File Inclusion and Path Traversal"
+                                },
+                                {
+                                  "name": "5. LFI2RCE - Session Files.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/5. LFI2RCE - Session Files.md",
+                                  "parent": "3. File Inclusion and Path Traversal"
+                                },
+                                {
+                                  "name": "6. LFI2RCE - Log Poisoning.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/6. LFI2RCE - Log Poisoning.md",
+                                  "parent": "3. File Inclusion and Path Traversal"
+                                },
+                                {
+                                  "name": "7. LFI2RCE - Wrappers.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/7. LFI2RCE - Wrappers.md",
+                                  "parent": "3. File Inclusion and Path Traversal"
+                                },
+                                {
+                                  "name": "8. Conclusion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/8. Conclusion.md",
+                                  "parent": "3. File Inclusion and Path Traversal"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "4. Race Conditions",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Redireccion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/4. Race Conditions/1. Redireccion.md",
+                                  "parent": "4. Race Conditions"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "5. Prototype Pollution",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/1. Introduction.md",
+                                  "parent": "5. Prototype Pollution"
+                                },
+                                {
+                                  "name": "2. Essential Recap.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/2. Essential Recap.md",
+                                  "parent": "5. Prototype Pollution"
+                                },
+                                {
+                                  "name": "3. How it Works.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/3. How it Works.md",
+                                  "parent": "5. Prototype Pollution"
+                                },
+                                {
+                                  "name": "4. Exploitation - XSS.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/4. Exploitation - XSS.md",
+                                  "parent": "5. Prototype Pollution"
+                                },
+                                {
+                                  "name": "5. Exploitation - Property Injection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/5. Exploitation - Property Injection.md",
+                                  "parent": "5. Prototype Pollution"
+                                },
+                                {
+                                  "name": "6. Exploitation - Denial of Service.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/6. Exploitation - Denial of Service.md",
+                                  "parent": "5. Prototype Pollution"
+                                },
+                                {
+                                  "name": "7. Automating the Process.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/7. Automating the Process.md",
+                                  "parent": "5. Prototype Pollution"
+                                },
+                                {
+                                  "name": "8. Mitigation Measures.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/8. Mitigation Measures.md",
+                                  "parent": "5. Prototype Pollution"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "6. Include",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Redirection.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/6. Include/1. Redirection.md",
+                                  "parent": "6. Include"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Advanced Client-Side Attacks",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. XSS",
+                              "type": "directory",
+                              "contents": [
+                                {
+                                  "name": "1. Introduction.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/1. Introduction.md",
+                                  "parent": "1. XSS"
+                                },
+                                {
+                                  "name": "2. Terminology and Types.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/2. Terminology and Types.md",
+                                  "parent": "1. XSS"
+                                },
+                                {
+                                  "name": "3. Causes and Implications.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/3. Causes and Implications.md",
+                                  "parent": "1. XSS"
+                                },
+                                {
+                                  "name": "4. Reflected XSS.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/4. Reflected XSS.md",
+                                  "parent": "1. XSS"
+                                },
+                                {
+                                  "name": "5. Vulnerable Web Application 1.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/5. Vulnerable Web Application 1.md",
+                                  "parent": "1. XSS"
+                                },
+                                {
+                                  "name": "6. Stored XSS.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/6. Stored XSS.md",
+                                  "parent": "1. XSS"
+                                },
+                                {
+                                  "name": "7. Vulnerable Web Application 2.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/7. Vulnerable Web Application 2.md",
+                                  "parent": "1. XSS"
+                                },
+                                {
+                                  "name": "8. DOM-Based XSS.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/8. DOM-Based XSS.md",
+                                  "parent": "1. XSS"
+                                },
+                                {
+                                  "name": "9. Contexxt and Evasion.md",
+                                  "type": "file",
+                                  "path": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/9. Contexxt and Evasion.md",
+                                  "parent": "1. XSS"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. HTTP Request Smuggling",
+                          "type": "directory",
+                          "contents": []
                         }
                       ]
                     }
@@ -5866,6 +6657,42 @@
                           "type": "file",
                           "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/5. Ultra Tech/4. The Root of All Evil.md",
                           "parent": "5. Ultra Tech"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "6. Hammer",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Getting the Flags.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/1. Getting the Flags.md",
+                          "parent": "6. Hammer"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "7. Include",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Getting the Flags.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/1. Getting the Flags.md",
+                          "parent": "7. Include"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "8. Injectics",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Getting the Flags.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/1. Getting the Flags.md",
+                          "parent": "8. Injectics"
                         }
                       ]
                     }

@@ -5392,8 +5392,8 @@
     "hash": "65740dcb69b00e476a2c31afebee8cf4268adf421a5d02cf26093f1a569e7fdf"
   },
   "Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2025-11-24T20:06:19",
-    "hash": "e0bc9abf5f3b94bd2f97a3d01cdf0212f617d013d939e05e94b9641b5e2a1af5"
+    "modified": "2025-12-10T19:02:24",
+    "hash": "e7f3d98c1ff3f1c3062b7220db2d53db246c9e6ceca64363b2c3bafc987ea66d"
   },
   "Ciberseguridad/THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2025-11-22T00:47:14",
@@ -5696,8 +5696,8 @@
     "hash": "25057eb66cb54c493516542d5321f7ff0c94123b2e1a5f9381ec1603a205cbc6"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/0. Burp Suite - The Basics.md": {
-    "modified": "2025-11-22T00:47:14",
-    "hash": "c67adf0e5a78f924d089f1a17f4789e3d65cf35db55775bc9e3b2e047fe78b66"
+    "modified": "2025-12-10T19:02:24",
+    "hash": "dad7673cfc310075e33432e2deef7bf2ede13f732208b4fcc60617bda3053d0f"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redirección.md": {
     "modified": "2025-11-22T00:47:14",
@@ -6896,8 +6896,8 @@
     "hash": "7dc85b478d0fc895405001e63d461c70d40ecbe060c1f07db363e500d178dc0e"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Web Application Pentesting.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "dc51e9fb832b9ded7a3d4a8e3cd13907eafa50f5ce9d0a978aafa4408c9b8d87"
+    "modified": "2025-12-10T19:02:24",
+    "hash": "3d195c1abff19b4701b9fe61ae8c8b66133c9677122bff7ad1afa57ab0e2155a"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/5. OWASP Top 10 - 2025.md": {
     "modified": "2025-12-02T00:51:52",
@@ -6964,8 +6964,8 @@
     "hash": "3dbc8be060a37ec0dd2fae69fcc6d907fdc560e1ab831078c642213564ed8895"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Authentication.md": {
-    "modified": "2025-12-02T00:51:52",
-    "hash": "99f3a74b66d579098b22945129843e9bd9ad7f0b4d70f9791404b9398b6b25c6"
+    "modified": "2025-12-10T19:02:25",
+    "hash": "23e7fc0fd6a91e2bbeaa417e8f3bb16f9835b82861cfae61ca997225916d1401"
   },
   "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Enumeration & Brute Force/4. Exploiting Vulnerable Password Reset Logic.md": {
     "modified": "2025-12-03T00:51:44",
@@ -7112,8 +7112,8 @@
     "hash": "c61486ceb381abfd757b627c96f80303a1feade1b85ead3e63c400995d119096"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/0. Day 2 Machine.md": {
-    "modified": "2025-12-04T00:51:46",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-10T19:02:24",
+    "hash": "fb3b0ac3829f0b8fb2ba43e8e6d4542bdc29336165220877d58f4cb7a8805bc8"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/2. Phishing Exercise for TBFC.md": {
     "modified": "2025-12-04T00:51:46",
@@ -7364,8 +7364,8 @@
     "hash": "fa0b206a0a625ba38592a6bb6937f21f863295e4da41d1cdb8ef370a3a5d66c1"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/0. Day 3 Machine.md": {
-    "modified": "2025-12-06T00:48:47",
-    "hash": "c1e51c37367c7ea495a7d34028c4298619ba4b0bf36b422b493eb47667ea1829"
+    "modified": "2025-12-10T19:02:24",
+    "hash": "51251a65c85c56ea069f69b7e787af856ca141f49bfac4c8d4f1f5573afe8159"
   },
   "Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/1. Introduction.md": {
     "modified": "2025-12-06T00:48:47",
@@ -7374,5 +7374,565 @@
   "Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/2. Analysing Logs with Splunk.md": {
     "modified": "2025-12-09T00:52:02",
     "hash": "eaef80e61380a6c4888459da0677e3ed196b4d12d3531424501f49a8499068e0"
+  },
+  "Ciberseguridad/0. Ciberseguridad.md": {
+    "modified": "2025-12-10T19:02:24",
+    "hash": "feb1a156fdb58f9b4bef7c3ccc06a664150d4211aa271db9ad106f731bd3d9a3"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
+    "modified": "2025-12-10T19:02:24",
+    "hash": "8297b6c4bb035793aeeeb193430510e82d6717f58bea17fe86e25c389763c8ab"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/1. Getting the Flags.md": {
+    "modified": "2025-12-10T19:02:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/1. Getting the Flags.md": {
+    "modified": "2025-12-10T19:02:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer.md": {
+    "modified": "2025-12-10T19:02:24",
+    "hash": "33a79c2d7b27b313960a644f28f6944450c7282e6a21e79e5bbe4834212884d9"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/7. Include/1. Getting the Flags.md": {
+    "modified": "2025-12-10T19:02:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include.md": {
+    "modified": "2025-12-10T19:02:24",
+    "hash": "4369afbf7d90eb216851243a0b5c1d511baea8dea2dc875586aeedc4350fd977"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redireccion.md": {
+    "modified": "2025-12-10T19:02:24",
+    "hash": "514e7079c929d3e95608378c64b7c7a75079b6a25715d9684f5bae65befcbca6"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. Advanced Server-Side Attacks.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "1fa2ee5b55c5f97fb50bf9616e0d8dfb36755d73b01670b836345d7721bd2186"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. Advanced Client-Side Attacks.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "c5b96a458745927568cf1dd6867f6601c358abb41d71da99b7f4a86078b36a10"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. Injection Attacks.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "8abfe739342ec779cf80a2c2ef58a4e8aa2e1c42eecde18bab42a6a68bacbaad"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/5. HTTP Request Smuggling.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/5. LFI2RCE - Session Files.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/6. LFI2RCE - Log Poisoning.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/7. LFI2RCE - Wrappers.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/4. Base Directory Breakouts.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/8. Conclusion.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/2. File Inclusion Types.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/3. PHP Wrappers.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/1. Web Application Architecture.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/0. File Inclusion and Path Traversal.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "32ebaa55c7ef716a2c405520d531aa4e6ae467bbadd2be8ffd8cb718ab96893c"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/3. How it Works.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/8. Mitigation Measures.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/5. Exploitation - Property Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/2. Essential Recap.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/6. Exploitation - Denial of Service.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/7. Automating the Process.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/4. Exploitation - XSS.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/0. Prototype Pollution.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "8c40233633ac94b1adb92233c7d1f24035bff279b5b136181cc7f769f2de6fa7"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/4. Race Conditions/0. Race Conditions.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "efbd67b6bfb8b53431c42087b27bd2b253f580af526c8b184c302c595567f8e5"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/4. Race Conditions/1. Redireccion.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "adf0d54b9b89ba5c1a4bf3c81fd1dd78c870878b3a28e27e7ca00243d5b83680"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/6. Include/1. Redirection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "5a8b1b3b9cd67709adf2ec74b24aacab5921ff1d50f9495fe72d3b747726c159"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/6. Include/0. Include.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "348562eb1dc6165a9ff7b0bf5a44c8dc13757240f14e861fea63c35e5d067d6b"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/2. Anatomy of SSRF Attack.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/5. Types of SSRF - Blind.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/4. Types of SSRF - Basic - continued.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/3. Types of SSRF - Basic.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/6. A Classic Example - Crashing the Server.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/7. Remedial Measures.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/0. SSRF.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "4afc644cb507378e6ee7d0432e59b7dfeedebb02f5b95afa36f91d74e31140c3"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/5. Exploitation - Update Properties.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/3. Serialisation Formats.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/2. Some Important Concepts.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/4. Identification.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/0. Insecure Deserialisation.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "bf13d5734ffada6b0eec6246a7f2b8ee63542a21664d66738397138abf70a4af"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/8. Mitigation Measures.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/7. Automation Scripts.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/6. Exploitation - Object Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/2. Terminology and Types.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "2f6ade247028075f5968bca5b0257a74af5a3c01c72a90b5d447f2822afc1c55"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/4. Reflected XSS.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "4beea428bef383ae010640cc284f3617b946dc2acda98d92d229d47a77cd9523"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/3. Causes and Implications.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "9f4ff0638d6c3a1ea2db8b1ff191d1829e5c106bd871e0279320f52105ad9d60"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/6. Stored XSS.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/7. Vulnerable Web Application 2.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/9. Contexxt and Evasion.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/8. DOM-Based XSS.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/5. Vulnerable Web Application 1.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/0. XSS.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "c9f84e1f18d8aae84c69d5b8bae839f14f0c463bf2bcc1e130f3f53409b209d2"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "1890df80de3f292a8c0b272132bbd0760cb690c50217a56d45abbfefdd47cf40"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/4. Filter Evasion Techniques.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/3. Second-Order SQL Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/8. Automation.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/9. Best Practices.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/2. Quick Recap.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/5. Filter Evasion Techniques - continued.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/6. Out-of-band SQL Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/7. Other Techniques.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/0. Advanced SQL Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "d931cc8c6a3cdb6761280edcf6ed6ac5449f1f912f1cee428b9f6b2984a73364"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/6. ORM Injection - Vulnerable Implementation.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/7. Best Practices.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/3. How ORM Works.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/2. Understanding ORM.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/0. ORM Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "5281725e2b708b8df14e4afe5be0eaf10a2a83e6a9664623abaab55b8fc03bc9"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/4. Identifying ORM Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/5. ORM Injection - Weak Implementation.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/5. Exploiting XXE - Out-of-Band.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/3. XML Parsing Mechanisms.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/6. SSRF and XXE.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/2. Exploring XML.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/0. XXE Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "5e45cfaecb170f9de440e9a6e624d6de3abd297497618ee4536ecd375b4d3736"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/4. Exploiting XXE - In-Band.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/8. Conclusion.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/7. Mitigation.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/4. Injection Fundamentals.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/5. Exploiting LDAP.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/3. Search Queries.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/6. Blind LDAP Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/7. Automating the Exploitation.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/0. LDAP Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "c5e0bb6ffb2c2190cf8cf428fab54b114abb55985d97be7f110b4a0cbdd7a5b1"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/2. Structure.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/7. Injectics/0. Injectics.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "13680f591e12448e11cef450423684e079c6bccbd1340191ca73e2777ffe2f9a"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/7. Injectics/1. Redirection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "5968889e82b0da73fb359ae89a349373c72b3b11ac5a66fcc373457297b6df65"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/0. NoSQL Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "f778ddaaef21bca14c8166f99ee3abefbba87e01b6c0c416a1ccef98af8c0ef4"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/3. Operator Injection - Bypassing the Login Screen.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/4. Operator Injection - Logging in as Other Users.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/5. Operator Injection - Extracting Users Passwords.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/2. NoSQL Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/1. What is NoSQL.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/6. Syntax Injection - Identification and Data Extraction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/9. Mitigation.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/0. Server-Side Template Injection.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "0785c00df4431800d72f8da1285ebe150bf75f4126097accf8d855d9f40123d8"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/3. Template Engines.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/5. NodeJS - Pug.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/7. Automating the Exploitation.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/2. SSTI Overview.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/6. Python - Jinja2.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/8. Extra-Mile Challenge.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/4. PHP - Smarty.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/1. Introduction.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/4. Practical - OTP Leakage.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/0. Multi-Factor Authentication.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "eb8192765e20be851fd08636aa7e0e579a976e09c64443096d72e7b5e1d3364e"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/1. How MFA Works.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/5. Practical - Insecure Coding.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/6. Practical Beating the Auto-Logout Feature.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/3. Common Vulnerabilities in MFA.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/2. Implementations and Applications.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/1. Key Concepts.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/8. Other Vulnerabilities and Evolution of OAuth 2.1.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/7. Exploiting OAuth - Implicit Grant Flow.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/4. Identifying the OAuth Services.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/0. OAuth Vulnerabilities.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "9501c787af9ac2a8455418eaca224dc160638d3b6796924659c2cc0f72632a2e"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/2. OAuth Grant Types.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/6. Exploiting OAuth - CSRF in OAuth.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/3. How OAuth Flow Works.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/5. Exploiting OAuth - Stealing OAuth Token.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/3. Sensitive Information Disclosure.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/4. Signature Validation Mistakes.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/2. JSON Web Tokens.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/5. JWT Lifetimes.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/1. Token-Based Authentication.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/0. JWT Security.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "263339a80ad45a8c74a30ba5af633f5d4d4a2eada5b0f6231f6dec0bd6dd8a2f"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/6. Cross-Service Relay Attacks.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/1. Redireccion.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "6147e899f4c2fef9774224fc0179947766ea9cad49c84a307e65417d81812088"
+  },
+  "Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/0. Hammer.md": {
+    "modified": "2025-12-10T19:02:25",
+    "hash": "fce27ed293df5fa2dfdb9220c4cdad8f7f9847e9b3a24128cd56bebf3a0b3253"
   }
 }

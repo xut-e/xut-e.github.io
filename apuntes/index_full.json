@@ -1,5 +1,13 @@
 [
   {
+    "title": "0. Ciberseguridad",
+    "path": "/apuntes/ciberseguridad/0-ciberseguridad/",
+    "src": "content/Ciberseguridad/Ciberseguridad/0. Ciberseguridad.md",
+    "breadcrumb": "Ciberseguridad",
+    "content": "1. [[0. Recursos Web]]\n2. [[0. THM]]\n3.",
+    "modified": "2025-12-10T19:02:24"
+  },
+  {
     "title": "0. Recursos Web",
     "path": "/apuntes/ciberseguridad/recursos-web/0-recursos-web/",
     "src": "content/Ciberseguridad/Ciberseguridad/Recursos Web/0. Recursos Web.md",
@@ -4220,8 +4228,8 @@
     "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/3-day-3/1-day-3-machine/0-day-3-machine/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/0. Day 3 Machine.md",
     "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 3. Day 3 > 1. Day 3 Machine",
-    "content": "[[Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/1. Introduction]]",
-    "modified": "2025-12-06T00:48:47"
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/3. Day 3/1. Day 3 Machine/1. Introduction]]\n[[2. Analysing Logs with Splunk]]",
+    "modified": "2025-12-10T19:02:24"
   },
   {
     "title": "1. Introduction",
@@ -4324,8 +4332,8 @@
     "path": "/apuntes/ciberseguridad/thm/advent-of-cyber/2025/2-day-2/1-day-2-machine/0-day-2-machine/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/0. Day 2 Machine.md",
     "breadcrumb": "Ciberseguridad > THM > Advent of Cyber > 2025 > 2. Day 2 > 1. Day 2 Machine",
-    "content": "",
-    "modified": "2025-12-04T00:51:46"
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/2. Day 2/1. Day 2 Machine/1. Introduction]]\n[[2. Phishing Exercise for TBFC]]",
+    "modified": "2025-12-10T19:02:24"
   },
   {
     "title": "2. Phishing Exercise for TBFC",
@@ -4348,8 +4356,8 @@
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6.",
-    "modified": "2025-11-24T20:06:19"
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9.",
+    "modified": "2025-12-10T19:02:24"
   },
   {
     "title": "3. Hard",
@@ -4374,6 +4382,22 @@
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 1. Easy",
     "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6.",
     "modified": "2025-11-24T20:06:19"
+  },
+  {
+    "title": "0. Injectics",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/8-injectics/0-injectics/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 8. Injectics",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/1. Getting the Flags]]",
+    "modified": "2025-12-10T19:02:24"
+  },
+  {
+    "title": "1. Getting the Flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/8-injectics/1-getting-the-flags/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/1. Getting the Flags.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 8. Injectics",
+    "content": "",
+    "modified": "2025-12-10T19:02:24"
   },
   {
     "title": "0. Ultra Tech",
@@ -4488,6 +4512,22 @@
     "modified": "2025-11-22T00:47:14"
   },
   {
+    "title": "1. Getting the Flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/6-hammer/1-getting-the-flags/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/1. Getting the Flags.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 6. Hammer",
+    "content": "",
+    "modified": "2025-12-10T19:02:24"
+  },
+  {
+    "title": "0. Hammer",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/6-hammer/0-hammer/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 6. Hammer",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/1. Getting the Flags]]",
+    "modified": "2025-12-10T19:02:24"
+  },
+  {
     "title": "0. Rabbit Store",
     "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/4-rabbit-store/0-rabbit-store/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/0. Rabbit Store.md",
@@ -4534,6 +4574,22 @@
     "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 2. Net Sec Challenge",
     "content": "Usa este reto para poner a prueba tus habilidades adquiridas en el módulo [[5. Network Security]]. Todas las preguntas pueden ser resueltas usando `nmap`, `telnet` y `hydra`.",
     "modified": "2025-11-22T00:47:14"
+  },
+  {
+    "title": "1. Getting the Flags",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/7-include/1-getting-the-flags/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/1. Getting the Flags.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 7. Include",
+    "content": "",
+    "modified": "2025-12-10T19:02:24"
+  },
+  {
+    "title": "0. Include",
+    "path": "/apuntes/ciberseguridad/thm/maquinas/2-medium/7-include/0-include/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include.md",
+    "breadcrumb": "Ciberseguridad > THM > Maquinas > 2. Medium > 7. Include",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/1. Getting the Flags]]",
+    "modified": "2025-12-10T19:02:24"
   },
   {
     "title": "2. Finding the flags",
@@ -4700,8 +4756,8 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-web-application-pentesting/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Web Application Pentesting.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting",
-    "content": "[[1. Authentication]]",
-    "modified": "2025-12-02T00:51:52"
+    "content": "[[1. Authentication]]\n[[2. Injection Attacks]]\n[[3. Advanced Server-Side Attacks]]\n[[4. Advanced Client-Side Attacks]]\n[[5. HTTP Request Smuggling]]",
+    "modified": "2025-12-10T19:02:24"
   },
   {
     "title": "2. Introduction to Web Hacking",
@@ -5420,16 +5476,16 @@
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/1-burp-suite-the-basics/0-burp-suite-the-basics/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/0. Burp Suite - The Basics.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 3. Burp Suite > 1. Burp Suite - The Basics",
-    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redirección]]",
-    "modified": "2025-11-22T00:47:14"
+    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redireccion]]",
+    "modified": "2025-12-10T19:02:24"
   },
   {
-    "title": "1. Redirección",
+    "title": "1. Redireccion",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/3-burp-suite/1-burp-suite-the-basics/1-redireccion/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redirección.md",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redireccion.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 3. Burp Suite > 1. Burp Suite - The Basics",
     "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 8. Web Hacking -> 4. Burp Suite - The Basics**",
-    "modified": "2025-11-22T00:47:14"
+    "modified": "2025-12-10T19:02:24"
   },
   {
     "title": "2. A01 - Broken Access Control",
@@ -7744,12 +7800,924 @@
     "modified": "2025-11-22T00:47:14"
   },
   {
+    "title": "3. Advanced Server-Side Attacks",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-advanced-server-side-attacks/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. Advanced Server-Side Attacks.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks",
+    "content": "1. [[0. Insecure Deserialisation]]\n2. [[0. SSRF]]\n3. [[0. File Inclusion and Path Traversal]]\n4. [[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/4. Race Conditions/0. Race Conditions]]\n5. [[0. Prototype Pollution]]\n6. [[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/6. Include/0. Include]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Advanced Client-Side Attacks",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-advanced-client-side-attacks/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. Advanced Client-Side Attacks.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks",
+    "content": "1. [[0. XSS]]\n2.",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Injection Attacks",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-injection-attacks/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. Injection Attacks.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks",
+    "content": "1. [[0. Advanced SQL Injection]]\n2. [[0. NoSQL Injection]]\n3. [[0. XXE Injection]]\n4. [[0. Server-Side Template Injection]]\n5. [[0. LDAP Injection]]\n6. [[0. ORM Injection]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
     "title": "1. Authentication",
     "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/1-authentication/",
     "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/1. Authentication.md",
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication",
-    "content": "1. [[0. Enumeration & Brute Force]]\n2. [[0. Session Management]]\n3.",
-    "modified": "2025-12-02T00:51:52"
+    "content": "1. [[0. Enumeration & Brute Force]]\n2. [[0. Session Management]]\n3. [[0. JWT Security]]\n4. [[0. OAuth Vulnerabilities]]\n5. [[0. Multi-Factor Authentication]]\n6. [[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/0. Hammer]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. HTTP Request Smuggling",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/5-http-request-smuggling/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/5. HTTP Request Smuggling.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. LFI2RCE - Session Files",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/5-lfi2rce-session-files/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/5. LFI2RCE - Session Files.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. LFI2RCE - Log Poisoning",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/6-lfi2rce-log-poisoning/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/6. LFI2RCE - Log Poisoning.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. LFI2RCE - Wrappers",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/7-lfi2rce-wrappers/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/7. LFI2RCE - Wrappers.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Base Directory Breakouts",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/4-base-directory-breakouts/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/4. Base Directory Breakouts.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/8-conclusion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/8. Conclusion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. File Inclusion Types",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/2-file-inclusion-types/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/2. File Inclusion Types.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. PHP Wrappers",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/3-php-wrappers/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/3. PHP Wrappers.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Web Application Architecture",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/1-web-application-architecture/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/1. Web Application Architecture.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. File Inclusion and Path Traversal",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/0-file-inclusion-and-path-traversal/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/0. File Inclusion and Path Traversal.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
+    "content": "[[1. Web Application Architecture]]\n[[2. File Inclusion Types]]\n[[3. PHP Wrappers]]\n[[4. Base Directory Breakouts]]\n[[5. LFI2RCE - Session Files]]\n[[6. LFI2RCE - Log Poisoning]]\n[[7. LFI2RCE - Wrappers]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/8. Conclusion]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. How it Works",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/3-how-it-works/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/3. How it Works.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "8. Mitigation Measures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/8-mitigation-measures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/8. Mitigation Measures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Exploitation - Property Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/5-exploitation-property-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/5. Exploitation - Property Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Essential Recap",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/2-essential-recap/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/2. Essential Recap.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Exploitation - Denial of Service",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/6-exploitation-denial-of-service/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/6. Exploitation - Denial of Service.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Automating the Process",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/7-automating-the-process/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/7. Automating the Process.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Exploitation - XSS",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/4-exploitation-xss/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/4. Exploitation - XSS.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Prototype Pollution",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/0-prototype-pollution/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/0. Prototype Pollution.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/1. Introduction]]\n[[2. Essential Recap]]\n[[3. How it Works]]\n[[4. Exploitation - XSS]]\n[[5. Exploitation - Property Injection]]\n[[6. Exploitation - Denial of Service]]\n[[7. Automating the Process]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/8. Mitigation Measures]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Race Conditions",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/4-race-conditions/0-race-conditions/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/4. Race Conditions/0. Race Conditions.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 4. Race Conditions",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/9. Race Conditions/0. Race Conditions]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/4. Race Conditions/1. Redireccion]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/4-race-conditions/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/4. Race Conditions/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 4. Race Conditions",
+    "content": "Para ver este curso ve a **THM -> 1. Career -> 2. Penetration Tester -> 1. Jr Penetration Tester -> 3. Introduction to Web Hacking -> 9. Race Conditions**",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/6-include/1-redirection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/6. Include/1. Redirection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 6. Include",
+    "content": "Para ver este curso ve a **THM -> Maquinas/2. Medium -> 7. Include -> 1. Getting the Flags**",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Include",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/6-include/0-include/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/6. Include/0. Include.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 6. Include",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/6. Include/1. Redirection]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Anatomy of SSRF Attack",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/2-anatomy-of-ssrf-attack/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/2. Anatomy of SSRF Attack.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 2. SSRF",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Types of SSRF - Blind",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/5-types-of-ssrf-blind/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/5. Types of SSRF - Blind.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 2. SSRF",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Types of SSRF - Basic - continued",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/4-types-of-ssrf-basic-continued/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/4. Types of SSRF - Basic - continued.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 2. SSRF",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Types of SSRF - Basic",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/3-types-of-ssrf-basic/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/3. Types of SSRF - Basic.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 2. SSRF",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. A Classic Example - Crashing the Server",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/6-a-classic-example-crashing-the-server/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/6. A Classic Example - Crashing the Server.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 2. SSRF",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Remedial Measures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/7-remedial-measures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/7. Remedial Measures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 2. SSRF",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. SSRF",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/0-ssrf/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/0. SSRF.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 2. SSRF",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/1. Introduction]]\n[[2. Anatomy of SSRF Attack]]\n[[3. Types of SSRF - Basic]]\n[[4. Types of SSRF - Basic - continued]]\n[[5. Types of SSRF - Blind]]\n[[6. A Classic Example - Crashing the Server]]\n[[7. Remedial Measures]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/2. SSRF/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 2. SSRF",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Exploitation - Update Properties",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/5-exploitation-update-properties/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/5. Exploitation - Update Properties.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Serialisation Formats",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/3-serialisation-formats/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/3. Serialisation Formats.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Some Important Concepts",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/2-some-important-concepts/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/2. Some Important Concepts.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Identification",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/4-identification/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/4. Identification.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Insecure Deserialisation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/0-insecure-deserialisation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/0. Insecure Deserialisation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/1. Introduction]]\n[[2. Some Important Concepts]]\n[[3. Serialisation Formats]]\n[[4. Identification]]\n[[5. Exploitation - Update Properties]]\n[[6. Exploitation - Object Injection]]\n[[7. Automation Scripts]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/8. Mitigation Measures]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "8. Mitigation Measures",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/8-mitigation-measures/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/8. Mitigation Measures.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Automation Scripts",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/7-automation-scripts/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/7. Automation Scripts.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Exploitation - Object Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/6-exploitation-object-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/6. Exploitation - Object Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Terminology and Types",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/2-terminology-and-types/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/2. Terminology and Types.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "XSS es una vulnerabilidad que permite al atacante inyectar scripts maliciosos en una página web benigna vista por otro usuario. Por consecuencia, sobrepasan el **Same-Origin Policy (SOP)**, que es un mecanismo de seguridad para prevenir que scripts maliciosos de una página que obtengan acceso a información sensible en otra página.\n\n-------------------------------\n<h2>JavaScript para XSS</h2>\nSe requiere conocimiento básico sobre JavaScript para entender los exploits XSS y adaptarlos a nuestras necesidades. XSS es un ataque del lado del clliente que toma lugar en el navegador del objetivo. Diferentes navegadores procesan los trozos de código de manera diferente, por lo que un exploit puede funcionar en un navegador mientras que otro no.\n\nSi quieres experimenta con JS en tu navegador abre la consola con F12. O con los siguientes atajos:\n\n- En Firefox, presiona Ctrl + Shift + K\n- En Google Chrome, presiona Ctrl + Shift + J\n- En Safari, presiona Command + Option + J\n\nVeamos algunas funciones esenciales:\n\n- **Alert:** Puedes usar `alert(1)` o `alert(\"XSS\")` para mostrar una alerta en el navegador, como un pop-up.\n- **Console log:** Puedes usar `console.log(1)` o `console.log(\"text\")` para mostrar lo que queramos en la consola.\n- **Encoding:** La función `btoa(\"string\")` puede usarse para encodear una string a base64. La función inversa es `atob(\"base64\")`.\n\nAdemás puedes experimentar con mostrar valores como `document.cookie` con `alert(document.cookie)`.\n\n------------------------------------\n<h2>Tipos de XSS</h2>\nPara repasar lo que ya sabemos, hay tres tipos de XSS principales:\n\n- **Reflected XSS:** Este ataque recae en que el input controlado por el usuario sea reflejado en la web. Por ejemplo si buscas un término y la página lo muestra escrito en el HTML.\n- **Stored XSS:** Recae en que el input del usuario sea guardado en la base de datos de la página web. Por ejemplo si los usuarios pueden escribir reseñas y se muestran en la página a otros usuarios.\n- **DOM-Based XSS:** Este ataque explota vulnerabilidades en el Document Object Model (DOM) para manipular los elementos de la web existente sin necesitar ser reflejados o guardados en el servidor. Es la menos común.",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Reflected XSS",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/4-reflected-xss/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/4. Reflected XSS.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "El XSS reflejado es un tipo de vulnerabilidad XSS donde un script malicioso es reflejado en el navegador del usuario, normalmente vía una URL construida o formulario de subida. Considera una query de búsqueda que contenga `<script>alert(document.cookie)</script>`. Muchos usuarios no sospecharían de dicha URL incluso si la miraran de cerca. Si se procesa por un aplicación vulnerable, será ejecutada en el contexto del usuario.",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Causes and Implications",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/3-causes-and-implications/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/3. Causes and Implications.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "<h2>¿Qué Hace Posible el XSS?</h2>\nHay muchas razones por las que todavía se ven vulnerabilidades XSS en las páginas Web. Debajo una lista de ellas.\n\n<h4>Insufficient Input Validation and Sanitization</h4>\nLas aplicaciones web aceptan input del usuario vía formularios y la usan en la generación dinámica de páginas HTML. Consecuentemente, los scripts maliciosos pueden ser incrustados como parte de un input legítimo y ser eventualmente ejecutados por el navegador a no ser que se saniticen correctamente.\n<h4>Lack of Output Encoding</h4>\nEl usuario puede usar varios caracteres para alterar cómo el navegador web procesa y muestra una página. Por la parte de HTML es crítico encodear correctamente caracteres como `<`, `>`, `\"`, `'` y `&`. Para JavaScript requieren especial atención `'`, `\"` y `\\`. \n<h4>Improper Use of Security Headers</h4>\nVarios headers de seguridad pueden ayudar a mitigar las vulnerabilidades XSS. Por ejemplo, Consent Security Policy (SCP) mitiga riesgos XSS definiendo qué fuentes son confiadas por scripts ejecutables. Un SCP mal configurado o con políticas muy permisibas o uso inadecuado de `unsafe-inline` o `unsafe-eval` puede ser más fácilmente vulnerado.\n<h4>Framework and Language Vulnerabilities</h4>\nAlgunos frameworks antiguos no ofrecen mecanismos de seguridad contra XSS y otros tienen vulnerabilidades XSS no parcheadas. Los frameworks modernos automáticamente escapan XSS por diseño y parchean cualquier vulnerabilidad descubierta.\n<h4>Third-Party Libraries</h4>\nIntegrar librerías de terceros en una aplicación web puede introducir vulnerabilidades XSS, incluso si la aplicaciión en sí no es vulnerable.\n\n---------------------------------------\n<h2>Implicaciones del XSS</h2>\nHay muchas implicaciones de XSS. Debajo una lista de ellas:\n\n<h4>Session Hijacking</h4>\nUn XSS puede ser usado para robar cookies de sesión, con la que los atacantes pueden tomar control de ella.\n<h4>Phissing and Credential Theft</h4>\nUsando XSS, los atacantes pueden presentar un prompt de login falso al usuario.\n<h4>Social Engineering</h4>\nUsando XSS, un atacante puede crear un pop-up o alerta de apariencia legítima en una web\n<h4>Content Manipulation and Defacement</h4>\nAdemás puede hacerse para causar daños de reputacion, etc.\n<h4>Data Exfiltration</h4>\nPuede acceder y filtrar información  como datos personales o información financiera.\n<h4>Malware Installation</h4>\nUn atacante sofisticado puede usar XSS para esparcir malware.",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Stored XSS",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/6-stored-xss/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/6. Stored XSS.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Vulnerable Web Application 2",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/7-vulnerable-web-application-2/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/7. Vulnerable Web Application 2.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "9. Contexxt and Evasion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/9-contexxt-and-evasion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/9. Contexxt and Evasion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "8. DOM-Based XSS",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/8-dom-based-xss/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/8. DOM-Based XSS.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Vulnerable Web Application 1",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/5-vulnerable-web-application-1/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/5. Vulnerable Web Application 1.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. XSS",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/0-xss/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/0. XSS.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/1. Introduction]]\n[[2. Terminology and Types]]\n[[3. Causes and Implications]]\n[[4. Reflected XSS]]\n[[5. Vulnerable Web Application 1]]\n[[6. Stored XSS]]\n[[7. Vulnerable Web Application 2]]\n[[8. DOM-Based XSS]]\n[[9. Contexxt and Evasion]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
+    "content": "El cross-site scripting sigue siendo una de las vulnerabilidades más comunes que acechan aplicaciones web hoy en día. Dependen de inyectar un script malicioso en un sitio benigno para que se ejecute en el navegador del usuario.\n\nUna de las primeras vulnerabilidades XSS fue reconocida en 1999 y llevó a CERT advisory [CA-2000-02](https://vuls.cert.org/confluence/display/historical/CERT+Advisory+CA-2000-02+Malicious+HTML+Tags+Embedded+in+Client+Web+Requests). Durante las últimas décadas varias prácticas de seguridad se han convertido parte de los frameworks de aplicación, protegiendo contra muchas vulnerabilidades XSS por defecto, aunque también ha crecido la sofisticación de los ataques.\n\nSe descubren y explotan vulnerabilidades XSS mensualmente. En el OWASP Top 10 de 2021, se clasificó tercera.\n\n--------------------------------------\n<h2>Pre-requisitos</h2>\n- [[Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/0. HTTP in Detail]]\n- [[Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n- [[0. JavaScript Essentials]]\n- [[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/0. Intro to Cross-site Scripting]]\n\n-----------------------------------\n<h2>Objetivos de Aprendizaje</h2>\nAl completar esta unidad se espera haber ganado conocimientos más en profundidad sobre:\n\n- Reflected XSS\n- Stored XSS\n- DOM-Based XSS\n- Cómo protegerse contra el XSS",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Filter Evasion Techniques",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/4-filter-evasion-techniques/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/4. Filter Evasion Techniques.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Second-Order SQL Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/3-second-order-sql-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/3. Second-Order SQL Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "8. Automation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/8-automation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/8. Automation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "9. Best Practices",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/9-best-practices/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/9. Best Practices.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Quick Recap",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/2-quick-recap/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/2. Quick Recap.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Filter Evasion Techniques - continued",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/5-filter-evasion-techniques-continued/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/5. Filter Evasion Techniques - continued.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Out-of-band SQL Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/6-out-of-band-sql-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/6. Out-of-band SQL Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Other Techniques",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/7-other-techniques/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/7. Other Techniques.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Advanced SQL Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/0-advanced-sql-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/0. Advanced SQL Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/1. Introduction]]\n[[2. Quick Recap]]\n[[3. Second-Order SQL Injection]]\n[[4. Filter Evasion Techniques]]\n[[5. Filter Evasion Techniques - continued]]\n[[6. Out-of-band SQL Injection]]\n[[7. Other Techniques]]\n[[8. Automation]]\n[[9. Best Practices]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. ORM Injection - Vulnerable Implementation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/6-orm-injection/6-orm-injection-vulnerable-implementation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/6. ORM Injection - Vulnerable Implementation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 6. ORM Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Best Practices",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/6-orm-injection/7-best-practices/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/7. Best Practices.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 6. ORM Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. How ORM Works",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/6-orm-injection/3-how-orm-works/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/3. How ORM Works.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 6. ORM Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Understanding ORM",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/6-orm-injection/2-understanding-orm/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/2. Understanding ORM.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 6. ORM Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. ORM Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/6-orm-injection/0-orm-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/0. ORM Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 6. ORM Injection",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/1. Introduction]]\n[[2. Understanding ORM]]\n[[3. How ORM Works]]\n[[4. Identifying ORM Injection]]\n[[5. ORM Injection - Weak Implementation]]\n[[6. ORM Injection - Vulnerable Implementation]]\n[[7. Best Practices]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Identifying ORM Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/6-orm-injection/4-identifying-orm-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/4. Identifying ORM Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 6. ORM Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. ORM Injection - Weak Implementation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/6-orm-injection/5-orm-injection-weak-implementation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/5. ORM Injection - Weak Implementation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 6. ORM Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/6-orm-injection/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/6. ORM Injection/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 6. ORM Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Exploiting XXE - Out-of-Band",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/5-exploiting-xxe-out-of-band/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/5. Exploiting XXE - Out-of-Band.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. XML Parsing Mechanisms",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/3-xml-parsing-mechanisms/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/3. XML Parsing Mechanisms.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. SSRF and XXE",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/6-ssrf-and-xxe/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/6. SSRF and XXE.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Exploring XML",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/2-exploring-xml/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/2. Exploring XML.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. XXE Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/0-xxe-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/0. XXE Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/1. Introduction]]\n[[2. Exploring XML]]\n[[3. XML Parsing Mechanisms]]\n[[4. Exploiting XXE - In-Band]]\n[[5. Exploiting XXE - Out-of-Band]]\n[[6. SSRF and XXE]]\n[[7. Mitigation]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/8. Conclusion]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Exploiting XXE - In-Band",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/4-exploiting-xxe-in-band/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/4. Exploiting XXE - In-Band.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/8-conclusion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/8. Conclusion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Mitigation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/7-mitigation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/7. Mitigation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/3-xxe-injection/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 3. XXE Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Injection Fundamentals",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/5-ldap-injection/4-injection-fundamentals/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/4. Injection Fundamentals.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 5. LDAP Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Exploiting LDAP",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/5-ldap-injection/5-exploiting-ldap/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/5. Exploiting LDAP.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 5. LDAP Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Search Queries",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/5-ldap-injection/3-search-queries/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/3. Search Queries.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 5. LDAP Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Blind LDAP Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/5-ldap-injection/6-blind-ldap-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/6. Blind LDAP Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 5. LDAP Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Automating the Exploitation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/5-ldap-injection/7-automating-the-exploitation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/7. Automating the Exploitation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 5. LDAP Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. LDAP Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/5-ldap-injection/0-ldap-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/0. LDAP Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 5. LDAP Injection",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/1. Introduction]]\n[[2. Structure]]\n[[3. Search Queries]]\n[[4. Injection Fundamentals]]\n[[5. Exploiting LDAP]]\n[[6. Blind LDAP Injection]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/7. Automating the Exploitation]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Structure",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/5-ldap-injection/2-structure/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/2. Structure.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 5. LDAP Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/5-ldap-injection/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 5. LDAP Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Injectics",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/7-injectics/0-injectics/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/7. Injectics/0. Injectics.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 7. Injectics",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/7. Injectics/1. Redirection]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/7-injectics/1-redirection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/7. Injectics/1. Redirection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 7. Injectics",
+    "content": "Para ver este curso ve a **THM -> Maquinas/2. Medium -> 8. Injectics -> 1. Getting the Flags**",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. NoSQL Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-nosql-injection/0-nosql-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/0. NoSQL Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 2. NoSQL Injection",
+    "content": "[[1. What is NoSQL]]\n[[2. NoSQL Injection]]\n[[3. Operator Injection - Bypassing the Login Screen]]\n[[4. Operator Injection - Logging in as Other Users]]\n[[5. Operator Injection - Extracting Users Passwords]]\n[[6. Syntax Injection - Identification and Data Extraction]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Operator Injection - Bypassing the Login Screen",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-nosql-injection/3-operator-injection-bypassing-the-login-screen/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/3. Operator Injection - Bypassing the Login Screen.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 2. NoSQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Operator Injection - Logging in as Other Users",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-nosql-injection/4-operator-injection-logging-in-as-other-users/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/4. Operator Injection - Logging in as Other Users.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 2. NoSQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Operator Injection - Extracting Users Passwords",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-nosql-injection/5-operator-injection-extracting-users-passwords/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/5. Operator Injection - Extracting Users Passwords.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 2. NoSQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. NoSQL Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-nosql-injection/2-nosql-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/2. NoSQL Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 2. NoSQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. What is NoSQL",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-nosql-injection/1-what-is-nosql/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/1. What is NoSQL.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 2. NoSQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Syntax Injection - Identification and Data Extraction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-nosql-injection/6-syntax-injection-identification-and-data-extraction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. NoSQL Injection/6. Syntax Injection - Identification and Data Extraction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 2. NoSQL Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "9. Mitigation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/9-mitigation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/9. Mitigation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Server-Side Template Injection",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/0-server-side-template-injection/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/0. Server-Side Template Injection.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/1. Introduction]]\n[[2. SSTI Overview]]\n[[3. Template Engines]]\n[[4. PHP - Smarty]]\n[[5. NodeJS - Pug]]\n[[6. Python - Jinja2]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/7. Automating the Exploitation]]\n[[8. Extra-Mile Challenge]]\n[[9. Mitigation]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Template Engines",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/3-template-engines/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/3. Template Engines.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. NodeJS - Pug",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/5-nodejs-pug/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/5. NodeJS - Pug.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Automating the Exploitation",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/7-automating-the-exploitation/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/7. Automating the Exploitation.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. SSTI Overview",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/2-ssti-overview/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/2. SSTI Overview.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Python - Jinja2",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/6-python-jinja2/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/6. Python - Jinja2.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "8. Extra-Mile Challenge",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/8-extra-mile-challenge/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/8. Extra-Mile Challenge.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. PHP - Smarty",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/4-php-smarty/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/4. PHP - Smarty.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/4-server-side-template-injection/1-introduction/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/1. Introduction.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 4. Server-Side Template Injection",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Practical - OTP Leakage",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/5-multi-factor-authentication/4-practical-otp-leakage/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/4. Practical - OTP Leakage.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 5. Multi-Factor Authentication",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Multi-Factor Authentication",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/5-multi-factor-authentication/0-multi-factor-authentication/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/0. Multi-Factor Authentication.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 5. Multi-Factor Authentication",
+    "content": "[[1. How MFA Works]]\n[[2. Implementations and Applications]]\n[[3. Common Vulnerabilities in MFA]]\n[[4. Practical - OTP Leakage]]\n[[5. Practical - Insecure Coding]]\n[[6. Practical Beating the Auto-Logout Feature]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. How MFA Works",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/5-multi-factor-authentication/1-how-mfa-works/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/1. How MFA Works.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 5. Multi-Factor Authentication",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Practical - Insecure Coding",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/5-multi-factor-authentication/5-practical-insecure-coding/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/5. Practical - Insecure Coding.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 5. Multi-Factor Authentication",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Practical Beating the Auto-Logout Feature",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/5-multi-factor-authentication/6-practical-beating-the-auto-logout-feature/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/6. Practical Beating the Auto-Logout Feature.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 5. Multi-Factor Authentication",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Common Vulnerabilities in MFA",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/5-multi-factor-authentication/3-common-vulnerabilities-in-mfa/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/3. Common Vulnerabilities in MFA.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 5. Multi-Factor Authentication",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. Implementations and Applications",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/5-multi-factor-authentication/2-implementations-and-applications/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/2. Implementations and Applications.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 5. Multi-Factor Authentication",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
   },
   {
     "title": "4. Exploiting Vulnerable Password Reset Logic",
@@ -7862,5 +8830,149 @@
     "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 2. Session Management",
     "content": "En este tema aprenderemos sobre el manejo de sesiones. Date cuenta de que no das tu usuario y contraseña en cada interacción con la aplicación web. Esto es gracias al manejo de sesiones.\n\n-------------------------------------\n<h2>Pre-requisitos</h2>\n- [[2. Introduction to Web Hacking]]\n- [[0. Enumeration & Brute Force]]\n\n-----------------------------\n<h2>Objetivos de Aprendizaje</h2>\n- Entender lo que es el manejo de sesión.\n- Entender la diferencia entre la autentificación y autorización y cómo juegan su respectivo rol en el manejo de sesión.\n- Aprender sobre dos métodos principales de manejo de sesión.\n- Aprender sobre del ciclo de vida del manejo de sesión.\n- Aprender a explotar prácticamente las implementaciones de manejo de sesión.",
     "modified": "2025-12-03T00:51:44"
+  },
+  {
+    "title": "1. Key Concepts",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/1-key-concepts/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/1. Key Concepts.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "8. Other Vulnerabilities and Evolution of OAuth 2.1",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/8-other-vulnerabilities-and-evolution-of-oauth-2-1/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/8. Other Vulnerabilities and Evolution of OAuth 2.1.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "7. Exploiting OAuth - Implicit Grant Flow",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/7-exploiting-oauth-implicit-grant-flow/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/7. Exploiting OAuth - Implicit Grant Flow.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Identifying the OAuth Services",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/4-identifying-the-oauth-services/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/4. Identifying the OAuth Services.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. OAuth Vulnerabilities",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/0-oauth-vulnerabilities/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/0. OAuth Vulnerabilities.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "[[1. Key Concepts]]\n[[2. OAuth Grant Types]]\n[[3. How OAuth Flow Works]]\n[[4. Identifying the OAuth Services]]\n[[5. Exploiting OAuth - Stealing OAuth Token]]\n[[6. Exploiting OAuth - CSRF in OAuth]]\n[[7. Exploiting OAuth - Implicit Grant Flow]]\n[[8. Other Vulnerabilities and Evolution of OAuth 2.1]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. OAuth Grant Types",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/2-oauth-grant-types/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/2. OAuth Grant Types.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Exploiting OAuth - CSRF in OAuth",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/6-exploiting-oauth-csrf-in-oauth/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/6. Exploiting OAuth - CSRF in OAuth.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. How OAuth Flow Works",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/3-how-oauth-flow-works/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/3. How OAuth Flow Works.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. Exploiting OAuth - Stealing OAuth Token",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/5-exploiting-oauth-stealing-oauth-token/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/5. Exploiting OAuth - Stealing OAuth Token.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "3. Sensitive Information Disclosure",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/3-jwt-security/3-sensitive-information-disclosure/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/3. Sensitive Information Disclosure.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 3. JWT Security",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "4. Signature Validation Mistakes",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/3-jwt-security/4-signature-validation-mistakes/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/4. Signature Validation Mistakes.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 3. JWT Security",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "2. JSON Web Tokens",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/3-jwt-security/2-json-web-tokens/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/2. JSON Web Tokens.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 3. JWT Security",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "5. JWT Lifetimes",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/3-jwt-security/5-jwt-lifetimes/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/5. JWT Lifetimes.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 3. JWT Security",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Token-Based Authentication",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/3-jwt-security/1-token-based-authentication/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/1. Token-Based Authentication.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 3. JWT Security",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. JWT Security",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/3-jwt-security/0-jwt-security/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/0. JWT Security.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 3. JWT Security",
+    "content": "[[1. Token-Based Authentication]]\n[[2. JSON Web Tokens]]\n[[3. Sensitive Information Disclosure]]\n[[4. Signature Validation Mistakes]]\n[[5. JWT Lifetimes]]\n[[6. Cross-Service Relay Attacks]]",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "6. Cross-Service Relay Attacks",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/3-jwt-security/6-cross-service-relay-attacks/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/6. Cross-Service Relay Attacks.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 3. JWT Security",
+    "content": "",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "1. Redireccion",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/6-hammer/1-redireccion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/1. Redireccion.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 6. Hammer",
+    "content": "Para ver este curso ve a **THM -> Maquinas/2. Medium -> 6. Hammer -> 1. Getting the Flags**",
+    "modified": "2025-12-10T19:02:25"
+  },
+  {
+    "title": "0. Hammer",
+    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/6-hammer/0-hammer/",
+    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/0. Hammer.md",
+    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 6. Hammer",
+    "content": "[[Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n[[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/1. Redireccion]]",
+    "modified": "2025-12-10T19:02:25"
   }
 ]

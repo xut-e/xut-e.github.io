@@ -4,4 +4,4 @@ title: "0. Burp Suite - The Basics"
 ---
 
 **Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/0. Burp Suite - The Basics**
-**Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redirección**
+**Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/1. Burp Suite - The Basics/1. Redireccion**
