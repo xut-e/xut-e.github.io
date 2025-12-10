@@ -3,3 +3,36 @@ layout: apunte
 title: "3. Inject the Juice"
 ---
 
+!**Pasted image 20251210122841.png**
+
+Esta tarea se centrará en vulnerablidades de inyección. Son bastante peligrosas ya que pueden causar pérdida de información o denegar el servicio, potencialmente. Identificar puntos de inyección en una aplicación web suele ser sencillo ya que la mayoría de ellos devolverán un error. Hay muchos tipos de ataque de inyección. Algunos son:
+
+| Ataque            | Descripción                                                                                                                                                                                                    |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SQL Injection     | Es cuando un atacante introduce una query maliciosa para recuperar o alterar información de una base de datos o incluso iniciar sesión en cuentas.                                                             |
+| Command Injection | Es cuando las aplicaciones web toman el input del usuario y lo ejecutan como comandos de sistema.                                                                                                              |
+| Email Injection   | Permite a los usuarios maliciosos mandar emails sin autorización previa del servidor de email. Esto ocurre cuando los atacantes añaden información extra a los campos que el servidor no maneja correctamente. |
+
+En nuestro caso usaremos SQL Injection.
+
+------------------------------------------
+1. Inicia sesión en la cuenta de administrador.
+	1. Vamos a Login.
+	   !**Pasted image 20251210140330.png**
+	2. Abrimos Burp Suite e interceptamos una petición de login.
+	   !**Pasted image 20251210140907.png**
+	3. Empezamos a hacer pruebas.
+		1. Parece que el campo password no es inyectable.
+		   !**Pasted image 20251210141616.png**
+		2. El campo username por el contrario si que lo es.
+		   !**Pasted image 20251210141656.png**
+		3. Probamos a inyectar el usuario con el correo del admin.
+		   !**Pasted image 20251210142146.png**
+		   PArece que nos hemos autentificado.
+	4. Lo probamos sin Burp Suite.
+	   !**Pasted image 20251210142218.png**
+2. Inicia sesión en la cuenta de Bender.
+	1. Buscamos la dirección de correo de Bender.
+	   !**Pasted image 20251210142348.png**
+	2. Realizamos el mismo proceso y obtenemos la flag.
+	   !**Pasted image 20251210142454.png**
