@@ -1,12 +1,12 @@
 /* ============================================================
-   🔥 OBSIDIAN-LIKE PREPROCESSOR (versión final y estable)
+   🔥 OBSIDIAN-LIKE PREPROCESSOR (negrita en listas)
    ============================================================ */
 
 const ObsidianPreprocessor = {
 
   process(md) {
 
-    // Normalizar saltos y tabs → tabs = 4 espacios
+    // Normalizar saltos
     md = md.replace(/\r\n/g, "\n").replace(/\t/g, "    ");
 
     /* ============================================================
@@ -30,7 +30,7 @@ const ObsidianPreprocessor = {
     );
 
     /* ============================================================
-       2) PROTEGER INLINE CODE `...`
+       2) PROTEGER INLINE CODE `...` (pero NO usarlo luego en listas)
        ============================================================ */
 
     const INLINE = [];
@@ -42,7 +42,7 @@ const ObsidianPreprocessor = {
     });
 
     /* ============================================================
-       3) IMÁGENES Obsidian ![[file.png]]
+       3) Imágenes Obsidian
        ============================================================ */
 
     md = md.replace(/!\[\[(.+?)\]\]/g, (m, file) =>
@@ -52,21 +52,19 @@ const ObsidianPreprocessor = {
     );
 
     /* ============================================================
-       4) HR ---
+       4) HR
        ============================================================ */
 
     md = md.replace(/^[-]{3,}$/gm, "<hr>");
 
     /* ============================================================
-       🔄 5) RESTAURAR INLINE CODE COMO BACKTICKS (nunca <code>)
+       5) Restaurar inline code (solo backticks)
        ============================================================ */
 
-    md = md.replace(/@@INLINE(\d+)@@/g, (m, i) => {
-      return '`' + INLINE[i] + '`';
-    });
+    md = md.replace(/@@INLINE(\d+)@@/g, (m, i) => '`' + INLINE[i] + '`');
 
     /* ============================================================
-       🔄 6) RESTAURAR BLOQUES DE CÓDIGO TRIPLE
+       6) Restaurar bloques de código
        ============================================================ */
 
     md = md.replace(/@@BLOCK(\d+)@@/g, (m, i) => {
@@ -75,15 +73,15 @@ const ObsidianPreprocessor = {
     });
 
     /* ============================================================
-       7) CONVERTIR ENLACES [texto](url)
+       7) Enlaces markdown
        ============================================================ */
 
-    md = md.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, text, url) => {
-      return `<a href="${url.trim()}" target="_blank" rel="noopener">${text.trim()}</a>`;
-    });
+    md = md.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, text, url) =>
+      `<a href="${url.trim()}" target="_blank" rel="noopener">${text.trim()}</a>`
+    );
 
     /* ============================================================
-       8) PROCESAR LISTAS (AL FINAL)
+       8) PROCESADO MANUAL DE LISTAS
        ============================================================ */
 
     const lines = md.split("\n");
@@ -107,12 +105,20 @@ const ObsidianPreprocessor = {
       }
     }
 
+    function applyBold(text) {
+      return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    }
+
     for (let raw of lines) {
       const match = raw.match(/^( +)/);
       const spaces = match ? match[1].length : 0;
       const level = Math.floor(spaces / 4);
-      const trimmed = raw.trim();
+      let trimmed = raw.trim();
 
+      // aplicar negrita ANTES de envolver en HTML
+      trimmed = applyBold(trimmed);
+
+      /* ===== Ordered list ===== */
       const ol = trimmed.match(/^(\d+)\.\s+(.*)$/);
       if (ol) {
         close(level);
@@ -121,6 +127,7 @@ const ObsidianPreprocessor = {
         continue;
       }
 
+      /* ===== Unordered list ===== */
       const ul = trimmed.match(/^[-+*]\s+(.*)$/);
       if (ul) {
         close(level);
@@ -129,11 +136,13 @@ const ObsidianPreprocessor = {
         continue;
       }
 
+      /* ===== Texto dentro de lista ===== */
       if (stack.length > 0 && trimmed !== "") {
         out.push(`<p>${trimmed}</p>`);
         continue;
       }
 
+      /* ===== Línea normal ===== */
       close(0);
       out.push(trimmed);
     }
