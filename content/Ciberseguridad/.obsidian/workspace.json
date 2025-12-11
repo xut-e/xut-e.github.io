@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/9. Context and Evasion.md",
+                "file": "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/8. DOM-Based XSS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "9. Context and Evasion"
+              "title": "8. DOM-Based XSS"
             }
           }
         ]
@@ -169,8 +169,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "de843610a44737e0",
+  "active": "1eec5c27d911f731",
   "lastOpenFiles": [
+    "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/5. AH Dont Look.md",
+    "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/9. Context and Evasion.md",
+    "Ciberseguridad/Ciberseguridad/Z Imagenes/Pasted image 20251211174508.png",
+    "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/4. Who Broke my Lock.md",
     "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/8. DOM-Based XSS.md",
     "Ciberseguridad/Ciberseguridad/Z Imagenes/Pasted image 20251211171643.png",
     "Ciberseguridad/Ciberseguridad/Z Imagenes/Pasted image 20251211171231.png",
@@ -182,7 +186,6 @@
     "Ciberseguridad/Ciberseguridad/Z Imagenes/Pasted image 20251211163053.png",
     "Ciberseguridad/Ciberseguridad/Z Imagenes/Pasted image 20251211162846.png",
     "Ciberseguridad/Ciberseguridad/Z Imagenes/Pasted image 20251211162657.png",
-    "Ciberseguridad/Ciberseguridad/Z Imagenes/Pasted image 20251211162628.png",
     "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/8. Practical Example (Blind XSS).md",
     "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/6. Stored XSS.md",
     "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/1. Introduction.md",
@@ -204,10 +207,6 @@
     "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/3. Vulnerability I - Broken Object Level Authorisation (BOLA).md",
     "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/7. Vulnerability V - Broken Function Level Authorisation.md",
     "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/5. Vulnerability III - Excessive Data Exposure.md",
-    "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/4. Vulnerability II - Broken User Authentication (BUA).md",
-    "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/2. Understanding APIs - A Refresher.md",
-    "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/2. AS03 - Software Supply Chain Failures.md",
-    "Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/1. AS02 - Security Missconfigurations.md",
     "Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/2. Side Quest 1 Machine",
     "Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1/1. Flag Discovery",
     "Ciberseguridad/Ciberseguridad/THM/Advent of Cyber/2025/1. Day 1/2. Side Quest 1",
