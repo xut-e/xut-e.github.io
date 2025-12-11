@@ -1,0 +1,36 @@
+---
+layout: apunte
+title: "5. Telnet"
+---
+
+El protocolo TELNET (Teletype Network) fue desarrollado en 1969 para comunicarse con un sistema remoto vía CLI. Por esto, el comando `telnet` usa el protocolo TELNET para administración remota. Su puerto por defecto en el 23. Manda toda la información en texto plano. La alternativa segura es SSH.
+
+Sin embargo, el cliente de telnet puede ser usado para otros propósitos. Sabiendo que el cliente de telnet depende del protocolo TCP, puedes usarlo para conectarte a cualquier servicio y coger su banner. Usando el comando `telnet <IP> <PUERTO>` puedes conectarte a cualquier servicio TCP e incluso intercambiar algunos mensajes a no ser que use encriptación.
+
+Digamos que queremos conectarnos a un servidor web que escucha en el puerto 80. Podemos conectarnos a él y comunicarnos mediante el protocolo HTTP. Sólo necesitamos ejecutar un `GET / HTTP/1.1`. Para especificar una página en concreto la especificamos así: `GET /index.html HTTP/1.1`.
+
+>[!CAUTION] Para que no te de error deber definir un nombre para host, por ejemplo `host: example` y darle a Enter dos veces.
+
+```shell
+pentester@TryHackMe$ telnet MACHINE_IP 80 
+Trying MACHINE_IP... 
+Connected to MACHINE_IP. 
+Escape character is '^]'. 
+GET / HTTP/1.1 
+host: telnet  
+
+HTTP/1.1 200 OK 
+Server: nginx/1.6.2 
+Date: Tue, 17 Aug 2021 11:13:25 GMT 
+Content-Type: text/html 
+Content-Length: 867 
+Last-Modified: Tue, 17 Aug 2021 11:12:16 GMT 
+Connection: keep-alive 
+ETag: "611b9990-363" 
+Accept-Ranges: bytes    
+
+...
+```
+
+Es de nuestro particular interés el servidor y la versión del servicio, en nuestro caso ha respondido con `Server: nginx/1.6.2`.
+

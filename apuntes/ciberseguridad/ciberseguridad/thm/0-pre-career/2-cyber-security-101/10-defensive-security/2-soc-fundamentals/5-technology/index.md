@@ -1,0 +1,16 @@
+---
+layout: apunte
+title: "5. Technology"
+---
+
+Teniendo a la gente y los procesos correctos en su lugar nunca sería suficiente sin soluciones de seguridad para detección y respuesta. La porción de tecnología en los pilares del SOC se refiere a las soluciones de seguridad. Estas soluciones minimizan de forma eficiente el esfuerzo manual que realiza el equipo del SOC para detectar amenazas y responder a ellas.
+
+La red de una organización consiste en múltiples dispositivos y aplicaciones. Como equipo de seguridad, detectar y responder individualmente a amenazas en cada uno de estos, requeriría un esfuerzo y consumo de recursos importantes. Las soluciones de seguridad centralizan la información de los dispositivos o aplicaciones presentes en la red.
+
+Veamos algunas de estas soluciones:
+
+- **SIEM:** Security Information and Event Management es una herramienta popular usada en casi todos los entornos SOC. Esta recoge logs de varios dispositivos de red. Las reglas de detección se configuran en la solución SIEM, que contiene lógica para identificar actividad sospechosa y nos alerta en caso de match.
+- **EDR:** Endpoint Detection and Response ofrece al equipo del SOC con visibilidad de las actividades de los dispositivos en tiempo real y su historial. Opera a nivel de endpoint y ofrece respuestas automatizables.
+- **Firewall:** Funciona puramente para la seguridad de la red y actúa como una barrera entre la red interna y externa. Monitoriza tráfico entrante y saliente y filtra cualquier tráfico no autorizado mediante reglas lógicas. También tiene algunas funcionalidades de detección que nos ayudan a bloquear tráfico antes de que llegue a la red interna.
+
+Otras muchas soluciones de seguridad juegan un papel clave en el entorno SOC, como los antivirus, EPP (Endpoint Protection Platform), IDS/IPS (Intrusion Detection/Prevention System), XDR, SOAR (Security Orchestration Automation and Response) y más.

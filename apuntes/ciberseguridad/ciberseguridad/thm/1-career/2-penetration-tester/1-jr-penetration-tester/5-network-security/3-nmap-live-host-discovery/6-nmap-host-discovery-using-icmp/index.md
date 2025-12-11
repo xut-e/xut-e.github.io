@@ -1,0 +1,125 @@
+---
+layout: apunte
+title: "6. Nmap Host Discovery Using ICMP"
+---
+
+Podemos hacer ping a cada dirección IP en la red objetivo y ver quién responde. Aunque sería el enfoque más directo, no siempre es confiable. Muchos firewalls bloquean los paquetes ICMP echo (las nuevas versiones de MS Windows la bloquean por defecto). Recuerda que antes de una petición ICMP va una petición ARP.
+
+Para usar ICMP echo, añade la opción `-PE`.
+
+!**Pasted image 20251118232901.png**
+
+En el ejemplo de abajo podemos ver un ejemplo en el que mandaremos paquetes ICMP echo a cada dirección IP en la subred objetivo. Añadimos `-sn` para que no realice un escaneo de puertos.
+
+```shell
+pentester@TryHackMe$ sudo nmap -PE -sn 10.10.68.220/24  
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-09-02 10:16 BST 
+Nmap scan report for ip-10-10-68-50.eu-west-1.compute.internal (10.10.68.50) 
+Host is up (0.00017s latency). 
+MAC Address: 02:95:36:71:5B:87 (Unknown) 
+Nmap scan report for ip-10-10-68-52.eu-west-1.compute.internal (10.10.68.52) 
+Host is up (0.00017s latency). 
+MAC Address: 02:48:E8:BF:78:E7 (Unknown) 
+Nmap scan report for ip-10-10-68-77.eu-west-1.compute.internal (10.10.68.77) 
+Host is up (-0.100s latency). 
+MAC Address: 02:0F:0A:1D:76:35 (Unknown) 
+Nmap scan report for ip-10-10-68-110.eu-west-1.compute.internal (10.10.68.110) 
+Host is up (-0.10s latency). 
+MAC Address: 02:6B:50:E9:C2:91 (Unknown) 
+Nmap scan report for ip-10-10-68-140.eu-west-1.compute.internal (10.10.68.140) 
+Host is up (0.00021s latency). 
+MAC Address: 02:58:59:63:0B:6B (Unknown) 
+Nmap scan report for ip-10-10-68-142.eu-west-1.compute.internal (10.10.68.142) 
+Host is up (0.00016s latency). 
+MAC Address: 02:C6:41:51:0A:0F (Unknown) 
+Nmap scan report for ip-10-10-68-220.eu-west-1.compute.internal (10.10.68.220) 
+Host is up (0.00026s latency). 
+MAC Address: 02:25:3F:DB:EE:0B (Unknown) 
+Nmap scan report for ip-10-10-68-222.eu-west-1.compute.internal (10.10.68.222) 
+Host is up (0.00025s latency). 
+MAC Address: 02:28:B1:2E:B0:1B (Unknown) 
+Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
+```
+
+El output del escaneo muestra que 8 hosts están activos. Además, muestra sus direcciones MAC. No esperamos recibir direcciones MAC a no ser que estemos en la misma red por lo que el output de arriba revela que estamos en la misma subred ya que hemos recibido las respuestas ARP.
+
+Ahora realizaremos el mismo escaneo pero desde una máquina de otra subred.
+
+```shell
+pentester@TryHackMe$ sudo nmap -PE -sn 10.10.68.220/24  
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 12:16 EEST 
+Nmap scan report for 10.10.68.50 
+Host is up (0.12s latency). 
+Nmap scan report for 10.10.68.52 
+Host is up (0.12s latency). 
+Nmap scan report for 10.10.68.77 
+Host is up (0.11s latency). 
+Nmap scan report for 10.10.68.110 
+Host is up (0.11s latency). 
+Nmap scan report for 10.10.68.140 
+Host is up (0.11s latency). 
+Nmap scan report for 10.10.68.142 
+Host is up (0.11s latency). 
+Nmap scan report for 10.10.68.220 
+Host is up (0.11s latency). 
+Nmap scan report for 10.10.68.222 
+Host is up (0.11s latency). 
+Nmap done: 256 IP addresses (8 hosts up) scanned in 8.26 seconds
+```
+
+Si miras los paquetes de red usando una herramienta como Wireshark verás lo siguiente:
+
+!**Pasted image 20251118233427.png**
+
+Debido a que las peticiones ICMP Echo suelen ser bloqueadas, puedes considerar ICMP Timestamp o ICMP Address Mask para averiguar si está activo. Nmap usa estas, tipo 13 y 14, respectivamente, añadiendo la opción `-PP` para determinar si el host está activo.
+
+!**Pasted image 20251118233623.png**
+
+En el siguiente ejemplo ejecutamos esto mismo.
+
+```shell
+pentester@TryHackMe$ sudo nmap -PP -sn 10.10.68.220/24  
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 12:06 EEST 
+Nmap scan report for 10.10.68.50 
+Host is up (0.13s latency). 
+Nmap scan report for 10.10.68.52 
+Host is up (0.25s latency). 
+Nmap scan report for 10.10.68.77 
+Host is up (0.14s latency). 
+Nmap scan report for 10.10.68.110 
+Host is up (0.14s latency). 
+Nmap scan report for 10.10.68.140 
+Host is up (0.15s latency). 
+Nmap scan report for 10.10.68.209 
+Host is up (0.14s latency). 
+Nmap scan report for 10.10.68.220 
+Host is up (0.14s latency). 
+Nmap scan report for 10.10.68.222 
+Host is up (0.14s latency). 
+Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
+```
+
+Si capturamos los paquetes en Wireshark vemos lo siguiente:
+
+!**Pasted image 20251118233815.png**
+
+Nmap usa las queries de Address Mask (tipo 17) y su respuesta (tipo 18) con la opción `-PM`. de la siguiente manera.
+
+!**Pasted image 20251118233912.png**
+
+Aquí podemos ver un ejemplo. Aunque por escaneos pasados sabemos que está activo en este escaneo no devolvió nada. La razón es que hay un FireWall bloqueando este tipo de tráfico.
+
+```shell
+pentester@TryHackMe$ sudo nmap -PM -sn 10.10.68.220/24
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 12:13 EEST
+Nmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds
+```
+
+Aunque no obtuvimos respuesta, aquí podemos ver una captura del tráfico:
+
+!**Pasted image 20251118234053.png**
+

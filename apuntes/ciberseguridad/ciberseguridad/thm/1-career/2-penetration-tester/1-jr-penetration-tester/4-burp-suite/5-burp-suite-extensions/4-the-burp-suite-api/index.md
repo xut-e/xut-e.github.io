@@ -1,0 +1,18 @@
+---
+layout: apunte
+title: "4. The Burp Suite API"
+---
+
+En el módulo Extensions, tienes acceso a un amplio rango de endpoints API que te permiten crear e integrar tus propios módulos de Burp Suite. Estas APIs exponen varias funcionalidades, permitiéndote extender las capacidades de Burp Suite según tus necesidades.
+
+Para ver los endpoints API disponibles, navega a la subpestaña de APIs en el módulo Extensions. Cata ítem listado en la parte de la izquierda representa un endpoint API que puede ser accedido desde las extensiones.
+
+!**Pasted image 20251117104534.png**
+
+Las APIs de Extensions le da a los desarrolladores flexibilidad y poder al escribir extensiones. Burp Suite soporta varios lenguajes para escribir extensiones como:
+
+- Java (nativo).
+- Python (vía Jython).
+- Ruby (vía JRuby).
+
+Para aprender más sobre la escritura de extensiones visita la [documentación oficial de PortSwigger](https://portswigger.net/burp/extender/writing-your-first-burp-suite-extension).

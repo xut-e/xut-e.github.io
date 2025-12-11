@@ -1,0 +1,43 @@
+---
+layout: apunte
+title: "2. Analysing Logs with Splunk"
+---
+
+1. Vamos a la página dada.
+   !**Pasted image 20251207214052.png**
+2. Le damos a "Search and Reporting".
+   !**Pasted image 20251207214159.png**
+3. Allí intentaremos ver los logs. Para ellos escribimos `index=main`, seleccionamos a`all time` a la derecha y le damos a buscar.
+   !**Pasted image 20251207214432.png**
+4. Si le damos a `sorcetype`, podemos ver los tipos de tráfico.
+   !**Pasted image 20251207214653.png**
+   Ahora mismo nos interesa el tráfico web, que es por donde seguramente entró el malware.
+5. Lo metemos en la query.
+   !**Pasted image 20251207214948.png**
+6. Si filtramos por días con `| timechart span=1d count` y le damos a "Visualization" podemos hacernos una idea de cuándo ocurrió el ataque.
+   !**Pasted image 20251207221358.png**
+   Podemos ver que parece empezar el 10 de Octubre.
+7. Para tener más claro qué días debemos investigar, podemos ordenarlos de mayor a menor con `|sort by count` y `| reverse`. Vamos a "Statistics" y:
+   
+   !**Pasted image 20251207221641.png**
+   Podemos observar que los días 12, 10, 14, 11 y 13 son anómalos, con el día 12 siendo el que más logs tiene.
+8. Ahora empezamos nuestra búsqueda de IoCs (Indicator of Compromise). Si le damos a "Events" de nuevo y luego a `user_agent`, podremos ver de donde viene el tráfico.
+   !**Pasted image 20251208012837.png**
+   Algunas como Mozilla son normales (de navegadores) pero `Havij` y `sqlmap` no.
+9. Ahora comprobamos las IPs dándole a `client_ip`.
+   !**Pasted image 20251208014421.png**
+   Y vemos que claramente la proporción no tiene sentido por lo que podemos intuir de qué IP provienen el ataque.
+10. Si comprobamos `paths`, podemos ver las rutas que se intentaron acceder.
+    !**Pasted image 20251208014607.png**
+    Vemos a bote pronto intentos de Path Traversal y de de SQLi.
+11. Para asegurarnos, podemos filtrar aquellos navegadores comunes.
+    !**Pasted image 20251208015343.png**
+    Y efectivamente, corroboramos que es todo el ataque proveniente de la misma dirección IP, sospechoso...
+12. Para ver los mayores ejecutores de logs de otra manera más rápida (si hubiera muchos) podríamos hacer lo siguiente:
+    !**Pasted image 20251208015638.png**
+13. Para examinar los logs del firewall tenemos que cambiar el `sourcetype`, añadir la dirección de salida (nuestro servidor) la de destino (la del atacante) y establecer el filtro de opción permitida. Además debemos aplicar los campos que se mostrarán en la tabla.
+    !**Pasted image 20251208021654.png**
+14. Ahora agruparemos dichos bytes para ver cuánto se ha exfiltrado. Para ello eliminamos la tabla y aplicamos un sumatorio de los bytes con `stats sum()`.
+    !**Pasted image 20251208021834.png**
+
+Y 

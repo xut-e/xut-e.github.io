@@ -1,0 +1,19 @@
+---
+layout: apunte
+title: "0. Burp Suite - The Basics"
+---
+
+**Ciberseguridad/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/4. Burp Suite - The Basics/1. Introduction**
+[2. What is Burp Suite](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/2-what-is-burp-suite/)
+[3. Features of Burp Community](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/3-features-of-burp-community/)
+[4. Installation](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/4-installation/)
+[5. The Dashboard](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/5-the-dashboard/)
+[6. Navigation](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/6-navigation/)
+[7. Options](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/7-options/)
+[8. Introduction to the Burp Proxy](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/8-introduction-to-the-burp-proxy/)
+[9. Connecting through the Proxy (FoxyProxy)](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/9-connecting-through-the-proxy-foxyproxy/)
+[10. Site Map and Issue Definitions](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/10-site-map-and-issue-definitions/)
+[11. The Burp Suite Browser](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/11-the-burp-suite-browser/)
+[12. Scoping and Targeting](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/12-scoping-and-targeting/)
+[13. Proxying HTTPS](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/13-proxying-https/)
+[14. Example Attack](/apuntes/ciberseguridad/ciberseguridad/thm/0-pre-career/2-cyber-security-101/8-web-hacking/4-burp-suite-the-basics/14-example-attack/)

@@ -1,0 +1,10 @@
+---
+layout: apunte
+title: "2. Manual Discovery - Robots txt"
+---
+
+Hay muchos lugares que podemos mirar manualmente en una web para empezar a descubrir contenido.
+
+<h2>Robots.txt</h2>
+El archivo `robots.txt` es un documento que le dice al motor de búsqueda qué páginas tiene permitido mostrar y cuáles no. Es una práctica común restringir ciertas áreas para que no se muestren en los buscadores. Este archivo nos da una buena lista de rutas en la página web que los dueños no quieren que descubramos.
+

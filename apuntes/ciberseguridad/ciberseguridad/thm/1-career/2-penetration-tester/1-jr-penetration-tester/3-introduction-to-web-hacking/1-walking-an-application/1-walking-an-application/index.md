@@ -1,0 +1,13 @@
+---
+layout: apunte
+title: "1. Walking An Application"
+---
+
+En esta unidad aprenderemos como revisar una aplicación web buscando problemas de seguridad usando sólo herramientas incrustadas en el navegador.
+
+Aquí una lista de las herramientas que veremos:
+
+- **View Source:** Para poder ver el código fuente de una página web.
+- **Inspector:** Para inspeccionar elementos de una página web.
+- **Debugger:** Inspecciona y controla el flujo del JavaScript de una página.
+- **Network:** Para ver todas las peticiones web que hace la página.

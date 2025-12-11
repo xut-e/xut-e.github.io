@@ -1,0 +1,30 @@
+---
+layout: apunte
+title: "5. DOM Based XSS"
+---
+
+<h2>¿Qué es el DOM?</h2>
+DOM significa Document Object Model (Modelo de Documento de Objeto) y es una interfaz de programación para documentos HTML y XML. Representa la página para que los programas puedan cambiar la estructura, estilo y contenido del documento. Una página web es un document, y este documento puede ser mostrado en el navegador tal cual o como fuente HTML. Un diagrama de un DOM HTML es el siguiente:
+
+!**Pasted image 20251107145519.png**
+
+Si quieres aprender más sobre DOM pulsa [aquí](https://www.w3.org/TR/REC-DOM-Level-1/introduction.html).
+
+----------------------------------------
+<h2>Explotar el DOM</h2>
+El XSS basado en DOM es cuando la ejecución del JavaScript sucede directamente en el buscador sin ninguna nueva página siendo cargada o información siendo subida al backend. La ejecución ocurre cuando el código JavaScript de la web actúa sobre el input o la interacción del usuario
+
+-----------------------------------------
+<h2>Escenario de Ejemplo</h2>
+El JavaScript de la página web toma su contenido del parámetro `window.location.hash` y lo escribe en la página en la sección actualmente vista. Los contenidos del hash no se comprueban por código malicioso, permitiendo al atacante inyectar código JavaScript de su elección en la página.
+
+----------------------------------------
+<h2>Impacto Potencial</h2>
+Links crafteados podrían ser mandados a las potenciales víctimas, redirigiéndolas hacia otro sitio web o robando contenido de su página o sesión de usuario.
+
+-------------------------
+<h2>Cómo Comprobar XSS Basado en DOM</h2>
+Puede ser difícil de comprobar y requiere una cierta cantidad de conocimiento de JavaScript para leer el código fuente. Necesitarías buscar las partes del código que accedan a ciertas variables a las que un atacante podría tener control, como los parámetros "**window.location.x**".
+
+Cuando encuentras esas piezas de código, necesitas ver cómo se manejan los valores y si se escriben sobre el DOM de la página o se pasan a métodos inseguros como `eval()`.
+

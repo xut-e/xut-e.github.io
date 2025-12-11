@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. DNS in Detail"
+---
+
+**Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/1. DNS in Detail/0. DNS in Detail**
+**Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/1. How The Web Works/1. DNS in Detail/1. Redireccion**

@@ -1,0 +1,17 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+Esta unidad te introducirá a unos pocos protocolos comúnmente usados, como:
+
+- HTTP
+- FTP
+- POP3
+- SMTP
+- IMAP
+
+Cada tarea hablará de un protocolo y está diseñada para que entendamos lo que ocurre a bajo nivel y no se ve en la GUI. Hablaremos con los protocolos usando Telnet, para entender de forma detallada lo que pasa por detrás.
+
+El propósito no es memorizar comandos sino más bien entender el entramado de comunicación presente en los protocolos.
+

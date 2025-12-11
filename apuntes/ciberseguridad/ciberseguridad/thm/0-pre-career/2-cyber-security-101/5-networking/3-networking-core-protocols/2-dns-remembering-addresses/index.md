@@ -1,0 +1,36 @@
+---
+layout: apunte
+title: "2. DNS- Remembering Addresses"
+---
+
+¿Recuerdas la IP de tus sitios web favoritos? A no ser que sea una IP privada de un dispositivo local, nadie necesita preocuparse de memorizarlas gracias al DNS (Domain Name System).
+
+El DNS trabaja en la capa de aplicación (7) del modelo ISO OSI. El DNS usa tráfico de UDP en el puerto 53 por defecto y TCP en el puerto 53 como respaldo. Hay muchos tipos de registros DNS pero nos centraremos en los siguientes cuatro:
+
+- Registro A: Este mapea un hostname a una o más direcciones IPv4, por ejemplo, puedes configurar `example.com` para que resuelva a `172.17.2.172`.
+- Registro AAAA: Similar al anterior pero para IPv6.
+- Registro CNAME: Este (Canonical Name), mapea un nombre de dominio a otro nombre de dominio, por ejemplo `www.example.com` a `example.com`.
+- Registro MX: Este (Mail Exchange) especifica el servidor de correo responsable de manejar emails para un dominio.
+
+En otras palabras, cuando escribes `example.com` en tu servidor, este intenta resolver el nombre del dominio haciendo una query al registro A. Pero cuando intentas mandar un email a `test@example.com`, el servidor de mail hace una query al servidor DNS para encontrar el registro MX.
+
+Si quieres consultar la IP de un dominio puedes usar el comando `nslookup <dominio>`. Esto deja rastro de tráfico, en las peticiones uno y tres se busca en los registros A y AAAA y en los dos y cuatro se reciben las respuestas:
+
+```bash
+user@TryHackMe$ nslookup www.example.com 
+Server:         127.0.0.53 
+Address:        127.0.0.53#53  
+Non-authoritative answer: 
+	Name:   www.example.com 
+	Address: 93.184.215.14 
+	Name:   www.example.com 
+	Address: 2606:2800:21f:cb07:6820:80da:af6b:8b2c
+```
+
+```bash
+user@TryHackMe$ tshark -r dns-query.pcapng -Nn     
+1 0.000000000 192.168.66.89 → 192.168.66.1 DNS 86 Standard query 0x2e0f A www.example.com OPT     
+2 0.059049584 192.168.66.1 → 192.168.66.89 DNS 102 Standard query response 0x2e0f A www.example.com A 93.184.215.14 OPT     
+3 0.059721705 192.168.66.89 → 192.168.66.1 DNS 86 Standard query 0x96e1 AAAA www.example.com OPT     
+4 0.101568276 192.168.66.1 → 192.168.66.89 DNS 114 Standard query response 0x96e1 AAAA www.example.com AAAA 2606:2800:21f:cb07:6820:80da:af6b:8b2c OPT
+```

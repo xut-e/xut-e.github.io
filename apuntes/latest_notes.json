@@ -1,42 +1,42 @@
 [
   {
-    "title": "0. OWASP API Security Top 10 - 1",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/5-owasp-api-security-top-10-1/0-owasp-api-security-top-10-1/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/0. OWASP API Security Top 10 - 1.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 5. OWASP API Security Top 10 - 1",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/5. OWASP API Security Top 10 - 1/1. Introduction]]\n[[2. Understanding APIs - A Refresher]]\n[[3. Vulnerability I - Broken Object Level Authorisation (BOLA)]]\n[[4. Vulnerability II - Broken User Authentication (BUA)]]\n[[5. Vulnerability III - Excessive Data Exposure]]\n[[6. Vulnerability IV - Lack of Resources & Rate Limiting]]\n[[7. Vulnerability V - Broken Function Level Authorisation]]",
-    "modified": "2025-12-11T00:54:09"
+    "title": "0. Ciberseguridad",
+    "path": "/apuntes/ciberseguridad/ciberseguridad/0-ciberseguridad/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Ciberseguridad/0. Ciberseguridad.md",
+    "breadcrumb": "Ciberseguridad > Ciberseguridad",
+    "content": "1. [[0. Recursos Web]]\n2. [[0. THM]]\n3.",
+    "modified": "2025-12-11T16:34:44"
   },
   {
-    "title": "4. Reflected XSS",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/4-reflected-xss/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/4. Reflected XSS.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
-    "content": "El XSS reflejado es un tipo de vulnerabilidad XSS donde un script malicioso es reflejado en el navegador del usuario, normalmente vía una URL construida o formulario de subida. Considera una query de búsqueda que contenga `<script>alert(document.cookie)</script>`. Muchos usuarios no sospecharían de dicha URL incluso si la miraran de cerca. Si se procesa por un aplicación vulnerable, será ejecutada en el contexto del navegador del usuario.\n\n--------------------------------\n<h2>Aplicación Web Vulnerable</h2>\nUna vulnerabilidad XSS reflejada simple es cuando el usuario busca por algún término y el string de búsqueda está incluido en los resultados de búsqueda. Este escenario simple ofrece un objetivo fácil para que el atacante lo explote.\n\nAunque descubir este tipo de vulnerabiliidades no es siempre fácil, arreglarlos sí lo es. Un input de usuario tal como `<script>alert('XSS')</script>` debería ser sanitizado o HTML-encodeado a `&lt;script&gt;alert('XSS')&lt;/script&gt;`.\n\nEn las siguientes subsecciones veremos ejemplos de código vulnerable en los siguientes lenguajes/frameworks.\n\n- PHP\n- JavaScript (Node.js)\n- Python (Flask)\n- C# (ASP.NET)\n\n\n-------------------------------\n<h2>PHP</h2>\n<h4>Código Vulnerable</h4>\n```php\n<?php\n$search_query = $_GET['q'];\necho \"<p>You searched for: $search_query</p>\";\n?>\n```\n\nSi estás familiarizado con PHP, `$_GET` es una array de PHP que contiene valores de la URL. Además, `$_GET['q']` se refiere al parámetro de la query de string `q`. Por ejemplo, en `http://shop.thm/search.php?q=table`, `$_GET['q']` tiene el valor `table`.\n\nEl problema aquí es que el input del usuario no se está sanitizando y está siendo mostrado en la página resultante directamente. Por lo que un atacante puede añadir código malicioso a la URL como `http://shop.thm/search.php?q=<script>alert(document.cookie)</script>` y si el sitio es vulnerable mostrará la cookie de sesión.\n\n<h4>Código Arreglado</h4>\n```php\n<?php\n$search_query = $_GET['q'];\n$escaped_search_query = htmlspecialchars($search_query);\necho \"<p>You searched for: $escaped_search_query</p>\";\n?>\n```\n\nLa función `htmlspecialchars()` convierte caracteres especiales a entidades HTML. Los caracteres `<`, `>`, `&`, `\"`, `'` se reemplazan para prevenir el input de scripts al ejecutar. Puedes leer su documentación [aquí](https://www.php.net/htmlspecialchars).\n\n---------------------------------\n<h2>JavaScript (Node.js)</h2>\n\n\n----------------------------\n<h2>Python (Flask)</h2>\n\n\n--------------------------------\n<h2>ASP.NET</h2>",
-    "modified": "2025-12-11T00:54:09"
+    "title": "0. Recursos Web",
+    "path": "/apuntes/ciberseguridad/ciberseguridad/recursos-web/0-recursos-web/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Ciberseguridad/Recursos Web/0. Recursos Web.md",
+    "breadcrumb": "Ciberseguridad > Ciberseguridad > Recursos Web",
+    "content": "[[1. DVWA]]",
+    "modified": "2025-12-11T16:34:44"
   },
   {
-    "title": "3. Advanced Server-Side Attacks",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-advanced-server-side-attacks/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. Advanced Server-Side Attacks.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks",
-    "content": "1. [[0. Insecure Deserialisation]]\n2. [[0. SSRF]]\n3. [[0. File Inclusion and Path Traversal]]\n4. [[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/4. Race Conditions/0. Race Conditions]]\n5. [[0. Prototype Pollution]]\n6. [[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/6. Include/0. Include]]",
-    "modified": "2025-12-10T19:02:25"
+    "title": "0. THM",
+    "path": "/apuntes/ciberseguridad/ciberseguridad/thm/0-thm/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Ciberseguridad/THM/0. THM.md",
+    "breadcrumb": "Ciberseguridad > Ciberseguridad > THM",
+    "content": "1. [[0. Pre Career]]\n2. [[1. Career]]\n3. \n4. [[0. Advent of Cyber]]\n5. [[0. Maquinas]]",
+    "modified": "2025-12-11T16:34:44"
   },
   {
-    "title": "4. Advanced Client-Side Attacks",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-advanced-client-side-attacks/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. Advanced Client-Side Attacks.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks",
-    "content": "1. [[0. XSS]]\n2.",
-    "modified": "2025-12-10T19:02:25"
+    "title": "1. DVWA",
+    "path": "/apuntes/ciberseguridad/ciberseguridad/recursos-web/1-dvwa/1-dvwa/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md",
+    "breadcrumb": "Ciberseguridad > Ciberseguridad > Recursos Web > 1. DVWA",
+    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection]]\n4. [[0. CSRF]]\n5. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion]]\n6. [[0. File Upload]]\n7. [[0. Insecure CAPTCHA]]\n8. [[Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection]]\n9. [[0. SQL Injection - Blind]]\n10. [[0. Weak Session IDs]]\n11. [[0. XSS - DOM]]\n12. [[0. XSS - Reflected]]\n13. [[0. XSS - Stored]]\n14. [[0. CSP Bypass]]\n15. [[0. JavaScript Attacks]]\n16. [[0. Authorisation Bypass]]\n17. [[0. Open HTTP Redirect]]\n18. [[0. Cryptography]]\n19. [[0. API]]",
+    "modified": "2025-12-11T16:34:44"
   },
   {
-    "title": "2. Injection Attacks",
-    "path": "/apuntes/ciberseguridad/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-injection-attacks/",
-    "src": "content/Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. Injection Attacks.md",
-    "breadcrumb": "Ciberseguridad > THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks",
-    "content": "1. [[0. Advanced SQL Injection]]\n2. [[0. NoSQL Injection]]\n3. [[0. XXE Injection]]\n4. [[0. Server-Side Template Injection]]\n5. [[0. LDAP Injection]]\n6. [[0. ORM Injection]]",
-    "modified": "2025-12-10T19:02:25"
+    "title": "0. File Inclusion",
+    "path": "/apuntes/ciberseguridad/ciberseguridad/recursos-web/1-dvwa/4-file-inclusion/0-file-inclusion/",
+    "src": "content/Ciberseguridad/Ciberseguridad/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion.md",
+    "breadcrumb": "Ciberseguridad > Ciberseguridad > Recursos Web > 1. DVWA > 4. File Inclusion",
+    "content": "",
+    "modified": "2025-12-11T16:34:44"
   }
 ]

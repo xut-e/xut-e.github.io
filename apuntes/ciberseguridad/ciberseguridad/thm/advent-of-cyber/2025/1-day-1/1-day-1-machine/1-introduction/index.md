@@ -1,0 +1,11 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20251203002916.png**
+
+Lo impensable ha ocurrido: McSkidy ha sido secuestrada. Sin ella, las defensas de Wareville se están tambaleando y la navidad pende de un hilo. Pero entrar en pánico no salvará la navidad. Un largo camino yace delante para descubrir qué fue lo que pasó. El equipo TBFC (The Best Festival Company) ya ha pensado qué hacer, apuntando al servidor **tbfc-web01**, el cual procesa las listas de deseos.
+
+!**Pasted image 20251203003230.png**
+

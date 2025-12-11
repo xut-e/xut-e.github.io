@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. Careers in Cyber"
+---
+
+**Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/0. Careers in Cyber**
+**Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Introduction to Cyber Security/3. Careers in Cyber/1. Redireccion**

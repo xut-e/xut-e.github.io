@@ -1,0 +1,20 @@
+---
+layout: apunte
+title: "3. Jython"
+---
+
+Para usar módulos de Python en Burp Suite, necesitas integrar el archivo JAR del interpretador Jython, que es una implementación de Java en Python.
+
+Sigue los siguienntes pasos para integrarlo:
+
+1. **Descarga Jython JAR:** Visita la página de [Jython](https://www.jython.org/download) y descarga el archivo JAR. Busca la opción **Jython Standalone**. Guarda el archivo JAR en una ruta conocida en tu disco.
+   !**Pasted image 20251117102353.png**
+2. **Configura Jython en Burp Suite:** Abre Burp Suite y cambia al módulo Extensions. Luego ve a Extension Settings.
+3. **Entorno Python:** Baja hasta la sección de "Python environment".
+4. **Configura la Ruta del Jython JAR:** En el campo "Location of Jython standalone JAR file", configura la ruta de tu archivo JAR.
+   !**Pasted image 20251117102358.png**
+
+Una vez hecho esto, Jython quedará integrado en tu Burp Suite permitiéndote usar módulos de Python en la herramienta.
+
+>[!TIP] Se hace igual en todos los sistemas operativos porque Java es una tecnología multiplataforma.
+

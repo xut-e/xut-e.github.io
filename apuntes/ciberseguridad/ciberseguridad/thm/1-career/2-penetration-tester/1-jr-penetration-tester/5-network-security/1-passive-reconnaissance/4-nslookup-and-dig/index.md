@@ -1,0 +1,76 @@
+---
+layout: apunte
+title: "4. nslookup and dig"
+---
+
+En la tarea anterior vimos cómo usar WHOIS para obtener información varia sobre los dominios que estábamos mirando. En particular, fuimos capaces de obtener los servidores DNS del registrador. 
+
+Para encontrar la IP de un dominio usamos `nslookup`, que significa Name Server Look Up. Necesitas usar el comando `nslookup DOMAIN_NAME` o `nslookup OPCION DOMAIN_NAME SERVER`. Estos tres parámetros son:
+
+- OPCION: Contiene el tipo de query como se muestra en la tabla de abajo. Por ejemplo, puedes usar `A` para direcciones IPv4 y `AAAA` para direcciones IPv6.
+- DOMAIN_NAME: Es el nombre del dominio que estamos consultando.
+- SERVER: Es el servidor DNS al que queremos hacer la query. Puedes elegir cualquier servidor DNS público como CludFlare (`1.1.1.1`), Google (`8.8.8.8`), Quad9 (`9.9.9.9`) y [más](https://duckduckgo.com/?q=public+dns).
+
+|Query type|Result|
+|---|---|
+|A|IPv4 Addresses|
+|AAAA|IPv6 Addresses|
+|CNAME|Canonical Name|
+|MX|Mail Servers|
+|SOA|Start of Authority|
+|TXT|TXT Records|
+
+Por ejemplo, `nslookup -type=A tryhackme.com 1.1.1.1`, puede ser usado para devolver todas las direcciones IPv4 usadas por tryhackme.com.
+
+```shell
+user@TryHackMe$ nslookup -type=A tryhackme.com 1.1.1.1
+Server:		1.1.1.1
+Address:	1.1.1.1#53
+
+Non-authoritative answer:
+Name:	tryhackme.com
+Address: 172.67.69.208
+Name:	tryhackme.com
+Address: 104.26.11.229
+Name:	tryhackme.com
+Address: 104.26.10.229
+```
+
+Los registros A y AAAA se usan para devolver direcciones IPv4 e IPv6 respectivamente. Digamos que quieres averiguar los servidores d eemail y configuraciones para un dominio, pues: `nslookup -type=MX tryhackme.com`
+
+```shell
+user@TryHackMe$ nslookup -type=MX tryhackme.com 
+Server:		127.0.0.53 
+Address:	127.0.0.53#53  
+
+Non-authoritative answer: 
+tryhackme.com	mail exchanger = 5 alt1.aspmx.l.google.com. 
+tryhackme.com	mail exchanger = 1 aspmx.l.google.com. 
+tryhackme.com	mail exchanger = 10 alt4.aspmx.l.google.com. 
+tryhackme.com	mail exchanger = 10 alt3.aspmx.l.google.com. 
+tryhackme.com	mail exchanger = 5 alt2.aspmx.l.google.com.
+```
+
+Podemos ver que el email actual de tryhackme.com usa Google. Como MX está mirando los Mail Exchange servers, podemos ver que cuando un servidor de mail intenta entregar un email `@tryhackme.com`, intentará conectarse a `aspmx.l.google.com`, lo que tiene orden 1.  Si está ocupado o no disponible, se intentará conectar al siguiente en la lista de orden, en este caso `alt1.aspmx.l.google.com` y `alt2.aspmx.l.google.com`.
+
+Google ofrece servidores de mail listados, por lo tanto, no deberíamos esperar que los servidores de email corrieran una versión vulnerable. Sin embargo, en otros casos podemos encontrar servidores que no están correctamente securizados o parcheados.
+
+Puedes repetir queries similares con diferentes tipos como `-type=txt`.
+
+Para más queries DNS avanzadas y funcionalidades, puedes usar el comando `dig`, acrónimo de "Domain Information Groper". Usemos `dig` para mirar los registros MX y compararlos con `nslookup`. Podemos usar `dig DOMAIN_NAME` pero para especificar el tipo de registro, usaríamos `dig DOMAIN_NAME TYPE`. De forma opcional, podemos seleccionar el servidor al que queremos hacer la query usando `dig @SERVER DOMAIN_NAME TYPE`.
+
+- SERVER: Es el servidor DNS al que haremos la consulta.
+- DOMAIN_NAME: Es el nombre de dominio que estamos buscando.
+- TYPE: Contiene el registro DNS como se muestra en la tabla de antes.
+
+```shell
+user@TryHackMe$ dig tryhackme.com MX
+
+; <<>> DiG 9.16.19-RH <<>> tryhackme.com MX
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<
+```
+
+Una comparación rápida entre el output de `nslookup` y el de `dig` muestra que `dig` devolvió más información, como el TTL. Si quieres hacer una query al servidor DNS `1.1.1.1`, puedes ejecutar `dig @1.1.1.1 tryhackme.com MX`.
+

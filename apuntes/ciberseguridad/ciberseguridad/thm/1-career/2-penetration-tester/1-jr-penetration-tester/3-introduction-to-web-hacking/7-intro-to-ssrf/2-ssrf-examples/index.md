@@ -1,0 +1,26 @@
+---
+layout: apunte
+title: "2. SSRF Examples"
+---
+
+Veamos los siguientes ejemplos:
+
+El ejemplo de abajo muestra cómo el atacante tiene control completo sobre la página pedida por el servidor. La petición esperada es lo que espera recibir el servidor. La sección en rojo es la URL que la aplicación cargará para la información. El atacante puede modificar el área en rojo a una URL de su elección.
+
+!**Pasted image 20251106160249.png**
+
+El ejemplo de abajo muestra cómo un atacante puede llegar a la página `/api/user` teniendo control sólo sobre la ruta, utilizando Directory Traversal. Cuando una página web recibe `../` es un mensaje de moverse hacia arriba entre directorios, lo que elimina la porción `stock` y convierte la petición final en `/api/user`.
+
+!**Pasted image 20251106160604.png**
+
+En el ejemplo de abajo se muestra cómo el atacante puede controlar el subdominio del servidor hacia el que se hace la petición. Toma nota del payload acabando en `&x=`. Esto es usado para parar el resto de la ruta de ser añadida al final de la URL del atacante y en su lugar lo convierte en el parámetro (`?x=`) en la sentencia final.
+
+!**Pasted image 20251106160818.png**
+
+En el ejemplo de abajo se muestra cómo un atacante puede forzar al servidor a realizar una petición al servidor de elección del atacante. Haciendo eso puede capturar headers de petición que podrían contener credenciales o claves API mandados por el servidor.
+
+!**Pasted image 20251106161318.png**
+
+Así se resuelve el ejercicio planteado:
+
+!**Pasted image 20251106162203.png**
