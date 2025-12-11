@@ -1,5 +1,5 @@
 /* ============================================================
-   🔥 OBSIDIAN-LIKE PREPROCESSOR (negrita + inline code en listas)
+   🔥 OBSIDIAN-LIKE PREPROCESSOR (negrita + inline code en listas + inline code global fijo)
    ============================================================ */
 
 const ObsidianPreprocessor = {
@@ -58,13 +58,20 @@ const ObsidianPreprocessor = {
     md = md.replace(/^[-]{3,}$/gm, "<hr>");
 
     /* ============================================================
-       5) Restaurar inline code global como backticks
+       5) RESTAURAR INLINE CODE GLOBAL COMO <code>…</code>
+          (SIEMPRE inline code consistente fuera de listas)
        ============================================================ */
 
-    md = md.replace(/@@INLINE(\d+)@@/g, (m, i) => '`' + INLINE[i] + '`');
+    md = md.replace(/@@INLINE(\d+)@@/g, (m, i) => {
+      const code = INLINE[i]
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+      return `<code>${code}</code>`;
+    });
 
     /* ============================================================
-       6) Restaurar bloques de código
+       6) RESTAURAR BLOQUES DE CÓDIGO
        ============================================================ */
 
     md = md.replace(/@@BLOCK(\d+)@@/g, (m, i) => {
@@ -105,7 +112,7 @@ const ObsidianPreprocessor = {
       }
     }
 
-    /* === NUEVO: inline code en listas === */
+    /* === INLINE CODE SOLO PARA LISTAS === */
     function applyInlineCodeForLists(text) {
       return text.replace(/`([^`]+)`/g, (m, code) => {
         code = code
