@@ -46,7 +46,7 @@ const ObsidianPreprocessor = {
        ============================================================ */
 
     md = md.replace(/!\[\[(.+?)\]\]/g, (m, file) =>
-      `<img class="md-img" src="/content/Ciberseguridad/Ciberseguridad/Z%20Imagenes/${encodeURIComponent(
+      `<img class="md-img" src="/content/Ciberseguridad/Ciberseguridad/Ciberseguridad/Z%20Imagenes/${encodeURIComponent(
         file.trim()
       )}" alt="${file.trim()}">`
     );
