@@ -1,5 +1,5 @@
 /* ============================================================
-   🔥 OBSIDIAN-LIKE PREPROCESSOR (negrita en listas)
+   🔥 OBSIDIAN-LIKE PREPROCESSOR (negrita + inline code en listas)
    ============================================================ */
 
 const ObsidianPreprocessor = {
@@ -30,7 +30,7 @@ const ObsidianPreprocessor = {
     );
 
     /* ============================================================
-       2) PROTEGER INLINE CODE `...` (pero NO usarlo luego en listas)
+       2) PROTEGER INLINE CODE GLOBAL (no usado en listas)
        ============================================================ */
 
     const INLINE = [];
@@ -58,7 +58,7 @@ const ObsidianPreprocessor = {
     md = md.replace(/^[-]{3,}$/gm, "<hr>");
 
     /* ============================================================
-       5) Restaurar inline code (solo backticks)
+       5) Restaurar inline code global como backticks
        ============================================================ */
 
     md = md.replace(/@@INLINE(\d+)@@/g, (m, i) => '`' + INLINE[i] + '`');
@@ -105,6 +105,17 @@ const ObsidianPreprocessor = {
       }
     }
 
+    /* === NUEVO: inline code en listas === */
+    function applyInlineCodeForLists(text) {
+      return text.replace(/`([^`]+)`/g, (m, code) => {
+        code = code
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+        return `<code>${code}</code>`;
+      });
+    }
+
     function applyBold(text) {
       return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
     }
@@ -115,8 +126,13 @@ const ObsidianPreprocessor = {
       const level = Math.floor(spaces / 4);
       let trimmed = raw.trim();
 
-      // aplicar negrita ANTES de envolver en HTML
+      // aplicar negrita primero
       trimmed = applyBold(trimmed);
+
+      // aplicar inline code SOLO dentro de listas
+      if (/^(\d+\.|-|\+|\*)\s+/.test(trimmed)) {
+        trimmed = applyInlineCodeForLists(trimmed);
+      }
 
       /* ===== Ordered list ===== */
       const ol = trimmed.match(/^(\d+)\.\s+(.*)$/);
@@ -138,6 +154,7 @@ const ObsidianPreprocessor = {
 
       /* ===== Texto dentro de lista ===== */
       if (stack.length > 0 && trimmed !== "") {
+        trimmed = applyInlineCodeForLists(trimmed);
         out.push(`<p>${trimmed}</p>`);
         continue;
       }
