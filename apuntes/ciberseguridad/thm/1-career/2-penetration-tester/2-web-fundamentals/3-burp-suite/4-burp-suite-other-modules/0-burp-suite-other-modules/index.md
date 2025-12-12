@@ -1,7 +1,0 @@
----
-layout: apunte
-title: "0. Burp Suite - Other Modules"
----
-
-**Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/4. Burp Suite - Other Modules/0. Burp Suite - Other Modules**
-**Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/4. Burp Suite - Other Modules/1. Redireccion**

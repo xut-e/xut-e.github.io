@@ -1,7 +1,0 @@
----
-layout: apunte
-title: "0. Command Injection"
----
-
-**Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/10. Command Injection/0. Command Injection**
-**Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/2. Introduction to Web Hacking/10. Command Injection/1. Redireccion**

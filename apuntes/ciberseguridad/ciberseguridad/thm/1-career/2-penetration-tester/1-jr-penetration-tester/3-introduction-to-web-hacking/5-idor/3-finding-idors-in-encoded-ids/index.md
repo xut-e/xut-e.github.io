@@ -1,9 +1,0 @@
----
-layout: apunte
-title: "3. Finding IDORs in Encoded IDs"
----
-
-<h2>Encoded IDs</h2>
-Al pasar información de página a página ya sea por POST, strings query, o cookies, los desarrolladores web normalmente primero tomarán la información raw y la encodearán. El encoding asegura que el servidor web recibidor será capaz de entender los contenidos. El encoding cambiar información binaria a ASCII usando caracteres `a-z, A-Z, 0-9 y =`. La técnica más común de encoding es base64. Puedes usar webs como [esta](https://www.base64decode.org/) o la consola con el comando `base64`.
-
-!**Pasted image 20251104130145.png**

@@ -1,7 +1,0 @@
----
-layout: apunte
-title: "0. Net Sec Challenge"
----
-
-**Ciberseguridad/Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge**
-**Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/9. Net Sec Challenge/1. Redireccion**

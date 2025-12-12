@@ -1,8 +1,0 @@
----
-layout: apunte
-title: "1. Introduction"
----
-
-!**Pasted image 20251124182648.png**
-
-Esta máquina está orientada a hackers principiantes. Hay dos maneras de rootear la máquina.

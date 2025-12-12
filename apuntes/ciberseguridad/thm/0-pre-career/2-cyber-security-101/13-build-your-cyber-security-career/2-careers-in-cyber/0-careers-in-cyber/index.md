@@ -1,7 +1,0 @@
----
-layout: apunte
-title: "0. Careers in Cyber"
----
-
-**Ciberseguridad/THM/0. Pre Career/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/0. Careers in Cyber**
-**Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/13. Build Your Cyber Security Career/2. Careers in Cyber/1. Redireccion**

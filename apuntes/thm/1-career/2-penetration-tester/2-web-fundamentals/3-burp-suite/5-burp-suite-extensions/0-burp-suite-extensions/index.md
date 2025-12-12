@@ -1,6 +1,0 @@
----
-layout: apunte
-title: "0. Burp Suite - Extensions"
----
-
-**THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/5. Burp Suite - Extensions/0. Burp Suite - Extensions**

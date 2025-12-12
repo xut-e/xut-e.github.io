@@ -1,7 +1,0 @@
----
-layout: apunte
-title: "0. Metasploit - Introduction"
----
-
-**THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/2. Metasploit - Introduction/0. Metasploit - Introduction**
-**Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/1. Metasploit - Introduction/1. Redireccion**

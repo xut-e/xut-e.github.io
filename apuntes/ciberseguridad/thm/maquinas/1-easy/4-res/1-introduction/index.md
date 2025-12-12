@@ -1,8 +1,0 @@
----
-layout: apunte
-title: "1. Introduction"
----
-
-!**Pasted image 20251123202923.png**
-
-Hackea un servidor de base de datos vulnerable con una estructura en memoria en este reto semiguiado.

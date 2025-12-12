@@ -1,8 +1,0 @@
----
-layout: apunte
-title: "1. Introduction"
----
-
-Una búsqueda en Google "learn cyber security" obtiene unos 600 millones de resultados. La búsqueda "learn hacking" más del doble.
-
-Estamos rodeados de información. Pero ¿qué prefieres? ¿Aceptar los primeros pocos resultados que aparezcan o adquirir las habilidades necesarias para encontrar lo que buscas?

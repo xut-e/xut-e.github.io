@@ -1,6 +1,0 @@
----
-layout: apunte
-title: "0. Careers in Cyber"
----
-
-**THM/1. Pre Security/1. Introduction to cybersecurity/3. Careers in Cyber/0. Careers in Cyber**

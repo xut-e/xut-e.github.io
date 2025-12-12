@@ -1,7 +1,0 @@
----
-layout: apunte
-title: "11. OSINT - S3 Buckets"
----
-
-<h2>S3 Buckets</h2>
-Los S3 Buckets son un servicio de almacenamiento ofrecido por Amazon AWS, permitiendo a la gente guardar archivos y contenido web estático en la nube, accesible por HTTP/S. El dueño de los arcchivos puede configurar permisos de acceso para hacer los archivos privados, públicos o incluso escribible. El formato de los S3 Buckets es: **http(s)://{nombre}.s3.amazonaws.com** donde el nombre es decidido por el dueño. Un procedimiento estándar es usar el nombre de la compañía seguido de términos comunes como **{nombre}-assests**, **{nombre}-www**, **{nombre}-public**, **{nombre}-private**, etc.

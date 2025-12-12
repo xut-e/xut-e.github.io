@@ -1,7 +1,0 @@
----
-layout: apunte
-title: "1. Redireccion"
----
-
-Para ver este curso ve a **THM -> 0. Pre Career -> 1. Pre Security -> 5. Windows Fundamentals -> 1. Windows Fundamentals Part 3**
-
