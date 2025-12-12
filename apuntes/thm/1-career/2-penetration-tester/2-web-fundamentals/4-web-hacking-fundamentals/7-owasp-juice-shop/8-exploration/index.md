@@ -1,0 +1,9 @@
+---
+layout: apunte
+title: "8. Exploration"
+---
+
+!**Pasted image 20251212123331.png**
+
+Si deseas afrontar algunos retos más difíciles puedes mirar la sección `/#/score-board/` en Juice Shop. Ahí podrás ver las tareas que has completado y ordenadas por dificultad.
+

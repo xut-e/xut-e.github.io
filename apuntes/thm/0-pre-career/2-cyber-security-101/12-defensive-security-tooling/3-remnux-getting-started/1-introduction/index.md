@@ -1,0 +1,20 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+Analizar software potencialmente malicioso puede ser peligroso, especialmente cuando este es parte de un incidente de seguridad en ejecución. Los resultados deben ser lo más precisos posibles y los analistas deben usar diferentes herramientas, máquinas y entornos para conseguirlo. En esta unidad usaremos REMnux VM.
+
+REMnux VM es una distribución de Linux especializada. Incluye herramientas como Volatility, YARA, Wireshark, oledump e INetSim. También ofrece entornos de sandbox para diseccionar software potencialmente malicioso sin riesgo de contaminar tu sistema primario. Es tu laboratorio listo para usar sin necesidad de instalaciones manuales.
+
+--------------------------
+<h2>Objetivos de Aporendizaje</h2>
+- Explorar las herramientas dentro de REMnux VM.
+- Aprender a cómo usar las herramientas para analizar documentos potencialmente maliciosos.
+- Aprender a cómo simular una red falsa para ayudar en el análisis.
+- Familiarizarse con las herramientas usadas para analizar imágenes de memoria.
+
+----------------------------------
+<h2>Pre-requisitos</h2>
+[0. CyberChef - The Basics](/apuntes/thm/0-pre-career/2-cyber-security-101/12-defensive-security-tooling/1-cyberchef-the-basics/0-cyberchef-the-basics/)
+

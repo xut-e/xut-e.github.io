@@ -1,0 +1,42 @@
+[
+  {
+    "title": "0. Ciberseguridad",
+    "path": "/apuntes/0-ciberseguridad/",
+    "src": "content/Ciberseguridad/0. Ciberseguridad.md",
+    "breadcrumb": "",
+    "content": "1. [[0. Recursos Web]]\n2. [[0. THM]]\n3.",
+    "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "0. Recursos Web",
+    "path": "/apuntes/recursos-web/0-recursos-web/",
+    "src": "content/Ciberseguridad/Recursos Web/0. Recursos Web.md",
+    "breadcrumb": "Recursos Web",
+    "content": "[[1. DVWA]]",
+    "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "0. THM",
+    "path": "/apuntes/thm/0-thm/",
+    "src": "content/Ciberseguridad/THM/0. THM.md",
+    "breadcrumb": "THM",
+    "content": "1. [[0. Pre Career]]\n2. [[1. Career]]\n3. \n4. [[0. Advent of Cyber]]\n5. [[0. Maquinas]]",
+    "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "1. DVWA",
+    "path": "/apuntes/recursos-web/1-dvwa/1-dvwa/",
+    "src": "content/Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md",
+    "breadcrumb": "Recursos Web > 1. DVWA",
+    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3. [[Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection]]\n4. [[0. CSRF]]\n5. [[Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion]]\n6. [[0. File Upload]]\n7. [[0. Insecure CAPTCHA]]\n8. [[Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection]]\n9. [[0. SQL Injection - Blind]]\n10. [[0. Weak Session IDs]]\n11. [[0. XSS - DOM]]\n12. [[0. XSS - Reflected]]\n13. [[0. XSS - Stored]]\n14. [[0. CSP Bypass]]\n15. [[0. JavaScript Attacks]]\n16. [[0. Authorisation Bypass]]\n17. [[0. Open HTTP Redirect]]\n18. [[0. Cryptography]]\n19. [[0. API]]",
+    "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "0. File Inclusion",
+    "path": "/apuntes/recursos-web/1-dvwa/4-file-inclusion/0-file-inclusion/",
+    "src": "content/Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion.md",
+    "breadcrumb": "Recursos Web > 1. DVWA > 4. File Inclusion",
+    "content": "",
+    "modified": "2025-12-12T13:58:55"
+  }
+]

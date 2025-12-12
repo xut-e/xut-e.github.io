@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "5. Defence-in-Depth"
+---
+
+La defensa en profundidad se refiere a crear un sistema de seguridad con múltiples niveles. Por eso es que también se llama Seguridad Multinivel.
+
+Considera la siguiente analogía: has cerrado un cajón donde guardas tus documentos y objetos más valiosos. El cajón está bloqueado, sin embargo, ¿quieres que la cerradura del cajón sea lo único que lo protege? Si pensamos en seguridad multinivel, preferiríamos que el cajón estuviese cerrado, la habitación cerrada, la puerta del apartamento cerrada, la puerta del edificio cerrada e incluso instalar alguna cámara de seguridad. Aunque estos múltiples niveles de seguridad pueden no parar a un ladrón comprometido, bloquearán a la mayoría y se lo pondrán muy difícil al que lo consiga (si alguno lo consigue).

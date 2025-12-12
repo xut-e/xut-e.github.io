@@ -1,0 +1,57 @@
+---
+layout: apunte
+title: "4. Advanced Filtering"
+---
+
+Hay muchas más maneras de filtrar paquetes.  En una situación real puede que necesitemos filtrar entre miles o millones de paquetes. Es indispensable poder expresar exactamente qué paquetes mostrar. Por ejemplo aquellos mayores o menores de un cierto tamaño:
+
+- `greater <length>`: Filtra paquetes que tienen una longitud superior a la establecida.
+- `less <length>`: Filtra paquetes que tienen una longitud menor a la establecida.
+
+Es recomendable consultar la página de manual de `pcap-filter` usando `man pcap-filter`. De todas formas, nos centraremos en filtrar basándonos en las flags TCP.
+
+------------
+<h2>Operaciones Binarias</h2>
+Una operación binaria trabaja en bits. Esta coge dos bits como entrada (0 o 1) y devuelve un solo bit. A continuación una tabla:
+
+| Input 1 | Input 2 | & (and) | \| (or) |
+| ------- | ------- | ------- | ------- |
+| 0       | 0       | 0       | 0       |
+| 0       | 1       | 0       | 1       |
+| 1       | 0       | 0       | 1       |
+| 1       | 1       | 1       | 1       |
+
+| Input 1 | ! (not) |
+| ------- | ------- |
+| 0       | 1       |
+| 1       | 0       |
+
+------------------
+<h2>Header Bytes</h2>
+El objetivo de este apartado es aprender a filtrar paquetes en función de los contenidos de un header byte. Consideremos los protocolos estudiados: ARP; Ethernet, ICMP, IP, TCP y UDP.
+
+Usando `pcap-filter`, tcpdump permite referirnos a los contenidos de cualquier byte header usando la siguiente sintaxis: `proto[expr:size]`.
+
+- `proto`: Refiere el protocolo (`arp`, `eter`, `icmp`, `ip`, `ip6`, `tcp`, `udp`).
+- `expr`: Indica el byte offset, donde `0` se refiere al primer byte.
+- `size`: Indica el número de bytes que nos interesa. Es `1` por defecto.
+
+Consideremos los siguientes ejemplos:
+
+- `ether[0] & 1 != 0`: Coge el primer byte en el header `Ethernet` y el número decimal 1 y retorna `True` siempre que el resultado sea distinto de 0. El propósito de este filtro es mostrar paquetes que hayan sido mandados a una dirección multicast (una dirección que identifica a un grupo  de dispositivos en una red).
+- `ip[0] & 0xf != 5`: Coge el primer byte del header `ip` y lo compara con el número hexadecimal F (15). Devuelve `True` si el resultado no es igual al numero decimal 5. El propósito de este filtro es coger todos los paquetes IP con opciones.
+
+Estos ejemplos son complicados y no es necesario entenderlos completamente. Podemos usar `tcp[tcpflags]` para referirnos al campo de las flags. Aquí algunas flags:
+
+- `tcp-syn`: TCP SYN (Sincronizar).
+- `tcp-ack`: TCP ACK (Reconocer).
+- `tcp-fin`: TCP FIN (Finalizar).
+- `tcp-rst`: TCP RST (Resetear).
+- `tcp-push`: TCP Push
+
+Basado en lo de arriba, podemos escribir:
+
+- `tcpdump "tcp[tcpflags] == tcp-syn"`: Para capturar paquetes TCP sólo con la flag SYN establecida.
+- `tcpdump "tcp[tcpflags] & tcp-syn != 0"`: Para capturar paquetes TCP con **al menos** la flag SYN establecida.
+- `tcpdump "tcp[tcpflags] & (tcp-syn | tcp-ack) != 0"`: Para capturar paquetes TCP con **al menos** la flag SYN o ACK establecidas.
+

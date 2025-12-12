@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. Pickle Rick"
+---
+
+**Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/1. Introduction**
+[2. Finding the Ingredients](/apuntes/thm/maquinas/1-easy/2-pickle-rick/2-finding-the-ingredients/)

@@ -1,0 +1,19 @@
+---
+layout: apunte
+title: "3. Manual Discovery - Favicon"
+---
+
+<h2>Favicon</h2>
+El favicon es el pequeño icono mostrado en la barra de dirección del navegador. A veces, si como parte de la instalación el favicon se queda de resto y el desarrollador no lo cambia por uno propio, esto puede darnos pistas del framework usado. OWASP hostea una base de datos de iconos de  frameworks comunes que puedes usar para comprobar el favicon pinchando [aquí](https://wiki.owasp.org/index.php/OWASP_favicon_database). Una vez que conocemos el stack del framework podemos usar herramientas externas para obtener más información.
+
+-------------------
+<h2>Ejercicio Práctico</h2>
+1. Entramos en la web que nos dan.
+   !**Pasted image 20251103232536.png**
+2. En el código fuente podemos ver un enlace al favicon.
+   !**Pasted image 20251103232724.png**
+3. Extraemos el md5 del favicon para compararlo con la base de datos del OWASP.
+   !**Pasted image 20251103232935.png**
+4. Encontramos el framework usado.
+   !**Pasted image 20251103233753.png**
+

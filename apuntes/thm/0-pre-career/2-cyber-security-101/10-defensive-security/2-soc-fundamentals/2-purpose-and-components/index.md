@@ -1,0 +1,21 @@
+---
+layout: apunte
+title: "2. Purpose and Components"
+---
+
+El objetivo principal de un equipo SOC es mantener la Detección y la respuesta intactas. El equipo cuenta con recursos en forma de soluciones de seguridad que les ayuda a conseguir dicho objetivo. Estos integran toda la red de la compañía y los sistemas que moritorizar desde una localización centralizada.
+
+------------------------
+<h2>Detección</h2>
+- **Detectar vulnerabilidades:** Una vulnerabilidad es una debilidad que un atacante puede explotar para llevar las cosas más allá de su nivel de permisos. Pueden ser descubiertas en el software de cualquier dispositivo. Aunque parchear las vulnerabilidades no es responsabilidad del SOC, las vulnerabilidades no arregladas afectan a la seguridad de toda la empresa.
+- **Detectar actividad no autorizada:** Considera el caso donde un atacante descubre el nombre de usuario y la contraseña de uno de los empleados y los usa para loguearse en el sistema de la compañía. Es crucial detectarlo rápidamente antes de que cause daños. Algunas pistas pueden ser la localización geográfica o la IP del equipo, por ejemplo.
+- **Detectar violación de políticas:** Una política de seguridad es un conjunto de reglas y procedimientos creados para ayudar a proteger la empresa contra amenazas de seguridad y a cumplir con la normativa vigente. Podrían considerarse violaciones descargar software pirata o mandar archivos confidenciales de forma insegura.
+- **Detectar intrusiones:** Las intrusiones se refieren a acceso no autorizado a los sistemas y redes. Un escenario sería un atacante explotando nuestra aplicación web. Otro sería visitar un sitio malicioso e infectar el ordenador.
+
+---------------------------
+<h2>Respuesta</h2>
+- **Soporte con respuesta de incidencias:** Una vez detectado el incidente, ciertos pasos se toman para responder a ellos. Incluye minimizar el impacto y realizar el análisis de la causa raíz del incidente. El equipo SOC también ayuda al equipo IR a realizar estos pasos.
+
+Hay tres pilares en un SOC. Con estos, un equipo SOC se vuelve maduro y eficiente detectando y respondiendo a diferentes incidentes. Estos pilares son **People**, **Process** y **Technology**.
+
+!**Pasted image 20251019205936.png**

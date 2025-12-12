@@ -1,0 +1,71 @@
+---
+layout: apunte
+title: "1. Breaking the Messaging Service"
+---
+
+Para romper este servicio de mensajería y poder mandar ataques contra el navegador de la víctima, vamos a descargarnos la herramienta [BeEF](https://github.com/beefproject/beef) (The Browser Exploitation Framework).
+
+!**Pasted image 20251204165821.png**
+
+------------------------------------------
+1. Instalamos BeEF.
+   - `sudo apt update`
+   - `sudo apt install beef-xss`
+   - `sudo beef-xss`
+     !**Pasted image 20251204170837.png**
+     Con esto hemos iniciado el servicio beef-xss, que contiene el script `hook.js`. 
+2. Ahora inyectamos el código malicioso en la aplicación vulnerable.
+   !**Pasted image 20251205181207.png**
+3. Como no nos deja meterlo todo, inspeccionamos el elemento y cambiamos el valor de `maxlength` a 150, por ejemplo.
+   !**Pasted image 20251210153942.png**
+4. Ahora ya sí nos deja.
+   !**Pasted image 20251210154155.png**
+5. Le damos a Sign Guestbook.
+   !**Pasted image 20251210154235.png**
+6. Y nos aparece la sesión en BeEF.
+   !**Pasted image 20251210154308.png**
+7. Ahora comienza la parte divertida: lanzar ataques.
+	1. Empezaremos lanzando un ataque contra el navegador.
+		1. Si desplegamos "Browser" en "Commands" podemos ver todas las opciones que tenemos.
+		   !**Pasted image 20251210155158.png**
+		2. Si le damos a "Get Cookie" (verde) nos aparece un apartado a la derecha.
+		   !**Pasted image 20251210160107.png**
+		3. Si le damos a ejecutar nos aparece la cookie de sesión.
+		   !**Pasted image 20251210160508.png**
+	2. Vamos a lanzar otro pero ahora contra el host.
+		1. Le damos a "Get Geolocation" en "Host".
+		   !**Pasted image 20251210160600.png**
+		2. Seleccionamos cualquier API (yo la primera).
+		   !**Pasted image 20251210160652.png**
+		3. Y ejecutamos y nos sale la geolocation.
+		   !**Pasted image 20251210161116.png**
+		   Salen muchas más cosas que obviamente he ocultado por privacidad xD
+	3. Si le damos a "Get HREFs" en "Hooked Domains" podemos obtener los hipervínculos en la página.
+	   !**Pasted image 20251210163351.png**
+	4. Si le damos a "Shell Shock Scanner (Reverse Shell)":
+	   !**Pasted image 20251210165359.png**
+	   !**Pasted image 20251210165442.png**
+	5. Vamos a reescribir los hipervínculos.
+		1. Si vamos a "Browser" luego a "Hooked Domains" y a "Link Rewrite (Click Events)" y lo ejecutamos.
+		   !**Pasted image 20251210170126.png**
+		2. Abrimos la página con hipervínculo.
+		   !**Pasted image 20251210170142.png**
+		3. Vamos a la página abierta.
+		   !**Pasted image 20251210170211.png**
+
+
+------------------------------------------------
+<h2>Archivo hook.js</h2>
+
+| Área                             | Qué hace                                           |
+| -------------------------------- | -------------------------------------------------- |
+| **Constructor jQuery**           | Crea objetos jQuery y selecciona elementos del DOM |
+| **Manipulación del DOM**         | Navegar, filtrar, modificar HTML y atributos       |
+| **Sizzle – Motor de selectores** | Interpreta selectores CSS y encuentra elementos    |
+| **Utilidades**                   | Funciones de ayuda (array, objetos, strings)       |
+| **Callbacks / Deferred**         | Manejo asincrónico avanzado                        |
+| **Data API**                     | Almacenar y recuperar datos en el DOM              |
+| **Ready / Carga del documento**  | Detectar cuándo el DOM está listo                  |
+| **Compatibilidad / Soporte**     | Normalización entre navegadores                    |
+| **Eventos**                      | Manejo unificado de eventos (on/off/trigger)       |
+| **AJAX**                         | Comunicación asincrónica con el servidor           |

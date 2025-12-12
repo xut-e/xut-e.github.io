@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. Burp Suite - Intruder"
+---
+
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/3. Burp Suite - Intruder/0. Burp Suite - Intruder**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/3. Burp Suite/3. Burp Suite - Intruder/1. Redireccion**

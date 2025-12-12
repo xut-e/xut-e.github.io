@@ -1,0 +1,6 @@
+---
+layout: apunte
+title: "2. OSINT - SSL-TLS Certificates"
+---
+
+Cuando se crea un certificado SSL/TLS (Secure Sockets Layer/Transport Layer Security) para un dominio por una CA (Certificate Authority), esta CA pparticipa en lo que se conoce como "logs de Certificado de Transpariencia (CT)". Estos son logs públicos y accesibles creados para un nombre de dominio. El propósito de los logs CT es evitar que certificados maliciosos o hechos accidentalmente sean usados. Podemos usar este servicio para nuestra ventaja para descubrir subdominios de una web, para ver una base de datos de certificados pincha [aquí](https://crt.sh/) o busca en internet.

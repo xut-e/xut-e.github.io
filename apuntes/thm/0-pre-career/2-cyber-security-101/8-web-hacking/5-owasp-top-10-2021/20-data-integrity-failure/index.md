@@ -1,0 +1,52 @@
+---
+layout: apunte
+title: "20. Data Integrity Failure"
+---
+
+Pensemos en cómo las aplicaciones web mantienen las sesiones. Usualmente, cuando un usuario inicia sesión en una aplicación, se le dará un token que se debe guardar en el navegador hasta que la sesión expire. Estos pueden ser asignados de varias formas, pero normalmente vienen dados vía cookies. Las **cookies** son pares llave-valor que el navegador guardará y que será utilizado en las comunicaciones con el servidor automática y repetidamente.
+
+Si creásemos una aplicación de email web, podríamos asociar a cada usuario logueado una cookie con su nombre de usuario. De esta manera, en peticiones siguientes se mandaría tu username en la cookie. Esto sería una idea terrible a nivel de ciberseguridad, porque si el usuario modifica el valor de la cookie, que se guarda en el navegador, podría obtener las cookies de sesión de otro usuario.
+
+Una solución a esto es usar algún mecanismo de integridad para garantizar que la cookie no haya sido modificada. Para esto podríamos usar un token que nos permita cumplir con los objetivos de criptografía y PoI (proof of integrity). Una de estas implementaciones es JWT (JSON Web Tokens).
+
+JWTs son tokens simples que te permiten guardar los pares llave-valor en un token que ofrece integridad como parte del token. La idea es que puedas generar tokens que puedas dar a tus usuarios con la certeza de que no serán capaces de alterar los valores de parejas y pasar el check de integridad. La estructura de un JWT consta de 3 partes:
+
+!**Pasted image 20251013172339.png**
+
+El header contiene metadatos indicando que es un JWT, y el algoritmo de firmado que se utiliza es HS256. El payload contiene el par llave-valor con la información que la aplicación web requiere al cliente guardar. La firma es similar a un hash, tomado para verificar la integridad del payload. Si cambias el payload, la firma no coincidirá y la aplicación web sabrá que se ha modificado el payload.
+
+>[!NOTE] Cada una de las partes del JWT es texto plano encodeado en base64.
+
+------------------------
+<h2>JWT y el Algoritmo None</h2>
+Una vulnerabilidad de fallo de integridad estuvo presente en algunas librerías que implementaban JWT hace un tiempo. Estas librerías permitieron a los atacantes bypassear la validación de firma cambiando las dos cosas siguientes en JWT:
+
+1. Modificar el header del token para que el header `alg` contuviese el valor `none`.
+2. Eliminar la parte de la firma.
+
+Tomando como ejemplo el JWT que hemos visto antes, si quisiésemos cambiar el payload para que el nombre de usuario fuese "admin" y que no se hiciera la comprobación de integridad, tendríamos que decodear, modificar y volver a codificar el header y payload.
+
+!**Pasted image 20251013191114.png**
+
+----------------------
+<h2>Challenge</h2>
+1. Entramos en la página dada:
+   !**Pasted image 20251013222434.png**
+2. Probando suerte con "guest" "guest" entramos a dicho usuario:
+   !**Pasted image 20251013222538.png**
+3. Si abrimos las dev tools podemos ver la cookie de sesión que se nos ha asignado:
+   !**Pasted image 20251013222753.png**
+4. Si decodeamos nuestro token:
+   !**Pasted image 20251013223103.png**
+5. Entonces sabemos que modificando la primera y segunda parte y borrando la última podemos acceder:
+   - Primero metemos el contenido decodeado en un archivo:
+     !**Pasted image 20251013223552.png**
+   - Ahora los modificamos:
+     !**Pasted image 20251013223733.png**
+     !**Pasted image 20251013223814.png**
+   - Por último extraemos los fragmentos codificados en base64:
+     !**Pasted image 20251013224004.png**
+6. Por último juntamos los trozos y lo sustituimos por nuestra cookie (hay que ponerle el punto al final):
+   !**Pasted image 20251013224804.png**
+7. Obtenemos la flag:
+   !**Pasted image 20251013224834.png**

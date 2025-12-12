@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "9. Out-of-Band SQLI"
+---
+
+La SQLi Out-of-Band no es tan común ya que depende o en funcionalidades específicas siendo habilitadas en el servidor o en la lógica de negocio de la aplicación.
+
+Un ataque Out-of-Band se clasifica como tener dos canales de comunicación diferentes, uno para lanzar el ataque y otro para recoger la información. Por ejemplo, el canal de ataque podría ser una petición web y el otro canal monitorizar peticiones HTTP/DNS hechas a un servidor que tu controles.
+
+1. Un atacante hace una petición a un sitio web vulnerable a SQLi Out-of-Band.
+2. El sitio web hace una query SQL a la base de datos pasando el payload del atacante.
+3. El payload contiene una petición HTTP forzada a una máquina del atacante conteniendo datos de la base de datos.
+
+!**Pasted image 20251114130345.png**

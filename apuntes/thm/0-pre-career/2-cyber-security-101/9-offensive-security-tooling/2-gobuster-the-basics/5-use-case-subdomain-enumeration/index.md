@@ -1,0 +1,55 @@
+---
+layout: apunte
+title: "5. Use Case - Subdomain Enumeration"
+---
+
+El siguiente modo en el que nos enfocaremos será el modo `dns`. Este nos permite bruteforcear subdominios. Durante un pentest, buscar subdominios de tu objetivo es esencial. Porque una vulnerabilidad esté parcheada en el dominio principal, no significa que también lo esté en el subdominio.
+
+----------------------
+<h2>Help</h2>
+Si quieres una vista por encima completa de lo que el comando `dns` puede ofrecernos en Gobuster, puedes mirar la página de help. Como puede ser un poco intimidante, nos centraremos sólo en:
+
+| Flag | Flag larga     | Descripción                                                                |
+| ---- | -------------- | -------------------------------------------------------------------------- |
+| `-c` | `--show-cname` | Muestra los registros CNAME (no puede ser usado con la flag -i)            |
+| `-i` | `--show-ips`   | Muestra las direcciones IPs hacia las que el dominio y subdomino resuelven |
+| `-r` | `--resolver`   | Configura un DNS personalizado que usar para resolver                      |
+| `-d` | `--domain`     | Configura el dominio que queramos enumerar                                 |
+
+----------------------------
+<h2>¿Cómo usar el modo dns?</h2>
+Para usar el modo `dns` se debe usar la siguiente sintaxis:
+
+`gobuster dns -d example.thm -w /path/to/wordlist`
+
+Las flags `-d` y `-w` son necesarias para que el modo de enumeración de subdominios funcione correctamente. Veamos un ejemplo:
+
+`gobuster dns -d example.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt`
+
+- `gobuster dns`: Enumera subdominios en el dominio configurado.
+- `-d example.thm`: Configura el dominio.
+- `-w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt`: Configura el diccionario.
+
+Si probamos el comando deberíamos obtener:
+
+```shell
+root@tryhackme:~# gobuster dns -d example.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt
+=============================================================== 
+Gobuster v3.6 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart) 
+=============================================================== 
+[+] Domain:     example.thm 
+[+] Threads:    10 
+[+] Timeout:    1s 
+[+] Wordlist:   /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt 
+=============================================================== 
+Starting gobuster in DNS enumeration mode 
+=============================================================== 
+Found: www.example.thm
+Found: shop.example.thmç
+Found: academy.example.thm
+Found: primary.example.thm                                                                                                                                        Progress: 4989 / 4990 (99.98%) 
+=============================================================== 
+Finished 
+===============================================================
+```
+

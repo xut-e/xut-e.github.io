@@ -1,0 +1,42 @@
+---
+layout: apunte
+title: "7. Web Shell"
+---
+
+Una web shell es un script escrito en un lenguaje soportado por un servidor web comprometido que ejecuta comandos a través del propio servidor. Suele ser un archivo que contiene código que ejecuta comandos y controla archivos.
+
+Pueden ser escritas en diferentes lenguajes soportados por servidores web, como PHP, ASP, JSP o CGI.
+
+---------------------
+<h2>Ejemplo de Web Shell PHP</h2>
+Veamos un ejemplo de una web shell en PHP para entender cómo funciona este proceso:
+
+```php
+<?php
+if (isset($_GET['cmd'])) {
+    system($_GET['cmd']);
+}
+?>
+```
+
+La shell de arriba puede guardarse en un archivo con extensión php, como `shell.php`, y luego subida a un servidor por el atacante para explotar vulnerabilidades como Unrestricted File Upload, File Inclusion, Command Injection y otras.
+
+Después de desplegar la webshell en el servidor puede ser accedida a través de la URL. Según el ejemplo de arriba, tendríamos que realizar una petición GET con el parámetro "cmd". Si la página fuera `http://victim.com/uploads/shell.php`:
+
+`http://victim.com/uploads/shell.php?cmd=whoami`
+
+Esto ejecutará el comando whoami en el servidor y devolverá el resultado a través del navegador.
+
+---------------------
+<h2>Web Shells Existentes Disponibles Online</h2>
+El poder de los lenguajes soportados por los servidores web puede resultar en web shells con varias funcionalidades y evitar la detección a la vez. Veamos algunas de las más populares:
+
+- [p0wny-shell](https://github.com/flozz/p0wny-shell): Una web shell de un solo archivo PHP minimalista que permite RCE.
+  !**Pasted image 20251017174237.png**
+- [b374k shell](https://github.com/b374k/b374k): Una web shell PHP más rica en funcionalidades con manejo de archivos y ejecución de comandos, entre otras funcionalidades.
+  !**Pasted image 20251017174417.png**
+- [c99 shell](https://www.r57shell.net/single.php?id=13): Una web shell robusta y bien conocida con funcionalidades extensas.
+  !**Pasted image 20251017174504.png**
+
+Si quieres encontrar más web shells: https://www.r57shell.net/index.php 
+

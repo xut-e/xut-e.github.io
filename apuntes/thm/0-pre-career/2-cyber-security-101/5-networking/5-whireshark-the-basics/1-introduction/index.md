@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+Wireshark es una herramienta de código abierto y multiplataforma de análisis de paquetes capaz de sniffear e investigar el tráfico en vivo y de inspeccionar la captura de paquetes (PCAP). En esta unidad veremos sus usos y como analizar paquetes con ella.
+

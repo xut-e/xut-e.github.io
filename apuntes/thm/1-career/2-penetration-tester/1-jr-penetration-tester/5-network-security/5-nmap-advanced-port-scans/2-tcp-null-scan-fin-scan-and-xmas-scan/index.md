@@ -1,0 +1,105 @@
+---
+layout: apunte
+title: "2. TCP Null Scan, FIN Scan, and Xmas Scan"
+---
+
+Empecemos con los siguientes tipos de escaneo:
+
+- Null Scan
+- FIN Scan
+- Xmas Scan
+
+---------------------------------------
+<h2>Null Scan</h2>
+El escaneo Null no configura ninguna flag. Todos los bits están en "0". Puedes elegir este tipo de escaneo con la opción `-sN`. Un paquete TCP sin flags no disparará una respuesta cuando alcance un puerto abierto. Por lo que si Nmap no recibe una respuesta determinará que está abierto o que hay un firewall bloqueando el tráfico.
+
+!**Pasted image 20251120120648.png**
+
+Sin embargo, si está cerrado sí que recibiremos un paquete ACK/RST indicando que está cerrado.
+
+!**Pasted image 20251120120718.png**
+
+Debajo un ejemplo de un escaneo y la respuesta.
+
+```shell
+pentester@TryHackMe$ sudo nmap -sN 10.82.144.170
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:30 BST
+Nmap scan report for 10.82.144.170
+Host is up (0.00066s latency).
+Not shown: 994 closed ports
+PORT    STATE         SERVICE
+22/tcp  open|filtered ssh
+25/tcp  open|filtered smtp
+80/tcp  open|filtered http
+110/tcp open|filtered pop3
+111/tcp open|filtered rpcbind
+143/tcp open|filtered imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 96.50 seconds
+```
+
+---------------------------------
+<h2>FIN Scan</h2>
+El escaneo FIN manda un paquete TCP con la flag FIN configurada. Puedes elegir este tipo de escaneo con la opción ´-sF´. No se mandará respuesta si el puerto está abierto, aunque también podría ser un firewall bloqueando el puerto.
+
+!**Pasted image 20251120121750.png**
+
+Sin embargo, el sistema responderá con RST si el puerto está cerrado. Aunque algunos firewalls pueden tirar la conexión silenciosamente sin mandar RST, estando el puerto abierto.
+
+!**Pasted image 20251120121907.png**
+
+Debajo un ejemplo de escaneo y respuesta.
+
+```shell
+pentester@TryHackMe$ sudo nmap -sF 10.82.144.170
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:32 BST
+Nmap scan report for 10.82.144.170
+Host is up (0.0018s latency).
+Not shown: 994 closed ports
+PORT    STATE         SERVICE
+22/tcp  open|filtered ssh
+25/tcp  open|filtered smtp
+80/tcp  open|filtered http
+110/tcp open|filtered pop3
+111/tcp open|filtered rpcbind
+143/tcp open|filtered imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 96.52 seconds
+```
+
+-------------------------------
+<h2>Xmas Scan</h2>
+El escaneo Xmas toman su nombre de las luces del arbol de navidad. Un escaneo Xmas configura las flags FIN, PSH y URG de manera simultánea. Puedes seleccionar este escaneo con la opción `-sX`.
+
+Como la flag FIN está configurado pasa exactamente lo mismo que con los otros escaneos:
+
+!**Pasted image 20251120122500.png**
+!**Pasted image 20251120122504.png**
+
+Debajo un ejemplo del escaneo y la respuesta.
+
+```shell
+pentester@TryHackMe$ sudo nmap -sX 10.82.144.170
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:34 BST
+Nmap scan report for 10.82.144.170
+Host is up (0.00087s latency).
+Not shown: 994 closed ports
+PORT    STATE         SERVICE
+22/tcp  open|filtered ssh
+25/tcp  open|filtered smtp
+80/tcp  open|filtered http
+110/tcp open|filtered pop3
+111/tcp open|filtered rpcbind
+143/tcp open|filtered imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 84.85 seconds
+```
+
+Un escenario donde estos tres tipos de escaneos pueden resultar útiles o eficientes es al escanear un oobjetico detrás de un firewall stateless. Este comprobará si el paquete entrante tiene la flag SYN para detectar un intento de conexión. Usar una combinación de flags que no coincida con la flag SYN hace posible engañar al firewall y alcanzar el sistema que hay detrás. Sin embargo, un firewall stateful bloqueará prácticamente todos los paquetes crafteados.
+

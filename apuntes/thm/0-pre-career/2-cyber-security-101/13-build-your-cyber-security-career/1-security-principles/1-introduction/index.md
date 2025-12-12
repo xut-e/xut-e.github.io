@@ -1,0 +1,19 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+La seguridad se ha convertido en una prioridad para todas las empresas.Todas quieren afirmar que sus productos son seguros, pero ¿por qué?
+
+Antes de comenzar, es vital saber cuál es el adversario contra el que debemos proteger nuestros activos. ¿Tratas de evitar que un bebé coja tu ordenador? ¿O tratas de proteger un portátil que contiene diseños técnicos que valen millones de dólares? Usar el mismo tipo de protección ante diferentes adversarios puede ser ridículo y contraproducente. Por esto, conocer a nuestro adversario es clave.
+
+Es imposible conseguir un estado de seguridad del 100%. Por eso debemos de tratar mejorar nuestra postura de seguridad para hacerlo cada vez más difícil para los adversarios.
+
+--------------------------------
+<h2>Objetivos de Aprendizaje</h2>
+- Explicar las funciones de seguridad: Confidencialidad, Integridad y Disponibilidad (Availability), CIA.
+- Presentar la tríada opuesta a CIA: Divulgación, Alteración y Destrucción/Denegación (DAD).
+- Presentar los conceptos fundamentales de los modelos de seguridad como el modelo Bell-LaPadula.
+- Explicar principios de seguridad como Defensa en Profundidad, Zero Trust y Trust but Verify.
+- Introducir a ISO/IEC 19249.
+- Explicar las diferencias principales entre vulnerabilidad, amenaza y riesgo.

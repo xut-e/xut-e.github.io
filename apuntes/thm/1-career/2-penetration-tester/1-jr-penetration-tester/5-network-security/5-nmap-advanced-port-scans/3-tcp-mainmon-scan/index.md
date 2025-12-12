@@ -1,0 +1,25 @@
+---
+layout: apunte
+title: "3. TCP Mainmon Scan"
+---
+
+Uriel Maimon fue el primero en describir este escaneo en 1996. En este escaneo, se configuran las flags FIN y ACK. El objetivo mandará un paquete RST como respuesta. Sin embargo, ciertos sistemas derivados de BSD (Berkley Software Distribution), dropean este paquete si el puerto está abierto. Para seleccionar este tipo de ataque usa la opción `-sM`.
+
+La mayoría de los sistemas responderán con un paquete RST.
+
+!**Pasted image 20251120125710.png**
+
+El output de la consola será así:
+
+```shell
+pentester@TryHackMe$ sudo nmap -sM 10.10.252.27
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:36 BST
+Nmap scan report for ip-10-10-252-27.eu-west-1.compute.internal (10.10.252.27)
+Host is up (0.00095s latency).
+All 1000 scanned ports on ip-10-10-252-27.eu-west-1.compute.internal (10.10.252.27) are closed
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.61 seconds
+```
+

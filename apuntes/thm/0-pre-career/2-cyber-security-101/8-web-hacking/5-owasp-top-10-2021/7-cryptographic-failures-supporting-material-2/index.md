@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "7. Cryptographic Failures (Supporting Material 2)"
+---
+
+Ya vimos cómo mandar queries a una base de datos SQLite. Encontramos una colección de contraseñas en hash, una para cada usuario. En esta tarea cubriremos cómo crackearlas.
+
+Aunque kali ya tiene preinstaladas herramientas específicas para este proceso, estas no están en el scope de la lección. Estaremos usando [crackstation](https://crackstation.net/). Este sitio web es impresionantemente bueno crackeando  contraseñas, aunque para hashes más complicados tendríamos que usar herramientas dedicadas.
+
+Si tratamos de descifrar la contraseña de Joy Paulson, `5f4dcc3b5aa765d61d8327deb882cf99`, obtenemos:
+
+!**Pasted image 20251009210426.png**
+
+Vemos que el hash ha sido crackeado y la contraseña expuesta. Crackstation funciona con diccionarios inmensos, si la contraseña no está en esos diccionarios será imposible descifrarla.
