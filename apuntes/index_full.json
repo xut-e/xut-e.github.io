@@ -5164,8 +5164,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/3-general-methodology/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/3. General Methodology.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
-    "content": "",
-    "modified": "2025-12-12T13:58:55"
+    "content": "Bien, ya tenemos un punto de subida de archivos en una página web. ¿Cómo lo explotamos?\n\nComo con cualquier tipo de hacking, la enumeración es clave. Cuanto más entendamos sobre nuestro entorno, más seremos capaces de hacer con esa información. Algunas buenas ideas son:\n\n- Mirar el código fuente de la página.\n- Escanear directorios con fuerza bruta (`gobuster`, por ejemplo).\n- Interceptar peticiones de subida de archivos con BurpSuite.\n- Extensiones como Wappalyzer pueden ofrecer información valiosa en un vistazo.\n\nCon un entendimiento básico de cómo la web trata nuestro input, podemos tratar de tocar por algunos sitios y ver qué y qué no podemos subir. Si el sitio web usa filtros del lado del cliente, podemos buscar estos filtros e intentar bypassearlos. Si usa filtros del lado del servidor, debemos adivinar qué busca el filtro e intentar algo ligeramente diferente. Subir archivos destinados a provocar errores puede ser muy útil. Herramientas como Burp Suite u OWASP Zap pueden ser de gran ayuda en esta fase.",
+    "modified": "2025-12-14T00:57:26"
   },
   {
     "title": "12. Coclusion",
@@ -5196,8 +5196,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/4-overwriting-existing-files/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/4. Overwriting Existing Files.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
-    "content": "",
-    "modified": "2025-12-12T13:58:55"
+    "content": "Cuando se suben archivos a un servidor, se deberían de hacer un número de comprobaciones para asegurar que el archivo no sobrescribirá nada que ya exista en el servidor. Una práctica común es asignar un nombre al archivo ya sea aleatorio o con la fecha y hora de subida. Si un archivo con el mismo nombre ya existe, el servidor debe mandar un mensaje de error conforme ese nombre ya existe. También son relevantes los permisos ya que un archivo que contenga la web no debería ser escribible por el usuario.\n\nSi no se toman dichas precauciones, podemos ser capaces de sobrescribir archivos existentes en el servidor. \n\n>[!CAUTION] Usaremos `demo.uploadvulns.thm` para todas las demostraciones. Es puramente para propósitos demostrativos y no está disponible en la máquina virtual.\n\nEn la siguiente imagen tenemos una página web con un formulario de subida.\n\n![[Pasted image 20251213142409.png]]\n\nPuede que necesites enumerar más que esto para un reto real. Sin embargo, por esta vez, miraremos el código fuente de la página.\n\n![[Pasted image 20251213142556.png]]\n\nAquí podemos ver el código responsable de representar la imagen que vemos. Sale de un archivo llamado `spaniel.jpg` dentro de un directorio llamado `images`.\n\nLa pregunta aquí es: ¿podemos sobrescribirlo?\n\nVamos a descargarnos una imagen diferente y a llamarla `spaniel.jpg`.\n\n![[Pasted image 20251213142900.png]]\n\nAhora la subimos a ver qué pasa.\n\n![[Pasted image 20251213142914.png]]\n\nNuestro ataque ha sido exitoso. Hemos conseguido sobrescribir el archivo `images/spaniel.jpg` con nuestra propia copia.\n\n-------------------------------------------\nAhora pongámoslo a prueba. Abre el navegador y navega a `http://overwrite.uploadvulns.thm`. Tu objetivo es sobrescribir el archivo con uno tuyo.\n\n1. Navegamos a la dirección dada.\n   ![[Pasted image 20251213143124.png]]\n2. Inspeccionamos el código fuente con `Ctrl + U`.\n   ![[Pasted image 20251213143158.png]]\n   Aquí podemos ver que el fondo cargado es una imagen llamada `mountains.jpg` cargada desde el directorio `images`.\n3. Vamos a descargarnos una imagen y a llamarla de la misma forma.\n   ![[Pasted image 20251213143334.png]]\n4. Le damos a `Select File`, seleccionamos la imagen que nos acabamos de descargar y le damos a `Upload`.\n   ![[Pasted image 20251213143448.png]]\n5. Obtenemos la flag.\n   ![[Pasted image 20251213143507.png]]",
+    "modified": "2025-12-14T00:57:26"
   },
   {
     "title": "10. Example Methodology",
@@ -5212,8 +5212,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/1-getting-started/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/1. Getting Started.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
-    "content": ">[!CAUTION] Lee las instrucciones cuidadosamente y síguelas.\n\nEsta tearea te enseñará a configurar el [archivo de hosts](https://www.ionos.co.uk/digitalguide/server/configuration/hosts-file/) de tu dispositivo. El archivo hosts se usa para mapear, bypasseando el DNS. Es decir, permite relacionar un dominio con una IP sin necesidad de pasar por un DNS. Es extremadamente útil en entornos donde el DNS no está disponible, como TryHackMe.\n\n------------------------------------------",
-    "modified": "2025-12-12T13:58:55"
+    "content": ">[!CAUTION] Lee las instrucciones cuidadosamente y síguelas.\n\nEsta tarea te enseñará a configurar el [archivo de hosts](https://www.ionos.co.uk/digitalguide/server/configuration/hosts-file/) de tu dispositivo. El archivo hosts se usa para mapear, bypasseando el DNS. Es decir, permite relacionar un dominio con una IP sin necesidad de pasar por un DNS. Es extremadamente útil en entornos donde el DNS no está disponible, como TryHackMe.\n\n------------------------------------------\nPrimero desplegamos la máquina y le damos unos 5 minutos para arrancar.\n\nAhora usando una sesión administrativa y tu editor de texto favorito, abre el archivo `hosts` de tu equipo:\n\n- En Linux y MacOS se encuentra en `/etc/hosts`.\n- En Windows está en `C:\\Windows\\System32\\drivers\\etc\\hosts`.\n\nAñade la siguiente línea (en singular) al final del archivo.\n\n`10.80.160.47    overwrite.uploadvulns.thm shell.uploadvulns.thm java.uploadvulns.thm annex.uploadvulns.thm magic.uploadvulns.thm jewel.uploadvulns.thm demo.uploadvulns.thm`\n\nLa sintaxis es `IP + TAB + Dominio` --> `192.168.2.1    dominio.com`.\n\n>[!IMPORTANT] Cuando termines de usar la máquina asegúrate de eliminar la línea.",
+    "modified": "2025-12-14T00:57:26"
   },
   {
     "title": "11. Challenge",
@@ -5236,8 +5236,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/2-introduction/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/2. Introduction.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
-    "content": "",
-    "modified": "2025-12-12T13:58:55"
+    "content": "La capacidad de subir archivos a un servidor se ha vuelto una parte integral de cómo interactuamos con las aplicaciones web. Ya sea una foto de perfil, un reporte o un proyecto.\n\nSi no se maneja correctamente, la subida de archivos puede generar vulnerabilidades severas en el servidor. Esto puede llevar a cualquier cosa relativamente menor hasta RCE si un atacante consiguiese subir y ejecutar una shell. Además podría hacer un deface de la página o sustituir enlaces o contenido con el fin de provocar un CSRF o un XSS.",
+    "modified": "2025-12-14T00:57:26"
   },
   {
     "title": "0. Upload Vulnerabilities",

@@ -1,42 +1,42 @@
 [
   {
+    "title": "3. General Methodology",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/3-general-methodology/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/3. General Methodology.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "Bien, ya tenemos un punto de subida de archivos en una página web. ¿Cómo lo explotamos?\n\nComo con cualquier tipo de hacking, la enumeración es clave. Cuanto más entendamos sobre nuestro entorno, más seremos capaces de hacer con esa información. Algunas buenas ideas son:\n\n- Mirar el código fuente de la página.\n- Escanear directorios con fuerza bruta (`gobuster`, por ejemplo).\n- Interceptar peticiones de subida de archivos con BurpSuite.\n- Extensiones como Wappalyzer pueden ofrecer información valiosa en un vistazo.\n\nCon un entendimiento básico de cómo la web trata nuestro input, podemos tratar de tocar por algunos sitios y ver qué y qué no podemos subir. Si el sitio web usa filtros del lado del cliente, podemos buscar estos filtros e intentar bypassearlos. Si usa filtros del lado del servidor, debemos adivinar qué busca el filtro e intentar algo ligeramente diferente. Subir archivos destinados a provocar errores puede ser muy útil. Herramientas como Burp Suite u OWASP Zap pueden ser de gran ayuda en esta fase.",
+    "modified": "2025-12-14T00:57:26"
+  },
+  {
+    "title": "4. Overwriting Existing Files",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/4-overwriting-existing-files/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/4. Overwriting Existing Files.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "Cuando se suben archivos a un servidor, se deberían de hacer un número de comprobaciones para asegurar que el archivo no sobrescribirá nada que ya exista en el servidor. Una práctica común es asignar un nombre al archivo ya sea aleatorio o con la fecha y hora de subida. Si un archivo con el mismo nombre ya existe, el servidor debe mandar un mensaje de error conforme ese nombre ya existe. También son relevantes los permisos ya que un archivo que contenga la web no debería ser escribible por el usuario.\n\nSi no se toman dichas precauciones, podemos ser capaces de sobrescribir archivos existentes en el servidor. \n\n>[!CAUTION] Usaremos `demo.uploadvulns.thm` para todas las demostraciones. Es puramente para propósitos demostrativos y no está disponible en la máquina virtual.\n\nEn la siguiente imagen tenemos una página web con un formulario de subida.\n\n![[Pasted image 20251213142409.png]]\n\nPuede que necesites enumerar más que esto para un reto real. Sin embargo, por esta vez, miraremos el código fuente de la página.\n\n![[Pasted image 20251213142556.png]]\n\nAquí podemos ver el código responsable de representar la imagen que vemos. Sale de un archivo llamado `spaniel.jpg` dentro de un directorio llamado `images`.\n\nLa pregunta aquí es: ¿podemos sobrescribirlo?\n\nVamos a descargarnos una imagen diferente y a llamarla `spaniel.jpg`.\n\n![[Pasted image 20251213142900.png]]\n\nAhora la subimos a ver qué pasa.\n\n![[Pasted image 20251213142914.png]]\n\nNuestro ataque ha sido exitoso. Hemos conseguido sobrescribir el archivo `images/spaniel.jpg` con nuestra propia copia.\n\n-------------------------------------------\nAhora pongámoslo a prueba. Abre el navegador y navega a `http://overwrite.uploadvulns.thm`. Tu objetivo es sobrescribir el archivo con uno tuyo.\n\n1. Navegamos a la dirección dada.\n   ![[Pasted image 20251213143124.png]]\n2. Inspeccionamos el código fuente con `Ctrl + U`.\n   ![[Pasted image 20251213143158.png]]\n   Aquí podemos ver que el fondo cargado es una imagen llamada `mountains.jpg` cargada desde el directorio `images`.\n3. Vamos a descargarnos una imagen y a llamarla de la misma forma.\n   ![[Pasted image 20251213143334.png]]\n4. Le damos a `Select File`, seleccionamos la imagen que nos acabamos de descargar y le damos a `Upload`.\n   ![[Pasted image 20251213143448.png]]\n5. Obtenemos la flag.\n   ![[Pasted image 20251213143507.png]]",
+    "modified": "2025-12-14T00:57:26"
+  },
+  {
+    "title": "1. Getting Started",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/1-getting-started/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/1. Getting Started.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": ">[!CAUTION] Lee las instrucciones cuidadosamente y síguelas.\n\nEsta tarea te enseñará a configurar el [archivo de hosts](https://www.ionos.co.uk/digitalguide/server/configuration/hosts-file/) de tu dispositivo. El archivo hosts se usa para mapear, bypasseando el DNS. Es decir, permite relacionar un dominio con una IP sin necesidad de pasar por un DNS. Es extremadamente útil en entornos donde el DNS no está disponible, como TryHackMe.\n\n------------------------------------------\nPrimero desplegamos la máquina y le damos unos 5 minutos para arrancar.\n\nAhora usando una sesión administrativa y tu editor de texto favorito, abre el archivo `hosts` de tu equipo:\n\n- En Linux y MacOS se encuentra en `/etc/hosts`.\n- En Windows está en `C:\\Windows\\System32\\drivers\\etc\\hosts`.\n\nAñade la siguiente línea (en singular) al final del archivo.\n\n`10.80.160.47    overwrite.uploadvulns.thm shell.uploadvulns.thm java.uploadvulns.thm annex.uploadvulns.thm magic.uploadvulns.thm jewel.uploadvulns.thm demo.uploadvulns.thm`\n\nLa sintaxis es `IP + TAB + Dominio` --> `192.168.2.1    dominio.com`.\n\n>[!IMPORTANT] Cuando termines de usar la máquina asegúrate de eliminar la línea.",
+    "modified": "2025-12-14T00:57:26"
+  },
+  {
+    "title": "2. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/2-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/2. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
+    "content": "La capacidad de subir archivos a un servidor se ha vuelto una parte integral de cómo interactuamos con las aplicaciones web. Ya sea una foto de perfil, un reporte o un proyecto.\n\nSi no se maneja correctamente, la subida de archivos puede generar vulnerabilidades severas en el servidor. Esto puede llevar a cualquier cosa relativamente menor hasta RCE si un atacante consiguiese subir y ejecutar una shell. Además podría hacer un deface de la página o sustituir enlaces o contenido con el fin de provocar un CSRF o un XSS.",
+    "modified": "2025-12-14T00:57:26"
+  },
+  {
     "title": "6. Whos Flying this Thing",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/7-owasp-juice-shop/6-whos-flying-this-thing/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/7. OWASP Juice Shop/6. Whos Flying this Thing.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 7. OWASP Juice Shop",
     "content": "![[Pasted image 20251212144150.png]]\n\nLos sistemas modernos permiten a múltiples usuarios tener acceso a diferentes páginas. Los administradores usan comúnmente páginas de administración para editas, añadir y eliminar contenido de la web. Puedes usarlas cuando estás construyendo un sitio web con herramientas como Weebly o Wix.\n\nCuando se encuentran exploits de Croken Access Control, pueden categorizarse en uno de estos dos tipos:\n\n| Tipo                                | Descripción                                                                                                                                |\n| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |\n| **Horizontal** Privilege Escalation | Ocurre cuando un usuario puede realizar una acción o acceder a información reservada para un usuario con el mismo nivel de privilegios.    |\n| **Vertical** Privilege Escalation   | Ocurre cuando un usuario puede realizar una acción o acceder a información reservada para un usuario con un nivel de privilegios superior. |\n\n![[Pasted image 20251211190152.png]]\n\n------------------------------------\n1. Accede a la página de administración.\n\t1. Vamos al Debugger (Firefox) o Sources (Chrome) en las herramientas de desarrollador. Buscamos \"main.js\", le damos al boton `{}` abajo y luego `Ctrl + F` para buscar \"admin\".\n\t   ![[Pasted image 20251211191345.png]]\n\t   Nos interesa `path: 'administration'`.\n\t2. Lo buscamos.\n\t   ![[Pasted image 20251211191940.png]]\n\t3. Ya habíamos obtenido las credenciales, por lo que vamos a iniciar sesión.\n\t   ![[Pasted image 20251211193320.png]]\n\t4. Volvemos a mirar la página de administración.\n\t   ![[Pasted image 20251211193427.png]]\n2. Mira el carrito de la compra de otro usuario.\n\t1. Nos logueamos como administrador y vamos a \"Your Basket\".\n\t   ![[Pasted image 20251212150544.png]]\n\t2. Capturamos las peticiones y las dejamos pasar con \"Forward\" hasta vet una que diga `GET /rest/basket/1 HTTP/1.1`.\n\t   ![[Pasted image 20251212151555.png]]\n\t3. Cambiamos la terminación por `2` en el repeater y le damos a mandar. Podemos ver que funciona, por lo que podemos hacer lo mismo en el proxy y darle a \"Forward\".\n\t   ![[Pasted image 20251212151756.png]]\n\t4. Obtenemos la flag.\n\t   ![[Pasted image 20251212151906.png]]\n3. Elimina todas las reseñas de 5 estrellas.\n\t1. Vamos a `http://<IP>/#/administration`.\n\t   ![[Pasted image 20251212152213.png]]\n\t2. Eliminamos todas las reseñas con 5 estrellas (sólo hay 1).\n\t   ![[Pasted image 20251212152240.png]]\n\t3. Obtenemos la flag.\n\t   ![[Pasted image 20251212152258.png]]",
     "modified": "2025-12-13T00:49:57"
-  },
-  {
-    "title": "0. Ciberseguridad",
-    "path": "/apuntes/0-ciberseguridad/",
-    "src": "content/Ciberseguridad/0. Ciberseguridad.md",
-    "breadcrumb": "",
-    "content": "1. [[0. Recursos Web]]\n2. [[0. THM]]\n3.",
-    "modified": "2025-12-12T13:58:55"
-  },
-  {
-    "title": "0. Recursos Web",
-    "path": "/apuntes/recursos-web/0-recursos-web/",
-    "src": "content/Ciberseguridad/Recursos Web/0. Recursos Web.md",
-    "breadcrumb": "Recursos Web",
-    "content": "[[1. DVWA]]",
-    "modified": "2025-12-12T13:58:55"
-  },
-  {
-    "title": "0. THM",
-    "path": "/apuntes/thm/0-thm/",
-    "src": "content/Ciberseguridad/THM/0. THM.md",
-    "breadcrumb": "THM",
-    "content": "1. [[0. Pre Career]]\n2. [[1. Career]]\n3. \n4. [[0. Advent of Cyber]]\n5. [[0. Maquinas]]",
-    "modified": "2025-12-12T13:58:55"
-  },
-  {
-    "title": "1. DVWA",
-    "path": "/apuntes/recursos-web/1-dvwa/1-dvwa/",
-    "src": "content/Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md",
-    "breadcrumb": "Recursos Web > 1. DVWA",
-    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3. [[Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection]]\n4. [[0. CSRF]]\n5. [[Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion]]\n6. [[0. File Upload]]\n7. [[0. Insecure CAPTCHA]]\n8. [[Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection]]\n9. [[0. SQL Injection - Blind]]\n10. [[0. Weak Session IDs]]\n11. [[0. XSS - DOM]]\n12. [[0. XSS - Reflected]]\n13. [[0. XSS - Stored]]\n14. [[0. CSP Bypass]]\n15. [[0. JavaScript Attacks]]\n16. [[0. Authorisation Bypass]]\n17. [[0. Open HTTP Redirect]]\n18. [[0. Cryptography]]\n19. [[0. API]]",
-    "modified": "2025-12-12T13:58:55"
   }
 ]
