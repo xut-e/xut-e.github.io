@@ -2584,16 +2584,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/3-general-methodology/"
   },
   {
-    "title": "12. Coclusion",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/12-coclusion/"
-  },
-  {
     "title": "9. Bypassing Server-Side Filtering - Magic Numbers",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/9-bypassing-server-side-filtering-magic-numbers/"
   },
   {
     "title": "5. Remote Code Execution",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/5-remote-code-execution/"
+  },
+  {
+    "title": "12. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/12-conclusion/"
   },
   {
     "title": "4. Overwriting Existing Files",

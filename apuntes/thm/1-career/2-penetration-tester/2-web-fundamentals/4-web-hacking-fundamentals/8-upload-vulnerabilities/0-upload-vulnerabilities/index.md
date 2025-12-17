@@ -14,4 +14,4 @@ title: "0. Upload Vulnerabilities"
 [9. Bypassing Server-Side Filtering - Magic Numbers](/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/9-bypassing-server-side-filtering-magic-numbers/)
 [10. Example Methodology](/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/10-example-methodology/)
 [11. Challenge](/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/11-challenge/)
-[12. Coclusion](/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/12-coclusion/)
+[12. Conclusion](/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/12-conclusion/)

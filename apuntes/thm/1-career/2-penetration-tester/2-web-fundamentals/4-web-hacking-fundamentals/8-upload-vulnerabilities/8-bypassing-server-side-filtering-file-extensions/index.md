@@ -3,3 +3,133 @@ layout: apunte
 title: "8. Bypassing Server-Side Filtering - File Extensions"
 ---
 
+Los filtros del lado del cliente son fáciles de sobrepasar porque ves el código. Pero ¿qué pasa cuando no puedes verlo? Tenemos que realizar un montón de pruebas para entender qué es lo que está pasando por detrás para poder crear un payload que se ajuste a las restricciones.
+
+Para la primera parte de esta tarea miraremos un sitio web que está usando una blacklist para las extensiones como filtro del lado del servidor. Hay una variedad de formas diferentes en las que esto podría estar programado, y el bypass a utilizar depende de ello. En el mundo real no seríamos capaces de ver el código, pero para este ejemplo usaremos:
+
+```php
+<?php       
+//Get the extension       
+$extension = pathinfo($_FILES["fileToUpload"]["name"])["extension"];       
+//Check the extension against the blacklist -- .php and .phtml       
+switch($extension){           
+	case "php":           
+	case "phtml":           
+	case NULL:               
+		$uploadFail = True;               
+		break;           
+	default:               
+		$uploadFail = False;       
+}   
+?>
+```
+
+En esta instancia, el código busca el último punto en el nombre del archivo y lo usa para confirmar la extensión, por lo que eso es lo que trataremos de bypassear. Otras formas en las que el código podría funcionar serían: buscar el primer punto en el nombre de archivo o partir el nombre por cada punto y ver si hay extensiones no permitidas.
+
+Podemos ver que el código está filtrando `.php` y `.phtml`, por lo que si queremos subir un script PHP, vamos a tener que encontrar otra extensión. La [página de Wikipedia](https://en.wikipedia.org/wiki/PHP) para PHP nos da unas cuantas extensiones comunes que podemos probar. Sin embargo hay algunas más raras que los servidores pueden reconocer todavía. Estas incluyen `.php3`, `.php4`, `.php5`, `.php7`, `.phps`, `.php-s`, `.pht` y `.phar`. Todos estos bypassean el filtro. Pero parece que el servidor no está configurado para reconocerlos como archivos `php`.
+
+!**Pasted image 20251216211116.png**
+
+Este es el por defecto para los servidores de Apache2. Sin embargo, el sysadmin debe haber cambiado la configuración por defecto, por lo que merece la pena probar.
+
+Eventualmente, encontramos que la extensión `.phar` bypassea el filtro y funciona, dándonos una shell.
+
+!**Pasted image 20251216211454.png**
+
+--------------------------------
+Veamos otro ejemplo, con un filtro diferente. Esta vez, lo haremos completamente black-box.
+
+Una vez más, tenemos nuestro formulario de subida.
+
+!**Pasted image 20251216211556.png**
+
+Empezaremos investigando el alcance con un archivo de subida legítimo. Subiremos `spaniel.jpg`, la imagen de antes.
+
+!**Pasted image 20251216211635.png**
+
+Bien, esto nos dice que los archivos JPEG son aceptados. Vamos a probar una que casi al 100% de seguridad será rechazada (`shell.php`).
+
+!**Pasted image 20251216212211.png**
+
+Efectivamente.
+
+Desde aquí ya enumeramos, probando técnicas de arriba y tratando, generalmente, de obtener una idea de qué acepta o rechaza el filtro.
+
+En este caso, hemos encontrado que no hay extensiones shell que se ejecuten y no estén filtradas, por lo que de vuelta a la pizarra.
+
+En el ejemplo anterior, vimos que el código usaba `pathinfo()` para obtener los últimos caracteres después del punto, pero ¿qué pasa si filtra el input ligeramente diferente?
+
+Trataremos de subir un archivo llamado `shell.jpg.php`. Sabemos que los archivos JPEG son aceptados, por lo que ¿y si el filtro sólo comprueba que la extensión `.jpg` exista?
+
+El pseudo código de este tipo de filtro podría verse algo como así:
+
+```pseudocode
+ACCEPT FILE FROM THE USER 
+-- 
+SAVE FILENAME IN VARIABLE userInput   
+IF STRING ".jpg" IS IN VARIABLE userInput:       
+	SAVE THE FILE   
+ELSE:       
+	RETURN ERROR MESSAGE
+```
+
+Cuando probamos a subirlo recibimos un mensaje de éxito. Navegar hasta el directorio `/uploads` confirma que el payload se subió exitosamente.
+
+!**Pasted image 20251216213219.png**
+
+Al activarlo, recibiremos nuestra shell.
+
+!**Pasted image 20251216213236.png**
+
+---------------------------------------
+Esto no es una lista exhaustiva de vulnerabilidades de subida de archivos relativo a las extensiones. Como en todo en el hacking, buscamos explotar debilidades del código escrito por otros. Este puede ser extremadamente único para la tarea a realizar. Hay un millón de formas diferentes de implementar la misma funcionalidad cuando se trata de programar.
+
+-------------------------------------------------
+Ahora es tu turno, averigua y bypassea el filtro para subir y activar una shell. La flag está en `/var/www/`. Ve al sitio `annex.uploadvulns.thm` y comienza.
+
+>[!IMPORTANT] Por primera vez, se ha implementado un esquema de nombramiento aleatorio, por lo que a partir de ahora puede que no todos los directorios sean indexables.
+
+1. Vamos a la página dada.
+   !**Pasted image 20251216224705.png**
+2. Hacemos un escaneo con `gobuster`.
+   !**Pasted image 20251216231603.png**
+3. Volviendo a la página, parece curiosa, vamos a ver cómo es la sintaxis:
+   !**Pasted image 20251216224830.png**
+4. Primero vamos a seleccionar una imagen legítima.
+   !**Pasted image 20251216225024.png**
+5. Lo subimos y obtenemos succesfully.
+   !**Pasted image 20251216225109.png**
+6. Vamos a probar con uno que no nos dejará (lo más probable).
+   !**Pasted image 20251216225327.png**
+7. Lo subimos y obviamente es inválido.
+   !**Pasted image 20251216225348.png**
+8. Vamos a seguir mapeando.
+	1. Con `.jpg`.
+	   !**Pasted image 20251216225613.png**
+	2. Parece que ha funcionado.
+	   !**Pasted image 20251216225648.png**
+9. Vamos a ver de qué se trataba ese directorio `/privacy`.
+   !**Pasted image 20251216231759.png**
+   Es donde se guardan los archivos subidos.
+10. Nos ponemos en escucha en el puerto que hayamos especificado.
+    !**Pasted image 20251216231940.png**
+11. Le damos a la "imagen".
+    !**Pasted image 20251216232031.png**
+    Vaya, parece que ha fallado.
+12. Vamos a probar con una webshell.
+    !**Pasted image 20251216232510.png**
+13. Voy a probar a meterle el null byte, por si cuela.
+    !**Pasted image 20251216232636.png**
+14. A ver si hay suerte.
+    !**Pasted image 20251216232707.png**
+    !**Pasted image 20251216232746.png**
+    No     :(
+15. Después de probar un poco vemos que `.php5` sirve como tipo de archivo.
+    !**Pasted image 20251216233046.png**
+    !**Pasted image 20251216233628.png**
+16. Ahora vamos a la página, le damos al link y metemos el parámetro `?cmd=pwd`.
+    !**Pasted image 20251216233927.png**
+17. Vamos a listar `/var/www/`.
+    !**Pasted image 20251216234023.png**
+18. Leemos la flag.
+    !**Pasted image 20251216234100.png**

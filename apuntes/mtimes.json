@@ -2576,8 +2576,8 @@
     "hash": "d1e4ba800f3e906e05a8cdd49f05d5200cc4c21d1b78c532c840f8c08f385726"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/8. Bypassing Server-Side Filtering - File Extensions.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-17T00:48:47",
+    "hash": "b66f9753b0e84f4e27065a70dee05082a45e307ab15a38c049150943539abcc3"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/3. General Methodology.md": {
     "modified": "2025-12-14T00:57:26",
@@ -2620,8 +2620,8 @@
     "hash": "358d069aa1232e90946aebe5325dff6551a07568cf8e88b4cf3df5417a143fc7"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/0. Upload Vulnerabilities.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "5215d698478452962835800cb1e8cad5e1df1b9a8292a9dd7253a0582ac00c64"
+    "modified": "2025-12-17T00:48:47",
+    "hash": "92849dc5a41e4c4ae8fb65458f98ffa8f958eced0c4aa9225a3f058faa144b9e"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/6. Filtering.md": {
     "modified": "2025-12-16T00:54:19",
@@ -4486,5 +4486,9 @@
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/0. Hammer.md": {
     "modified": "2025-12-12T13:58:55",
     "hash": "1bf3e65499df6c1bfdade03e7a12985ac0b37c173dd238f78f4e70df25cba668"
+  },
+  "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/12. Conclusion.md": {
+    "modified": "2025-12-17T00:48:47",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }
