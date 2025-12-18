@@ -5172,8 +5172,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/8-upload-vulnerabilities/9-bypassing-server-side-filtering-magic-numbers/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/9. Bypassing Server-Side Filtering - Magic Numbers.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 8. Upload Vulnerabilities",
-    "content": "",
-    "modified": "2025-12-12T13:58:55"
+    "content": "Ya hemos visto el filtrado de extensiones del lado del servidor, pero vamos a aprovechar para ver cómo se comprueban los magic numbers del lado del servidor también.\n\nLos magic numbers se utilizan para identificar los archivos de manera más precisa. El magic number de un archivo es una string de dígitos hexadecimales y es siempre la primera parte de un archivo. De esta manera, leyendo los primeros bytes de un archivo y comparándolos con una whitelist o blacklist, podemos verificar si el archivo es o no legítimo para su subida.\n\n>[!IMPORTANT] Esta técnica puede ser efectiva contra servidores basados en PHP pero puede fallar contra otros tipos de servidores web.\n\nVeamos un ejemplo. Como generalmente, tenemos una página de subida.\n\n![[Pasted image 20251217135821.png]]",
+    "modified": "2025-12-18T00:49:09"
   },
   {
     "title": "5. Remote Code Execution",
