@@ -3,3 +3,11 @@ layout: apunte
 title: "1. What is IAAA"
 ---
 
+IAAA es una manera simple de pensar cómo los usuarios y sus acciones son verificadas en las aplicaciones. Cada ítem juega un rol crucial y no es posible saltar un nivel.Lo que significa que si un ítem previo no se realiza no puedes realizar los demás. Los cuatro ítems son:
+
+- **Identity:** La cuenta única (ID, email...) que representa a una persona o servicio.
+- **Authentication:** Ofrecer la identidad )contraseñas, OTP, passkeys...).
+- **Authorization:** Qué se le permite hacer a esa identidad.
+- **Accountability:** Registrar y alertar sobre quién hizo qué, cuándo y desde dónde.
+
+Las tres categorías del OWASP Top 10:2025 que veremos se relacionan a fallos en cómo se implementó la IAAA.

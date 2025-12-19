@@ -3,3 +3,7 @@ layout: apunte
 title: "2. A01 - Broken Access Control"
 ---
 
+Broken Access Control ocurre cuando el servidor no refuerza **quién accede a qué** en cada petición. Una ocurrencia común de esto es IDOR (Insecure Direct Object Reference): si al cambiar un ID (como `?id=7 → ?id=6`) te permite ver o editar la información de otra persona, eso es broken access control.
+
+Esto muestra una escalada de privilegios horizontal (mismo rol pero cosas de otro usuario) o vertical (saltar a acciones reservadas para admins) debido a que la aplicación confía demasiado en el cliente.
+
