@@ -3,3 +3,25 @@ layout: apunte
 title: "1. A04 - Cryptographic Failures"
 ---
 
+Los fallos criptográficos tienen otra aparición en esta lista OWASP Top 10. Exploremos qué es exactamente y algunas medidas de mitigación.
+
+-----------------------------
+<h2>¿Qué son los fallos criptográficos?</h2>
+Ocurren cuando la información sensible no está protegida adecuadamente debido a la falta de encriptación, implementación defectuosa o medidas de seguridad insuficientes. Esto incluye guardar contraseñas sin hashear, usar algoritmos débiles o desactualizados (como MD5, SHA-1 o DES), exponer claves de cifrado o fallar al intentar asegurar la información durante su transmisión.
+
+-------------------------------------------
+<h2>¿Cómo prevenir fallos criptográficos?</h2>
+ Prevenir fallos criptográficos comienza con elegir algoritmos fuertes y modernos e implementarlos correctamente. La información sensible como contraseñas debería ser robustamente hasheada con funciones como bcrypt, scrypt o Argon2. Al encriptar información evita usar tus propios algoritmos, usa los que ya son buenos y fuertes.
+ 
+Nunca incrustes credenciales en código fuente, en su lugar, usa un sistema seguro de manejo de claves o entornos específicamente diseñados para guardar secrets.
+
+---------------------------------------
+<h2>Práctica</h2>
+Ve al puerto `8081` de la IP dada. Esta aplicación web demuestra un servicio de compartir notas que usa un derivado compartido y débil de una clave para proteger las notas.
+
+1. Vamos a la página dada.
+   !**Pasted image 20251219174941.png**
+   Cómo va a ser una clave de 4 dígitos y te dicen los 3 primeros.
+2. Probamos con los números del 0-9.
+   !**Pasted image 20251219175353.png**
+

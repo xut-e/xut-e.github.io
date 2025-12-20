@@ -3,3 +3,34 @@ layout: apunte
 title: "2. A05 - Injection"
 ---
 
+La inyección ha sido una funcionalidad permanente en el OWASP Top 10. Es el ejemplo clásico de explotación web.
+
+---------------------------------
+<h2>¿Qué es la inyección?</h2>
+La inyección ocurre cuando una aplicación toma input del usuario y no lo maneja de forma adecuada. En lugar de procesarlo de forma segura, la aplicación lo pasa directamente al sistema que puede ejecutar comandos o queries.
+
+Ya estarás familiarizado con SQL Injection, donde un  atacante inserta una query SQL en la lógica de la aplicación, como un formulario de login que es procesado por la base de datos. Esto pasa cuando la aplicación web no sanitiza su input. Los siguientes son algunos ejemplos clásicos de inyección:
+
+- SQL Injection
+- Command Injection
+- AI Prompts
+- Server Side Template Injection (SSTI)
+
+Desafortunadamente, este tipo de ataques sigue siendo relevante.
+
+-----------------------------------------
+<h2>¿Cómo prevenir la inyección?</h2>
+La prevención de inyección comienza por asegurarse de que el input del usuario sea siempre sanitizado y no confiado. Para las queries SQL significa usar prepared statements y queries parametrizadas en lugar de usar concatenación. Para comandos del sistema operativo, evita funciones que pasen el input directamente a la shell del sistema y en su lugar confía en APIs seguras y procesos que no llamen a la consola.
+
+La validación y sanitización del input juega un papel crucial en prevenir este tipo de ataques.
+
+------------------------------------
+<h2>Práctica</h2>
+Este ejemplo ilustra Server Side Template Injection (SSTI). Debes abusar la habilidad de la aplicación de renderizar contenido dinámico para obtener la flag. Navega al puerto `8000` de la IP dada.
+
+1. Vamos a la página dada.
+   !**Pasted image 20251219180426.png**
+2. Probamos diferentes payloads.
+   !**Pasted image 20251219180727.png**
+3. La llamada `request.application` lleva a Flask Internals, dejándonos alcanzar el namespace `__builtins__` y llamar a `open()`.
+   !**Pasted image 20251219181019.png**

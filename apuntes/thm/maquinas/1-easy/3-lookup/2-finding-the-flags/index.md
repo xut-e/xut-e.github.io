@@ -4,7 +4,112 @@ title: "2. Finding the flags"
 ---
 
 1. Analizamos la dirección que nos dan.
-   !**Pasted image 20251123192421.png**
-2. Vamos a ver la página web.
+   !**Pasted image 20251219193414.png**
+2. Hacemos un poco más de enumeración.
+   !**Pasted image 20251219193541.png**
+3. Y un poco más de reconocimiento.
+   !**Pasted image 20251219194552.png**
+   !**Pasted image 20251219194626.png**
+4. Vamos a ver la página web, `/login.php` está vacía y `/index.php` es la misma que sin poner nada.
    !**Pasted image 20251123192534.png**
-3. 
+5. Vamos a abrir Burp Suite y a ver como se ve una petición fallida.
+   !**Pasted image 20251219195722.png**
+6. Probamos a hacer fuerza bruta.
+   !**Pasted image 20251219202217.png**
+   Nada.
+7. Vamos a enumerar más.
+   !**Pasted image 20251219202454.png**
+   Seguimos sin nada.
+8. Si probamos con el usuario `admin`, vemos que la respuesta es diferente.
+   !**Pasted image 20251219203726.png**
+9. Vamos a lanzar el ataque para el usuario `admin` filtrando aquellas respuestas en las que aparezca `Wrong password`.
+   !**Pasted image 20251219205153.png**
+10. Si intentamos loguearnos con estas credenciales nos dice que `Wrong username or password`.
+    !**Pasted image 20251219205831.png**
+11. Volvemos a Burp Suite. Vamos a recapitular lo que tenemos.
+	1. Si metemos un usuario y una contraseña equivocada: `Wrong username or password`.
+	2. Si metemos un usuario existente y una contraseña equivocada: `Wrong password.`
+	3. Si metemos un usuario existente y una contraseña que en principio pensábamos acertada, nos sale: `Wrong username or password`.
+	   Basándonos en esto podemos deducir que la contraseña es correcta, pero no para el usuario `admin`.
+12. Vamos a hacer fuerza bruta contra el usuario.
+    !**Pasted image 20251219212157.png**
+    Grande jose.
+13. Nos logueamos con `jose:password123`. Esto nos lleva a `files.lookup.thm` lo tenemos que meter en `/etc/hosts`.
+    !**Pasted image 20251219213449.png**
+    Parece que hay un botón de subida de archivos así que vamos a intentar subir una reverse shell.
+14. Intentamos subir la shell.
+    !**Pasted image 20251219214012.png**
+    Salta error, vamos a cambiar la extensión a `.txt`.
+15. Subimos `reverseshell.txt`.
+    !**Pasted image 20251219214252.png**
+    Tampoco va.
+16. Vamos a probar con Burp Suite a ver qué vemos.
+    !**Pasted image 20251219214717.png**
+    Intentando subir un archivo JS me lo deniega también.
+17. Vamos a realizar más investigación en la página (sí, más enumeración).
+    !**Pasted image 20251219235133.png**
+    Encontramos un botón que nos deja ver el software de gestión junto a la versión: `elFinder 2.1.47`.
+18. Buscamos en una base de datos de exploits.
+    !**Pasted image 20251219235406.png**
+19. El método encontrado no soporta autentificación por lo que vamos a ver si podemos acceder al endpoint de subida sin autentificarnos.
+    !**Pasted image 20251219235606.png**
+    Efectivamente sí se puede.
+20. El código de Exploit-DB no ha funcionado por lo que buscamos en GitHub.
+    !**Pasted image 20251220000317.png**
+21. Nos ponemos en escucha.
+    !**Pasted image 20251220000435.png**
+22. Lo ejecutamos como dice.
+    !**Pasted image 20251220000512.png**
+23. Obtenemos la shell.
+    !**Pasted image 20251220000534.png**
+24. Después de estabilizar la shell y buscar un poco nos encontramos con el archivo que contiene la flag de user.
+    !**Pasted image 20251220001350.png**
+    Pero no podemos leerla con nuestros permisos actuales, ni el archivo `.passwords` tampoco.
+25. Después de hacer `sudo -l` y ver que no podemos hacer nada, probamos a buscar archivos SUID.
+    !**Pasted image 20251220001521.png**
+26. Tanto `pkexec` como `pwm` llaman mi atención. Comprobaremos la versión de pkexec.
+    !**Pasted image 20251220003250.png**
+    Es la 0.105, buscaremos un exploit.
+27. Hemos encontrado un exploit.
+    !**Pasted image 20251220003335.png**
+28. Seguimos las instrucciones y no funciona de ninguna manera.
+    !**Pasted image 20251220003957.png**
+29. Vamos a investigar el otro SUID sospechoso: `/usr/sbin/pwm`.
+    !**Pasted image 20251220004107.png**
+    Parece que ejecuta `id` y luego lo usa para meterlo en una ruta. Si consiguiéramos que extrajese `think` podríamos leer el archivo `.passwords`.
+30. Comprobamos el `$PATH`.
+    !**Pasted image 20251220004717.png**
+    Parece que podemos modificarlo. Ahora sólo tenemos que hacer un script y guardarlo en `/tmp/id` y se ejecutará en lugar de el verdadero `id`.
+31. Creamos el script y le damos permisos de ejecución con `chmod +x /tmp/id`.
+    !**Pasted image 20251220005102.png**
+32. Volvemos a ejecutar `/user/sbin/pwm`.
+    !**Pasted image 20251220005303.png**
+    Obtenemos lo que parece una lista de contraseñas.
+33. Vamos a probar fuerza bruta con dicha lista contra el usuario `think` por ssh.
+    !**Pasted image 20251220005624.png**
+34. Iniciamos sesión con el usuario `think` y leemos la flag.
+    !**Pasted image 20251220005827.png**
+35. Buscando maneras de escalar privilegios nos encontramos con `/usr/bin/look`.
+    !**Pasted image 20251220005959.png**
+36. Si miramos en GTFOBins:
+    !**Pasted image 20251220010030.png**
+    BINGO!
+37. Seguimos los pasos.
+    !**Pasted image 20251220010149.png**
+    En este caso se trata de un SHA512, lo sabemos gracias al comienzo: `$6$`. Además vemos que el formato es `salt.pass`.
+38. Miramos en el manual de `hashcat`:
+    !**Pasted image 20251220011106.png**
+39. Vamos a usar `hashcat` con `rockyou.txt` para obtener la contraseña.
+    !**Pasted image 20251220011225.png**
+    !**Pasted image 20251220021852.png**
+    No hemos encontrado la contraseña así. Es por eso que pensaremos en otra manera.
+40. Si podemos leer cualquier archivo como sudo, en realidad también podemos leer la clave ssh de root y usarla desde nuestra propia máquina para conectarnos como root. Empezamos leyéndola.
+    !**Pasted image 20251220012038.png**
+41. La copiamos en nuestra máquina y la usamos para iniciar sesión.
+    !**Pasted image 20251220012535.png**
+    MUY IMPORTANTE CAMBIAR LOS PERMISOS A `600` (`rw-------`).
+42. Leemos la flag.
+    !**Pasted image 20251220012759.png**
+
+>[!SUCCESS] Hemos pwneado la máquina y obtenido ambas flags. Phew! Vaya máquina mas "easy", ¿verdad? ;)
+

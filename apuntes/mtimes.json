@@ -2308,8 +2308,8 @@
     "hash": "7ddbdf10309e530c74e6c4ddbcddcaf4cc53a8891000cdd4a72840941cb6a53c"
   },
   "THM/Maquinas/1. Easy/3. Lookup/2. Finding the flags.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "1c165dbfc38cadad2d8684ddaa680551ac6577011cbeee6688b7bd96e11d9e8e"
+    "modified": "2025-12-20T01:49:23",
+    "hash": "247903269621e10c769467cc987a3930c94f36d3907ddc9b064bdf7b87233a3b"
   },
   "THM/Maquinas/1. Easy/3. Lookup/0. Lookup.md": {
     "modified": "2025-12-12T13:58:55",
@@ -2764,40 +2764,40 @@
     "hash": "10acfc93f82e4245ff44762c1d87257354108139fffbd6e2037cf23959a8f674"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/3. AS04 - Cryptographic Failures.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-20T01:49:23",
+    "hash": "2369b778c002b2b80befdb15c7b249f11893a4111e4e49ffae048ad277a1c7ed"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/4. AS06 - Insecure Design.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-20T01:49:23",
+    "hash": "bd41341869852382f8ee001ba2410bfe03f8d42809e8146f5359c9c0e682be5f"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/0. OWASP Top 10 2025 - Application Design Flaws.md": {
     "modified": "2025-12-12T13:58:55",
     "hash": "dc4eae9f3c0f3f07e90067e627f9732480770b14e44e8661a16345907c1402f1"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/1. AS02 - Security Missconfigurations.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-20T01:49:23",
+    "hash": "6899cba85862e912ee8ed51972d8dc4fa267a2a1ef1561e1b41c923c23de225a"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/2. OWASP Top 10 2025 - Application Design Flaws/2. AS03 - Software Supply Chain Failures.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-20T01:49:23",
+    "hash": "03329875714129ae042f499509ae856ebbddaa77972c664563316f20133f3086"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/3. A08 - Software or Data Integrity Failures.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-20T01:49:23",
+    "hash": "e1719f371ee55dccecc49b859aa7360f5d9750b1a3cb02b956d8d4301d6dcaac"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/2. A05 - Injection.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-20T01:49:23",
+    "hash": "a6bcb75cff507bebdb28df4776c1cc3c4a72366dde3bc60d21984d7e77281022"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/0. OWASP Top 10 2025 - Insecure Data Handling.md": {
     "modified": "2025-12-12T13:58:55",
     "hash": "7d3ca8db122abfb1fb51442624254c7b821eb4732a91a37e397c68a42f6b9e20"
   },
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/5. OWASP Top 10 - 2025/3. OWASP Top 10 2025 - Insecure Data Handling/1. A04 - Cryptographic Failures.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-20T01:49:23",
+    "hash": "0578eca6b15fa61a7fedb6537d560f565a35b8a9dd676138d6fa3dd53474434c"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/3. Introduction to Web Hacking.md": {
     "modified": "2025-12-12T13:58:55",

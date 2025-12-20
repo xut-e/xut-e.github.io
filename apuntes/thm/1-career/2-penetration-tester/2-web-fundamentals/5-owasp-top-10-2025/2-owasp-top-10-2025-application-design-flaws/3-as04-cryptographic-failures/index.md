@@ -3,3 +3,48 @@ layout: apunte
 title: "3. AS04 - Cryptographic Failures"
 ---
 
+<h2>¿Qué es?</h2>
+Los errores de criptografía ocurren cuando la encriptación se usa mal o ni siquiera se usa. Esto incluye algoritmos débiles, claves hardcodeadas, manejo débil de claves o información sensible sin encriptar.
+
+--------------------------------------
+<h2>¿Por qué importa?</h2>
+Las aplicaciones web usan la criptografía en todos lados: para proteger el tráfico de red, para asegurar la información almacenada, verificar identidades y para guardar secretos. Cuando estos controles fallan, la información sensible puede ser expuesta conllevando tomas de posesión de cuentas o brechas de seguridad a gran escala.
+
+------------------------------------
+<h2>Patrones Comunes</h2>
+- Usar algoritmos débiles o deprecados como MD5, SHA-1 o ECB.
+- Secretos hardcodeados en código o configuración.
+- Prácticas pobres de rotación de claves.
+- Falta de encriptación de datos sensibles ya sean guardados o en tránsito.
+- Certificados TLS inválidos o autofirmados.
+- Usar sistemas AI/ML sin manejo adecuado de secretos para inputs sensibles.
+
+----------------------------
+<h2>Cómo Prevenirlo</h2>
+- Usa algoritmos modernos y fuertes como AES-GCM, ChaCha20-Poly1305, o TLS 1.3 con certificados válidos.
+- Usa servicios de manejo de claves seguros como Azure Key Vault, AWS KMS o HashiCorp Vault.
+- Rota los secretos y claves regularmente, siguiendo periodos crypto definidos.
+- Documenta y refuerza políticas y procedimientos estándar para el manejo del ciclo de vida de las claves.
+- Mantén un inventario completo de certificados, claves y sus propietarios.
+- Asegúrate de que los modelos de IA y agentes de automatización no expongan secretos no encriptados o información sensible.
+
+--------------------------------------------
+<h2>Reto</h2>
+Navega hasta el puerto `5004` de la IP dada. ¿Puedes encontrar la clave para descifrar el archivo?
+
+1. Vamos a la página dada.
+   !**Pasted image 20251219142626.png**
+2. Vamos a leer el código fuente.
+   !**Pasted image 20251219142713.png**
+   Parece que hay un JavaScript para desencriptar el archivo: `/static/js/decrypt.js`.
+3. Lo leemos.
+   !**Pasted image 20251219142822.png**
+   Hemos encontrado la clave secreta.
+4. Para desencriptarlo vamos a CyberChef.
+	1. Añadimos lo encriptado en el input.
+	   !**Pasted image 20251219143725.png**
+	2. Cargamos el módulo AES Decrypt y configuramos la clave,  ECB y Raw tanto como input como output.
+	   !**Pasted image 20251219144034.png**
+	   Esto ocurre porque el input no es Raw, sino base64.
+	3. Le añadimos From Base64.
+	   !**Pasted image 20251219144121.png**
