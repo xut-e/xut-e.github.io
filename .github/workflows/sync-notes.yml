@@ -2,8 +2,9 @@ name: Sync Notes
 
 on:
   schedule:
-    - cron: '0 0 * * *' #Ejecuta todos los días a las 00:00h
+    - cron: '0 0 * * *' # Ejecuta todos los días a las 00:00
   workflow_dispatch:
+
 permissions:
   contents: write
 
@@ -12,13 +13,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Verificar que el PAT existe (debug seguro)
+      - name: Verificar PAT
+        shell: bash
+        env:
+          PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$PAT" ]; then
+            echo "❌ El secret PERSONAL_ACCESS_TOKEN no está disponible o está vacío"
+            exit 1
+          fi
+          echo "✅ PAT presente (longitud: ${#PAT})"
+
+      # 2️⃣ Checkout del repo ACTUAL (xut-e.github.io) usando GITHUB_TOKEN
       - name: Checkout target repository (xut-e.github.io)
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           path: site
-          persist-credentials: true
+          token: ${{ github.token }}
 
+      # 3️⃣ Checkout del repo de notas usando PAT
       - name: Checkout source notes repository
         uses: actions/checkout@v4
         with:
@@ -27,12 +41,14 @@ jobs:
           path: notes
           persist-credentials: true
 
+      # 4️⃣ Sincronizar notas y reconstruir
       - name: Sync notes into content/
         run: |
-          rsync -av --delete "notes/Ciberseguridad/" "site/content/Ciberseguridad/" 
+          rsync -av --delete "notes/Ciberseguridad/" "site/content/Ciberseguridad/"
           cd site
           python3 scripts/build_apuntes.py
 
+      # 5️⃣ Commit y push
       - name: Commit and push changes
         run: |
           cd site
@@ -41,4 +57,3 @@ jobs:
           git add .
           git commit -m "Sync notes and rebuild" || echo "No changes to commit"
           git push origin main
-
