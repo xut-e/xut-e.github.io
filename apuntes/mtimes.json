@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "0a82ea261c9fb4c02c1a3e8aa19f7ed17028e760fd464c81c073c8e6bbdd8fad"
+    "modified": "2025-12-21T00:57:17",
+    "hash": "c34ff9b8ebee7d6325f68715bec975888763435bea3006241fec73e3ced685dd"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -3528,8 +3528,8 @@
     "hash": "494f5e6b8af2c0686cde74b50375c75d39b30ae20621a95aa0c9caeabf60011e"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/2. Enumeration.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "91d14147ef88125c7959a4de5928152b6d8b3797bf43bc4758597cbb5b2ebb59"
+    "modified": "2025-12-21T00:57:17",
+    "hash": "42abfbe961e6120ca9d9616a7b8f29cd0c5c8ab1f633203b9199960e2c30c063"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/1. What is Privilege Escalation.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4452,32 +4452,32 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/3. Sensitive Information Disclosure.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-21T00:57:18",
+    "hash": "bf4a0fafc5b9664cf73d9378398106582c44ff235a4da8a3dadb49811e7dc1ee"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/4. Signature Validation Mistakes.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-21T00:57:18",
+    "hash": "636eadb1a1da058b7f653eb9495f204cf02e7e3b92b33174f1bbe6d04fc728b7"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/2. JSON Web Tokens.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-21T00:57:18",
+    "hash": "e2fdf739e8be17ac6c414c264925458bb865c48441dd716c43525d720549ad94"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/5. JWT Lifetimes.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-21T00:57:18",
+    "hash": "499a7a466bf788654e0eb60731d8cab07d6fc29de28a1c928185bca446263593"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/1. Token-Based Authentication.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-21T00:57:18",
+    "hash": "27020d0b4ed9ddaee8412449871e8b7e9c612485b389eb361a4daa4003a15cc0"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/0. JWT Security.md": {
     "modified": "2025-12-12T13:58:55",
     "hash": "263339a80ad45a8c74a30ba5af633f5d4d4a2eada5b0f6231f6dec0bd6dd8a2f"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/6. Cross-Service Relay Attacks.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-21T00:57:18",
+    "hash": "c201b38db1f8971c1aae1cbac2481aa0626d8df013682003995d6ff20643a3b9"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/6. Hammer/1. Redireccion.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4490,5 +4490,29 @@
   "THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/8. Upload Vulnerabilities/12. Conclusion.md": {
     "modified": "2025-12-17T00:48:47",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/1. Easy/6. TakeOver/1. Help Us.md": {
+    "modified": "2025-12-21T00:57:17",
+    "hash": "13228f3eca4c502c729e4a2b9518d2efd227faafe6eda114fe6f69860fc2a878"
+  },
+  "THM/Maquinas/1. Easy/6. TakeOver/0. TakeOver.md": {
+    "modified": "2025-12-21T00:57:17",
+    "hash": "7a2a027f6221479bf674ab5b8620e97eaa2600255fd48fec716b123dece979e1"
+  },
+  "THM/Maquinas/1. Easy/6. TakeOver/2. Finding the Flags.md": {
+    "modified": "2025-12-21T00:57:17",
+    "hash": "efa3187d2acc8c7231d650624794994bd819888bcac8eeb264a8d89b01ada222"
+  },
+  "THM/Maquinas/1. Easy/7. Overpass/0. Overpass.md": {
+    "modified": "2025-12-21T00:57:17",
+    "hash": "2b530d776b28277168d6aec4c0262164e48322dcaab5f1fc4b8e49df8ad59609"
+  },
+  "THM/Maquinas/1. Easy/7. Overpass/2. Finding the Flags.md": {
+    "modified": "2025-12-21T00:57:17",
+    "hash": "9829d70f68d56c2b7ebb31b7b297ffcab0d8a2dcb31cf14365b6d7ac313d0e74"
+  },
+  "THM/Maquinas/1. Easy/7. Overpass/1. Introduction.md": {
+    "modified": "2025-12-21T00:57:17",
+    "hash": "896334a12fd62b8e4730b5a674a40244fa19abd7fae7bf60988db7ee9ea0a097"
   }
 }

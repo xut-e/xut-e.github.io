@@ -3,7 +3,7 @@ layout: apunte
 title: "2. Enumeration"
 ---
 
-La enumeración es el primer paso que debes tomar una vez ganas acceso a cualquier sistema. En entornos reales, el test no acaba cuando ganas acceso al sistema.
+cat La enumeración es el primer paso que debes tomar una vez ganas acceso a cualquier sistema. En entornos reales, el test no acaba cuando ganas acceso al sistema.
 
 -----------------------------------
 <h2>hostname</h2>

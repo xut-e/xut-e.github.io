@@ -6523,6 +6523,42 @@
                       "parent": "5. Brooklyn Nine Nine"
                     }
                   ]
+                },
+                {
+                  "name": "6. TakeOver",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Help Us.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/6. TakeOver/1. Help Us.md",
+                      "parent": "6. TakeOver"
+                    },
+                    {
+                      "name": "2. Finding the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/6. TakeOver/2. Finding the Flags.md",
+                      "parent": "6. TakeOver"
+                    }
+                  ]
+                },
+                {
+                  "name": "7. Overpass",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/7. Overpass/1. Introduction.md",
+                      "parent": "7. Overpass"
+                    },
+                    {
+                      "name": "2. Finding the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/7. Overpass/2. Finding the Flags.md",
+                      "parent": "7. Overpass"
+                    }
+                  ]
                 }
               ]
             },

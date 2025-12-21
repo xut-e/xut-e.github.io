@@ -1,0 +1,17 @@
+---
+layout: apunte
+title: "1. Help Us"
+---
+
+!**Pasted image 20251220224751.png**
+
+Hola,
+
+Soy el CEO y uno de los co-fundadores de `futurevera.thm`. En Futurevera, creemos que el futuro es el espacio. Hacemos mucha investigación sobre el espacio y escribimos blogs sobre ello. Solíamos ayudar a estudiantes con sus preguntas sobre el espacio, pero estamos reconstruyendo nuestro soporte.
+
+Recientemente, hackers blackhat se han acercado diciendo que podrían tomar control del sitio y pidiéndonos un gran rescate. Por favor, ayúdanos a encontrar lo que pueden tomar.
+
+Nuestro sitio web está en `http://futurevera.thm`.
+
+No te olvides de añadir la IP junto con el dominio a `/etc/hosts`.
+
