@@ -4428,8 +4428,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/4. Identifying the OAuth Services.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-23T00:53:19",
+    "hash": "914f770b75cb54a341905eca5da16aa10dbfc44156ebdf21cf81d0c4a8b0b788"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/0. OAuth Vulnerabilities.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4440,16 +4440,16 @@
     "hash": "a36994365e5f1c1e3fc79bbad5baf4b98f3c250eb203896c962d76f74cdab9bc"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/6. Exploiting OAuth - CSRF in OAuth.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-23T00:53:19",
+    "hash": "904dcd70724a4718e4c2da8623d65e6c5376b035638c8f8e8c1a5eaaaf9a7aab"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/3. How OAuth Flow Works.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-23T00:53:19",
+    "hash": "689be30829ed62c0bfee3f8b01d43d67c2c6fecd6f179ad93f506a99140e017f"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/5. Exploiting OAuth - Stealing OAuth Token.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-23T00:53:19",
+    "hash": "2aacc848984cae796e109f81ad7ca4317b0c762f2650d40aea625ef5c55c4ae8"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/3. Sensitive Information Disclosure.md": {
     "modified": "2025-12-21T00:57:18",
