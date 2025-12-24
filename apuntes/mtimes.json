@@ -4340,8 +4340,8 @@
     "hash": "eb8192765e20be851fd08636aa7e0e579a976e09c64443096d72e7b5e1d3364e"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/1. How MFA Works.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-24T00:53:35",
+    "hash": "bc1997480df36bd58ecb03c107278eb01507ced5b21a24423704060302ae6511"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/5. Practical - Insecure Coding.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4420,12 +4420,12 @@
     "hash": "dd4decf49d5c1967eac9acdc712c77d45aec2c7f109ffd5c734bdee0a97667e6"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/8. Other Vulnerabilities and Evolution of OAuth 2.1.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-24T00:53:35",
+    "hash": "0ed6bc782eed133ccf052e220fa1ae0c7303bc9a1637dba88fcd1890fafeec5c"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/7. Exploiting OAuth - Implicit Grant Flow.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2025-12-24T00:53:35",
+    "hash": "dde4e4eeb322cb6c8a748f6adc6c2b5a6605f1d0fe89405b4cc3ba28cef64aee"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/4. Identifying the OAuth Services.md": {
     "modified": "2025-12-23T00:53:19",
@@ -4440,16 +4440,16 @@
     "hash": "a36994365e5f1c1e3fc79bbad5baf4b98f3c250eb203896c962d76f74cdab9bc"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/6. Exploiting OAuth - CSRF in OAuth.md": {
-    "modified": "2025-12-23T00:53:19",
-    "hash": "904dcd70724a4718e4c2da8623d65e6c5376b035638c8f8e8c1a5eaaaf9a7aab"
+    "modified": "2025-12-24T00:53:35",
+    "hash": "501e38794c3cea7210be2fc86ec6f52f9b464b7094d436a3413b5d7b97d78e0e"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/3. How OAuth Flow Works.md": {
     "modified": "2025-12-23T00:53:19",
     "hash": "689be30829ed62c0bfee3f8b01d43d67c2c6fecd6f179ad93f506a99140e017f"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/4. OAuth Vulnerabilities/5. Exploiting OAuth - Stealing OAuth Token.md": {
-    "modified": "2025-12-23T00:53:19",
-    "hash": "2aacc848984cae796e109f81ad7ca4317b0c762f2650d40aea625ef5c55c4ae8"
+    "modified": "2025-12-24T00:53:35",
+    "hash": "91d02a54315df4e1748b62f917f8e8a19f049c98ce336c676ccbf8be5b86a8e5"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/3. JWT Security/3. Sensitive Information Disclosure.md": {
     "modified": "2025-12-21T00:57:18",
