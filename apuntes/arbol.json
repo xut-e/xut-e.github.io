@@ -6691,9 +6691,15 @@
                   "type": "directory",
                   "contents": [
                     {
-                      "name": "1. Getting the Flags.md",
+                      "name": "1. Introduction.md",
                       "type": "file",
-                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/1. Getting the Flags.md",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/1. Introduction.md",
+                      "parent": "6. Hammer"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/2. Getting the Flags.md",
                       "parent": "6. Hammer"
                     }
                   ]

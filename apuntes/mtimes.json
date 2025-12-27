@@ -2260,8 +2260,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/2. Medium/6. Hammer/0. Hammer.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "5956753e3c21c26d00eee812ccf3fa359fa33064c2f458b189ea3525b797cafb"
+    "modified": "2025-12-27T00:52:04",
+    "hash": "c35bea4af1cd30fd4726ecf34fe5f9f1e323b0c24c58bc8e3d22fc3029a2e018"
   },
   "THM/Maquinas/2. Medium/4. Rabbit Store/0. Rabbit Store.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4348,8 +4348,8 @@
     "hash": "8a1edca139e5aa7debab7711880da483018de831b6432b22fe64750ef36ff4d8"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/6. Practical Beating the Auto-Logout Feature.md": {
-    "modified": "2025-12-26T00:53:51",
-    "hash": "8ba92bac28d67c4002580b7e024e95d4928778ebb2a5f691184db5346a10aba3"
+    "modified": "2025-12-27T00:52:04",
+    "hash": "dde01c9345f54f2a29912390d3d38af68b9e6da77b3db0b7fff0c09dca459425"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/3. Common Vulnerabilities in MFA.md": {
     "modified": "2025-12-26T00:53:51",
@@ -4514,5 +4514,13 @@
   "THM/Maquinas/1. Easy/7. Overpass/1. Introduction.md": {
     "modified": "2025-12-21T00:57:17",
     "hash": "896334a12fd62b8e4730b5a674a40244fa19abd7fae7bf60988db7ee9ea0a097"
+  },
+  "THM/Maquinas/2. Medium/6. Hammer/2. Getting the Flags.md": {
+    "modified": "2025-12-27T00:52:04",
+    "hash": "aefb22a0b88a5146c0668c028a3a7c0d14f6a66f1c783db981e74135dd42cdf8"
+  },
+  "THM/Maquinas/2. Medium/6. Hammer/1. Introduction.md": {
+    "modified": "2025-12-27T00:52:04",
+    "hash": "c7446c440b35d3496cd696a3dadc059a84b2b27d1c16255060684b79b02dcf28"
   }
 }
