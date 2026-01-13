@@ -5793,12 +5793,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/7. Mitigation.md",
                               "parent": "3. XXE Injection"
-                            },
-                            {
-                              "name": "8. Conclusion.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/8. Conclusion.md",
-                              "parent": "3. XXE Injection"
                             }
                           ]
                         },

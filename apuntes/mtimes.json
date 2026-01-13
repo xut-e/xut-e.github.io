@@ -4188,40 +4188,40 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/5. Exploiting XXE - Out-of-Band.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "1d12918cbdd8255afe0e43b29758e8582dd9f765f453fed36d2656ad65ef6f14"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/3. XML Parsing Mechanisms.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "a6f4293605a48436d5488a1e9c024354efb687c0f4bac7213edaf67aefc95df2"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/6. SSRF and XXE.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "8b4bb5df2cec4bc6cb1f3bf83ce0d3b3f96b1383a595de9921effb6fffa2b0b6"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/2. Exploring XML.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "6d7e5045ec7fbef455447bd4758655c67385b3522b4781abd44ea395a24de91b"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/0. XXE Injection.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "05f812086283314613ee33b3b50eb009e1466805b4078d39b3838305133d8b6b"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "2c74c2f6547d03f85bfde7d18a52c3b08fca8731749dc68e4a07a840d20496dd"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/4. Exploiting XXE - In-Band.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "b0898fe44d141397bdeed7c1c61168b911ab3809ba53a74839f26b77de1f4155"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/8. Conclusion.md": {
     "modified": "2025-12-12T13:58:55",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/7. Mitigation.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "de1cf4380b5e0c3ea9f810d3f090a0d91bc0fcee6faf2d4a0d8afd48e66a80e4"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/3. XXE Injection/1. Introduction.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "bddc4faa7979f4ee87401b21f1e1750e728866b6898dbfa598e29c9e338b68f8"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/5. LDAP Injection/4. Injection Fundamentals.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4300,8 +4300,8 @@
     "hash": "c15e69ff48c9664969e8446d61a0bec96c426a3d325db99436c41f2fd460c20a"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/3. Template Engines.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "f5b8bfab1e85739917dd3536187a3a9e4c00676249da0bdf047c57ad98acdea5"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/5. NodeJS - Pug.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4312,8 +4312,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/2. SSTI Overview.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "c9d07c0b553d4e0161db3f13fefb9aeb784099fb4cf147af3ede20942c61b6a1"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/6. Python - Jinja2.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4324,12 +4324,12 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/4. PHP - Smarty.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "eda0f8251cd0ae7535541fa4011f07a08da0e30e3c8ece34f4ed3b4956acd766"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/4. Server-Side Template Injection/1. Introduction.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-01-13T00:51:00",
+    "hash": "b80ecc296af72819d56e5bdef8cfe491a65bb0eabe73cc5e203c685425b277e9"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/1. Authentication/5. Multi-Factor Authentication/4. Practical - OTP Leakage.md": {
     "modified": "2025-12-26T00:53:51",
