@@ -8196,8 +8196,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/1-insecure-deserialisation/1-introduction/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/1. Insecure Deserialisation/1. Introduction.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 1. Insecure Deserialisation",
-    "content": "",
-    "modified": "2025-12-12T13:58:55"
+    "content": "El input proporcionado por el usuario ha sido consistentemente un catalizador para las vulnerabilidades, suponiendo un riesgo persistente para numerosas plataformas y aplicaciones. Otro riesgo no tan entendido pero igualmente peligroso es la deserialización insegura.\n\nLos exploits de deserialización insegura ocurren cuando una aplicación confía en información serializada lo suficiente para usarla sin validar su autenticidad, lo que puede llevar a resultados desastrosos.Este tipo de vulnerabilidad está presente en aplicaciones que serializan y deserializan estructuras complejas de datos a lo largo de varios entornos de programación. como Java, .NET y PHP.\n\n--------------------------------------------\n<h2>Objetivos de Aprendizaje</h2>\nA lo largo de esta unidad ganaremos conocimiento en:\n\n- Cómo funcionan los procesos de serialización y deserialización.\n- Riesgos potenciales de aplicaciones web.\n- Técnicas de explotación.\n- Medidas de mitigación.\n\n--------------------------------------------\n<h2>Pre-requisitos</h2>\n- [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n- [[0. Protocols and Servers]]\n- [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]",
+    "modified": "2026-01-19T00:59:19"
   },
   {
     "title": "2. Terminology and Types",
