@@ -35,10 +35,5 @@ Para romper este portal de login, vamos a usar dos herramientas distintas:
 
 ----------------------------------------------------
 
->[!NOTE] Conclusión:
->Aunque ambos sirven y nos han reportado correctamente el usuario:contraseña, WFUZZ ha demostrado ser más eficiente. 
->
->Sin embargo, la documentación CLI está mejor redactada (y tiene más ejemplos, por lo que es más clara) del lado de FFUF.
->
->Cada una tiene sus ventajas, queda a preferencia del usuario.
+>[!NOTE] Conclusión: Aunque ambos sirven y nos han reportado correctamente el usuario:contraseña, WFUZZ ha demostrado ser más eficiente. Sin embargo, la documentación CLI está mejor redactada (y tiene más ejemplos, por lo que es más clara) del lado de FFUF. Cada una tiene sus ventajas, queda a preferencia del usuario.
 
