@@ -6117,12 +6117,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/7. LFI2RCE - Wrappers.md",
                               "parent": "3. File Inclusion and Path Traversal"
-                            },
-                            {
-                              "name": "8. Conclusion.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/8. Conclusion.md",
-                              "parent": "3. File Inclusion and Path Traversal"
                             }
                           ]
                         },
