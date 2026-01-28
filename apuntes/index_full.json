@@ -7980,8 +7980,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/2-essential-recap/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/2. Essential Recap.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
-    "content": "",
-    "modified": "2025-12-12T13:58:55"
+    "content": "Antes de pasar a conceptos avanzados necesitamos entender cosas básicas en JavaScript. Piensa en los **objetos** como bloques de construcción que contienen información. La **herencia** es como lasar atributos de un objeto a otro.",
+    "modified": "2026-01-28T00:56:07"
   },
   {
     "title": "6. Exploitation - Denial of Service",
@@ -8012,8 +8012,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/5-prototype-pollution/1-introduction/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/5. Prototype Pollution/1. Introduction.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 5. Prototype Pollution",
-    "content": "En el apasionante mundo de la ciberseguridad, donde los hackers y pentesters vagan en busca de vulnerabilidades, hay un concepto en evolución conocido como contaminación de prototipo. Esto permite a los actores maliciosos",
-    "modified": "2026-01-27T00:59:05"
+    "content": "En el apasionante mundo de la ciberseguridad, donde los hackers y pentesters vagan en busca de vulnerabilidades, hay un concepto en evolución conocido como contaminación de prototipo. Esto permite a los actores maliciosos manipular y explotar el funcionamiento interno de las aplicaciones JavaScript y habilita a los atacantes a ganar acceso a información sensible y al backend.\n\nMientras que prototype pollution se ve en el contexto de JavaScript, el concepto puede extrapolarse a cualquier sistema que use un [modelo de herencia basado en prototipo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain).\n\nSin embargo, el amplio uso de JavaScript, particularmente en el desarrollo web y su modelo de objetos flexible y dinámico hacen el protorype pollution un problema más prominente  y relevante en este lenguaje. En contraste, los lenguajes con [herencia basada en clases](https://en.wikipedia.org/wiki/Class-based_programming) suelen ser estáticosy alterar una clase durante el periodo de ejecución no es una práctica común.\n\n--------------------------------\n<h2>Objetivos de Aprendizaje</h2>\nA lo largo de esta unidad aprenderemos los siguientes conceptos:\n\n- Cómo funciona la contaminación de prototipos.\n- Riesgos potenciales de las aplicaciones web.\n- Técnicas de explotación (del lado del cliente y del servidor).\n- Técnicas de mitigación.\n\n--------------------------------------\n<h2>Pre-requisitos</h2>\n- [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n- [[0. Protocols and Servers]]\n- [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]",
+    "modified": "2026-01-28T00:56:07"
   },
   {
     "title": "0. Prototype Pollution",
