@@ -3,6 +3,78 @@
   "type": "directory",
   "contents": [
     {
+      "name": "CTFs",
+      "type": "directory",
+      "contents": [
+        {
+          "name": "1. Talent Arena",
+          "type": "directory",
+          "contents": [
+            {
+              "name": "2026",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "1. OSINT",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/1. OSINT/1. Introduction.md",
+                      "parent": "1. OSINT"
+                    },
+                    {
+                      "name": "2. The Digital Treasure Hunt.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/1. OSINT/2. The Digital Treasure Hunt.md",
+                      "parent": "1. OSINT"
+                    }
+                  ]
+                },
+                {
+                  "name": "2. Web",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/2. Web/1. Introduction.md",
+                      "parent": "2. Web"
+                    },
+                    {
+                      "name": "2. Companion API.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/2. Web/2. Companion API.md",
+                      "parent": "2. Web"
+                    }
+                  ]
+                },
+                {
+                  "name": "3. Reverse Engineering",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/3. Reverse Engineering/1. Introduction.md",
+                      "parent": "3. Reverse Engineering"
+                    },
+                    {
+                      "name": "2. The Rust Dance.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/3. Reverse Engineering/2. The Rust Dance.md",
+                      "parent": "3. Reverse Engineering"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Recursos Web",
       "type": "directory",
       "contents": [
@@ -6261,6 +6333,60 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/9. Context and Evasion.md",
                               "parent": "1. XSS"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. CSRF",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/1. Introduction.md",
+                              "parent": "2. CSRF"
+                            },
+                            {
+                              "name": "2. Overview of CSRF Attack.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/2. Overview of CSRF Attack.md",
+                              "parent": "2. CSRF"
+                            },
+                            {
+                              "name": "3. Types of CSRF Attack.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/3. Types of CSRF Attack.md",
+                              "parent": "2. CSRF"
+                            },
+                            {
+                              "name": "4. Basic CSRF - Hidden Link-Image Exploitation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/4. Basic CSRF - Hidden Link-Image Exploitation.md",
+                              "parent": "2. CSRF"
+                            },
+                            {
+                              "name": "5. Double Submit Cookie Bypass.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/5. Double Submit Cookie Bypass.md",
+                              "parent": "2. CSRF"
+                            },
+                            {
+                              "name": "6. Samesite Cookie Bypass.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/6. Samesite Cookie Bypass.md",
+                              "parent": "2. CSRF"
+                            },
+                            {
+                              "name": "7. Few Additional Exploitation Techniques.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/7. Few Additional Exploitation Techniques.md",
+                              "parent": "2. CSRF"
+                            },
+                            {
+                              "name": "8. Defence Mechanisms.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/8. Defence Mechanisms.md",
+                              "parent": "2. CSRF"
                             }
                           ]
                         }

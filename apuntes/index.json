@@ -4,12 +4,60 @@
     "path": "/apuntes/0-ciberseguridad/"
   },
   {
+    "title": "0. CTFs",
+    "path": "/apuntes/ctfs/0-ctfs/"
+  },
+  {
     "title": "0. Recursos Web",
     "path": "/apuntes/recursos-web/0-recursos-web/"
   },
   {
     "title": "0. THM",
     "path": "/apuntes/thm/0-thm/"
+  },
+  {
+    "title": "1. Talent Arena",
+    "path": "/apuntes/ctfs/1-talent-arena/1-talent-arena/"
+  },
+  {
+    "title": "0. 2026",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/0-2026/"
+  },
+  {
+    "title": "0. OSINT",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/1-osint/0-osint/"
+  },
+  {
+    "title": "2. The Digital Treasure Hunt",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/1-osint/2-the-digital-treasure-hunt/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/1-osint/1-introduction/"
+  },
+  {
+    "title": "2. The Rust Dance",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/3-reverse-engineering/2-the-rust-dance/"
+  },
+  {
+    "title": "0. Reverse Engineering",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/3-reverse-engineering/0-reverse-engineering/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/3-reverse-engineering/1-introduction/"
+  },
+  {
+    "title": "2. Companion API",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/2-web/2-companion-api/"
+  },
+  {
+    "title": "0. Web",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/2-web/0-web/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/2-web/1-introduction/"
   },
   {
     "title": "1. DVWA",
@@ -4134,6 +4182,42 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/1-introduction/"
+  },
+  {
+    "title": "5. Double Submit Cookie Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/5-double-submit-cookie-bypass/"
+  },
+  {
+    "title": "0. CSRF",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/0-csrf/"
+  },
+  {
+    "title": "8. Defence Mechanisms",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/8-defence-mechanisms/"
+  },
+  {
+    "title": "3. Types of CSRF Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/3-types-of-csrf-attack/"
+  },
+  {
+    "title": "7. Few Additional Exploitation Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/7-few-additional-exploitation-techniques/"
+  },
+  {
+    "title": "2. Overview of CSRF Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/2-overview-of-csrf-attack/"
+  },
+  {
+    "title": "6. Samesite Cookie Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/6-samesite-cookie-bypass/"
+  },
+  {
+    "title": "4. Basic CSRF - Hidden Link-Image Exploitation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/4-basic-csrf-hidden-link-image-exploitation/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/1-introduction/"
   },
   {
     "title": "4. Filter Evasion Techniques",

@@ -6,7 +6,7 @@ title: "1. DVWA"
 1. [0. Configuration](/apuntes/recursos-web/1-dvwa/0-configuration/0-configuration/)
 2. [0. Brute Force](/apuntes/recursos-web/1-dvwa/1-brute-force/0-brute-force/)
 3. **Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection**
-4. [0. CSRF](/apuntes/recursos-web/1-dvwa/3-csrf/0-csrf/)
+4. **Ciberseguridad/Recursos Web/1. DVWA/3. CSRF/0. CSRF**
 5. **Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion**
 6. [0. File Upload](/apuntes/recursos-web/1-dvwa/5-file-upload/0-file-upload/)
 7. [0. Insecure CAPTCHA](/apuntes/recursos-web/1-dvwa/6-insecure-captcha/0-insecure-captcha/)

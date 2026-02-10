@@ -1,7 +1,7 @@
 {
   "0. Ciberseguridad.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "feb1a156fdb58f9b4bef7c3ccc06a664150d4211aa271db9ad106f731bd3d9a3"
+    "modified": "2026-02-10T01:18:20",
+    "hash": "d6946da2f3c807a0d082f2367b4dae736872c64696964f2851571fa4ac6e65e2"
   },
   "Recursos Web/0. Recursos Web.md": {
     "modified": "2025-12-12T13:58:55",
@@ -12,8 +12,8 @@
     "hash": "436346fd3f31e37435ebf753e062657bc37c82551c5c2a97c6f5b5881a338044"
   },
   "Recursos Web/1. DVWA/1. DVWA.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "adcd96f54adfaf8c3eb0aadbcc8b12fa9f0cacb60915b4c087da923009fe26ea"
+    "modified": "2026-02-10T01:18:20",
+    "hash": "f87f0304c628f2bc0c20f1cfed919e0a8d47c0c8d7f7c5a636214b6f0670394b"
   },
   "Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion.md": {
     "modified": "2025-12-12T13:58:55",
@@ -3904,8 +3904,8 @@
     "hash": "4c956503d553ebe48188c9f2d4badefc8932c89083acd98441edfe7986ee06fd"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. Advanced Client-Side Attacks.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "c5b96a458745927568cf1dd6867f6601c358abb41d71da99b7f4a86078b36a10"
+    "modified": "2026-02-10T01:18:20",
+    "hash": "38a0ad274a0b5f0e08021b5d293c354cc9970a1bcd024c6c2a482a98f2f9d238"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. Injection Attacks.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4522,5 +4522,89 @@
   "THM/Maquinas/2. Medium/6. Hammer/1. Introduction.md": {
     "modified": "2025-12-27T00:52:04",
     "hash": "c7446c440b35d3496cd696a3dadc059a84b2b27d1c16255060684b79b02dcf28"
+  },
+  "CTFs/0. CTFs.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "20e059b27cc4b593796bdfe66da9f277851844053c0749a5d441400f4a8838aa"
+  },
+  "CTFs/1. Talent Arena/1. Talent Arena.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "6894ea358fccd3963f47a60d157a04995d8074f65063bd8d101f3ec3ac099dc5"
+  },
+  "CTFs/1. Talent Arena/2026/0. 2026.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "160f686ad580318f6dcc1767d647728c30e235000dff31718f096c090344c0d6"
+  },
+  "CTFs/1. Talent Arena/2026/1. OSINT/0. OSINT.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "c8dfa88443c30a447bd06019d56c47828a3e2e8ea88001c26cacdfe49a58bb4d"
+  },
+  "CTFs/1. Talent Arena/2026/1. OSINT/2. The Digital Treasure Hunt.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "CTFs/1. Talent Arena/2026/1. OSINT/1. Introduction.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "d4ee8149b7f08a63a819eb3ab7bff961ef0c5b4c77f776c2d318082f42b41b62"
+  },
+  "CTFs/1. Talent Arena/2026/3. Reverse Engineering/2. The Rust Dance.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "CTFs/1. Talent Arena/2026/3. Reverse Engineering/0. Reverse Engineering.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "8bbc81e202b36cb5aa1bac16afdd241e7a3fd7ebdf523d23bd8239bf1bb8734b"
+  },
+  "CTFs/1. Talent Arena/2026/3. Reverse Engineering/1. Introduction.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "600f6459751f2ad85785c32a6d375e87f5acb8fb8fffe2451bc234f7b6b78e9c"
+  },
+  "CTFs/1. Talent Arena/2026/2. Web/2. Companion API.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "CTFs/1. Talent Arena/2026/2. Web/0. Web.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "7f4cda493051aecd0b55b2554caa121e31caa19cdf76834fed0bf550739472bc"
+  },
+  "CTFs/1. Talent Arena/2026/2. Web/1. Introduction.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "3831e4902755ae747038a4849678c38525cfd8dce0908a9ec54b77c6863ee6ce"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/5. Double Submit Cookie Bypass.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/0. CSRF.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "25688c66401fb5aad676e54ba9e2fd465cc220e9cc14ac232075b6d2eafe27e1"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/8. Defence Mechanisms.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/3. Types of CSRF Attack.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/7. Few Additional Exploitation Techniques.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/2. Overview of CSRF Attack.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/6. Samesite Cookie Bypass.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/4. Basic CSRF - Hidden Link-Image Exploitation.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/1. Introduction.md": {
+    "modified": "2026-02-10T01:18:20",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }

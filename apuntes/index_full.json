@@ -4,8 +4,16 @@
     "path": "/apuntes/0-ciberseguridad/",
     "src": "content/Ciberseguridad/0. Ciberseguridad.md",
     "breadcrumb": "",
-    "content": "1. [[0. Recursos Web]]\n2. [[0. THM]]\n3.",
-    "modified": "2025-12-12T13:58:55"
+    "content": "1. [[0. Recursos Web]]\n2. [[0. THM]]\n3. [[0. CTFs]]",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "0. CTFs",
+    "path": "/apuntes/ctfs/0-ctfs/",
+    "src": "content/Ciberseguridad/CTFs/0. CTFs.md",
+    "breadcrumb": "CTFs",
+    "content": "[[1. Talent Arena]]",
+    "modified": "2026-02-10T01:18:20"
   },
   {
     "title": "0. Recursos Web",
@@ -24,12 +32,100 @@
     "modified": "2025-12-12T13:58:55"
   },
   {
+    "title": "1. Talent Arena",
+    "path": "/apuntes/ctfs/1-talent-arena/1-talent-arena/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/1. Talent Arena.md",
+    "breadcrumb": "CTFs > 1. Talent Arena",
+    "content": "1. [[0. 2026]]\n2.",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "0. 2026",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/0-2026/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/0. 2026.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026",
+    "content": "1. [[0. OSINT]]\n2. [[0. Web]]\n3. [[0. Reverse Engineering]]\n4.",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "0. OSINT",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/1-osint/0-osint/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/1. OSINT/0. OSINT.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 1. OSINT",
+    "content": "[[Ciberseguridad/CTFs/1. Talent Arena/2026/1. OSINT/1. Introduction]]\n[[2. The Digital Treasure Hunt]]",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "2. The Digital Treasure Hunt",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/1-osint/2-the-digital-treasure-hunt/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/1. OSINT/2. The Digital Treasure Hunt.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 1. OSINT",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/1-osint/1-introduction/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/1. OSINT/1. Introduction.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 1. OSINT",
+    "content": "<h2>🔍 The Digital Treasure Hunt</h2>\nA developer known as **DevZero-99** has hidden a secret message somewhere on the internet for those clever enough to find it.\n\nYour mission: **Follow his digital trail and uncover the hidden flag.**\n\n---\n<h2>🚩 Flag Format</h2>\n\n`MWC{...}`\n\nGood luck, explorer! 🕵️\n\n-------------------------------------------\n<h2>🔍 La Caza Digital del Tesoro</h2>\nUn desarrollador conocido como **DevZero-99** ha escondido un mensaje secreto en alguna parte de internet para aquellos lo suficientemente inteligentes para encontrarlo.\n\nTu misión: **Seguir su rastro digital para revelar la bandera oculta.**\n\n---\n<h2>🚩 Formato de la Bandera</h2>\n\n`MWC{...}`\n\nBuena suerte, explorador! 🕵️",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "2. The Rust Dance",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/3-reverse-engineering/2-the-rust-dance/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/3. Reverse Engineering/2. The Rust Dance.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 3. Reverse Engineering",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "0. Reverse Engineering",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/3-reverse-engineering/0-reverse-engineering/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/3. Reverse Engineering/0. Reverse Engineering.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 3. Reverse Engineering",
+    "content": "[[Ciberseguridad/CTFs/1. Talent Arena/2026/3. Reverse Engineering/1. Introduction]]\n[[2. The Rust Dance]]",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/3-reverse-engineering/1-introduction/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/3. Reverse Engineering/1. Introduction.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 3. Reverse Engineering",
+    "content": "<h2>Rust-Dance: The Virus That Dances</h2>\n\n<h3>The Story</h3>\nA new threat has emerged from the depths of the network. They call it **Rust-Dance** - a virus that doesn't just infect systems, it makes them _dance_.\n\nEvery file, every process, every byte... now moves to its rhythm.\n\nYour mission: Find the unlock code that stops the dance. Reverse engineer the virus, understand its choreography, and break free.\n\nThe flag is definitely not \"unlockcode123456789\", so don't even try.\n\nThe clock is ticking. The dance continues...\n\n----------------------\n<h3>How to Run</h3>\n\n<h4>Requirements</h4>\n\nYou may use one of the following:\n\n- Windows Subsystem for Linux (WSL)\n- Linux x86_64 system (native or VM)\n\n<h4>Execution</h4>\n\n```bash\n# Make the binary executable (if needed)\nchmod +x rust-dance\n\n# Run the challenge\n./rust-dance\n\n# The virus will prompt you for the unlock code\n# Your goal: find the correct code to reveal the flag\n```\n\n<h3>Rules</h3>\n\n1. The flag format is: `MWC{...}`\n2. You must find the unlock code through reverse engineering\n3. Standard reversing tools are allowed (IDA, Ghidra, radare2, GDB, etc.)\n4. Have fun and learn!\n\n<h3>Flag Submission</h3>\n\nOnce you find the flag, submit it on the CTF platform in the format:\n\n```\nMWC{hash}\n```\n\n------------------------------\n\nGood luck, reverser. Stop the dance.\n\n---------------------------------------------------------<h2>Rust-Dance: El Virus Que Baila</h2>\n\n<h3>La Historia</h3>\n\nUna nueva amenaza ha surgido de las profundidades de la red. Lo llaman **Rust-Dance**: un virus que no solo infecta sistemas, sino que los hace bailar.\n\nCada archivo, cada proceso, cada byte... ahora se mueve a su ritmo.\n\nTu misión: encontrar el código de desbloqueo que detiene el baile. Aplica ingeniería inversa al virus, comprende su coreografía y libérate.\n\nEl indicador definitivamente no es \"unlockcode123456789\", así que ni lo intentes.\n\nEl tiempo avanza. El baile continúa...\n\n-------------\n<h3>Cómo ejecutar</h3>\n\n<h4>Requisitos</h4>\n\nPuedes usar uno de los siguientes:\n\n- Subsistema de Windows para Linux (WSL)\n- Sistema Linux x86_64 (nativo o VM)\n\n<h4>Ejecución</h4>\n\n```bash\n# Crea el binario ejecutable (si es necesario)\nchmod +x rust-dance\n\n# Ejecuta el desafío\n./rust-dance\n\n# El virus te pedirá el código de desbloqueo\n# Tu objetivo: encontrar el código correcto para revelar la bandera\n```\n\n<h3>Reglas</h3>\n\n1. El formato de la bandera es: `MWC{...}`\n2. Debes encontrar el código de desbloqueo mediante ingeniería inversa\n3. Se permiten herramientas de reversión estándar (IDA, Ghidra, radare2, GDB, etc.)\n4. ¡Diviértete y aprende!\n\nEnvío de la bandera\n\nUna vez que encuentres la bandera, envíala a la plataforma CTF con el siguiente formato:\n\n```\nMWC{hash}\n```\n\n---\n\n¡Buena suerte, reversor! ¡Para el bailar!",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "2. Companion API",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/2-web/2-companion-api/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/2. Web/2. Companion API.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 2. Web",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "0. Web",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/2-web/0-web/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/2. Web/0. Web.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 2. Web",
+    "content": "[[Ciberseguridad/CTFs/1. Talent Arena/2026/2. Web/1. Introduction]]\n[[2. Companion API]]",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/ctfs/1-talent-arena/2026/2-web/1-introduction/",
+    "src": "content/Ciberseguridad/CTFs/1. Talent Arena/2026/2. Web/1. Introduction.md",
+    "breadcrumb": "CTFs > 1. Talent Arena > 2026 > 2. Web",
+    "content": "<h2>Companion API - CTF Challenge</h2>\n\n<h3>Welcome, Hacker!</h3>\nYou've been hired as a security consultant to assess **Companion API**, a mobile backend API for a major event management platform. The organizers want to ensure their attendee management system is secure before the big event.\n\nYour mission: Find the vulnerabilities in this API and retrieve the flag.\n\n<h3>The Scenario</h3>\nCompanion API is a REST API that handles:\n\n- Attendee authentication\n- Ticket management for event sessions\n- Internal staff tools\n\nThe development team claims the API is \"production ready.\" Prove them wrong.\n\n<h3>Getting Started</h3>\n\n<h4>Prerequisites</h4>\n\n- Docker and Docker Compose installed\n- A REST client (curl, Postman, Burp Suite, etc.)\n- Your hacking skills\n\n<h4>Running the Challenge</h4>\n\n1. Extract the challenge files:\n    \n    `unzip web-challenge.zip`\n    \n2. Start the service:\n    \n    `./START.sh`\n    \n3. The API is now available at: **[http://127.0.0.1:8080](http://127.0.0.1:8080)**\n\nTo stop the challenge:\n\n```bash\ndocker compose down\n```\n\n<h3>Rules of Engagement</h3>\n\n- This is an **API hacking** challenge - focus on the REST endpoints\n- The flag format is: `MWC{...}`\n- To finalize the challenge there is an endpoint to get the full flag: `/api/v1/finalize`\n    \n    - POST request with the following data:\n    \n    `\"fragment_1\": \"<FRAGMENT_2003>\",`\n    `\"fragment_2\": \"<FRAGMENT_2>\",`\n    `\"fragment_3\": \"<FRAGMENT_3>\",`\n    \n    - If data is correct you will get the flag.\n\n<h3>Objective</h3>\nFind and submit the flag. The flag proves you've successfully identified and exploited all the intended vulnerabilities in the chain.\n\nGood luck, hacker!\n\n----------------------------------------------------------\n<h2>Companion API - Reto CTF</h2>\n\n<h3>Bienvenido, Hacker!</h3>\nTe han contratado como consultor de seguridad para evaluar Companion API, una API de backend móvil para una importante plataforma de gestión de eventos. Los organizadores quieren garantizar la seguridad de su sistema de gestión de asistentes antes del gran evento.\n\nTu misión: Encontrar las vulnerabilidades en esta API y detectarlas.\n\n<h3>El Esenario</h3>\nLa API complementaria es una API REST que gestiona:\n\n- Autenticación de asistentes\n- Gestión de tickets para sesiones de eventos\n- Herramientas internas para el personal\n\nEl equipo de desarrollo afirma que la API está lista para producción. Demuéstrales que se equivocan.\n\n<h3>Getting Started</h3>\n\n<h4>Pre-requisitos</h4>\n\n- Docker y Docker Compose instalados\n- Un cliente REST (curl, Postman, Burp Suite, etc.)\n- Tus habilidades de hacking\n\n<h4>Ejecutar el Reto</h4>\n1. Extraiga los archivos del desafío:\n   \n   `unzip web-challenge.zip`\n\n2. Inicie el servicio:\n   \n   `./START.sh`\n\n3. La API ya está disponible en: **[http://127.0.0.1:8080](http://127.0.0.1:8080)**\n\nPara detener el desafío:\n\n```bash\ndocker compose down\n```\n\n<h3>Reglas del Engagement</h3>\nEste es un desafío de **hacking de API**: se centra en los endpoints REST.\n- El formato de la bandera es: `MWC{...}`.\n- Para finalizar el desafío, hay un endpoint para obtener la bandera completa: `/api/v1/finalize`.\n\n- Solicitud POST con los siguientes datos:\n\n`\"fragment_1\": \"<FRAGMENT_2003>\",`\n`\"fragment_2\": \"<FRAGMENT_2>\",`\n`\"fragment_3\": \"<FRAGMENT_3>\",`\n\n- Si los datos son correctos, se obtendrá la bandera.\n<h3>Objectivo</h3>\nEncuentra y envía la bandera. Esta bandera demuestra que has identificado y explotado con éxito todas las vulnerabilidades previstas en la cadena.\n\n¡Buena suerte, hacker!",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
     "title": "1. DVWA",
     "path": "/apuntes/recursos-web/1-dvwa/1-dvwa/",
     "src": "content/Ciberseguridad/Recursos Web/1. DVWA/1. DVWA.md",
     "breadcrumb": "Recursos Web > 1. DVWA",
-    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3. [[Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection]]\n4. [[0. CSRF]]\n5. [[Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion]]\n6. [[0. File Upload]]\n7. [[0. Insecure CAPTCHA]]\n8. [[Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection]]\n9. [[0. SQL Injection - Blind]]\n10. [[0. Weak Session IDs]]\n11. [[0. XSS - DOM]]\n12. [[0. XSS - Reflected]]\n13. [[0. XSS - Stored]]\n14. [[0. CSP Bypass]]\n15. [[0. JavaScript Attacks]]\n16. [[0. Authorisation Bypass]]\n17. [[0. Open HTTP Redirect]]\n18. [[0. Cryptography]]\n19. [[0. API]]",
-    "modified": "2025-12-12T13:58:55"
+    "content": "1. [[0. Configuration]]\n2. [[0. Brute Force]]\n3. [[Ciberseguridad/Recursos Web/1. DVWA/2. Command Injection/0. Command Injection]]\n4. [[Ciberseguridad/Recursos Web/1. DVWA/3. CSRF/0. CSRF]]\n5. [[Ciberseguridad/Recursos Web/1. DVWA/4. File Inclusion/0. File Inclusion]]\n6. [[0. File Upload]]\n7. [[0. Insecure CAPTCHA]]\n8. [[Ciberseguridad/Recursos Web/1. DVWA/7. SQL Injection/0. SQL Injection]]\n9. [[0. SQL Injection - Blind]]\n10. [[0. Weak Session IDs]]\n11. [[0. XSS - DOM]]\n12. [[0. XSS - Reflected]]\n13. [[0. XSS - Stored]]\n14. [[0. CSP Bypass]]\n15. [[0. JavaScript Attacks]]\n16. [[0. Authorisation Bypass]]\n17. [[0. Open HTTP Redirect]]\n18. [[0. Cryptography]]\n19. [[0. API]]",
+    "modified": "2026-02-10T01:18:20"
   },
   {
     "title": "0. File Inclusion",
@@ -7860,8 +7956,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-advanced-client-side-attacks/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. Advanced Client-Side Attacks.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks",
-    "content": "1. [[0. XSS]]\n2.",
-    "modified": "2025-12-12T13:58:55"
+    "content": "1. [[0. XSS]]\n2. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/0. CSRF]]\n3.",
+    "modified": "2026-02-10T01:18:20"
   },
   {
     "title": "2. Injection Attacks",
@@ -8270,6 +8366,78 @@
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 1. XSS",
     "content": "El cross-site scripting sigue siendo una de las vulnerabilidades más comunes que acechan aplicaciones web hoy en día. Dependen de inyectar un script malicioso en un sitio benigno para que se ejecute en el navegador del usuario.\n\nUna de las primeras vulnerabilidades XSS fue reconocida en 1999 y llevó a CERT advisory [CA-2000-02](https://vuls.cert.org/confluence/display/historical/CERT+Advisory+CA-2000-02+Malicious+HTML+Tags+Embedded+in+Client+Web+Requests). Durante las últimas décadas varias prácticas de seguridad se han convertido parte de los frameworks de aplicación, protegiendo contra muchas vulnerabilidades XSS por defecto, aunque también ha crecido la sofisticación de los ataques.\n\nSe descubren y explotan vulnerabilidades XSS mensualmente. En el OWASP Top 10 de 2021, se clasificó tercera.\n\n--------------------------------------\n<h2>Pre-requisitos</h2>\n- [[Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/2. HTTP in Detail/0. HTTP in Detail]]\n- [[Ciberseguridad/Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n- [[0. JavaScript Essentials]]\n- [[Ciberseguridad/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/0. Intro to Cross-site Scripting]]\n\n-----------------------------------\n<h2>Objetivos de Aprendizaje</h2>\nAl completar esta unidad se espera haber ganado conocimientos más en profundidad sobre:\n\n- Reflected XSS\n- Stored XSS\n- DOM-Based XSS\n- Cómo protegerse contra el XSS",
     "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "5. Double Submit Cookie Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/5-double-submit-cookie-bypass/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/5. Double Submit Cookie Bypass.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "0. CSRF",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/0-csrf/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/0. CSRF.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/1. Introduction]]\n[[2. Overview of CSRF Attack]]\n[[3. Types of CSRF Attack]]\n[[4. Basic CSRF - Hidden Link-Image Exploitation]]\n[[5. Double Submit Cookie Bypass]]\n[[6. Samesite Cookie Bypass]]\n[[7. Few Additional Exploitation Techniques]]\n[[8. Defence Mechanisms]]",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "8. Defence Mechanisms",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/8-defence-mechanisms/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/8. Defence Mechanisms.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "3. Types of CSRF Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/3-types-of-csrf-attack/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/3. Types of CSRF Attack.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "7. Few Additional Exploitation Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/7-few-additional-exploitation-techniques/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/7. Few Additional Exploitation Techniques.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "2. Overview of CSRF Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/2-overview-of-csrf-attack/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/2. Overview of CSRF Attack.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "6. Samesite Cookie Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/6-samesite-cookie-bypass/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/6. Samesite Cookie Bypass.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "4. Basic CSRF - Hidden Link-Image Exploitation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/4-basic-csrf-hidden-link-image-exploitation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/4. Basic CSRF - Hidden Link-Image Exploitation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
+    "content": "",
+    "modified": "2026-02-10T01:18:20"
   },
   {
     "title": "4. Filter Evasion Techniques",
