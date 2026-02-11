@@ -3,3 +3,39 @@ layout: apunte
 title: "2. The Rust Dance"
 ---
 
+1. Empezamos comprobando el tipo de archivo que tenemos en frente.
+   !**Pasted image 20260210201613.png**
+2. Ahora vamos a ejecutar el código una vez para ver su comportamiento.
+   !**Pasted image 20260210201659.png**
+   Parece que debemos de introducir el código correcto para que el programa nos devuelva la flag.
+3. Vamos a hacer una serie de comprobaciones para ver qué strings hay dentro del código.
+	1. Empezamos investigando las strings con `strings ./rust-dance`.
+	   !**Pasted image 20260210202014.png**
+	   Pero hay demasiadas.
+	   !**Pasted image 20260210202041.png**
+	2. Así que seremos un poco más selectivos.
+	   !**Pasted image 20260210202235.png**
+	   Aquí vemos algunas coincidencias, pero (aunque hay más) no vemos nada muy interesante.
+	3. Vamos a observar trazas dinámicas, para ello usamos `strace` y filtramos después.
+	   !**Pasted image 20260210202548.png**
+	   !**Pasted image 20260210202734.png**
+	   Como `strace` no revela comparaciones en `libc`, el siguiente paso es usar `ltrace` para ver si `memcmp/strcmp/bcmp` existen. Sin embargo, nos ayuda a conocer el punto en el que introducir un `breakpoint` más adelante.
+	4. Usamos `ltrace`.
+	   !**Pasted image 20260210203610.png**
+	   Parece que no hay ninguna llamada típica por lo que parece que NO hay una comprobación directa entre dos strings. Lo más probable es que la validación la haga en el código propio sin acceder a más valores de memoria.
+4. Como no hemos detectado nada con `ltrace`, vamos a "engancharnos" al punto exacto después del `read()` (que obtuvimos con `strace`) y localizar el bucle de verificación.
+	1. Para ello arrancamos `gdb` con `gdb -1 ./rust-dance`.
+	   !**Pasted image 20260210204016.png**
+	2. Introducimos dónde queremos parar la ejecución (cuando llama a la función `read()`).
+	   !**Pasted image 20260210204113.png**
+	3. Ejecutamos el programa con `run`.
+	   !**Pasted image 20260210204153.png**
+	   Si nos fijamos en las variables, `$rdi` pone `0x3`. Esto significa que está leyendo un fichero/librería, no `stdin`, que es `fd==0`.
+	4. Escribimos una condición para que cumpla nuestros requisitos.
+	   !**Pasted image 20260210204834.png**
+	5. Llegamos al punto donde lee `stdin`, así que salimos del syscall con el comando `ni`. Y entonces introducimos el input.
+	   !**Pasted image 20260210205052.png**
+	6. Comprobamos que está lo que acabamos de escribir:
+	   !**Pasted image 20260210205138.png**
+	7. Hacemos `finish` hasta que lleguemos a `rip 0x555555565383`
+	8. Usamos `disassemble $rip-80, $rip+250` para buscar operaciones que nos recuerden a las que se mencionan en el enunciado (twist, moonwalk, slide, etc.)

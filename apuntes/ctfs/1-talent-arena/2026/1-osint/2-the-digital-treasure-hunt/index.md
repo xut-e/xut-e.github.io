@@ -3,3 +3,32 @@ layout: apunte
 title: "2. The Digital Treasure Hunt"
 ---
 
+1. Como nos dicen que es un desarrollador, empezaremos buscando su nombre en la plataforma de programadores/desarrolladores y código más famosa del mundo: GitHub.
+   !**Pasted image 20260210174727.png**
+   Efectivamente encontramos un usuario.
+2. Si nos metemos en su perfil veremos que sólo tiene un repositorio, por lo que nos meteremos en dicho repositorio.
+   !**Pasted image 20260210174823.png**
+3. Vemos un TODO en el que supuestamente ha borrado información sensible, pero nosotros sabemos que no por borrar una parte de código en GitHub se elimina, así que vamos a los commits del repo.
+   !**Pasted image 20260210174955.png**
+   Efectivamente vemos que el `.gitignore` no se creó hasta antes de modificar el último commit.
+4. Visto esto decidimos entrar en el commit "Create utils.js".
+   !**Pasted image 20260210175122.png**
+   En dicho commit nos encontramos un ID: `qcSWnAj0`. Además hay un guiño a la plataforma `pastebin`: "a more... pasteable place".
+5. Si vamos a `pastebin.com/ID`, que nos habíamos encontrado, encontramos una nota privada del usuario `DEVZERO-99`.
+   !**Pasted image 20260210175421.png**
+   En dicho documento se explica una migración de un proyecto "secreto" (no tanto compañero ;) ). Además podemos ver una wallet y el nombre de la testnet usada.
+6. Si vamos a la testnet usada e introducimos el id de la wallet:
+   !**Pasted image 20260210175631.png**
+   Podemos ver que ha habido un par de transacciones y una creación de contrato que parece que puede contener información.
+7. Vamos a darle al `Tansaction Hash` de este contrato.
+   !**Pasted image 20260210180449.png**
+8. Una vez allí le damos a `+ Click to show more`.
+   !**Pasted image 20260210180522.png**
+9. Allí le damos a `View Input As` y seleccionamos `UTF-8`.
+   !**Pasted image 20260210180603.png**
+   Aparece un mensaje "Some secrets are hidden in plain sight. The journey is the reward." ("Algunos secretos están ocultos a simple vista. El viaje es la recompensa."). Seguido de una cadena que parece base64: `TVdDe2Qzdl96M3IwX24zdjNyX2QxM3NfMG5fY2g0MW59`.
+10. Convertimos la cadena ASCII.
+    !**Pasted image 20260210180933.png**
+
+>[!SUCCESS] ¡¡Reto resuelto!!
+
