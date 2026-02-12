@@ -2340,12 +2340,16 @@
     "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/1-introduction/"
   },
   {
-    "title": "1. Getting the Flags",
-    "path": "/apuntes/thm/maquinas/2-medium/7-include/1-getting-the-flags/"
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/7-include/2-getting-the-flags/"
   },
   {
     "title": "0. Include",
     "path": "/apuntes/thm/maquinas/2-medium/7-include/0-include/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/7-include/1-introduction/"
   },
   {
     "title": "2. Finding the flags",

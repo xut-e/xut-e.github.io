@@ -2260,8 +2260,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/2. Medium/6. Hammer/0. Hammer.md": {
-    "modified": "2025-12-27T00:52:04",
-    "hash": "c35bea4af1cd30fd4726ecf34fe5f9f1e323b0c24c58bc8e3d22fc3029a2e018"
+    "modified": "2026-02-12T01:08:37",
+    "hash": "9550caba8235b0ce06cbc10e8373090cc02de19a09f67d9df63b0adb79119246"
   },
   "THM/Maquinas/2. Medium/4. Rabbit Store/0. Rabbit Store.md": {
     "modified": "2025-12-12T13:58:55",
@@ -2292,8 +2292,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/2. Medium/7. Include/0. Include.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "7858e377197a3b1bc0b270d7d4e1071f2f965f960a645ddf8a886c84b379eca8"
+    "modified": "2026-02-12T01:08:37",
+    "hash": "f7364e255e3c8c0ffe03583880e1339ab53d640f881382618a3deef87ba11b82"
   },
   "THM/Maquinas/1. Easy/5. Brooklyn Nine Nine/2. Finding the flags.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4548,8 +4548,8 @@
     "hash": "d4ee8149b7f08a63a819eb3ab7bff961ef0c5b4c77f776c2d318082f42b41b62"
   },
   "CTFs/1. Talent Arena/2026/3. Reverse Engineering/2. The Rust Dance.md": {
-    "modified": "2026-02-11T01:16:12",
-    "hash": "3495437e4b51929f55f8a2b6b182c3fa4d8ff3dbd24c7c6b019abd0641d44400"
+    "modified": "2026-02-12T01:08:37",
+    "hash": "7e1a95013e672b4c6477ce0b5144e1335409ae396ace3c2f53b4e79c13902c1d"
   },
   "CTFs/1. Talent Arena/2026/3. Reverse Engineering/0. Reverse Engineering.md": {
     "modified": "2026-02-10T01:18:20",
@@ -4606,5 +4606,13 @@
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/1. Introduction.md": {
     "modified": "2026-02-10T01:18:20",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/2. Medium/7. Include/2. Getting the Flags.md": {
+    "modified": "2026-02-12T01:08:37",
+    "hash": "5e30d7a0cbb456d4569373f5a7ba81a6903aeb02419d357f7fc0bd5975f889f3"
+  },
+  "THM/Maquinas/2. Medium/7. Include/1. Introduction.md": {
+    "modified": "2026-02-12T01:08:37",
+    "hash": "1ad5c228cef9b8cd3b7899c3813f27f0c8919ca26f0d2f24f7b8abb433feca54"
   }
 }
