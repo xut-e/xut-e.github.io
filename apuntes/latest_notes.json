@@ -8,19 +8,11 @@
     "modified": "2026-02-12T01:08:37"
   },
   {
-    "title": "0. Hammer",
-    "path": "/apuntes/thm/maquinas/2-medium/6-hammer/0-hammer/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 6. Hammer",
-    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/2. Getting the Flags]]",
-    "modified": "2026-02-12T01:08:37"
-  },
-  {
-    "title": "2. Getting the Flags",
-    "path": "/apuntes/thm/maquinas/2-medium/7-include/2-getting-the-flags/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/2. Getting the Flags.md",
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/7-include/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/1. Introduction.md",
     "breadcrumb": "THM > Maquinas > 2. Medium > 7. Include",
-    "content": "<h2>¿Cuál es la flag después de iniciar sesión en SysMon App?</h2>\n<h4>Escaneo Inicial</h4>\n1. Empezamos realizando un escaneo a todos los puertos de la IP.\n   ![[Pasted image 20260211205256.png]]\n2. Una vez tenemos el escaneo inicial vamos a lanzar un escaneo con todo contra estos puertos.\n   ![[Pasted image 20260211213811.png]]\n   ![[Pasted image 20260211213836.png]]\n   Podemos ver que el puerto 50000 está sirviendo un Apache 2.4.41 y el 4000 un Node.js en http, por lo que como siempre que vemos un servicio web, vamos a ver qué hay.\n\n<h4>Investigación de Puertos</h4>\n1. Vamos a ver qué hay en el puerto 50000.\n   ![[Pasted image 20260211214240.png]]\n2. Y en el puerto 4000.\n   ![[Pasted image 20260211214303.png]]\n\n<h4>Investigación Web</h4>\n1. Empezamos fuzzeando.\n\t1. En el puerto 50000.\n\t   ![[Pasted image 20260211221934.png]]\n\t2. En el puerto 4000.\n\t   ![[Pasted image 20260211222041.png]]\n2. Seguimos intentando SQL Injection.\n\t1. En el puerto 50000.\n\t   ![[Pasted image 20260211222327.png]]\n\t   ![[Pasted image 20260211222350.png]]\n\t   Capturé una petición para usarla con SQLMap (era un formulario POST) pero no había ningún parámetro inyectable.\n\t2. En el puerto 4000 no nos hace falta porque nos han dejado credenciales de acceso.\n\t   ![[Pasted image 20260211221457.png]]\n\n\n--------------------------------------\n<h2>¿Cuál es el contenido del archivo de texto escondido en /var/www/html?</h2>",
+    "content": "![[Pasted image 20260211204950.png]]\n\nThis challenge is an initial test to evaluate your capabilities in web pentesting, particularly for server-side attacks. Start the VM by clicking the `Start Machine` button at the top right of the task.\n\nYou will find all the necessary tools to complete the challenge, like Nmap, PHP shells, and many more on the AttackBox.  \n\n_\"Even if it's not accessible from the browser, can you still find a way to capture the flags and sneak into the secret admin panel?\"_",
     "modified": "2026-02-12T01:08:37"
   },
   {
@@ -32,11 +24,19 @@
     "modified": "2026-02-12T01:08:37"
   },
   {
-    "title": "1. Introduction",
-    "path": "/apuntes/thm/maquinas/2-medium/7-include/1-introduction/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/1. Introduction.md",
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/7-include/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/2. Getting the Flags.md",
     "breadcrumb": "THM > Maquinas > 2. Medium > 7. Include",
-    "content": "![[Pasted image 20260211204950.png]]\n\nThis challenge is an initial test to evaluate your capabilities in web pentesting, particularly for server-side attacks. Start the VM by clicking the `Start Machine` button at the top right of the task.\n\nYou will find all the necessary tools to complete the challenge, like Nmap, PHP shells, and many more on the AttackBox.  \n\n_\"Even if it's not accessible from the browser, can you still find a way to capture the flags and sneak into the secret admin panel?\"_",
+    "content": "<h2>¿Cuál es la flag después de iniciar sesión en SysMon App?</h2>\n<h4>Escaneo Inicial</h4>\n1. Empezamos realizando un escaneo a todos los puertos de la IP.\n   ![[Pasted image 20260211205256.png]]\n2. Una vez tenemos el escaneo inicial vamos a lanzar un escaneo con todo contra estos puertos.\n   ![[Pasted image 20260211213811.png]]\n   ![[Pasted image 20260211213836.png]]\n   Podemos ver que el puerto 50000 está sirviendo un Apache 2.4.41 y el 4000 un Node.js en http, por lo que como siempre que vemos un servicio web, vamos a ver qué hay.\n\n<h4>Investigación de Puertos</h4>\n1. Vamos a ver qué hay en el puerto 50000.\n   ![[Pasted image 20260211214240.png]]\n2. Y en el puerto 4000.\n   ![[Pasted image 20260211214303.png]]\n\n<h4>Investigación Web</h4>\n1. Empezamos fuzzeando.\n\t1. En el puerto 50000.\n\t   ![[Pasted image 20260211221934.png]]\n\t2. En el puerto 4000.\n\t   ![[Pasted image 20260211222041.png]]\n2. Seguimos intentando SQL Injection.\n\t1. En el puerto 50000.\n\t   ![[Pasted image 20260211222327.png]]\n\t   ![[Pasted image 20260211222350.png]]\n\t   Capturé una petición para usarla con SQLMap (era un formulario POST) pero no había ningún parámetro inyectable.\n\t2. En el puerto 4000 no nos hace falta porque nos han dejado credenciales de acceso.\n\t   ![[Pasted image 20260211221457.png]]\n\n\n--------------------------------------\n<h2>¿Cuál es el contenido del archivo de texto escondido en /var/www/html?</h2>",
+    "modified": "2026-02-12T01:08:37"
+  },
+  {
+    "title": "0. Hammer",
+    "path": "/apuntes/thm/maquinas/2-medium/6-hammer/0-hammer/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 6. Hammer",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/2. Getting the Flags]]",
     "modified": "2026-02-12T01:08:37"
   }
 ]
