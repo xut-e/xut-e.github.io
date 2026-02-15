@@ -6389,6 +6389,114 @@
                               "parent": "2. CSRF"
                             }
                           ]
+                        },
+                        {
+                          "name": "3. DOM-Based Attacks",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. The DOM Explained.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/1. The DOM Explained.md",
+                              "parent": "3. DOM-Based Attacks"
+                            },
+                            {
+                              "name": "2. Modern Frontend Frameworks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/2. Modern Frontend Frameworks.md",
+                              "parent": "3. DOM-Based Attacks"
+                            },
+                            {
+                              "name": "3. DOM-Based Attacks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/3. DOM-Based Attacks.md",
+                              "parent": "3. DOM-Based Attacks"
+                            },
+                            {
+                              "name": "4. DOM-Based XSS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/4. DOM-Based XSS.md",
+                              "parent": "3. DOM-Based Attacks"
+                            },
+                            {
+                              "name": "5. XSS Weaponisation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/5. XSS Weaponisation.md",
+                              "parent": "3. DOM-Based Attacks"
+                            },
+                            {
+                              "name": "6. DOM-Based Attack Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/6. DOM-Based Attack Challenge.md",
+                              "parent": "3. DOM-Based Attacks"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. CORS & SOP",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Understanding SOP.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/1. Understanding SOP.md",
+                              "parent": "4. CORS & SOP"
+                            },
+                            {
+                              "name": "2. Understanding CORS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/2. Understanding CORS.md",
+                              "parent": "4. CORS & SOP"
+                            },
+                            {
+                              "name": "3. ACAO in depth.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/3. ACAO in depth.md",
+                              "parent": "4. CORS & SOP"
+                            },
+                            {
+                              "name": "4. Common Misconfigurations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/4. Common Misconfigurations.md",
+                              "parent": "4. CORS & SOP"
+                            },
+                            {
+                              "name": "5. Lab Connection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/5. Lab Connection.md",
+                              "parent": "4. CORS & SOP"
+                            },
+                            {
+                              "name": "6. Arbitrary Origin.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/6. Arbitrary Origin.md",
+                              "parent": "4. CORS & SOP"
+                            },
+                            {
+                              "name": "7. Bad Regex in Origin.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/7. Bad Regex in Origin.md",
+                              "parent": "4. CORS & SOP"
+                            },
+                            {
+                              "name": "8. Null Origin.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/8. Null Origin.md",
+                              "parent": "4. CORS & SOP"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. Whats Your Name",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/5. Whats Your Name/1. Redirection.md",
+                              "parent": "5. Whats Your Name"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -6845,6 +6953,18 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/1. Getting the Flags.md",
                       "parent": "8. Injectics"
+                    }
+                  ]
+                },
+                {
+                  "name": "9. Whats Your Name",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Getting the flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/1. Getting the flags.md",
+                      "parent": "9. Whats Your Name"
                     }
                   ]
                 }

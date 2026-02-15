@@ -3904,8 +3904,8 @@
     "hash": "4c956503d553ebe48188c9f2d4badefc8932c89083acd98441edfe7986ee06fd"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. Advanced Client-Side Attacks.md": {
-    "modified": "2026-02-10T01:18:20",
-    "hash": "38a0ad274a0b5f0e08021b5d293c354cc9970a1bcd024c6c2a482a98f2f9d238"
+    "modified": "2026-02-15T01:10:57",
+    "hash": "56323b880611b8383387881febda3ac2e58c6be202fd223a5c8c54918b556dd9"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/2. Injection Attacks.md": {
     "modified": "2025-12-12T13:58:55",
@@ -3924,8 +3924,8 @@
     "hash": "08f54d972388208f8cc22b24fd311e0179974e379f1b3911bebe4bf881ebe16c"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/6. LFI2RCE - Log Poisoning.md": {
-    "modified": "2026-01-27T00:59:05",
-    "hash": "6a09dff1a5d7ba6cc0e5b5ac17884238617963734a1e2faadfa6de562271ced2"
+    "modified": "2026-02-15T01:10:57",
+    "hash": "4e4d09c5a2950e158e3c1d1baba0446f93e748dc1e86d798c44286cf0bd9a73e"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/7. LFI2RCE - Wrappers.md": {
     "modified": "2026-01-27T00:59:05",
@@ -4592,8 +4592,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/2. Overview of CSRF Attack.md": {
-    "modified": "2026-02-10T01:18:20",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-02-15T01:10:57",
+    "hash": "47e90865df485436db7584e2145d29ddb5602aeca4091c6f5e7aa125338647ec"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/6. Samesite Cookie Bypass.md": {
     "modified": "2026-02-10T01:18:20",
@@ -4604,15 +4604,95 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/1. Introduction.md": {
-    "modified": "2026-02-10T01:18:20",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e07751d3f646c02d6d41ad06e1ff056f8b266de9daa7ec5ae56e81641e232c2d"
   },
   "THM/Maquinas/2. Medium/7. Include/2. Getting the Flags.md": {
-    "modified": "2026-02-12T01:08:37",
-    "hash": "5e30d7a0cbb456d4569373f5a7ba81a6903aeb02419d357f7fc0bd5975f889f3"
+    "modified": "2026-02-15T01:10:58",
+    "hash": "08dc4e5ddb4a0634f056dc3a7ae3178c61b999bba56ff2b4b4de3a7407dd853c"
   },
   "THM/Maquinas/2. Medium/7. Include/1. Introduction.md": {
     "modified": "2026-02-12T01:08:37",
     "hash": "1ad5c228cef9b8cd3b7899c3813f27f0c8919ca26f0d2f24f7b8abb433feca54"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/5. Whats Your Name/0. Whats Your Name.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "04305cf1820b9a385f2ee54b85cc01601a939801615aff951ca8b815e9b313d8"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/5. Whats Your Name/1. Redirection.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "2da010ac0b7b940d6af2ae7b1d01b8159d1b66a72cac8292cdb879d4a2f13d2a"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/7. Bad Regex in Origin.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/8. Null Origin.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/1. Understanding SOP.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/4. Common Misconfigurations.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/2. Understanding CORS.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/3. ACAO in depth.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/5. Lab Connection.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/0. CORS & SOP.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "6fb499328473eb446b4c782fed775f16bc25d1377e5b22965d028ce0f2123cbf"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/6. Arbitrary Origin.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/3. DOM-Based Attacks.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/2. Modern Frontend Frameworks.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/1. The DOM Explained.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/0. DOM-Based Attacks.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "560bb916f7f6326eb80f0d533c7c2623569a1f64c3053fb1de5bfada7dbe496b"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/4. DOM-Based XSS.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/5. XSS Weaponisation.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/6. DOM-Based Attack Challenge.md": {
+    "modified": "2026-02-15T01:10:57",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name.md": {
+    "modified": "2026-02-15T01:10:58",
+    "hash": "114ec7186b574bd648a4a192bf77a5f81fc9a256a01b3823358f9109c44dafdc"
+  },
+  "THM/Maquinas/2. Medium/9. Whats Your Name/1. Getting the flags.md": {
+    "modified": "2026-02-15T01:10:58",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }

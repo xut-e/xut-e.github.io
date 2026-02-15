@@ -3120,6 +3120,14 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/2-ssrf/6-a-classic-example-crashing-the-server/"
   },
   {
+    "title": "0. Whats Your Name",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/5-whats-your-name/0-whats-your-name/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/5-whats-your-name/1-redirection/"
+  },
+  {
     "title": "2. Terminology and Types",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/2-terminology-and-types/"
   },
@@ -3194,6 +3202,70 @@
   {
     "title": "4. Basic CSRF - Hidden Link-Image Exploitation",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/4-basic-csrf-hidden-link-image-exploitation/"
+  },
+  {
+    "title": "7. Bad Regex in Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/7-bad-regex-in-origin/"
+  },
+  {
+    "title": "8. Null Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/8-null-origin/"
+  },
+  {
+    "title": "1. Understanding SOP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/1-understanding-sop/"
+  },
+  {
+    "title": "4. Common Misconfigurations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/4-common-misconfigurations/"
+  },
+  {
+    "title": "2. Understanding CORS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/2-understanding-cors/"
+  },
+  {
+    "title": "3. ACAO in depth",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/3-acao-in-depth/"
+  },
+  {
+    "title": "5. Lab Connection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/5-lab-connection/"
+  },
+  {
+    "title": "0. CORS & SOP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/0-cors-sop/"
+  },
+  {
+    "title": "6. Arbitrary Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/6-arbitrary-origin/"
+  },
+  {
+    "title": "3. DOM-Based Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/3-dom-based-attacks/"
+  },
+  {
+    "title": "2. Modern Frontend Frameworks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/2-modern-frontend-frameworks/"
+  },
+  {
+    "title": "1. The DOM Explained",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/1-the-dom-explained/"
+  },
+  {
+    "title": "0. DOM-Based Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/0-dom-based-attacks/"
+  },
+  {
+    "title": "4. DOM-Based XSS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/4-dom-based-xss/"
+  },
+  {
+    "title": "5. XSS Weaponisation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/5-xss-weaponisation/"
+  },
+  {
+    "title": "6. DOM-Based Attack Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/6-dom-based-attack-challenge/"
   },
   {
     "title": "1. Introduction to Cyber Security",
@@ -4490,6 +4562,14 @@
   {
     "title": "0. Injectics",
     "path": "/apuntes/thm/maquinas/2-medium/8-injectics/0-injectics/"
+  },
+  {
+    "title": "0. Whats Your Name",
+    "path": "/apuntes/thm/maquinas/2-medium/9-whats-your-name/0-whats-your-name/"
+  },
+  {
+    "title": "1. Getting the flags",
+    "path": "/apuntes/thm/maquinas/2-medium/9-whats-your-name/1-getting-the-flags/"
   },
   {
     "title": "2. Revengeee",

@@ -5196,8 +5196,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-advanced-client-side-attacks/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. Advanced Client-Side Attacks.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks",
-    "content": "1. [[0. XSS]]\n2. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/0. CSRF]]\n3.",
-    "modified": "2026-02-10T01:18:20"
+    "content": "1. [[0. XSS]]\n2. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/0. CSRF]]\n3. [[0. DOM-Based Attacks]]\n4. [[0. CORS & SOP]]\n5. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/5. Whats Your Name/0. Whats Your Name]]",
+    "modified": "2026-02-15T01:10:57"
   },
   {
     "title": "4. Cookies vs Tokens",
@@ -6100,8 +6100,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-advanced-server-side-attacks/3-file-inclusion-and-path-traversal/6-lfi2rce-log-poisoning/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/6. LFI2RCE - Log Poisoning.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 3. Advanced Server-Side Attacks > 3. File Inclusion and Path Traversal",
-    "content": "El log poisoning es una técnica donde el atacante inyecta código ejecutable en el archivo de registro de un servidor web y usa una vulnerabilidad LFI para incluir y ejecutar este archivo de registro. Este mñetodo es particularmente sigiloso porque los archivos de registro se comparten y son aparentemente inofensivos. En un ataque de log poisoning, el atacante debe inyectar código PHP malicioso en un archivo log. Una vez inyectado, puede usar una LFI para incluir el archivo como uno estándar. Esto causa que el servidor ejecute el código malicioso contenido en el archivo de registro, llevando a RCE.\n\nPor ejemplo, si un atacante manda una petición Netcat a una máquina vulnerable que contiene código PHP:\n\n```bash\n$ nc MACHINE_IP 80\n```\n```php      \n<?php echo phpinfo(); ?>\n```\n```http\nHTTP/1.1 400 Bad Request\nDate: Thu, 23 Nov 2023 05:39:55 GMT\nServer: Apache/2.4.41 (Ubuntu)\nContent-Length: 335\nConnection: close\nContent-Type: text/html; charset=iso-8859-1\n```\n```html\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>400 Bad Request</title>\n</head><body>\n<h1>Bad Request</h1>\n<p>Your browser sent a request that this server could not understand.<br />\n</p>\n<hr>\n<address>Apache/2.4.41 (Ubuntu) Server at MACHINE_IP.eu-west-1.compute.internal Port 80</address>\n</body></html>\n```\n\nEl código será registrado en el log de acceso del servidor.\n\n![[Pasted image 20260126131211.png]]\n\nEl atacante entonces usa LFI para incluir el archivo de registro de acceso: `?page=/var/log/apache2/access.log`.\n\n![[Pasted image 20260126131245.png]]\n\nPara replicar la demo de arriba puedes ir a `http://IP/playground.php`.",
-    "modified": "2026-01-27T00:59:05"
+    "content": "El log poisoning es una técnica donde el atacante inyecta código ejecutable en el archivo de registro de un servidor web y usa una vulnerabilidad LFI para incluir y ejecutar este archivo de registro. Este método es particularmente sigiloso porque los archivos de registro se comparten y son aparentemente inofensivos. En un ataque de log poisoning, el atacante debe inyectar código PHP malicioso en un archivo log. Una vez inyectado, puede usar una LFI para incluir el archivo como uno estándar. Esto causa que el servidor ejecute el código malicioso contenido en el archivo de registro, llevando a RCE.\n\nPor ejemplo, si un atacante manda una petición Netcat a una máquina vulnerable que contiene código PHP:\n\n```bash\n$ nc MACHINE_IP 80\n```\n```php      \n<?php echo phpinfo(); ?>\n```\n```http\nHTTP/1.1 400 Bad Request\nDate: Thu, 23 Nov 2023 05:39:55 GMT\nServer: Apache/2.4.41 (Ubuntu)\nContent-Length: 335\nConnection: close\nContent-Type: text/html; charset=iso-8859-1\n```\n```html\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>400 Bad Request</title>\n</head><body>\n<h1>Bad Request</h1>\n<p>Your browser sent a request that this server could not understand.<br />\n</p>\n<hr>\n<address>Apache/2.4.41 (Ubuntu) Server at MACHINE_IP.eu-west-1.compute.internal Port 80</address>\n</body></html>\n```\n\nEl código será registrado en el log de acceso del servidor.\n\n![[Pasted image 20260126131211.png]]\n\nEl atacante entonces usa LFI para incluir el archivo de registro de acceso: `?page=/var/log/apache2/access.log`.\n\n![[Pasted image 20260126131245.png]]\n\nPara replicar la demo de arriba puedes ir a `http://IP/playground.php`.",
+    "modified": "2026-02-15T01:10:57"
   },
   {
     "title": "1. Web Application Architecture",
@@ -6240,6 +6240,22 @@
     "modified": "2026-01-24T00:53:46"
   },
   {
+    "title": "0. Whats Your Name",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/5-whats-your-name/0-whats-your-name/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/5. Whats Your Name/0. Whats Your Name.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 5. Whats Your Name",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/5. Whats Your Name/1. Redirection]]",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/5-whats-your-name/1-redirection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/5. Whats Your Name/1. Redirection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 5. Whats Your Name",
+    "content": "Para ver este curso ve a **THM -> Maquinas/2. Medium -> 9. Whats Your Name -> 1. Getting the Flags**",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
     "title": "2. Terminology and Types",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/1-xss/2-terminology-and-types/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/2. Terminology and Types.md",
@@ -6332,8 +6348,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/2-overview-of-csrf-attack/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/2. Overview of CSRF Attack.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
-    "content": "",
-    "modified": "2026-02-10T01:18:20"
+    "content": "<h2>¿Qué es CSRF?</h2>\nCSRF es un tipo de vulnerabilidad de seguridad donde un atacante engaña al navegador de un usuario para que realice acciones no intencionadas en un sitio web de confianza del usuario donde este está autentificado. Se consigue explotando el hecho de que el navegador incluye cualquier cookie relevante (credenciales) automáticamente, permitiendo al atacante suplantar y subir peticiones no autorizadas en nombre del usuario (a través del navegador). El sitio web del atacante puede contener formularios HTML o código JavaScript que está intencionado para mandar queries a la aplicación web objetivo.\n\n-------------------------------------\n<h2>Ciclo de CSRF</h2>\nUn ataque CSRF tiene tres fases esenciales:\n\n1. El atacante sabe el formato de las peticiones de la aplicación web para realizar una tarea particular y manda un link malicioso al usuario.\n2. La identidad de la víctima se verifica en la web, típicamente por cookies transmitidas automáticamente con cada petición y hace click en el link compartido por el atacante. Esta interacción podría ser un click, mouse over o cualquier otra acción.\n3. Medidas de seguridad insuficientes previenen a la aplicación web de distinguir peticiones auténticas de aquellas falsificadas.\n\n![phases of csrf](https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/61e098019fb1d8611c0aa16f23c34633.svg)\n\n----------------------------\n<h2>Efectos de CSRF</h2>\nEntender el impacto de CSRF es crucial para mantener las actividades online seguras. Aunque los ataques CSRF no exponen directamente la información de los usuarios, puede seguir causando mucho daño cambiando las contraseñas, cuentas de correo o haciendo transacciones financieras. Los riesgos asociados a CSRF incluyen:\n\n- **Acceso no autorizado:** Los atacantes pueden acceder y controlar las acciones de un usuario suponiendo un riesgo de pérdida de dinero, daño de su reputación y enfrentarse a consecuencias legales.\n- **Explotación de confianza:** CSRF explota la confianza que los sitios web ponen en los usuarios.\n- **Explotación sigilosa:** Funciona silenciosamente sin necesidad de malware avanzado. Los usuarios pueden no sospechar de un ataque, haciéndolos más vulnerables a explotación repetida.",
+    "modified": "2026-02-15T01:10:57"
   },
   {
     "title": "0. CSRF",
@@ -6348,8 +6364,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/1-introduction/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/1. Introduction.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
-    "content": "",
-    "modified": "2026-02-10T01:18:20"
+    "content": "Bienvenido a un mundo donde lanzar ataques web es tan fácil que incluso los principiantes (como los script kiddies) pueden escribir scripts simples para hackear grandes corporaciones. En esta unidad nos centraremos en uno de estos ataques web llamado Cross-Site Request Forgery (CSRF o XSRF).\n\n---------------------------------\n<h2>Objetivos de Aprendizaje</h2>\n- Entender el funcionamiento de un CSRF\n- Tipos de ataques CSRF\n- Payloads avanzados para explotación\n- Mecanismos defensivos\n\n--------------------------------\n<h2>Pre-requisitos</h2>\n- [[Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n- [[0. Protocols and Servers]]\n- [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/8. Web Hacking/5. OWASP Top 10 - 2021/0. OWASP Top 10 - 2021]]\n\n------------------------------------------\n<h2>Conectarse a la Máquina</h2>\n\n| **App Name**                           | IP Address | Host Address          | **URL to Access**                 |\n| -------------------------------------- | ---------- | --------------------- | --------------------------------- |\n| Online banking application             | MACHINE_IP | `mybank.thm`          | `http://mybank.thm:8080`          |\n| Mailbox application                    | MACHINE_IP | `mailbox.thm`         | `http://mailbox.thm:8081`         |\n| Attacker panel (subdomain of bank app) | MACHINE_IP | `attacker.mybank.thm` | `http://attacker.mybank.thm:8080` |\nEdita `/etc/hosts` si es necesario.",
+    "modified": "2026-02-15T01:10:57"
   },
   {
     "title": "5. Double Submit Cookie Bypass",
@@ -6390,6 +6406,134 @@
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 2. CSRF",
     "content": "",
     "modified": "2026-02-10T01:18:20"
+  },
+  {
+    "title": "7. Bad Regex in Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/7-bad-regex-in-origin/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/7. Bad Regex in Origin.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "8. Null Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/8-null-origin/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/8. Null Origin.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "1. Understanding SOP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/1-understanding-sop/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/1. Understanding SOP.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "4. Common Misconfigurations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/4-common-misconfigurations/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/4. Common Misconfigurations.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "2. Understanding CORS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/2-understanding-cors/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/2. Understanding CORS.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "3. ACAO in depth",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/3-acao-in-depth/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/3. ACAO in depth.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "5. Lab Connection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/5-lab-connection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/5. Lab Connection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "0. CORS & SOP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/0-cors-sop/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/0. CORS & SOP.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "[[1. Understanding SOP]]\n[[2. Understanding CORS]]\n[[3. ACAO in depth]]\n[[4. Common Misconfigurations]]\n[[5. Lab Connection]]\n[[6. Arbitrary Origin]]\n[[7. Bad Regex in Origin]]\n[[8. Null Origin]]",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "6. Arbitrary Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/6-arbitrary-origin/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/6. Arbitrary Origin.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 4. CORS & SOP",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "3. DOM-Based Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/3-dom-based-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/3. DOM-Based Attacks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 3. DOM-Based Attacks",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "2. Modern Frontend Frameworks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/2-modern-frontend-frameworks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/2. Modern Frontend Frameworks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 3. DOM-Based Attacks",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "1. The DOM Explained",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/1-the-dom-explained/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/1. The DOM Explained.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 3. DOM-Based Attacks",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "0. DOM-Based Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/0-dom-based-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/0. DOM-Based Attacks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 3. DOM-Based Attacks",
+    "content": "[[1. The DOM Explained]]\n[[2. Modern Frontend Frameworks]]\n[[3. DOM-Based Attacks]]\n[[4. DOM-Based XSS]]\n[[5. XSS Weaponisation]]\n[[6. DOM-Based Attack Challenge]]",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "4. DOM-Based XSS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/4-dom-based-xss/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/4. DOM-Based XSS.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 3. DOM-Based Attacks",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "5. XSS Weaponisation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/5-xss-weaponisation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/5. XSS Weaponisation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 3. DOM-Based Attacks",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
+  },
+  {
+    "title": "6. DOM-Based Attack Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/3-dom-based-attacks/6-dom-based-attack-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/6. DOM-Based Attack Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 4. Advanced Client-Side Attacks > 3. DOM-Based Attacks",
+    "content": "",
+    "modified": "2026-02-15T01:10:57"
   },
   {
     "title": "1. Introduction to Cyber Security",
@@ -8916,8 +9060,8 @@
     "path": "/apuntes/thm/maquinas/2-medium/7-include/2-getting-the-flags/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/7. Include/2. Getting the Flags.md",
     "breadcrumb": "THM > Maquinas > 2. Medium > 7. Include",
-    "content": "<h2>¿Cuál es la flag después de iniciar sesión en SysMon App?</h2>\n<h4>Escaneo Inicial</h4>\n1. Empezamos realizando un escaneo a todos los puertos de la IP.\n   ![[Pasted image 20260211205256.png]]\n2. Una vez tenemos el escaneo inicial vamos a lanzar un escaneo con todo contra estos puertos.\n   ![[Pasted image 20260211213811.png]]\n   ![[Pasted image 20260211213836.png]]\n   Podemos ver que el puerto 50000 está sirviendo un Apache 2.4.41 y el 4000 un Node.js en http, por lo que como siempre que vemos un servicio web, vamos a ver qué hay.\n\n<h4>Investigación de Puertos</h4>\n1. Vamos a ver qué hay en el puerto 50000.\n   ![[Pasted image 20260211214240.png]]\n2. Y en el puerto 4000.\n   ![[Pasted image 20260211214303.png]]\n\n<h4>Investigación Web</h4>\n1. Empezamos fuzzeando.\n\t1. En el puerto 50000.\n\t   ![[Pasted image 20260211221934.png]]\n\t2. En el puerto 4000.\n\t   ![[Pasted image 20260211222041.png]]\n2. Seguimos intentando SQL Injection.\n\t1. En el puerto 50000.\n\t   ![[Pasted image 20260211222327.png]]\n\t   ![[Pasted image 20260211222350.png]]\n\t   Capturé una petición para usarla con SQLMap (era un formulario POST) pero no había ningún parámetro inyectable.\n\t2. En el puerto 4000 no nos hace falta porque nos han dejado credenciales de acceso.\n\t   ![[Pasted image 20260211221457.png]]\n\n\n--------------------------------------\n<h2>¿Cuál es el contenido del archivo de texto escondido en /var/www/html?</h2>",
-    "modified": "2026-02-12T01:08:37"
+    "content": "<h2>¿Cuál es la flag después de iniciar sesión en SysMon App?</h2>\n<h4>Escaneo Inicial</h4>\n1. Empezamos realizando un escaneo a todos los puertos de la IP.\n   ![[Pasted image 20260211205256.png]]\n2. Una vez tenemos el escaneo inicial vamos a lanzar un escaneo con todo contra estos puertos.\n   ![[Pasted image 20260211213811.png]]\n   ![[Pasted image 20260211213836.png]]\n   Podemos ver que el puerto 50000 está sirviendo un Apache 2.4.41 y el 4000 un Node.js en http, por lo que como siempre que vemos un servicio web, vamos a ver qué hay.\n\n<h4>Investigación de Puertos</h4>\n1. Vamos a ver qué hay en el puerto 50000.\n   ![[Pasted image 20260211214240.png]]\n2. Y en el puerto 4000.\n   ![[Pasted image 20260211214303.png]]\n\n<h4>Investigación Web</h4>\n1. Empezamos fuzzeando.\n\t1. En el puerto 50000.\n\t   ![[Pasted image 20260211221934.png]]\n\t2. En el puerto 4000.\n\t   ![[Pasted image 20260211222041.png]]\n2. Seguimos intentando SQL Injection.\n\t1. En el puerto 50000.\n\t   ![[Pasted image 20260211222327.png]]\n\t   ![[Pasted image 20260211222350.png]]\n\t   Capturé una petición para usarla con SQLMap (era un formulario POST) pero no había ningún parámetro inyectable.\n\t2. En el puerto 4000 no nos hace falta porque nos han dejado credenciales de acceso.\n\t   ![[Pasted image 20260211221457.png]]\n3. Vamos a meternos en nuestro perfil.\n   ![[Pasted image 20260213170025.png]]\n   Parece que son objetos. Si vamos más abajo podemos ver una manera de lo que parece compartir notas.\n   ![[Pasted image 20260213170059.png]]\n4. Si metemos una nota random como `Book:testBook` se ve reflejado en el perfil, lo que nos lleva a preguntarnos si podremos modificarlos.\n   ![[Pasted image 20260213170143.png]]\n5. Probaremos a introducir `isAdmin:true`.\n   ![[Pasted image 20260213170241.png]]\n6. Se ha cambiado y nos han aparecido dos opciones que antes no había:\n\t1. Settings:\n\t   ![[Pasted image 20260213170335.png]]\n\t2. API:\n\t   ![[Pasted image 20260213170352.png]]\n7. Vamos a comprobar si el link de settings realiza peticiones:\n\t1. Configuramos un servidor sencillito:\n\t   ![[Pasted image 20260213170446.png]]\n\t2. Introducimos nuestra URL en la caja y pulsamos enter.\n\t   ![[Pasted image 20260213170554.png]]\n\t3. Observamos si hay conexión.\n\t   ![[Pasted image 20260213170617.png]]\n8. Vamos a probar a hacer una petición a la API interna con la dirección del endpoint censurado: `getAllAdmins101099991`.\n   ![[Pasted image 20260213170830.png]]\n   Obtenemos lo siguiente:\n   ![[Pasted image 20260213170845.png]]\n9. Vamos a decodificarlo.\n   ![[Pasted image 20260213171019.png]]\n10. Iniciamos sesión en SysMon con las credenciales obtenidas.\n    ![[Pasted image 20260213171141.png]]\n    \n\n>[!SUCCESS] Y así obtenemos la primera flag.\n>\n\n--------------------------------------\n<h2>¿Cuál es el contenido del archivo de texto escondido en /var/www/html?</h2>\n<h4>Investigación Web</h4>\n1. Estando ya en la página del administrador, vamos a mirar desde dónde se carga la imagen de perfil del usuario `administrator`.\n   ![[Pasted image 20260214160839.png]]\n   Parece ser que está cargando la foto desde una ruta interna. Esto huele a LFI de manual.\n2. Vamos a intentar acceder a `/etc/passwd`.\n\t1. Primero vamos a la ruta.\n\t   ![[Pasted image 20260214161438.png]]\n\t2. Ahora vamos a probar un par de payloads (`../../` y `....//....//`).\n\t   ![[Pasted image 20260214161839.png]]\n\t   Ninguno ha funcionado, por lo que vamos a fuzzear.\n\t3. Preparamos el comando y lo lanzamos.\n\t   ![[Pasted image 20260214162023.png]]\n\t   Después de probar un par de diccionarios encontramos varios payloads que funcionan.\n\t4. Si miramos en la web uno de estos payloads:\n\t   ![[Pasted image 20260214162141.png]]\n\t   Observamos que hay dos usuarios `joshua` y `charles`, puede que nos ayude más tarde. También hay un mail server.\n3. Si recordamos el escaneo inicial, había varios servicios que nos hacían pensar que podía haber algo relacionado con el mail. Si buscamos en internet:\n   ![[Pasted image 20260214162358.png]]\n4. Vamos a intentar leerlo.\n   ![[Pasted image 20260214162441.png]]\n   Parece que está vacío.\n5. Vamos a intentar mandar un mail al servidor para ver si se registra en los logs aprovechando que el puerto 25 está abierto.\n\t1. Buscamos la sintaxis para mandar emails por telnet en SMTP (25).\n\t   ![[Pasted image 20260214162919.png]]\n\t2. Lo replicamos.\n\t   ![[Pasted image 20260214163129.png]]\n\t3. Vamos a ver si se ha registrado.\n\t   ![[Pasted image 20260214163200.png]]\n\t   Sí que se ha registrado. Huele a log poisoning debido a que aparece lo que hemos indicado.\n\t   ![[Pasted image 20260214163340.png]]\n\t4. Vamos a intentar un log poisoning con una webshell en php: `<?php system($_GET['cmd']);?>`\n\t   ![[Pasted image 20260214170010.png]]\n\t5. Ahora intentamos cargar la página con el parámetro `&cmd=whoami`.\n\t   ![[Pasted image 20260214170028.png]]\n\t6. Vamos a listar ahora `/var/www/html`.\n\t   ![[Pasted image 20260214170138.png]]\n\t7. Lo leemos.\n\t   ![[Pasted image 20260214170234.png]]\n\n>[!SUCCESS] Hemos conseguido obtener las dos flags!!",
+    "modified": "2026-02-15T01:10:58"
   },
   {
     "title": "1. Introduction",
@@ -8982,6 +9126,22 @@
     "breadcrumb": "THM > Maquinas > 2. Medium > 8. Injectics",
     "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/1. Getting the Flags]]",
     "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "0. Whats Your Name",
+    "path": "/apuntes/thm/maquinas/2-medium/9-whats-your-name/0-whats-your-name/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 9. Whats Your Name",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/1. Getting the flags]]",
+    "modified": "2026-02-15T01:10:58"
+  },
+  {
+    "title": "1. Getting the flags",
+    "path": "/apuntes/thm/maquinas/2-medium/9-whats-your-name/1-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/1. Getting the flags.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 9. Whats Your Name",
+    "content": "",
+    "modified": "2026-02-15T01:10:58"
   },
   {
     "title": "2. Revengeee",
