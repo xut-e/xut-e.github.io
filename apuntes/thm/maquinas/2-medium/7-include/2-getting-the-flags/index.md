@@ -64,6 +64,7 @@ title: "2. Getting the Flags"
 >[!SUCCESS] Y así obtenemos la primera flag.
 >
 
+
 --------------------------------------
 <h2>¿Cuál es el contenido del archivo de texto escondido en /var/www/html?</h2>
 <h4>Investigación Web</h4>
