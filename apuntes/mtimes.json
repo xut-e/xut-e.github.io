@@ -4580,24 +4580,24 @@
     "hash": "25688c66401fb5aad676e54ba9e2fd465cc220e9cc14ac232075b6d2eafe27e1"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/8. Defence Mechanisms.md": {
-    "modified": "2026-02-10T01:18:20",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-02-19T01:09:18",
+    "hash": "e4e3fe168fbb61e9cde2bd17c1d20ae895a1b4c422cabd9ecac421b87304fad4"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/3. Types of CSRF Attack.md": {
     "modified": "2026-02-16T01:08:34",
     "hash": "c9a332383b80fe6cc0e1c10c058c9e1ecb45274bdfaf81ab679b0256ecd4182e"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/7. Few Additional Exploitation Techniques.md": {
-    "modified": "2026-02-10T01:18:20",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-02-19T01:09:18",
+    "hash": "ecb07768ed13c009bacb6498d43dc86550c2bb70e1087977257f763c7e61200c"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/2. Overview of CSRF Attack.md": {
     "modified": "2026-02-16T01:08:34",
     "hash": "0d1ea2138ba8f613f16000e5458871eb8fa57d0569e13f93795b793b05264689"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/6. Samesite Cookie Bypass.md": {
-    "modified": "2026-02-18T01:10:02",
-    "hash": "fc86539b7b66d9b66450695261246212c82e013ab6c27986dc2c0ab16da7666d"
+    "modified": "2026-02-19T01:09:18",
+    "hash": "e9e74546fd641d24f017096fadde3735eeb966cc31300c21cbf42b6399ab13e6"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/2. CSRF/4. Basic CSRF - Hidden Link-Image Exploitation.md": {
     "modified": "2026-02-16T01:08:34",
@@ -4668,8 +4668,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/1. The DOM Explained.md": {
-    "modified": "2026-02-15T01:10:57",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-02-19T01:09:18",
+    "hash": "ebf56477ab8542e98201d766912340ae638219b3c4f3bf3ad7983713b52bc431"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/3. DOM-Based Attacks/0. DOM-Based Attacks.md": {
     "modified": "2026-02-15T01:10:57",
