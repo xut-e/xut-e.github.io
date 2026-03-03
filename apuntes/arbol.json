@@ -6497,7 +6497,194 @@
                     {
                       "name": "5. HTTP Request Smuggling",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. HTTP Request Smuggling",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/1. Introduction.md",
+                              "parent": "1. HTTP Request Smuggling"
+                            },
+                            {
+                              "name": "2. Modern Infrastructure.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/2. Modern Infrastructure.md",
+                              "parent": "1. HTTP Request Smuggling"
+                            },
+                            {
+                              "name": "3. Behind the Scenes.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/3. Behind the Scenes.md",
+                              "parent": "1. HTTP Request Smuggling"
+                            },
+                            {
+                              "name": "4. Request Smuggling CL TE.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/4. Request Smuggling CL TE.md",
+                              "parent": "1. HTTP Request Smuggling"
+                            },
+                            {
+                              "name": "5. Request Smuggling TE CL.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/5. Request Smuggling TE CL.md",
+                              "parent": "1. HTTP Request Smuggling"
+                            },
+                            {
+                              "name": "6. Transfer Encoding Obfuscation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/6. Transfer Encoding Obfuscation.md",
+                              "parent": "1. HTTP Request Smuggling"
+                            },
+                            {
+                              "name": "7. Walkthrough.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/7. Walkthrough.md",
+                              "parent": "1. HTTP Request Smuggling"
+                            },
+                            {
+                              "name": "8. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/8. Conclusion.md",
+                              "parent": "1. HTTP Request Smuggling"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. HTTP-2 Request Smuggling",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. HTTP-2 Explained.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/1. HTTP-2 Explained.md",
+                              "parent": "2. HTTP-2 Request Smuggling"
+                            },
+                            {
+                              "name": "2. HTTP-2 Desync.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/2. HTTP-2 Desync.md",
+                              "parent": "2. HTTP-2 Request Smuggling"
+                            },
+                            {
+                              "name": "3. HTTP-2 Request Tunneling.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/3. HTTP-2 Request Tunneling.md",
+                              "parent": "2. HTTP-2 Request Smuggling"
+                            },
+                            {
+                              "name": "4. HTTP-2 Request Tunneling - Leaking Internal Headers.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/4. HTTP-2 Request Tunneling - Leaking Internal Headers.md",
+                              "parent": "2. HTTP-2 Request Smuggling"
+                            },
+                            {
+                              "name": "5. HTTP-2 Request Tunneling - Bypassing Frontend Restrictions.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/5. HTTP-2 Request Tunneling - Bypassing Frontend Restrictions.md",
+                              "parent": "2. HTTP-2 Request Smuggling"
+                            },
+                            {
+                              "name": "6. HTTP-2 Request Tunneling - Web Cache Poisoning.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/6. HTTP-2 Request Tunneling - Web Cache Poisoning.md",
+                              "parent": "2. HTTP-2 Request Smuggling"
+                            },
+                            {
+                              "name": "7. h2c Smuggling.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/7. h2c Smuggling.md",
+                              "parent": "2. HTTP-2 Request Smuggling"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Request Smuggling - WebSockets",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. WebSockets.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/3. Request Smuggling - WebSockets/1. WebSockets.md",
+                              "parent": "3. Request Smuggling - WebSockets"
+                            },
+                            {
+                              "name": "2. Abusing Websockets for Request Smuggling.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/3. Request Smuggling - WebSockets/2. Abusing Websockets for Request Smuggling.md",
+                              "parent": "3. Request Smuggling - WebSockets"
+                            },
+                            {
+                              "name": "3. Defeating Secure Proxies.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/3. Request Smuggling - WebSockets/3. Defeating Secure Proxies.md",
+                              "parent": "3. Request Smuggling - WebSockets"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. HTTP Browser Desync",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/1. Introduction.md",
+                              "parent": "4. HTTP Browser Desync"
+                            },
+                            {
+                              "name": "2. HTTP features.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/2. HTTP features.md",
+                              "parent": "4. HTTP Browser Desync"
+                            },
+                            {
+                              "name": "3. HTTP Browser Desync.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/3. HTTP Browser Desync.md",
+                              "parent": "4. HTTP Browser Desync"
+                            },
+                            {
+                              "name": "4. HTTP Browser Desync Identification.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/4. HTTP Browser Desync Identification.md",
+                              "parent": "4. HTTP Browser Desync"
+                            },
+                            {
+                              "name": "5. HTTP Browser Desync Exploit Chaining XSS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/5. HTTP Browser Desync Exploit Chaining XSS.md",
+                              "parent": "4. HTTP Browser Desync"
+                            },
+                            {
+                              "name": "6. Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/6. Challenge.md",
+                              "parent": "4. HTTP Browser Desync"
+                            },
+                            {
+                              "name": "7. Challenge Help.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/7. Challenge Help.md",
+                              "parent": "4. HTTP Browser Desync"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. El Bandito",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/5. El Bandito/1. Redirection.md",
+                              "parent": "5. El Bandito"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -6967,7 +7154,26 @@
             {
               "name": "3. Hard",
               "type": "directory",
-              "contents": []
+              "contents": [
+                {
+                  "name": "1. El Bandito",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/1. Introduction.md",
+                      "parent": "1. El Bandito"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/2. Getting the Flags.md",
+                      "parent": "1. El Bandito"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "4. Insane",

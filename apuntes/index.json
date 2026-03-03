@@ -2756,6 +2756,130 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/1-authentication/4-oauth-vulnerabilities/0-oauth-vulnerabilities/"
   },
   {
+    "title": "0. El Bandito",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/5-el-bandito/0-el-bandito/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/5-el-bandito/1-redirection/"
+  },
+  {
+    "title": "7. Challenge Help",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/7-challenge-help/"
+  },
+  {
+    "title": "0. HTTP Browser Desync",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/0-http-browser-desync/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/1-introduction/"
+  },
+  {
+    "title": "5. HTTP Browser Desync Exploit Chaining XSS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/5-http-browser-desync-exploit-chaining-xss/"
+  },
+  {
+    "title": "4. HTTP Browser Desync Identification",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/4-http-browser-desync-identification/"
+  },
+  {
+    "title": "2. HTTP features",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/2-http-features/"
+  },
+  {
+    "title": "6. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/6-challenge/"
+  },
+  {
+    "title": "3. HTTP Browser Desync",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/3-http-browser-desync/"
+  },
+  {
+    "title": "2. Abusing Websockets for Request Smuggling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/3-request-smuggling-websockets/2-abusing-websockets-for-request-smuggling/"
+  },
+  {
+    "title": "0. Request Smuggling - WebSockets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/3-request-smuggling-websockets/0-request-smuggling-websockets/"
+  },
+  {
+    "title": "1. WebSockets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/3-request-smuggling-websockets/1-websockets/"
+  },
+  {
+    "title": "3. Defeating Secure Proxies",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/3-request-smuggling-websockets/3-defeating-secure-proxies/"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/8-conclusion/"
+  },
+  {
+    "title": "5. Request Smuggling TE CL",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/5-request-smuggling-te-cl/"
+  },
+  {
+    "title": "4. Request Smuggling CL TE",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/4-request-smuggling-cl-te/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/1-introduction/"
+  },
+  {
+    "title": "3. Behind the Scenes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/3-behind-the-scenes/"
+  },
+  {
+    "title": "6. Transfer Encoding Obfuscation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/6-transfer-encoding-obfuscation/"
+  },
+  {
+    "title": "2. Modern Infrastructure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/2-modern-infrastructure/"
+  },
+  {
+    "title": "7. Walkthrough",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/7-walkthrough/"
+  },
+  {
+    "title": "0. HTTP Request Smuggling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/0-http-request-smuggling/"
+  },
+  {
+    "title": "7. h2c Smuggling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/7-h2c-smuggling/"
+  },
+  {
+    "title": "4. HTTP-2 Request Tunneling - Leaking Internal Headers",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/4-http-2-request-tunneling-leaking-internal-headers/"
+  },
+  {
+    "title": "0. HTTP-2 Request Smuggling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/0-http-2-request-smuggling/"
+  },
+  {
+    "title": "5. HTTP-2 Request Tunneling - Bypassing Frontend Restrictions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/5-http-2-request-tunneling-bypassing-frontend-restrictions/"
+  },
+  {
+    "title": "1. HTTP-2 Explained",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/1-http-2-explained/"
+  },
+  {
+    "title": "2. HTTP-2 Desync",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/2-http-2-desync/"
+  },
+  {
+    "title": "3. HTTP-2 Request Tunneling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/3-http-2-request-tunneling/"
+  },
+  {
+    "title": "6. HTTP-2 Request Tunneling - Web Cache Poisoning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/6-http-2-request-tunneling-web-cache-poisoning/"
+  },
+  {
     "title": "3. Operator Injection - Bypassing the Login Screen",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/2-nosql-injection/3-operator-injection-bypassing-the-login-screen/"
   },
@@ -4462,6 +4586,18 @@
   {
     "title": "1. Easy",
     "path": "/apuntes/thm/maquinas/1-easy/1-easy/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/3-hard/1-el-bandito/1-introduction/"
+  },
+  {
+    "title": "0. El Bandito",
+    "path": "/apuntes/thm/maquinas/3-hard/1-el-bandito/0-el-bandito/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/3-hard/1-el-bandito/2-getting-the-flags/"
   },
   {
     "title": "1. Introduction",

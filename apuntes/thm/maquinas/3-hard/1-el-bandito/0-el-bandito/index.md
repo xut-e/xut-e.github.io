@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. El Bandito"
+---
+
+**Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/1. Introduction**
+**Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/2. Getting the Flags**

