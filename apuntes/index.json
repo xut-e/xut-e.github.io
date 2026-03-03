@@ -3204,16 +3204,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/2-csrf/4-basic-csrf-hidden-link-image-exploitation/"
   },
   {
-    "title": "7. Bad Regex in Origin",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/7-bad-regex-in-origin/"
-  },
-  {
-    "title": "8. Null Origin",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/8-null-origin/"
+    "title": "6. Bad Regex in Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/6-bad-regex-in-origin/"
   },
   {
     "title": "1. Understanding SOP",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/1-understanding-sop/"
+  },
+  {
+    "title": "7. Null Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/7-null-origin/"
   },
   {
     "title": "4. Common Misconfigurations",
@@ -3224,20 +3224,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/2-understanding-cors/"
   },
   {
+    "title": "5. Arbitrary Origin",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/5-arbitrary-origin/"
+  },
+  {
     "title": "3. ACAO in depth",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/3-acao-in-depth/"
   },
   {
-    "title": "5. Lab Connection",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/5-lab-connection/"
-  },
-  {
     "title": "0. CORS & SOP",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/0-cors-sop/"
-  },
-  {
-    "title": "6. Arbitrary Origin",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/4-advanced-client-side-attacks/4-cors-sop/6-arbitrary-origin/"
   },
   {
     "title": "3. DOM-Based Attacks",

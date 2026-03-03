@@ -6461,27 +6461,21 @@
                               "parent": "4. CORS & SOP"
                             },
                             {
-                              "name": "5. Lab Connection.md",
+                              "name": "5. Arbitrary Origin.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/5. Lab Connection.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/5. Arbitrary Origin.md",
                               "parent": "4. CORS & SOP"
                             },
                             {
-                              "name": "6. Arbitrary Origin.md",
+                              "name": "6. Bad Regex in Origin.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/6. Arbitrary Origin.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/6. Bad Regex in Origin.md",
                               "parent": "4. CORS & SOP"
                             },
                             {
-                              "name": "7. Bad Regex in Origin.md",
+                              "name": "7. Null Origin.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/7. Bad Regex in Origin.md",
-                              "parent": "4. CORS & SOP"
-                            },
-                            {
-                              "name": "8. Null Origin.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/8. Null Origin.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/4. CORS & SOP/7. Null Origin.md",
                               "parent": "4. CORS & SOP"
                             }
                           ]
