@@ -55,7 +55,7 @@ title: "3. Finding the flags"
     !**Pasted image 20251120231903.png**
     Parece que podemos jugar con un servicio como root... ¡y encima podemos editarlo! Ya está, el cóctel perfecto.
 17. Vamos a editar dicho servicio. Como sabemos que lo ejecuta el sistema (es decir que tiene permisos de administrador) vamos a intentar mandarnos una reverse shell.
-	1. Vamos a la página de [Shell Generator](www.revshells.com) y buscamos una que nos guste.
+	1. Vamos a la página de [Shell Generator](http://www.revshells.com) y buscamos una que nos guste.
 	   !**Pasted image 20251120232159.png**
 	2. Nos ponemos en escucha.
 	   !**Pasted image 20251120232228.png**

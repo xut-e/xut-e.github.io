@@ -6962,6 +6962,24 @@
                       "parent": "7. Overpass"
                     }
                   ]
+                },
+                {
+                  "name": "8. Publisher",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/8. Publisher/1. Introduction.md",
+                      "parent": "8. Publisher"
+                    },
+                    {
+                      "name": "2. Finding the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/8. Publisher/2. Finding the Flags.md",
+                      "parent": "8. Publisher"
+                    }
+                  ]
                 }
               ]
             },
