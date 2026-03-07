@@ -6856,6 +6856,24 @@
                   ]
                 },
                 {
+                  "name": "10. Basic Pentesting",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/10. Basic Pentesting/1. Introduction.md",
+                      "parent": "10. Basic Pentesting"
+                    },
+                    {
+                      "name": "2. Finding the flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/10. Basic Pentesting/2. Finding the flags.md",
+                      "parent": "10. Basic Pentesting"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Pickle Rick",
                   "type": "directory",
                   "contents": [
@@ -6978,6 +6996,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/8. Publisher/2. Finding the Flags.md",
                       "parent": "8. Publisher"
+                    }
+                  ]
+                },
+                {
+                  "name": "9. MD2PDF",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/9. MD2PDF/1. Introduction.md",
+                      "parent": "9. MD2PDF"
+                    },
+                    {
+                      "name": "2. Finding the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/9. MD2PDF/2. Finding the Flags.md",
+                      "parent": "9. MD2PDF"
                     }
                   ]
                 }

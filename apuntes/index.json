@@ -4732,6 +4732,18 @@
     "path": "/apuntes/thm/maquinas/1-easy/7-overpass/0-overpass/"
   },
   {
+    "title": "0. Basic Pentesting",
+    "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/0-basic-pentesting/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/1-introduction/"
+  },
+  {
+    "title": "2. Finding the flags",
+    "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/2-finding-the-flags/"
+  },
+  {
     "title": "2. Finding the Flags",
     "path": "/apuntes/thm/maquinas/1-easy/8-publisher/2-finding-the-flags/"
   },
@@ -4814,5 +4826,17 @@
   {
     "title": "2. Finding the flags",
     "path": "/apuntes/thm/maquinas/1-easy/3-lookup/2-finding-the-flags/"
+  },
+  {
+    "title": "2. Finding the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/9-md2pdf/2-finding-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/9-md2pdf/1-introduction/"
+  },
+  {
+    "title": "0. MD2PDF",
+    "path": "/apuntes/thm/maquinas/1-easy/9-md2pdf/0-md2pdf/"
   }
 ]

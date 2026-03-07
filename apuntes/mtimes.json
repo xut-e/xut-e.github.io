@@ -4804,28 +4804,28 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/4. HTTP-2 Request Tunneling - Leaking Internal Headers.md": {
-    "modified": "2026-03-03T17:02:38",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-07T01:02:25",
+    "hash": "968362aeb16598054dfc55f264e162e68af3c140acc00927faea14b1770b85af"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/0. HTTP-2 Request Smuggling.md": {
     "modified": "2026-03-03T17:02:38",
     "hash": "6ee45786c77f977e517af260a7358e01a6e58bec47606156ec14fe40f468664e"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/5. HTTP-2 Request Tunneling - Bypassing Frontend Restrictions.md": {
-    "modified": "2026-03-03T17:02:38",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-07T01:02:25",
+    "hash": "8d8449554f791ee1d2060a87867fba8eed6f689de34798640f752c6efc4f81fc"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/1. HTTP-2 Explained.md": {
     "modified": "2026-03-06T01:10:44",
     "hash": "39fe682bb8070ec2c1531b0c67396080e6ecb50559868f92af41d3e51b42cfb9"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/2. HTTP-2 Desync.md": {
-    "modified": "2026-03-06T01:10:44",
-    "hash": "28128c26a6809b22e0cbbf6582ff4f8fe00b7608558a5e1f49b1cc368e3534f5"
+    "modified": "2026-03-07T01:02:25",
+    "hash": "ec30c38580c1ec0fa6048dac5d69c842f2b616016c24ca34a0ca45ec8b4f3c94"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/3. HTTP-2 Request Tunneling.md": {
-    "modified": "2026-03-03T17:02:38",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-07T01:02:25",
+    "hash": "eb150e4574be97c7005a3bfa3ea7218b683053d0be6dd80106621069ce5cc926"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/2. HTTP-2 Request Smuggling/6. HTTP-2 Request Tunneling - Web Cache Poisoning.md": {
     "modified": "2026-03-03T17:02:38",
@@ -4854,5 +4854,29 @@
   "THM/Maquinas/1. Easy/8. Publisher/0. Publisher.md": {
     "modified": "2026-03-06T01:10:45",
     "hash": "d698c431330949f263e822a1fda45baf8a6b25d54d08b2d1ab439f953f064a41"
+  },
+  "THM/Maquinas/1. Easy/10. Basic Pentesting/0. Basic Pentesting.md": {
+    "modified": "2026-03-07T01:02:25",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/1. Easy/10. Basic Pentesting/1. Introduction.md": {
+    "modified": "2026-03-07T01:02:25",
+    "hash": "f7aad20201048ebe6d56d16e45877a10baeb32ffd1d59c7ecbc5445843a4fbd8"
+  },
+  "THM/Maquinas/1. Easy/10. Basic Pentesting/2. Finding the flags.md": {
+    "modified": "2026-03-07T01:02:25",
+    "hash": "b0a2a3bcc6ba5df9deee9ecdb09ecf6259b7333b7610702fab8297c112dbd69d"
+  },
+  "THM/Maquinas/1. Easy/9. MD2PDF/2. Finding the Flags.md": {
+    "modified": "2026-03-07T01:02:25",
+    "hash": "f3cbddfa83370acba7b8f0dfc4965adc515cdede0dcdae2bcec60c3ffe92055f"
+  },
+  "THM/Maquinas/1. Easy/9. MD2PDF/1. Introduction.md": {
+    "modified": "2026-03-07T01:02:25",
+    "hash": "c1ed34d164c639663fe36fb2112cd5854d200467a5e26f90d5dd0cb3edeb5f1a"
+  },
+  "THM/Maquinas/1. Easy/9. MD2PDF/0. MD2PDF.md": {
+    "modified": "2026-03-07T01:02:25",
+    "hash": "ad8e12d6b21b61c4688c830ef44786157d640db89bfb6ecc27c96514bc41b6f5"
   }
 }

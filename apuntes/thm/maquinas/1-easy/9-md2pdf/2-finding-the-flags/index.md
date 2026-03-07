@@ -1,0 +1,47 @@
+---
+layout: apunte
+title: "2. Finding the Flags"
+---
+
+<h2>Escaneo Inicial</h2>
+Empezamos escaneando los puertos abiertos, como de costumbre.
+
+!**Pasted image 20260306173322.png**
+
+Después escaneamos los puertos abiertos más en profundidad.
+
+!**Pasted image 20260306173435.png**
+!**Pasted image 20260306173506.png**
+!**Pasted image 20260306173537.png**
+!**Pasted image 20260306173605.png**
+
+Vamos a enumerar directorios.
+
+!**Pasted image 20260306173925.png**
+
+---------------------------------------
+<h2>Profundización</h2>
+Vamos a ver qué esconden los puertos. El 22 es SSH, por lo que vamos a empezar por el 80.
+
+!**Pasted image 20260306173821.png**
+
+Ahora el 5000.
+
+!**Pasted image 20260306173838.png**
+
+Parece la parte de detrás de la página, nada más. Vamos a ver qué hay en el directorio `/admin`.
+
+!**Pasted image 20260306174002.png**
+
+Parece que sólo se puede ver internamente.
+
+-------------------------------------------
+<h2>Explotación</h2>
+Vamos a mandar una petición desde el conversor usando elementos HTML.
+
+!**Pasted image 20260306174150.png**
+
+Y tan fácil como eso se nos abre un pdf que contiene el contenido de `/admin`:
+
+!**Pasted image 20260306174223.png**
+
