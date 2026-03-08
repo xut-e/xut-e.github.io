@@ -6874,6 +6874,36 @@
                   ]
                 },
                 {
+                  "name": "11. RootMe",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/1. Introduction.md",
+                      "parent": "11. RootMe"
+                    },
+                    {
+                      "name": "2. Reconnaissance.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/2. Reconnaissance.md",
+                      "parent": "11. RootMe"
+                    },
+                    {
+                      "name": "3. Getting a Shell.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/3. Getting a Shell.md",
+                      "parent": "11. RootMe"
+                    },
+                    {
+                      "name": "4. Privilege Escalation.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/4. Privilege Escalation.md",
+                      "parent": "11. RootMe"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Pickle Rick",
                   "type": "directory",
                   "contents": [

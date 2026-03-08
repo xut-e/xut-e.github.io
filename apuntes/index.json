@@ -4732,6 +4732,26 @@
     "path": "/apuntes/thm/maquinas/1-easy/7-overpass/0-overpass/"
   },
   {
+    "title": "0. RootMe",
+    "path": "/apuntes/thm/maquinas/1-easy/11-rootme/0-rootme/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/11-rootme/1-introduction/"
+  },
+  {
+    "title": "4. Privilege Escalation",
+    "path": "/apuntes/thm/maquinas/1-easy/11-rootme/4-privilege-escalation/"
+  },
+  {
+    "title": "3. Getting a Shell",
+    "path": "/apuntes/thm/maquinas/1-easy/11-rootme/3-getting-a-shell/"
+  },
+  {
+    "title": "2. Reconnaissance",
+    "path": "/apuntes/thm/maquinas/1-easy/11-rootme/2-reconnaissance/"
+  },
+  {
     "title": "0. Basic Pentesting",
     "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/0-basic-pentesting/"
   },
