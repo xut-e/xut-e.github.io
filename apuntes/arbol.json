@@ -6663,12 +6663,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/6. Challenge.md",
                               "parent": "4. HTTP Browser Desync"
-                            },
-                            {
-                              "name": "7. Challenge Help.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/5. HTTP Request Smuggling/4. HTTP Browser Desync/7. Challenge Help.md",
-                              "parent": "4. HTTP Browser Desync"
                             }
                           ]
                         },
