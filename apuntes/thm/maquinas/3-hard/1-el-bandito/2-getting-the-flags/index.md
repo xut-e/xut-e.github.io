@@ -51,7 +51,7 @@ Es un documento JavaScript con varios endpoints y un par de nombres de usuario. 
 **Endpoints:**
 
 - `/getMessages`
-- `send_message`
+- `/send_message`
 
 **Usuarios:** 
 
@@ -258,7 +258,7 @@ Vamos a mandarla hasta que se quede "colgado".
 
 !**Pasted image 20260309162322.png**
 
-Hemos conseguido hacer smuggling de una petición peto no ha sido suficiente longitud para leer la flag, si es que está aquí.
+Hemos conseguido hacer smuggling de una petición pero no ha sido suficiente longitud para leer la flag, si es que está aquí.
 
 !**Pasted image 20260309162505.png**
 

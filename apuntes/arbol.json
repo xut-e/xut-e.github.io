@@ -6681,6 +6681,585 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "name": "4. Web Application Red Teaming",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Cryptographic Failures",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Breaking Crypto the Simple Way",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Brute Forcing Keys.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/1. Brute Forcing Keys.md",
+                              "parent": "1. Breaking Crypto the Simple Way"
+                            },
+                            {
+                              "name": "2. Breaking Hashes.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/2. Breaking Hashes.md",
+                              "parent": "1. Breaking Crypto the Simple Way"
+                            },
+                            {
+                              "name": "3. Exposed Keys.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/3. Exposed Keys.md",
+                              "parent": "1. Breaking Crypto the Simple Way"
+                            },
+                            {
+                              "name": "4. Bit Flipping Attacks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/4. Bit Flipping Attacks.md",
+                              "parent": "1. Breaking Crypto the Simple Way"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Length Extension Attacks",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Hash Functions.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/1. Hash Functions.md",
+                              "parent": "2. Length Extension Attacks"
+                            },
+                            {
+                              "name": "2. Hashing Internals.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/2. Hashing Internals.md",
+                              "parent": "2. Length Extension Attacks"
+                            },
+                            {
+                              "name": "3. Understanding Length Extension Attacks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/3. Understanding Length Extension Attacks.md",
+                              "parent": "2. Length Extension Attacks"
+                            },
+                            {
+                              "name": "4. Practical - Attacking Signatures.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/4. Practical - Attacking Signatures.md",
+                              "parent": "2. Length Extension Attacks"
+                            },
+                            {
+                              "name": "5. Practical - Modifying a Signed Cookie.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/5. Practical - Modifying a Signed Cookie.md",
+                              "parent": "2. Length Extension Attacks"
+                            },
+                            {
+                              "name": "6. Mitigation Techniques.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/6. Mitigation Techniques.md",
+                              "parent": "2. Length Extension Attacks"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Attacking ECB Oracles",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Symmetric Encyption.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/1. Symmetric Encyption.md",
+                              "parent": "3. Attacking ECB Oracles"
+                            },
+                            {
+                              "name": "2. Code Books and Cipher Modes.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/2. Code Books and Cipher Modes.md",
+                              "parent": "3. Attacking ECB Oracles"
+                            },
+                            {
+                              "name": "3. ECB Insecurities.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/3. ECB Insecurities.md",
+                              "parent": "3. Attacking ECB Oracles"
+                            },
+                            {
+                              "name": "4. Chosen-Plaintext Attacks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/4. Chosen-Plaintext Attacks.md",
+                              "parent": "3. Attacking ECB Oracles"
+                            },
+                            {
+                              "name": "5. Cipher Mode Best Practices.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/5. Cipher Mode Best Practices.md",
+                              "parent": "3. Attacking ECB Oracles"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Padding Oracles",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Padding Schemes.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/1. Padding Schemes.md",
+                              "parent": "4. Padding Oracles"
+                            },
+                            {
+                              "name": "2. Block Cipher Modes.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/2. Block Cipher Modes.md",
+                              "parent": "4. Padding Oracles"
+                            },
+                            {
+                              "name": "3. CBC Mode - Decryption.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/3. CBC Mode - Decryption.md",
+                              "parent": "4. Padding Oracles"
+                            },
+                            {
+                              "name": "4. How the Attack Works.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/4. How the Attack Works.md",
+                              "parent": "4. Padding Oracles"
+                            },
+                            {
+                              "name": "5. Automation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/5. Automation.md",
+                              "parent": "4. Padding Oracles"
+                            },
+                            {
+                              "name": "6. Best Practices.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/6. Best Practices.md",
+                              "parent": "4. Padding Oracles"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. Insecure Randomness",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Few Important Concepts.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/1. Few Important Concepts.md",
+                              "parent": "5. Insecure Randomness"
+                            },
+                            {
+                              "name": "2. Types of Random Number Generators.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/2. Types of Random Number Generators.md",
+                              "parent": "5. Insecure Randomness"
+                            },
+                            {
+                              "name": "3. Weak or Insufficient Entropy.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/3. Weak or Insufficient Entropy.md",
+                              "parent": "5. Insecure Randomness"
+                            },
+                            {
+                              "name": "4. Predictable Seed in PRNGs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/4. Predictable Seed in PRNGs.md",
+                              "parent": "5. Insecure Randomness"
+                            },
+                            {
+                              "name": "5. Mitigation Features.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/5. Mitigation Features.md",
+                              "parent": "5. Insecure Randomness"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Custom Tooling",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Custom Tooling Using Python",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Using a Coding Language for Custom Tooling.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/1. Using a Coding Language for Custom Tooling.md",
+                              "parent": "1. Custom Tooling Using Python"
+                            },
+                            {
+                              "name": "2. Developing a Brute-Forcing Tool.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/2. Developing a Brute-Forcing Tool.md",
+                              "parent": "1. Custom Tooling Using Python"
+                            },
+                            {
+                              "name": "3. Developing a Vulnerability Scanner.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/3. Developing a Vulnerability Scanner.md",
+                              "parent": "1. Custom Tooling Using Python"
+                            },
+                            {
+                              "name": "4. Creating a Basic Exploit.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/4. Creating a Basic Exploit.md",
+                              "parent": "1. Custom Tooling Using Python"
+                            },
+                            {
+                              "name": "5. Task Automation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/5. Task Automation.md",
+                              "parent": "1. Custom Tooling Using Python"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Custom Tooling Using Burp",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Using a Proxy for Custom Tooling.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/1. Using a Proxy for Custom Tooling.md",
+                              "parent": "2. Custom Tooling Using Burp"
+                            },
+                            {
+                              "name": "2. Using Extensions in Burp.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/2. Using Extensions in Burp.md",
+                              "parent": "2. Custom Tooling Using Burp"
+                            },
+                            {
+                              "name": "3. Creating a Basic Burp Extension.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/3. Creating a Basic Burp Extension.md",
+                              "parent": "2. Custom Tooling Using Burp"
+                            },
+                            {
+                              "name": "4. Modifying a Burp Extension.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/4. Modifying a Burp Extension.md",
+                              "parent": "2. Custom Tooling Using Burp"
+                            },
+                            {
+                              "name": "5. Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/5. Challenge.md",
+                              "parent": "2. Custom Tooling Using Burp"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Tooling via Browser Automation",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Using Browser Automation for Custom Tooling.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/1. Using Browser Automation for Custom Tooling.md",
+                              "parent": "3. Tooling via Browser Automation"
+                            },
+                            {
+                              "name": "2. Bypassing Common Security Controls.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/2. Bypassing Common Security Controls.md",
+                              "parent": "3. Tooling via Browser Automation"
+                            },
+                            {
+                              "name": "3. Automating CAPTCHA Bypass.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/3. Automating CAPTCHA Bypass.md",
+                              "parent": "3. Tooling via Browser Automation"
+                            },
+                            {
+                              "name": "4. Vulnerability Scanning.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/4. Vulnerability Scanning.md",
+                              "parent": "3. Tooling via Browser Automation"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. CAPTCHApocalypse",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Chaining Vulnerabilities",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Chaining Vulnerabilities",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Chaining Vulnerabilities.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/1. Chaining Vulnerabilities.md",
+                              "parent": "1. Chaining Vulnerabilities"
+                            },
+                            {
+                              "name": "2. Methodology.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/2. Methodology.md",
+                              "parent": "1. Chaining Vulnerabilities"
+                            },
+                            {
+                              "name": "3. Guided Chain.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/3. Guided Chain.md",
+                              "parent": "1. Chaining Vulnerabilities"
+                            },
+                            {
+                              "name": "4. Alternate Paths.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/4. Alternate Paths.md",
+                              "parent": "1. Chaining Vulnerabilities"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Extract",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "3. Voyage",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "4. Sequence",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Bypassing WAF",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. WAF - Introduction",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. VM - WAF Control.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/1. VM - WAF Control.md",
+                              "parent": "1. WAF - Introduction"
+                            },
+                            {
+                              "name": "2. Firewalls Refresher.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/2. Firewalls Refresher.md",
+                              "parent": "1. WAF - Introduction"
+                            },
+                            {
+                              "name": "3. Web Application Firewall.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/3. Web Application Firewall.md",
+                              "parent": "1. WAF - Introduction"
+                            },
+                            {
+                              "name": "4. Signature vs Behavioural Detections.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/4. Signature vs Behavioural Detections.md",
+                              "parent": "1. WAF - Introduction"
+                            },
+                            {
+                              "name": "5. Introduction to Rules.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/5. Introduction to Rules.md",
+                              "parent": "1. WAF - Introduction"
+                            },
+                            {
+                              "name": "6. Limitations of WAFs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/6. Limitations of WAFs.md",
+                              "parent": "1. WAF - Introduction"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. WAF - Exploitation Techniques",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Exploiting Outdated Version 3.3.5 of OWASP CRS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/1. Exploiting Outdated Version 3.3.5 of OWASP CRS.md",
+                              "parent": "2. WAF - Exploitation Techniques"
+                            },
+                            {
+                              "name": "2. Exploiting Weak Configurations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/2. Exploiting Weak Configurations.md",
+                              "parent": "2. WAF - Exploitation Techniques"
+                            },
+                            {
+                              "name": "3. Signature - Patern Bypass.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/3. Signature - Patern Bypass.md",
+                              "parent": "2. WAF - Exploitation Techniques"
+                            },
+                            {
+                              "name": "4. Parsing and Normalization Bypass.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/4. Parsing and Normalization Bypass.md",
+                              "parent": "2. WAF - Exploitation Techniques"
+                            },
+                            {
+                              "name": "5. Protocol Manipulation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/5. Protocol Manipulation.md",
+                              "parent": "2. WAF - Exploitation Techniques"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Padelify",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "4. Farewell",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5. Attacking LLMs",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Input Manipulation and Prompt Injection",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/1. Introduction.md",
+                              "parent": "1. Input Manipulation and Prompt Injection"
+                            },
+                            {
+                              "name": "2. System Prompt Leakage.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/2. System Prompt Leakage.md",
+                              "parent": "1. Input Manipulation and Prompt Injection"
+                            },
+                            {
+                              "name": "3. Jailbreaking.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/3. Jailbreaking.md",
+                              "parent": "1. Input Manipulation and Prompt Injection"
+                            },
+                            {
+                              "name": "4. Prompt Injection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/4. Prompt Injection.md",
+                              "parent": "1. Input Manipulation and Prompt Injection"
+                            },
+                            {
+                              "name": "5. Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/5. Challenge.md",
+                              "parent": "1. Input Manipulation and Prompt Injection"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. LLM Output Handling and Privacy Risks",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. Introduction.md",
+                              "parent": "2. LLM Output Handling and Privacy Risks"
+                            },
+                            {
+                              "name": "2. LLM Output Risks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/2. LLM Output Risks.md",
+                              "parent": "2. LLM Output Handling and Privacy Risks"
+                            },
+                            {
+                              "name": "3. Improper Output Handling - LLM05.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/3. Improper Output Handling - LLM05.md",
+                              "parent": "2. LLM Output Handling and Privacy Risks"
+                            },
+                            {
+                              "name": "4. Sensitive Information Disclosure - LLM02.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/4. Sensitive Information Disclosure - LLM02.md",
+                              "parent": "2. LLM Output Handling and Privacy Risks"
+                            },
+                            {
+                              "name": "5. Attack Cases.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/5. Attack Cases.md",
+                              "parent": "2. LLM Output Handling and Privacy Risks"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Data Integrity and Model Poisoning",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Supply Chain Attack.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/1. Supply Chain Attack.md",
+                              "parent": "3. Data Integrity and Model Poisoning"
+                            },
+                            {
+                              "name": "2. Model Poisoning.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/2. Model Poisoning.md",
+                              "parent": "3. Data Integrity and Model Poisoning"
+                            },
+                            {
+                              "name": "3. Model Poisoning - Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/3. Model Poisoning - Challenge.md",
+                              "parent": "3. Data Integrity and Model Poisoning"
+                            },
+                            {
+                              "name": "4. Mitigation Measures.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/4. Mitigation Measures.md",
+                              "parent": "3. Data Integrity and Model Poisoning"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Juicy",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "5. BankGPT",
+                          "type": "directory",
+                          "contents": []
+                        },
+                        {
+                          "name": "6. HealthGPT",
+                          "type": "directory",
+                          "contents": []
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },

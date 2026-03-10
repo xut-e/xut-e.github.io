@@ -2828,8 +2828,8 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/7-exploitation-basics/3-metasploit-exploitation/0-metasploit-exploitation/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/0. Metasploit - Exploitation.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 7. Exploitation Basics > 3. Metasploit - Exploitation",
-    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/1. Introduction]]\n[[2. Scanning]]\n[[3. The Metasploit Database]]\n[[4. Vulnerability Scanning]]\n[[5. Exploitation]]\n[[6. Msfvenom]]",
-    "modified": "2025-12-12T13:58:55"
+    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/1. Introduction]]\n[[2. Scanning]]\n[[3. The Metasploit Database]]\n[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/3. Metasploit - Exploitation/4. Vulnerability Scanning]]\n[[5. Exploitation]]\n[[6. Msfvenom]]",
+    "modified": "2026-03-10T01:01:35"
   },
   {
     "title": "1. Introduction",
@@ -4312,6 +4312,14 @@
     "modified": "2025-12-12T13:58:55"
   },
   {
+    "title": "4. Web Application Red Teaming",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-web-application-red-teaming/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Web Application Red Teaming.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming",
+    "content": "[[1. Cryptographic Failures]]\n[[2. Custom Tooling]]\n[[3. Chaining Vulnerabilities]]\n[[4. Bypassing WAF]]\n[[5. Attacking LLMs]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
     "title": "3. Web Application Pentesting",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-web-application-pentesting/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Web Application Pentesting.md",
@@ -5158,6 +5166,782 @@
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 2. Web Fundamentals > 4. Web Hacking Fundamentals > 1. How Websites Work",
     "content": "[[Ciberseguridad/THM/0. Pre Career/1. Pre Security/3. How the Web Works/3. How Websites Work/0. How Websites Work]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Web Fundamentals/4. Web Hacking Fundamentals/1. How Websites Work/1. Redireccion]]",
     "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "4. Bypassing WAF",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-bypassing-waf/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/4. Bypassing WAF.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF",
+    "content": "1. [[0. WAF - Introduction]]\n2. [[0. WAF - Exploitation Techniques]]\n3. [[0. Padelify]]\n4. [[0. Farewell]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Attacking LLMs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/5-attacking-llms/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/5. Attacking LLMs.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs",
+    "content": "1. [[0. Input Manipulation and Prompt Injection]]\n2. [[0. LLM Output Handling and Privacy Risks]]\n3. [[0. Data Integrity and Model Poisoning]]\n4. [[0. Juicy]]\n5. [[0. BankGPT]]\n6. [[0. HealthGPT]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Cryptographic Failures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-cryptographic-failures/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Cryptographic Failures.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures",
+    "content": "1. [[0. Breaking Crypto the Simple Way]]\n2. [[0. Length Extension Attacks]]\n3. [[0. Attacking ECB Oracles]]\n4. [[0. Padding Oracles]]\n5. [[0. Insecure Randomness]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Chaining Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/3-chaining-vulnerabilities/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Chaining Vulnerabilities.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities",
+    "content": "1. [[0. Chaining Vulnerabilities]]\n2. [[0. Extract]]\n3. [[0. Voyage]]\n4. [[0. Sequence]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Custom Tooling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling",
+    "content": "1. [[0. Custom Tooling Using Python]]\n2. [[0. Custom Tooling Using Burp]]\n3. [[0. Tooling via Browser Automation]]\n4. [[0. CAPTCHApocalypse]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Padelify",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/3-padelify/0-padelify/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/3. Padelify/0. Padelify.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 3. Padelify",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Farewell",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-farewell/0-farewell/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/4. Farewell/0. Farewell.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 4. Farewell",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Exploiting Weak Configurations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/2-exploiting-weak-configurations/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/2. Exploiting Weak Configurations.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 2. WAF - Exploitation Techniques",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Signature - Patern Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/3-signature-patern-bypass/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/3. Signature - Patern Bypass.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 2. WAF - Exploitation Techniques",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Protocol Manipulation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/5-protocol-manipulation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/5. Protocol Manipulation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 2. WAF - Exploitation Techniques",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. WAF - Exploitation Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/0-waf-exploitation-techniques/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/0. WAF - Exploitation Techniques.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 2. WAF - Exploitation Techniques",
+    "content": "[[1. Exploiting Outdated Version 3.3.5 of OWASP CRS]]\n[[2. Exploiting Weak Configurations]]\n[[3. Signature - Patern Bypass]]\n[[4. Parsing and Normalization Bypass]]\n[[5. Protocol Manipulation]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Parsing and Normalization Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/4-parsing-and-normalization-bypass/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/4. Parsing and Normalization Bypass.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 2. WAF - Exploitation Techniques",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Exploiting Outdated Version 3.3.5 of OWASP CRS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/1-exploiting-outdated-version-3-3-5-of-owasp-crs/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/1. Exploiting Outdated Version 3.3.5 of OWASP CRS.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 2. WAF - Exploitation Techniques",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Signature vs Behavioural Detections",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/4-signature-vs-behavioural-detections/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/4. Signature vs Behavioural Detections.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 1. WAF - Introduction",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Introduction to Rules",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/5-introduction-to-rules/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/5. Introduction to Rules.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 1. WAF - Introduction",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "6. Limitations of WAFs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/6-limitations-of-wafs/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/6. Limitations of WAFs.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 1. WAF - Introduction",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. VM - WAF Control",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/1-vm-waf-control/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/1. VM - WAF Control.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 1. WAF - Introduction",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Web Application Firewall",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/3-web-application-firewall/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/3. Web Application Firewall.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 1. WAF - Introduction",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. WAF - Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/0-waf-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/0. WAF - Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 1. WAF - Introduction",
+    "content": "[[1. VM - WAF Control]]\n[[2. Firewalls Refresher]]\n[[3. Web Application Firewall]]\n[[4. Signature vs Behavioural Detections]]\n[[5. Introduction to Rules]]\n[[6. Limitations of WAFs]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Firewalls Refresher",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/2-firewalls-refresher/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/2. Firewalls Refresher.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 1. WAF - Introduction",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. BankGPT",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/5-bankgpt/0-bankgpt/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/5. BankGPT/0. BankGPT.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 5. BankGPT",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. HealthGPT",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/6-healthgpt/0-healthgpt/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/6. HealthGPT/0. HealthGPT.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 6. HealthGPT",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/5-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/5. Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 1. Input Manipulation and Prompt Injection",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Input Manipulation and Prompt Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/0-input-manipulation-and-prompt-injection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/0. Input Manipulation and Prompt Injection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 1. Input Manipulation and Prompt Injection",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/1. Introduction]]\n[[2. System Prompt Leakage]]\n[[3. Jailbreaking]]\n[[4. Prompt Injection]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/5. Challenge]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 1. Input Manipulation and Prompt Injection",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Prompt Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/4-prompt-injection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/4. Prompt Injection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 1. Input Manipulation and Prompt Injection",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Jailbreaking",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/3-jailbreaking/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/3. Jailbreaking.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 1. Input Manipulation and Prompt Injection",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. System Prompt Leakage",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/2-system-prompt-leakage/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/2. System Prompt Leakage.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 1. Input Manipulation and Prompt Injection",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Model Poisoning - Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/3-model-poisoning-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/3. Model Poisoning - Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 3. Data Integrity and Model Poisoning",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Mitigation Measures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/4-mitigation-measures/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/4. Mitigation Measures.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 3. Data Integrity and Model Poisoning",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Supply Chain Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/1-supply-chain-attack/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/1. Supply Chain Attack.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 3. Data Integrity and Model Poisoning",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Data Integrity and Model Poisoning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/0-data-integrity-and-model-poisoning/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/0. Data Integrity and Model Poisoning.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 3. Data Integrity and Model Poisoning",
+    "content": "[[1. Supply Chain Attack]]\n[[2. Model Poisoning]]\n[[3. Model Poisoning - Challenge]]\n[[4. Mitigation Measures]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Model Poisoning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/2-model-poisoning/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/2. Model Poisoning.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 3. Data Integrity and Model Poisoning",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. LLM Output Handling and Privacy Risks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/0-llm-output-handling-and-privacy-risks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/0. LLM Output Handling and Privacy Risks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. Introduction]]\n[[2. LLM Output Risks]]\n[[3. Improper Output Handling - LLM05]]\n[[4. Sensitive Information Disclosure - LLM02]]\n[[5. Attack Cases]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Attack Cases",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/5-attack-cases/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/5. Attack Cases.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. LLM Output Risks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/2-llm-output-risks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/2. LLM Output Risks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Sensitive Information Disclosure - LLM02",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/4-sensitive-information-disclosure-llm02/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/4. Sensitive Information Disclosure - LLM02.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Improper Output Handling - LLM05",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/3-improper-output-handling-llm05/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/3. Improper Output Handling - LLM05.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Juicy",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/4-juicy/0-juicy/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/4. Juicy/0. Juicy.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 4. Juicy",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Chosen-Plaintext Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/4-chosen-plaintext-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/4. Chosen-Plaintext Attacks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 3. Attacking ECB Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Attacking ECB Oracles",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/0-attacking-ecb-oracles/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/0. Attacking ECB Oracles.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 3. Attacking ECB Oracles",
+    "content": "[[1. Symmetric Encyption]]\n[[2. Code Books and Cipher Modes]]\n[[3. ECB Insecurities]]\n[[4. Chosen-Plaintext Attacks]]\n[[5. Cipher Mode Best Practices]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Symmetric Encyption",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/1-symmetric-encyption/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/1. Symmetric Encyption.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 3. Attacking ECB Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. ECB Insecurities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/3-ecb-insecurities/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/3. ECB Insecurities.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 3. Attacking ECB Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Cipher Mode Best Practices",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/5-cipher-mode-best-practices/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/5. Cipher Mode Best Practices.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 3. Attacking ECB Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Code Books and Cipher Modes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/2-code-books-and-cipher-modes/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/2. Code Books and Cipher Modes.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 3. Attacking ECB Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Padding Oracles",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/0-padding-oracles/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/0. Padding Oracles.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 4. Padding Oracles",
+    "content": "[[1. Padding Schemes]]\n[[2. Block Cipher Modes]]\n[[3. CBC Mode - Decryption]]\n[[4. How the Attack Works]]\n[[5. Automation]]\n[[6. Best Practices]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. How the Attack Works",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/4-how-the-attack-works/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/4. How the Attack Works.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 4. Padding Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Automation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/5-automation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/5. Automation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 4. Padding Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. CBC Mode - Decryption",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/3-cbc-mode-decryption/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/3. CBC Mode - Decryption.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 4. Padding Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Padding Schemes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/1-padding-schemes/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/1. Padding Schemes.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 4. Padding Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Block Cipher Modes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/2-block-cipher-modes/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/2. Block Cipher Modes.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 4. Padding Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "6. Best Practices",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/6-best-practices/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/6. Best Practices.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 4. Padding Oracles",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Brute Forcing Keys",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/1-brute-forcing-keys/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/1. Brute Forcing Keys.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 1. Breaking Crypto the Simple Way",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Breaking Hashes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/2-breaking-hashes/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/2. Breaking Hashes.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 1. Breaking Crypto the Simple Way",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Bit Flipping Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/4-bit-flipping-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/4. Bit Flipping Attacks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 1. Breaking Crypto the Simple Way",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Breaking Crypto the Simple Way",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/0-breaking-crypto-the-simple-way/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/0. Breaking Crypto the Simple Way.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 1. Breaking Crypto the Simple Way",
+    "content": "[[1. Brute Forcing Keys]]\n[[2. Breaking Hashes]]\n[[3. Exposed Keys]]\n[[4. Bit Flipping Attacks]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Exposed Keys",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/3-exposed-keys/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/3. Exposed Keys.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 1. Breaking Crypto the Simple Way",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Insecure Randomness",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/0-insecure-randomness/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/0. Insecure Randomness.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 5. Insecure Randomness",
+    "content": "[[1. Few Important Concepts]]\n[[2. Types of Random Number Generators]]\n[[3. Weak or Insufficient Entropy]]\n[[4. Predictable Seed in PRNGs]]\n[[5. Mitigation Features]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Predictable Seed in PRNGs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/4-predictable-seed-in-prngs/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/4. Predictable Seed in PRNGs.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 5. Insecure Randomness",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Types of Random Number Generators",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/2-types-of-random-number-generators/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/2. Types of Random Number Generators.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 5. Insecure Randomness",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Weak or Insufficient Entropy",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/3-weak-or-insufficient-entropy/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/3. Weak or Insufficient Entropy.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 5. Insecure Randomness",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Few Important Concepts",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/1-few-important-concepts/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/1. Few Important Concepts.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 5. Insecure Randomness",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Mitigation Features",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/5-mitigation-features/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/5. Mitigation Features.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 5. Insecure Randomness",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Understanding Length Extension Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/3-understanding-length-extension-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/3. Understanding Length Extension Attacks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 2. Length Extension Attacks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Practical - Modifying a Signed Cookie",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/5-practical-modifying-a-signed-cookie/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/5. Practical - Modifying a Signed Cookie.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 2. Length Extension Attacks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "6. Mitigation Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/6-mitigation-techniques/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/6. Mitigation Techniques.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 2. Length Extension Attacks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Length Extension Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/0-length-extension-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/0. Length Extension Attacks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 2. Length Extension Attacks",
+    "content": "[[1. Hash Functions]]\n[[2. Hashing Internals]]\n[[3. Understanding Length Extension Attacks]]\n[[4. Practical - Attacking Signatures]]\n[[5. Practical - Modifying a Signed Cookie]]\n[[6. Mitigation Techniques]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Hashing Internals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/2-hashing-internals/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/2. Hashing Internals.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 2. Length Extension Attacks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Hash Functions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/1-hash-functions/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/1. Hash Functions.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 2. Length Extension Attacks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Practical - Attacking Signatures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/4-practical-attacking-signatures/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/4. Practical - Attacking Signatures.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 2. Length Extension Attacks",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Voyage",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/3-voyage/0-voyage/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Voyage/0. Voyage.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 3. Voyage",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Methodology",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/2-methodology/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/2. Methodology.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 1. Chaining Vulnerabilities",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Alternate Paths",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/4-alternate-paths/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/4. Alternate Paths.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 1. Chaining Vulnerabilities",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Chaining Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/0-chaining-vulnerabilities/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/0. Chaining Vulnerabilities.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 1. Chaining Vulnerabilities",
+    "content": "[[1. Chaining Vulnerabilities]]\n[[2. Methodology]]\n[[3. Guided Chain]]\n[[4. Alternate Paths]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Guided Chain",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/3-guided-chain/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/3. Guided Chain.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 1. Chaining Vulnerabilities",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Chaining Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/1-chaining-vulnerabilities/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/1. Chaining Vulnerabilities/1. Chaining Vulnerabilities.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 1. Chaining Vulnerabilities",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Extract",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/2-extract/0-extract/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/0. Extract.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 2. Extract",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Sequence",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/4-sequence/0-sequence/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/4. Sequence/0. Sequence.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 4. Sequence",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Creating a Basic Exploit",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/4-creating-a-basic-exploit/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/4. Creating a Basic Exploit.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 1. Custom Tooling Using Python",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Developing a Vulnerability Scanner",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/3-developing-a-vulnerability-scanner/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/3. Developing a Vulnerability Scanner.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 1. Custom Tooling Using Python",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Custom Tooling Using Python",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/0-custom-tooling-using-python/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/0. Custom Tooling Using Python.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 1. Custom Tooling Using Python",
+    "content": "[[1. Using a Coding Language for Custom Tooling]]\n[[2. Developing a Brute-Forcing Tool]]\n[[3. Developing a Vulnerability Scanner]]\n[[4. Creating a Basic Exploit]]\n[[5. Task Automation]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Task Automation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/5-task-automation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/5. Task Automation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 1. Custom Tooling Using Python",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Using a Coding Language for Custom Tooling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/1-using-a-coding-language-for-custom-tooling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/1. Using a Coding Language for Custom Tooling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 1. Custom Tooling Using Python",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Developing a Brute-Forcing Tool",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/2-developing-a-brute-forcing-tool/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/2. Developing a Brute-Forcing Tool.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 1. Custom Tooling Using Python",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. CAPTCHApocalypse",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/4-captchapocalypse/0-captchapocalypse/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/4. CAPTCHApocalypse/0. CAPTCHApocalypse.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 4. CAPTCHApocalypse",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Modifying a Burp Extension",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/4-modifying-a-burp-extension/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/4. Modifying a Burp Extension.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 2. Custom Tooling Using Burp",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "5. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/5-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/5. Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 2. Custom Tooling Using Burp",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Creating a Basic Burp Extension",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/3-creating-a-basic-burp-extension/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/3. Creating a Basic Burp Extension.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 2. Custom Tooling Using Burp",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Using Extensions in Burp",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/2-using-extensions-in-burp/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/2. Using Extensions in Burp.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 2. Custom Tooling Using Burp",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Custom Tooling Using Burp",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/0-custom-tooling-using-burp/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/0. Custom Tooling Using Burp.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 2. Custom Tooling Using Burp",
+    "content": "[[1. Using a Proxy for Custom Tooling]]\n[[2. Using Extensions in Burp]]\n[[3. Creating a Basic Burp Extension]]\n[[4. Modifying a Burp Extension]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/5. Challenge]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Using a Proxy for Custom Tooling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/1-using-a-proxy-for-custom-tooling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/1. Using a Proxy for Custom Tooling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 2. Custom Tooling Using Burp",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "0. Tooling via Browser Automation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/0-tooling-via-browser-automation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/0. Tooling via Browser Automation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 3. Tooling via Browser Automation",
+    "content": "[[1. Using Browser Automation for Custom Tooling]]\n[[2. Bypassing Common Security Controls]]\n[[3. Automating CAPTCHA Bypass]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/4. Vulnerability Scanning]]",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "2. Bypassing Common Security Controls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/2-bypassing-common-security-controls/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/2. Bypassing Common Security Controls.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 3. Tooling via Browser Automation",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "3. Automating CAPTCHA Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/3-automating-captcha-bypass/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/3. Automating CAPTCHA Bypass.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 3. Tooling via Browser Automation",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "1. Using Browser Automation for Custom Tooling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/1-using-browser-automation-for-custom-tooling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/1. Using Browser Automation for Custom Tooling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 3. Tooling via Browser Automation",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
+  },
+  {
+    "title": "4. Vulnerability Scanning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/4-vulnerability-scanning/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/4. Vulnerability Scanning.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 3. Tooling via Browser Automation",
+    "content": "",
+    "modified": "2026-03-10T01:01:35"
   },
   {
     "title": "1. Authentication",
@@ -9148,24 +9932,24 @@
     "path": "/apuntes/thm/maquinas/3-hard/3-hard/",
     "src": "content/Ciberseguridad/THM/Maquinas/3. Hard/3. Hard.md",
     "breadcrumb": "THM > Maquinas > 3. Hard",
-    "content": "",
-    "modified": "2025-12-12T13:58:55"
+    "content": "1. [[Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/0. El Bandito]]\n2.",
+    "modified": "2026-03-10T01:01:35"
   },
   {
     "title": "2. Medium",
     "path": "/apuntes/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9.",
-    "modified": "2025-12-12T13:58:55"
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10.",
+    "modified": "2026-03-10T01:01:35"
   },
   {
     "title": "1. Easy",
     "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
     "breadcrumb": "THM > Maquinas > 1. Easy",
-    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8.",
-    "modified": "2025-12-21T00:57:17"
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12.",
+    "modified": "2026-03-10T01:01:35"
   },
   {
     "title": "1. Introduction",
@@ -9188,8 +9972,8 @@
     "path": "/apuntes/thm/maquinas/3-hard/1-el-bandito/2-getting-the-flags/",
     "src": "content/Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/2. Getting the Flags.md",
     "breadcrumb": "THM > Maquinas > 3. Hard > 1. El Bandito",
-    "content": "<h2>Reconocimiento Inicial</h2>\nLo primero que vamos a hacer es mirar qué puertos están abiertos, como siempre.\n\n![[Pasted image 20260309145408.png]]\n\nDespués vamos a investigar sobre los puertos abiertos en profundidad.\n\n![[Pasted image 20260309150050.png]]\n![[Pasted image 20260309150111.png]]\n![[Pasted image 20260309150125.png]]\n\nDespués de esto vamos con la enumeración de directorios.\n\nEmpezaremos con el puerto 80:\n\n>[!CAUTION] Debemos poner `https` al listar para el puerto 80, porque si no nos redirigirá y no será posible conectarse.\n\n![[Pasted image 20260309150350.png]]\n\nAhora vamos a ver que hay en el proxy (`8080`):\n\n![[Pasted image 20260309150546.png]]\n![[Pasted image 20260309150609.png]]\n![[Pasted image 20260309150635.png]]\n\nEstas son las cosas interesantes que hemos encontrado.\n\n------------------------------------------------\n<h2>Profundización</h2>\nVamos a ver que hay en la web. Vamos a arrancar BurpSuite para ir mapeando el sitio web.\n\n<h3>Puerto 80</h3>\n\n![[Pasted image 20260309150912.png]]\n\nNos encontramos con esto, pero si miramos el código fuente de la página:\n\n![[Pasted image 20260309150939.png]]\n\nVamos a ver qué hay en esa ruta.\n\n![[Pasted image 20260309151027.png]]\n\nEs un documento JavaScript con varios endpoints y un par de nombres de usuario. Lo que conseguimos sacar en limpio del archivo es:\n\n**Endpoints:**\n\n- `/getMessages`\n- `send_message`\n\n**Usuarios:** \n\n- JACK\n- OLIVER\n\nVamos ahora a mirar en los directorios que encontramos en este puerto.\n\n![[Pasted image 20260309151346.png]]\n\nEl endpoint `/ping` parece un endpoint muerto.\n\n![[Pasted image 20260309151434.png]]\n\nEn el endpoint `/access` hay un formulario de login, interesante.\n\nHemos acabado con lo descubierto en el puerto 80, vamos ahora con el 8080.\n\n<h3>Puerto 8080</h3>\nEn la página inicial hay una página web.\n\n![[Pasted image 20260309151612.png]]\n\nNavegando por la página vemos que sólo hay dos endpoints:\n\n- En `Services` tenemos `/services.html`.\n  ![[Pasted image 20260309151835.png]]\n  Interesante, posible SSRF.\n- En `Burn Token` está `/burn.html`.\n  ![[Pasted image 20260309151905.png]]\n\nSi probamos la funcionalidad de `/burn.html` vemos que no hace nada, por lo que vamos a mirar el código fuente.\n\n![[Pasted image 20260309151927.png]]\n\nVemos que no hace nada efectivamente, pero hay algo muy interesante y que debería de llamarnos la atención teniendo en cuenta que venimos de una unidad basada en Request Smuggling con contenido de WebSockets.\n\nVamos ahora a buscar en los directorios que encontramos antes. Empezando por `/configprops` ya que `/assets` está vacío.\n\n![[Pasted image 20260309152416.png]]\n\nParece que sólo hay información sobre el framework. Si buscamos en internet \"spring framework endpoints\" llegamos a la página de la [Documentación Oficial](https://docs.spring.io/spring-boot/docs/2.1.9.RELEASE/reference/html/production-ready-endpoints.html).\n\n![[Pasted image 20260309152554.png]]\n\nPuede que nos sea útil más adelante.\n\nVamos a continuar con `/health`.\n\n![[Pasted image 20260309152851.png]]\n\nAhora vamos con `/info`.\n\n![[Pasted image 20260309152915.png]]\n\nVamos con `/mappings.json`.\n\n![[Pasted image 20260309153031.png]]\n\nAcabamos de sacar el mapa de endpoints disponibles (aunque ahora no todos están disponibles para nosotros sabemos que existen). Los que hemos encontrado son:\n\n- `/admin-creds`\n- `/admin-flag`\n- `/token`\n- `/isOnline`\n- `/error`\n- `/heapdump`\n- `/autoconfig`\n- `/trace`\n- `/health`\n- `/dump`\n- `/configprops`\n- `/env`\n- `/metrics`\n\nEstá claro que saltan a la vista `/admin-creds` y `/admin-flag`, pero vamos a seguir con nuestra rutina de escaneo.\n\nAhora nos toca `/heapdump`.\n\n![[Pasted image 20260309153506.png]]\n\nParece que nos ofrece descargarlo en lugar de mostrarlo en web. Si lo descargamos e intentamos leerlo vemos que es un binario con muchísimos caracteres. Vamos a probar con `strings`. Si lo revisamos hay algunas líneas más largas que otras. Parece que hay peticiones, vamos a ver si alguna se ha hecho con credenciales.\n\n![[Pasted image 20260309153850.png]]\n\nAcabamos de encontrar unas credenciales, vamos a seguir. Ahora con `/swagger-ui.html`.\n\n![[Pasted image 20260309153953.png]]\n\nParece que aquí no hay nada.\n\n--------------------------------------------\n<h2>Primera Flag</h2>\nPara obtener la primera flag parece que vamos a tener que usar la técnica de los WebSockets para conseguir un Request Smuggling junto con un SSRF para sobrepasar un proxy seguro, como hicimos en los puntos 2 y 3 de la lección de WebSockets (`THM -> 1. Career -> 3. Web Application Pentesting -> 5. HTTP Request Smuggling -> 3. Request Smuggling - WebSockets`).\n\nAhora sí que abrimos BurpSuite, con todo lo que hemos hecho debería estar mapeado.\n\n![[Pasted image 20260309154430.png]]\n\nVamos a escoger la de `/isOnline` porque necesitamos saber que funciona el SSRF antes de proceder.\n\nPara ello la mandamos al repetidor y cambiamos la URL por la del servidor que montaremos.\n\n![[Pasted image 20260309154552.png]]\n\nAhora vamos a levantar el servidor. Para ello vamos a usar un simple `nc` por ahora, sólo queremos asegurarnos de que funciona.\n\n![[Pasted image 20260309154641.png]]\n\nMandamos la petición.\n\n![[Pasted image 20260309154704.png]]\n\nFunciona, hay SSRF.\n\nAhora vamos a probar a ver si una simple funciona, pero esta vez vamos a utilizar python, para no tener que estar levantando el servidor todo el rato.\n\n![[Pasted image 20260309154916.png]]\n\nAhora sí, vamos al lío. Vamos a mandar una petición de WebSocket Upgrade a la URL nuestra (SSRF).\n\n![[Pasted image 20260309155402.png]]\n\n>[!CAUTION] Recuerda desactivar la opción de `Update Content-Lenth` y de dejar siempre dos líneas por debajo de la petición.\n\nParece que nos hemos topado con el mismo problema que el el punto 3 de la lección de WebSockets. Sabemos esto porque el \"403 Forbidden\" que vemos no viene del servidor, sino del proxy, Nginx.\n\nPara solucionar esto tenemos que hacer que nuestro servidor al que apunta el SSRF devuelva el código `101 Switching Protocols` para que el proxy piense que de verdad hemos migrado el protocolo hacia WebSockets.\n\nPara conseguir esto vamos a usar el siguiente código de Python:\n\n```python\nimport sys\nfrom http.server import HTTPServer, BaseHTTPRequestHandler\n\nif len(sys.argv)-1 != 1:\n    print(\"\"\"\nUsage: {} \n    \"\"\".format(sys.argv[0]))\n    sys.exit()\n\nclass Redirect(BaseHTTPRequestHandler):\n   def do_GET(self):\n       self.protocol_version = \"HTTP/1.1\"\n       self.send_response(101)\n       self.end_headers()\n\nHTTPServer((\"\", int(sys.argv[1])), Redirect).serve_forever()\n```\n\nLo guardamos y ejecutamos:\n\n![[Pasted image 20260309155821.png]]\n\nVolvemos a probar a mandar la petición.\n\n![[Pasted image 20260309155905.png]]\n\nAhora sí que ha funcionado, vamos a obtener las credenciales del administrador, recordemos el endpoint `/admin-creds`:\n\n![[Pasted image 20260309160020.png]]\n\nSon las mismas credenciales que obtuvimos con el archivo descargado desde `/heapdump`.\n\nVamos ahora a ver la flag del admin.\n\n![[Pasted image 20260309161004.png]]\n\n------------------------------------\n<h2>Segunda Flag</h2>\nPara la segunda flag vamos a empezar entrando al `/access` que nos encontramos en el puerto 80 utilizando las credenciales obtenidas durante la obtención de la primera flag.\n\nUna vez dentro nos encontramos con esto:\n\n![[Pasted image 20260309161426.png]]\n\nAdemás, podemos obtener acceso también al endpoint `/getMessages` gracias a la cookie de sesión verificada obtenida al iniciar sesión.\n\nVamos a probar a mandar un mensaje.\n\n![[Pasted image 20260309161622.png]]\n\nSe actualiza tanto en la pestaña del chat como en la de `/getMessages`.\n\n![[Pasted image 20260309161652.png]]\n\nComo está reflejada, se me asemeja a una técnica de request smuggling, vamos a probar.\n\nAbrimos de nuevo BurpSuite y miramos el mapa.\n\n![[Pasted image 20260309161756.png]]\n\nEsto es lo que nos interesa.\n\nLo mandamos al repetidor y lo vamos a modificar un poco. Primero lo vamos a dejar así:\n\n![[Pasted image 20260309161908.png]]\n\nY ahora vamos a hacer el smuggling de la segunda petición. La dejamos así:\n\n![[Pasted image 20260309162253.png]]\n\nVamos a mandarla hasta que se quede \"colgado\".\n\n![[Pasted image 20260309162322.png]]\n\nHemos conseguido hacer smuggling de una petición peto no ha sido suficiente longitud para leer la flag, si es que está aquí.\n\n![[Pasted image 20260309162505.png]]\n\nVamos a probar con más longitud: `800`.\n\n![[Pasted image 20260309162537.png]]\n\nParece que tampoco ha sido suficiente.\n\n![[Pasted image 20260309162722.png]]\n\nDespués de mucho rato intentándolo y que no saliera me frustré y pensé igual no lo está mandando todo el rato el login, así que me puse a escribir mensajes de Content-Length: 100 y salió este patrón.\n\n![[Pasted image 20260309173259.png]]\n\nDespués de muchísimos intentos conseguimos la flag. Resulta que el número más consistente para obtener respuesta fue `730`. Aunque hay una parte que está encodeada en unicode.\n\n![[Pasted image 20260309183638.png]]\n\nEl último paso sería convertirla por ejemplo con [CyberChef](https://gchq.github.io/CyberChef/).\n\n![[Pasted image 20260309183820.png]]\n\n---------------------------------------\n<h2>Conclusión</h2>\nLa primera parte fue muy divertida de encontrar y explotar. Sin embargo, la segunda flag fue mucho más difícil hasta que me di cuenta de que lo que tenía que hacer era encontrar el número bueno para que no se quedase colgado.\n\nSea como sea hemos conseguido obtener ambas, completando así nuestra primera máquina de dificultad difícil y dejando muy claro que nunca hay que rendirse (no exagero si digo que he estado más de 3h sólo para la segunda flag).\n\n>[!SUCCESS] Hemos conseguido obtener ambas flags y afianzar nuestro conocimiento sobre HTTP Request Smuggling.",
-    "modified": "2026-03-09T17:56:59"
+    "content": "<h2>Reconocimiento Inicial</h2>\nLo primero que vamos a hacer es mirar qué puertos están abiertos, como siempre.\n\n![[Pasted image 20260309145408.png]]\n\nDespués vamos a investigar sobre los puertos abiertos en profundidad.\n\n![[Pasted image 20260309150050.png]]\n![[Pasted image 20260309150111.png]]\n![[Pasted image 20260309150125.png]]\n\nDespués de esto vamos con la enumeración de directorios.\n\nEmpezaremos con el puerto 80:\n\n>[!CAUTION] Debemos poner `https` al listar para el puerto 80, porque si no nos redirigirá y no será posible conectarse.\n\n![[Pasted image 20260309150350.png]]\n\nAhora vamos a ver que hay en el proxy (`8080`):\n\n![[Pasted image 20260309150546.png]]\n![[Pasted image 20260309150609.png]]\n![[Pasted image 20260309150635.png]]\n\nEstas son las cosas interesantes que hemos encontrado.\n\n------------------------------------------------\n<h2>Profundización</h2>\nVamos a ver que hay en la web. Vamos a arrancar BurpSuite para ir mapeando el sitio web.\n\n<h3>Puerto 80</h3>\n\n![[Pasted image 20260309150912.png]]\n\nNos encontramos con esto, pero si miramos el código fuente de la página:\n\n![[Pasted image 20260309150939.png]]\n\nVamos a ver qué hay en esa ruta.\n\n![[Pasted image 20260309151027.png]]\n\nEs un documento JavaScript con varios endpoints y un par de nombres de usuario. Lo que conseguimos sacar en limpio del archivo es:\n\n**Endpoints:**\n\n- `/getMessages`\n- `/send_message`\n\n**Usuarios:** \n\n- JACK\n- OLIVER\n\nVamos ahora a mirar en los directorios que encontramos en este puerto.\n\n![[Pasted image 20260309151346.png]]\n\nEl endpoint `/ping` parece un endpoint muerto.\n\n![[Pasted image 20260309151434.png]]\n\nEn el endpoint `/access` hay un formulario de login, interesante.\n\nHemos acabado con lo descubierto en el puerto 80, vamos ahora con el 8080.\n\n<h3>Puerto 8080</h3>\nEn la página inicial hay una página web.\n\n![[Pasted image 20260309151612.png]]\n\nNavegando por la página vemos que sólo hay dos endpoints:\n\n- En `Services` tenemos `/services.html`.\n  ![[Pasted image 20260309151835.png]]\n  Interesante, posible SSRF.\n- En `Burn Token` está `/burn.html`.\n  ![[Pasted image 20260309151905.png]]\n\nSi probamos la funcionalidad de `/burn.html` vemos que no hace nada, por lo que vamos a mirar el código fuente.\n\n![[Pasted image 20260309151927.png]]\n\nVemos que no hace nada efectivamente, pero hay algo muy interesante y que debería de llamarnos la atención teniendo en cuenta que venimos de una unidad basada en Request Smuggling con contenido de WebSockets.\n\nVamos ahora a buscar en los directorios que encontramos antes. Empezando por `/configprops` ya que `/assets` está vacío.\n\n![[Pasted image 20260309152416.png]]\n\nParece que sólo hay información sobre el framework. Si buscamos en internet \"spring framework endpoints\" llegamos a la página de la [Documentación Oficial](https://docs.spring.io/spring-boot/docs/2.1.9.RELEASE/reference/html/production-ready-endpoints.html).\n\n![[Pasted image 20260309152554.png]]\n\nPuede que nos sea útil más adelante.\n\nVamos a continuar con `/health`.\n\n![[Pasted image 20260309152851.png]]\n\nAhora vamos con `/info`.\n\n![[Pasted image 20260309152915.png]]\n\nVamos con `/mappings.json`.\n\n![[Pasted image 20260309153031.png]]\n\nAcabamos de sacar el mapa de endpoints disponibles (aunque ahora no todos están disponibles para nosotros sabemos que existen). Los que hemos encontrado son:\n\n- `/admin-creds`\n- `/admin-flag`\n- `/token`\n- `/isOnline`\n- `/error`\n- `/heapdump`\n- `/autoconfig`\n- `/trace`\n- `/health`\n- `/dump`\n- `/configprops`\n- `/env`\n- `/metrics`\n\nEstá claro que saltan a la vista `/admin-creds` y `/admin-flag`, pero vamos a seguir con nuestra rutina de escaneo.\n\nAhora nos toca `/heapdump`.\n\n![[Pasted image 20260309153506.png]]\n\nParece que nos ofrece descargarlo en lugar de mostrarlo en web. Si lo descargamos e intentamos leerlo vemos que es un binario con muchísimos caracteres. Vamos a probar con `strings`. Si lo revisamos hay algunas líneas más largas que otras. Parece que hay peticiones, vamos a ver si alguna se ha hecho con credenciales.\n\n![[Pasted image 20260309153850.png]]\n\nAcabamos de encontrar unas credenciales, vamos a seguir. Ahora con `/swagger-ui.html`.\n\n![[Pasted image 20260309153953.png]]\n\nParece que aquí no hay nada.\n\n--------------------------------------------\n<h2>Primera Flag</h2>\nPara obtener la primera flag parece que vamos a tener que usar la técnica de los WebSockets para conseguir un Request Smuggling junto con un SSRF para sobrepasar un proxy seguro, como hicimos en los puntos 2 y 3 de la lección de WebSockets (`THM -> 1. Career -> 3. Web Application Pentesting -> 5. HTTP Request Smuggling -> 3. Request Smuggling - WebSockets`).\n\nAhora sí que abrimos BurpSuite, con todo lo que hemos hecho debería estar mapeado.\n\n![[Pasted image 20260309154430.png]]\n\nVamos a escoger la de `/isOnline` porque necesitamos saber que funciona el SSRF antes de proceder.\n\nPara ello la mandamos al repetidor y cambiamos la URL por la del servidor que montaremos.\n\n![[Pasted image 20260309154552.png]]\n\nAhora vamos a levantar el servidor. Para ello vamos a usar un simple `nc` por ahora, sólo queremos asegurarnos de que funciona.\n\n![[Pasted image 20260309154641.png]]\n\nMandamos la petición.\n\n![[Pasted image 20260309154704.png]]\n\nFunciona, hay SSRF.\n\nAhora vamos a probar a ver si una simple funciona, pero esta vez vamos a utilizar python, para no tener que estar levantando el servidor todo el rato.\n\n![[Pasted image 20260309154916.png]]\n\nAhora sí, vamos al lío. Vamos a mandar una petición de WebSocket Upgrade a la URL nuestra (SSRF).\n\n![[Pasted image 20260309155402.png]]\n\n>[!CAUTION] Recuerda desactivar la opción de `Update Content-Lenth` y de dejar siempre dos líneas por debajo de la petición.\n\nParece que nos hemos topado con el mismo problema que el el punto 3 de la lección de WebSockets. Sabemos esto porque el \"403 Forbidden\" que vemos no viene del servidor, sino del proxy, Nginx.\n\nPara solucionar esto tenemos que hacer que nuestro servidor al que apunta el SSRF devuelva el código `101 Switching Protocols` para que el proxy piense que de verdad hemos migrado el protocolo hacia WebSockets.\n\nPara conseguir esto vamos a usar el siguiente código de Python:\n\n```python\nimport sys\nfrom http.server import HTTPServer, BaseHTTPRequestHandler\n\nif len(sys.argv)-1 != 1:\n    print(\"\"\"\nUsage: {} \n    \"\"\".format(sys.argv[0]))\n    sys.exit()\n\nclass Redirect(BaseHTTPRequestHandler):\n   def do_GET(self):\n       self.protocol_version = \"HTTP/1.1\"\n       self.send_response(101)\n       self.end_headers()\n\nHTTPServer((\"\", int(sys.argv[1])), Redirect).serve_forever()\n```\n\nLo guardamos y ejecutamos:\n\n![[Pasted image 20260309155821.png]]\n\nVolvemos a probar a mandar la petición.\n\n![[Pasted image 20260309155905.png]]\n\nAhora sí que ha funcionado, vamos a obtener las credenciales del administrador, recordemos el endpoint `/admin-creds`:\n\n![[Pasted image 20260309160020.png]]\n\nSon las mismas credenciales que obtuvimos con el archivo descargado desde `/heapdump`.\n\nVamos ahora a ver la flag del admin.\n\n![[Pasted image 20260309161004.png]]\n\n------------------------------------\n<h2>Segunda Flag</h2>\nPara la segunda flag vamos a empezar entrando al `/access` que nos encontramos en el puerto 80 utilizando las credenciales obtenidas durante la obtención de la primera flag.\n\nUna vez dentro nos encontramos con esto:\n\n![[Pasted image 20260309161426.png]]\n\nAdemás, podemos obtener acceso también al endpoint `/getMessages` gracias a la cookie de sesión verificada obtenida al iniciar sesión.\n\nVamos a probar a mandar un mensaje.\n\n![[Pasted image 20260309161622.png]]\n\nSe actualiza tanto en la pestaña del chat como en la de `/getMessages`.\n\n![[Pasted image 20260309161652.png]]\n\nComo está reflejada, se me asemeja a una técnica de request smuggling, vamos a probar.\n\nAbrimos de nuevo BurpSuite y miramos el mapa.\n\n![[Pasted image 20260309161756.png]]\n\nEsto es lo que nos interesa.\n\nLo mandamos al repetidor y lo vamos a modificar un poco. Primero lo vamos a dejar así:\n\n![[Pasted image 20260309161908.png]]\n\nY ahora vamos a hacer el smuggling de la segunda petición. La dejamos así:\n\n![[Pasted image 20260309162253.png]]\n\nVamos a mandarla hasta que se quede \"colgado\".\n\n![[Pasted image 20260309162322.png]]\n\nHemos conseguido hacer smuggling de una petición pero no ha sido suficiente longitud para leer la flag, si es que está aquí.\n\n![[Pasted image 20260309162505.png]]\n\nVamos a probar con más longitud: `800`.\n\n![[Pasted image 20260309162537.png]]\n\nParece que tampoco ha sido suficiente.\n\n![[Pasted image 20260309162722.png]]\n\nDespués de mucho rato intentándolo y que no saliera me frustré y pensé igual no lo está mandando todo el rato el login, así que me puse a escribir mensajes de Content-Length: 100 y salió este patrón.\n\n![[Pasted image 20260309173259.png]]\n\nDespués de muchísimos intentos conseguimos la flag. Resulta que el número más consistente para obtener respuesta fue `730`. Aunque hay una parte que está encodeada en unicode.\n\n![[Pasted image 20260309183638.png]]\n\nEl último paso sería convertirla por ejemplo con [CyberChef](https://gchq.github.io/CyberChef/).\n\n![[Pasted image 20260309183820.png]]\n\n---------------------------------------\n<h2>Conclusión</h2>\nLa primera parte fue muy divertida de encontrar y explotar. Sin embargo, la segunda flag fue mucho más difícil hasta que me di cuenta de que lo que tenía que hacer era encontrar el número bueno para que no se quedase colgado.\n\nSea como sea hemos conseguido obtener ambas, completando así nuestra primera máquina de dificultad difícil y dejando muy claro que nunca hay que rendirse (no exagero si digo que he estado más de 3h sólo para la segunda flag).\n\n>[!SUCCESS] Hemos conseguido obtener ambas flags y afianzar nuestro conocimiento sobre HTTP Request Smuggling.",
+    "modified": "2026-03-10T01:01:35"
   },
   {
     "title": "1. Introduction",
@@ -9500,8 +10284,8 @@
     "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/0-basic-pentesting/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/10. Basic Pentesting/0. Basic Pentesting.md",
     "breadcrumb": "THM > Maquinas > 1. Easy > 10. Basic Pentesting",
-    "content": "",
-    "modified": "2026-03-07T01:02:25"
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/10. Basic Pentesting/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/10. Basic Pentesting/2. Finding the flags]]",
+    "modified": "2026-03-10T01:01:35"
   },
   {
     "title": "1. Introduction",

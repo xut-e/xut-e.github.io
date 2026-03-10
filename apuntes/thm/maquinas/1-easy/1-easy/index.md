@@ -10,4 +10,8 @@ title: "1. Easy"
 5. [0. Brooklyn Nine Nine](/apuntes/thm/maquinas/1-easy/5-brooklyn-nine-nine/0-brooklyn-nine-nine/)
 6. [0. TakeOver](/apuntes/thm/maquinas/1-easy/6-takeover/0-takeover/)
 7. [0. Overpass](/apuntes/thm/maquinas/1-easy/7-overpass/0-overpass/)
-8. 
+8. [0. Publisher](/apuntes/thm/maquinas/1-easy/8-publisher/0-publisher/)
+9. [0. MD2PDF](/apuntes/thm/maquinas/1-easy/9-md2pdf/0-md2pdf/)
+10. [0. Basic Pentesting](/apuntes/thm/maquinas/1-easy/10-basic-pentesting/0-basic-pentesting/)
+11. [0. RootMe](/apuntes/thm/maquinas/1-easy/11-rootme/0-rootme/)
+12. 

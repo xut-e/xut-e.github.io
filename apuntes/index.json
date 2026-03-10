@@ -2156,6 +2156,10 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-web-fundamentals/"
   },
   {
+    "title": "4. Web Application Red Teaming",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-web-application-red-teaming/"
+  },
+  {
     "title": "3. Web Application Pentesting",
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-web-application-pentesting/"
   },
@@ -2578,6 +2582,394 @@
   {
     "title": "0. How Websites Work",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/4-web-hacking-fundamentals/1-how-websites-work/0-how-websites-work/"
+  },
+  {
+    "title": "4. Bypassing WAF",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-bypassing-waf/"
+  },
+  {
+    "title": "5. Attacking LLMs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/5-attacking-llms/"
+  },
+  {
+    "title": "1. Cryptographic Failures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-cryptographic-failures/"
+  },
+  {
+    "title": "3. Chaining Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/3-chaining-vulnerabilities/"
+  },
+  {
+    "title": "2. Custom Tooling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling/"
+  },
+  {
+    "title": "0. Padelify",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/3-padelify/0-padelify/"
+  },
+  {
+    "title": "0. Farewell",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-farewell/0-farewell/"
+  },
+  {
+    "title": "2. Exploiting Weak Configurations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/2-exploiting-weak-configurations/"
+  },
+  {
+    "title": "3. Signature - Patern Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/3-signature-patern-bypass/"
+  },
+  {
+    "title": "5. Protocol Manipulation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/5-protocol-manipulation/"
+  },
+  {
+    "title": "0. WAF - Exploitation Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/0-waf-exploitation-techniques/"
+  },
+  {
+    "title": "4. Parsing and Normalization Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/4-parsing-and-normalization-bypass/"
+  },
+  {
+    "title": "1. Exploiting Outdated Version 3.3.5 of OWASP CRS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/2-waf-exploitation-techniques/1-exploiting-outdated-version-3-3-5-of-owasp-crs/"
+  },
+  {
+    "title": "4. Signature vs Behavioural Detections",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/4-signature-vs-behavioural-detections/"
+  },
+  {
+    "title": "5. Introduction to Rules",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/5-introduction-to-rules/"
+  },
+  {
+    "title": "6. Limitations of WAFs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/6-limitations-of-wafs/"
+  },
+  {
+    "title": "1. VM - WAF Control",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/1-vm-waf-control/"
+  },
+  {
+    "title": "3. Web Application Firewall",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/3-web-application-firewall/"
+  },
+  {
+    "title": "0. WAF - Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/0-waf-introduction/"
+  },
+  {
+    "title": "2. Firewalls Refresher",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/1-waf-introduction/2-firewalls-refresher/"
+  },
+  {
+    "title": "0. BankGPT",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/5-bankgpt/0-bankgpt/"
+  },
+  {
+    "title": "0. HealthGPT",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/6-healthgpt/0-healthgpt/"
+  },
+  {
+    "title": "5. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/5-challenge/"
+  },
+  {
+    "title": "0. Input Manipulation and Prompt Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/0-input-manipulation-and-prompt-injection/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/1-introduction/"
+  },
+  {
+    "title": "4. Prompt Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/4-prompt-injection/"
+  },
+  {
+    "title": "3. Jailbreaking",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/3-jailbreaking/"
+  },
+  {
+    "title": "2. System Prompt Leakage",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/2-system-prompt-leakage/"
+  },
+  {
+    "title": "3. Model Poisoning - Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/3-model-poisoning-challenge/"
+  },
+  {
+    "title": "4. Mitigation Measures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/4-mitigation-measures/"
+  },
+  {
+    "title": "1. Supply Chain Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/1-supply-chain-attack/"
+  },
+  {
+    "title": "0. Data Integrity and Model Poisoning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/0-data-integrity-and-model-poisoning/"
+  },
+  {
+    "title": "2. Model Poisoning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/3-data-integrity-and-model-poisoning/2-model-poisoning/"
+  },
+  {
+    "title": "0. LLM Output Handling and Privacy Risks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/0-llm-output-handling-and-privacy-risks/"
+  },
+  {
+    "title": "5. Attack Cases",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/5-attack-cases/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/1-introduction/"
+  },
+  {
+    "title": "2. LLM Output Risks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/2-llm-output-risks/"
+  },
+  {
+    "title": "4. Sensitive Information Disclosure - LLM02",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/4-sensitive-information-disclosure-llm02/"
+  },
+  {
+    "title": "3. Improper Output Handling - LLM05",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/3-improper-output-handling-llm05/"
+  },
+  {
+    "title": "0. Juicy",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/4-juicy/0-juicy/"
+  },
+  {
+    "title": "4. Chosen-Plaintext Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/4-chosen-plaintext-attacks/"
+  },
+  {
+    "title": "0. Attacking ECB Oracles",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/0-attacking-ecb-oracles/"
+  },
+  {
+    "title": "1. Symmetric Encyption",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/1-symmetric-encyption/"
+  },
+  {
+    "title": "3. ECB Insecurities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/3-ecb-insecurities/"
+  },
+  {
+    "title": "5. Cipher Mode Best Practices",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/5-cipher-mode-best-practices/"
+  },
+  {
+    "title": "2. Code Books and Cipher Modes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/3-attacking-ecb-oracles/2-code-books-and-cipher-modes/"
+  },
+  {
+    "title": "0. Padding Oracles",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/0-padding-oracles/"
+  },
+  {
+    "title": "4. How the Attack Works",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/4-how-the-attack-works/"
+  },
+  {
+    "title": "5. Automation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/5-automation/"
+  },
+  {
+    "title": "3. CBC Mode - Decryption",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/3-cbc-mode-decryption/"
+  },
+  {
+    "title": "1. Padding Schemes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/1-padding-schemes/"
+  },
+  {
+    "title": "2. Block Cipher Modes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/2-block-cipher-modes/"
+  },
+  {
+    "title": "6. Best Practices",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/4-padding-oracles/6-best-practices/"
+  },
+  {
+    "title": "1. Brute Forcing Keys",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/1-brute-forcing-keys/"
+  },
+  {
+    "title": "2. Breaking Hashes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/2-breaking-hashes/"
+  },
+  {
+    "title": "4. Bit Flipping Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/4-bit-flipping-attacks/"
+  },
+  {
+    "title": "0. Breaking Crypto the Simple Way",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/0-breaking-crypto-the-simple-way/"
+  },
+  {
+    "title": "3. Exposed Keys",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/1-breaking-crypto-the-simple-way/3-exposed-keys/"
+  },
+  {
+    "title": "0. Insecure Randomness",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/0-insecure-randomness/"
+  },
+  {
+    "title": "4. Predictable Seed in PRNGs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/4-predictable-seed-in-prngs/"
+  },
+  {
+    "title": "2. Types of Random Number Generators",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/2-types-of-random-number-generators/"
+  },
+  {
+    "title": "3. Weak or Insufficient Entropy",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/3-weak-or-insufficient-entropy/"
+  },
+  {
+    "title": "1. Few Important Concepts",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/1-few-important-concepts/"
+  },
+  {
+    "title": "5. Mitigation Features",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/5-mitigation-features/"
+  },
+  {
+    "title": "3. Understanding Length Extension Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/3-understanding-length-extension-attacks/"
+  },
+  {
+    "title": "5. Practical - Modifying a Signed Cookie",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/5-practical-modifying-a-signed-cookie/"
+  },
+  {
+    "title": "6. Mitigation Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/6-mitigation-techniques/"
+  },
+  {
+    "title": "0. Length Extension Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/0-length-extension-attacks/"
+  },
+  {
+    "title": "2. Hashing Internals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/2-hashing-internals/"
+  },
+  {
+    "title": "1. Hash Functions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/1-hash-functions/"
+  },
+  {
+    "title": "4. Practical - Attacking Signatures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/2-length-extension-attacks/4-practical-attacking-signatures/"
+  },
+  {
+    "title": "0. Voyage",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/3-voyage/0-voyage/"
+  },
+  {
+    "title": "2. Methodology",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/2-methodology/"
+  },
+  {
+    "title": "4. Alternate Paths",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/4-alternate-paths/"
+  },
+  {
+    "title": "0. Chaining Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/0-chaining-vulnerabilities/"
+  },
+  {
+    "title": "3. Guided Chain",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/3-guided-chain/"
+  },
+  {
+    "title": "1. Chaining Vulnerabilities",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/1-chaining-vulnerabilities/"
+  },
+  {
+    "title": "0. Extract",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/2-extract/0-extract/"
+  },
+  {
+    "title": "0. Sequence",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/4-sequence/0-sequence/"
+  },
+  {
+    "title": "4. Creating a Basic Exploit",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/4-creating-a-basic-exploit/"
+  },
+  {
+    "title": "3. Developing a Vulnerability Scanner",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/3-developing-a-vulnerability-scanner/"
+  },
+  {
+    "title": "0. Custom Tooling Using Python",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/0-custom-tooling-using-python/"
+  },
+  {
+    "title": "5. Task Automation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/5-task-automation/"
+  },
+  {
+    "title": "1. Using a Coding Language for Custom Tooling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/1-using-a-coding-language-for-custom-tooling/"
+  },
+  {
+    "title": "2. Developing a Brute-Forcing Tool",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/2-developing-a-brute-forcing-tool/"
+  },
+  {
+    "title": "0. CAPTCHApocalypse",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/4-captchapocalypse/0-captchapocalypse/"
+  },
+  {
+    "title": "4. Modifying a Burp Extension",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/4-modifying-a-burp-extension/"
+  },
+  {
+    "title": "5. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/5-challenge/"
+  },
+  {
+    "title": "3. Creating a Basic Burp Extension",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/3-creating-a-basic-burp-extension/"
+  },
+  {
+    "title": "2. Using Extensions in Burp",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/2-using-extensions-in-burp/"
+  },
+  {
+    "title": "0. Custom Tooling Using Burp",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/0-custom-tooling-using-burp/"
+  },
+  {
+    "title": "1. Using a Proxy for Custom Tooling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/1-using-a-proxy-for-custom-tooling/"
+  },
+  {
+    "title": "0. Tooling via Browser Automation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/0-tooling-via-browser-automation/"
+  },
+  {
+    "title": "2. Bypassing Common Security Controls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/2-bypassing-common-security-controls/"
+  },
+  {
+    "title": "3. Automating CAPTCHA Bypass",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/3-automating-captcha-bypass/"
+  },
+  {
+    "title": "1. Using Browser Automation for Custom Tooling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/1-using-browser-automation-for-custom-tooling/"
+  },
+  {
+    "title": "4. Vulnerability Scanning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/3-tooling-via-browser-automation/4-vulnerability-scanning/"
   },
   {
     "title": "1. Authentication",
