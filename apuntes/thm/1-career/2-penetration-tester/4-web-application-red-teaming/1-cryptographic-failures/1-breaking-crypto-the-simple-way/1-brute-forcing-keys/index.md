@@ -3,3 +3,171 @@ layout: apunte
 title: "1. Brute Forcing Keys"
 ---
 
+La criptografía recae en la premisa de que las claves usadas en la encriptación son computacionalmente inviables de adivinar. Una clave "fuerte" es una que ofrece un alto nivel de entropía (impredictibilidad) y suficiente longitud para hacer imprácticos los ataques de fuerza bruta. Por ejemplo, una clave de 128 bits tiene 2¹²⁸ combinaciones posibles, lo que llevaría varios cientos de años con el hardware moderno.
+
+------------------------------------------
+<h2>Características de las Claves Fuertes</h2>
+1. **Longitud:** Claves más largas significa incrementar el esfuerzo computacional requerido para bruteforcearlas.
+2. **Entropía:** Las claves deben ser aleatorias, no derivadas de inputs predecibles como timestamps o datos del usuario.
+3. **Unicidad:** Las claves deben ser únicas para evitar ataques de correlación.
+
+Cuando estos principios son violados, las claves se convierten en vulnerables a los ataques matemáticos o de fuerza bruta.
+
+--------------------------------------------
+<h2>Matemática de RSA</h2>
+La encriptación RSA, nombrada así por sus inventores, Rivest, Shamir y Adleman, está basada en la dificultad de factorizar números muy grandes.
+
+Una clave pública consiste en:
+
+- $n = p·q$ : El producto de dos números primos muy grandes (`p` y `q`).
+- $e$ : Un exponente público pequeño (comúnmente `e = 65537`).
+
+Una clave privada está derivada de:
+
+- $ϕ(n) = (p-1) · (q-1)$ : Donde ϕ es la función totiente de Euler (cuenta la cantidad de números enteros positivos menores o iguales a $n$ que son coprimos).
+- $d$ : El inverso modular de ($e$ módulo $ϕ(n)$) que además cumple que $(e·d) · mod(ϕ(n)) = 1$ . Es decir, $d$ es el número que al multiplicarlo por $e$ da como resultado 1 cuando tomas módulo $ϕ(n)$.
+
+La seguridad de RSA depende de la dificultad de factorizar $n$ en sus componentes primos $p$ y $q$. Sin embargo, si $p$ o $q$ se generan pobremente o se comparten entre claves, esta asunción fundamental se rompe.
+
+--------------------------------------------
+<h2>Cómo Incrementa el Tiempo de Factorización Exponencialmente</h2>
+Para demostrar cómo el tiempo para factorizar incrementa con primos más grandes, testearemos la factorización para diferentes valores de $n = p · q$ usando Python.
+
+```python
+import time
+from sympy.ntheory import factorint
+
+# Small n (product of two small primes)
+n_small = 253  # 11 × 23
+start = time.time()
+factorint(n_small)
+print(f"Time to factor {n_small}: {time.time() - start:.6f} seconds")
+
+# Medium n
+n_medium = 988027  # 941 × 1051
+start = time.time()
+factorint(n_medium)
+print(f"Time to factor {n_medium}: {time.time() - start:.6f} seconds")
+
+# Large n
+n_large = 2147483647  # A large prime
+start = time.time()
+factorint(n_large)
+print(f"Time to factor {n_large}: {time.time() - start:.6f} seconds")
+```
+
+El script de arriba tiene un output de :
+
+```text
+Time to factor 253: 0.000019 seconds
+Time to factor 988027: 0.000041 seconds
+Time to factor 2147483647: 0.000094 seconds
+```
+
+A medida que los números primos crecen el tiempo incrementa exponencialemente.
+
+-----------------------------------
+<h2>¿Qué es "P's y Q's"?</h2>
+El [paper](https://www.cl.cam.ac.uk/archive/rja14/Papers/psandqs.pdf) "P's and Q's" por Ross Anderson y Serge Vaudenay explora cómo la randomización pobre en la generación de claves RSA puede llevar a vulnerabilidades severas. Subraya las debilidades de la clave que los atacantes pueden explotar:
+
+**Primos Predecibles:** 
+Si p o q son generados usando un generador de números aleatorios débil (como un sistema de semillas por tiempo), un atacante puede recrear el proceso de generación de claves y derivar los primos.
+
+**Primos Compartidos entre Claves:** 
+Cuando múltiples claves RSA comparten un mismo número primo p, el atacante puede usar el mayor divisor (GCD) para factorizar $n_1 = p · q_1$ y $n_2 = p · q_2$ rompiendo ambas claves.
+
+**Diferencias Pequeñas entre Primos:** 
+Si p y q están demasiado cerca en valor, los algoritmos eficientes como la [factorización de Fermat](https://en.wikipedia.org/wiki/Fermat%27s_factorization_method) pueden rápidamente factorizar n.
+
+**Exploits Matemáticos Usando GCD:**
+El GCD de dos claves públicas que comparten un primo puede ser computado en tiempo polinómico:
+
+$GCD(n_1,n_2) = p$
+
+Estas vulnerabilidades subrayan la importancia crítica de la aleatoriedad y diversidad de la generación de primos para la seguridad RSA.
+
+------------------------------------------
+<h2>Ejercicio</h2>
+Usando `c`, `n` y `e`, que son componentes clave del proceso de encriptación RSA. El algoritmo RSA también utiliza dos números primos grandes, `p` y `q`. ¿Puedes descubrir el texto escondido detrás de él? Sigue las instrucciones para construir un script que descubrirá el secreto.
+
+```text
+Public Key: n = 43941819371451617899582143885098799360907134939870946637129466519309346255747  
+Exponent: e = 65537  
+Ciphertext: c = 9002431156311360251224219512084136121048022631163334079215596223698721862766
+```
+
+Tu tarea es recuperar el texto plano del Ciphertext factorizando `n` y derivando la clave privada. El reto asume que `n` es el producto de dos primos generados pobremente `p` y `q`.
+
+<h3>Factorizar</h2>
+Como `n` es el producto de dos números primos largos, el paso de la factorización primero. Las herramientas de factorización modernas, como [MSIEVE](https://github.com/radii/msieve) o [YAFU](https://github.com/bbuhrow/yafu) pueden usarse para este propósito. Sin embargo, por motivos educacionales, puedes usar Python y la librería `sympy`.
+
+Usa el siguiente código de Python para factorizar `n` en `p` y `q`:
+
+```python
+from sympy import factorint
+from Crypto.Util.number import inverse, long_to_bytes
+
+# Given values
+n = 43941819371451617899582143885098799360907134939870946637129466519309346255747
+
+# Factor n
+factors = factorint(n)
+p, q = factors.keys()
+print("Prime factors:")
+print("p =", p)
+print("q =", q)
+```
+
+El output esperado:
+
+```text
+p = 205237461XXXXXXXXXXXXX  
+q = 21410233XXXXXXXXXXXXXX  
+```
+
+De forma alternativa, puedes usar [FactorDB](https://factordb.com/) y buscar los números primos de `n`. Por ejemplo:
+
+!**Pasted image 20260310140229.png**
+
+<h3>Computar phi (ϕ)</h3>
+Usando los dos primos, calcula ϕ(n), donde:
+
+```python
+phi_n = (p - 1) * (q - 1)
+print("Phi(n) =", phi_n)
+```
+
+<h3>Encontrar la Clave Privada</h2>
+El exponente de la clave privada `d` es el inverso modular del módulo de `e` y `ϕ(n)`:
+
+Usa Python para calcular `d`:
+
+```python
+from sympy import factorint
+from Crypto.Util.number import inverse, long_to_bytes
+
+e = 65537
+d = inverse(e, phi_n)
+print("Private key (d):", d)
+```
+
+<h3>Descifrar el Ciphertext</h3>
+Ahora que tienes `d`, desencripta el ciphertext dado `c`:
+
+Usa Python para computar el plaintext:
+
+```python
+c = 9002431156311360251224219512084136121048022631163334079215596223698721862766
+
+plaintext = pow(c, d, n)
+flag = long_to_bytes(plaintext)
+print(flag.decode())
+print("Decrypted Plaintext:", flag)
+```
+
+--------------------------------------------
+<h2>Conclusiones Clave de Broadcast RSA</h2>
+- Evita exponentes públicos débiles como `e = 3`. Usa en su lugar valores como `e = 65537`.
+- Asegura que los mensajes encriptados están envueltos con random data para prevenir ataques matemáticos.
+- Usa textos planos diferentes para receptores diferentes para evitar condiciones que hagan posibles ataques CRT.
+
