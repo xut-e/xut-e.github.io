@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260312130002.png**
+
+¿Qué información puedes obtener con una sola imagen?

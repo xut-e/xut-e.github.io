@@ -7477,6 +7477,96 @@
                   ]
                 },
                 {
+                  "name": "12. OhSINT",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/12. OhSINT/1. Introduction.md",
+                      "parent": "12. OhSINT"
+                    },
+                    {
+                      "name": "2. Finding the Info.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/12. OhSINT/2. Finding the Info.md",
+                      "parent": "12. OhSINT"
+                    }
+                  ]
+                },
+                {
+                  "name": "13. Simple CTF",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/13. Simple CTF/1. Introduction.md",
+                      "parent": "13. Simple CTF"
+                    },
+                    {
+                      "name": "2. Finding the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/13. Simple CTF/2. Finding the Flags.md",
+                      "parent": "13. Simple CTF"
+                    }
+                  ]
+                },
+                {
+                  "name": "14. Bounty Hacker",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/14. Bounty Hacker/1. Introduction.md",
+                      "parent": "14. Bounty Hacker"
+                    },
+                    {
+                      "name": "2. Finding the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/14. Bounty Hacker/2. Finding the Flags.md",
+                      "parent": "14. Bounty Hacker"
+                    }
+                  ]
+                },
+                {
+                  "name": "15. Agent Sudo",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/15. Agent Sudo/1. Introduction.md",
+                      "parent": "15. Agent Sudo"
+                    },
+                    {
+                      "name": "2. Enumerate.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/15. Agent Sudo/2. Enumerate.md",
+                      "parent": "15. Agent Sudo"
+                    },
+                    {
+                      "name": "3. Hash Cracking and Brute Force.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/15. Agent Sudo/3. Hash Cracking and Brute Force.md",
+                      "parent": "15. Agent Sudo"
+                    },
+                    {
+                      "name": "4. Capture the User Flag.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/15. Agent Sudo/4. Capture the User Flag.md",
+                      "parent": "15. Agent Sudo"
+                    },
+                    {
+                      "name": "5. Privilege Escalation.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/15. Agent Sudo/5. Privilege Escalation.md",
+                      "parent": "15. Agent Sudo"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Pickle Rick",
                   "type": "directory",
                   "contents": [

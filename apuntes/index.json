@@ -5140,6 +5140,18 @@
     "path": "/apuntes/thm/maquinas/1-easy/11-rootme/2-reconnaissance/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/12-ohsint/1-introduction/"
+  },
+  {
+    "title": "0. OhSINT",
+    "path": "/apuntes/thm/maquinas/1-easy/12-ohsint/0-ohsint/"
+  },
+  {
+    "title": "2. Finding the Info",
+    "path": "/apuntes/thm/maquinas/1-easy/12-ohsint/2-finding-the-info/"
+  },
+  {
     "title": "0. Basic Pentesting",
     "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/0-basic-pentesting/"
   },
@@ -5222,6 +5234,54 @@
   {
     "title": "2. Finding the Ingredients",
     "path": "/apuntes/thm/maquinas/1-easy/2-pickle-rick/2-finding-the-ingredients/"
+  },
+  {
+    "title": "2. Finding the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/13-simple-ctf/2-finding-the-flags/"
+  },
+  {
+    "title": "0. Simple CTF",
+    "path": "/apuntes/thm/maquinas/1-easy/13-simple-ctf/0-simple-ctf/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/13-simple-ctf/1-introduction/"
+  },
+  {
+    "title": "0. Agent Sudo",
+    "path": "/apuntes/thm/maquinas/1-easy/15-agent-sudo/0-agent-sudo/"
+  },
+  {
+    "title": "3. Hash Cracking and Brute Force",
+    "path": "/apuntes/thm/maquinas/1-easy/15-agent-sudo/3-hash-cracking-and-brute-force/"
+  },
+  {
+    "title": "4. Capture the User Flag",
+    "path": "/apuntes/thm/maquinas/1-easy/15-agent-sudo/4-capture-the-user-flag/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/15-agent-sudo/1-introduction/"
+  },
+  {
+    "title": "2. Enumerate",
+    "path": "/apuntes/thm/maquinas/1-easy/15-agent-sudo/2-enumerate/"
+  },
+  {
+    "title": "5. Privilege Escalation",
+    "path": "/apuntes/thm/maquinas/1-easy/15-agent-sudo/5-privilege-escalation/"
+  },
+  {
+    "title": "2. Finding the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/14-bounty-hacker/2-finding-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/14-bounty-hacker/1-introduction/"
+  },
+  {
+    "title": "0. Bounty Hacker",
+    "path": "/apuntes/thm/maquinas/1-easy/14-bounty-hacker/0-bounty-hacker/"
   },
   {
     "title": "1. Introduction",

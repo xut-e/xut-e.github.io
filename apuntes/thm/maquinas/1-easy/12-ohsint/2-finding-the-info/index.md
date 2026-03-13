@@ -1,0 +1,68 @@
+---
+layout: apunte
+title: "2. Finding the Info"
+---
+
+Descargamos la [imagen](https://tryhackme-vm-upload.s3.eu-west-1.amazonaws.com/WindowsXP_1551719014755.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA2YR2KKQMWLXEMXW4%2F20260312%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260312T120115Z&X-Amz-Expires=120&X-Amz-Signature=a2555864236b5b55feb1a952e70d4f9080e207c45ca3910d4441efa66932fffa&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject).
+
+Ahora toca responder a las siguientes preguntas:
+
+1. ¿De qué es el avatar del usuario?
+
+Usamos `exiftool` para obtener la metadata de la imagen.
+
+!**Pasted image 20260312130930.png**
+
+Con el nombre de copyright vamos a buscar en internet.
+
+!**Pasted image 20260312131026.png**
+
+El avatar es un gato: `cat`.
+
+2. ¿En qué ciudad está la persona?
+
+En sus publicaciones encontramos un BSSID:
+
+!**Pasted image 20260312131129.png**
+
+Seguimos mirando entre perfiles de redes sociales, encontramos GitHub:
+
+!**Pasted image 20260312131940.png**
+
+Es de Londres: `London`.
+
+3. ¿Cuál es el SSID del WAP al que está conectado?
+
+Para saberlo vamos a ir a [wigle.net](https://wigle.net). Recomiendo registrarse.
+
+!**Pasted image 20260312133111.png**
+
+Al introducir el filtro en la ciudad de Londres se carga un punto. Si vamos más cerca podemos ver el SSID:
+
+!**Pasted image 20260312133320.png**
+
+Es `UnileverWiFi`.
+
+4. ¿Cuál es su email personal?
+
+Su email aparece en su GitHub.
+
+!**Pasted image 20260312133614.png**
+
+Es `OWoodflint@gmail.com`.
+
+5. ¿En qué sitio se encuentra su email personal?
+
+En `GitHub`, lo acabamos de ver.
+
+6. ¿A dónde ha ido de vacaciones?
+
+Según el post de su blog, se ha ido a Nueva York: `New York`.
+
+7. ¿Cuál es la contraseña de la persona?
+
+Si vamos a leer el código fuente de su blog vemos que hay un texto en blanco.
+
+!**Pasted image 20260312133829.png**
+
+La contraseña es `pennYDr0pper.!`.

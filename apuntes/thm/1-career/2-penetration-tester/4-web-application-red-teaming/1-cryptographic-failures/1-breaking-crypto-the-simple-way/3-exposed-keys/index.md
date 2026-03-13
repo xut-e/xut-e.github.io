@@ -16,7 +16,7 @@ Exponer claves criptográficas del lado del cliente es un error tan común como 
 <h2>Escenarios Comunes de Exposición de Claves</h2>
 
 1. **Claves API Hardcodeadas en JavaScript:** Los desarrolladores a veces incrustan claves API en el frontend por comodidad olvidando que cualquiera puede ver ese código usando las herramientas de desarrollador del navegador.
-2. **Claves de Encriptación enFframeworks del Lado del Cliente:** Las claves de encriptación son a veces incluidas en las librerías del frontend para encriptar/desencriptar información localmente. Estas claves pueden ser fácilmente extraídas y usadas maliciosamente.
+2. **Claves de Encriptación en Frameworks del Lado del Cliente:** Las claves de encriptación son a veces incluidas en las librerías del frontend para encriptar/desencriptar información localmente. Estas claves pueden ser fácilmente extraídas y usadas maliciosamente.
 3. **Archivos de Configuración no Securizados:** Los archivos de configuración incrustados en las aplicaciones web pueden contener credenciales sensibles o claves en texto plano.
 
 ---------------------------------------
@@ -126,5 +126,11 @@ if __name__ == "__main__":
 
 Una vez que el script bruteforcee el mensaje correcto, la aplicación devolverá la flag.
 
-IMAGEN
+!**Pasted image 20260312112435.png**
+
+<h2>Conclusiones Clave</h2>
+- **Nunca Hardcodees Claves:** Evita incrustar claves sensibles del lado del cliente o en archivos de configuración disponibles para los usuarios.
+- **Usa Manejo de Claves Seguro:** Guarda claves en entornos seguros, como en el lado del servidor, aplicaciones o servicios dedicados.
+- **Implementa Encriptación del Backend:** Realiza operaciones sensibles, como encriptación y desencriptación del lado del servidor.
+- **Educa a los Desarrolladores:** Muchos desarrolladores comenten este error sin saberlo. La conciencia y las prácticas de desarrollo seguro pueden evitar estas vulnerabilidades.
 

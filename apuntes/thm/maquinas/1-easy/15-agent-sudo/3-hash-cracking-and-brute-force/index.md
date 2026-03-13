@@ -1,0 +1,84 @@
+---
+layout: apunte
+title: "3. Hash Cracking and Brute Force"
+---
+
+Por lo que hemos leído parece que el agente `Chris` tiene una contraseña bastante débil. Vamos con la fuerza bruta.
+
+1. Contraseña FTP.
+
+Vamos a usar hydra suponiendo que el nombre del usuario del agente `C` es `chris`.
+
+!**Pasted image 20260312172014.png**
+
+Encontrada.
+
+2. Contraseña del archivo ZIP.
+
+Entramos al servidor y nos descargamos los archivos que hay.
+
+!**Pasted image 20260312172504.png**
+
+Por lo que leemos en la nota parece que la contraseña del agente `J` se encuentra en la metadata de una foto:
+
+!**Pasted image 20260312172722.png**
+
+Vamos a ver al metadata:
+
+!**Pasted image 20260312172939.png**
+
+Parece que hay información en binario para extraer. ¿Compression: Deflate/Inflate? Puede que sea un archivo ZIP.
+
+Usaremos la herramienta `binwalk` para ver si hay un ZIP escondido.
+
+!**Pasted image 20260312173305.png**
+
+Pues parece que si. Vamos a intentar extraerlo y descomprimirlo. Pare extraerlo simplemente copiamos de la linea desde la que empieza el zip en adelante:
+
+!**Pasted image 20260312174002.png**
+
+>[!NOTE] Es importante tener en cuenta que `binwalk` cuenta con offset 0 mientras que `tail` cuenta con offset 1, por eso le decimos que desde el byte 34563. Además `-c` sirve para contar por bytes en lugar de lineas y con `+` hacemos que cuente desde ese byte hasta el final en lugar de esos bytes desde el final hacia atrás.
+>
+
+Ahora ya tenemos un ZIP que podemos intentar extraer.
+
+!**Pasted image 20260312174335.png**
+
+De esta manera extraemos el hash en formato john.
+
+!**Pasted image 20260312174432.png**
+
+Y así extraemos la contraseña del zip.
+
+3. Contraseña steg.
+
+Vamos a ver qué hay en el ZIP.
+
+!**Pasted image 20260312174809.png**
+
+Usamos `7x` porque nuestro `unzip` no soportaba la versión necesaria para abrir el zip con contraseña.
+
+!**Pasted image 20260312175430.png**
+
+Parece base64.
+
+!**Pasted image 20260312175506.png**
+
+Contraseña steg obtenida.
+
+4. ¿Cuál es el nombre del otro agente?
+
+Recordamos que había dos fotos, por lo que la contraseña de este tiene que ser la de la otra foto.
+
+!**Pasted image 20260312175721.png**
+
+Y si leemos el mensaje:
+
+!**Pasted image 20260312175810.png**
+
+El nombre es `james`.
+
+5. Contraseña SSH.
+
+La contraseña está en el mensaje extraído.
+

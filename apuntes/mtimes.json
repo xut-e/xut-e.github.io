@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "651912c95f84a18f53196e9e09fd4719b1a6af5fbcbc4227fd9b0714b7ce0ab5"
+    "modified": "2026-03-13T01:05:53",
+    "hash": "2957bcfbeca3daa5e0cb860e67f08026de6db6c2a0fb81fd3c6036bbba62c41c"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5124,16 +5124,16 @@
     "hash": "e39d7bd2e5c85f293f1e64dd4b5ce3d62a67b86e0410acc908ebf5fc5c194abd"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/4. Bit Flipping Attacks.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-13T01:05:53",
+    "hash": "96c14576789e93811245ba3b332544823c7d6e26c9b0cae45fbbf99fd205519a"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/0. Breaking Crypto the Simple Way.md": {
     "modified": "2026-03-10T01:01:35",
     "hash": "2a0aa9d840926568ed119ccb95b3344c45ab6adaf6ccb0e65c7df30478f32d9f"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/3. Exposed Keys.md": {
-    "modified": "2026-03-12T00:59:53",
-    "hash": "888252dd302521c6a4edb4741ad007bcdc43456fd0229afab44d20ed26d5ebc7"
+    "modified": "2026-03-13T01:05:53",
+    "hash": "f9af4b69d5553d6f85ca882bb16d5e485fff3b316f5a2d892e8cfb206bf94723"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/0. Insecure Randomness.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5290,5 +5290,65 @@
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/4. Vulnerability Scanning.md": {
     "modified": "2026-03-10T01:01:35",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/1. Easy/12. OhSINT/1. Introduction.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "4eab484356d848e3768d6fee8314e1f8dac534747be27a550d8a96cd0d03fc80"
+  },
+  "THM/Maquinas/1. Easy/12. OhSINT/0. OhSINT.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "4bb1f5f0f6ff6ae2a7e2d9e6013ffe9978b1818b9a1abba3430ecf22355551a3"
+  },
+  "THM/Maquinas/1. Easy/12. OhSINT/2. Finding the Info.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "a2829dd67253f1c1b32205d5e04e47cb9411be0811bf1996fa2d9d80a468424f"
+  },
+  "THM/Maquinas/1. Easy/13. Simple CTF/2. Finding the Flags.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "787cd69cbf32c4920cd89096855d112ed1ebe6bf29c86c48aa45e111d9a51e8e"
+  },
+  "THM/Maquinas/1. Easy/13. Simple CTF/0. Simple CTF.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "c775247d03f3ca83f428bb0bebd33955e6f7c609fae30602a115470f0301ee59"
+  },
+  "THM/Maquinas/1. Easy/13. Simple CTF/1. Introduction.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "cd021674922eb19c465a46d1d8b700bd6c4017380b9b989883c2f2795f181db9"
+  },
+  "THM/Maquinas/1. Easy/15. Agent Sudo/0. Agent Sudo.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "a2b537270f0db38f1f0a4fea512e927ad479f15fdb6ae238c5040a690f4b82ab"
+  },
+  "THM/Maquinas/1. Easy/15. Agent Sudo/3. Hash Cracking and Brute Force.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "55433934417d158961ceb81f8ae410296d056e0f53be605cde151dc4366e19d3"
+  },
+  "THM/Maquinas/1. Easy/15. Agent Sudo/4. Capture the User Flag.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "f5a20a66de1114f218337537fc9e9a65b7adcdd8c5165ee9dc73944e685edf05"
+  },
+  "THM/Maquinas/1. Easy/15. Agent Sudo/1. Introduction.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "8944ce6a7e62a508098398dcd113db727c13e05d4fe1c5b14f1f3a3102b8db6c"
+  },
+  "THM/Maquinas/1. Easy/15. Agent Sudo/2. Enumerate.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "9594a51a98ff3c423a786d23f13b7df3f111c60600c17f2d2e6d9d4b8c2983ec"
+  },
+  "THM/Maquinas/1. Easy/15. Agent Sudo/5. Privilege Escalation.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "f4e5ac24575d73a69210de7179cebfc8e1f11a49a3dd50de99bb951a7c316b45"
+  },
+  "THM/Maquinas/1. Easy/14. Bounty Hacker/2. Finding the Flags.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "268050ae98ed5bfc616502224794af1fe8fbe35a0d6f60abb916a7be5fc7100f"
+  },
+  "THM/Maquinas/1. Easy/14. Bounty Hacker/1. Introduction.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "8aa65487ba8907cbe05fcc60445e185dfc242f0199948d41f05b674d4444a1cb"
+  },
+  "THM/Maquinas/1. Easy/14. Bounty Hacker/0. Bounty Hacker.md": {
+    "modified": "2026-03-13T01:05:53",
+    "hash": "44951165fc3861f753e84074b0162653dc5f5b0f8f2942a10dfa679b2d5ec917"
   }
 }

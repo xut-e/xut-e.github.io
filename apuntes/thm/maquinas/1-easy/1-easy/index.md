@@ -14,4 +14,8 @@ title: "1. Easy"
 9. [0. MD2PDF](/apuntes/thm/maquinas/1-easy/9-md2pdf/0-md2pdf/)
 10. [0. Basic Pentesting](/apuntes/thm/maquinas/1-easy/10-basic-pentesting/0-basic-pentesting/)
 11. [0. RootMe](/apuntes/thm/maquinas/1-easy/11-rootme/0-rootme/)
-12. 
+12. [0. OhSINT](/apuntes/thm/maquinas/1-easy/12-ohsint/0-ohsint/)
+13. [0. Simple CTF](/apuntes/thm/maquinas/1-easy/13-simple-ctf/0-simple-ctf/)
+14. [0. Bounty Hacker](/apuntes/thm/maquinas/1-easy/14-bounty-hacker/0-bounty-hacker/)
+15. [0. Agent Sudo](/apuntes/thm/maquinas/1-easy/15-agent-sudo/0-agent-sudo/)
+16. 
