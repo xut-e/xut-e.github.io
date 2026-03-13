@@ -18,4 +18,7 @@ title: "1. Easy"
 13. [0. Simple CTF](/apuntes/thm/maquinas/1-easy/13-simple-ctf/0-simple-ctf/)
 14. [0. Bounty Hacker](/apuntes/thm/maquinas/1-easy/14-bounty-hacker/0-bounty-hacker/)
 15. [0. Agent Sudo](/apuntes/thm/maquinas/1-easy/15-agent-sudo/0-agent-sudo/)
-16. 
+16. [0. LazyAdmin](/apuntes/thm/maquinas/1-easy/16-lazyadmin/0-lazyadmin/)
+17. [0. Cyborg](/apuntes/thm/maquinas/1-easy/17-cyborg/0-cyborg/)
+18. [0. Skynet](/apuntes/thm/maquinas/1-easy/18-skynet/0-skynet/)
+19. 

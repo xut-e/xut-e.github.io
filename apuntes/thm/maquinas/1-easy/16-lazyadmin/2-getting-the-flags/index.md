@@ -1,0 +1,181 @@
+---
+layout: apunte
+title: "2. Getting the Flags"
+---
+
+<h2>Enumeración Inicial</h2>
+Como siempre, comenzaremos esta fase con un escaneo inicial de puertos.
+
+!**Pasted image 20260313105009.png**
+
+Después seguimos escaneando dichos puertos más en profundidad.
+
+!**Pasted image 20260313105220.png**
+
+Vamos ahora a listar directorios en el servicio web.
+
+!**Pasted image 20260313105419.png**
+
+Vemos que hay un directorio: `/content/`, así que vamos a listarlo también.
+
+!**Pasted image 20260313105457.png**
+
+Aquí parece que hay cosas más interesantes ya. Vamos a listar recursivamente:
+
+!**Pasted image 20260313105718.png**
+
+Más allá de lo que ya habíamos encontrado esto es lo único que sirve para algo:
+
+!**Pasted image 20260313110151.png**
+
+El resto de Directorios y archivos dan código 200 pero todos contienen lo mismo:
+
+!**Pasted image 20260313110231.png**
+
+---------------------------------------
+<h2>Profundización</h2>
+Vamos a entrar en la página web a ver qué hay.
+
+!**Pasted image 20260313111310.png**
+
+Es el panel de Apache2 cuando no hay nada configurado. Vamos a mirar los directorios que encontramos en la fase de reconocimiento.
+
+Primero vamos a `/content/changelog.txt`. Parece que hay varias cosas interesantes.
+
+Con este archivo podemos ver que la versión que corre de `SweetRice CMS` es la 1.5.0.
+
+!**Pasted image 20260313111622.png**
+
+Vamos a seguir mirando, ahora vamos con `/content/htaccess.txt`:
+
+!**Pasted image 20260313112226.png**
+
+Después de esto vamos a `/content/inc/cache/`.
+
+!**Pasted image 20260313112823.png**
+
+No parece nada interesante:
+
+!**Pasted image 20260313112904.png**
+
+Si desde este directorio intentamos path traversal nos lleva al directorio padre.
+
+!**Pasted image 20260313113222.png**
+
+Ahí podemos ver un directorio llamado `mysql_backup/`:
+
+!**Pasted image 20260313113257.png**
+
+Es un documento de creación de la base de datos y tablas del CMS.
+
+!**Pasted image 20260313115741.png**
+
+Parece que hay credenciales en la información (está serializada en PHP, vamos a deserializarla primero de todo).
+
+!**Pasted image 20260313120927.png**
+
+Con un hash ya en nuestras manos vamos a intentar crackearlo.
+
+!**Pasted image 20260313121059.png**
+
+Parece que pudiera ser MD5 (sería lo más común en retos easy CTF).
+
+!**Pasted image 20260313121207.png**
+
+Vamos a probar.
+
+!**Pasted image 20260313121427.png**
+
+¡Crackeado!
+
+Ahora vamos a ver si la versión que encontramos tenía alguna vulnerabilidad.
+
+!**Pasted image 20260313114216.png**
+
+----------------------------------
+<h2>Explotación</h2>
+Vamos a proceder con la explotación. Primero vamos a entrar al exploit de Exploit-DB a ver qué es.
+
+!**Pasted image 20260313114303.png**
+
+Lo del backup ya lo habíamos visto, vamos a ver qué es lo del `.zip`.
+
+No hay nada. Vamos ahora al RCE exploit de [GitHub](https://github.com/weekevy/SweetRice-CMS-1.5.1-RCE-Exploit). Esta persona nos explica como configurarlo y utilizarlo, así que vamos a seguir sus pasos.
+
+1. Primero clonamos el repo e instalamos las dependencias requeridas, listadas en `requirements.txt`.
+   !**Pasted image 20260313114755.png**
+2. Ahora vamos a ponernos en escucha.
+   !**Pasted image 20260313114845.png**
+3. Por último ejecutamos el exploit.
+   !**Pasted image 20260313121622.png**
+
+Y conseguimos una shell.
+
+!**Pasted image 20260313121646.png**
+
+Vamos a intentar estabilizarla.
+
+!**Pasted image 20260313121757.png**
+
+Y por último buscamos el archivo `user.txt` y lo leemos para obtener la flag del usuario.
+
+!**Pasted image 20260313121933.png**
+
+---------------------------------
+<h2>Escalada de Privilegios</h2>
+Vamos a buscar vectores de escalada de privilegios.
+
+Empezamos con la técnica más básica: `sudo -l`.
+
+!**Pasted image 20260313122103.png**
+
+>[!CAUTION] El comando que se puede ejecutar sin contraseña con sudo es `/usr/bin/perl /home/itguy/backup.pl`, no los dos por separado. Es un error que me costó bastante tiempo.
+
+Parece que hay un par de comandos que podemos ejecutar con sudo. Lo de `perl` huele raro, es como si pudiéramos ejecutar `pythoin` con sudo. Vamos a mirar en GTFOBins.
+
+!**Pasted image 20260313122323.png**
+
+Efectivamente ahí está. Vamos a ejecutarlo.
+
+!**Pasted image 20260313122626.png**
+
+Después de intentar unas cuantas formas y que no funciones está claro que algo nos lo está impidiendo. El otro archivo que podemos ejecutar con sudo está en el directorio `/home` de `itguy`, vamos a ver si podemos modificarlo.
+
+!**Pasted image 20260313123743.png**
+
+Parece ser que este archivo ejecuta un script, vamos a ver qué es.
+
+!**Pasted image 20260313124053.png**
+
+Parece que es una reverse shell y encima cualquier usuario puede modificarlo. Vamos a meter nuestra IP.
+
+!**Pasted image 20260313124319.png**
+
+Parece que no hay un editor, vamos a redirigirlo con redirectores.
+
+!**Pasted image 20260313124429.png**
+
+Nos ponemos en escucha por el puerto 5554.
+
+!**Pasted image 20260313124458.png**
+
+Ejecutamos `backup.pl` con sudo.
+
+!**Pasted image 20260313124606.png**
+
+Seguía pasando lo mismo por lo que voy a intentar elevar la shell con python.
+
+!**Pasted image 20260313130340.png**
+
+Vamos a probar ahora.
+
+!**Pasted image 20260313131735.png**
+
+Ahora sí que hemos conseguido la shell de root.
+
+!**Pasted image 20260313131755.png**
+
+Ahora simplemente leemos la flag.
+
+!**Pasted image 20260313131939.png**
+

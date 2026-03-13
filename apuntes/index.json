@@ -5108,6 +5108,18 @@
     "path": "/apuntes/thm/maquinas/2-medium/3-revenge/0-revenge/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/17-cyborg/1-introduction/"
+  },
+  {
+    "title": "0. Cyborg",
+    "path": "/apuntes/thm/maquinas/1-easy/17-cyborg/0-cyborg/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/17-cyborg/2-getting-the-flags/"
+  },
+  {
     "title": "2. Finding the Flags",
     "path": "/apuntes/thm/maquinas/1-easy/7-overpass/2-finding-the-flags/"
   },
@@ -5162,6 +5174,18 @@
   {
     "title": "2. Finding the flags",
     "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/2-finding-the-flags/"
+  },
+  {
+    "title": "0. Skynet",
+    "path": "/apuntes/thm/maquinas/1-easy/18-skynet/0-skynet/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/18-skynet/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/18-skynet/2-getting-the-flags/"
   },
   {
     "title": "2. Finding the Flags",
@@ -5222,6 +5246,18 @@
   {
     "title": "2. Exploit the Machine",
     "path": "/apuntes/thm/maquinas/1-easy/1-vulnerability-capstone/2-exploit-the-machine/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/16-lazyadmin/1-introduction/"
+  },
+  {
+    "title": "0. LazyAdmin",
+    "path": "/apuntes/thm/maquinas/1-easy/16-lazyadmin/0-lazyadmin/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/16-lazyadmin/2-getting-the-flags/"
   },
   {
     "title": "1. Introduction",

@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-03-13T01:05:53",
-    "hash": "2957bcfbeca3daa5e0cb860e67f08026de6db6c2a0fb81fd3c6036bbba62c41c"
+    "modified": "2026-03-13T17:22:03",
+    "hash": "ef044de1336064c3b33591da0f0eb18b4d73f7d95f4a218067ff2411d35649b5"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -3920,8 +3920,8 @@
     "hash": "2951dc075d132ec0192713fb7bd8f2966d552724d1fd8a55047510abf1ab3fc6"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/5. LFI2RCE - Session Files.md": {
-    "modified": "2026-01-27T00:59:05",
-    "hash": "08f54d972388208f8cc22b24fd311e0179974e379f1b3911bebe4bf881ebe16c"
+    "modified": "2026-03-13T17:22:03",
+    "hash": "6398d238aee8e33684025f4f753842fead7a60d80a52aa2dc1ad0816149696de"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Advanced Server-Side Attacks/3. File Inclusion and Path Traversal/6. LFI2RCE - Log Poisoning.md": {
     "modified": "2026-02-15T01:10:57",
@@ -5350,5 +5350,41 @@
   "THM/Maquinas/1. Easy/14. Bounty Hacker/0. Bounty Hacker.md": {
     "modified": "2026-03-13T01:05:53",
     "hash": "44951165fc3861f753e84074b0162653dc5f5b0f8f2942a10dfa679b2d5ec917"
+  },
+  "THM/Maquinas/1. Easy/17. Cyborg/1. Introduction.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "ea341235a4a3a6d26594bca66b86ea40541b38dee02ff1be99654022cc7090fc"
+  },
+  "THM/Maquinas/1. Easy/17. Cyborg/0. Cyborg.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "2e1fe8c1ea1f35f115cd579870658320e7f3cef336db5abb29c9ac1e91a02226"
+  },
+  "THM/Maquinas/1. Easy/17. Cyborg/2. Getting the Flags.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "6c9564b5c2d884e0f996f36edc09541baddf1edd5d451f54e9b8121938823cc6"
+  },
+  "THM/Maquinas/1. Easy/18. Skynet/0. Skynet.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "440e3081c57249a074982bfe2fe5155fc60a8e2cdc7729f4b98e55a97866f9c5"
+  },
+  "THM/Maquinas/1. Easy/18. Skynet/1. Introduction.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "1c56ce1e26d7881ceba824c4340a4a973461b1b392886e8529a0d88e5ab170ff"
+  },
+  "THM/Maquinas/1. Easy/18. Skynet/2. Getting the Flags.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "ed402991d2e0a0d6f6272faa1222610860b6d97ef721ef1e0a0e23638903b636"
+  },
+  "THM/Maquinas/1. Easy/16. LazyAdmin/1. Introduction.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "5ae415a886f0ac0d74f195fc82734453de0885b97a4e64d2e40b48b756bcafc4"
+  },
+  "THM/Maquinas/1. Easy/16. LazyAdmin/0. LazyAdmin.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "bbd2de5bfbd59055aee018c5d720df576d1583355b61f0779bee7f53f86be181"
+  },
+  "THM/Maquinas/1. Easy/16. LazyAdmin/2. Getting the Flags.md": {
+    "modified": "2026-03-13T17:22:03",
+    "hash": "47082c59f835ce182c256fdad0cbc59a36ed8f95ba5f10d7000d533fc1a79569"
   }
 }
