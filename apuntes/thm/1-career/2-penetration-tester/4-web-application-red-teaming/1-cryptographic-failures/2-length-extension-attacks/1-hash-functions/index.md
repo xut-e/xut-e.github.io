@@ -3,3 +3,22 @@ layout: apunte
 title: "1. Hash Functions"
 ---
 
+<h2>Propiedades Clave que Hacen Seguras a las Funciones de Hasheado</h2>
+Para ver por qué los hashes son tan ampliamente usados en la seguridad, analicemos sus características clave.
+
+- **Resistencia pre-imagen:** Si alguien ve el hash, no deberían ser capaces de averiguar cuál era el input original. Esto es crítico para cosas como almacenamiento de contraseñas, donde incluso si un atacante consigue obtener un hash, no pueden revertirlo a la contraseña original.
+- **Segunda resistencia pre-imagen:** Si alguien tiene tanto el mensaje como el hash, debería ser muy difícil encontrar un mensaje diferente que produzca el mismo hash. Esto asegura que nadie puede manipular la información y hacer ver como que todo sigue intacto.
+- **Resistencia a la colisión:** Una función de hasheo está diseñada para que sea inviable computacionalmente encontrar dos inputs diferentes que produzcan el mismo hash. Aunque teóricamente existen colisiones, el objetivo es hacer que sea prácticamente imposible identificar dichas colisiones en un margen de tiempo razonable.
+
+----------------------------------------------
+<h2>¿Dónde se Usan las Funciones de Hasheo?</h2>
+Las funciones de hasheo se usan en más sitios de los que nos damos cuenta:
+
+1. **Comprobaciones de integridad de archivos:** Cuando descargas un archivo, como software o actualizaciones, puede que notes que se te da un hash para verificar la descarga. Comparas el hash del archivo descargado con la del proveedor, si coinciden es que no se ha manipulado la información.
+2. **Almacenamiento de contraseñas:** Cuando creas una contraseña, las páginas web no las almacenan directamente. En su lugar, las hashean y guardan el hash. Cuando intentas loguearte, el sistema hashea tu contraseña y la compara con la contraseña almacenada para ver si coinciden. De esta manera, si la base de datos se ve comprometida, los atacantes no obtienen tu contraseña real.
+3. **Firmas y certificados digitales:** Los hashes aseguran que los documentos o transacciones no hayan sido alterados. Por ejemplo, en los certificados de encriptación SSL de emails, las funciones de hasheo verifican que la información ha permanecido inmutable y confiable.
+
+------------------------------------------
+<h2>Vulnerabilidades en las Funciones de Hasheo</h2>
+Incluso siendo generalmente seguras, no todas las funciones de hasheo se crean igual. Las funciones más antiguas como **MD5** o **SHA-1** han enfrentado vulnerabilidades que las hacen susceptibles de ataque. Dicho ataque es **Length Extension Attack**, el cual permite a un atacante tomar u hash existente u extenderlo añadiéndole un sufijo, prediciendo el hash del mensaje original con información extra añadida. Además esto puede ser hecho sin conocer la clave usada en el hash.
+
