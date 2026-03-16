@@ -7621,6 +7621,24 @@
                   ]
                 },
                 {
+                  "name": "19. Startup",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/19. Startup/1. Introduction.md",
+                      "parent": "19. Startup"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/19. Startup/2. Getting the Flags.md",
+                      "parent": "19. Startup"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Pickle Rick",
                   "type": "directory",
                   "contents": [

@@ -21,4 +21,5 @@ title: "1. Easy"
 16. [0. LazyAdmin](/apuntes/thm/maquinas/1-easy/16-lazyadmin/0-lazyadmin/)
 17. [0. Cyborg](/apuntes/thm/maquinas/1-easy/17-cyborg/0-cyborg/)
 18. [0. Skynet](/apuntes/thm/maquinas/1-easy/18-skynet/0-skynet/)
-19. 
+19. [0. Startup](/apuntes/thm/maquinas/1-easy/19-startup/0-startup/)
+20. 

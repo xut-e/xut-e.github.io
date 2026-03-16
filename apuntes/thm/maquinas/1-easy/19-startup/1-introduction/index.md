@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260315140151.png**
+
+Somos Spice Hut, una nueva startup que acaba de hacerse grande. Ofrecemos una variedad de especias y sandwiches, pero eso no es por lo que estás aquí. Para ser honestos, no estamos seguros si nuestros desarrolladores saben lo que están haciendo y nuestra preocupación por la seguridad crece. Te pedimos que realices un pentest y trastes de conseguir root. ¡Buena suerte!
