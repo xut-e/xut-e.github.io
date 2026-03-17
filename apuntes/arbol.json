@@ -7657,6 +7657,24 @@
                   ]
                 },
                 {
+                  "name": "20. Tomghost",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/20. Tomghost/1. Introduction.md",
+                      "parent": "20. Tomghost"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/20. Tomghost/2. Getting the Flags.md",
+                      "parent": "20. Tomghost"
+                    }
+                  ]
+                },
+                {
                   "name": "3. Lookup",
                   "type": "directory",
                   "contents": [

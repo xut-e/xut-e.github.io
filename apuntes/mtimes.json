@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-03-16T01:15:49",
-    "hash": "ef83bea56e10337cf90abf012df54c012e0c365aa13fe427e1d9e9969e8e3ac9"
+    "modified": "2026-03-17T01:07:37",
+    "hash": "ee86263f36c4bead85462c98a978e9d2e8886ee578ee1dd9d832697059231a2a"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5064,28 +5064,28 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/4. Chosen-Plaintext Attacks.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-17T01:07:37",
+    "hash": "81df7a15301bac94adb0eb3c89a30625477bf7c5e60650805a36148bc1575bd4"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/0. Attacking ECB Oracles.md": {
     "modified": "2026-03-10T01:01:35",
     "hash": "8da42c28f04b022a0f6057627fdb08551c9ec1c4c04460bc435691fe9458b22f"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/1. Symmetric Encyption.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-17T01:07:37",
+    "hash": "e941c0664007c08285877ac2fe2b31971369df0dc7c4fcdefbfecf9edb3f220b"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/3. ECB Insecurities.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-17T01:07:37",
+    "hash": "cfc74e984bf156abbbe6057278215db4a5a6a81913647c1c11734869f2345661"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/5. Cipher Mode Best Practices.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-17T01:07:37",
+    "hash": "01d91bb07743322dab8cdac1faf44676a8a7fb26bb355aeede80a33d97f61a3f"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/2. Code Books and Cipher Modes.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-17T01:07:37",
+    "hash": "4e0ee7437727e842183341fe15ee23f8e34d71a357989ae36f3a82075513bbe2"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/0. Padding Oracles.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5164,12 +5164,12 @@
     "hash": "50d5c4144432b130c139aa282e211cd19217ea347977d65920658330e9050739"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/5. Practical - Modifying a Signed Cookie.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-17T01:07:37",
+    "hash": "1e937effa147743ec136bf5f030ec9a7898cb7a9d8dbf171e01504a29f0f04fa"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/6. Mitigation Techniques.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-17T01:07:37",
+    "hash": "5d32173179640f5696fccb7ce2c94723b04cf82f8ef735124156cd0ea68184c8"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/0. Length Extension Attacks.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5398,5 +5398,17 @@
   "THM/Maquinas/1. Easy/19. Startup/2. Getting the Flags.md": {
     "modified": "2026-03-16T01:15:49",
     "hash": "ab8e14869ee195493f07c851fe65e1b61b1696465f464e9cf6e4ba4c2525dec5"
+  },
+  "THM/Maquinas/1. Easy/20. Tomghost/1. Introduction.md": {
+    "modified": "2026-03-17T01:07:37",
+    "hash": "534d742972012f54af391f175eb9c463e69abf13e90e0947385933eab849ade7"
+  },
+  "THM/Maquinas/1. Easy/20. Tomghost/2. Getting the Flags.md": {
+    "modified": "2026-03-17T01:07:37",
+    "hash": "8f95662672e7ba21cbe610aad7a3255febcfb47c52c9f3615efd133800b179bd"
+  },
+  "THM/Maquinas/1. Easy/20. Tomghost/0. Tomghost.md": {
+    "modified": "2026-03-17T01:07:37",
+    "hash": "72c3f3cbb19d57ef90713d72b8460eeb883f76990784bdc3b58085205ba7ab26"
   }
 }

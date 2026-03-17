@@ -5188,6 +5188,18 @@
     "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/2-finding-the-flags/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/20-tomghost/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/20-tomghost/2-getting-the-flags/"
+  },
+  {
+    "title": "0. Tomghost",
+    "path": "/apuntes/thm/maquinas/1-easy/20-tomghost/0-tomghost/"
+  },
+  {
     "title": "0. Skynet",
     "path": "/apuntes/thm/maquinas/1-easy/18-skynet/0-skynet/"
   },
