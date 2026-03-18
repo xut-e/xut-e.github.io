@@ -5092,28 +5092,28 @@
     "hash": "8b386a932645bed27b15389ba1a5d5642080b18064c119d67c37f290b3f2a34f"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/4. How the Attack Works.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-18T01:11:51",
+    "hash": "4a61c1510cced901a54afdf2edc487428a239a593357419861de60fc725e7e43"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/5. Automation.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-18T01:11:51",
+    "hash": "51ad6c82526a5eb5646cf38e7cc8ec092f7a7ed7d6725a7ec3cef40f78acd52e"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/3. CBC Mode - Decryption.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-18T01:11:51",
+    "hash": "0481243df191cdff41222269d480d089e1873f3cab1f1205cac4d36d493e2e16"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/1. Padding Schemes.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-18T01:11:51",
+    "hash": "a231a94f24b5527c836c48d609ba0a56dbd3adb7565013da5cddd3d24e6eb6e9"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/2. Block Cipher Modes.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-18T01:11:51",
+    "hash": "b28af38b6d48b97e09b094a93574174478ef6d33416d778a66f78d9323088823"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/4. Padding Oracles/6. Best Practices.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-18T01:11:51",
+    "hash": "2b3d6ac17173b869c9a6cba1991737a07ba9b4c2f62c6108f857f478c00f5a15"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Breaking Crypto the Simple Way/1. Brute Forcing Keys.md": {
     "modified": "2026-03-11T01:02:40",
@@ -5152,8 +5152,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/1. Few Important Concepts.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-18T01:11:51",
+    "hash": "eea8e29c1b307e496ce157ce18f144570cb2c19450afcef22f209107ea685cbf"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/5. Mitigation Features.md": {
     "modified": "2026-03-10T01:01:35",

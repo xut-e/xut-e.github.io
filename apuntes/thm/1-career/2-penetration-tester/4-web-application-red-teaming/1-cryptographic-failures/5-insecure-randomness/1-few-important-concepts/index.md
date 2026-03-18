@@ -3,3 +3,24 @@ layout: apunte
 title: "1. Few Important Concepts"
 ---
 
+En esta sección, entenderemos los conceptos fundamentales que rodean a la aleatoriedad y su rol en la seguridad:
+
+------------------------------------
+<h2>Aleatoriedad</h2>
+La aleatoriedad se refiere a la falta de patrón o predictibilidad en la información, haciéndolo un componente esencial en sistemas seguros. En criptografía, la verdadera aleatoriedad asegura que un atacante no puede predecir valores como claves, tokens y nonces. Exploraremos cómo se genera y la distinción entre True Random Number Generators (TRNG) y PseudoRandom Number Generators (PRNG).
+
+-------------------------------------
+<h2>Entropía</h2>
+La entropía representa la cantidad de aleatoriedad o impredictibilidad en un sistema que suele ser usado para acceder a las claves, tokens o valores random de la seguridad criptográfica. Más entropía indica más incertidumbre, lo que es esencial para tener operaciones criptográficas seguras.
+
+------------------------------------
+<h2>Claves Criptográficas</h2>
+Las claves criptográficas son valores secretos usados en algoritmos para encriptar y desencriptar información, asegurando confidencialidad, integridad y autentificación. Son componentes críticos en los métodos de encriptación simétricos y asimétricos y deben ser generados y manejados de forma segura para prevenir accesos no autorizados. La fuerza de una clave criptográfica depende de su longitud y aleatoriedad.
+
+---------------------------------------
+<h2>Tokens de Sesión e Identificadores Únicos</h2>
+Los tokens de sesión y los identificadores únicos se usan para mantener la sesión de los usuarios y rastrear interacciones en las aplicaciones web. Deben ser generados con suficiente aleatoriedad y unicidad para prevenir la predicción de tokens y el secuestro de sesión. La debida gestión y protección de estos tokens es esencial para asegurar autentificación y autorización segura por parte del usuario.
+
+----------------------------------
+<h2>Seeding</h2>
+Seeding se refiere a dar un valor inicial conocido como semilla a una función criptográfica segura para generar una secuencia de números aparentemente aleatorios. Aunque estas funciones producen números que parecen aleatorios, la secuencia es totalmente determinada por la semilla, por lo que una misma semilla siempre obtiene el mismo resultado.
