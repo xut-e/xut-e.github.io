@@ -5652,8 +5652,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/1-cryptographic-failures/5-insecure-randomness/2-types-of-random-number-generators/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/2. Types of Random Number Generators.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 1. Cryptographic Failures > 5. Insecure Randomness",
-    "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "content": "En esta sección exploraremos los diferentes tipos de RNGs, enfatizando sus características y casos de uso.\n\n------------------------------------------\n<h2>True Random Number Generatos (TRNG)</h2>\nLos TRNGs generan números random confiando en los fenómenos físicos impredecibles como rudo termal o desintegración radioactiva. Como estos generadores surgen de eventos naturales, producen valores completamente aleatorios. Los TRNGs son comúnmente usados en operaciones criptográficas sensibles, como generar claves para algoritmos como RSA o ECC. Estas claves son luego usadas en tareas como la encriptación, firmas digitales y creación de certificados, donde la impredictibilidad es crucial para la seguridad. Sin embargo, los TRNGs requieren hardware especializado, que puede ser más lento que otros RNGs, haciéndolos poco viables para aquellas tareas que requieran de velocidad.\n\n![[Pasted image 20260318162521.png]]\n\nComo vemos en la figura superior, el flujo de trabajo básico incluye capturar un valor de semilla de un fenómeno físico impredecible. El valor es ofrecido al hardware, que realiza una transformación no determinista para generar una secuencia puramente aleatoria. EL output de los TRNGs no puede ser ni predicho ni reproducido.\n\n---------------------------------\n<h2>Pseudorandom Number Generator (PRNG)</h2>\nLos PRNGs, al contrario que los TRNGs, generan números aleatorios de forma algorítmica basados en una semilla inicial. Puede parecer aleatorio, pero son deterministas, lo que significa que la misma semilla siempre produce el mismo resultado. Los PRNGs son más rápidos que los TRNGs y se usan en aplicaciones que necesitan grandes cantidades de números random como las simulaciones o el gaming. Sin embargo, debido a su predictibilidad, se convierte en un riesgo si el atacante puede inferir la semilla o su método de generación.\n\nExaminaremos dos tipos primarios de PRNGs, los estadísticos y los criptográficos.\n\n<h3>PRNG Estadístico</h3>\nLos PRNGs estadísticos estás diseñados para producir números que pasan test de aleatoriedad estadística, significando que los números parecen aleatorios y tienen una falta de patrón. Estos generadores son ampliamente usados en aplicaciones que no están relacionadas con la seguridad.\n\n<h3>PRNG Criptográficamente Seguro</h3>\nUn CSPRNG es una forma de PRNG diseñada con propósitos de criptografía, donde la aleatoriedad debe ser impredecible y resistente a un ataque. Al contrario que los PRNGs estadísticos, los CSPRNGs producen outputs inviables computacionalente para revertir.",
+    "modified": "2026-03-19T01:10:47"
   },
   {
     "title": "3. Weak or Insufficient Entropy",
@@ -9948,8 +9948,8 @@
     "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
     "breadcrumb": "THM > Maquinas > 1. Easy",
-    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21.",
-    "modified": "2026-03-17T01:07:37"
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23.",
+    "modified": "2026-03-19T01:10:47"
   },
   {
     "title": "1. Introduction",
@@ -10616,6 +10616,30 @@
     "modified": "2026-03-13T01:05:53"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/22-ignite/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/22. Ignite/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 22. Ignite",
+    "content": "![[Pasted image 20260318184925.png]]\n\nUna nueva startup tiene algunos problemas con su servidor web.",
+    "modified": "2026-03-19T01:10:47"
+  },
+  {
+    "title": "0. Ignite",
+    "path": "/apuntes/thm/maquinas/1-easy/22-ignite/0-ignite/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/22. Ignite/0. Ignite.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 22. Ignite",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/22. Ignite/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/22. Ignite/2. Getting the Flags]]",
+    "modified": "2026-03-19T01:10:47"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/22-ignite/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/22. Ignite/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 22. Ignite",
+    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos escaneando los puertos abiertos de la máquina.\n\n![[Pasted image 20260318185209.png]]\n\nAhora hacemos un escaneo más en profundidad sobre el puerto que hemos encontrado abierto.\n\n![[Pasted image 20260318185315.png]]\n\nVamos ahora a listar directorios en la página web.\n\n![[Pasted image 20260318185435.png]]\n![[Pasted image 20260318185452.png]]\n![[Pasted image 20260318185515.png]]\n![[Pasted image 20260318185648.png]]\n\nEsto es todo lo que hemos encontrado. Vamos a ver cómo se ve la página web.\n\n![[Pasted image 20260318185826.png]]\n\nEs la página de configuración de un CMS llamado Fuel CMS con la versión `1.4`, puede que más adelante nos sirva.\n\nVamos a ver ahora qué hay en los directorios/archivos que hemos encontrado con la enumeración web.\n\n![[Pasted image 20260318185936.png]]\n\nVemos un composer, esto siempre viene bien para saber con qué se está trabajando, podemos ver PHP y también un framework, puede que más tarde desarrollemos sobre esto.\n\n![[Pasted image 20260318190215.png]]\n\nEn el `robots.txt` nos encontramos con `/fuel` disallowed para las máquinas, vamos a ver qué hay en dicha ruta.\n\n![[Pasted image 20260318190312.png]]\n\nUn formulario de inicio de sesión, interesante. Vamos a seguir.\n\n![[Pasted image 20260318190450.png]]\n\nNo es literamente nada.\n\n------------------------------\n<h2>Profundización</h2>\nSabiendo todo lo que sabemos ahora, vamos a ver si existe alguna vulnerabilidad conocida para Fuel CMS 1.4.\n\n![[Pasted image 20260318190610.png]]\n\nParece que sí. Vamos a mirar si hay alguna guía en GitHub.\n\n![[Pasted image 20260318190712.png]]\n\n\n------------------------------\n<h2>Explotación</h2>\nParece que sí. Vamos a usarlo.\n\n![[Pasted image 20260318190903.png]]\n\nAhora descargamos los requerimientos y lo ejecutamos.\n\n![[Pasted image 20260318191108.png]]\n\nParece que funciona, vamos a mandarnos una reverse shell. Después de probar con varios encodings y que no funcionen he decidido guardar en mi máquina una reverse shell sencillita y subir el archivo.\n\n![[Pasted image 20260318192128.png]]\n\nSi vamos a la pestaña en escucha:\n\n![[Pasted image 20260318192153.png]]\n\nSi buscamos la flag la podemos leer.\n\n![[Pasted image 20260318192337.png]]\n\n---------------------------------\n<h2>Escalada de Privilegios</h2>\nPrimero vamos a estabilizar la shell:\n\n![[Pasted image 20260318192523.png]]\n\nAhora vamos a buscar la manera de escalar privilegios. Empezaremos con la técnica más sencilla `sudo -l`.\n\nDespués de un rato y de no funcionar ninguna técnica de las que he probado, me acuerdo de que había un directorio deshabilitado en `robots.txt` que parecía que podía tener información valiosa, por tener un portal de login, así que dirijo mis esfuerzos hacia allí.\n\n![[Pasted image 20260318193532.png]]\n\nVamos a ver qué encontramos. Para investigarlo más tranquilamente lo comparto conmigo mismo con:\n\n```bash\nscp -r fuel/ usuario@IP:/ruta\n```\n\n![[Pasted image 20260318194239.png]]\n\nUna vez lo tengo aquí, vamos a mirar a ver qué hay. A primera vista el directorio `/application/` llama la atención.\n\n![[Pasted image 20260318194442.png]]\n\nDentro de `/application/config` hay varios archivos. Que no haya un `.env` me hace pensar que quizá haya credenciales hardcodeadas en `database.php`.\n\n![[Pasted image 20260318194558.png]]\n\nEfectivamente. Vamos a usarla para entrar a la base de datos.\n\n![[Pasted image 20260318194758.png]]\n\nLe decimos `use fuel_schema` y vamos a ver las tablas.\n\n![[Pasted image 20260318194837.png]]\n\nParece que puede interesarnos `fuel_users`.\n\n![[Pasted image 20260318195746.png]]\n\nEfectivamente encontramos una contraseña. Vamos a dehashearla. Como las herramientas online no funcionan, vamos a mirar qué tipo de hash es:\n\n![[Pasted image 20260318195311.png]]\n\nCon esta información vamos a hashcat y realizamos el ataque:\n\n![[Pasted image 20260318195801.png]]\n\nCon esto ahora ya si podemos comenzar el crackeo del hash.\n\n![[Pasted image 20260318200057.png]]\n\nComo no sabemos cómo se generó el hash tocaría probar entre el 110 y el 120, aunque hemos acertado a la primera.\n\nAhora iniciamos sesión en el CMS.\n\n![[Pasted image 20260318200229.png]]\n\nLLegado a este punto estuve mucho rato intentando conseguir una reverse shell con permisos de administrador, sin darme cuenta que he tenido la contraseña de root desde antes de acceder a la base de datos.\n\n![[Pasted image 20260318200848.png]]\n\nCon la cuenta de root, solo nos queda listar y leer la flag.\n\n![[Pasted image 20260318200932.png]]\n\n---------------------------------------\n<h2>Conclusión</h2>\nUna máquina divertida en la que hemos trabajado:\n\n- Enumeración\n- Búsqueda de vulnerabilidades\n- Ejecución de exploits\n- Análisis de framework\n\nA veces las cosas son más fáciles de lo que parecen. Estuve mucho tiempo teniendo la contraseña de root creyendo que sólo me valía para entrar a la base de datos, sin darme cuenta que literamente era la contraseña de root hahaha.\n\n>[!SUCCESS] Para la próxima tengo que pararme a pensar lo que voy encontrando. Pero bueno, ¡ambas flags obtenidas!",
+    "modified": "2026-03-19T01:10:47"
+  },
+  {
     "title": "0. Agent Sudo",
     "path": "/apuntes/thm/maquinas/1-easy/15-agent-sudo/0-agent-sudo/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/15. Agent Sudo/0. Agent Sudo.md",
@@ -10734,5 +10758,29 @@
     "breadcrumb": "THM > Maquinas > 1. Easy > 9. MD2PDF",
     "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/9. MD2PDF/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/9. MD2PDF/2. Finding the Flags]]",
     "modified": "2026-03-07T01:02:25"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/21-gamingserver/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/21. GamingServer/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 21. GamingServer",
+    "content": "![[Pasted image 20260318165544.png]]\n\nUna máquina boot2root para principiantes. ¿Puedes ganar acceso al servidor de gaming construido por amateurs sin experiencia en el desarrollo web y aprovecharte del sistema de despliegue?",
+    "modified": "2026-03-19T01:10:47"
+  },
+  {
+    "title": "0. GamingServer",
+    "path": "/apuntes/thm/maquinas/1-easy/21-gamingserver/0-gamingserver/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/21. GamingServer/0. GamingServer.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 21. GamingServer",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/21. GamingServer/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/21. GamingServer/2. Getting the Flags]]",
+    "modified": "2026-03-19T01:10:47"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/21-gamingserver/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/21. GamingServer/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 21. GamingServer",
+    "content": "<h2>Reconocimiento Inicial</h2>\nComenzaremos escaneando los puertos abiertos en la máquina.\n\n![[Pasted image 20260318165838.png]]\n\nVamos a escanear dichos puertos más a fondo.\n\n![[Pasted image 20260318165944.png]]\n\nViendo esto, vamos a listar directorios de la página web.\n\n![[Pasted image 20260318170118.png]]\n\nVamos a ver qué hay en los directorios encontrados de la web.\n\n![[Pasted image 20260318170301.png]]\n\nEn la página inicial no parece haber nada muy interesante. Si miramos el código fuente vemos algo que nos llama la atención, parece un mensaje entre dos personas, una de ellas llamada `john`.\n\n![[Pasted image 20260318170402.png]]\n\nMiraremos ahora el resto de los directorios y archivos.\n\n![[Pasted image 20260318170446.png]]\n\nParece que en `/secrets/` había algo interesante, vamos a ver en `/uploads/`.\n\n![[Pasted image 20260318170523.png]]\n\nPuede que sea algo también.\n\n---------------------------\n<h2>Profundización</h2>\nVamos a empezar mirando en donde está la clave, a ver qué tipo de clave es.\n\n![[Pasted image 20260318170718.png]]\n\nEs una clave RSA, puede que la podamos utilizar para iniciar sesión por SSH con el usuario `john`. Vamos ahora a mirar en el resto de archivos.\n\n![[Pasted image 20260318170823.png]]\n\nEste parece un diccionario de posibles contraseñas. Vamos a seguir.\n\nEsto es todo lo interesante de momento, hay un meme y un manifesto hacker, pero sin aparente mayor relevancia.\n\n-------------------------------\n<h2>Explotación</h2>\nVamos primero con la clave, vamos a intentar usarla para acceder a la cuenta de john, que parece ser el que corta el bacalao.\n\n![[Pasted image 20260318171608.png]]\n\nNos piden una passfrase para la clave, vamos a usar john para crackearla:\n\n![[Pasted image 20260318171808.png]]\n\nVamos a entrar ahora.\n\n![[Pasted image 20260318171836.png]]\n\nY así de fácil obtenemos la primera flag.\n\n![[Pasted image 20260318171915.png]]\n\n----------------------------------\n<h2>Escalada de Privilegios</h2>\nVamos a intentar escalar privilegios. Como siempre comenzamos por `sudo -l`.\n\n![[Pasted image 20260318172007.png]]\n\nNo podemos verlo, debemos de buscar otras técnicas. Después de comprobar varias técnicas nos fijamos en un detalle:\n\n![[Pasted image 20260318173104.png]]\n\nPertenecemos al grupo lxd.\n\n![[Pasted image 20260318173238.png]]\n\nVamos a ver qué podemos hacer. En [Exploit-DB](https://www.exploit-db.com/exploits/46978) encontramos un exploit publicado por... S4vitar, ¡qué sorpresa! Seguimos los pasos:\n\n![[Pasted image 20260318173734.png]]\n\nAhora metemos el tar generado en la máquina.\n\n![[Pasted image 20260318173908.png]]\n\nY así de fácil obtenemos privilegios root:\n\n![[Pasted image 20260318174039.png]]\n\nVamos a leer la flag.\n\n![[Pasted image 20260318174230.png]]\n\n-----------------------------------\n<h2>Conclusión</h2>\nUna máquina bastante fácil, en la que lo más complicado era percatarse de que el grupo LXD, en el que estábamos podía ser aprovechado para realizar una escalada de privilegios. Hemos trabajado:\n\n- Enumeración\n- SSH\n- John\n- Escalada de privilegios\n\nAdemás con la grata sorpresa de habernos encontrado con un exploit subido por S4vitar. Personalmente, es una persona especial. No lo conozco, pero fue la razón por la que empecé en ciberseguridad.\n\n>[!SUCCESS] Hemos conseguido las dos flags!!",
+    "modified": "2026-03-19T01:10:47"
   }
 ]

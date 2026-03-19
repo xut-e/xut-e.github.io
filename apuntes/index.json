@@ -5308,6 +5308,18 @@
     "path": "/apuntes/thm/maquinas/1-easy/13-simple-ctf/1-introduction/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/22-ignite/1-introduction/"
+  },
+  {
+    "title": "0. Ignite",
+    "path": "/apuntes/thm/maquinas/1-easy/22-ignite/0-ignite/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/22-ignite/2-getting-the-flags/"
+  },
+  {
     "title": "0. Agent Sudo",
     "path": "/apuntes/thm/maquinas/1-easy/15-agent-sudo/0-agent-sudo/"
   },
@@ -5366,5 +5378,17 @@
   {
     "title": "0. MD2PDF",
     "path": "/apuntes/thm/maquinas/1-easy/9-md2pdf/0-md2pdf/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/21-gamingserver/1-introduction/"
+  },
+  {
+    "title": "0. GamingServer",
+    "path": "/apuntes/thm/maquinas/1-easy/21-gamingserver/0-gamingserver/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/21-gamingserver/2-getting-the-flags/"
   }
 ]

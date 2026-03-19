@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260318184925.png**
+
+Una nueva startup tiene algunos problemas con su servidor web.

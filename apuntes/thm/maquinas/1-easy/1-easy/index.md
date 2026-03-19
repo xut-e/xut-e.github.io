@@ -23,4 +23,6 @@ title: "1. Easy"
 18. [0. Skynet](/apuntes/thm/maquinas/1-easy/18-skynet/0-skynet/)
 19. [0. Startup](/apuntes/thm/maquinas/1-easy/19-startup/0-startup/)
 20. [0. Tomghost](/apuntes/thm/maquinas/1-easy/20-tomghost/0-tomghost/)
-21. 
+21. [0. GamingServer](/apuntes/thm/maquinas/1-easy/21-gamingserver/0-gamingserver/)
+22. [0. Ignite](/apuntes/thm/maquinas/1-easy/22-ignite/0-ignite/)
+23. 
