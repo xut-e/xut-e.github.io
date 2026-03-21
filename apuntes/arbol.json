@@ -7711,6 +7711,84 @@
                   ]
                 },
                 {
+                  "name": "23. Brute It",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/1. Introduction.md",
+                      "parent": "23. Brute It"
+                    },
+                    {
+                      "name": "2. Reconnaissance.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/2. Reconnaissance.md",
+                      "parent": "23. Brute It"
+                    },
+                    {
+                      "name": "3. Getting a Shell.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/3. Getting a Shell.md",
+                      "parent": "23. Brute It"
+                    },
+                    {
+                      "name": "4. Privilege Escalation.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/4. Privilege Escalation.md",
+                      "parent": "23. Brute It"
+                    }
+                  ]
+                },
+                {
+                  "name": "24. Wgel CTF",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/24. Wgel CTF/1. Introduction.md",
+                      "parent": "24. Wgel CTF"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/24. Wgel CTF/2. Getting the Flags.md",
+                      "parent": "24. Wgel CTF"
+                    }
+                  ]
+                },
+                {
+                  "name": "25. Anthem",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/1. Introduction.md",
+                      "parent": "25. Anthem"
+                    },
+                    {
+                      "name": "2. Website Analysis.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/2. Website Analysis.md",
+                      "parent": "25. Anthem"
+                    },
+                    {
+                      "name": "3. Spot the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/3. Spot the Flags.md",
+                      "parent": "25. Anthem"
+                    },
+                    {
+                      "name": "4. Final Stage.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/4. Final Stage.md",
+                      "parent": "25. Anthem"
+                    }
+                  ]
+                },
+                {
                   "name": "3. Lookup",
                   "type": "directory",
                   "contents": [

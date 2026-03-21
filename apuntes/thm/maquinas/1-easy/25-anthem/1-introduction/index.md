@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260320183641.png|315**
+
+Explota una máquina Windows en un reto para principiantes.

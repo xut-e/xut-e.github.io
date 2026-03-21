@@ -5248,6 +5248,26 @@
     "path": "/apuntes/thm/maquinas/1-easy/6-takeover/1-help-us/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/1-introduction/"
+  },
+  {
+    "title": "4. Privilege Escalation",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/4-privilege-escalation/"
+  },
+  {
+    "title": "0. Brute It",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/0-brute-it/"
+  },
+  {
+    "title": "3. Getting a Shell",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/3-getting-a-shell/"
+  },
+  {
+    "title": "2. Reconnaissance",
+    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/2-reconnaissance/"
+  },
+  {
     "title": "0. Res",
     "path": "/apuntes/thm/maquinas/1-easy/4-res/0-res/"
   },
@@ -5354,6 +5374,38 @@
   {
     "title": "0. Bounty Hacker",
     "path": "/apuntes/thm/maquinas/1-easy/14-bounty-hacker/0-bounty-hacker/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/24-wgel-ctf/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/24-wgel-ctf/2-getting-the-flags/"
+  },
+  {
+    "title": "0. Wgel CTF",
+    "path": "/apuntes/thm/maquinas/1-easy/24-wgel-ctf/0-wgel-ctf/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/1-introduction/"
+  },
+  {
+    "title": "2. Website Analysis",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/2-website-analysis/"
+  },
+  {
+    "title": "4. Final Stage",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/4-final-stage/"
+  },
+  {
+    "title": "0. Anthem",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/0-anthem/"
+  },
+  {
+    "title": "3. Spot the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/25-anthem/3-spot-the-flags/"
   },
   {
     "title": "1. Introduction",

@@ -25,4 +25,7 @@ title: "1. Easy"
 20. [0. Tomghost](/apuntes/thm/maquinas/1-easy/20-tomghost/0-tomghost/)
 21. [0. GamingServer](/apuntes/thm/maquinas/1-easy/21-gamingserver/0-gamingserver/)
 22. [0. Ignite](/apuntes/thm/maquinas/1-easy/22-ignite/0-ignite/)
-23. 
+23. [0. Brute It](/apuntes/thm/maquinas/1-easy/23-brute-it/0-brute-it/)
+24. [0. Wgel CTF](/apuntes/thm/maquinas/1-easy/24-wgel-ctf/0-wgel-ctf/)
+25. [0. Anthem](/apuntes/thm/maquinas/1-easy/25-anthem/0-anthem/)
+26. 
