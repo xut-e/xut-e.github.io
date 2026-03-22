@@ -10752,6 +10752,182 @@
     "modified": "2026-03-13T01:05:53"
   },
   {
+    "title": "17. A sounding QR",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/17-a-sounding-qr/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/17. A sounding QR.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan un QR, si extraemos el contenido nos sale un link:\n\n![[Pasted image 20260321200255.png]]\n\nSi vamos al enlace y escuchamos el audio nos dice la flag.",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "12. Read it",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/12-read-it/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/12. Read it.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Buscamos con google dorks:\n\n`site:'reddit.com' & intext:\"THM\"`\n\n![[Pasted image 20260321194509.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "0. CTF collection Vol. 1",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/0-ctf-collection-vol-1/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/0. CTF collection Vol. 1.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "16. Darkness",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/16-darkness/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/16. Darkness.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan una imagen en negro y de pista nos dicen que usemos `stegsolve`.\n\n![[Pasted image 20260321195950.png]]\n\nSi abrimos el archivo y buscamos con las flechas:\n\n![[Pasted image 20260321200053.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "18. Dig up the past",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/18-dig-up-the-past/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/18. Dig up the past.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dice algo del pasado, es claramente para usar `Wayback Machine`. Si ponemos en la página web el sitio web objetivo con la fecha objetivo:\n\n![[Pasted image 20260321200612.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "4. Mon, are we going to be okay?",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/4-mon-are-we-going-to-be-okay/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/4. Mon, are we going to be okay?.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan una imagen y nos dicen que hay algo \"hidden\" (escondido). Vamos a usar `steghide`.\n\n![[Pasted image 20260321192204.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "5. Erm... Magick",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/5-erm-magick/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/5. Erm... Magick.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan un texto así:\n\n![[Pasted image 20260321192247.png]]\n\nSi lo subrayamos:\n\n![[Pasted image 20260321192313.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "20. Small bases",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/20-small-bases/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/20. Small bases.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos da la string:\n\n`581695969015253365094191591547859387620042736036246486373595515576333693`\n\nY nos dice que hay que decodearla más de una vez: `dec -> hex -> ascii`.\n\nPrimero de decimal a hexadecimal.\n\n![[Pasted image 20260321201335.png]]\n\nY luego a ascii.\n\n![[Pasted image 20260321201501.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "15. Binary walk",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/15-binary-walk/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/15. Binary walk.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan una imagen y el título nos da la pista, vamos a usar `binwalk`.\n\n![[Pasted image 20260321195709.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "7. Reverse it or read it?",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/7-reverse-it-or-read-it/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/7. Reverse it or read it?.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan un archivo binario. Usaremos `strings` y `grep` para filtrar.\n\n![[Pasted image 20260321192749.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "21. Read the packet",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/21-read-the-packet/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/21. Read the packet.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos descargamos el archivo `pcapng` y lo abrimos con Wireshark.\n\n![[Pasted image 20260321201700.png]]\n\nSi escribimos `http` en el filtro podemos ver una petición GET a una flag. Ahora seguimos el flujo HTTP:\n\n![[Pasted image 20260321201752.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "14. An exclusive!",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/14-an-exclusive/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/14. An exclusive!.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan las strings:\n\n`S1: 44585d6b2368737c65252166234f20626d`\n\nY\n\n`S2: 1010101010101010101010101010101010`\n\nTiene toda la pinta de que tenemos que hacer XOR.\n\n![[Pasted image 20260321195450.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "13. Spin my head",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/13-spin-my-head/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/13. Spin my head.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan la string:\n\n`++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>++++++++++++++.------------.+++++.>+++++++++++++++++++++++.<<++++++++++++++++++.>>-------------------.---------.++++++++++++++.++++++++++++.<++++++++++++++++++.+++++++++.<+++.+.>----.>++++.`\n\nEsto es una string en un encoding llamado brainfuck.\n\n![[Pasted image 20260321194902.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "6. QRrrrr",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/6-qrrrrr/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/6. QRrrrr.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan un QR. Vamos a leerlo con la herramienta `zbarimg`.\n\n![[Pasted image 20260321192557.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "9. Left or right",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/9-left-or-right/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/9. Left or right.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan la string:\n\n`MAF{atbe_max_vtxltk}`\n\nY nos dicen algo de ROT13. Vamos a CyberChef de nuevo.\n\n![[Pasted image 20260321193204.png]]\n\nAplicamos rotaciones hasta que la primera letra sea una T.",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "11. Can you fix it?",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/11-can-you-fix-it/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/11. Can you fix it?.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan un archivo y nos piden arreglarlo, seguramente tenga que ver con los magic numbers.\n\n![[Pasted image 20260321193604.png]]\n\nDebería salir que es un archivo png. Vamos a buscar los magic numbers de un png y a editarlos con `hexeditor`.\n\n![[Pasted image 20260321193728.png]]\n\nAhora editamos.\n\nEsto:\n\n![[Pasted image 20260321193809.png]]\n\nLo transformamos en:\n\n![[Pasted image 20260321193848.png]]\n\nLa abrimos y la obtenemos:\n\n![[Pasted image 20260321193941.png|353]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "10. Make a comment",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/10-make-a-comment/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/10. Make a comment.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dicen que no hay ni archivo descargable ni texto encodeado. Vamos a mirar el HTML.\n\n![[Pasted image 20260321193431.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "1. Author note",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/1-author-note/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/1. Author note.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "![[Pasted image 20260321191504.png|283]]\n\nAgudiza tus habilidades de CTF con la colección. El primer volumen está diseñado para principiantes.\n\n\nOtra sala de Captura la Bandera (CTF) creada por mí. El objetivo principal es poner a prueba tus habilidades. El volumen 1 consta de 20 tareas y todos los desafíos son extremadamente fáciles. ¡Mantén la calma y captura la bandera! :)\n\nNota: Todas las banderas de los desafíos tienen el formato THM{bandera}, a menos que se indique lo contrario.",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "8. Another decoding stuff",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/8-another-decoding-stuff/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/8. Another decoding stuff.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan otra string:\n\n`3agrSy1CewF9v8ukcSkPSYm3oKUoByUpKG4L`\n\nEsta no es reconocible para mi a simple vista, por lo que voy a CyberChef y le doy a `Magic`:\n\n![[Pasted image 20260321192928.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "2. What does the base said?",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/2-what-does-the-base-said/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/2. What does the base said?.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan la siguiente string y nos piden decodearla.\n\n`VEhNe2p1NTdfZDNjMGQzXzdoM19iNDUzfQ==`\n\nEs claramente base64.\n\n![[Pasted image 20260321191725.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "3. Meta meta",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/3-meta-meta/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/3. Meta meta.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan una imagen y la pista es:\n\nMeta! meta! meta! meta........................................\n\nUsaremos `exiftool`:\n\n![[Pasted image 20260321191914.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
+    "title": "19. Uncrackable!",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/19-uncrackable/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/19. Uncrackable!.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos da la string:\n\n`MYKAHODTQ{RVG_YVGGK_FAL_WXF}`\n\nY nos dice que es vigenere cipher.\n\n![[Pasted image 20260321200754.png]]",
+    "modified": "2026-03-22T01:10:36"
+  },
+  {
     "title": "1. Introduction",
     "path": "/apuntes/thm/maquinas/1-easy/24-wgel-ctf/1-introduction/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/24. Wgel CTF/1. Introduction.md",

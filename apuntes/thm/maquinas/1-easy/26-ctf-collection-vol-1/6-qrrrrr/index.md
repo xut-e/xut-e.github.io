@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "6. QRrrrr"
+---
+
+Nos dan un QR. Vamos a leerlo con la herramienta `zbarimg`.
+
+!**Pasted image 20260321192557.png**

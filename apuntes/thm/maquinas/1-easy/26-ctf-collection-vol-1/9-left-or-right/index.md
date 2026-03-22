@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "9. Left or right"
+---
+
+Nos dan la string:
+
+`MAF{atbe_max_vtxltk}`
+
+Y nos dicen algo de ROT13. Vamos a CyberChef de nuevo.
+
+!**Pasted image 20260321193204.png**
+
+Aplicamos rotaciones hasta que la primera letra sea una T.

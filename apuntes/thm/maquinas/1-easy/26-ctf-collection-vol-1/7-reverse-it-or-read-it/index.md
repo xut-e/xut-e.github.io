@@ -1,0 +1,9 @@
+---
+layout: apunte
+title: "7. Reverse it or read it?"
+---
+
+Nos dan un archivo binario. Usaremos `strings` y `grep` para filtrar.
+
+!**Pasted image 20260321192749.png**
+

@@ -1,42 +1,42 @@
 [
   {
-    "title": "1. Easy",
-    "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy",
-    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26.",
-    "modified": "2026-03-21T01:02:59"
+    "title": "17. A sounding QR",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/17-a-sounding-qr/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/17. A sounding QR.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan un QR, si extraemos el contenido nos sale un link:\n\n![[Pasted image 20260321200255.png]]\n\nSi vamos al enlace y escuchamos el audio nos dice la flag.",
+    "modified": "2026-03-22T01:10:36"
   },
   {
-    "title": "0. RootMe",
-    "path": "/apuntes/thm/maquinas/1-easy/11-rootme/0-rootme/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/0. RootMe.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 11. RootMe",
-    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/2. Reconnaissance]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/3. Getting a Shell]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/11. RootMe/4. Privilege Escalation]]",
-    "modified": "2026-03-21T01:02:59"
+    "title": "12. Read it",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/12-read-it/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/12. Read it.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Buscamos con google dorks:\n\n`site:'reddit.com' & intext:\"THM\"`\n\n![[Pasted image 20260321194509.png]]",
+    "modified": "2026-03-22T01:10:36"
   },
   {
-    "title": "1. Introduction",
-    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/1-introduction/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/1. Introduction.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 23. Brute It",
-    "content": "![[Pasted image 20260320151416.png]]\n\nAprende a hacer fuerza bruta, crackear hashes y escalar privilegios.",
-    "modified": "2026-03-21T01:02:59"
+    "title": "0. CTF collection Vol. 1",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/0-ctf-collection-vol-1/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/0. CTF collection Vol. 1.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "",
+    "modified": "2026-03-22T01:10:36"
   },
   {
-    "title": "4. Privilege Escalation",
-    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/4-privilege-escalation/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/4. Privilege Escalation.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 23. Brute It",
-    "content": "Nos piden escalar los privilegios.\n\n1. ¿Cuál es la contraseña de `root`?\n\nPara esto primero miramos el grupo en el que estamos y nos damos cuenta de que estamos en el grupo sudo. Vamos a ver qué comandos podemos utilizar con `sudo -l`.\n\n![[Pasted image 20260320163045.png]]\n\nVamos a mirar en GTFOBins a ver si se puede hacer algo con esto.\n\n![[Pasted image 20260320163150.png]]\n\nPodemos leer archivos como sudo. Sabemos que las contraseñas (o más bien los hashes) se almacenan en el archivo `/etc/shadow`, por lo que vamos a buscar allí.\n\n![[Pasted image 20260320163252.png]]\n\nHemos encontrado el hash de la contraseña sudo. Vamos a crackearlo.\n\n![[Pasted image 20260320163646.png]]\n\nY así de fácil obtenemos la contraseña.\n\n2. ¿Cuál es `root.txt`?\n\nNos metemos con la contraseña obtenida y leemos el archivo correspondiente.\n\n![[Pasted image 20260320163814.png]]",
-    "modified": "2026-03-21T01:02:59"
+    "title": "16. Darkness",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/16-darkness/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/16. Darkness.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dan una imagen en negro y de pista nos dicen que usemos `stegsolve`.\n\n![[Pasted image 20260321195950.png]]\n\nSi abrimos el archivo y buscamos con las flechas:\n\n![[Pasted image 20260321200053.png]]",
+    "modified": "2026-03-22T01:10:36"
   },
   {
-    "title": "0. Brute It",
-    "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/0-brute-it/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/0. Brute It.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 23. Brute It",
-    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/2. Reconnaissance]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/3. Getting a Shell]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/23. Brute It/4. Privilege Escalation]]",
-    "modified": "2026-03-21T01:02:59"
+    "title": "18. Dig up the past",
+    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/18-dig-up-the-past/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/18. Dig up the past.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
+    "content": "Nos dice algo del pasado, es claramente para usar `Wayback Machine`. Si ponemos en la página web el sitio web objetivo con la fecha objetivo:\n\n![[Pasted image 20260321200612.png]]",
+    "modified": "2026-03-22T01:10:36"
   }
 ]

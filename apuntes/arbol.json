@@ -7789,6 +7789,138 @@
                   ]
                 },
                 {
+                  "name": "26. CTF collection Vol. 1",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Author note.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/1. Author note.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "10. Make a comment.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/10. Make a comment.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "11. Can you fix it?.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/11. Can you fix it?.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "12. Read it.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/12. Read it.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "13. Spin my head.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/13. Spin my head.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "14. An exclusive!.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/14. An exclusive!.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "15. Binary walk.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/15. Binary walk.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "16. Darkness.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/16. Darkness.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "17. A sounding QR.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/17. A sounding QR.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "18. Dig up the past.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/18. Dig up the past.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "19. Uncrackable!.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/19. Uncrackable!.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "2. What does the base said?.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/2. What does the base said?.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "20. Small bases.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/20. Small bases.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "21. Read the packet.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/21. Read the packet.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "3. Meta meta.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/3. Meta meta.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "4. Mon, are we going to be okay?.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/4. Mon, are we going to be okay?.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "5. Erm... Magick.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/5. Erm... Magick.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "6. QRrrrr.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/6. QRrrrr.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "7. Reverse it or read it?.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/7. Reverse it or read it?.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "8. Another decoding stuff.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/8. Another decoding stuff.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    },
+                    {
+                      "name": "9. Left or right.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/9. Left or right.md",
+                      "parent": "26. CTF collection Vol. 1"
+                    }
+                  ]
+                },
+                {
                   "name": "3. Lookup",
                   "type": "directory",
                   "contents": [

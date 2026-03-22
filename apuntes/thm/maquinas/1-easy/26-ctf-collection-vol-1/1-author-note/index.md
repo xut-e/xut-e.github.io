@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "1. Author note"
+---
+
+!**Pasted image 20260321191504.png|283**
+
+Agudiza tus habilidades de CTF con la colección. El primer volumen está diseñado para principiantes.
+
+
+Otra sala de Captura la Bandera (CTF) creada por mí. El objetivo principal es poner a prueba tus habilidades. El volumen 1 consta de 20 tareas y todos los desafíos son extremadamente fáciles. ¡Mantén la calma y captura la bandera! :)
+
+Nota: Todas las banderas de los desafíos tienen el formato THM{bandera}, a menos que se indique lo contrario.
+

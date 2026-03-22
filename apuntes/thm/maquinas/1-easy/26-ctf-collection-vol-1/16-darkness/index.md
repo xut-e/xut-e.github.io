@@ -1,0 +1,13 @@
+---
+layout: apunte
+title: "16. Darkness"
+---
+
+Nos dan una imagen en negro y de pista nos dicen que usemos `stegsolve`.
+
+!**Pasted image 20260321195950.png**
+
+Si abrimos el archivo y buscamos con las flechas:
+
+!**Pasted image 20260321200053.png**
+

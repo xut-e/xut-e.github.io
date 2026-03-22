@@ -1,0 +1,12 @@
+---
+layout: apunte
+title: "8. Another decoding stuff"
+---
+
+Nos dan otra string:
+
+`3agrSy1CewF9v8ukcSkPSYm3oKUoByUpKG4L`
+
+Esta no es reconocible para mi a simple vista, por lo que voy a CyberChef y le doy a `Magic`:
+
+!**Pasted image 20260321192928.png**
