@@ -7921,6 +7921,42 @@
                   ]
                 },
                 {
+                  "name": "27. Chill Hack",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/27. Chill Hack/1. Introduction.md",
+                      "parent": "27. Chill Hack"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/27. Chill Hack/2. Getting the Flags.md",
+                      "parent": "27. Chill Hack"
+                    }
+                  ]
+                },
+                {
+                  "name": "28. Year of the Rabbit",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/28. Year of the Rabbit/1. Introduction.md",
+                      "parent": "28. Year of the Rabbit"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/28. Year of the Rabbit/2. Getting the Flags.md",
+                      "parent": "28. Year of the Rabbit"
+                    }
+                  ]
+                },
+                {
                   "name": "3. Lookup",
                   "type": "directory",
                   "contents": [

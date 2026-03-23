@@ -1,42 +1,42 @@
 [
   {
-    "title": "17. A sounding QR",
-    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/17-a-sounding-qr/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/17. A sounding QR.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
-    "content": "Nos dan un QR, si extraemos el contenido nos sale un link:\n\n![[Pasted image 20260321200255.png]]\n\nSi vamos al enlace y escuchamos el audio nos dice la flag.",
-    "modified": "2026-03-22T01:10:36"
+    "title": "3. Developing a Vulnerability Scanner",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/1-custom-tooling-using-python/3-developing-a-vulnerability-scanner/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/3. Developing a Vulnerability Scanner.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 2. Custom Tooling > 1. Custom Tooling Using Python",
+    "content": "Ahora que hemos explorado cómo Python puede automatizar los ataques de fuerza bruta, vamos a movernos hacia aspectos más importantes del testeo de seguridad, que es el escaneo de vulnerabilidades. Las aplicaciones web contienen varias debilidades que pueden ser explotadas para ganar acceso no autorizado, extraer información sensible, o incluso ganar ejecución remota de comandos. En esta tarea crearemos un escáner web que intentará una vulnerabilidad del lado del servidor, SQLi y una vulnerabilidad del lado del cliente, XSS.\n\n-------------------------------------\n<h2>Comandos Esenciales</h2>\nAntes de empezar a programar, vamos a cubrir algunas librerías y comandos de Python que usaremos:\n\n- **Regular expressions (re):** La librería `re` se usa en Python para reconocimiento de patrones en respuestas. Podemos usar regex para identificar contenido en la respuesta contra un conjunto de mensajes de error.\n- **Threading:** Correr escaneos secuencialmente es lento, para solucionar esto usaremos multi-threading para mandar múltiples peticiones simultáneamente, haciendo nuestro escáner más rápido y eficiente.\n\n------------------------------------------\n<h2>Practical</h2>\nAhora, escribiremos código para preparar nuestro escáner de vulnerabilidades, pero primero visita `http://python.thm/labs/lab2/greetings.php?id=2`, que tiene un mensaje de bienvenida basado en el ID del usuario:\n\n![[Pasted image 20260322235622.png|487]]\n\nComo ya hemos hablado, nos centraremos en SQLi y XSS.",
+    "modified": "2026-03-23T01:12:02"
   },
   {
-    "title": "12. Read it",
-    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/12-read-it/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/12. Read it.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
-    "content": "Buscamos con google dorks:\n\n`site:'reddit.com' & intext:\"THM\"`\n\n![[Pasted image 20260321194509.png]]",
-    "modified": "2026-03-22T01:10:36"
+    "title": "1. Easy",
+    "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy",
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26. [[0. CTF collection Vol. 1]]\n27. [[0. Chill Hack]]\n28. [[0. Year of the Rabbit]]\n29.",
+    "modified": "2026-03-23T01:12:02"
   },
   {
-    "title": "0. CTF collection Vol. 1",
-    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/0-ctf-collection-vol-1/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/0. CTF collection Vol. 1.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
-    "content": "",
-    "modified": "2026-03-22T01:10:36"
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/28-year-of-the-rabbit/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/28. Year of the Rabbit/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 28. Year of the Rabbit",
+    "content": "![[Pasted image 20260322203645.png]]\n\nHora de adentrarse en la madriguera...\n\n![[Pasted image 20260322203700.png]]",
+    "modified": "2026-03-23T01:12:02"
   },
   {
-    "title": "16. Darkness",
-    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/16-darkness/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/16. Darkness.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
-    "content": "Nos dan una imagen en negro y de pista nos dicen que usemos `stegsolve`.\n\n![[Pasted image 20260321195950.png]]\n\nSi abrimos el archivo y buscamos con las flechas:\n\n![[Pasted image 20260321200053.png]]",
-    "modified": "2026-03-22T01:10:36"
+    "title": "0. Year of the Rabbit",
+    "path": "/apuntes/thm/maquinas/1-easy/28-year-of-the-rabbit/0-year-of-the-rabbit/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/28. Year of the Rabbit/0. Year of the Rabbit.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 28. Year of the Rabbit",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/28. Year of the Rabbit/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/28. Year of the Rabbit/2. Getting the Flags]]",
+    "modified": "2026-03-23T01:12:02"
   },
   {
-    "title": "18. Dig up the past",
-    "path": "/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/18-dig-up-the-past/",
-    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/26. CTF collection Vol. 1/18. Dig up the past.md",
-    "breadcrumb": "THM > Maquinas > 1. Easy > 26. CTF collection Vol. 1",
-    "content": "Nos dice algo del pasado, es claramente para usar `Wayback Machine`. Si ponemos en la página web el sitio web objetivo con la fecha objetivo:\n\n![[Pasted image 20260321200612.png]]",
-    "modified": "2026-03-22T01:10:36"
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/28-year-of-the-rabbit/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/28. Year of the Rabbit/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 28. Year of the Rabbit",
+    "content": "<h2>Reconocimiento Inicial</h2>\nEmpezaremos escaneando los puertos abiertos de la máquina.\n\n![[Pasted image 20260322204026.png|522]]\n\nEsto para puertos UDP.\n\n![[Pasted image 20260322204223.png]]\n\nActo seguido vamos a hacer un análisis más en profundidad de dichos puertos.\n\n![[Pasted image 20260322204137.png]]\n\nY ahora para el puerto UDP.\n\n![[Pasted image 20260322204454.png]]\n\nParece que este puerto sirve un DNS personalizado.\n\nVamos ahora a escanear directorios de la web.\n\n![[Pasted image 20260322204514.png]]\n\nVamos a ver qué hay en la web.\n\n![[Pasted image 20260322204624.png]]\n\nAquí vemos la página de configuración de Apache. Vamos a ver si hay algo en el directorio que hemos encontrado.\n\n![[Pasted image 20260322204659.png]]\n\nUn vídeo llamado `RickRolled.mp4` me da \"miedo\" abrirlo, no quiero ser rickrolleado xD.\n\n--------------------------\n<h2>Profundización</h2>\nVamos a ver qué contienen los archivos que nos hemos encontrado.\n\n![[Pasted image 20260322204859.png]]\n\nNOOOOOO! Fui rickrolleado :'( HAHAHAH\n\nVamos a ver ahora el otro documento.\n\n![[Pasted image 20260322204948.png]]\n\nVaya vaya parece que hemos encontrado oro.\n\nVamos a mirar qué es.\n\n![[Pasted image 20260322205037.png]]\n\nSi no lo desactivamos nos lleva a otro vídeo de RickRoll, por lo que vamos a hacerle caso.\n\n![[Pasted image 20260322205458.png]]\n\nVamos a escuchar el vídeo.\n\nEn el vídeo lo único que se dice es que estamos perdiendo el tiempo porque ahí no es. Así que vamos a seguir buscando.\n\nMirando en BurpSuite el mapeo del sitio encontramos un directorio escondido.\n\n![[Pasted image 20260322212254.png]]\n\nVamos a ver qué hay en él.\n\n![[Pasted image 20260322212339.png]]\n\nUna foto, vamos a ver qué tiene.\n\n![[Pasted image 20260322212532.png]]\n\nParece que había un zip escondido. Vamos a ver los contenidos.\n\nHay dos archivos uno llamado `36` y otro `36.zlib`. Si aplicamos `strings` al zlib nos encontramos con lo siguiente:\n\n![[Pasted image 20260322212939.png]]\n\n---------------------------\n<h2>Explotación</h2>\nVamos ahora a copiar estas contraseñas y a aplicar fuerza bruta contra FTP con el usuario encontrado.\n\n![[Pasted image 20260322213138.png]]\n\nNos conectamos por FTP y miramos qué hay y lo descargamos.\n\n![[Pasted image 20260322213348.png]]\n\nMiramos las credenciales.\n\n![[Pasted image 20260322213440.png]]\n\nEstán codificadas en `brainfuck`. Vamos a decodificarlas.\n\n![[Pasted image 20260322213532.png]]\n\nCon estas credenciales entramos por SSH.\n\n![[Pasted image 20260322213621.png]]\n\nDebemos de encontrar dicho escondite secreto.\n\n![[Pasted image 20260322213942.png]]\n\nHemos encontrado la flag de user pero no podemos leerla. Parece que tendremos que hacer un movimiento lateral hacia el usuario `gwendoline`.\n\n![[Pasted image 20260322214451.png]]\n\nHemos encontrado las credenciales de `gwendoline`. Vamos a cambiar de usuario, aunque no sin antes ver el `id` de `eli`.\n\n![[Pasted image 20260322214535.png]]\n\nNos cambiamos de usuario.\n\n![[Pasted image 20260322214650.png]]\n\nY así de fácil encontramos la flag.\n\n![[Pasted image 20260322214639.png]]\n\n----------------------------\n<h2>Escalada de Privilegios</h2>\nAhora toca escalar privilegios a root. Primero vamos a ver qué nos devuelve `id` con este nuevo usuario.\n\n![[Pasted image 20260322214725.png]]\n\nAhora empezamos con nuestra checklist de escalada de privilegios.\n\n![[Pasted image 20260322214811.png]]\n\nParece que podemos ejecutar como todos los usuarios menos como root. Después de buscar un rato encontré este [artículo](https://www.mend.io/blog/new-vulnerability-in-sudo-cve-2019-14287/) en el que se habla de cómo no se parsean bien todos los usuarios y con este simple comando podemos bypassear la seguridad:\n\n```bash\nsudo -u#-1 COMMAND\n```\n\n![[Pasted image 20260322222557.png]]\n\nUna vez allí, usamos lo encontrado en GTFOBins:\n\n![[Pasted image 20260322222112.png]]\n\nDe esta manera:\n\n![[Pasted image 20260322222408.png]]\n\nAhora le damos a enter y...\n\n![[Pasted image 20260322222423.png]]\n\nBuscamos la flag y la leemos.\n\n![[Pasted image 20260322222453.png]]",
+    "modified": "2026-03-23T01:12:02"
   }
 ]

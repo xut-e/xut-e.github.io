@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-03-21T01:02:59",
-    "hash": "44d0a2192226d0482828f89d64d87f212638651a43ab960dca2e169773e75518"
+    "modified": "2026-03-23T01:12:02",
+    "hash": "86309d99675e4c3e85f145b92940e7843786a2567b53b3502401cf7da18c9465"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5224,8 +5224,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/3. Developing a Vulnerability Scanner.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-23T01:12:02",
+    "hash": "ad9fe98f8c6ed34fb666bc2efc621533a16a48eaf75dfcc6768ecaa4ba495761"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/0. Custom Tooling Using Python.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5496,8 +5496,8 @@
     "hash": "beaecad468aefcf8044a38a7d72f0ccd9b72e3fead105f8d9bced832b2ad62c2"
   },
   "THM/Maquinas/1. Easy/26. CTF collection Vol. 1/0. CTF collection Vol. 1.md": {
-    "modified": "2026-03-22T01:10:36",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-23T01:12:02",
+    "hash": "f2ca9483f441ed9adbf9f8b000d8b65b134edb993de1031b656f9efaea629585"
   },
   "THM/Maquinas/1. Easy/26. CTF collection Vol. 1/16. Darkness.md": {
     "modified": "2026-03-22T01:10:36",
@@ -5574,5 +5574,29 @@
   "THM/Maquinas/1. Easy/26. CTF collection Vol. 1/19. Uncrackable!.md": {
     "modified": "2026-03-22T01:10:36",
     "hash": "48740876a7f6dac2c982ce90ef3ac17eecfbb16a079e829b714b657637b522b1"
+  },
+  "THM/Maquinas/1. Easy/28. Year of the Rabbit/1. Introduction.md": {
+    "modified": "2026-03-23T01:12:02",
+    "hash": "d2b05d67a4909d5593e779d279e0f1cc5dff1b8448edc407e2b878d2ef1351c8"
+  },
+  "THM/Maquinas/1. Easy/28. Year of the Rabbit/0. Year of the Rabbit.md": {
+    "modified": "2026-03-23T01:12:02",
+    "hash": "d0a3ee5a8e945a9b395598b1bdc5a55f792122ff66ec2f797f3c627c0864e4e4"
+  },
+  "THM/Maquinas/1. Easy/28. Year of the Rabbit/2. Getting the Flags.md": {
+    "modified": "2026-03-23T01:12:02",
+    "hash": "742407eee55a91cf11ff6859b9bc191b4fae317743db9ba98cf1a7e56843956d"
+  },
+  "THM/Maquinas/1. Easy/27. Chill Hack/1. Introduction.md": {
+    "modified": "2026-03-23T01:12:02",
+    "hash": "31e0a9bc36063ad92c447132c41f17d63fb479708456cd8a1830f40ab0239799"
+  },
+  "THM/Maquinas/1. Easy/27. Chill Hack/0. Chill Hack.md": {
+    "modified": "2026-03-23T01:12:02",
+    "hash": "b52585b12f5dbd5b593b0ff4375a85f82d36c69dc1ad47d55c64197d542891a7"
+  },
+  "THM/Maquinas/1. Easy/27. Chill Hack/2. Getting the Flags.md": {
+    "modified": "2026-03-23T01:12:02",
+    "hash": "6af4242ccad8f1c4443d4f0fceb3f13956c756458eadc13d91e278605193903d"
   }
 }

@@ -28,4 +28,7 @@ title: "1. Easy"
 23. [0. Brute It](/apuntes/thm/maquinas/1-easy/23-brute-it/0-brute-it/)
 24. [0. Wgel CTF](/apuntes/thm/maquinas/1-easy/24-wgel-ctf/0-wgel-ctf/)
 25. [0. Anthem](/apuntes/thm/maquinas/1-easy/25-anthem/0-anthem/)
-26. 
+26. [0. CTF collection Vol. 1](/apuntes/thm/maquinas/1-easy/26-ctf-collection-vol-1/0-ctf-collection-vol-1/)
+27. [0. Chill Hack](/apuntes/thm/maquinas/1-easy/27-chill-hack/0-chill-hack/)
+28. [0. Year of the Rabbit](/apuntes/thm/maquinas/1-easy/28-year-of-the-rabbit/0-year-of-the-rabbit/)
+29. 
