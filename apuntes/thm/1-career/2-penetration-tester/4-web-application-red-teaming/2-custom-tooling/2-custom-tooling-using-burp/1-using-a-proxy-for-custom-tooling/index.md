@@ -3,3 +3,48 @@ layout: apunte
 title: "1. Using a Proxy for Custom Tooling"
 ---
 
+<h2>¿Por qué Crear tus Propias Herramientas?</h2>
+Cuando te enfrentas a una aplicación web durante un ejercicio de red teaming, confiar únicamente en herramientas existentes puede no ser suficiente siempre. Mientras que muchas opciones de código abierto y comerciales están disponibles, pueden no alinearse con los requisitos de tu ejercicio. Además, la mayoría de estas herramientas tienen una firma, lo que significa que la probabilidad de detección es alta. Crear herramientas personalizadas te permite:
+
+- Ajustar la funcionalidad a tus necesidades.
+- Automatizar el exploit y crear flujos de trabajo automatizados para realizar tareas repetitivas.
+- Bypassear los mecanismos de detección.
+- Modificar herramientas y exploits existentes para ajustarse a tus necesidades.
+
+En la unidad anterior, hemos mostrado cómo programar puede ser usado para esto. En esta, nuestro foco cambia a usar un proxy de interceptación con un plugin personalizado.
+
+----------------------------------------
+<h2>Crypto Cryptonite Personalizado</h2>
+Los plugins personalizados juegan un rol amplio en el pentesting de aplicaciones móviles, debido a criptografía personalizada Las aplicaciones móviles son especiales ya que corren en entornos no confiables. Nada detiene a un actor malicioso de descargar una aplicación de móvil de la Play Store y desgranarla para encontrar vulnerabilidades potenciales. Además, estas aplicaciones pueden ser instrumentadas con herramientas como [Frida](https://frida.re/), permitiendo a estos actores alterar el comportamiento de la aplicación para comunicarse directamente con el servidor backend API de dicha app.
+
+En un intento para proteger las aplicaciones móviles y sus APIs, los desarrolladores suelen tomar dos acercamientos:
+
+- Protecciones de binarios de móvil como ofuscación de código, detección de rooteo y detección de hooks.
+- Implementar criptografía personalizada en las peticiones y respuestas hechas a la API.
+
+La última, genera un problema interesante para el pentesting y el red teaming. Si no podemos alterar los parámetros o payloads de las peticiones que se hacen, no podemos atacar a la API realmente. ES por eso que necesitamos hacerle ingeniería inversa a la criptografía personalizada. A veces incluso la respuesta tiene criptografía personalizada, lo que significa que no podemos leer el output del servidor sin realizar pasos previos. Normalmente, los pasos de criptografía permanecerán estáticos para todas las peticiones, significando que una vez que hayamos conseguido realizar ingeniería inversa una vez, podemos aplicarla para todas las peticiones.
+
+Esto nos deja en una posición única; las herramientas personalizadas que necesitamos no es con propósitos de explotación sino para realizar tareas de criptografía repetitivas, permitiéndonos ganar acceso a las peticiones y respuestas sin tratar. Como tal, la posición ideal de nuestra instrumentación es un proxy interceptor, que realizará estos pasos para cada petición.
+
+-----------------------------------
+<h2>Proxies de Intercepción Interesantes y Dónde Encontrarlos</h2>
+Hay varias opciones disponibles. Vamos a examinar algunas de ellas:
+
+| Factor de Decisión                                 | Burp Suite                                          | Fiddler                                          | OWASP ZAP                                                     | Caido                                                   |
+| -------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------------- |
+| **Soporte de Plataforma**                          | Windows, macOS, Linux                               | Windows                                          | Windows, macOS, Linux                                         | Windows, macOS, Linux                                   |
+| **Soporte de Plugins**                             | Extensiones en Java, Python y Ruby                  | .NET scripting                                   | Add-Ons en Java o JavaScript                                  | JavaScript/TypeScript scripting                         |
+| **Facilidad de Desarrollo de Plugins**             | Alta (Burp Extender API y ejemplos de la comunidad) | Media (requerido conocimiento de .NET)           | Media (interfaz ZAP scripting y buena documentación)          | Alta (APIs de scripting modernas dev-friendly)          |
+| **Comunidad y Ecosistema**                         | Grande (librerías extensivas y fuerte apoyo)        | Medio (comunidad menos orientada a la seguridad) | Grande (comunidad de código abierto orientada a la seguridad) | Creciente (herramienta nueva pero con inercia fuerte)   |
+| **Licencia**                                       | Comercial (tier gratuito con limitaciones)          | Gratis                                           | Gratis y de código abierto                                    | Gratis (open core con soporte pagado)                   |
+| **Eficiencia con Grandes Volúmenes de Peticiones** | Alto (optimizado para flujos de trabajo intensivos) | Medio (puede laggearse bajo carga)               | Medio (intensivo en memoria a veces)                          | Alto (diseñado para necesidades de eficiencia modernas) |
+
+------------------------------------------
+<h2>Beautiful Burp</h2>
+Las aplicaciones móviles suelen introducir capas personalizadas de criptografía para proteger las peticiones y respuestas. Nuestro objetivo no es romper la criptografía en sí misma sino entender y replicar los pasos para poder desencriptar, inspeccionar y modificar la comunicación API. Para hacer esto de forma efectiva, necesitamos herramientas que puedan enganchar las peticiones y respuestas, aplicar lógica repetible y ofrecer una experiencia agradable. Burp es excelente en este campo. Alguna de las razones principales de su popularidad son:
+
+- Ofrece una API Extender robusta, la cual permite desarrollar plugins en Java, Python (vía Jython) o Ruby.
+- Los plugins pueden engancharse a cualquier parte del ciclo de vida de la petición/respuesta, dándote un control preciso.
+- Una comunidad grande y activa significa que hay muchos plugins de referencia y foros de soporte desde los que aprender. Si estás intentando hacerle ingeniería inversa a una función de criptografía personalizada, puede que alguien ya haya hecho algo similar.
+- Burp te permite interceptar el tráfico en cualquier momento y modificarlo manualmente o automáticamente. Cuando se empareja con plugins personalizados, esto hace posible desencriptar parámetros, reencriptarlos y mandarlos obteniendo respuestas en texto plano.
+

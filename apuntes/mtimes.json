@@ -4516,8 +4516,8 @@
     "hash": "896334a12fd62b8e4730b5a674a40244fa19abd7fae7bf60988db7ee9ea0a097"
   },
   "THM/Maquinas/2. Medium/6. Hammer/2. Getting the Flags.md": {
-    "modified": "2025-12-28T01:00:21",
-    "hash": "ed92c5a5c709bb57a5797e5b3644913678d5f03627f4f5f09f726694337f89ce"
+    "modified": "2026-03-24T01:04:11",
+    "hash": "67a99b4a520e9bf7e6427dac6b5a4a72f7b006c8b0957178c15b7c61674b764e"
   },
   "THM/Maquinas/2. Medium/6. Hammer/1. Introduction.md": {
     "modified": "2025-12-27T00:52:04",
@@ -5220,20 +5220,20 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/4. Creating a Basic Exploit.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-24T01:04:11",
+    "hash": "15c722e5ca660667653035586a80195d4a81fde1d9f20d9c06db52fe4bb70aae"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/3. Developing a Vulnerability Scanner.md": {
-    "modified": "2026-03-23T01:12:02",
-    "hash": "ad9fe98f8c6ed34fb666bc2efc621533a16a48eaf75dfcc6768ecaa4ba495761"
+    "modified": "2026-03-24T01:04:11",
+    "hash": "06f513c1d6fb921d8bafe7ca258661b21c6c1ff5844ddc7b86fce7c5b075dd8e"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/0. Custom Tooling Using Python.md": {
     "modified": "2026-03-10T01:01:35",
     "hash": "96b392a0493ad5e8510cd0d3355f8ec5a14031d731ad23564c1db2eb73c106f9"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/5. Task Automation.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-24T01:04:11",
+    "hash": "eab09c527eb9cd2ed82be1ff100f88ca761739258129de8e822c4b9377560337"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/1. Custom Tooling Using Python/1. Using a Coding Language for Custom Tooling.md": {
     "modified": "2026-03-20T01:06:52",
@@ -5260,16 +5260,16 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/2. Using Extensions in Burp.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-24T01:04:11",
+    "hash": "8da682955753d115c009d4f257b7d03ec001573136002f255df151c07a17a5d8"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/0. Custom Tooling Using Burp.md": {
     "modified": "2026-03-10T01:01:35",
     "hash": "ffbff0d87b2efc6cab1a47d16fdb37f9742eedd69f69290e22d84f18dca15b98"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/1. Using a Proxy for Custom Tooling.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-03-24T01:04:11",
+    "hash": "e49314030d7730031b7d3ad8c70f987bbc5c9d36acbd9ad0338992fc4c0b0944"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/3. Tooling via Browser Automation/0. Tooling via Browser Automation.md": {
     "modified": "2026-03-10T01:01:35",
