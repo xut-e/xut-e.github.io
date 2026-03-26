@@ -6,7 +6,7 @@ title: "2. Getting the Flags"
 <h2>Reconocimiento Inicial</h2>
 Empezaremos escaneando los puertos abiertos de la máquina.
 
-!**Pasted image 20260322204026.png|522**
+!**Pasted image 20260322204026.png**
 
 Esto para puertos UDP.
 

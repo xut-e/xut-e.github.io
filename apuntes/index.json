@@ -2936,6 +2936,10 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/5-challenge/"
   },
   {
+    "title": "3.1. Archivos de 101Burp",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/3-1-archivos-de-101burp/"
+  },
+  {
     "title": "3. Creating a Basic Burp Extension",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/3-creating-a-basic-burp-extension/"
   },
@@ -5542,6 +5546,18 @@
   {
     "title": "0. MD2PDF",
     "path": "/apuntes/thm/maquinas/1-easy/9-md2pdf/0-md2pdf/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/29-lian_yu/1-introduction/"
+  },
+  {
+    "title": "0. Lian_Yu",
+    "path": "/apuntes/thm/maquinas/1-easy/29-lian_yu/0-lian_yu/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/29-lian_yu/2-getting-the-flags/"
   },
   {
     "title": "1. Introduction",

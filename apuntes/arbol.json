@@ -6941,6 +6941,12 @@
                               "parent": "2. Custom Tooling Using Burp"
                             },
                             {
+                              "name": "3.1. Archivos de 101Burp.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/3.1. Archivos de 101Burp.md",
+                              "parent": "2. Custom Tooling Using Burp"
+                            },
+                            {
                               "name": "4. Modifying a Burp Extension.md",
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/4. Modifying a Burp Extension.md",
@@ -7953,6 +7959,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/28. Year of the Rabbit/2. Getting the Flags.md",
                       "parent": "28. Year of the Rabbit"
+                    }
+                  ]
+                },
+                {
+                  "name": "29. Lian_Yu",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/29. Lian_Yu/1. Introduction.md",
+                      "parent": "29. Lian_Yu"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/29. Lian_Yu/2. Getting the Flags.md",
+                      "parent": "29. Lian_Yu"
                     }
                   ]
                 },
