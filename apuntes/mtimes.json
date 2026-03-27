@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-03-26T01:15:15",
-    "hash": "d2d9df4870dad548af01bc75115ff8d5ff538ff000dfef861a69ece5e620e369"
+    "modified": "2026-03-27T01:15:10",
+    "hash": "1bb45faa7311b7835c895e618b93a26ad19ab3c39b114347bf5f4b3d21d8696b"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5248,8 +5248,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/4. Modifying a Burp Extension.md": {
-    "modified": "2026-03-26T01:15:15",
-    "hash": "ed987ebb39a56cd9a50ec6bc036718abd2512afc882a910139d0c3cd239182f4"
+    "modified": "2026-03-27T01:15:10",
+    "hash": "d93c7bebeb6ad858b46e621f56f50523a0295bbb9e3c85e91eb9aa9a2a9c00ae"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/5. Challenge.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5614,5 +5614,17 @@
   "THM/Maquinas/1. Easy/29. Lian_Yu/2. Getting the Flags.md": {
     "modified": "2026-03-26T01:15:15",
     "hash": "75b8fe58c9e43f69133c65571a349d7055d9a94d69302bc02ed0499187da664b"
+  },
+  "THM/Maquinas/1. Easy/30. Fowsniff CTF/0. Fowsniff CTF.md": {
+    "modified": "2026-03-27T01:15:10",
+    "hash": "bae2f1f4673d7a71be8df817e99b58d166a24f9b25f3753cf021a6e0eecdb406"
+  },
+  "THM/Maquinas/1. Easy/30. Fowsniff CTF/1. Introduction.md": {
+    "modified": "2026-03-27T01:15:10",
+    "hash": "34a42bfeb0c2609b1d0bbefa1b4289c919f13ff84e725a00fc24bc082c98c440"
+  },
+  "THM/Maquinas/1. Easy/30. Fowsniff CTF/2. Getting the Flags.md": {
+    "modified": "2026-03-27T01:15:10",
+    "hash": "ea6ae6aa4d26757529110bca73c2b537f5a679413fe8b5e63dfc361a078f7891"
   }
 }

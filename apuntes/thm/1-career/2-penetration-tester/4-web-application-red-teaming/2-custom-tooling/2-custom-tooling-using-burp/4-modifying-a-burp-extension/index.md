@@ -25,7 +25,7 @@ function rot13(message) {
 }
 ```
 
-- ROT13 cambia cada caracter 13 lugares en adelante, dando la vuelta si es necesario.
+- ROT13 cambia cada carácter 13 lugares en adelante, dando la vuelta si es necesario.
 - Ejemplo:
 	- `ecorp_user` --> `rpebc_hfre`
 	- `0007` (no tiene efecto porque ROT13 sólo afecta a letras)

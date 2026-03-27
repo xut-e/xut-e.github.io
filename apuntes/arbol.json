@@ -7999,6 +7999,24 @@
                   ]
                 },
                 {
+                  "name": "30. Fowsniff CTF",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/30. Fowsniff CTF/1. Introduction.md",
+                      "parent": "30. Fowsniff CTF"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/30. Fowsniff CTF/2. Getting the Flags.md",
+                      "parent": "30. Fowsniff CTF"
+                    }
+                  ]
+                },
+                {
                   "name": "4. Res",
                   "type": "directory",
                   "contents": [
