@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260327181502.png|318**
+
+Practica a usar herramientas como Nmap y GoBuster para localizar directorios escondidos para ganar acceso inicial a la máquina vulnerable. Luego escala tus privilegios a través de un cronjob vulnerable.

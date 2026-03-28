@@ -33,4 +33,5 @@ title: "1. Easy"
 28. [0. Year of the Rabbit](/apuntes/thm/maquinas/1-easy/28-year-of-the-rabbit/0-year-of-the-rabbit/)
 29. [0. Lian_Yu](/apuntes/thm/maquinas/1-easy/29-lian_yu/0-lian_yu/)
 30. [0. Fowsniff CTF](/apuntes/thm/maquinas/1-easy/30-fowsniff-ctf/0-fowsniff-ctf/)
-31. 
+31. [0. Easy Peasy](/apuntes/thm/maquinas/1-easy/31-easy-peasy/0-easy-peasy/)
+32. 

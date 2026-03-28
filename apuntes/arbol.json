@@ -8017,6 +8017,24 @@
                   ]
                 },
                 {
+                  "name": "31. Easy Peasy",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/31. Easy Peasy/1. Introduction.md",
+                      "parent": "31. Easy Peasy"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/31. Easy Peasy/2. Getting the Flags.md",
+                      "parent": "31. Easy Peasy"
+                    }
+                  ]
+                },
+                {
                   "name": "4. Res",
                   "type": "directory",
                   "contents": [

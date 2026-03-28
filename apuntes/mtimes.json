@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-03-27T01:15:10",
-    "hash": "1bb45faa7311b7835c895e618b93a26ad19ab3c39b114347bf5f4b3d21d8696b"
+    "modified": "2026-03-28T01:08:40",
+    "hash": "58672722373d40ee40df10dd6c060fbdbc90d58fa050d9184ea5eab0c99e13c6"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5626,5 +5626,17 @@
   "THM/Maquinas/1. Easy/30. Fowsniff CTF/2. Getting the Flags.md": {
     "modified": "2026-03-27T01:15:10",
     "hash": "ea6ae6aa4d26757529110bca73c2b537f5a679413fe8b5e63dfc361a078f7891"
+  },
+  "THM/Maquinas/1. Easy/31. Easy Peasy/1. Introduction.md": {
+    "modified": "2026-03-28T01:08:40",
+    "hash": "783219a13527e9475c618099e667d766967f63f37f328e8527e9a474b3c6ef9b"
+  },
+  "THM/Maquinas/1. Easy/31. Easy Peasy/2. Getting the Flags.md": {
+    "modified": "2026-03-28T01:08:40",
+    "hash": "df20da1ee24847d6ab37e166203720979eabb85e054ba25e4bc89be15e13a9b2"
+  },
+  "THM/Maquinas/1. Easy/31. Easy Peasy/0. Easy Peasy.md": {
+    "modified": "2026-03-28T01:08:40",
+    "hash": "8893076e377d315047c64ae24f3f1e049898009ae6dd909988f1b26f65fc0b2b"
   }
 }
