@@ -1,0 +1,13 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260328195622.png**
+
+Una room basada en Charlie y la fábrica de chocolate.
+
+Bienvenido a la Fábrica de Chocolate de Willy Wonka.
+
+!**Pasted image 20260328195709.png**
+

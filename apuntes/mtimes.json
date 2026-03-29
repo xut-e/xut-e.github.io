@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-03-28T01:08:40",
-    "hash": "58672722373d40ee40df10dd6c060fbdbc90d58fa050d9184ea5eab0c99e13c6"
+    "modified": "2026-03-29T01:18:29",
+    "hash": "2a74817047b229495dedc37cc02fb7f0c5352c2321a6f9b29ecd5415d9fdead7"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5638,5 +5638,17 @@
   "THM/Maquinas/1. Easy/31. Easy Peasy/0. Easy Peasy.md": {
     "modified": "2026-03-28T01:08:40",
     "hash": "8893076e377d315047c64ae24f3f1e049898009ae6dd909988f1b26f65fc0b2b"
+  },
+  "THM/Maquinas/1. Easy/32. Chocolate Factory/0. Chocolate Factory.md": {
+    "modified": "2026-03-29T01:18:29",
+    "hash": "cd3944fb67901135b335d2a1139461af69310a241253e5ada75ff2c996d48676"
+  },
+  "THM/Maquinas/1. Easy/32. Chocolate Factory/1. Introduction.md": {
+    "modified": "2026-03-29T01:18:29",
+    "hash": "f7006db3ed2530e2a019da746e77caa8cd45857efc73f39544bb77eed02cc69a"
+  },
+  "THM/Maquinas/1. Easy/32. Chocolate Factory/2. Getting the Flags.md": {
+    "modified": "2026-03-29T01:18:29",
+    "hash": "d1e419fe09b443121f3e1722caad0edfc3b58a5ea706e32874a0d7150140947f"
   }
 }

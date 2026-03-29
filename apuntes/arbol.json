@@ -8035,6 +8035,24 @@
                   ]
                 },
                 {
+                  "name": "32. Chocolate Factory",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/32. Chocolate Factory/1. Introduction.md",
+                      "parent": "32. Chocolate Factory"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/32. Chocolate Factory/2. Getting the Flags.md",
+                      "parent": "32. Chocolate Factory"
+                    }
+                  ]
+                },
+                {
                   "name": "4. Res",
                   "type": "directory",
                   "contents": [
