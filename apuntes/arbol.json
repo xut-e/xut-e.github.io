@@ -6951,12 +6951,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/4. Modifying a Burp Extension.md",
                               "parent": "2. Custom Tooling Using Burp"
-                            },
-                            {
-                              "name": "5. Challenge.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling Using Burp/5. Challenge.md",
-                              "parent": "2. Custom Tooling Using Burp"
                             }
                           ]
                         },
@@ -6993,7 +6987,14 @@
                         {
                           "name": "4. CAPTCHApocalypse",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/4. CAPTCHApocalypse/1. Redirection.md",
+                              "parent": "4. CAPTCHApocalypse"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -7034,7 +7035,14 @@
                         {
                           "name": "2. Extract",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/1. Redirection.md",
+                              "parent": "2. Extract"
+                            }
+                          ]
                         },
                         {
                           "name": "3. Voyage",
@@ -8197,6 +8205,24 @@
                   ]
                 },
                 {
+                  "name": "10. CAPTCHApocalypse",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/1. Introduction.md",
+                      "parent": "10. CAPTCHApocalypse"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/2. Getting the Flags.md",
+                      "parent": "10. CAPTCHApocalypse"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Net Sec Challenge",
                   "type": "directory",
                   "contents": [
@@ -8367,6 +8393,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/1. El Bandito/2. Getting the Flags.md",
                       "parent": "1. El Bandito"
+                    }
+                  ]
+                },
+                {
+                  "name": "2. Extract",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/2. Extract/1. Introduction.md",
+                      "parent": "2. Extract"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/2. Extract/2. Getting the Flags.md",
+                      "parent": "2. Extract"
                     }
                   ]
                 }

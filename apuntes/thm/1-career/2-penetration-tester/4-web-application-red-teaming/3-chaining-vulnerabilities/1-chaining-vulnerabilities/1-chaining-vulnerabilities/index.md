@@ -3,3 +3,21 @@ layout: apunte
 title: "1. Chaining Vulnerabilities"
 ---
 
+<h2>¿Qué es el Encadenamiento de Vulnerabilidades?</h2>
+El encadenado de vulnerabilidades es cuando dos o más debilidades individuales son combinadas para causar un daño mayor del que podrían causar individualmente.
+
+Veamos un ejemplo. Imagina que tienes una vulnerabilidad Self-XSS en un editor de perfil de usuario, el tipo donde el payload corre sólo en el navegador. Por sí misma no es peligrosa, ya que no puedes usarla para hacerle daño a alguien. Pero ahora imagina que la aplicación también le falta protección CSRF. Puedes craftear un payload CSRF que fuerce a una víctima autentificada a guardar el XSS en su propio perfil. Luego, cuando el usuario mira o edita su perfil, el XSS se dispara, ahora tienes ejecución de código en su navegador. Ninguna de estas dos vulnerabilidades son críticas por su cuenta. Sin embargo, juntas te han dado acceso completo a la sesión de otra persona.
+
+--------------------------------------------
+<h2>Por qué Importa Esto en el Mundo Real</h2>
+En ataques del mundo real, este acercamiento es más común de lo que mucha gente espera. Uno de los mejores ejemplos conocidos es la brecha de Capital One en 2019. El atacante no utilizó ningún 0 day. En su lugar, comenzaron con una vulnerabilidad SSRF. Por sí sola, el bug permitía hacer peticiones HTTP desde el servidor. Sin embargo, eso fue suficiente para acceder al servicio de metadata AWS EC2, conseguir credenciales IAM y usar dichas credenciales para descargar información sensible de un bucket S3. Ninguno de estos problemas era crítico por separado pero la forma en la que fueron encadenados conllevó a una brecha de seguridad masiva.
+
+Otro escenario común: un atacante encuentra una página vulnerable a SQLi, pero está detrás de un login. También nota que el formulario de login revela si un usuario existe o no y no hay límite de intentos de inicio de sesión. Usando esto, descubren un nombre válido, bruteforcean la contraseña e inician sesión. Ahora autentificados, explotan la SQLi para obtener toda la información o escalar privilegios. De nuevo, no hay ningún punto de entrada garantizado, pero juntos construyen un camino claro hacia el compromiso.
+
+!**Pasted image 20260330172306.png**
+
+------------------------------
+<h2>Por qué los Arreglos Patch-By-Patch no son Suficientes</h2>
+Es común para los equipos de desarrolladores arreglar las vulnerabilidades una a una, tratándolas como problemas aislados. Parchean el SQLi, pero dejan la enumeración de cuentas. O arreglan la subida de archivos pero dejan el XSS. Estos arreglos cierran puertas individuales pero no solucionan el problema mayor, el sistema sigue siendo vulnerable.
+
+Es por eso que la seguridad debe ser entendida holísticamente. El encadenado de vulnerabilidades no es un caso aislado, es como ocurren los ataques reales.

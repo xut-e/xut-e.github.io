@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. CAPTCHApocalypse"
+---
+
+**Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/1. Introduction**
+**Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/2. Getting the Flags**

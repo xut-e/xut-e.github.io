@@ -1,0 +1,6 @@
+---
+layout: apunte
+title: "1. Redirection"
+---
+
+Para ver esta máquina ve a **THM -> Maquinas/3. Hard -> 2. Extract -> 2. Getting the Flags**

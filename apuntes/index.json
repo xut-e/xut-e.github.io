@@ -348,6 +348,18 @@
     "path": "/apuntes/thm/maquinas/2-medium/3-revenge/2-revengeee/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/10-captchapocalypse/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/10-captchapocalypse/2-getting-the-flags/"
+  },
+  {
+    "title": "0. CAPTCHApocalypse",
+    "path": "/apuntes/thm/maquinas/2-medium/10-captchapocalypse/0-captchapocalypse/"
+  },
+  {
     "title": "2. Finding the flags",
     "path": "/apuntes/thm/maquinas/1-easy/5-brooklyn-nine-nine/2-finding-the-flags/"
   },
@@ -844,6 +856,18 @@
     "path": "/apuntes/thm/maquinas/1-easy/23-brute-it/0-brute-it/"
   },
   {
+    "title": "0. Extract",
+    "path": "/apuntes/thm/maquinas/3-hard/2-extract/0-extract/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/3-hard/2-extract/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/3-hard/2-extract/2-getting-the-flags/"
+  },
+  {
     "title": "1. Introduction",
     "path": "/apuntes/thm/maquinas/3-hard/1-el-bandito/1-introduction/"
   },
@@ -930,6 +954,10 @@
   {
     "title": "0. Extract",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/2-extract/0-extract/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/2-extract/1-redirection/"
   },
   {
     "title": "0. Voyage",
@@ -1268,8 +1296,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/0-custom-tooling-using-burp/"
   },
   {
-    "title": "5. Challenge",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling-using-burp/5-challenge/"
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/4-captchapocalypse/1-redirection/"
   },
   {
     "title": "0. CAPTCHApocalypse",

