@@ -7047,7 +7047,14 @@
                         {
                           "name": "3. Voyage",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Voyage/1. Redirection.md",
+                              "parent": "3. Voyage"
+                            }
+                          ]
                         },
                         {
                           "name": "4. Sequence",
@@ -8219,6 +8226,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/2. Getting the Flags.md",
                       "parent": "10. CAPTCHApocalypse"
+                    }
+                  ]
+                },
+                {
+                  "name": "11. Voyage",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/1. Introduction.md",
+                      "parent": "11. Voyage"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/2. Getting the Flags.md",
+                      "parent": "11. Voyage"
                     }
                   ]
                 },

@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "151087152b0e5ff2e6e493c87ae866245231ea80d3618b98d8388649da9cd8aa"
+    "modified": "2026-04-02T01:13:48",
+    "hash": "65ec6a6d95f02b9df05ea26859ebaedc6e2e33dd3c5cc0c53696056251fe456f"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -4916,8 +4916,8 @@
     "hash": "cb9584f3aaa4926faf3b3782819e40cd30f3ffa78f16b7ad68ff4f0e2989b0b2"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Chaining Vulnerabilities.md": {
-    "modified": "2026-03-31T01:16:47",
-    "hash": "69aa6af7bbf76ebcafbb65fc3436f1564a649682e2931b03312c4973ecffa50c"
+    "modified": "2026-04-02T01:13:48",
+    "hash": "d62612939e7fe26623b4951ced59fb6cdc1bebdda8ee77ba5212cac0b6be4114"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/2. Custom Tooling.md": {
     "modified": "2026-03-31T01:16:47",
@@ -5212,8 +5212,8 @@
     "hash": "d61575c7f24b8619e7846b404a81f46107491531a67ee5b390fbc3f322a87957"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/0. Extract.md": {
-    "modified": "2026-03-31T01:16:47",
-    "hash": "266389b91835767ab9a6c41957f7473c8be3378a8ee92e45ca23c4b364596aec"
+    "modified": "2026-04-02T01:13:48",
+    "hash": "ca499ad9f014c9993dcc6d94970845c1adca756c68849f3f9a2959ac6c6e6091"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/4. Sequence/0. Sequence.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5682,5 +5682,21 @@
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/2. Custom Tooling/4. CAPTCHApocalypse/1. Redirection.md": {
     "modified": "2026-03-31T01:16:47",
     "hash": "f313fe74e98427d6d3c5e15f737511caed416d3f7ce5be1cd731fca6ded3ef6c"
+  },
+  "THM/Maquinas/2. Medium/11. Voyage/0. Voyage.md": {
+    "modified": "2026-04-02T01:13:48",
+    "hash": "1887d836ff0840ad76f6e38e01812656c5adaafef9aaef6f82e4808b1dd5d835"
+  },
+  "THM/Maquinas/2. Medium/11. Voyage/1. Introduction.md": {
+    "modified": "2026-04-02T01:13:48",
+    "hash": "9787a477204f1b6f97b68288866749301cca516186f8c2ca335caa2da7246323"
+  },
+  "THM/Maquinas/2. Medium/11. Voyage/2. Getting the Flags.md": {
+    "modified": "2026-04-02T01:13:48",
+    "hash": "874bf8c82fcd16a582f0a68a38ef8bab39177acb5a68738de6a2b52ed29e29b8"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Voyage/1. Redirection.md": {
+    "modified": "2026-04-02T01:13:48",
+    "hash": "a7dc52962db9fd644ef02431f82084bc52bcc8c9b684eb4ae073a3b9fc7233c7"
   }
 }

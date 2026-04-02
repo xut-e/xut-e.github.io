@@ -428,8 +428,8 @@
     "path": "/apuntes/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10.",
-    "modified": "2026-03-10T01:01:35"
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10. [[Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/0. CAPTCHApocalypse]]\n11. [[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage]]\n12.",
+    "modified": "2026-04-02T01:13:48"
   },
   {
     "title": "1. Easy",
@@ -454,6 +454,30 @@
     "breadcrumb": "THM > Maquinas > 4. Insane",
     "content": "",
     "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "0. Voyage",
+    "path": "/apuntes/thm/maquinas/2-medium/11-voyage/0-voyage/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 11. Voyage",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/2. Getting the Flags]]",
+    "modified": "2026-04-02T01:13:48"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/11-voyage/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 11. Voyage",
+    "content": "![[Pasted image 20260401163546.png|312]]\n\nEncadena múltiples vulnerabilidades para ganar control completo del sistema.\n\nA veces, en un pentest, obtienes root muy rápido. Pero ¿es root real o un contenedor? El viaje puede seguir.",
+    "modified": "2026-04-02T01:13:48"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/11-voyage/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 11. Voyage",
+    "content": "<h2>Reconocimiento Inicial</h2>\nVamos a comenzar escaneando los puertos abiertos de la máquina.\n\n![[Pasted image 20260401171354.png]]\n\nAhora escaneamos dichos puertos abiertos más a fondo.\n\n![[Pasted image 20260401171407.png]]\n\nDe aquí sacamos varia información, parece que está usando el CMS Joomla y tiene varias rutas en el `robots.txt`.\n\nVamos a listar directorios web.\n\n![[Pasted image 20260401171733.png]]\n![[Pasted image 20260401171819.png]]\n\nSon muchos más, por lo que voy a poner aquí el tree.\n\n```text\nvoyage.thm\n    ├── administrator [200 4KB]\n    │   ├── cache [200 31B]\n    │   ├── components [200 819B]\n    │   ├── help [200 454B]\n    │   ├── includes [200 501B]\n    │   ├── logs [200 31B]\n    │   ├── modules [200 704B]\n    │   ├── templates [200 470B]\n    │   └── index.php [200 4KB]\n    ├── api\n    │   ├── components [200 653B]\n    │   └── includes [200 496B]\n    ├── cache [200 31B]\n    ├── cli [200 31B]\n    ├── components [200 31B]\n    ├── images [200 31B]\n    │   └── banners [200 536B]\n    ├── includes [200 31B]\n    ├── layouts [200 31B]\n    │   ├── joomla [200 618B]\n    │   │   ├── content [200 750B]\n    │   │   ├── editors [200 491B]\n    │   │   ├── error [200 31B]\n    │   │   ├── html [200 505B]\n    │   │   ├── system [200 466B]\n    │   │   └── tinymce [200 494B]\n    │   ├── libraries [200 452B]\n    │   │   └── html [200 457B]\n    │   └── plugins [200 476B]\n    │       ├── editors [200 460B]\n    │       │   └── tinymce [200 463B]\n    │       ├── system [200 479B]\n    │       └── user [200 467B]\n    ├── media [200 31B]\n    │   ├── layouts [200 459B]\n    │   │   └── js [200 454B]\n    │   │       └── joomla [200 469B]\n    │   │           └── html [200 460B]\n    │   ├── system [200 530B]\n    │   │   ├── html [200 460B]\n    │   │   ├── images [200 565B]\n    │   │   │   └── favicon.ico [200 2KB]\n    │   │   └── js [200 1KB]\n    │   ├── templates [200 468B]\n    │   │   ├── administrator [200 461B]\n    │   │   └── site [200 458B]\n    │   └── vendor [200 813B]\n    │       ├── accessibility\n    │       │   ├── js [200 512B]\n    │       │   └── LICENSE [200 1KB]\n    │       └── tinymce [200 605B]\n    │           ├── icons\n    │           │   └── default\n    │           │       └── index.js [200 150B]\n    │           ├── plugins [200 905B]\n    │           │   ├── code\n    │           │   │   └── index.js [200 149B]\n    │           │   ├── help [200 533B]\n    │           │   │   └── index.js [200 148B]\n    │           │   ├── image\n    │           │   │   └── index.js [200 153B]\n    │           │   ├── link\n    │           │   │   └── index.js [200 149B]\n    │           │   ├── lists [200 534B]\n    │           │   │   └── index.js [200 152B]\n    │           │   ├── media [200 531B]\n    │           │   │   └── index.js [200 150B]\n    │           │   ├── print\n    │           │   │   └── index.js [200 150B]\n    │           │   ├── save\n    │           │   │   └── index.js [200 150B]\n    │           │   ├── template [200 534B]\n    │           │   │   └── index.js [200 151B]\n    │           │   └── textpattern [200 537B]\n    │           │       └── index.js [200 154B]\n    │           ├── skins\n    │           │   ├── content [200 502B]\n    │           │   └── ui [200 474B]\n    │           ├── templates [200 490B]\n    │           ├── themes [200 473B]\n    │           │   └── mobile\n    │           │       └── index.js [200 148B]\n    │           └── license.txt [200 9KB]\n    ├── modules [200 31B]\n    ├── plugins [200 31B]\n    │   ├── authentication\n    │   │   ├── joomla [200 488B]\n    │   │   │   └── joomla.xml [200 443B]\n    │   │   └── ldap [200 486B]\n    │   ├── content [200 561B]\n    │   │   └── joomla [200 484B]\n    │   │       └── joomla.xml [200 663B]\n    │   ├── editors [200 478B]\n    │   │   └── tinymce [200 513B]\n    │   │       └── src [200 477B]\n    │   ├── privacy\n    │   │   ├── content [200 485B]\n    │   │   └── user [200 483B]\n    │   ├── system [200 727B]\n    │   │   ├── cache [200 505B]\n    │   │   │   ├── services [200 474B]\n    │   │   │   └── src [200 459B]\n    │   │   ├── debug [200 504B]\n    │   │   │   ├── src [200 579B]\n    │   │   │   └── debug.xml [200 1KB]\n    │   │   ├── log [200 480B]\n    │   │   ├── logout [200 484B]\n    │   │   └── stats [200 512B]\n    │   │       ├── layouts [200 507B]\n    │   │       └── src [200 457B]\n    │   └── user [200 500B]\n    │       ├── joomla [200 481B]\n    │       │   └── joomla.xml [200 636B]\n    │       ├── profile\n    │       │   └── src [200 457B]\n    │       └── terms\n    │           └── src [200 456B]\n    ├── templates [200 31B]\n    │   └── index.html [200 31B]\n    ├── tmp [200 31B]\n    ├── htaccess.txt [200 3KB]\n    ├── index.php [200 2KB]\n    ├── LICENSE.txt [200 7KB]\n    ├── README.txt [200 2KB]\n    ├── robots.txt [200 360B]\n    └── web.config.txt [200 877B]\n```\n\nVamos a ver cómo es la web.\n\n![[Pasted image 20260401182652.png]]\n\nParece que tiene una parte oculta detrás del login. Vamos primero a mirar los archivos y directorios que ya hemos encontrado.\n\nEn los directorios que hemos visto lo único de \"valor\" parece ser un directorio llamado `/administrator/`, aunque puede que más adelante `/cli/` y `/api/` tengan valor.\n\n![[Pasted image 20260401184240.png]]\n\n\n\n-----------------------------\n<h2>Profundización</h2>\nVamos a buscar la versión de Joomla. Usamos `cmseek`.\n\n![[Pasted image 20260401185015.png]]\n\nVamos a mirar si existen vulnerabilidades conocidas.\n\n![[Pasted image 20260401185215.png]]\n\nParece que sí, vamos a investigar ahora por las versiones de SSH que vimos antes, porque es raro que haya dos, desde luego. No parece que haya vulnerabilidades SSH conocidas. Vamos a ver qué podemos lograr con lo de Joomla.\n\n![[Pasted image 20260401190949.png]]\n\nHe encontrado este exploit en [GitHub](https://github.com/K3ysTr0K3R/CVE-2023-23752-EXPLOIT).\n\n----------------------------------------\n<h2>Explotación</h2>\nUtilizamos el exploit.\n\n![[Pasted image 20260401191136.png]]\n\nY acabamos de obtener credenciales e email válidos. Vamos a ver qué podemos hacer por el panel de administración. No nos ha dejado inicial sesión en la propia página, vamos a intentarlo por SSH.\n\n![[Pasted image 20260401192356.png]]\n\n\n\n------------------------------------\n<h2>Escalada de Privilegios</h2>",
+    "modified": "2026-04-02T01:13:48"
   },
   {
     "title": "2. Challenge Questions",
@@ -1820,8 +1844,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/3-chaining-vulnerabilities/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Chaining Vulnerabilities.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities",
-    "content": "1. [[0. Chaining Vulnerabilities]]\n2. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/0. Extract]]\n3. [[0. Voyage]]\n4. [[0. Sequence]]",
-    "modified": "2026-03-31T01:16:47"
+    "content": "1. [[0. Chaining Vulnerabilities]]\n2. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/0. Extract]]\n3. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Voyage/0. Voyage]]\n4. [[0. Sequence]]",
+    "modified": "2026-04-02T01:13:48"
   },
   {
     "title": "5. Attacking LLMs",
@@ -1908,8 +1932,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/2-extract/0-extract/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/0. Extract.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 2. Extract",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/1. Redirection]]",
-    "modified": "2026-03-31T01:16:47"
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/1. Redirection]]\n[[Ciberseguridad/THM/Maquinas/3. Hard/2. Extract/0. Extract]]",
+    "modified": "2026-04-02T01:13:48"
   },
   {
     "title": "1. Redirection",
@@ -1918,6 +1942,14 @@
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 2. Extract",
     "content": "Para ver esta máquina ve a **THM -> Maquinas/3. Hard -> 2. Extract -> 2. Getting the Flags**",
     "modified": "2026-03-31T01:16:47"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/3-voyage/1-redirection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Voyage/1. Redirection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 3. Chaining Vulnerabilities > 3. Voyage",
+    "content": "Para ver esta máquina ve a **THM -> Maquinas/2. Medium -> 11. Voyage -> 2. Getting the Flags**",
+    "modified": "2026-04-02T01:13:48"
   },
   {
     "title": "0. Voyage",

@@ -228,6 +228,18 @@
     "path": "/apuntes/thm/maquinas/4-insane/4-insane/"
   },
   {
+    "title": "0. Voyage",
+    "path": "/apuntes/thm/maquinas/2-medium/11-voyage/0-voyage/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/11-voyage/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/11-voyage/2-getting-the-flags/"
+  },
+  {
     "title": "2. Challenge Questions",
     "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/2-challenge-questions/"
   },
@@ -958,6 +970,10 @@
   {
     "title": "1. Redirection",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/2-extract/1-redirection/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/3-voyage/1-redirection/"
   },
   {
     "title": "0. Voyage",

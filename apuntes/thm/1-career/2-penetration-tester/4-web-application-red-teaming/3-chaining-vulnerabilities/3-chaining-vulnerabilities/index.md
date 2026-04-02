@@ -5,5 +5,5 @@ title: "3. Chaining Vulnerabilities"
 
 1. [0. Chaining Vulnerabilities](/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/1-chaining-vulnerabilities/0-chaining-vulnerabilities/)
 2. **Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/2. Extract/0. Extract**
-3. [0. Voyage](/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/3-voyage/0-voyage/)
+3. **Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Voyage/0. Voyage**
 4. [0. Sequence](/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/4-sequence/0-sequence/)
