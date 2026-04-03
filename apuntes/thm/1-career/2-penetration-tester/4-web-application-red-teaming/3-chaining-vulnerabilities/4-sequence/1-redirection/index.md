@@ -1,0 +1,6 @@
+---
+layout: apunte
+title: "1. Redirection"
+---
+
+Para ver esta máquina ve a **THM -> Maquinas/2. Medium -> 12. Sequence -> 2. Getting the Flags**

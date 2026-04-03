@@ -252,6 +252,18 @@
     "path": "/apuntes/thm/maquinas/2-medium/2-net-sec-challenge/0-net-sec-challenge/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/12-sequence/1-introduction/"
+  },
+  {
+    "title": "0. Sequence",
+    "path": "/apuntes/thm/maquinas/2-medium/12-sequence/0-sequence/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/12-sequence/2-getting-the-flags/"
+  },
+  {
     "title": "0. Hammer",
     "path": "/apuntes/thm/maquinas/2-medium/6-hammer/0-hammer/"
   },
@@ -382,6 +394,30 @@
   {
     "title": "0. Brooklyn Nine Nine",
     "path": "/apuntes/thm/maquinas/1-easy/5-brooklyn-nine-nine/0-brooklyn-nine-nine/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/34-neighbour/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/34-neighbour/2-getting-the-flags/"
+  },
+  {
+    "title": "0. Neighbour",
+    "path": "/apuntes/thm/maquinas/1-easy/34-neighbour/0-neighbour/"
+  },
+  {
+    "title": "0. Source",
+    "path": "/apuntes/thm/maquinas/1-easy/33-source/0-source/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/33-source/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/33-source/2-getting-the-flags/"
   },
   {
     "title": "1. Introduction",
@@ -938,6 +974,10 @@
   {
     "title": "2. Custom Tooling",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/3-chaining-vulnerabilities/4-sequence/1-redirection/"
   },
   {
     "title": "0. Sequence",

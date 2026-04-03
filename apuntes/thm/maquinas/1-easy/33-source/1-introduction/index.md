@@ -1,0 +1,10 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260402195744.png**
+
+Explota una vulnerabilidad reciente y hackea webmin, una herramienta basada en web de configuración de sistema.
+
+Enumera y rootea la máquina en esta tarea. ¿Serás capaz de descubrir la fuente de la disrupción y utilizarla para ganar el control?

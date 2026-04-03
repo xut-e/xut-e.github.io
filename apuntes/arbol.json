@@ -7059,7 +7059,14 @@
                         {
                           "name": "4. Sequence",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/4. Sequence/1. Redirection.md",
+                              "parent": "4. Sequence"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -8068,6 +8075,42 @@
                   ]
                 },
                 {
+                  "name": "33. Source",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/33. Source/1. Introduction.md",
+                      "parent": "33. Source"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/33. Source/2. Getting the Flags.md",
+                      "parent": "33. Source"
+                    }
+                  ]
+                },
+                {
+                  "name": "34. Neighbour",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/34. Neighbour/1. Introduction.md",
+                      "parent": "34. Neighbour"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/34. Neighbour/2. Getting the Flags.md",
+                      "parent": "34. Neighbour"
+                    }
+                  ]
+                },
+                {
                   "name": "4. Res",
                   "type": "directory",
                   "contents": [
@@ -8244,6 +8287,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/2. Getting the Flags.md",
                       "parent": "11. Voyage"
+                    }
+                  ]
+                },
+                {
+                  "name": "12. Sequence",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/1. Introduction.md",
+                      "parent": "12. Sequence"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/2. Getting the Flags.md",
+                      "parent": "12. Sequence"
                     }
                   ]
                 },

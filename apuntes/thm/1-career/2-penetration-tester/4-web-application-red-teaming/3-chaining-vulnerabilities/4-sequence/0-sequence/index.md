@@ -3,3 +3,5 @@ layout: apunte
 title: "0. Sequence"
 ---
 
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/4. Sequence/1. Redirection**
+**Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/0. Sequence**
