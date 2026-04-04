@@ -37,4 +37,5 @@ title: "1. Easy"
 32. [0. Chocolate Factory](/apuntes/thm/maquinas/1-easy/32-chocolate-factory/0-chocolate-factory/)
 33. [0. Source](/apuntes/thm/maquinas/1-easy/33-source/0-source/)
 34. [0. Neighbour](/apuntes/thm/maquinas/1-easy/34-neighbour/0-neighbour/)
-35. 
+35. [0. Agent T](/apuntes/thm/maquinas/1-easy/35-agent-t/0-agent-t/)
+36. 

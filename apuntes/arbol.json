@@ -7079,39 +7079,33 @@
                           "type": "directory",
                           "contents": [
                             {
-                              "name": "1. VM - WAF Control.md",
+                              "name": "1. Firewalls Refresher.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/1. VM - WAF Control.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/1. Firewalls Refresher.md",
                               "parent": "1. WAF - Introduction"
                             },
                             {
-                              "name": "2. Firewalls Refresher.md",
+                              "name": "2. Web Application Firewall.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/2. Firewalls Refresher.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/2. Web Application Firewall.md",
                               "parent": "1. WAF - Introduction"
                             },
                             {
-                              "name": "3. Web Application Firewall.md",
+                              "name": "3. Signature vs Behavioural Detections.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/3. Web Application Firewall.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/3. Signature vs Behavioural Detections.md",
                               "parent": "1. WAF - Introduction"
                             },
                             {
-                              "name": "4. Signature vs Behavioural Detections.md",
+                              "name": "4. Introduction to Rules.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/4. Signature vs Behavioural Detections.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/4. Introduction to Rules.md",
                               "parent": "1. WAF - Introduction"
                             },
                             {
-                              "name": "5. Introduction to Rules.md",
+                              "name": "5. Limitations of WAFs.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/5. Introduction to Rules.md",
-                              "parent": "1. WAF - Introduction"
-                            },
-                            {
-                              "name": "6. Limitations of WAFs.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/6. Limitations of WAFs.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/5. Limitations of WAFs.md",
                               "parent": "1. WAF - Introduction"
                             }
                           ]
@@ -8107,6 +8101,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/34. Neighbour/2. Getting the Flags.md",
                       "parent": "34. Neighbour"
+                    }
+                  ]
+                },
+                {
+                  "name": "35. Agent T",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/35. Agent T/1. Introduction.md",
+                      "parent": "35. Agent T"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/35. Agent T/2. Getting the Flags.md",
+                      "parent": "35. Agent T"
                     }
                   ]
                 },

@@ -1,0 +1,19 @@
+---
+layout: apunte
+title: "1. Firewalls Refresher"
+---
+
+Antes de profundizar en soluciones avanzadas, revisemos al historia de los firewalls. En los primeros tiempos de la computación por red, la seguridad solía ser un pensamiento a posteriori. Cuando las organizaciones comenzaron a conectar sus redes internas al mundo exterior, se dieron cuenta de que necesitaban un "segurata" en la entrada. Necesitaban una manera de decidir qué tráfico pasaba y cuál no. Considerando la tecnología disponible en aquel momento, la respuesta era el stateless packet filter.
+
+------------------------------------
+<h2>Firewalls Stateless: El Guardián sin Memoria</h2>
+Como el nombre adelanta, un filtrador de paquetes sin estado es un guardián sin memoria. Opera en las capas 3 y 4 del modelo OSI, donde puede inspeccionar direcciones IP, puertos TCP y UDP, algunos headers y otros protocolos. Este filtro de paquetes básico es completamente ignorante del contexto del tráfico, cada paquete se juzga aislado. Piensa en un agente de frontera mirando el pasaporte de un niño como si este estuviera viajando solo.
+
+Esta medida de seguridad funcionó durante un tiempo antes de que los hackers se dieran cuenta de que podían abusar del hecho de que no tenía estado. En otras palabras, un atacante podría mandar un paquete con la flag ACK configurada para engañar al servidor para tratar dicho paquete como si formara parte de una conexión existente.
+
+---------------------------------
+<h2>Firewalls Stateful: Recordar la Conversación</h2>
+
+
+-------------------------------------
+<h2>Firewalls que Entienden la Capa 7</h2>

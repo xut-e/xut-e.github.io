@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-04-03T01:15:58",
-    "hash": "a32407a795a8c90e94b921bbfec9d1b2ec7cb85fdf81f9aee6efe23d56b5495b"
+    "modified": "2026-04-04T01:10:04",
+    "hash": "581c1260e46ea23583d3b28338728b27d400522af3653002c88015fc075795af"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4976,8 +4976,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/0. WAF - Introduction.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "7e8f186faeb8e81a1c704745636f9d21aef6bdf9cbc48e6afc789b9370bdee9a"
+    "modified": "2026-04-04T01:10:04",
+    "hash": "7e9c372ab3b87ce038b519919decdc183c3ff4d804f31fdf22753752d5dd78ba"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/2. Firewalls Refresher.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5692,8 +5692,8 @@
     "hash": "9787a477204f1b6f97b68288866749301cca516186f8c2ca335caa2da7246323"
   },
   "THM/Maquinas/2. Medium/11. Voyage/2. Getting the Flags.md": {
-    "modified": "2026-04-03T01:15:58",
-    "hash": "de317e8bbbbca05182b6a854bb5adbf0f1645b8a328a9b1587a08c7f8a12e283"
+    "modified": "2026-04-04T01:10:04",
+    "hash": "c0c0db9f2793a44b2d902865ea887206824107ff0ca4a9db7a5e8551e2664ed3"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/3. Voyage/1. Redirection.md": {
     "modified": "2026-04-02T01:13:48",
@@ -5708,8 +5708,8 @@
     "hash": "f8102a8327eac17c308f6ff773257e5c141c2c9fa844396eaf1218332b66072b"
   },
   "THM/Maquinas/2. Medium/12. Sequence/2. Getting the Flags.md": {
-    "modified": "2026-04-03T01:15:58",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-04T01:10:04",
+    "hash": "618d4d55e81861a66b2c6bf2924a740f1b5bf11fc7df37d05803bc676eb1c215"
   },
   "THM/Maquinas/1. Easy/34. Neighbour/1. Introduction.md": {
     "modified": "2026-04-03T01:15:58",
@@ -5738,5 +5738,37 @@
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/3. Chaining Vulnerabilities/4. Sequence/1. Redirection.md": {
     "modified": "2026-04-03T01:15:58",
     "hash": "0430192542d1ae90b4c6c2d2d9d2ed975019b1dac7bdd4953e0bebc4bc203404"
+  },
+  "THM/Maquinas/1. Easy/35. Agent T/1. Introduction.md": {
+    "modified": "2026-04-04T01:10:04",
+    "hash": "ca919995803574051f5c1afc24bee8fd7e355996a70432434486643466c4bdea"
+  },
+  "THM/Maquinas/1. Easy/35. Agent T/2. Getting the Flags.md": {
+    "modified": "2026-04-04T01:10:04",
+    "hash": "2da50c9d2062e0df34f4cd41e764ae125c27941e662fae7c90c0ac0cb3ab275f"
+  },
+  "THM/Maquinas/1. Easy/35. Agent T/0. Agent T.md": {
+    "modified": "2026-04-04T01:10:04",
+    "hash": "1d17920103be094ee53c6ba500d2ad499c4d1151a69e3c15678c01fdbb9005c3"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/4. Introduction to Rules.md": {
+    "modified": "2026-04-04T01:10:04",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/5. Limitations of WAFs.md": {
+    "modified": "2026-04-04T01:10:04",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/3. Signature vs Behavioural Detections.md": {
+    "modified": "2026-04-04T01:10:04",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/1. Firewalls Refresher.md": {
+    "modified": "2026-04-04T01:10:04",
+    "hash": "5899ed492f121d434af616df31dcc33936183ebd19ce2b0d9dddc22fd09f58bb"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/2. Web Application Firewall.md": {
+    "modified": "2026-04-04T01:10:04",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }
