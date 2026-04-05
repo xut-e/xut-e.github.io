@@ -3,3 +3,115 @@ layout: apunte
 title: "2. Web Application Firewall"
 ---
 
+En su núcleo, un WAF es un control de seguridad que inspecciona tráfico HTTP(S), tanto hacia dentro como hacia fuera en busca de señales de actividad maliciosa. Al contrario que los firewalls de red que guardan puertos o los NGFWs que clasifican aplicaciones, un WAF habla HTTP fluido: parsea métodos, headers, cookies, strings de queries y bodies POST para asegurar las políticas alineadas con amenazas como la SQL injection, cross-site scripting, file inclusion y command injection. Dicho con otras palabras, protege contra OWASP Top10.
+
+Aunque no pueden arreglar código roto, los WAFs intentan mitigar las vulnerabilidades conocidas sin requerir que el código fuente cambie, esto se llama virtual patching. Al contrario que el parcheo real, si el firewall no cubre dicho payload, la vulnerabilidad será ejecutada.
+
+---------------------------------------------
+<h2>El Poder de un WAF</h2>
+Aunque el WAF no es el único firewall que entiende el tráfico HTTP, puede ser el único que posee conocimiento profundo de los varios ataques que apuntan a las aplicaciones web. Por ejemplo, se daría cuenta de que `?id=1' OR '1' ='1` es una prueba SQLi clásica y que `<img src=x onerror=alert(1)>` es un vector de ataque XSS. Las reglas del WAF se construyen alrededor de detectar ataques web.
+
+Los modos de despliegue se resumen en la siguiente tabla:
+
+| Modelo                          | Descripción                                                                                | Ejemplos Comunes                             |
+| ------------------------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| **Cloud-based (Reverse Proxy)** | Tráfico enrutado a través de la estructura del vendor (ej. vía DNS). WAF termina el TLS    | Cloudflare, AWS WAF, Akamai, Imperva Cloud   |
+| **Network Appliance**           | Dispositivo físico o virtual en linea (normalmente emparejado con un balanceador de carga) | F5 Advanced WAF, Fortinet WAF, Barracuda WAF |
+| **Host-based (Embedded)**       | Módulo en el servidor web(ej. Apache/Nginx)                                                | ModSecurity + OWASP Core Rule Set (CRS)      |
+
+-----------------------------------
+<h2>Fingerprinting un WAF</h2>
+La mitad del trabajo para bypassear un WAF es saber que hay un WAF establecido. Puede ser muy frustrante intentar realizar pruebas de penetración si no sabemos que hay un WAF interfiriendo y bloqueando nuestros payloads. Una vez nos percatamos de que existe podemos dejar de perder tiempo con payloads que bloqueará, ofuscar con estrategias en debilidades de reglas conocidas y ajustar nuestro ritmo de pruebas para evitar bloqueos por IP o rate limiting.
+
+Esta sección se centra en varias técnicas para descubrir el WAF. Cubriremos los siguientes acercamientos:
+
+- Inspección pasiva de headers
+- Análisis de comportamiento
+- Fingerprinting automatizado con `wafw00f`
+- Automatización a nivel de subred con `http-waf-fingerprinting` de Nmap
+
+-------------------------------
+<h2>Inspección Pasiva de Headers: Lee el Nombre de la Etiqueta</h2>
+El primer acercamiento sería inspeccionar los headers de la aplicación web objetivo. Desde la terminal, usamos `curl -I` seguido de la URL o IP del objetivo. Tratamos de ver si podemos localizar alguno de los WAFs cloud comunes:
+
+- `server: cloudflare`
+- `X-Sucuri-ID`
+- `X-CDN: Imperva`
+- `Akamai-Origin-Hop: 2`
+- `X-F5-Application: ASM`
+
+--------------------------------------
+<h2>Análisis de Comportamiento: Mira cómo Reacciona cuando lo Molestas</h2>
+Este es más invasivo que el anterior. En este caso, no sólo vamos a hacer peticiones a la web, sino también mandar algo que parezca malicioso. Estamos concatenando strings maliciosas que suelan ser indicativas de un ataque. Las siguientes strings coinciden con firmas de ataque comunes:
+
+- `' OR 1=1--`
+- `<script>alert(1)</script>`
+- `../../../../etc/passwd`
+
+Incluso aunque son inocuas, parecen ataques reales y deberías obtener permiso antes de realizarlas fuera de un ambiente de laboratorio. La siguiente tabla ofrece una lista de respuestas que buscar junto con interpretaciones probables:
+
+| Respuesta                             | Significado probable                        |
+| ------------------------------------- | ------------------------------------------- |
+| `403 Forbidden`, blank page           | Classic WAF block                           |
+| `406 Not Acceptable`                  | Common in ModSecurity CRS                   |
+| Custom HTML page with “Access Denied” | Vendor-specific (e.g., Fortinet, Barracuda) |
+| Delayed response (>500ms)             | WAF inspection overhead                     |
+| No change from normal search          | Possibly no WAF or blind probe              |
+
+----------------------------------------
+<h2>Fingerprinting Automatizado: Deja que la Herramienta Haga el Trabajo Duro</h2>
+En lugar de usar `curl` para intentar disparar reglas comunes de WAF manualmente, podemos usar una herramienta como [WAFW00F](https://github.com/EnableSecurity/wafw00f) siguiendo estos pasos:
+
+- Comienza con una prueba base: Manda una petición HTTP estándar y analiza la respuesta, código de estado, headers, e indicadores body para hacer fingerprint de soluciones WAF estándar.
+- Si los resultados son inconcluyentes, escala con un conjunto controlado de peticiones HTTP potencialmente maliciosas y aplica la misma lógica para mapear comportamientos observados comunes de una implementación WAF.
+- Si sigue sin resolverse, analiza las respuestas recolectadas, códigos, headers, timings y cualquier otra página y aplica otro algoritmo para inferir si el WAF o un control de seguridad está mediando activamente el tráfico.
+
+Puede detectar más de 500 WAFs. Aquí hay algunos ejemplos. En el primero, WAFW00F no detectó un WAF.
+
+```shell-session
+root@attackbox:~# wafw00f http://example1
+[...]
+                        ~ WAFW00F : v2.3.1 ~
+        The Web Application Firewall Fingerprinting Toolkit
+    
+[*] Checking http://example1
+[+] Generic Detection results:
+[-] No WAF detected by the generic detection
+[~] Number of requests: 7
+```
+
+En este ejemplo, la existencia de un WAF fue detectada porque el código HTTP de respuesta cambió del normal.
+
+```shell-session
+root@attackbox:~# wafw00f http://example2
+[...]
+                    ~ WAFW00F : v2.3.1 ~
+    The Web Application Firewall Fingerprinting Toolkit
+    
+[*] Checking http://example2
+[+] Generic Detection results:
+[*] The site http://example2 seems to be behind a WAF or some sort of security solution
+[~] Reason: The server returns a different response code when an attack string is used.
+Normal response code is "200", while the response code to a cross-site scripting attack is "403"
+[~] Number of requests: 5
+```
+
+Este resultado también mostró que había un WAF. En el output de abajo, podemos ver que la existencia de un WAF fue detectada cuando el código HTTP de la respuesta cambió.
+
+```shell-session
+root@attackbox:~# wafw00f http://example3
+[...]
+                    ~ WAFW00F : v2.3.1 ~
+    The Web Application Firewall Fingerprinting Toolkit
+    
+[*] Checking http://example3
+[+] Generic Detection results:
+[*] The site http://example3 seems to be behind a WAF or some sort of security solution
+[~] Reason: The server returns a different response code when an attack string is used.
+Normal response code is "429", while the response code to a file inclusion attack is "200"
+[~] Number of requests: 6
+```
+
+-------------------------------------------------
+<h2>Fingerprinting Automatizado: Usando Scripts Nmap</h2>
+WAFW00F es excelente pare detectar WAFs cuando miramos un solo host, pero para comprobar una subred, puede que quieras considerar usar el script de Nmap `http-waf-fingerprint`. Para usarlo usa la sintaxis: `nmap -p 80,443 --script http-waf-fingerprint TARGET_IP`. El mayor problema es que este script permanece en silencio cuando el nombre del WAF no es detectado. WAFW00F en contraposición nos informa de que hay un WAF incluso si el nombre o tipo no está claro.
