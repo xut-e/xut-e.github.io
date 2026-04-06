@@ -8123,6 +8123,42 @@
                   ]
                 },
                 {
+                  "name": "36. Poster",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/36. Poster/1. Introduction.md",
+                      "parent": "36. Poster"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/36. Poster/2. Getting the Flags.md",
+                      "parent": "36. Poster"
+                    }
+                  ]
+                },
+                {
+                  "name": "37. VulnNet - Internal",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/37. VulnNet - Internal/1. Introduction.md",
+                      "parent": "37. VulnNet - Internal"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/37. VulnNet - Internal/2. Getting the Flags.md",
+                      "parent": "37. VulnNet - Internal"
+                    }
+                  ]
+                },
+                {
                   "name": "4. Res",
                   "type": "directory",
                   "contents": [

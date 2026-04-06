@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-04-04T01:10:04",
-    "hash": "581c1260e46ea23583d3b28338728b27d400522af3653002c88015fc075795af"
+    "modified": "2026-04-06T01:19:16",
+    "hash": "e42de4c5f2e5bf423fea5f0c2ee1277bb0cc3b9d3bf4a54386b7bea257195ea0"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5770,5 +5770,29 @@
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/2. Web Application Firewall.md": {
     "modified": "2026-04-05T01:19:05",
     "hash": "f567253cc23ffdb147b59f51e11139f3f59c15d121781b91eb99726f0f5ee922"
+  },
+  "THM/Maquinas/1. Easy/37. VulnNet - Internal/1. Introduction.md": {
+    "modified": "2026-04-06T01:19:16",
+    "hash": "3a3413d1fa12b5454e66c25a8e89dfe2ec926c9b45e6aee667fa8d96418f5464"
+  },
+  "THM/Maquinas/1. Easy/37. VulnNet - Internal/2. Getting the Flags.md": {
+    "modified": "2026-04-06T01:19:16",
+    "hash": "0e6937408cae3598f68a9fe0ceb85922e4f3396d2768e48b46e6c75ed995c7fe"
+  },
+  "THM/Maquinas/1. Easy/37. VulnNet - Internal/0. VulnNet - Internal.md": {
+    "modified": "2026-04-06T01:19:16",
+    "hash": "4de78e7bdbabeff75c3e7a9e6395c9e05bdb5dd3d45fc5f7c96e13d04eeb4bc7"
+  },
+  "THM/Maquinas/1. Easy/36. Poster/1. Introduction.md": {
+    "modified": "2026-04-06T01:19:16",
+    "hash": "11f3cfd625b1fa662f75913e8ab58df2a4eb56ad12db9aedb43d0260290c6140"
+  },
+  "THM/Maquinas/1. Easy/36. Poster/0. Poster.md": {
+    "modified": "2026-04-06T01:19:16",
+    "hash": "e4261ab4ef823534981a6dda64c922bbfa4a5e6fc6d2c061744c5ec27fbc62cd"
+  },
+  "THM/Maquinas/1. Easy/36. Poster/2. Getting the Flags.md": {
+    "modified": "2026-04-06T01:19:16",
+    "hash": "771780f22fd48fa2efc2a2c2f86fa879a9844d9dcde8850f8614abe7f1ce227e"
   }
 }

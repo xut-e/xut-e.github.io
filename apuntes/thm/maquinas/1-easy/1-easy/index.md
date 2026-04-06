@@ -38,4 +38,6 @@ title: "1. Easy"
 33. [0. Source](/apuntes/thm/maquinas/1-easy/33-source/0-source/)
 34. [0. Neighbour](/apuntes/thm/maquinas/1-easy/34-neighbour/0-neighbour/)
 35. [0. Agent T](/apuntes/thm/maquinas/1-easy/35-agent-t/0-agent-t/)
-36. 
+36. [0. Poster](/apuntes/thm/maquinas/1-easy/36-poster/0-poster/)
+37. [0. VulnNet - Internal](/apuntes/thm/maquinas/1-easy/37-vulnnet-internal/0-vulnnet-internal/)
+38. 

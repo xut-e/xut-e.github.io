@@ -1,0 +1,208 @@
+---
+layout: apunte
+title: "2. Getting the Flags"
+---
+
+<h2>Reconocimiento Inicial</h2>
+Comenzamos escaneando los puertos abiertos de la máquina.
+
+!**Pasted image 20260405184436.png**
+
+Ahora vamos a escanear los puertos abiertos más en profundidad.
+
+!**Pasted image 20260405184733.png**
+!**Pasted image 20260405184753.png**
+
+---------------------------------
+<h2>Profundización</h2>
+Vamos a investigar el puerto `445`, `SMB`.
+
+!**Pasted image 20260405184937.png**
+
+Vamos a ver qué hay en `shares`.
+
+!**Pasted image 20260405185304.png**
+
+Parece que hemos encontrado un par de archivos, vamos a ver qué hay en ellos. Primero los descargamos.
+
+!**Pasted image 20260405193250.png**
+
+Y ahora vamos a leerlos.
+
+!**Pasted image 20260405193349.png**
+
+Hemos conseguido la primera flag.
+
+Viendo que hay una share vamos a investigar más a fondo esto.
+
+!**Pasted image 20260405193640.png**
+
+Vemos que hay una `mount` en `/opt/conf`. Vamos a montarla en nuestro equipo.
+
+!**Pasted image 20260405193915.png**
+
+Si hacemos un tree vemos que hay un documento sugerente (la configuración de redis que es una base de datos).
+
+!**Pasted image 20260405194127.png**
+
+Primero probé a leerlo normal, pero estaba lleno de comentarios que molestaban y no dejaban ver lo importante, por eso filtré con `grep -v`.
+
+!**Pasted image 20260405194219.png**
+
+Si seguimos leyendo encontramos algo interesante.
+
+!**Pasted image 20260405194244.png**
+
+--------------------------------
+<h2>Explotación</h2>
+Vamos a iniciar sesión con `redis-cli`. Una vez dentro listaremos las claves que haya.
+
+!**Pasted image 20260405194738.png**
+
+Aquí vemos `"internal flag"`, vamos a leerla.
+
+!**Pasted image 20260405194928.png**
+
+Además vimos una `authlist`, vamos a ver de qué se trata.
+
+!**Pasted image 20260405195709.png**
+
+Está codificado en base64. Vamos a decodearla.
+
+!**Pasted image 20260405195810.png**
+
+Aparece una contraseña de alguien que se conectó desde local. Vamos a conectarnos por `rsync`.
+
+!**Pasted image 20260405200339.png**
+
+Hay muchas cosas, así que vamos a exportarlo.
+
+!**Pasted image 20260405200500.png**
+
+Vamos a mirar a ver qué hay.
+
+!**Pasted image 20260405200532.png**
+
+Vamos a leer la flag.
+
+!**Pasted image 20260405200605.png**
+
+------------------------------
+<h2>Escalada de Privilegios</h2>
+En el `sys-internal` hay una carpeta `.ssh` vacía.
+
+!**Pasted image 20260405201205.png**
+
+Esto significa que si podemos generar un par de claves SSH y subir la clave pública  podremos conectarnos por SSH.
+
+Primero generamos el par de claves.
+
+!**Pasted image 20260405201703.png**
+
+Ahora vamos a subir la clave pública.
+
+!**Pasted image 20260405201944.png**
+
+Iniciamos sesión por SSH con la clave privada.
+
+!**Pasted image 20260405202108.png**
+
+Listando el sistema, nos encontramos con una carpeta que no está ahí por defecto.
+
+!**Pasted image 20260405202348.png**
+
+Buscamos a ver qué es:
+
+!**Pasted image 20260405202552.png**
+
+Si miramos el readme:
+
+!**Pasted image 20260405202906.png**
+
+Vemos que es JetBrains TeamCity. Si buscamos por vectores de escalada de privilegios vemos que es posible.
+
+!**Pasted image 20260405203135.png**
+
+Vamos a seguir investigando, miraremos si está corriendo.
+
+!**Pasted image 20260405203224.png**
+
+Parece que sí está corriendo. Como no podemos acceder a dicho puerto desde nuestro navegador, vamos a hacer un port forwarding.
+
+!**Pasted image 20260405203638.png**
+
+Vamos ahora al navegador.
+
+!**Pasted image 20260405203714.png**
+
+Vamos a darle a iniciar sesión como Super user.
+
+!**Pasted image 20260405203751.png**
+
+Nos piden un token, vamos a buscarlo en el sistema.
+
+!**Pasted image 20260405204101.png**
+
+Con este token ya podemos iniciar sesión. Uno de ellos funciona.
+
+!**Pasted image 20260405204251.png**
+
+Si le damos a `+ Create project`, nos sale esto:
+
+!**Pasted image 20260405204901.png**
+
+Seleccionamos `Manually` e introducimos lo que nos pide y le damos a `Create`.
+
+!**Pasted image 20260405205052.png**
+
+Seguimos estos pasos:
+
+1. Vamos a `Project Home`.
+
+!**Pasted image 20260405205734.png**
+
+2. Le damos a `Edit Project Settings`.
+
+!**Pasted image 20260405205812.png**
+
+3. Le damos a `+ Create build configuration`.
+
+!**Pasted image 20260405210129.png**
+
+4. En manual ponemos los detalles necesarios.
+
+!**Pasted image 20260405210220.png**
+
+5. Le damos a `Skip`.
+
+!**Pasted image 20260405210252.png**
+
+6. Y ahí a `Build Steps` y creamos uno.
+
+!**Pasted image 20260405210327.png**
+
+7. Ahora ponemos el runner type de `Command Line` y le ponemos un comando para transformar `/bin/bash` en un binario SUID.
+
+!**Pasted image 20260405210514.png**
+
+Lo guardamos y le damos a `run` (arriba, al lado de `Actions`).
+
+!**Pasted image 20260405210636.png**
+
+Comprobamos los permisos de `/bin/bash`.
+
+!**Pasted image 20260405210656.png**
+
+Bingo! Vamos a ejecutar una shell como root.
+
+!**Pasted image 20260405210723.png**
+
+Ahora leemos la flag.
+
+!**Pasted image 20260405210747.png**
+
+---------------------------------------------
+<h2>Conclusión</h2>
+Esta máquina empieza fácil, la verdad es que hasta la parte de redis es bastante sencillo llegar, el problema empieza con `rsync`, no es un comando que suela utilizar mucho y no me daba cuenta de todo lo que se puede llegar a hacer con él. Por último, el vector de escalada es incluso más raro, pero ahora la próxima vez que vea un TeamCity sabré sospechar de él hehe.
+
+Gracias a [Z3rObyte](https://z3robyte.github.io/writeup/tryhackme/Vulnnet-internal-TryHackMe-Writeup/) por su write up ya que intuía que el vector de escalada era TeamCity pero no conseguía encontrar la forma de escalar.
