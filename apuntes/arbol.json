@@ -8159,6 +8159,42 @@
                   ]
                 },
                 {
+                  "name": "38. ColddBox - Easy",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/38. ColddBox - Easy/1. Introduction.md",
+                      "parent": "38. ColddBox - Easy"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/38. ColddBox - Easy/2. Getting the Flags.md",
+                      "parent": "38. ColddBox - Easy"
+                    }
+                  ]
+                },
+                {
+                  "name": "39. Corridor",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/39. Corridor/1. Introduction.md",
+                      "parent": "39. Corridor"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/39. Corridor/2. Getting the Flags.md",
+                      "parent": "39. Corridor"
+                    }
+                  ]
+                },
+                {
                   "name": "4. Res",
                   "type": "directory",
                   "contents": [

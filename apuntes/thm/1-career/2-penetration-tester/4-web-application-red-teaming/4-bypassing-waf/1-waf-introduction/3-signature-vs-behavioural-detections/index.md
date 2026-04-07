@@ -3,3 +3,41 @@ layout: apunte
 title: "3. Signature vs Behavioural Detections"
 ---
 
+Un WAF basado en firmas dice: "Sé cómo se ve un cuchillo". Un WAF basado en comportamiento dice: "Sé cómo se ve el uso benigno de un cuchillo, como cortar pan y cómo se mueve alguien que sostiene un cuchillo malintencionadamente". Por desgracia, ambos pueden ser engañados.
+
+---------------------------------------
+<h2>Detección Basada en Firmas</h2>
+Un motor de detección basado en firmas funciona comparando los contenidos de cada paquete contra una lista de firmas maliciosas conocidas. Generalmente hablando, dichos motores de detección reconocen qué es malicioso y confían en este conocimiento para decidir lo que es benigno. Por ejemplo, incluiría reglas que coincidan con patrones SQLi, como los de una petición `GET /search?q=' OR 1=1-- HTTP/1.1`. Además, el WAF responderá con algo como `403 Forbidden` si la petición recibida coincide con la regla. Consecuentemente, cualquier ataque similar será bloqueado a no ser que el atacante encuentre una forma de evadir la regla.
+
+Los atacantes evaden la firma usando:
+
+- **Encoding:** Un atacante puede intentar encodear `' OR 1=1--` como `'%20OR%201=1--`, `%27%20OR%201%3D1--` o incluso `%27%20OR%201%3D1%2D%2D`.
+- **Case variation:** Es este intento, el atacante escribiría `UNION SELECT` como `unIOn sElEcT`.
+- **Comment insertion:** El atacante intentaría insertar comentarios para evitar disparar reglas.
+- **Alternative syntax:** Si el atacante puede reemplazar una sintaxis con otra, como `1' AND SLEEP(10)--` con `1' AND IF(1=1, SLEEP(10), 1) --`.
+
+Para que el atacante tenga éxito, una vez determinado que la regla está bloqueando su payload, necesita hacer cambios y probar de nuevo. Dependiendo de las reglas del objetivo, pueden ser capaces de evitar la detección. La ventaja principal de la detección basada en firma es que el número de falsos positivos se espera que sea bajo. La desventaja es que estos motores son tan buenos sólo como lo sean sus firmas, por lo que pueden dejar pasar payloads maliciosos debido a encoding u otras técnicas. No pueden detectar 0days.
+
+| Ventajas                                       | Desventajas                                      |
+| ---------------------------------------------- | ------------------------------------------------ |
+| Pocos falsos positivos (si está bien ajustado) | Ciego a la ofuscación (encoding, comentarios...) |
+| Fácil de escribir y entender                   | No puede detectar 0days                          |
+| Alta eficiencia (regex es muy rápido)          | Requiere actualizaciones constantes              |
+
+----------------------------------
+<h2>Detección Basada en Comportamiento</h2>
+También es conocida como detección basada en anomalías. Dichos motores de detección son entrenados para saber lo que es normal. Cualquier desviación de lo normal es etiquetado como anómalo. Para construir una base para lo "normal", exponer el motor a tráfico normal es indispensable. El comportamiento normal puede incluir longitud del input, conteo de parámetros, tipo de data, session rate, comportamiento histórico del usuario y más.
+
+Digamos que una petición estándar POST HTTP espera verse así: `username=alice&password=pass1234`, entonces los motores de detección reciben algo como `username=' OR '1'='1&password=somepass`; la existencia de caracteres especiales en el username junto con el espacio en blanco, es una desviación aparente de lo que un username normal debería ser.
+
+La fortaleza principal de la detección basada en anomalías es que tiene una oportunidad decente de bloquear ataques 0day ya que estos se desvían del comportamiento normal. La desventaja principal es que se espera un alto número de falsos positivos y puede ser más costoso computacionalmente.
+
+| Ventajas                                             | Desventajas                          |
+| ---------------------------------------------------- | ------------------------------------ |
+| Detecta 0days                                        | Número elevado de falsos positivos   |
+| Más difícil de bypassear con simple encoding         | Requiere un periodo de entrenamiento |
+| Se adapta a la lógica de la aplicación con el tiempo | Computacionalmente costoso           |
+
+---------------------------------------------
+<h2>Detección Híbrida</h2>
+En los WAFs comerciales modernos, una combinación de ambos acercamientos es usada. Por ejemplo, el tráfico puede que primero pase por un filtro de firma y luego una inspección es realizada para detectar anomalías. Finalmente se calcula la puntuación de riesgo del paquete.

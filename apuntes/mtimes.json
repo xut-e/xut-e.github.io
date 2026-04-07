@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-04-06T01:19:16",
-    "hash": "e42de4c5f2e5bf423fea5f0c2ee1277bb0cc3b9d3bf4a54386b7bea257195ea0"
+    "modified": "2026-04-07T01:17:15",
+    "hash": "0e0b91c29118f82aeed19bf4db66e45c3667b83583741e9a0705bce73e947f6b"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4952,8 +4952,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/1. Exploiting Outdated Version 3.3.5 of OWASP CRS.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-07T01:17:15",
+    "hash": "c7345326846ac4bf6c852ea0d07da8033359052326e3f2977beef019f913713b"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/4. Signature vs Behavioural Detections.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5752,16 +5752,16 @@
     "hash": "1d17920103be094ee53c6ba500d2ad499c4d1151a69e3c15678c01fdbb9005c3"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/4. Introduction to Rules.md": {
-    "modified": "2026-04-04T01:10:04",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-07T01:17:15",
+    "hash": "47f7a3b856dcf1344f9f43db1b0c7f5ef7c7d27fd3fe172c89d2f2d01d756ab5"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/5. Limitations of WAFs.md": {
-    "modified": "2026-04-04T01:10:04",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-07T01:17:15",
+    "hash": "cb09121bdfe293a1fc55b7ef198013fe9ec73c7d4013ca6f0506385503e6a731"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/3. Signature vs Behavioural Detections.md": {
-    "modified": "2026-04-04T01:10:04",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-07T01:17:15",
+    "hash": "f2b3840536a7eddd9b51a016708c208bf44a94f446608070f3d09a3e94cd940e"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/1. WAF - Introduction/1. Firewalls Refresher.md": {
     "modified": "2026-04-05T01:19:05",
@@ -5794,5 +5794,29 @@
   "THM/Maquinas/1. Easy/36. Poster/2. Getting the Flags.md": {
     "modified": "2026-04-06T01:19:16",
     "hash": "771780f22fd48fa2efc2a2c2f86fa879a9844d9dcde8850f8614abe7f1ce227e"
+  },
+  "THM/Maquinas/1. Easy/38. ColddBox - Easy/1. Introduction.md": {
+    "modified": "2026-04-07T01:17:15",
+    "hash": "839c949b134d40154d17934a65ea94a79c40cf1d035d186caf76a3d16f4d856c"
+  },
+  "THM/Maquinas/1. Easy/38. ColddBox - Easy/2. Getting the Flags.md": {
+    "modified": "2026-04-07T01:17:15",
+    "hash": "55f2e7691093485b1fe4bab3d5feb63af8c24e00d8e60533049c0bdd5ce3d65e"
+  },
+  "THM/Maquinas/1. Easy/38. ColddBox - Easy/0. ColddBox - Easy.md": {
+    "modified": "2026-04-07T01:17:15",
+    "hash": "e0618f82c5e41b99539bf2025be62da61e3fed708c7297027893a04461cfee5d"
+  },
+  "THM/Maquinas/1. Easy/39. Corridor/0. Corridor.md": {
+    "modified": "2026-04-07T01:17:15",
+    "hash": "9dbe713181f5c7b65c1a66e34f52d3216a2932a701b6e194f803b072a4c75a69"
+  },
+  "THM/Maquinas/1. Easy/39. Corridor/1. Introduction.md": {
+    "modified": "2026-04-07T01:17:15",
+    "hash": "b4d5b2a3c531f301c7ec3eb6a055199408061c14ae9509053a37c72ecac9f358"
+  },
+  "THM/Maquinas/1. Easy/39. Corridor/2. Getting the Flags.md": {
+    "modified": "2026-04-07T01:17:15",
+    "hash": "d465b9950cccf1d9e7b20d99e8e49bc5bd40cf4df8c8d0bd93f00f3471fc3624"
   }
 }

@@ -1,0 +1,149 @@
+---
+layout: apunte
+title: "2. Getting the Flags"
+---
+
+<h2>Reconocimiento Inicial</h2>
+Comenzamos escaneando los puertos abiertos de la máquina.
+
+!**Pasted image 20260406174450.png**
+
+Ahora escaneamos dichos puertos más en profundidad.
+
+!**Pasted image 20260406173946.png**
+
+Vamos a listar directorios de la web.
+
+!**Pasted image 20260406174436.png**
+
+Vamos a ver cómo es la web.
+
+!**Pasted image 20260406174534.png**
+
+Vamos a mirar las páginas que hemos encontrado.
+
+Sólo tienen algo `wp-login.php`:
+
+!**Pasted image 20260406175057.png**
+
+Y `xmlrpc.php`:
+
+!**Pasted image 20260406175127.png**
+
+-------------------------------
+<h2>Profundización</h2>
+Como conocemos la versión de WordPress (`4.1.31`), vamos a hacer un pequeño escaneo del CMS.
+
+!**Pasted image 20260406175243.png**
+
+Ahora vamos a buscar a ver si hay alguna vulnerabilidad conocida. No hemos encontrado nada, así que vamos a usar `wpscan` para enumerar el sitio web y buscar usuarios.
+
+!**Pasted image 20260406180324.png**
+!**Pasted image 20260406180340.png**
+
+-------------------------------
+<h2>Explotación</h2>
+Con estos usuarios vamos a intentar realizar fuerza bruta. Primero miramos cómo es una petición:
+
+!**Pasted image 20260406181622.png**
+
+Y lo usamos para realizar el ataque con hydra.
+
+!**Pasted image 20260406181650.png**
+
+Con esta contraseña iniciamos sesión.
+
+!**Pasted image 20260406181736.png**
+
+Vamos a mirar las plantillas.
+
+!**Pasted image 20260406182152.png**
+
+Copiamos una reverse shell PHP en el clipboard.
+
+!**Pasted image 20260406182326.png**
+
+Nos ponemos en escucha.
+
+!**Pasted image 20260406182421.png**
+
+Y la pegamos en la plantilla `404.php`.
+
+!**Pasted image 20260406182503.png**
+
+Le damos a `Update File` y acto seguido buscamos la ruta: `http://colddbox.thm/wp-content/themes/twentyfifteen/404.php`. Si volvemos a ver el listener:
+
+!**Pasted image 20260406182655.png**
+
+La estabilizamos.
+
+!**Pasted image 20260406182741.png**
+
+Ahora buscamos la primera flag.
+
+!**Pasted image 20260406182822.png**
+
+No nos deja, por lo que tendremos que conseguir la manera de pivotar hacia dicho usuario.
+
+Listando el sistema encontramos lo siguiente:
+
+!**Pasted image 20260406183045.png**
+
+Vamos a buscar dicho mensaje. Si seguimos enumerando encontramos el archivo `wp-config.php`.
+
+!**Pasted image 20260406183532.png**
+
+Vamos a proceder a entrar en la base de datos.
+
+!**Pasted image 20260406183631.png**
+
+Vamos a ver qué hay dentro.
+
+!**Pasted image 20260406183751.png**
+
+Acabamos de encontrar contraseñas, vamos a crackearlas.
+
+!**Pasted image 20260406184825.png**
+
+Hemos sacado dos contraseñas, pero no hay un usuario `hugo` en el sistema. Ahí es cuando me di cuenta de que la contraseña de la base de datos podría ser la contraseña del sistema por SSH.
+
+!**Pasted image 20260406184945.png**
+
+Bingo!
+
+Vamos a leer al flag de usuario.
+
+!**Pasted image 20260406185011.png**
+
+-----------------------------------
+<h2>Escalada de Privilegios</h2>
+Ahora toca escalar privilegios, primero vamos a mirar los grupos a los que pertenecemos.
+
+!**Pasted image 20260406185125.png**
+
+Vamos a seguir nuestra checklist habitual y si nada funciona volveremos a esto.
+
+!**Pasted image 20260406185206.png**
+
+El binario vim con sudo es un vector de escalada, vamos a mirarlo en GTFOBins.
+
+!**Pasted image 20260406185706.png**
+
+Lo usamos:
+
+!**Pasted image 20260406185644.png**
+
+Obtenemos la shell (escribimos `whoami`):
+
+!**Pasted image 20260406185730.png**
+
+No se ven los comandos pero podemos usarla sin problema:
+
+!**Pasted image 20260406185832.png**
+
+-----------------------------------------
+<h2>Conclusión</h2>
+Hemos trabajado con la enumeración de CMS y en concreto de WP. Además hemos conseguido pivotar entre usuarios y escalar privilegios. Una máquina bastante sencilla pero divertida.
+
+>[!SUCCESS] Hemos conseguido ambas flags!
+

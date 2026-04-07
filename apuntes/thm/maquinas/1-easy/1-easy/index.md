@@ -40,4 +40,6 @@ title: "1. Easy"
 35. [0. Agent T](/apuntes/thm/maquinas/1-easy/35-agent-t/0-agent-t/)
 36. [0. Poster](/apuntes/thm/maquinas/1-easy/36-poster/0-poster/)
 37. [0. VulnNet - Internal](/apuntes/thm/maquinas/1-easy/37-vulnnet-internal/0-vulnnet-internal/)
-38. 
+38. [0. ColddBox - Easy](/apuntes/thm/maquinas/1-easy/38-colddbox-easy/0-colddbox-easy/)
+39. [0. Corridor](/apuntes/thm/maquinas/1-easy/39-corridor/0-corridor/)
+40. 

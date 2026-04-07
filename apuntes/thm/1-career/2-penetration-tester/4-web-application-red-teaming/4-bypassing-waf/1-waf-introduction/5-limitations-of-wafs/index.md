@@ -3,3 +3,39 @@ layout: apunte
 title: "5. Limitations of WAFs"
 ---
 
+Antes de concluir, es bueno ver algunas de las limitaciones de los WAFs.
+
+<h2>Los WAFs sólo Funcionan si las Reglas son Buenas</h2>
+Los WAFs son tan buenos como sus reglas. Aunque esto puede parecer obvio, merezca la pena enfatizar que las reglas basadas en firmas son propensas a perder nuevos payloads. La ofuscación puede hacer posible evadir reglas basadas en regex. Además, muchas organizaciones los corren en modo log-only debido a la alta frecuencia de falsos positivos.
+
+-------------------------------------
+<h2>Los WAFs no Entienden Lógica de Aplciación</h2>
+Una de las mayores confusiones cuando se configura un WAF es que puede parar todos los ataques web. Esta expectativa no es realiza. Porque los WAFs no entienden la lógica de aplicación, no pueden determinar si un usuario debería ser acreditado para editar la información del perfil de otra persona o si un parámetro de precio ha sido o no manipulado. Esto son debilidades de lógica de negocio y los WAFs las ignoran.
+
+Considera el siguiente ejemplo del impacto en el mundo real:
+
+- **IDOR (Insecure Direct Object Reference)**
+- **Authorization Bypass**
+- **Race Conditions and Replay Attacks**
+
+----------------------------------------
+<h2>El Tráfico Encriptado es un Punto Ciego</h2>
+A no ser que sea desencriptado, el tráfico encriptado no puede ser inspeccionado en busca de payloads maliciosos, por lo que lo s WAFs modernos se ponen del otro lado de los puntos de terminación TLS para monitorizar todo el tráfico. Sin embargo, si la encriptación ocurriera antes del WAF, el WAF sólo podría ver conjuntos encriptados y no la petición HTTP real.
+
+Debería notarse que cuando el TLS es terminado en el WAF, el manejo de certificado suma a la complejidad y riesgo de setup. Además algunas empresas evitan la desencriptación debido a políticas de privacidad o compliance.
+
+--------------------------------------
+<h2>Los Ataques del Lado del Cliente Pasan Desapercibidos</h2>
+Los WAFs inspeccionan el tráfico ligado al servidor, por ello, no podemos esperar que bloqueen ataques que ocurren enteramente en el navegador. Por ejemplo, un ataque XSS basado en DOM.
+
+-------------------------------------
+<h2>Los WAFs Introducen Nueva Área de Ataque</h2>
+Irónicamente, añadir un WAF introduce nueva superficie de ataque. De hecho, si las reglas están configuradas pobremente, introduce RCE, por ejemplo, construyendo dinámicamente reglas de ModSecurity y fallando al escapar los inputs.
+
+Además, si la interfaz de gestión del WAF está expuesta en una IP pública, el atacante podría ganar acceso. O peor, si la interfaz de usuario fuera vulnerable a un RCE (CVEs).
+
+---------------------------------------------
+<h2>Eficiencia vs Seguridad</h2>
+Debemos tener en cuenta que la inspección profunda de paquetes consume tiempo de CPU. Considera los casos donde el WAF necesita hacer regex en una cantidad muy elevada de payloads o decodear múltiples capas. Este procedimiento puede impactar el rendimiento general e introducir retraso.
+
+Por último, introducir un WAF no hace que el sistema se vuelva milagrosamente seguro.
