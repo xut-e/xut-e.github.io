@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-04-02T01:13:48",
-    "hash": "65ec6a6d95f02b9df05ea26859ebaedc6e2e33dd3c5cc0c53696056251fe456f"
+    "modified": "2026-04-09T01:08:09",
+    "hash": "94d9703297ed291e88516e65774d79368f622160631347211f2febca10f4712f"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -4932,12 +4932,12 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/2. Exploiting Weak Configurations.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-09T01:08:09",
+    "hash": "0cfa676543dbcfb855eb80db51e9c3464dfbd37c8cb04bd4b26ba238278ed346"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/3. Signature - Patern Bypass.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-09T01:08:09",
+    "hash": "0798b6ba5dfa3cc997c6c31d518839f64b5465f36c76733735c73fd0b6cb583b"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/5. Protocol Manipulation.md": {
     "modified": "2026-03-10T01:01:35",
@@ -4948,8 +4948,8 @@
     "hash": "154178ec0cfae1dfcb15429239fe3efe082c13b25e6e3aac30ed4e4667a60846"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/4. Parsing and Normalization Bypass.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-09T01:08:09",
+    "hash": "c359ef212c8c237dd1b5d06212fc5c754237640f986104819fc9f16d09bde4b7"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/1. Exploiting Outdated Version 3.3.5 of OWASP CRS.md": {
     "modified": "2026-04-07T01:17:15",
@@ -5818,5 +5818,17 @@
   "THM/Maquinas/1. Easy/39. Corridor/2. Getting the Flags.md": {
     "modified": "2026-04-07T01:17:15",
     "hash": "d465b9950cccf1d9e7b20d99e8e49bc5bd40cf4df8c8d0bd93f00f3471fc3624"
+  },
+  "THM/Maquinas/2. Medium/13. Wonderland/1. Introduction.md": {
+    "modified": "2026-04-09T01:08:09",
+    "hash": "ded45269f12482ff903eabd4c447f450881df6341995fa395e9a3b69b01a00f9"
+  },
+  "THM/Maquinas/2. Medium/13. Wonderland/2. Getting the Flags.md": {
+    "modified": "2026-04-09T01:08:09",
+    "hash": "85d32ac867972184f9f079edf7147b982bba34c7008d057a2b34735932a0e032"
+  },
+  "THM/Maquinas/2. Medium/13. Wonderland/0. Wonderland.md": {
+    "modified": "2026-04-09T01:08:09",
+    "hash": "4a242c533e38411413aa9229a96980a48489bc94cb1ef1997c25711727279c81"
   }
 }

@@ -8393,6 +8393,24 @@
                   ]
                 },
                 {
+                  "name": "13. Wonderland",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/13. Wonderland/1. Introduction.md",
+                      "parent": "13. Wonderland"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/13. Wonderland/2. Getting the Flags.md",
+                      "parent": "13. Wonderland"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Net Sec Challenge",
                   "type": "directory",
                   "contents": [
