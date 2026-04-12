@@ -8213,6 +8213,24 @@
                   ]
                 },
                 {
+                  "name": "40. Archangel",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/40. Archangel/1. Introduction.md",
+                      "parent": "40. Archangel"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/40. Archangel/2. Getting the Flags.md",
+                      "parent": "40. Archangel"
+                    }
+                  ]
+                },
+                {
                   "name": "5. Brooklyn Nine Nine",
                   "type": "directory",
                   "contents": [

@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-04-07T01:17:15",
-    "hash": "0e0b91c29118f82aeed19bf4db66e45c3667b83583741e9a0705bce73e947f6b"
+    "modified": "2026-04-12T01:23:15",
+    "hash": "ed06cdeda60750e09770254989e802b8a4b39bcfbcac4e9fcab0e6c0f4d15f31"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4948,8 +4948,8 @@
     "hash": "154178ec0cfae1dfcb15429239fe3efe082c13b25e6e3aac30ed4e4667a60846"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/4. Parsing and Normalization Bypass.md": {
-    "modified": "2026-04-09T01:08:09",
-    "hash": "c359ef212c8c237dd1b5d06212fc5c754237640f986104819fc9f16d09bde4b7"
+    "modified": "2026-04-12T01:23:15",
+    "hash": "4392565722bbd3c0a48907af541b957838f605d3a89f78f7c7c9182219d44326"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/1. Exploiting Outdated Version 3.3.5 of OWASP CRS.md": {
     "modified": "2026-04-07T01:17:15",
@@ -5830,5 +5830,17 @@
   "THM/Maquinas/2. Medium/13. Wonderland/0. Wonderland.md": {
     "modified": "2026-04-09T01:08:09",
     "hash": "4a242c533e38411413aa9229a96980a48489bc94cb1ef1997c25711727279c81"
+  },
+  "THM/Maquinas/1. Easy/40. Archangel/2. Getting the Flags.md": {
+    "modified": "2026-04-12T01:23:15",
+    "hash": "5d80eea0329952624ee2a8184a2d22b17f79bd0e1e4edf4e3b37009e327be071"
+  },
+  "THM/Maquinas/1. Easy/40. Archangel/0. Archangel.md": {
+    "modified": "2026-04-12T01:23:15",
+    "hash": "e6255b05b6edab27993b9e73decb7b1af3d612944fe98711f4f86ca8fe25b54a"
+  },
+  "THM/Maquinas/1. Easy/40. Archangel/1. Introduction.md": {
+    "modified": "2026-04-12T01:23:15",
+    "hash": "2cecae879b0a0d5168146277cfb87947047c3064ef8dcf44553bd3e38c5683f0"
   }
 }

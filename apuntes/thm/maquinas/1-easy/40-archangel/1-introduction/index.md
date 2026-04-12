@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260410152304.png**
+
+Una máquina boot2root de explotación web con LFI y escalada de privilegios. Una compañía de soluciones de seguridad parece haber estado haciendo algunas pruebas en su máquina en producción, hora de explotarlo.
