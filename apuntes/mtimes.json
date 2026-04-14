@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-04-12T01:23:15",
-    "hash": "ed06cdeda60750e09770254989e802b8a4b39bcfbcac4e9fcab0e6c0f4d15f31"
+    "modified": "2026-04-14T16:16:27",
+    "hash": "3aa4c0969bcdca59a587c47c5b810674333d6168d39f81ed932e6ac628f4799f"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5874,5 +5874,17 @@
   "THM/Maquinas/2. Medium/15. Farewell/1. Introduction.md": {
     "modified": "2026-04-14T01:23:21",
     "hash": "12a4ac4ee76232f423b43b26ce8950da4eeed5cd79f9228f48284c95c5902da6"
+  },
+  "THM/Maquinas/1. Easy/41. Dig Dug/2. Getting the Flags.md": {
+    "modified": "2026-04-14T16:16:27",
+    "hash": "90f0d840283e580174aefb727346ccd4d518de8c2346b5f279ea6426a4d5c0fc"
+  },
+  "THM/Maquinas/1. Easy/41. Dig Dug/1. Introduction.md": {
+    "modified": "2026-04-14T16:16:27",
+    "hash": "ef211699673333900496e3136b46e7360d13187c05d06ed6d929af08f50f540e"
+  },
+  "THM/Maquinas/1. Easy/41. Dig Dug/0. Dig Dug.md": {
+    "modified": "2026-04-14T16:16:27",
+    "hash": "c56435fbef41ad05d6bd57a72ec01be70a3de112386191c297f6d00f2dc3772b"
   }
 }

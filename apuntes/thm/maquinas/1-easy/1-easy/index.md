@@ -43,4 +43,5 @@ title: "1. Easy"
 38. [0. ColddBox - Easy](/apuntes/thm/maquinas/1-easy/38-colddbox-easy/0-colddbox-easy/)
 39. [0. Corridor](/apuntes/thm/maquinas/1-easy/39-corridor/0-corridor/)
 40. [0. Archangel](/apuntes/thm/maquinas/1-easy/40-archangel/0-archangel/)
-41. 
+41. [0. Dig Dug](/apuntes/thm/maquinas/1-easy/41-dig-dug/0-dig-dug/)
+42. 

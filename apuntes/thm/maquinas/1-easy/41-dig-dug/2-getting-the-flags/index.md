@@ -1,0 +1,31 @@
+---
+layout: apunte
+title: "2. Getting the Flags"
+---
+
+Empezamos escaneando los puertos abiertos de la máquina.
+
+!**Pasted image 20260414180637.png**
+
+Parece que sólo está abierto el 22, pero sabemos que es un servidor DNS así que vamos a realizar más escaneos.
+
+!**Pasted image 20260414180655.png**
+
+Parece que está filtrado. Bueno vamos a seguir con `dig` a ver qué encontramos.
+
+!**Pasted image 20260414180054.png**
+
+Nada. Si probamos a listar el otro servidor que nos daban:
+
+!**Pasted image 20260414180141.png**
+
+Nada tampoco. Pero podemos usar `dig` para listar un servidor a través de otro servidor que sea el DNS.
+
+!**Pasted image 20260414180243.png**
+
+Así que vamos a probar.
+
+!**Pasted image 20260414180747.png**
+
+Efectivamente encontramos la flag.
+

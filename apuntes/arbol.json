@@ -8245,6 +8245,24 @@
                   ]
                 },
                 {
+                  "name": "41. Dig Dug",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/41. Dig Dug/1. Introduction.md",
+                      "parent": "41. Dig Dug"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/41. Dig Dug/2. Getting the Flags.md",
+                      "parent": "41. Dig Dug"
+                    }
+                  ]
+                },
+                {
                   "name": "5. Brooklyn Nine Nine",
                   "type": "directory",
                   "contents": [

