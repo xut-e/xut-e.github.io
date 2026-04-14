@@ -16,4 +16,6 @@ title: "2. Medium"
 11. **Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage**
 12. **Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/0. Sequence**
 13. [0. Wonderland](/apuntes/thm/maquinas/2-medium/13-wonderland/0-wonderland/)
-14. 
+14. **Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify**
+15. **Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell**
+16. 

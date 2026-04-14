@@ -7149,12 +7149,26 @@
                         {
                           "name": "3. Padelify",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/3. Padelify/1. Redirection.md",
+                              "parent": "3. Padelify"
+                            }
+                          ]
                         },
                         {
                           "name": "4. Farewell",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/4. Farewell/1. Redirection.md",
+                              "parent": "4. Farewell"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -8425,6 +8439,42 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/13. Wonderland/2. Getting the Flags.md",
                       "parent": "13. Wonderland"
+                    }
+                  ]
+                },
+                {
+                  "name": "14. Padelify",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/1. Introduction.md",
+                      "parent": "14. Padelify"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/2. Getting the Flags.md",
+                      "parent": "14. Padelify"
+                    }
+                  ]
+                },
+                {
+                  "name": "15. Farewell",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/1. Introduction.md",
+                      "parent": "15. Farewell"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/2. Getting the Flags.md",
+                      "parent": "15. Farewell"
                     }
                   ]
                 },

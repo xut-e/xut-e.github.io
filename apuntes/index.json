@@ -2496,8 +2496,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/2-custom-tooling/2-custom-tooling/"
   },
   {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-farewell/1-redirection/"
+  },
+  {
     "title": "0. Farewell",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-farewell/0-farewell/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/3-padelify/1-redirection/"
   },
   {
     "title": "0. Padelify",
@@ -3640,6 +3648,18 @@
     "path": "/apuntes/thm/maquinas/2-medium/7-include/1-introduction/"
   },
   {
+    "title": "0. Padelify",
+    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/0-padelify/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/1-introduction/"
+  },
+  {
     "title": "0. Rabbit Store",
     "path": "/apuntes/thm/maquinas/2-medium/4-rabbit-store/0-rabbit-store/"
   },
@@ -3650,6 +3670,18 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/thm/maquinas/2-medium/4-rabbit-store/1-introduction/"
+  },
+  {
+    "title": "0. Farewell",
+    "path": "/apuntes/thm/maquinas/2-medium/15-farewell/0-farewell/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/15-farewell/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/15-farewell/1-introduction/"
   },
   {
     "title": "2. Getting the Flags",

