@@ -7203,12 +7203,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/4. Prompt Injection.md",
                               "parent": "1. Input Manipulation and Prompt Injection"
-                            },
-                            {
-                              "name": "5. Challenge.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/5. Challenge.md",
-                              "parent": "1. Input Manipulation and Prompt Injection"
                             }
                           ]
                         },
