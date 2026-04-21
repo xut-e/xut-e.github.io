@@ -5504,52 +5504,44 @@
     "modified": "2026-03-10T01:01:35"
   },
   {
-    "title": "3. Improper Output Handling - LLM05",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/3-improper-output-handling-llm05/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/3. Improper Output Handling - LLM05.md",
+    "title": "4. Attack Cases",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/4-attack-cases/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/4. Attack Cases.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
     "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "modified": "2026-04-21T01:22:53"
   },
   {
-    "title": "2. LLM Output Risks",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/2-llm-output-risks/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/2. LLM Output Risks.md",
+    "title": "3. Sensitive Information Disclosure - LLM02",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/3-sensitive-information-disclosure-llm02/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/3. Sensitive Information Disclosure - LLM02.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
     "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "modified": "2026-04-21T01:22:53"
   },
   {
-    "title": "4. Sensitive Information Disclosure - LLM02",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/4-sensitive-information-disclosure-llm02/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/4. Sensitive Information Disclosure - LLM02.md",
+    "title": "2. Improper Output Handling - LLM05",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/2-improper-output-handling-llm05/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/2. Improper Output Handling - LLM05.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
     "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "modified": "2026-04-21T01:22:53"
   },
   {
-    "title": "5. Attack Cases",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/5-attack-cases/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/5. Attack Cases.md",
+    "title": "1. LLM Output Risks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/1-llm-output-risks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. LLM Output Risks.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
-    "content": "",
-    "modified": "2026-03-10T01:01:35"
-  },
-  {
-    "title": "1. Introduction",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/1-introduction/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. Introduction.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
-    "content": "",
-    "modified": "2026-03-10T01:01:35"
+    "content": "En la seguridad web tradicional, solemos pensar sobre los inputs como la superficie de ataque principal, como en las inyecciones SQL o XSS, inyección de comandos u otros ataques similares. Pero con los LLMs, los outputs son igual de importantes. Un LLM puede que genere una respuesta que ea procesada después por otro sistema o mostrada al usuario o usada para disparar una acción automatizada. Si ese output no es validado o sanitizado, puede llevar a problemas serios como:\n\n- **Ataques de Inyección Flujo Abajo:** \n- **Escalada Basada en Prompts:** \n- **Filtración de Datos:**",
+    "modified": "2026-04-21T01:22:53"
   },
   {
     "title": "0. LLM Output Handling and Privacy Risks",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/0-llm-output-handling-and-privacy-risks/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/0. LLM Output Handling and Privacy Risks.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 4. Web Application Red Teaming > 5. Attacking LLMs > 2. LLM Output Handling and Privacy Risks",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. Introduction]]\n[[2. LLM Output Risks]]\n[[3. Improper Output Handling - LLM05]]\n[[4. Sensitive Information Disclosure - LLM02]]\n[[5. Attack Cases]]",
-    "modified": "2026-03-10T01:01:35"
+    "content": "[[1. LLM Output Risks]]\n[[2. Improper Output Handling - LLM05]]\n[[3. Sensitive Information Disclosure - LLM02]]\n[[4. Attack Cases]]",
+    "modified": "2026-04-21T01:22:53"
   },
   {
     "title": "0. BankGPT",

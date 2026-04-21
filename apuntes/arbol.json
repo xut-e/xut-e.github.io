@@ -7211,33 +7211,27 @@
                           "type": "directory",
                           "contents": [
                             {
-                              "name": "1. Introduction.md",
+                              "name": "1. LLM Output Risks.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. Introduction.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. LLM Output Risks.md",
                               "parent": "2. LLM Output Handling and Privacy Risks"
                             },
                             {
-                              "name": "2. LLM Output Risks.md",
+                              "name": "2. Improper Output Handling - LLM05.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/2. LLM Output Risks.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/2. Improper Output Handling - LLM05.md",
                               "parent": "2. LLM Output Handling and Privacy Risks"
                             },
                             {
-                              "name": "3. Improper Output Handling - LLM05.md",
+                              "name": "3. Sensitive Information Disclosure - LLM02.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/3. Improper Output Handling - LLM05.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/3. Sensitive Information Disclosure - LLM02.md",
                               "parent": "2. LLM Output Handling and Privacy Risks"
                             },
                             {
-                              "name": "4. Sensitive Information Disclosure - LLM02.md",
+                              "name": "4. Attack Cases.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/4. Sensitive Information Disclosure - LLM02.md",
-                              "parent": "2. LLM Output Handling and Privacy Risks"
-                            },
-                            {
-                              "name": "5. Attack Cases.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/5. Attack Cases.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/4. Attack Cases.md",
                               "parent": "2. LLM Output Handling and Privacy Risks"
                             }
                           ]

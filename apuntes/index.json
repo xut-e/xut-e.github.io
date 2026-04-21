@@ -2752,24 +2752,20 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/4-juicy/0-juicy/"
   },
   {
-    "title": "3. Improper Output Handling - LLM05",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/3-improper-output-handling-llm05/"
+    "title": "4. Attack Cases",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/4-attack-cases/"
   },
   {
-    "title": "2. LLM Output Risks",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/2-llm-output-risks/"
+    "title": "3. Sensitive Information Disclosure - LLM02",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/3-sensitive-information-disclosure-llm02/"
   },
   {
-    "title": "4. Sensitive Information Disclosure - LLM02",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/4-sensitive-information-disclosure-llm02/"
+    "title": "2. Improper Output Handling - LLM05",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/2-improper-output-handling-llm05/"
   },
   {
-    "title": "5. Attack Cases",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/5-attack-cases/"
-  },
-  {
-    "title": "1. Introduction",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/1-introduction/"
+    "title": "1. LLM Output Risks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/1-llm-output-risks/"
   },
   {
     "title": "0. LLM Output Handling and Privacy Risks",

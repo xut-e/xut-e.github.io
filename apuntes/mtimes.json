@@ -5036,8 +5036,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/0. LLM Output Handling and Privacy Risks.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "f84828836156c0607b23958f94266a258a15b98b195eb2e2685de50f6447b9f9"
+    "modified": "2026-04-21T01:22:53",
+    "hash": "457b0bd2d356a8c33a2397e3e0b56fde96c0cc16ab19594c30eb144162ad148c"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/5. Attack Cases.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5886,5 +5886,21 @@
   "THM/Maquinas/1. Easy/41. Dig Dug/0. Dig Dug.md": {
     "modified": "2026-04-14T16:16:27",
     "hash": "c56435fbef41ad05d6bd57a72ec01be70a3de112386191c297f6d00f2dc3772b"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/4. Attack Cases.md": {
+    "modified": "2026-04-21T01:22:53",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/3. Sensitive Information Disclosure - LLM02.md": {
+    "modified": "2026-04-21T01:22:53",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/2. Improper Output Handling - LLM05.md": {
+    "modified": "2026-04-21T01:22:53",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. LLM Output Risks.md": {
+    "modified": "2026-04-21T01:22:53",
+    "hash": "09b9effba672f4c16370dcd0074b9b80b40e2490324993f28d9629e510e93e65"
   }
 }
