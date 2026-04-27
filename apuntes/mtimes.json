@@ -5024,8 +5024,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/1. Supply Chain Attack.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-27T01:29:41",
+    "hash": "e3559a9e3b5090c5d502435c1f8087ab77693469ac365ba1e4c6d6a0396d61c6"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/0. Data Integrity and Model Poisoning.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5888,12 +5888,12 @@
     "hash": "c56435fbef41ad05d6bd57a72ec01be70a3de112386191c297f6d00f2dc3772b"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/4. Attack Cases.md": {
-    "modified": "2026-04-21T01:22:53",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-27T01:29:41",
+    "hash": "565d8a457e0798d920063bd3e3739bd9291ba9a082fa329e0b8f376579d933d9"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/3. Sensitive Information Disclosure - LLM02.md": {
-    "modified": "2026-04-21T01:22:53",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-27T01:29:41",
+    "hash": "58fbc7b9ca7dfbba90ca9001e4cf89d6a1fc9e372141260ccc55959872d28fa4"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/2. Improper Output Handling - LLM05.md": {
     "modified": "2026-04-22T01:21:31",
