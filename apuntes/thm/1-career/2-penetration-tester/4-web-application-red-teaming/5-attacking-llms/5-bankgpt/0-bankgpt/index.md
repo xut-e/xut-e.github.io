@@ -3,3 +3,5 @@ layout: apunte
 title: "0. BankGPT"
 ---
 
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/5. BankGPT/1. Redirection**
+**Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT**

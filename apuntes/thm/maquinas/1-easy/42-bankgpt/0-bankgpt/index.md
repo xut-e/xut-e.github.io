@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. BankGPT"
+---
+
+**Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/1. Introduction**
+**Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/2. Getting the Flags**

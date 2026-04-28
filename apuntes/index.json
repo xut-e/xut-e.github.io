@@ -148,6 +148,10 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-web-fundamentals/"
   },
   {
+    "title": "5. Red Teaming",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-red-teaming/"
+  },
+  {
     "title": "1. Jr Penetration Tester",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/1-jr-penetration-tester/"
   },
@@ -1374,6 +1378,534 @@
   {
     "title": "1. Redireccion",
     "path": "/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/1-how-the-web-works/1-dns-in-detail/1-redireccion/"
+  },
+  {
+    "title": "6. Compromising Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-compromising-active-directory/"
+  },
+  {
+    "title": "5. Network Security Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/5-network-security-evasion/"
+  },
+  {
+    "title": "4. Host Evasions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-host-evasions/"
+  },
+  {
+    "title": "1. Red Team Fundamentals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/"
+  },
+  {
+    "title": "2. Initial Access",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-initial-access/"
+  },
+  {
+    "title": "3. Post Compromise",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/3-post-compromise/"
+  },
+  {
+    "title": "5. Overview of a Red Team Engagement",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/5-overview-of-a-red-team-engagement/"
+  },
+  {
+    "title": "3. Teams and Functions of an Engagement",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/3-teams-and-functions-of-an-engagement/"
+  },
+  {
+    "title": "2. Red Team Engagements",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/2-red-team-engagements/"
+  },
+  {
+    "title": "1. Vulnerability Assessment and Penetration Test Limitations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/1-vulnerability-assessment-and-penetration-test-limitations/"
+  },
+  {
+    "title": "0. Red Team Fundamentals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/0-red-team-fundamentals/"
+  },
+  {
+    "title": "4. Engagement Estructure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/4-engagement-estructure/"
+  },
+  {
+    "title": "4. C2 Operation Basics",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/4-c2-operation-basics/"
+  },
+  {
+    "title": "7. Wrapping Up",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/7-wrapping-up/"
+  },
+  {
+    "title": "3. Setting Up a C2 Framework",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/3-setting-up-a-c2-framework/"
+  },
+  {
+    "title": "5. Command, Control and Conquer",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/5-command-control-and-conquer/"
+  },
+  {
+    "title": "0. Intro to C2",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/0-intro-to-c2/"
+  },
+  {
+    "title": "1. Command and Control Framework Structure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/1-command-and-control-framework-structure/"
+  },
+  {
+    "title": "6. Advanced C2 Setups",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/6-advanced-c2-setups/"
+  },
+  {
+    "title": "2. Common C2 Frameworks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/2-common-c2-frameworks/"
+  },
+  {
+    "title": "7. Operations Plan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/7-operations-plan/"
+  },
+  {
+    "title": "5. Concept of Operations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/5-concept-of-operations/"
+  },
+  {
+    "title": "0. Red Team Engagements",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/0-red-team-engagements/"
+  },
+  {
+    "title": "1. Defining Scope and Objectives",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/1-defining-scope-and-objectives/"
+  },
+  {
+    "title": "2. Rules of Engagement",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/2-rules-of-engagement/"
+  },
+  {
+    "title": "4. Engagement Documentation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/4-engagement-documentation/"
+  },
+  {
+    "title": "8. Mission Plan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/8-mission-plan/"
+  },
+  {
+    "title": "6. Resource Plan",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/6-resource-plan/"
+  },
+  {
+    "title": "3. Campaign Planning",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/3-campaign-planning/"
+  },
+  {
+    "title": "5. Other Red Team Applications of CTI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/5-other-red-team-applications-of-cti/"
+  },
+  {
+    "title": "6. Creating a Threat Intel Driven Campaign",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/6-creating-a-threat-intel-driven-campaign/"
+  },
+  {
+    "title": "4. TTP Mapping",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/4-ttp-mapping/"
+  },
+  {
+    "title": "1. What is Threat Intelligence",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/1-what-is-threat-intelligence/"
+  },
+  {
+    "title": "3. The TIBER-EU Framework",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/3-the-tiber-eu-framework/"
+  },
+  {
+    "title": "0. Red Team Threat Intel",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/0-red-team-threat-intel/"
+  },
+  {
+    "title": "2. Applying Threat Intel to the Red Team",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/2-applying-threat-intel-to-the-red-team/"
+  },
+  {
+    "title": "5. Risk Assessment",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/5-risk-assessment/"
+  },
+  {
+    "title": "6. Countermeasures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/6-countermeasures/"
+  },
+  {
+    "title": "8. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/8-summary/"
+  },
+  {
+    "title": "4. Vulnerability Analysis",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/4-vulnerability-analysis/"
+  },
+  {
+    "title": "2. Critical Information Identification",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/2-critical-information-identification/"
+  },
+  {
+    "title": "0. Red Team OPSEC",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/0-red-team-opsec/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/1-introduction/"
+  },
+  {
+    "title": "3. Threat Analysis",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/3-threat-analysis/"
+  },
+  {
+    "title": "7. More Practical Examples",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/7-more-practical-examples/"
+  },
+  {
+    "title": "0. Weaponization",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/0-weaponization/"
+  },
+  {
+    "title": "9. Practice Arena",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/9-practice-arena/"
+  },
+  {
+    "title": "7. Command And Control - (C2 or C&C)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/7-command-and-control-c2-or-c-c/"
+  },
+  {
+    "title": "8. Delivery Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/8-delivery-techniques/"
+  },
+  {
+    "title": "6. PowerShell - PSH",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/6-powershell-psh/"
+  },
+  {
+    "title": "3. Windows Scripting Host - WSH",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/3-windows-scripting-host-wsh/"
+  },
+  {
+    "title": "2. Deploy the Windows Machine",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/2-deploy-the-windows-machine/"
+  },
+  {
+    "title": "4. An HTML Application - HTA",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/4-an-html-application-hta/"
+  },
+  {
+    "title": "5. Visual Basic for Application - VBA",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/5-visual-basic-for-application-vba/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/2-weaponization/1-introduction/"
+  },
+  {
+    "title": "9. Password Spray Attack",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/9-password-spray-attack/"
+  },
+  {
+    "title": "0. Password Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/0-password-attacks/"
+  },
+  {
+    "title": "8. Online Password Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/8-online-password-attacks/"
+  },
+  {
+    "title": "6. Offline Attacks - Rule-Based",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/6-offline-attacks-rule-based/"
+  },
+  {
+    "title": "3. Password Profiling 1 - Default, Weak, Leaked, Combined and Username Wordlists",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/3-password-profiling-1-default-weak-leaked-combined-and-username-wordlists/"
+  },
+  {
+    "title": "5. Offline Attacks - Dictionary and Brute-Force",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/5-offline-attacks-dictionary-and-brute-force/"
+  },
+  {
+    "title": "2. Password Attacking Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/2-password-attacking-techniques/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/1-introduction/"
+  },
+  {
+    "title": "4. Password Profiling 2 - Keyspace Technique and CUPP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/4-password-profiling-2-keyspace-technique-and-cupp/"
+  },
+  {
+    "title": "10 Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/10-summary/"
+  },
+  {
+    "title": "7. Deploy the VM",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/7-deploy-the-vm/"
+  },
+  {
+    "title": "2. Taxonomy of Reconnaissance",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/2-taxonomy-of-reconnaissance/"
+  },
+  {
+    "title": "7. Maltego",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/7-maltego/"
+  },
+  {
+    "title": "3. Built-in Tools",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/3-built-in-tools/"
+  },
+  {
+    "title": "8. Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/8-summary/"
+  },
+  {
+    "title": "0. Red Team Recon",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/0-red-team-recon/"
+  },
+  {
+    "title": "6. Recon-ng",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/6-recon-ng/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/1-introduction/"
+  },
+  {
+    "title": "5. Specialized Search Engines",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/5-specialized-search-engines/"
+  },
+  {
+    "title": "4. Advanced Searching",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/4-advanced-searching/"
+  },
+  {
+    "title": "0. Phishing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/0-phishing/"
+  },
+  {
+    "title": "9. Phishing Practical",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/9-phishing-practical/"
+  },
+  {
+    "title": "2. Writing Convincing Phishing Emails",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/2-writing-convincing-phishing-emails/"
+  },
+  {
+    "title": "3. Phishing Infrastructure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/3-phishing-infrastructure/"
+  },
+  {
+    "title": "6. Choosing A Phishing Domain",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/6-choosing-a-phishing-domain/"
+  },
+  {
+    "title": "5. Droppers",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/5-droppers/"
+  },
+  {
+    "title": "7. Using MS Office in Phishing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/7-using-ms-office-in-phishing/"
+  },
+  {
+    "title": "1. Intro to Phishing Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/1-intro-to-phishing-attacks/"
+  },
+  {
+    "title": "4. Using GoPhish",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/4-using-gophish/"
+  },
+  {
+    "title": "8. Using Browser Exploits",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/8-using-browser-exploits/"
+  },
+  {
+    "title": "5. Abusing Scheduled Tasks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/5-abusing-scheduled-tasks/"
+  },
+  {
+    "title": "9. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/9-conclusion/"
+  },
+  {
+    "title": "3. Backdooring Files",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/3-backdooring-files/"
+  },
+  {
+    "title": "4. Abusing Services",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/4-abusing-services/"
+  },
+  {
+    "title": "2. Tampering With Unprivileged Accounts",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/2-tampering-with-unprivileged-accounts/"
+  },
+  {
+    "title": "7. Backdooring the Login Screen - RDP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/7-backdooring-the-login-screen-rdp/"
+  },
+  {
+    "title": "0. Windows Local Persistence",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/0-windows-local-persistence/"
+  },
+  {
+    "title": "8. Persisting Through Existing Services",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/8-persisting-through-existing-services/"
+  },
+  {
+    "title": "6. Logon Triggered Persistence",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/6-logon-triggered-persistence/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/1-introduction/"
+  },
+  {
+    "title": "7. Network Security Solutions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/7-network-security-solutions/"
+  },
+  {
+    "title": "2. Network Infrastructure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/2-network-infrastructure/"
+  },
+  {
+    "title": "1. Deploy the VM",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/1-deploy-the-vm/"
+  },
+  {
+    "title": "5. Host Security Solution 1",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/5-host-security-solution-1/"
+  },
+  {
+    "title": "6. Host Security Solution 2",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/6-host-security-solution-2/"
+  },
+  {
+    "title": "4. Users and Groups Management",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/4-users-and-groups-management/"
+  },
+  {
+    "title": "3. Active Directory (AD) Environment",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/3-active-directory-ad-environment/"
+  },
+  {
+    "title": "8. Applications and Services",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/8-applications-and-services/"
+  },
+  {
+    "title": "0. The Lay of the Land",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/1-the-lay-of-the-land/0-the-lay-of-the-land/"
+  },
+  {
+    "title": "5. Exfiltration Using ICMP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/5-exfiltration-using-icmp/"
+  },
+  {
+    "title": "0. Data Exfiltration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/0-data-exfiltration/"
+  },
+  {
+    "title": "1. Network Infrastructure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/1-network-infrastructure/"
+  },
+  {
+    "title": "3. Exfiltration Using TCP Socket",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/3-exfiltration-using-tcp-socket/"
+  },
+  {
+    "title": "2. Data Exfiltration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/2-data-exfiltration/"
+  },
+  {
+    "title": "6. DNS Configurations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/6-dns-configurations/"
+  },
+  {
+    "title": "7. Exfiltration Over DNS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/7-exfiltration-over-dns/"
+  },
+  {
+    "title": "8. DNS Tunneling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/8-dns-tunneling/"
+  },
+  {
+    "title": "4. Exfiltrate Using HTTP(S)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/6-data-exfiltration/4-exfiltrate-using-http-s/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/3-windows-privilege-escalation/1-redirection/"
+  },
+  {
+    "title": "0. Windows Privilege Escalation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/3-windows-privilege-escalation/0-windows-privilege-escalation/"
+  },
+  {
+    "title": "0. Enumeration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/0-enumeration/"
+  },
+  {
+    "title": "2. Purpose",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/2-purpose/"
+  },
+  {
+    "title": "4. Windows Enumeration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/4-windows-enumeration/"
+  },
+  {
+    "title": "3. Linux Enumeration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/3-linux-enumeration/"
+  },
+  {
+    "title": "6. More Tools for Windows",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/6-more-tools-for-windows/"
+  },
+  {
+    "title": "5. DNS, SMB and SNMP",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/5-dns-smb-and-snmp/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/1-introduction/"
+  },
+  {
+    "title": "7. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/7-conclusion/"
+  },
+  {
+    "title": "6. Abusing User Behaviour",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/6-abusing-user-behaviour/"
+  },
+  {
+    "title": "4. Moving Laterally Using WMI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/4-moving-laterally-using-wmi/"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/8-conclusion/"
+  },
+  {
+    "title": "3. Spawning Processes Remotely",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/3-spawning-processes-remotely/"
+  },
+  {
+    "title": "0. Lateral Movement and Pivoting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/0-lateral-movement-and-pivoting/"
+  },
+  {
+    "title": "7. Port Forwarding",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/7-port-forwarding/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/1-introduction/"
+  },
+  {
+    "title": "5. Use of Alternate Authentication Material",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/5-use-of-alternate-authentication-material/"
+  },
+  {
+    "title": "2. Moving Through the Network",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/2-moving-through-the-network/"
   },
   {
     "title": "4. Burp Suite",
@@ -2748,6 +3280,10 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/1-input-manipulation-and-prompt-injection/1-introduction/"
   },
   {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/4-juicy/1-redirection/"
+  },
+  {
     "title": "0. Juicy",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/4-juicy/0-juicy/"
   },
@@ -2772,12 +3308,20 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/2-llm-output-handling-and-privacy-risks/0-llm-output-handling-and-privacy-risks/"
   },
   {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/5-bankgpt/1-redirection/"
+  },
+  {
     "title": "0. BankGPT",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/5-bankgpt/0-bankgpt/"
   },
   {
     "title": "0. HealthGPT",
     "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/6-healthgpt/0-healthgpt/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/5-attacking-llms/6-healthgpt/1-redirection/"
   },
   {
     "title": "1. Supply Chain Attack",
@@ -3096,6 +3640,18 @@
     "path": "/apuntes/thm/maquinas/1-easy/30-fowsniff-ctf/1-introduction/"
   },
   {
+    "title": "0. HealthGPT",
+    "path": "/apuntes/thm/maquinas/1-easy/43-healthgpt/0-healthgpt/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/43-healthgpt/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/43-healthgpt/1-introduction/"
+  },
+  {
     "title": "2. Reconnaissance",
     "path": "/apuntes/thm/maquinas/1-easy/11-rootme/2-reconnaissance/"
   },
@@ -3270,6 +3826,18 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/thm/maquinas/1-easy/33-source/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/42-bankgpt/2-getting-the-flags/"
+  },
+  {
+    "title": "0. BankGPT",
+    "path": "/apuntes/thm/maquinas/1-easy/42-bankgpt/0-bankgpt/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/42-bankgpt/1-introduction/"
   },
   {
     "title": "0. Neighbour",
@@ -3674,6 +4242,18 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/thm/maquinas/2-medium/4-rabbit-store/1-introduction/"
+  },
+  {
+    "title": "0. Juicy",
+    "path": "/apuntes/thm/maquinas/2-medium/16-juicy/0-juicy/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/16-juicy/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/16-juicy/1-introduction/"
   },
   {
     "title": "0. Farewell",

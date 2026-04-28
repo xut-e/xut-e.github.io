@@ -7,3 +7,4 @@ title: "2. Penetration Tester"
 [2. Web Fundamentals](/apuntes/thm/1-career/2-penetration-tester/2-web-fundamentals/2-web-fundamentals/)
 [3. Web Application Pentesting](/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/3-web-application-pentesting/)
 [4. Web Application Red Teaming](/apuntes/thm/1-career/2-penetration-tester/4-web-application-red-teaming/4-web-application-red-teaming/)
+[5. Red Teaming](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-red-teaming/)

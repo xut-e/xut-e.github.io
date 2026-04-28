@@ -2032,8 +2032,8 @@
     "hash": "2642678605f970d0b6c01befb2643512b401ff293f24bd04a5a7639e7e5b2c8f"
   },
   "THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/0. Networking Core Protocols.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "c5f26f05c27004324cdbb82ea4f4b9c4cbee427b7c30e64c112019822fd84052"
+    "modified": "2026-04-28T01:49:28",
+    "hash": "466196a86e497715baabbe9019f24151a9e63443dd1b291ebc7f22a8a40d63cf"
   },
   "THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/4. HTTP(S) - Accessing the Web.md": {
     "modified": "2025-12-12T13:58:55",
@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-04-14T01:23:21",
-    "hash": "0f362a4c0f179b0d63e0c04242d76f99775aa5ac324173d2705b3aa5553aa9fa"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "59c8883f397a1ffd16a6edac1190c8fb7895cf58a5798e42db728d39d9c554a7"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-04-14T16:16:27",
-    "hash": "3aa4c0969bcdca59a587c47c5b810674333d6168d39f81ed932e6ac628f4799f"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "89925cd729aa4bf6c11014457df02824067762b57074ec23c78d28bb1cdd6aa7"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -2360,8 +2360,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/2. Penetration Tester.md": {
-    "modified": "2026-03-31T01:16:47",
-    "hash": "f1a51c7a1b0acc4e5ede1b0042681ab40bae47c1c95a5c6a1c26ac290d363f3e"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "190d3f1b43618ebe191c6aa32f5be24f8a61714650502e22ef0a638f8830ca88"
   },
   "THM/1. Career/1. Security Analyst/1. Security Analyst.md": {
     "modified": "2025-12-12T13:58:55",
@@ -2808,8 +2808,8 @@
     "hash": "a63982a33f3da653014bd50ef6d772e39ed47d8125e5484532634316853a6454"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/8. Privilege Escalation.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "a529f883a5860218b81a3013a2a7c9d00ed6eb8533964bfe1cd4aca6b4aa9522"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "624d36e49941d22c12cc724f682e73cb2ed1aff047a0972751e714aba143bc41"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/7. Metasploit/7. Metasploit.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4908,8 +4908,8 @@
     "hash": "225a61eb2d4c122fb95d2560fc3696b2294eb0e71cd83f5420ec3209206c448e"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/5. Attacking LLMs.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "560cd4c4b1a1b9aa65e196e86cfe1f77e1529daacf2c9fef17b2c600fbce3e47"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "cf65153f756b3c9cc9afd1aa512322ed91b4162c3cfd63f4f44dc9cf00e2ec19"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/1. Cryptographic Failures.md": {
     "modified": "2026-03-10T01:01:35",
@@ -4984,12 +4984,12 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/5. BankGPT/0. BankGPT.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "2938159161ba1d72e70a4a414b1872a25296edfe896b9b90af20fddac6c24107"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/6. HealthGPT/0. HealthGPT.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "b74228d4c1373e54a280e511dc5b7ebe8e53d9fc75ca424e333fff123b1b9e2e"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/1. Input Manipulation and Prompt Injection/5. Challenge.md": {
     "modified": "2026-03-10T01:01:35",
@@ -5016,12 +5016,12 @@
     "hash": "f4dbfd11f226183332a2a6c628ef48bcf7cb672ad1b5188478f564b5ef928cd9"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/3. Model Poisoning - Challenge.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "a38ac77e5511432a4f5ab774fba93ece36a5ce84a309ec5a0005b870882b459e"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/4. Mitigation Measures.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "6d9f31139f50d3e4036bfcd89aa7fdff0003ebe36085b349cf68aff86bcd99fc"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/1. Supply Chain Attack.md": {
     "modified": "2026-04-27T01:29:41",
@@ -5032,8 +5032,8 @@
     "hash": "c954141d0430b101c971bcb07d0bd82ffdc93fdc105673152996569b30392228"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/3. Data Integrity and Model Poisoning/2. Model Poisoning.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "3f97c57e278658d463f0f78b456df47d0c8d09924e39776b24df32cadce6999e"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/0. LLM Output Handling and Privacy Risks.md": {
     "modified": "2026-04-21T01:22:53",
@@ -5060,8 +5060,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/4. Juicy/0. Juicy.md": {
-    "modified": "2026-03-10T01:01:35",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-04-28T01:49:27",
+    "hash": "1115f5279123f6de021460a20ebb41b1fb5c8d564baf82f635e3ddb836f3a7b0"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/1. Cryptographic Failures/3. Attacking ECB Oracles/4. Chosen-Plaintext Attacks.md": {
     "modified": "2026-03-17T01:07:37",
@@ -5902,5 +5902,585 @@
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/2. LLM Output Handling and Privacy Risks/1. LLM Output Risks.md": {
     "modified": "2026-04-22T01:21:31",
     "hash": "737272c1c2bc692388e6b59d1c20e74946c455ae0519e6bf6fdaa9fd72c60a58"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Red Teaming.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "8e637500e4e2086be142ecb406b9d6bf9d6de1e326de1606a3d3a66b485e5fef"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Compromising Active Directory.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/5. Network Security Evasion.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Host Evasions.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "708b97f7f79d08090aa26616f044621a89b35e12f53e2c5f417da471cb172508"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Initial Access.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "826026d9d1cd70a97ad681e558f383d183218847be070d8a4fd6e8847c0cc9bd"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Post Compromise.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e7fb9c94195b7c759cdc9954dcec1972c52857b6f93b1d367c520a401ae1ea77"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/5. Overview of a Red Team Engagement.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/3. Teams and Functions of an Engagement.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/2. Red Team Engagements.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/1. Vulnerability Assessment and Penetration Test Limitations.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/0. Red Team Fundamentals.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "dd603719ff6d739a350c43216cedb8318358219d47fca7003ca2e637563a258b"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/4. Engagement Estructure.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/4. C2 Operation Basics.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/7. Wrapping Up.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/3. Setting Up a C2 Framework.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/5. Command, Control and Conquer.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/0. Intro to C2.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "8363c30efd8e596f689eae7b73f2392f61ccef62270ec5be015c23e634a51f5b"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/1. Command and Control Framework Structure.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/6. Advanced C2 Setups.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/2. Common C2 Frameworks.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/7. Operations Plan.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/5. Concept of Operations.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/0. Red Team Engagements.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "b552d939c584839376e0113ed96a495a32911dfea1f642b1bc673280c10b9b23"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/1. Defining Scope and Objectives.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/2. Rules of Engagement.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/4. Engagement Documentation.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/8. Mission Plan.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/6. Resource Plan.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/3. Campaign Planning.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/5. Other Red Team Applications of CTI.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/6. Creating a Threat Intel Driven Campaign.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/4. TTP Mapping.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/1. What is Threat Intelligence.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/3. The TIBER-EU Framework.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/0. Red Team Threat Intel.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "b9f009c971e618a6f5d100c53f925846e3d9f710697f581701008fe17d6ccf40"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/2. Applying Threat Intel to the Red Team.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/5. Risk Assessment.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/6. Countermeasures.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/8. Summary.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/4. Vulnerability Analysis.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/2. Critical Information Identification.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/0. Red Team OPSEC.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "c12098d941aa27d1b9350cea02a9a5201fabbf118c59f7448f14a0a18bd3fa84"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/3. Threat Analysis.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/7. More Practical Examples.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/0. Weaponization.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "5cde41b5e2b0a2c9104bf51029ef3552300287fc8639a6fe16dc8a14a2cc7544"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/9. Practice Arena.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/7. Command And Control - (C2 or C&C).md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/8. Delivery Techniques.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/6. PowerShell - PSH.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/3. Windows Scripting Host - WSH.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/2. Deploy the Windows Machine.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/4. An HTML Application - HTA.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/5. Visual Basic for Application - VBA.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/9. Password Spray Attack.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/0. Password Attacks.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "d99357ed7bc8fbf4d495dfcb0be042cedad6473371353f70eea2ec3e3020b519"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/8. Online Password Attacks.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/6. Offline Attacks - Rule-Based.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/3. Password Profiling 1 - Default, Weak, Leaked, Combined and Username Wordlists.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/5. Offline Attacks - Dictionary and Brute-Force.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/2. Password Attacking Techniques.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/4. Password Profiling 2 - Keyspace Technique and CUPP.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/10 Summary.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/7. Deploy the VM.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/2. Taxonomy of Reconnaissance.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/7. Maltego.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/3. Built-in Tools.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/8. Summary.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/0. Red Team Recon.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "d2257960a19f8d1eb76a027f7154226337238ca14eafc179755c8cf121b09712"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/6. Recon-ng.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/5. Specialized Search Engines.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/4. Advanced Searching.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/0. Phishing.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "f5826914cd67ca12e513949d25f5b1096174ed9771127b4c6b8123ab10629f4c"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/9. Phishing Practical.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/2. Writing Convincing Phishing Emails.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/3. Phishing Infrastructure.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/6. Choosing A Phishing Domain.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/5. Droppers.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/7. Using MS Office in Phishing.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/1. Intro to Phishing Attacks.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/4. Using GoPhish.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/8. Using Browser Exploits.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/5. Abusing Scheduled Tasks.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/9. Conclusion.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/3. Backdooring Files.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/4. Abusing Services.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/2. Tampering With Unprivileged Accounts.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/7. Backdooring the Login Screen - RDP.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/0. Windows Local Persistence.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "76a364fb36968f8328aa082a556201d0f3e0a8e33c6e43bd3b31192b98c5e6cd"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/8. Persisting Through Existing Services.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/6. Logon Triggered Persistence.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/7. Network Security Solutions.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/2. Network Infrastructure.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/1. Deploy the VM.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/5. Host Security Solution 1.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/6. Host Security Solution 2.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/4. Users and Groups Management.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/3. Active Directory (AD) Environment.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/8. Applications and Services.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/0. The Lay of the Land.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "94e77b59dd2aedf5b22f94f11ffa37ce06392b40f74645a9eec4df232b51bf9b"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/5. Exfiltration Using ICMP.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/0. Data Exfiltration.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "a2003ae944333e35a7b3a81ddb872c4a36269cd4cb240d7c78566455ac787a00"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/1. Network Infrastructure.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/3. Exfiltration Using TCP Socket.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/2. Data Exfiltration.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/6. DNS Configurations.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/7. Exfiltration Over DNS.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/8. DNS Tunneling.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/4. Exfiltrate Using HTTP(S).md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Windows Privilege Escalation/1. Redirection.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "fafb1afb15097dd7909e63b296f3da39affcddb609809dc8c09628812cc200fd"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Windows Privilege Escalation/0. Windows Privilege Escalation.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "ba49bdbd765c0da0663100aa7999117c9e9bea615bb19fc1647d42976f53b262"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/0. Enumeration.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "055efa8862650ebb475672eeed7432c0c06b5cf61b32407ad585757fc8edd0ed"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/2. Purpose.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/4. Windows Enumeration.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/3. Linux Enumeration.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/6. More Tools for Windows.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/5. DNS, SMB and SNMP.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/7. Conclusion.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/6. Abusing User Behaviour.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/4. Moving Laterally Using WMI.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/8. Conclusion.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/3. Spawning Processes Remotely.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e33754e9dfcb6509c92b3cc30eb18ae34cdfecb1538a3527a175c949d4c3f6da"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/7. Port Forwarding.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/2. Moving Through the Network.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/4. Juicy/1. Redirection.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "9f7dd98c274bd579bdeb89d73b3c6242269264d77e7773e99d580b926cdcc394"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/5. BankGPT/1. Redirection.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "90dbd46e9e61682a8dd3d9340ba0f8cfa6844576cc157a86259784286e07236b"
+  },
+  "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/6. HealthGPT/1. Redirection.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "bd297063796455d8312331aa3339d1cd3f8dc97a99161757ecf23e64d48a2cc8"
+  },
+  "THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "f795d7b62cfc77139a97a845e5d83918def3b72f3e0dd7831044bbe66fb1d767"
+  },
+  "THM/Maquinas/1. Easy/43. HealthGPT/2. Getting the Flags.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "0bf53c9501525a1093161b6d63acf62b6cae4edf413d8432adbb71a20249e1af"
+  },
+  "THM/Maquinas/1. Easy/43. HealthGPT/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "46f7dd7f5b2ecc7979f61fbc7f9baac7e38461d3bd136ec62fefefe643116dde"
+  },
+  "THM/Maquinas/1. Easy/42. BankGPT/2. Getting the Flags.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "8f03627d03a626c40755cbb824657a86a975798579de6ba014e078e65316b72d"
+  },
+  "THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "bfa0b8a99e4a3b9ee1005188671bf4834086ecbf1c89b6520ffa72322dbfb97d"
+  },
+  "THM/Maquinas/1. Easy/42. BankGPT/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "ade0d27ecd2e42e760df99864f7129beac28875403fbca7b8395355c471bee6b"
+  },
+  "THM/Maquinas/2. Medium/16. Juicy/0. Juicy.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "75b47414ddc5ffbbc69a24ca4859a06ecc11022dab6a918023d6c60ab6a8a3bb"
+  },
+  "THM/Maquinas/2. Medium/16. Juicy/2. Getting the Flags.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "6a0594b18004c6af55efb39383d24b3e4744e6c600980e9114a4c35a9cba3380"
+  },
+  "THM/Maquinas/2. Medium/16. Juicy/1. Introduction.md": {
+    "modified": "2026-04-28T01:49:27",
+    "hash": "0d92212cb3e53e368d6ffcc341bdd113c6312c0ef90cd022475a19dca91f7e1c"
   }
 }

@@ -1,0 +1,12 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260427164139.png**
+
+Un golden retriever amigable que responde a tus preguntas.
+
+Conoce a Juicy, un golden retriever con el hábito de pasearse de habitación en habitación. Es amigable, curiosa y terrible no estando donde no debería estar. Cuando su dueño está en una llamada, tecleando o hablando sobre algo que debería permanecer privado, Juicy de alguna manera acaba cerca, escuchando todo.
+
+Juicy no debe repetir lo que oye y el dueño la vigila de cerca. Cualquier cosa sospechosa o demasiado directa que digas podría hacer que se levantaran sospechas, por lo que necesitas ser sutil, creativo y paciente si quieres obtener la información.

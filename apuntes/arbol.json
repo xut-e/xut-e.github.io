@@ -7269,19 +7269,835 @@
                         {
                           "name": "4. Juicy",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/4. Juicy/1. Redirection.md",
+                              "parent": "4. Juicy"
+                            }
+                          ]
                         },
                         {
                           "name": "5. BankGPT",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/5. BankGPT/1. Redirection.md",
+                              "parent": "5. BankGPT"
+                            }
+                          ]
                         },
                         {
                           "name": "6. HealthGPT",
                           "type": "directory",
-                          "contents": []
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/6. HealthGPT/1. Redirection.md",
+                              "parent": "6. HealthGPT"
+                            }
+                          ]
                         }
                       ]
+                    }
+                  ]
+                },
+                {
+                  "name": "5. Red Teaming",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Red Team Fundamentals",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Red Team Fundamentals",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Vulnerability Assessment and Penetration Test Limitations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/1. Vulnerability Assessment and Penetration Test Limitations.md",
+                              "parent": "1. Red Team Fundamentals"
+                            },
+                            {
+                              "name": "2. Red Team Engagements.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/2. Red Team Engagements.md",
+                              "parent": "1. Red Team Fundamentals"
+                            },
+                            {
+                              "name": "3. Teams and Functions of an Engagement.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/3. Teams and Functions of an Engagement.md",
+                              "parent": "1. Red Team Fundamentals"
+                            },
+                            {
+                              "name": "4. Engagement Estructure.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/4. Engagement Estructure.md",
+                              "parent": "1. Red Team Fundamentals"
+                            },
+                            {
+                              "name": "5. Overview of a Red Team Engagement.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/5. Overview of a Red Team Engagement.md",
+                              "parent": "1. Red Team Fundamentals"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Red Team Engagements",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Defining Scope and Objectives.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/1. Defining Scope and Objectives.md",
+                              "parent": "2. Red Team Engagements"
+                            },
+                            {
+                              "name": "2. Rules of Engagement.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/2. Rules of Engagement.md",
+                              "parent": "2. Red Team Engagements"
+                            },
+                            {
+                              "name": "3. Campaign Planning.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/3. Campaign Planning.md",
+                              "parent": "2. Red Team Engagements"
+                            },
+                            {
+                              "name": "4. Engagement Documentation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/4. Engagement Documentation.md",
+                              "parent": "2. Red Team Engagements"
+                            },
+                            {
+                              "name": "5. Concept of Operations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/5. Concept of Operations.md",
+                              "parent": "2. Red Team Engagements"
+                            },
+                            {
+                              "name": "6. Resource Plan.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/6. Resource Plan.md",
+                              "parent": "2. Red Team Engagements"
+                            },
+                            {
+                              "name": "7. Operations Plan.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/7. Operations Plan.md",
+                              "parent": "2. Red Team Engagements"
+                            },
+                            {
+                              "name": "8. Mission Plan.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/8. Mission Plan.md",
+                              "parent": "2. Red Team Engagements"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Red Team Threat Intel",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. What is Threat Intelligence.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/1. What is Threat Intelligence.md",
+                              "parent": "3. Red Team Threat Intel"
+                            },
+                            {
+                              "name": "2. Applying Threat Intel to the Red Team.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/2. Applying Threat Intel to the Red Team.md",
+                              "parent": "3. Red Team Threat Intel"
+                            },
+                            {
+                              "name": "3. The TIBER-EU Framework.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/3. The TIBER-EU Framework.md",
+                              "parent": "3. Red Team Threat Intel"
+                            },
+                            {
+                              "name": "4. TTP Mapping.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/4. TTP Mapping.md",
+                              "parent": "3. Red Team Threat Intel"
+                            },
+                            {
+                              "name": "5. Other Red Team Applications of CTI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/5. Other Red Team Applications of CTI.md",
+                              "parent": "3. Red Team Threat Intel"
+                            },
+                            {
+                              "name": "6. Creating a Threat Intel Driven Campaign.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/6. Creating a Threat Intel Driven Campaign.md",
+                              "parent": "3. Red Team Threat Intel"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Red Team OPSEC",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/1. Introduction.md",
+                              "parent": "4. Red Team OPSEC"
+                            },
+                            {
+                              "name": "2. Critical Information Identification.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/2. Critical Information Identification.md",
+                              "parent": "4. Red Team OPSEC"
+                            },
+                            {
+                              "name": "3. Threat Analysis.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/3. Threat Analysis.md",
+                              "parent": "4. Red Team OPSEC"
+                            },
+                            {
+                              "name": "4. Vulnerability Analysis.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/4. Vulnerability Analysis.md",
+                              "parent": "4. Red Team OPSEC"
+                            },
+                            {
+                              "name": "5. Risk Assessment.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/5. Risk Assessment.md",
+                              "parent": "4. Red Team OPSEC"
+                            },
+                            {
+                              "name": "6. Countermeasures.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/6. Countermeasures.md",
+                              "parent": "4. Red Team OPSEC"
+                            },
+                            {
+                              "name": "7. More Practical Examples.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/7. More Practical Examples.md",
+                              "parent": "4. Red Team OPSEC"
+                            },
+                            {
+                              "name": "8. Summary.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/8. Summary.md",
+                              "parent": "4. Red Team OPSEC"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. Intro to C2",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Command and Control Framework Structure.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/1. Command and Control Framework Structure.md",
+                              "parent": "5. Intro to C2"
+                            },
+                            {
+                              "name": "2. Common C2 Frameworks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/2. Common C2 Frameworks.md",
+                              "parent": "5. Intro to C2"
+                            },
+                            {
+                              "name": "3. Setting Up a C2 Framework.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/3. Setting Up a C2 Framework.md",
+                              "parent": "5. Intro to C2"
+                            },
+                            {
+                              "name": "4. C2 Operation Basics.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/4. C2 Operation Basics.md",
+                              "parent": "5. Intro to C2"
+                            },
+                            {
+                              "name": "5. Command, Control and Conquer.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/5. Command, Control and Conquer.md",
+                              "parent": "5. Intro to C2"
+                            },
+                            {
+                              "name": "6. Advanced C2 Setups.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/6. Advanced C2 Setups.md",
+                              "parent": "5. Intro to C2"
+                            },
+                            {
+                              "name": "7. Wrapping Up.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/7. Wrapping Up.md",
+                              "parent": "5. Intro to C2"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2. Initial Access",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Red Team Recon",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/1. Introduction.md",
+                              "parent": "1. Red Team Recon"
+                            },
+                            {
+                              "name": "2. Taxonomy of Reconnaissance.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/2. Taxonomy of Reconnaissance.md",
+                              "parent": "1. Red Team Recon"
+                            },
+                            {
+                              "name": "3. Built-in Tools.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/3. Built-in Tools.md",
+                              "parent": "1. Red Team Recon"
+                            },
+                            {
+                              "name": "4. Advanced Searching.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/4. Advanced Searching.md",
+                              "parent": "1. Red Team Recon"
+                            },
+                            {
+                              "name": "5. Specialized Search Engines.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/5. Specialized Search Engines.md",
+                              "parent": "1. Red Team Recon"
+                            },
+                            {
+                              "name": "6. Recon-ng.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/6. Recon-ng.md",
+                              "parent": "1. Red Team Recon"
+                            },
+                            {
+                              "name": "7. Maltego.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/7. Maltego.md",
+                              "parent": "1. Red Team Recon"
+                            },
+                            {
+                              "name": "8. Summary.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/8. Summary.md",
+                              "parent": "1. Red Team Recon"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Weaponization",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/1. Introduction.md",
+                              "parent": "2. Weaponization"
+                            },
+                            {
+                              "name": "2. Deploy the Windows Machine.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/2. Deploy the Windows Machine.md",
+                              "parent": "2. Weaponization"
+                            },
+                            {
+                              "name": "3. Windows Scripting Host - WSH.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/3. Windows Scripting Host - WSH.md",
+                              "parent": "2. Weaponization"
+                            },
+                            {
+                              "name": "4. An HTML Application - HTA.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/4. An HTML Application - HTA.md",
+                              "parent": "2. Weaponization"
+                            },
+                            {
+                              "name": "5. Visual Basic for Application - VBA.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/5. Visual Basic for Application - VBA.md",
+                              "parent": "2. Weaponization"
+                            },
+                            {
+                              "name": "6. PowerShell - PSH.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/6. PowerShell - PSH.md",
+                              "parent": "2. Weaponization"
+                            },
+                            {
+                              "name": "7. Command And Control - (C2 or C&C).md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/7. Command And Control - (C2 or C&C).md",
+                              "parent": "2. Weaponization"
+                            },
+                            {
+                              "name": "8. Delivery Techniques.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/8. Delivery Techniques.md",
+                              "parent": "2. Weaponization"
+                            },
+                            {
+                              "name": "9. Practice Arena.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/9. Practice Arena.md",
+                              "parent": "2. Weaponization"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Password Attacks",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/1. Introduction.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "10 Summary.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/10 Summary.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "2. Password Attacking Techniques.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/2. Password Attacking Techniques.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "3. Password Profiling 1 - Default, Weak, Leaked, Combined and Username Wordlists.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/3. Password Profiling 1 - Default, Weak, Leaked, Combined and Username Wordlists.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "4. Password Profiling 2 - Keyspace Technique and CUPP.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/4. Password Profiling 2 - Keyspace Technique and CUPP.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "5. Offline Attacks - Dictionary and Brute-Force.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/5. Offline Attacks - Dictionary and Brute-Force.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "6. Offline Attacks - Rule-Based.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/6. Offline Attacks - Rule-Based.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "7. Deploy the VM.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/7. Deploy the VM.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "8. Online Password Attacks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/8. Online Password Attacks.md",
+                              "parent": "3. Password Attacks"
+                            },
+                            {
+                              "name": "9. Password Spray Attack.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/9. Password Spray Attack.md",
+                              "parent": "3. Password Attacks"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Phishing",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Intro to Phishing Attacks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/1. Intro to Phishing Attacks.md",
+                              "parent": "4. Phishing"
+                            },
+                            {
+                              "name": "2. Writing Convincing Phishing Emails.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/2. Writing Convincing Phishing Emails.md",
+                              "parent": "4. Phishing"
+                            },
+                            {
+                              "name": "3. Phishing Infrastructure.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/3. Phishing Infrastructure.md",
+                              "parent": "4. Phishing"
+                            },
+                            {
+                              "name": "4. Using GoPhish.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/4. Using GoPhish.md",
+                              "parent": "4. Phishing"
+                            },
+                            {
+                              "name": "5. Droppers.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/5. Droppers.md",
+                              "parent": "4. Phishing"
+                            },
+                            {
+                              "name": "6. Choosing A Phishing Domain.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/6. Choosing A Phishing Domain.md",
+                              "parent": "4. Phishing"
+                            },
+                            {
+                              "name": "7. Using MS Office in Phishing.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/7. Using MS Office in Phishing.md",
+                              "parent": "4. Phishing"
+                            },
+                            {
+                              "name": "8. Using Browser Exploits.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/8. Using Browser Exploits.md",
+                              "parent": "4. Phishing"
+                            },
+                            {
+                              "name": "9. Phishing Practical.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/9. Phishing Practical.md",
+                              "parent": "4. Phishing"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3. Post Compromise",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. The Lay of the Land",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Deploy the VM.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/1. Deploy the VM.md",
+                              "parent": "1. The Lay of the Land"
+                            },
+                            {
+                              "name": "2. Network Infrastructure.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/2. Network Infrastructure.md",
+                              "parent": "1. The Lay of the Land"
+                            },
+                            {
+                              "name": "3. Active Directory (AD) Environment.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/3. Active Directory (AD) Environment.md",
+                              "parent": "1. The Lay of the Land"
+                            },
+                            {
+                              "name": "4. Users and Groups Management.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/4. Users and Groups Management.md",
+                              "parent": "1. The Lay of the Land"
+                            },
+                            {
+                              "name": "5. Host Security Solution 1.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/5. Host Security Solution 1.md",
+                              "parent": "1. The Lay of the Land"
+                            },
+                            {
+                              "name": "6. Host Security Solution 2.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/6. Host Security Solution 2.md",
+                              "parent": "1. The Lay of the Land"
+                            },
+                            {
+                              "name": "7. Network Security Solutions.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/7. Network Security Solutions.md",
+                              "parent": "1. The Lay of the Land"
+                            },
+                            {
+                              "name": "8. Applications and Services.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/8. Applications and Services.md",
+                              "parent": "1. The Lay of the Land"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Enumeration",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/1. Introduction.md",
+                              "parent": "2. Enumeration"
+                            },
+                            {
+                              "name": "2. Purpose.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/2. Purpose.md",
+                              "parent": "2. Enumeration"
+                            },
+                            {
+                              "name": "3. Linux Enumeration.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/3. Linux Enumeration.md",
+                              "parent": "2. Enumeration"
+                            },
+                            {
+                              "name": "4. Windows Enumeration.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/4. Windows Enumeration.md",
+                              "parent": "2. Enumeration"
+                            },
+                            {
+                              "name": "5. DNS, SMB and SNMP.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/5. DNS, SMB and SNMP.md",
+                              "parent": "2. Enumeration"
+                            },
+                            {
+                              "name": "6. More Tools for Windows.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/6. More Tools for Windows.md",
+                              "parent": "2. Enumeration"
+                            },
+                            {
+                              "name": "7. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/7. Conclusion.md",
+                              "parent": "2. Enumeration"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Windows Privilege Escalation",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Windows Privilege Escalation/1. Redirection.md",
+                              "parent": "3. Windows Privilege Escalation"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Windows Local Persistence",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/1. Introduction.md",
+                              "parent": "4. Windows Local Persistence"
+                            },
+                            {
+                              "name": "2. Tampering With Unprivileged Accounts.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/2. Tampering With Unprivileged Accounts.md",
+                              "parent": "4. Windows Local Persistence"
+                            },
+                            {
+                              "name": "3. Backdooring Files.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/3. Backdooring Files.md",
+                              "parent": "4. Windows Local Persistence"
+                            },
+                            {
+                              "name": "4. Abusing Services.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/4. Abusing Services.md",
+                              "parent": "4. Windows Local Persistence"
+                            },
+                            {
+                              "name": "5. Abusing Scheduled Tasks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/5. Abusing Scheduled Tasks.md",
+                              "parent": "4. Windows Local Persistence"
+                            },
+                            {
+                              "name": "6. Logon Triggered Persistence.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/6. Logon Triggered Persistence.md",
+                              "parent": "4. Windows Local Persistence"
+                            },
+                            {
+                              "name": "7. Backdooring the Login Screen - RDP.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/7. Backdooring the Login Screen - RDP.md",
+                              "parent": "4. Windows Local Persistence"
+                            },
+                            {
+                              "name": "8. Persisting Through Existing Services.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/8. Persisting Through Existing Services.md",
+                              "parent": "4. Windows Local Persistence"
+                            },
+                            {
+                              "name": "9. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/9. Conclusion.md",
+                              "parent": "4. Windows Local Persistence"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. Lateral Movement and Pivoting",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/1. Introduction.md",
+                              "parent": "5. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "2. Moving Through the Network.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/2. Moving Through the Network.md",
+                              "parent": "5. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "3. Spawning Processes Remotely.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/3. Spawning Processes Remotely.md",
+                              "parent": "5. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "4. Moving Laterally Using WMI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/4. Moving Laterally Using WMI.md",
+                              "parent": "5. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "5. Use of Alternate Authentication Material.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material.md",
+                              "parent": "5. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "6. Abusing User Behaviour.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/6. Abusing User Behaviour.md",
+                              "parent": "5. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "7. Port Forwarding.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/7. Port Forwarding.md",
+                              "parent": "5. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "8. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/8. Conclusion.md",
+                              "parent": "5. Lateral Movement and Pivoting"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "6. Data Exfiltration",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Network Infrastructure.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/1. Network Infrastructure.md",
+                              "parent": "6. Data Exfiltration"
+                            },
+                            {
+                              "name": "2. Data Exfiltration.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/2. Data Exfiltration.md",
+                              "parent": "6. Data Exfiltration"
+                            },
+                            {
+                              "name": "3. Exfiltration Using TCP Socket.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/3. Exfiltration Using TCP Socket.md",
+                              "parent": "6. Data Exfiltration"
+                            },
+                            {
+                              "name": "4. Exfiltrate Using HTTP(S).md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/4. Exfiltrate Using HTTP(S).md",
+                              "parent": "6. Data Exfiltration"
+                            },
+                            {
+                              "name": "5. Exfiltration Using ICMP.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/5. Exfiltration Using ICMP.md",
+                              "parent": "6. Data Exfiltration"
+                            },
+                            {
+                              "name": "6. DNS Configurations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/6. DNS Configurations.md",
+                              "parent": "6. Data Exfiltration"
+                            },
+                            {
+                              "name": "7. Exfiltration Over DNS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/7. Exfiltration Over DNS.md",
+                              "parent": "6. Data Exfiltration"
+                            },
+                            {
+                              "name": "8. DNS Tunneling.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/6. Data Exfiltration/8. DNS Tunneling.md",
+                              "parent": "6. Data Exfiltration"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4. Host Evasions",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "5. Network Security Evasion",
+                      "type": "directory",
+                      "contents": []
+                    },
+                    {
+                      "name": "6. Compromising Active Directory",
+                      "type": "directory",
+                      "contents": []
                     }
                   ]
                 }
@@ -8251,6 +9067,42 @@
                   ]
                 },
                 {
+                  "name": "42. BankGPT",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/1. Introduction.md",
+                      "parent": "42. BankGPT"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/2. Getting the Flags.md",
+                      "parent": "42. BankGPT"
+                    }
+                  ]
+                },
+                {
+                  "name": "43. HealthGPT",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/1. Introduction.md",
+                      "parent": "43. HealthGPT"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/2. Getting the Flags.md",
+                      "parent": "43. HealthGPT"
+                    }
+                  ]
+                },
+                {
                   "name": "5. Brooklyn Nine Nine",
                   "type": "directory",
                   "contents": [
@@ -8481,6 +9333,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/2. Getting the Flags.md",
                       "parent": "15. Farewell"
+                    }
+                  ]
+                },
+                {
+                  "name": "16. Juicy",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/16. Juicy/1. Introduction.md",
+                      "parent": "16. Juicy"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/16. Juicy/2. Getting the Flags.md",
+                      "parent": "16. Juicy"
                     }
                   ]
                 },

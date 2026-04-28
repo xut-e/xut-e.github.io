@@ -3,3 +3,5 @@ layout: apunte
 title: "0. Juicy"
 ---
 
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/5. Attacking LLMs/4. Juicy/1. Redirection**
+**Ciberseguridad/THM/Maquinas/2. Medium/16. Juicy/0. Juicy**

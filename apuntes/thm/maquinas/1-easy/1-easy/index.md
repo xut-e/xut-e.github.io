@@ -44,4 +44,6 @@ title: "1. Easy"
 39. [0. Corridor](/apuntes/thm/maquinas/1-easy/39-corridor/0-corridor/)
 40. [0. Archangel](/apuntes/thm/maquinas/1-easy/40-archangel/0-archangel/)
 41. [0. Dig Dug](/apuntes/thm/maquinas/1-easy/41-dig-dug/0-dig-dug/)
-42. 
+42. **Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT**
+43. **Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT**
+44. 

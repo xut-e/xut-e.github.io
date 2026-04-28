@@ -1,0 +1,23 @@
+---
+layout: apunte
+title: "2. Getting the Flags"
+---
+
+Tenemos que obtener la flag, vamos a ver cómo es la página:
+
+!**Pasted image 20260427203553.png**
+
+Vamos a preguntar por la flag.
+
+!**Pasted image 20260427203635.png**
+
+Parece que no nos dice nada. Sin embargo si seguimos probando payloads y le preguntamos por sus reglas:
+
+!**Pasted image 20260427203911.png**
+
+Como curiosidad vamos a ver qué pasa si le decimos que es una emergencia.
+
+!**Pasted image 20260427203957.png**
+
+Pues nada, pero bueno, ya la hemos obtenido xD
+
