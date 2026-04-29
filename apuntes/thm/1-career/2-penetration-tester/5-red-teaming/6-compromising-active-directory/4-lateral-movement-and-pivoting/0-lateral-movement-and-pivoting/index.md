@@ -1,0 +1,13 @@
+---
+layout: apunte
+title: "0. Lateral Movement and Pivoting"
+---
+
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Introduction**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Moving Through the Network**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Spawning Processes Remotely**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Moving Laterally Using WMI**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Abusing User Behaviour**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Port Forwarding**
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/8. Conclusion**

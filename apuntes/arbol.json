@@ -8087,17 +8087,1106 @@
                     {
                       "name": "4. Host Evasions",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Windows Internals",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Processes.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/1. Processes.md",
+                              "parent": "1. Windows Internals"
+                            },
+                            {
+                              "name": "2. Threads.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/2. Threads.md",
+                              "parent": "1. Windows Internals"
+                            },
+                            {
+                              "name": "3. Virtual Memory.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/3. Virtual Memory.md",
+                              "parent": "1. Windows Internals"
+                            },
+                            {
+                              "name": "4. Dynamic Link Libraries.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/4. Dynamic Link Libraries.md",
+                              "parent": "1. Windows Internals"
+                            },
+                            {
+                              "name": "5. Portable Executable Format.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/5. Portable Executable Format.md",
+                              "parent": "1. Windows Internals"
+                            },
+                            {
+                              "name": "6. Interacting with Windows Internals.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/6. Interacting with Windows Internals.md",
+                              "parent": "1. Windows Internals"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "10. Evading Logging and Monitoring",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/1. Introduction.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "10. Real World Scenario.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/10. Real World Scenario.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "2. Event Tracing.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/2. Event Tracing.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "3. Approaches to Log Evasion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/3. Approaches to Log Evasion.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "4. Tracing Instrumentation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/4. Tracing Instrumentation.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "5. Reflection for Fun and Silence.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/5. Reflection for Fun and Silence.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "6. Patching Tracing Functions.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/6. Patching Tracing Functions.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "7. Providers via Policy.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/7. Providers via Policy.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "8. Groups Policy Takeover.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/8. Groups Policy Takeover.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            },
+                            {
+                              "name": "9. Abusing Log Pipeline.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/9. Abusing Log Pipeline.md",
+                              "parent": "10. Evading Logging and Monitoring"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "11. Living Off the Land",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/1. Introduction.md",
+                              "parent": "11. Living Off the Land"
+                            },
+                            {
+                              "name": "2. Windows Sysinternals.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/2. Windows Sysinternals.md",
+                              "parent": "11. Living Off the Land"
+                            },
+                            {
+                              "name": "3. LOLBAS Project.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/3. LOLBAS Project.md",
+                              "parent": "11. Living Off the Land"
+                            },
+                            {
+                              "name": "4. File Operations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/4. File Operations.md",
+                              "parent": "11. Living Off the Land"
+                            },
+                            {
+                              "name": "5. File Execution.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/5. File Execution.md",
+                              "parent": "11. Living Off the Land"
+                            },
+                            {
+                              "name": "6. Application Whitelisting Bypasses.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/6. Application Whitelisting Bypasses.md",
+                              "parent": "11. Living Off the Land"
+                            },
+                            {
+                              "name": "7. Other Techniques.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/7. Other Techniques.md",
+                              "parent": "11. Living Off the Land"
+                            },
+                            {
+                              "name": "8. Real-life Scenario.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/8. Real-life Scenario.md",
+                              "parent": "11. Living Off the Land"
+                            },
+                            {
+                              "name": "9. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/9. Conclusion.md",
+                              "parent": "11. Living Off the Land"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Introduction to Windows API",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/1. Introduction.md",
+                              "parent": "2. Introduction to Windows API"
+                            },
+                            {
+                              "name": "2. Subsystem and Hardware Interaction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/2. Subsystem and Hardware Interaction.md",
+                              "parent": "2. Introduction to Windows API"
+                            },
+                            {
+                              "name": "3. Components of the Windows API.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/3. Components of the Windows API.md",
+                              "parent": "2. Introduction to Windows API"
+                            },
+                            {
+                              "name": "4. OS Libraries.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/4. OS Libraries.md",
+                              "parent": "2. Introduction to Windows API"
+                            },
+                            {
+                              "name": "5. API Call Structure.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/5. API Call Structure.md",
+                              "parent": "2. Introduction to Windows API"
+                            },
+                            {
+                              "name": "6. C API Implementations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/6. C API Implementations.md",
+                              "parent": "2. Introduction to Windows API"
+                            },
+                            {
+                              "name": "7. .NET and Powershell API Implementations.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/7. .NET and Powershell API Implementations.md",
+                              "parent": "2. Introduction to Windows API"
+                            },
+                            {
+                              "name": "8. Commonly Abused API Calls.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/8. Commonly Abused API Calls.md",
+                              "parent": "2. Introduction to Windows API"
+                            },
+                            {
+                              "name": "9. Malware Case Study.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/9. Malware Case Study.md",
+                              "parent": "2. Introduction to Windows API"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Abusing Windows Internals",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/1. Introduction.md",
+                              "parent": "3. Abusing Windows Internals"
+                            },
+                            {
+                              "name": "2. Abusing Processes.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/2. Abusing Processes.md",
+                              "parent": "3. Abusing Windows Internals"
+                            },
+                            {
+                              "name": "3. Expanding Process Abuse.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/3. Expanding Process Abuse.md",
+                              "parent": "3. Abusing Windows Internals"
+                            },
+                            {
+                              "name": "4. Abusing Process Components.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/4. Abusing Process Components.md",
+                              "parent": "3. Abusing Windows Internals"
+                            },
+                            {
+                              "name": "5. Abusing DLLs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/5. Abusing DLLs.md",
+                              "parent": "3. Abusing Windows Internals"
+                            },
+                            {
+                              "name": "6. Memory Execution Alternatives.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/6. Memory Execution Alternatives.md",
+                              "parent": "3. Abusing Windows Internals"
+                            },
+                            {
+                              "name": "7. Case Study in Browser Injection and Hooking.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/7. Case Study in Browser Injection and Hooking.md",
+                              "parent": "3. Abusing Windows Internals"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Introduction to Antivirus",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Antivirus Software.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/1. Antivirus Software.md",
+                              "parent": "4. Introduction to Antivirus"
+                            },
+                            {
+                              "name": "2. Antivirus Features.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/2. Antivirus Features.md",
+                              "parent": "4. Introduction to Antivirus"
+                            },
+                            {
+                              "name": "3. Deploy the VM.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/3. Deploy the VM.md",
+                              "parent": "4. Introduction to Antivirus"
+                            },
+                            {
+                              "name": "4. AV Static Detection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/4. AV Static Detection.md",
+                              "parent": "4. Introduction to Antivirus"
+                            },
+                            {
+                              "name": "5. Other Detection Techniques.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/5. Other Detection Techniques.md",
+                              "parent": "4. Introduction to Antivirus"
+                            },
+                            {
+                              "name": "6. AV Testing and Fingerprinting.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/6. AV Testing and Fingerprinting.md",
+                              "parent": "4. Introduction to Antivirus"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. AV Evasion - Shellcode",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/1. Challenge.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            },
+                            {
+                              "name": "2. PE Structure.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/2. PE Structure.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            },
+                            {
+                              "name": "3. Introduction to Shellcode.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/3. Introduction to Shellcode.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            },
+                            {
+                              "name": "4. Generate Shellcode.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/4. Generate Shellcode.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            },
+                            {
+                              "name": "5. Staged Payloads.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/5. Staged Payloads.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            },
+                            {
+                              "name": "6. Introduction to Encoding and Encryption.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/6. Introduction to Encoding and Encryption.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            },
+                            {
+                              "name": "7. Shellcode Encoding and Encryption.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/7. Shellcode Encoding and Encryption.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            },
+                            {
+                              "name": "8. Packers.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/8. Packers.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            },
+                            {
+                              "name": "9. Binders.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/9. Binders.md",
+                              "parent": "5. AV Evasion - Shellcode"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "6. Obfuscation Principles",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Origins of Obfuscation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/1. Origins of Obfuscation.md",
+                              "parent": "6. Obfuscation Principles"
+                            },
+                            {
+                              "name": "2. Obfuscation's Function for Static Evasion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/2. Obfuscation's Function for Static Evasion.md",
+                              "parent": "6. Obfuscation Principles"
+                            },
+                            {
+                              "name": "3. Object Concatenation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/3. Object Concatenation.md",
+                              "parent": "6. Obfuscation Principles"
+                            },
+                            {
+                              "name": "4. Obfuscation's Function for Analysis Deception.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/4. Obfuscation's Function for Analysis Deception.md",
+                              "parent": "6. Obfuscation Principles"
+                            },
+                            {
+                              "name": "5. Code Flow and Logic.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/5. Code Flow and Logic.md",
+                              "parent": "6. Obfuscation Principles"
+                            },
+                            {
+                              "name": "6. Arbitrary Control Flow Patterns.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/6. Arbitrary Control Flow Patterns.md",
+                              "parent": "6. Obfuscation Principles"
+                            },
+                            {
+                              "name": "7. Protecting and Stripping Identifiable Information.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/7. Protecting and Stripping Identifiable Information.md",
+                              "parent": "6. Obfuscation Principles"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "7. Signature Evasion",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/1. Introduction.md",
+                              "parent": "7. Signature Evasion"
+                            },
+                            {
+                              "name": "2. Signature Identification.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/2. Signature Identification.md",
+                              "parent": "7. Signature Evasion"
+                            },
+                            {
+                              "name": "3. Automating Signature Identification.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/3. Automating Signature Identification.md",
+                              "parent": "7. Signature Evasion"
+                            },
+                            {
+                              "name": "4. Static Code-Based Signatures.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/4. Static Code-Based Signatures.md",
+                              "parent": "7. Signature Evasion"
+                            },
+                            {
+                              "name": "5. Static Property-Based Signatures.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/5. Static Property-Based Signatures.md",
+                              "parent": "7. Signature Evasion"
+                            },
+                            {
+                              "name": "6. Behavioral Signatures.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/6. Behavioral Signatures.md",
+                              "parent": "7. Signature Evasion"
+                            },
+                            {
+                              "name": "7. Putting It All Together.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/7. Putting It All Together.md",
+                              "parent": "7. Signature Evasion"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "8. Bypassing UAC",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. User Account Control (UAC).md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/1. User Account Control (UAC).md",
+                              "parent": "8. Bypassing UAC"
+                            },
+                            {
+                              "name": "2. UAC - GUI Based Bypasses.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/2. UAC - GUI Based Bypasses.md",
+                              "parent": "8. Bypassing UAC"
+                            },
+                            {
+                              "name": "3. UAC- Auto-Elevating Processes.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/3. UAC- Auto-Elevating Processes.md",
+                              "parent": "8. Bypassing UAC"
+                            },
+                            {
+                              "name": "4. UAC - Improving the Fodhelper Exploit to Bypass Windows Defender.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/4. UAC - Improving the Fodhelper Exploit to Bypass Windows Defender.md",
+                              "parent": "8. Bypassing UAC"
+                            },
+                            {
+                              "name": "5. UAC - Environment Variable Expansion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/5. UAC - Environment Variable Expansion.md",
+                              "parent": "8. Bypassing UAC"
+                            },
+                            {
+                              "name": "6. Automated Exploitation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/6. Automated Exploitation.md",
+                              "parent": "8. Bypassing UAC"
+                            },
+                            {
+                              "name": "7. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/7. Conclusion.md",
+                              "parent": "8. Bypassing UAC"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "9. Runtime Detection Evasion",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/1. Introduction.md",
+                              "parent": "9. Runtime Detection Evasion"
+                            },
+                            {
+                              "name": "2. Runtime Detections.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/2. Runtime Detections.md",
+                              "parent": "9. Runtime Detection Evasion"
+                            },
+                            {
+                              "name": "3. AMSI Overview.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/3. AMSI Overview.md",
+                              "parent": "9. Runtime Detection Evasion"
+                            },
+                            {
+                              "name": "4. AMSI Instrumentation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/4. AMSI Instrumentation.md",
+                              "parent": "9. Runtime Detection Evasion"
+                            },
+                            {
+                              "name": "5. PowerShell Downgrade.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/5. PowerShell Downgrade.md",
+                              "parent": "9. Runtime Detection Evasion"
+                            },
+                            {
+                              "name": "6. PowerShell Reflection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/6. PowerShell Reflection.md",
+                              "parent": "9. Runtime Detection Evasion"
+                            },
+                            {
+                              "name": "7. Patching AMSI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/7. Patching AMSI.md",
+                              "parent": "9. Runtime Detection Evasion"
+                            },
+                            {
+                              "name": "8. Automating for Fun and Profit.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/8. Automating for Fun and Profit.md",
+                              "parent": "9. Runtime Detection Evasion"
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
                       "name": "5. Network Security Evasion",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Network Security Solutions",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/1. Introduction.md",
+                              "parent": "1. Network Security Solutions"
+                            },
+                            {
+                              "name": "2. IDS Engine Types.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/2. IDS Engine Types.md",
+                              "parent": "1. Network Security Solutions"
+                            },
+                            {
+                              "name": "3. IDS-IPS Rule Triggering.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/3. IDS-IPS Rule Triggering.md",
+                              "parent": "1. Network Security Solutions"
+                            },
+                            {
+                              "name": "4. Evasion via Protocol Manipulation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/4. Evasion via Protocol Manipulation.md",
+                              "parent": "1. Network Security Solutions"
+                            },
+                            {
+                              "name": "5. Evasion via Payload Manipulation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/5. Evasion via Payload Manipulation.md",
+                              "parent": "1. Network Security Solutions"
+                            },
+                            {
+                              "name": "6. Evasion via Route Manipulation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/6. Evasion via Route Manipulation.md",
+                              "parent": "1. Network Security Solutions"
+                            },
+                            {
+                              "name": "7. Evasion via Tachtical DoS.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/7. Evasion via Tachtical DoS.md",
+                              "parent": "1. Network Security Solutions"
+                            },
+                            {
+                              "name": "8. C2 and IDS-IPS Evasion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/8. C2 and IDS-IPS Evasion.md",
+                              "parent": "1. Network Security Solutions"
+                            },
+                            {
+                              "name": "9. Next-Gen Security.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/9. Next-Gen Security.md",
+                              "parent": "1. Network Security Solutions"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Firewalls",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/1. Introduction.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "10. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/10. Conclusion.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "2. Types of Firewalls.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/2. Types of Firewalls.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "3. Evasion via Controlling the Source MAC-IP-Port.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/3. Evasion via Controlling the Source MAC-IP-Port.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "4. Evasion via Forcing Fragmentation, MTU, and Data Length.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/4. Evasion via Forcing Fragmentation, MTU, and Data Length.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "5. Evasion via Modifying Header Fileds.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/5. Evasion via Modifying Header Fileds.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "6. Evasion Using Port Hopping.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/6. Evasion Using Port Hopping.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "7. Evasion Using Port Tunneling.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/7. Evasion Using Port Tunneling.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "8. Evasion Using Non-Standard Ports.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/8. Evasion Using Non-Standard Ports.md",
+                              "parent": "2. Firewalls"
+                            },
+                            {
+                              "name": "9. Next-Generation Firewalls.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/9. Next-Generation Firewalls.md",
+                              "parent": "2. Firewalls"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Sandbox Evasion",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. An Adversary Walks into a Sandbox.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/1. An Adversary Walks into a Sandbox.md",
+                              "parent": "3. Sandbox Evasion"
+                            },
+                            {
+                              "name": "2. Common Sandbox Evasion Techniques.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/2. Common Sandbox Evasion Techniques.md",
+                              "parent": "3. Sandbox Evasion"
+                            },
+                            {
+                              "name": "3. Implementing Various Evasion Techniques.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/3. Implementing Various Evasion Techniques.md",
+                              "parent": "3. Sandbox Evasion"
+                            },
+                            {
+                              "name": "4. DIY Sandbox Evasion Challenge.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/4. DIY Sandbox Evasion Challenge.md",
+                              "parent": "3. Sandbox Evasion"
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
                       "name": "6. Compromising Active Directory",
                       "type": "directory",
-                      "contents": []
+                      "contents": [
+                        {
+                          "name": "1. Active Directory Basics",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Redirection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/1. Active Directory Basics/1. Redirection.md",
+                              "parent": "1. Active Directory Basics"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "2. Breaching Active Directory",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction to AD Breaches.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/1. Introduction to AD Breaches.md",
+                              "parent": "2. Breaching Active Directory"
+                            },
+                            {
+                              "name": "2. OSINT and Phishing.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/2. OSINT and Phishing.md",
+                              "parent": "2. Breaching Active Directory"
+                            },
+                            {
+                              "name": "3. NTLM Authenticated Services.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/3. NTLM Authenticated Services.md",
+                              "parent": "2. Breaching Active Directory"
+                            },
+                            {
+                              "name": "4. LDAP Bind Credentials.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/4. LDAP Bind Credentials.md",
+                              "parent": "2. Breaching Active Directory"
+                            },
+                            {
+                              "name": "5. Authentication Relays.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/5. Authentication Relays.md",
+                              "parent": "2. Breaching Active Directory"
+                            },
+                            {
+                              "name": "6. Microsoft Deployment Toolkit.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/6. Microsoft Deployment Toolkit.md",
+                              "parent": "2. Breaching Active Directory"
+                            },
+                            {
+                              "name": "7. Configuration Files.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/7. Configuration Files.md",
+                              "parent": "2. Breaching Active Directory"
+                            },
+                            {
+                              "name": "8. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/8. Conclusion.md",
+                              "parent": "2. Breaching Active Directory"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "3. Enumerating Active Directory",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Why AD Enumeration.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/1. Why AD Enumeration.md",
+                              "parent": "3. Enumerating Active Directory"
+                            },
+                            {
+                              "name": "2. Credential Injection.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/2. Credential Injection.md",
+                              "parent": "3. Enumerating Active Directory"
+                            },
+                            {
+                              "name": "3. Enumeration through Microsoft Management Console.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/3. Enumeration through Microsoft Management Console.md",
+                              "parent": "3. Enumerating Active Directory"
+                            },
+                            {
+                              "name": "4. Enumeration through Command Prompt.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/4. Enumeration through Command Prompt.md",
+                              "parent": "3. Enumerating Active Directory"
+                            },
+                            {
+                              "name": "5. Enumeration thorugh PowerShell.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/5. Enumeration thorugh PowerShell.md",
+                              "parent": "3. Enumerating Active Directory"
+                            },
+                            {
+                              "name": "6. Enumeration through Bloodhound.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/6. Enumeration through Bloodhound.md",
+                              "parent": "3. Enumerating Active Directory"
+                            },
+                            {
+                              "name": "7. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/7. Conclusion.md",
+                              "parent": "3. Enumerating Active Directory"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "4. Lateral Movement and Pivoting",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Introduction.md",
+                              "parent": "4. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "2. Moving Through the Network.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Moving Through the Network.md",
+                              "parent": "4. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "3. Spawning Processes Remotely.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Spawning Processes Remotely.md",
+                              "parent": "4. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "4. Moving Laterally Using WMI.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Moving Laterally Using WMI.md",
+                              "parent": "4. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "5. Use of Alternate Authentication Material.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material.md",
+                              "parent": "4. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "6. Abusing User Behaviour.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Abusing User Behaviour.md",
+                              "parent": "4. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "7. Port Forwarding.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Port Forwarding.md",
+                              "parent": "4. Lateral Movement and Pivoting"
+                            },
+                            {
+                              "name": "8. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/8. Conclusion.md",
+                              "parent": "4. Lateral Movement and Pivoting"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "5. Exploiting Active Directory",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/1. Introduction.md",
+                              "parent": "5. Exploiting Active Directory"
+                            },
+                            {
+                              "name": "2. Exploiting Permission Delegation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/2. Exploiting Permission Delegation.md",
+                              "parent": "5. Exploiting Active Directory"
+                            },
+                            {
+                              "name": "3. Exploiting Kerberos Delegation.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/3. Exploiting Kerberos Delegation.md",
+                              "parent": "5. Exploiting Active Directory"
+                            },
+                            {
+                              "name": "4. Exploiting Automated Relays.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/4. Exploiting Automated Relays.md",
+                              "parent": "5. Exploiting Active Directory"
+                            },
+                            {
+                              "name": "5. Exploiting AD Users.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/5. Exploiting AD Users.md",
+                              "parent": "5. Exploiting Active Directory"
+                            },
+                            {
+                              "name": "6. Exploiting GPOs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/6. Exploiting GPOs.md",
+                              "parent": "5. Exploiting Active Directory"
+                            },
+                            {
+                              "name": "7. Exploiting Certificates.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/7. Exploiting Certificates.md",
+                              "parent": "5. Exploiting Active Directory"
+                            },
+                            {
+                              "name": "8. Exploiting Domain Trusts.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/8. Exploiting Domain Trusts.md",
+                              "parent": "5. Exploiting Active Directory"
+                            },
+                            {
+                              "name": "9. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/9. Conclusion.md",
+                              "parent": "5. Exploiting Active Directory"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "6. Persisting Active Directory",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/1. Introduction.md",
+                              "parent": "6. Persisting Active Directory"
+                            },
+                            {
+                              "name": "2. Persistence through Credentials.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/2. Persistence through Credentials.md",
+                              "parent": "6. Persisting Active Directory"
+                            },
+                            {
+                              "name": "3. Persistence through Tickets.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/3. Persistence through Tickets.md",
+                              "parent": "6. Persisting Active Directory"
+                            },
+                            {
+                              "name": "4. Persistence through Certificates.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/4. Persistence through Certificates.md",
+                              "parent": "6. Persisting Active Directory"
+                            },
+                            {
+                              "name": "5. Persistence through SID History.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/5. Persistence through SID History.md",
+                              "parent": "6. Persisting Active Directory"
+                            },
+                            {
+                              "name": "6. Persistence through Group Membership.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/6. Persistence through Group Membership.md",
+                              "parent": "6. Persisting Active Directory"
+                            },
+                            {
+                              "name": "7. Persistence through ACLs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/7. Persistence through ACLs.md",
+                              "parent": "6. Persisting Active Directory"
+                            },
+                            {
+                              "name": "8. Persistence through GPOs.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/8. Persistence through GPOs.md",
+                              "parent": "6. Persisting Active Directory"
+                            },
+                            {
+                              "name": "9. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/9. Conclusion.md",
+                              "parent": "6. Persisting Active Directory"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "7. Credentials Harvesting",
+                          "type": "directory",
+                          "contents": [
+                            {
+                              "name": "1. Introduction.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/1. Introduction.md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "10. Conclusion.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/10. Conclusion.md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "2. Credentials Harvesting.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/2. Credentials Harvesting.md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "3. Credential Access.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/3. Credential Access.md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "4. Local Windows Credentials.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/4. Local Windows Credentials.md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "5. Local Security Authority Subsystem Service (LSASS).md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/5. Local Security Authority Subsystem Service (LSASS).md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "6. Windows Credential Manager.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/6. Windows Credential Manager.md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "7. Domain Controller.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/7. Domain Controller.md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "8. Local Administrator Password Solution (LAPS).md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/8. Local Administrator Password Solution (LAPS).md",
+                              "parent": "7. Credentials Harvesting"
+                            },
+                            {
+                              "name": "9. Other Attacks.md",
+                              "type": "file",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/9. Other Attacks.md",
+                              "parent": "7. Credentials Harvesting"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }

@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Redirection"
+---
+
+Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 3. Windows and AD Fundamentals -> 4. Active Directory Basics**
+
+

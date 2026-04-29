@@ -9,4 +9,4 @@ title: "0. Active Reconnaissance"
 [4. Traceroute](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/4-traceroute/)
 [5. Telnet](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/5-telnet/)
 [6. Netcat](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/6-netcat/)
-[7. Putting It All Together](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/7-putting-it-all-together/)
+**Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/7. Putting It All Together**

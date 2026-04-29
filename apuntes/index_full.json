@@ -428,8 +428,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/3-web-application-pentesting/2-injection-attacks/1-advanced-sql-injection/0-advanced-sql-injection/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/0. Advanced SQL Injection.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 3. Web Application Pentesting > 2. Injection Attacks > 1. Advanced SQL Injection",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/1. Introduction]]\n[[2. Quick Recap]]\n[[3. Second-Order SQL Injection]]\n[[4. Filter Evasion Techniques]]\n[[5. Filter Evasion Techniques - continued]]\n[[6. Out-of-band SQL Injection]]\n[[7. Other Techniques]]\n[[8. Automation]]\n[[9. Best Practices]]",
-    "modified": "2025-12-12T13:58:55"
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/1. Introduction]]\n[[2. Quick Recap]]\n[[3. Second-Order SQL Injection]]\n[[4. Filter Evasion Techniques]]\n[[5. Filter Evasion Techniques - continued]]\n[[6. Out-of-band SQL Injection]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/2. Injection Attacks/1. Advanced SQL Injection/7. Other Techniques]]\n[[8. Automation]]\n[[9. Best Practices]]",
+    "modified": "2026-04-29T01:52:25"
   },
   {
     "title": "9. Best Practices",
@@ -2764,24 +2764,24 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-compromising-active-directory/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Compromising Active Directory.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "1. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/1. Active Directory Basics/0. Active Directory Basics]]\n2. [[0. Breaching Active Directory]]\n3. [[0. Enumerating Active Directory]]\n4. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting]]\n5. [[0. Exploiting Active Directory]]\n6. [[0. Persisting Active Directory]]\n7. [[0. Credentials Harvesting]]",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "5. Network Security Evasion",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/5-network-security-evasion/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/5. Network Security Evasion.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "1. [[0. Network Security Solutions]]\n2. [[0. Firewalls]]\n3. [[0. Sandbox Evasion]]\n4.",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "4. Host Evasions",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-host-evasions/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Host Evasions.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "1. [[0. Windows Internals]]\n2. [[0. Introduction to Windows API]]\n3. [[0. Abusing Windows Internals]]\n4. [[0. Introduction to Antivirus]]\n5. [[0. AV Evasion - Shellcode]]\n6. [[0. Obfuscation Principles]]\n7. [[0. Signature Evasion]]\n8. [[0. Bypassing UAC]]\n9. [[0. Runtime Detection Evasion]]\n10. [[0. Evading Logging and Monitoring]]\n11. [[0. Living Off the Land]]",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "1. Red Team Fundamentals",
@@ -2804,8 +2804,1456 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/3-post-compromise/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Post Compromise.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 3. Post Compromise",
-    "content": "1. [[0. The Lay of the Land]]\n2. [[0. Enumeration]]\n3. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Windows Privilege Escalation/0. Windows Privilege Escalation]]\n4. [[0. Windows Local Persistence]]\n5. [[0. Lateral Movement and Pivoting]]\n6. [[0. Data Exfiltration]]",
-    "modified": "2026-04-28T01:49:27"
+    "content": "1. [[0. The Lay of the Land]]\n2. [[0. Enumeration]]\n3. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Windows Privilege Escalation/0. Windows Privilege Escalation]]\n4. [[0. Windows Local Persistence]]\n5. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting]]\n6. [[0. Data Exfiltration]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Local Windows Credentials",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/4-local-windows-credentials/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/4. Local Windows Credentials.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "10. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/10-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/10. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Credential Access",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/3-credential-access/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/3. Credential Access.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Credentials Harvesting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/0-credentials-harvesting/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/0. Credentials Harvesting.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/1. Introduction]]\n[[2. Credentials Harvesting]]\n[[3. Credential Access]]\n[[4. Local Windows Credentials]]\n[[5. Local Security Authority Subsystem Service (LSASS)]]\n[[6. Windows Credential Manager]]\n[[7. Domain Controller]]\n[[8. Local Administrator Password Solution (LAPS)]]\n[[9. Other Attacks]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/10. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Other Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/9-other-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/9. Other Attacks.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Windows Credential Manager",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/6-windows-credential-manager/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/6. Windows Credential Manager.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Local Administrator Password Solution (LAPS)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/8-local-administrator-password-solution-laps/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/8. Local Administrator Password Solution (LAPS).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Local Security Authority Subsystem Service (LSASS)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/5-local-security-authority-subsystem-service-lsass/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/5. Local Security Authority Subsystem Service (LSASS).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Credentials Harvesting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/2-credentials-harvesting/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/2. Credentials Harvesting.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Domain Controller",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/7-domain-controller/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/7. Domain Controller.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Exploiting Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/0-exploiting-active-directory/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/0. Exploiting Active Directory.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/1. Introduction]]\n[[2. Exploiting Permission Delegation]]\n[[3. Exploiting Kerberos Delegation]]\n[[4. Exploiting Automated Relays]]\n[[5. Exploiting AD Users]]\n[[6. Exploiting GPOs]]\n[[7. Exploiting Certificates]]\n[[8. Exploiting Domain Trusts]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/9. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/9-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/9. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Exploiting Permission Delegation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/2-exploiting-permission-delegation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/2. Exploiting Permission Delegation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Exploiting AD Users",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/5-exploiting-ad-users/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/5. Exploiting AD Users.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Exploiting Automated Relays",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/4-exploiting-automated-relays/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/4. Exploiting Automated Relays.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Exploiting GPOs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/6-exploiting-gpos/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/6. Exploiting GPOs.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Exploiting Certificates",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/7-exploiting-certificates/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/7. Exploiting Certificates.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Exploiting Domain Trusts",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/8-exploiting-domain-trusts/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/8. Exploiting Domain Trusts.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Exploiting Kerberos Delegation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/3-exploiting-kerberos-delegation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/3. Exploiting Kerberos Delegation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 5. Exploiting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Why AD Enumeration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/1-why-ad-enumeration/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/1. Why AD Enumeration.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 3. Enumerating Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Enumerating Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/0-enumerating-active-directory/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/0. Enumerating Active Directory.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 3. Enumerating Active Directory",
+    "content": "[[1. Why AD Enumeration]]\n[[2. Credential Injection]]\n[[3. Enumeration through Microsoft Management Console]]\n[[4. Enumeration through Command Prompt]]\n[[5. Enumeration thorugh PowerShell]]\n[[6. Enumeration through Bloodhound]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/7. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Enumeration thorugh PowerShell",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/5-enumeration-thorugh-powershell/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/5. Enumeration thorugh PowerShell.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 3. Enumerating Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Enumeration through Bloodhound",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/6-enumeration-through-bloodhound/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/6. Enumeration through Bloodhound.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 3. Enumerating Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Enumeration through Command Prompt",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/4-enumeration-through-command-prompt/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/4. Enumeration through Command Prompt.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 3. Enumerating Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Credential Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/2-credential-injection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/2. Credential Injection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 3. Enumerating Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Enumeration through Microsoft Management Console",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/3-enumeration-through-microsoft-management-console/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/3. Enumeration through Microsoft Management Console.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 3. Enumerating Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/7-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/7. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 3. Enumerating Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Persistence through Credentials",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/2-persistence-through-credentials/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/2. Persistence through Credentials.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Persistence through Tickets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/3-persistence-through-tickets/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/3. Persistence through Tickets.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/9-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/9. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Persistence through SID History",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/5-persistence-through-sid-history/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/5. Persistence through SID History.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Persistence through Group Membership",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/6-persistence-through-group-membership/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/6. Persistence through Group Membership.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Persistence through ACLs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/7-persistence-through-acls/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/7. Persistence through ACLs.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Persistence through Certificates",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/4-persistence-through-certificates/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/4. Persistence through Certificates.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Persistence through GPOs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/8-persistence-through-gpos/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/8. Persistence through GPOs.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Persisting Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/0-persisting-active-directory/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/0. Persisting Active Directory.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 6. Persisting Active Directory",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/1. Introduction]]\n[[2. Persistence through Credentials]]\n[[3. Persistence through Tickets]]\n[[4. Persistence through Certificates]]\n[[5. Persistence through SID History]]\n[[6. Persistence through Group Membership]]\n[[7. Persistence through ACLs]]\n[[8. Persistence through GPOs]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Persisting Active Directory/9. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Abusing User Behaviour",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/6-abusing-user-behaviour/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Abusing User Behaviour.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Moving Laterally Using WMI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/4-moving-laterally-using-wmi/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Moving Laterally Using WMI.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/8-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/8. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Spawning Processes Remotely",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/3-spawning-processes-remotely/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Spawning Processes Remotely.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Lateral Movement and Pivoting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/0-lateral-movement-and-pivoting/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Introduction]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Moving Through the Network]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Spawning Processes Remotely]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Moving Laterally Using WMI]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Abusing User Behaviour]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Port Forwarding]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/8. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Port Forwarding",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/7-port-forwarding/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Port Forwarding.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Use of Alternate Authentication Material",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/5-use-of-alternate-authentication-material/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Moving Through the Network",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/2-moving-through-the-network/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Moving Through the Network.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Configuration Files",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/7-configuration-files/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/7. Configuration Files.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction to AD Breaches",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/1-introduction-to-ad-breaches/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/1. Introduction to AD Breaches.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/8-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/8. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Authentication Relays",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/5-authentication-relays/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/5. Authentication Relays.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. NTLM Authenticated Services",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/3-ntlm-authenticated-services/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/3. NTLM Authenticated Services.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. LDAP Bind Credentials",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/4-ldap-bind-credentials/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/4. LDAP Bind Credentials.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. OSINT and Phishing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/2-osint-and-phishing/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/2. OSINT and Phishing.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Microsoft Deployment Toolkit",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/6-microsoft-deployment-toolkit/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/6. Microsoft Deployment Toolkit.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Breaching Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/0-breaching-active-directory/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/0. Breaching Active Directory.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "[[1. Introduction to AD Breaches]]\n[[2. OSINT and Phishing]]\n[[3. NTLM Authenticated Services]]\n[[4. LDAP Bind Credentials]]\n[[5. Authentication Relays]]\n[[6. Microsoft Deployment Toolkit]]\n[[7. Configuration Files]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/8. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/1-active-directory-basics/1-redirection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/1. Active Directory Basics/1. Redirection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 1. Active Directory Basics",
+    "content": "Para ver este curso ve a **THM -> 0. Pre Career -> 2. Cyber Security 101 -> 3. Windows and AD Fundamentals -> 4. Active Directory Basics**",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Active Directory Basics",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/1-active-directory-basics/0-active-directory-basics/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/1. Active Directory Basics/0. Active Directory Basics.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 1. Active Directory Basics",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/1. Active Directory Basics/1. Redirection]]\n[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/0. Active Directory Basics]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Network Security Solutions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/0-network-security-solutions/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/0. Network Security Solutions.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/1. Introduction]]\n[[2. IDS Engine Types]]\n[[3. IDS-IPS Rule Triggering]]\n[[4. Evasion via Protocol Manipulation]]\n[[5. Evasion via Payload Manipulation]]\n[[6. Evasion via Route Manipulation]]\n[[7. Evasion via Tachtical DoS]]\n[[8. C2 and IDS-IPS Evasion]]\n[[9. Next-Gen Security]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. C2 and IDS-IPS Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/8-c2-and-ids-ips-evasion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/8. C2 and IDS-IPS Evasion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Evasion via Route Manipulation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/6-evasion-via-route-manipulation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/6. Evasion via Route Manipulation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Next-Gen Security",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/9-next-gen-security/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/9. Next-Gen Security.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Evasion via Payload Manipulation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/5-evasion-via-payload-manipulation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/5. Evasion via Payload Manipulation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. IDS-IPS Rule Triggering",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/3-ids-ips-rule-triggering/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/3. IDS-IPS Rule Triggering.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Evasion via Protocol Manipulation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/4-evasion-via-protocol-manipulation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/4. Evasion via Protocol Manipulation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Evasion via Tachtical DoS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/7-evasion-via-tachtical-dos/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/7. Evasion via Tachtical DoS.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. IDS Engine Types",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/2-ids-engine-types/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/2. IDS Engine Types.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/1. Network Security Solutions/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 1. Network Security Solutions",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Firewalls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/0-firewalls/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/0. Firewalls.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/1. Introduction]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/2. Types of Firewalls]]\n[[3. Evasion via Controlling the Source MAC-IP-Port]]\n[[4. Evasion via Forcing Fragmentation, MTU, and Data Length]]\n[[5. Evasion via Modifying Header Fileds]]\n[[6. Evasion Using Port Hopping]]\n[[7. Evasion Using Port Tunneling]]\n[[8. Evasion Using Non-Standard Ports]]\n[[9. Next-Generation Firewalls]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/10. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "10. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/10-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/10. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Evasion Using Non-Standard Ports",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/8-evasion-using-non-standard-ports/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/8. Evasion Using Non-Standard Ports.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Evasion via Controlling the Source MAC-IP-Port",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/3-evasion-via-controlling-the-source-mac-ip-port/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/3. Evasion via Controlling the Source MAC-IP-Port.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Types of Firewalls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/2-types-of-firewalls/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/2. Types of Firewalls.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Evasion Using Port Tunneling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/7-evasion-using-port-tunneling/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/7. Evasion Using Port Tunneling.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Evasion Using Port Hopping",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/6-evasion-using-port-hopping/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/6. Evasion Using Port Hopping.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Evasion via Modifying Header Fileds",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/5-evasion-via-modifying-header-fileds/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/5. Evasion via Modifying Header Fileds.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Evasion via Forcing Fragmentation, MTU, and Data Length",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/4-evasion-via-forcing-fragmentation-mtu-and-data-length/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/4. Evasion via Forcing Fragmentation, MTU, and Data Length.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Next-Generation Firewalls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/9-next-generation-firewalls/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/9. Next-Generation Firewalls.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/2. Firewalls/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 2. Firewalls",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. An Adversary Walks into a Sandbox",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/1-an-adversary-walks-into-a-sandbox/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/1. An Adversary Walks into a Sandbox.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 3. Sandbox Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. DIY Sandbox Evasion Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/4-diy-sandbox-evasion-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/4. DIY Sandbox Evasion Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 3. Sandbox Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Implementing Various Evasion Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/3-implementing-various-evasion-techniques/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/3. Implementing Various Evasion Techniques.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 3. Sandbox Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Sandbox Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/0-sandbox-evasion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/0. Sandbox Evasion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 3. Sandbox Evasion",
+    "content": "[[1. An Adversary Walks into a Sandbox]]\n[[2. Common Sandbox Evasion Techniques]]\n[[3. Implementing Various Evasion Techniques]]\n[[4. DIY Sandbox Evasion Challenge]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Common Sandbox Evasion Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/2-common-sandbox-evasion-techniques/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/3. Sandbox Evasion/2. Common Sandbox Evasion Techniques.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion > 3. Sandbox Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. OS Libraries",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/4-os-libraries/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/4. OS Libraries.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Malware Case Study",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/9-malware-case-study/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/9. Malware Case Study.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Components of the Windows API",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/3-components-of-the-windows-api/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/3. Components of the Windows API.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Introduction to Windows API",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/0-introduction-to-windows-api/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/0. Introduction to Windows API.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/1. Introduction]]\n[[2. Subsystem and Hardware Interaction]]\n[[3. Components of the Windows API]]\n[[4. OS Libraries]]\n[[5. API Call Structure]]\n[[6. C API Implementations]]\n[[7. .NET and Powershell API Implementations]]\n[[8. Commonly Abused API Calls]]\n[[9. Malware Case Study]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Commonly Abused API Calls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/8-commonly-abused-api-calls/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/8. Commonly Abused API Calls.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. .NET and Powershell API Implementations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/7-net-and-powershell-api-implementations/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/7. .NET and Powershell API Implementations.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. C API Implementations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/6-c-api-implementations/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/6. C API Implementations.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. API Call Structure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/5-api-call-structure/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/5. API Call Structure.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Subsystem and Hardware Interaction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/2-subsystem-and-hardware-interaction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/2. Subsystem and Hardware Interaction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/2. Introduction to Windows API/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 2. Introduction to Windows API",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Behavioral Signatures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/6-behavioral-signatures/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/6. Behavioral Signatures.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 7. Signature Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Putting It All Together",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/7-putting-it-all-together/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/7. Putting It All Together.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 7. Signature Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Automating Signature Identification",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/3-automating-signature-identification/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/3. Automating Signature Identification.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 7. Signature Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Signature Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/0-signature-evasion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/0. Signature Evasion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 7. Signature Evasion",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/1. Introduction]]\n[[2. Signature Identification]]\n[[3. Automating Signature Identification]]\n[[4. Static Code-Based Signatures]]\n[[5. Static Property-Based Signatures]]\n[[6. Behavioral Signatures]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/7. Putting It All Together]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Static Property-Based Signatures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/5-static-property-based-signatures/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/5. Static Property-Based Signatures.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 7. Signature Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Signature Identification",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/2-signature-identification/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/2. Signature Identification.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 7. Signature Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Static Code-Based Signatures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/4-static-code-based-signatures/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/4. Static Code-Based Signatures.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 7. Signature Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/7. Signature Evasion/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 7. Signature Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Abusing Log Pipeline",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/9-abusing-log-pipeline/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/9. Abusing Log Pipeline.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "10. Real World Scenario",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/10-real-world-scenario/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/10. Real World Scenario.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Tracing Instrumentation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/4-tracing-instrumentation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/4. Tracing Instrumentation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Groups Policy Takeover",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/8-groups-policy-takeover/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/8. Groups Policy Takeover.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Patching Tracing Functions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/6-patching-tracing-functions/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/6. Patching Tracing Functions.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Event Tracing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/2-event-tracing/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/2. Event Tracing.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Evading Logging and Monitoring",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/0-evading-logging-and-monitoring/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/0. Evading Logging and Monitoring.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/1. Introduction]]\n[[2. Event Tracing]]\n[[3. Approaches to Log Evasion]]\n[[4. Tracing Instrumentation]]\n[[5. Reflection for Fun and Silence]]\n[[6. Patching Tracing Functions]]\n[[7. Providers via Policy]]\n[[8. Groups Policy Takeover]]\n[[9. Abusing Log Pipeline]]\n[[10. Real World Scenario]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Reflection for Fun and Silence",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/5-reflection-for-fun-and-silence/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/5. Reflection for Fun and Silence.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Approaches to Log Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/3-approaches-to-log-evasion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/3. Approaches to Log Evasion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Providers via Policy",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/7-providers-via-policy/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/10. Evading Logging and Monitoring/7. Providers via Policy.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 10. Evading Logging and Monitoring",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Abusing Processes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/2-abusing-processes/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/2. Abusing Processes.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 3. Abusing Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Abusing DLLs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/5-abusing-dlls/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/5. Abusing DLLs.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 3. Abusing Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Abusing Process Components",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/4-abusing-process-components/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/4. Abusing Process Components.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 3. Abusing Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Case Study in Browser Injection and Hooking",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/7-case-study-in-browser-injection-and-hooking/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/7. Case Study in Browser Injection and Hooking.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 3. Abusing Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Abusing Windows Internals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/0-abusing-windows-internals/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/0. Abusing Windows Internals.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 3. Abusing Windows Internals",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/1. Introduction]]\n[[2. Abusing Processes]]\n[[3. Expanding Process Abuse]]\n[[4. Abusing Process Components]]\n[[5. Abusing DLLs]]\n[[6. Memory Execution Alternatives]]\n[[7. Case Study in Browser Injection and Hooking]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Expanding Process Abuse",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/3-expanding-process-abuse/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/3. Expanding Process Abuse.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 3. Abusing Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Memory Execution Alternatives",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/6-memory-execution-alternatives/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/6. Memory Execution Alternatives.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 3. Abusing Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/3. Abusing Windows Internals/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 3. Abusing Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Other Detection Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/5-other-detection-techniques/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/5. Other Detection Techniques.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 4. Introduction to Antivirus",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Deploy the VM",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/3-deploy-the-vm/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/3. Deploy the VM.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 4. Introduction to Antivirus",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. AV Testing and Fingerprinting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/6-av-testing-and-fingerprinting/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/6. AV Testing and Fingerprinting.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 4. Introduction to Antivirus",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Introduction to Antivirus",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/0-introduction-to-antivirus/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/0. Introduction to Antivirus.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 4. Introduction to Antivirus",
+    "content": "[[1. Antivirus Software]]\n[[2. Antivirus Features]]\n[[3. Deploy the VM]]\n[[4. AV Static Detection]]\n[[5. Other Detection Techniques]]\n[[6. AV Testing and Fingerprinting]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. AV Static Detection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/4-av-static-detection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/4. AV Static Detection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 4. Introduction to Antivirus",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Antivirus Features",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/2-antivirus-features/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/2. Antivirus Features.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 4. Introduction to Antivirus",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Antivirus Software",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/1-antivirus-software/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Introduction to Antivirus/1. Antivirus Software.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 4. Introduction to Antivirus",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. PowerShell Reflection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/6-powershell-reflection/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/6. PowerShell Reflection.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Patching AMSI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/7-patching-amsi/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/7. Patching AMSI.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. AMSI Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/3-amsi-overview/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/3. AMSI Overview.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Runtime Detection Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/0-runtime-detection-evasion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/0. Runtime Detection Evasion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/1. Introduction]]\n[[2. Runtime Detections]]\n[[3. AMSI Overview]]\n[[4. AMSI Instrumentation]]\n[[5. PowerShell Downgrade]]\n[[6. PowerShell Reflection]]\n[[7. Patching AMSI]]\n[[8. Automating for Fun and Profit]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. PowerShell Downgrade",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/5-powershell-downgrade/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/5. PowerShell Downgrade.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Automating for Fun and Profit",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/8-automating-for-fun-and-profit/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/8. Automating for Fun and Profit.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Runtime Detections",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/2-runtime-detections/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/2. Runtime Detections.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. AMSI Instrumentation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/4-amsi-instrumentation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/9. Runtime Detection Evasion/4. AMSI Instrumentation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 9. Runtime Detection Evasion",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Virtual Memory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/3-virtual-memory/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/3. Virtual Memory.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 1. Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Windows Internals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/0-windows-internals/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/0. Windows Internals.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 1. Windows Internals",
+    "content": "[[1. Processes]]\n[[2. Threads]]\n[[3. Virtual Memory]]\n[[4. Dynamic Link Libraries]]\n[[5. Portable Executable Format]]\n[[6. Interacting with Windows Internals]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Portable Executable Format",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/5-portable-executable-format/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/5. Portable Executable Format.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 1. Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Threads",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/2-threads/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/2. Threads.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 1. Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Interacting with Windows Internals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/6-interacting-with-windows-internals/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/6. Interacting with Windows Internals.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 1. Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Dynamic Link Libraries",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/4-dynamic-link-libraries/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/4. Dynamic Link Libraries.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 1. Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Processes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/1-processes/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/1. Windows Internals/1. Processes.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 1. Windows Internals",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Obfuscation Principles",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/0-obfuscation-principles/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/0. Obfuscation Principles.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 6. Obfuscation Principles",
+    "content": "[[1. Origins of Obfuscation]]\n[[2. Obfuscation's Function for Static Evasion]]\n[[3. Object Concatenation]]\n[[4. Obfuscation's Function for Analysis Deception]]\n[[5. Code Flow and Logic]]\n[[6. Arbitrary Control Flow Patterns]]\n[[7. Protecting and Stripping Identifiable Information]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Origins of Obfuscation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/1-origins-of-obfuscation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/1. Origins of Obfuscation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 6. Obfuscation Principles",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Object Concatenation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/3-object-concatenation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/3. Object Concatenation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 6. Obfuscation Principles",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Protecting and Stripping Identifiable Information",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/7-protecting-and-stripping-identifiable-information/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/7. Protecting and Stripping Identifiable Information.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 6. Obfuscation Principles",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Obfuscation's Function for Analysis Deception",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/4-obfuscation-s-function-for-analysis-deception/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/4. Obfuscation's Function for Analysis Deception.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 6. Obfuscation Principles",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Arbitrary Control Flow Patterns",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/6-arbitrary-control-flow-patterns/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/6. Arbitrary Control Flow Patterns.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 6. Obfuscation Principles",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Code Flow and Logic",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/5-code-flow-and-logic/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/5. Code Flow and Logic.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 6. Obfuscation Principles",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Obfuscation's Function for Static Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/2-obfuscation-s-function-for-static-evasion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/6. Obfuscation Principles/2. Obfuscation's Function for Static Evasion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 6. Obfuscation Principles",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/1-challenge/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/1. Challenge.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. PE Structure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/2-pe-structure/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/2. PE Structure.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Shellcode Encoding and Encryption",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/7-shellcode-encoding-and-encryption/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/7. Shellcode Encoding and Encryption.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Introduction to Shellcode",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/3-introduction-to-shellcode/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/3. Introduction to Shellcode.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Generate Shellcode",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/4-generate-shellcode/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/4. Generate Shellcode.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. AV Evasion - Shellcode",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/0-av-evasion-shellcode/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/0. AV Evasion - Shellcode.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "[[1. Challenge]]\n[[2. PE Structure]]\n[[3. Introduction to Shellcode]]\n[[4. Generate Shellcode]]\n[[5. Staged Payloads]]\n[[6. Introduction to Encoding and Encryption]]\n[[7. Shellcode Encoding and Encryption]]\n[[8. Packers]]\n[[9. Binders]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Packers",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/8-packers/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/8. Packers.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Introduction to Encoding and Encryption",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/6-introduction-to-encoding-and-encryption/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/6. Introduction to Encoding and Encryption.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. Staged Payloads",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/5-staged-payloads/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/5. Staged Payloads.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Binders",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/9-binders/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/5. AV Evasion - Shellcode/9. Binders.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 5. AV Evasion - Shellcode",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. UAC - GUI Based Bypasses",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/2-uac-gui-based-bypasses/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/2. UAC - GUI Based Bypasses.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 8. Bypassing UAC",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. UAC - Environment Variable Expansion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/5-uac-environment-variable-expansion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/5. UAC - Environment Variable Expansion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 8. Bypassing UAC",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. UAC- Auto-Elevating Processes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/3-uac-auto-elevating-processes/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/3. UAC- Auto-Elevating Processes.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 8. Bypassing UAC",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Bypassing UAC",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/0-bypassing-uac/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/0. Bypassing UAC.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 8. Bypassing UAC",
+    "content": "[[1. User Account Control (UAC)]]\n[[2. UAC - GUI Based Bypasses]]\n[[3. UAC- Auto-Elevating Processes]]\n[[4. UAC - Improving the Fodhelper Exploit to Bypass Windows Defender]]\n[[5. UAC - Environment Variable Expansion]]\n[[6. Automated Exploitation]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/7. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. UAC - Improving the Fodhelper Exploit to Bypass Windows Defender",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/4-uac-improving-the-fodhelper-exploit-to-bypass-windows-defender/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/4. UAC - Improving the Fodhelper Exploit to Bypass Windows Defender.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 8. Bypassing UAC",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. User Account Control (UAC)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/1-user-account-control-uac/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/1. User Account Control (UAC).md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 8. Bypassing UAC",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Automated Exploitation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/6-automated-exploitation/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/6. Automated Exploitation.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 8. Bypassing UAC",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/7-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/8. Bypassing UAC/7. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 8. Bypassing UAC",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "5. File Execution",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/5-file-execution/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/5. File Execution.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "0. Living Off the Land",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/0-living-off-the-land/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/0. Living Off the Land.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/1. Introduction]]\n[[2. Windows Sysinternals]]\n[[3. LOLBAS Project]]\n[[4. File Operations]]\n[[5. File Execution]]\n[[6. Application Whitelisting Bypasses]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/7. Other Techniques]]\n[[8. Real-life Scenario]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/9. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. LOLBAS Project",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/3-lolbas-project/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/3. LOLBAS Project.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "7. Other Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/7-other-techniques/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/7. Other Techniques.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "9. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/9-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/9. Conclusion.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. File Operations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/4-file-operations/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/4. File Operations.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "8. Real-life Scenario",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/8-real-life-scenario/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/8. Real-life Scenario.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "2. Windows Sysinternals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/2-windows-sysinternals/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/2. Windows Sysinternals.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "6. Application Whitelisting Bypasses",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/6-application-whitelisting-bypasses/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/6. Application Whitelisting Bypasses.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/1-introduction/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/1. Introduction.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions > 11. Living Off the Land",
+    "content": "",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "5. Overview of a Red Team Engagement",
@@ -2836,8 +4284,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/1-vulnerability-assessment-and-penetration-test-limitations/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/1. Red Team Fundamentals/1. Vulnerability Assessment and Penetration Test Limitations.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 1. Red Team Fundamentals",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "<h2>Evaluación de Vulnerabilidades</h2>\nLa evaluación de vulnerabilidades es la forma más simple de evaluación de seguridad, su objetivo principal es identificar cuantas más vulnerabilidades en cuantos más sistemas de la red, mejor. Puede que se hagan concesiones para ajustarse a los objetivos. Por ejemplo, la máquina del atacante puede estar permitida en las soluciones de seguridad disponibles para evitar interferencia con el proceso de descubrimiento de vulnerabilidades. Essto tiene sentido ya que el objetivo es ofrecer la máxima información a la compañía sobre dónde centrar esfuerzos de remediación.\n\nComo ejemplo simple, si estuvieras en uno, tratarías de escanear el mayor número de equipos posibles pero sin tratar de explotar ninguna vulnerabilidad.\n\n![[Pasted image 20260428113145.png]]\n\n-------------------------------------------\n<h2>Tests de Penetración</h2>\nAdemás de escanear cada dispoitivo en busca de vulnerabilidades, solemos tener que entender cómo impactan en nuestra red como un todo. Los test de penetración añaden a las evaluciones de vulnerabilidades permitiendo que el pentester explore el impqcto de un atacante haciendo pasos adicionales que incluyen:\n\n- Intento de explotación de las vulnerabilidades encontradas en cada sistema.\n- Tareas de post explotación en cualquier host comprometido.\n\n![[Pasted image 20260428113537.png]]\n\n------------------------------------------\n<h2>Amenazas Avanzadas Persistentes y Por Qué el Pentesting Normal no es Suficiente</h2>\nMientras que los engagements de seguridad convencionales que hemos mencionado cubren el descubrimiento de la mayoría de vulnerabilidades técnicas, hay limitaciones de dichos procesos y la extensión en la que pueden preparar efectivamente a la compaía contra un atacante real.\n\n![[Pasted image 20260428113735.png]]\n\nComo consecuencia, algunos aspectos de los tests de penetración pueden diferir de un ataque real como:\n\n- **Los tests de penetración son ruidosos**\n- **Los vectores de ataque no técnicos suelen obviarse**\n- **Relajación de mecanismos de seguridad**\n\nPor otro lado, los atacantes reales no seguirán un código ético. Hoy en día, los actores de amenaza más prominentes se conocen como **Advanced Persistent Threadts (APT)**, que son grupos de atacantes normalmente esponsorizados por naciones o grupos criminales organizados.",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "0. Red Team Fundamentals",
@@ -3684,8 +5132,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/2-enumeration/0-enumeration/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/0. Enumeration.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 3. Post Compromise > 2. Enumeration",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/1. Introduction]]\n[[2. Purpose]]\n[[3. Linux Enumeration]]\n[[4. Windows Enumeration]]\n[[5. DNS, SMB and SNMP]]\n[[6. More Tools for Windows]]\n[[7. Conclusion]]",
-    "modified": "2026-04-28T01:49:27"
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/1. Introduction]]\n[[2. Purpose]]\n[[3. Linux Enumeration]]\n[[4. Windows Enumeration]]\n[[5. DNS, SMB and SNMP]]\n[[6. More Tools for Windows]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/7. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "2. Purpose",
@@ -3780,8 +5228,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/5-lateral-movement-and-pivoting/0-lateral-movement-and-pivoting/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 3. Post Compromise > 5. Lateral Movement and Pivoting",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/1. Introduction]]\n[[2. Moving Through the Network]]\n[[3. Spawning Processes Remotely]]\n[[4. Moving Laterally Using WMI]]\n[[5. Use of Alternate Authentication Material]]\n[[6. Abusing User Behaviour]]\n[[7. Port Forwarding]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/8. Conclusion]]",
-    "modified": "2026-04-28T01:49:27"
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/1. Introduction]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/2. Moving Through the Network]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/3. Spawning Processes Remotely]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/4. Moving Laterally Using WMI]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/6. Abusing User Behaviour]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/7. Port Forwarding]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/8. Conclusion]]",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "7. Port Forwarding",
@@ -5116,8 +6564,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/2-active-reconnaissance/0-active-reconnaissance/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/0. Active Reconnaissance.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 1. Jr Penetration Tester > 5. Network Security > 2. Active Reconnaissance",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/1. Introduction]]\n[[2. Web Browser]]\n[[3. Ping]]\n[[4. Traceroute]]\n[[5. Telnet]]\n[[6. Netcat]]\n[[7. Putting It All Together]]",
-    "modified": "2025-12-12T13:58:55"
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/1. Introduction]]\n[[2. Web Browser]]\n[[3. Ping]]\n[[4. Traceroute]]\n[[5. Telnet]]\n[[6. Netcat]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/5. Network Security/2. Active Reconnaissance/7. Putting It All Together]]",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "4. Traceroute",
@@ -9660,8 +11108,8 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/3-windows-and-ad-fundamentals/3-windows-and-ad-fundamentals/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows and AD Fundamentals.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 3. Windows and AD Fundamentals",
-    "content": "1. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/0. Windows Fundamentals 1]]\n2. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/0. Windows Fundamentals 2]]\n3. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/0. Windows Fundamentals 3]]\n4. [[0. Active Directory Basics]]",
-    "modified": "2025-12-12T13:58:55"
+    "content": "1. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/1. Windows Fundamentals 1/0. Windows Fundamentals 1]]\n2. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/2. Windows Fundamentals 2/0. Windows Fundamentals 2]]\n3. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/3. Windows Fundamentals 3/0. Windows Fundamentals 3]]\n4. [[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/0. Active Directory Basics]]",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "8. Web Hacking",
@@ -10500,8 +11948,8 @@
     "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/11-security-solutions/2-firewall-fundamentals/0-firewall-fundamentals/",
     "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/2. Firewall Fundamentals/0. Firewall Fundamentals.md",
     "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 11. Security Solutions > 2. Firewall Fundamentals",
-    "content": "[[1. What is the Purpose of a Firewall]]\n[[2. Types of Firewalls]]\n[[3. Rules in Firewalls]]\n[[4. Windows Defender Firewall]]\n[[5. Linux iptables Firewall]]",
-    "modified": "2025-12-12T13:58:55"
+    "content": "[[1. What is the Purpose of a Firewall]]\n[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/11. Security Solutions/2. Firewall Fundamentals/2. Types of Firewalls]]\n[[3. Rules in Firewalls]]\n[[4. Windows Defender Firewall]]\n[[5. Linux iptables Firewall]]",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "2. Types of Firewalls",

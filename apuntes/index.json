@@ -1404,6 +1404,730 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/3-post-compromise/"
   },
   {
+    "title": "4. Local Windows Credentials",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/4-local-windows-credentials/"
+  },
+  {
+    "title": "10. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/10-conclusion/"
+  },
+  {
+    "title": "3. Credential Access",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/3-credential-access/"
+  },
+  {
+    "title": "0. Credentials Harvesting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/0-credentials-harvesting/"
+  },
+  {
+    "title": "9. Other Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/9-other-attacks/"
+  },
+  {
+    "title": "6. Windows Credential Manager",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/6-windows-credential-manager/"
+  },
+  {
+    "title": "8. Local Administrator Password Solution (LAPS)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/8-local-administrator-password-solution-laps/"
+  },
+  {
+    "title": "5. Local Security Authority Subsystem Service (LSASS)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/5-local-security-authority-subsystem-service-lsass/"
+  },
+  {
+    "title": "2. Credentials Harvesting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/2-credentials-harvesting/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/1-introduction/"
+  },
+  {
+    "title": "7. Domain Controller",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/7-domain-controller/"
+  },
+  {
+    "title": "0. Exploiting Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/0-exploiting-active-directory/"
+  },
+  {
+    "title": "9. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/9-conclusion/"
+  },
+  {
+    "title": "2. Exploiting Permission Delegation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/2-exploiting-permission-delegation/"
+  },
+  {
+    "title": "5. Exploiting AD Users",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/5-exploiting-ad-users/"
+  },
+  {
+    "title": "4. Exploiting Automated Relays",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/4-exploiting-automated-relays/"
+  },
+  {
+    "title": "6. Exploiting GPOs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/6-exploiting-gpos/"
+  },
+  {
+    "title": "7. Exploiting Certificates",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/7-exploiting-certificates/"
+  },
+  {
+    "title": "8. Exploiting Domain Trusts",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/8-exploiting-domain-trusts/"
+  },
+  {
+    "title": "3. Exploiting Kerberos Delegation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/3-exploiting-kerberos-delegation/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/5-exploiting-active-directory/1-introduction/"
+  },
+  {
+    "title": "1. Why AD Enumeration",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/1-why-ad-enumeration/"
+  },
+  {
+    "title": "0. Enumerating Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/0-enumerating-active-directory/"
+  },
+  {
+    "title": "5. Enumeration thorugh PowerShell",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/5-enumeration-thorugh-powershell/"
+  },
+  {
+    "title": "6. Enumeration through Bloodhound",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/6-enumeration-through-bloodhound/"
+  },
+  {
+    "title": "4. Enumeration through Command Prompt",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/4-enumeration-through-command-prompt/"
+  },
+  {
+    "title": "2. Credential Injection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/2-credential-injection/"
+  },
+  {
+    "title": "3. Enumeration through Microsoft Management Console",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/3-enumeration-through-microsoft-management-console/"
+  },
+  {
+    "title": "7. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/3-enumerating-active-directory/7-conclusion/"
+  },
+  {
+    "title": "2. Persistence through Credentials",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/2-persistence-through-credentials/"
+  },
+  {
+    "title": "3. Persistence through Tickets",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/3-persistence-through-tickets/"
+  },
+  {
+    "title": "9. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/9-conclusion/"
+  },
+  {
+    "title": "5. Persistence through SID History",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/5-persistence-through-sid-history/"
+  },
+  {
+    "title": "6. Persistence through Group Membership",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/6-persistence-through-group-membership/"
+  },
+  {
+    "title": "7. Persistence through ACLs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/7-persistence-through-acls/"
+  },
+  {
+    "title": "4. Persistence through Certificates",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/4-persistence-through-certificates/"
+  },
+  {
+    "title": "8. Persistence through GPOs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/8-persistence-through-gpos/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/1-introduction/"
+  },
+  {
+    "title": "0. Persisting Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-persisting-active-directory/0-persisting-active-directory/"
+  },
+  {
+    "title": "6. Abusing User Behaviour",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/6-abusing-user-behaviour/"
+  },
+  {
+    "title": "4. Moving Laterally Using WMI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/4-moving-laterally-using-wmi/"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/8-conclusion/"
+  },
+  {
+    "title": "3. Spawning Processes Remotely",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/3-spawning-processes-remotely/"
+  },
+  {
+    "title": "0. Lateral Movement and Pivoting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/0-lateral-movement-and-pivoting/"
+  },
+  {
+    "title": "7. Port Forwarding",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/7-port-forwarding/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/1-introduction/"
+  },
+  {
+    "title": "5. Use of Alternate Authentication Material",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/5-use-of-alternate-authentication-material/"
+  },
+  {
+    "title": "2. Moving Through the Network",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/2-moving-through-the-network/"
+  },
+  {
+    "title": "7. Configuration Files",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/7-configuration-files/"
+  },
+  {
+    "title": "1. Introduction to AD Breaches",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/1-introduction-to-ad-breaches/"
+  },
+  {
+    "title": "8. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/8-conclusion/"
+  },
+  {
+    "title": "5. Authentication Relays",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/5-authentication-relays/"
+  },
+  {
+    "title": "3. NTLM Authenticated Services",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/3-ntlm-authenticated-services/"
+  },
+  {
+    "title": "4. LDAP Bind Credentials",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/4-ldap-bind-credentials/"
+  },
+  {
+    "title": "2. OSINT and Phishing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/2-osint-and-phishing/"
+  },
+  {
+    "title": "6. Microsoft Deployment Toolkit",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/6-microsoft-deployment-toolkit/"
+  },
+  {
+    "title": "0. Breaching Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/0-breaching-active-directory/"
+  },
+  {
+    "title": "1. Redirection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/1-active-directory-basics/1-redirection/"
+  },
+  {
+    "title": "0. Active Directory Basics",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/1-active-directory-basics/0-active-directory-basics/"
+  },
+  {
+    "title": "0. Network Security Solutions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/0-network-security-solutions/"
+  },
+  {
+    "title": "8. C2 and IDS-IPS Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/8-c2-and-ids-ips-evasion/"
+  },
+  {
+    "title": "6. Evasion via Route Manipulation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/6-evasion-via-route-manipulation/"
+  },
+  {
+    "title": "9. Next-Gen Security",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/9-next-gen-security/"
+  },
+  {
+    "title": "5. Evasion via Payload Manipulation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/5-evasion-via-payload-manipulation/"
+  },
+  {
+    "title": "3. IDS-IPS Rule Triggering",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/3-ids-ips-rule-triggering/"
+  },
+  {
+    "title": "4. Evasion via Protocol Manipulation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/4-evasion-via-protocol-manipulation/"
+  },
+  {
+    "title": "7. Evasion via Tachtical DoS",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/7-evasion-via-tachtical-dos/"
+  },
+  {
+    "title": "2. IDS Engine Types",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/2-ids-engine-types/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/1-network-security-solutions/1-introduction/"
+  },
+  {
+    "title": "0. Firewalls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/0-firewalls/"
+  },
+  {
+    "title": "10. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/10-conclusion/"
+  },
+  {
+    "title": "8. Evasion Using Non-Standard Ports",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/8-evasion-using-non-standard-ports/"
+  },
+  {
+    "title": "3. Evasion via Controlling the Source MAC-IP-Port",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/3-evasion-via-controlling-the-source-mac-ip-port/"
+  },
+  {
+    "title": "2. Types of Firewalls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/2-types-of-firewalls/"
+  },
+  {
+    "title": "7. Evasion Using Port Tunneling",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/7-evasion-using-port-tunneling/"
+  },
+  {
+    "title": "6. Evasion Using Port Hopping",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/6-evasion-using-port-hopping/"
+  },
+  {
+    "title": "5. Evasion via Modifying Header Fileds",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/5-evasion-via-modifying-header-fileds/"
+  },
+  {
+    "title": "4. Evasion via Forcing Fragmentation, MTU, and Data Length",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/4-evasion-via-forcing-fragmentation-mtu-and-data-length/"
+  },
+  {
+    "title": "9. Next-Generation Firewalls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/9-next-generation-firewalls/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/2-firewalls/1-introduction/"
+  },
+  {
+    "title": "1. An Adversary Walks into a Sandbox",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/1-an-adversary-walks-into-a-sandbox/"
+  },
+  {
+    "title": "4. DIY Sandbox Evasion Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/4-diy-sandbox-evasion-challenge/"
+  },
+  {
+    "title": "3. Implementing Various Evasion Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/3-implementing-various-evasion-techniques/"
+  },
+  {
+    "title": "0. Sandbox Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/0-sandbox-evasion/"
+  },
+  {
+    "title": "2. Common Sandbox Evasion Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/3-sandbox-evasion/2-common-sandbox-evasion-techniques/"
+  },
+  {
+    "title": "4. OS Libraries",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/4-os-libraries/"
+  },
+  {
+    "title": "9. Malware Case Study",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/9-malware-case-study/"
+  },
+  {
+    "title": "3. Components of the Windows API",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/3-components-of-the-windows-api/"
+  },
+  {
+    "title": "0. Introduction to Windows API",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/0-introduction-to-windows-api/"
+  },
+  {
+    "title": "8. Commonly Abused API Calls",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/8-commonly-abused-api-calls/"
+  },
+  {
+    "title": "7. .NET and Powershell API Implementations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/7-net-and-powershell-api-implementations/"
+  },
+  {
+    "title": "6. C API Implementations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/6-c-api-implementations/"
+  },
+  {
+    "title": "5. API Call Structure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/5-api-call-structure/"
+  },
+  {
+    "title": "2. Subsystem and Hardware Interaction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/2-subsystem-and-hardware-interaction/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/2-introduction-to-windows-api/1-introduction/"
+  },
+  {
+    "title": "6. Behavioral Signatures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/6-behavioral-signatures/"
+  },
+  {
+    "title": "7. Putting It All Together",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/7-putting-it-all-together/"
+  },
+  {
+    "title": "3. Automating Signature Identification",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/3-automating-signature-identification/"
+  },
+  {
+    "title": "0. Signature Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/0-signature-evasion/"
+  },
+  {
+    "title": "5. Static Property-Based Signatures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/5-static-property-based-signatures/"
+  },
+  {
+    "title": "2. Signature Identification",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/2-signature-identification/"
+  },
+  {
+    "title": "4. Static Code-Based Signatures",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/4-static-code-based-signatures/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/7-signature-evasion/1-introduction/"
+  },
+  {
+    "title": "9. Abusing Log Pipeline",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/9-abusing-log-pipeline/"
+  },
+  {
+    "title": "10. Real World Scenario",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/10-real-world-scenario/"
+  },
+  {
+    "title": "4. Tracing Instrumentation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/4-tracing-instrumentation/"
+  },
+  {
+    "title": "8. Groups Policy Takeover",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/8-groups-policy-takeover/"
+  },
+  {
+    "title": "6. Patching Tracing Functions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/6-patching-tracing-functions/"
+  },
+  {
+    "title": "2. Event Tracing",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/2-event-tracing/"
+  },
+  {
+    "title": "0. Evading Logging and Monitoring",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/0-evading-logging-and-monitoring/"
+  },
+  {
+    "title": "5. Reflection for Fun and Silence",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/5-reflection-for-fun-and-silence/"
+  },
+  {
+    "title": "3. Approaches to Log Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/3-approaches-to-log-evasion/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/1-introduction/"
+  },
+  {
+    "title": "7. Providers via Policy",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/10-evading-logging-and-monitoring/7-providers-via-policy/"
+  },
+  {
+    "title": "2. Abusing Processes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/2-abusing-processes/"
+  },
+  {
+    "title": "5. Abusing DLLs",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/5-abusing-dlls/"
+  },
+  {
+    "title": "4. Abusing Process Components",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/4-abusing-process-components/"
+  },
+  {
+    "title": "7. Case Study in Browser Injection and Hooking",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/7-case-study-in-browser-injection-and-hooking/"
+  },
+  {
+    "title": "0. Abusing Windows Internals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/0-abusing-windows-internals/"
+  },
+  {
+    "title": "3. Expanding Process Abuse",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/3-expanding-process-abuse/"
+  },
+  {
+    "title": "6. Memory Execution Alternatives",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/6-memory-execution-alternatives/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/3-abusing-windows-internals/1-introduction/"
+  },
+  {
+    "title": "5. Other Detection Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/5-other-detection-techniques/"
+  },
+  {
+    "title": "3. Deploy the VM",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/3-deploy-the-vm/"
+  },
+  {
+    "title": "6. AV Testing and Fingerprinting",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/6-av-testing-and-fingerprinting/"
+  },
+  {
+    "title": "0. Introduction to Antivirus",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/0-introduction-to-antivirus/"
+  },
+  {
+    "title": "4. AV Static Detection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/4-av-static-detection/"
+  },
+  {
+    "title": "2. Antivirus Features",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/2-antivirus-features/"
+  },
+  {
+    "title": "1. Antivirus Software",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-introduction-to-antivirus/1-antivirus-software/"
+  },
+  {
+    "title": "6. PowerShell Reflection",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/6-powershell-reflection/"
+  },
+  {
+    "title": "7. Patching AMSI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/7-patching-amsi/"
+  },
+  {
+    "title": "3. AMSI Overview",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/3-amsi-overview/"
+  },
+  {
+    "title": "0. Runtime Detection Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/0-runtime-detection-evasion/"
+  },
+  {
+    "title": "5. PowerShell Downgrade",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/5-powershell-downgrade/"
+  },
+  {
+    "title": "8. Automating for Fun and Profit",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/8-automating-for-fun-and-profit/"
+  },
+  {
+    "title": "2. Runtime Detections",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/2-runtime-detections/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/1-introduction/"
+  },
+  {
+    "title": "4. AMSI Instrumentation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/9-runtime-detection-evasion/4-amsi-instrumentation/"
+  },
+  {
+    "title": "3. Virtual Memory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/3-virtual-memory/"
+  },
+  {
+    "title": "0. Windows Internals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/0-windows-internals/"
+  },
+  {
+    "title": "5. Portable Executable Format",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/5-portable-executable-format/"
+  },
+  {
+    "title": "2. Threads",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/2-threads/"
+  },
+  {
+    "title": "6. Interacting with Windows Internals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/6-interacting-with-windows-internals/"
+  },
+  {
+    "title": "4. Dynamic Link Libraries",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/4-dynamic-link-libraries/"
+  },
+  {
+    "title": "1. Processes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/1-windows-internals/1-processes/"
+  },
+  {
+    "title": "0. Obfuscation Principles",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/0-obfuscation-principles/"
+  },
+  {
+    "title": "1. Origins of Obfuscation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/1-origins-of-obfuscation/"
+  },
+  {
+    "title": "3. Object Concatenation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/3-object-concatenation/"
+  },
+  {
+    "title": "7. Protecting and Stripping Identifiable Information",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/7-protecting-and-stripping-identifiable-information/"
+  },
+  {
+    "title": "4. Obfuscation's Function for Analysis Deception",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/4-obfuscation-s-function-for-analysis-deception/"
+  },
+  {
+    "title": "6. Arbitrary Control Flow Patterns",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/6-arbitrary-control-flow-patterns/"
+  },
+  {
+    "title": "5. Code Flow and Logic",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/5-code-flow-and-logic/"
+  },
+  {
+    "title": "2. Obfuscation's Function for Static Evasion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/6-obfuscation-principles/2-obfuscation-s-function-for-static-evasion/"
+  },
+  {
+    "title": "1. Challenge",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/1-challenge/"
+  },
+  {
+    "title": "2. PE Structure",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/2-pe-structure/"
+  },
+  {
+    "title": "7. Shellcode Encoding and Encryption",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/7-shellcode-encoding-and-encryption/"
+  },
+  {
+    "title": "3. Introduction to Shellcode",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/3-introduction-to-shellcode/"
+  },
+  {
+    "title": "4. Generate Shellcode",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/4-generate-shellcode/"
+  },
+  {
+    "title": "0. AV Evasion - Shellcode",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/0-av-evasion-shellcode/"
+  },
+  {
+    "title": "8. Packers",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/8-packers/"
+  },
+  {
+    "title": "6. Introduction to Encoding and Encryption",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/6-introduction-to-encoding-and-encryption/"
+  },
+  {
+    "title": "5. Staged Payloads",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/5-staged-payloads/"
+  },
+  {
+    "title": "9. Binders",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/5-av-evasion-shellcode/9-binders/"
+  },
+  {
+    "title": "2. UAC - GUI Based Bypasses",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/2-uac-gui-based-bypasses/"
+  },
+  {
+    "title": "5. UAC - Environment Variable Expansion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/5-uac-environment-variable-expansion/"
+  },
+  {
+    "title": "3. UAC- Auto-Elevating Processes",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/3-uac-auto-elevating-processes/"
+  },
+  {
+    "title": "0. Bypassing UAC",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/0-bypassing-uac/"
+  },
+  {
+    "title": "4. UAC - Improving the Fodhelper Exploit to Bypass Windows Defender",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/4-uac-improving-the-fodhelper-exploit-to-bypass-windows-defender/"
+  },
+  {
+    "title": "1. User Account Control (UAC)",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/1-user-account-control-uac/"
+  },
+  {
+    "title": "6. Automated Exploitation",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/6-automated-exploitation/"
+  },
+  {
+    "title": "7. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/8-bypassing-uac/7-conclusion/"
+  },
+  {
+    "title": "5. File Execution",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/5-file-execution/"
+  },
+  {
+    "title": "0. Living Off the Land",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/0-living-off-the-land/"
+  },
+  {
+    "title": "3. LOLBAS Project",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/3-lolbas-project/"
+  },
+  {
+    "title": "7. Other Techniques",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/7-other-techniques/"
+  },
+  {
+    "title": "9. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/9-conclusion/"
+  },
+  {
+    "title": "4. File Operations",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/4-file-operations/"
+  },
+  {
+    "title": "8. Real-life Scenario",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/8-real-life-scenario/"
+  },
+  {
+    "title": "2. Windows Sysinternals",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/2-windows-sysinternals/"
+  },
+  {
+    "title": "6. Application Whitelisting Bypasses",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/6-application-whitelisting-bypasses/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/11-living-off-the-land/1-introduction/"
+  },
+  {
     "title": "5. Overview of a Red Team Engagement",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/1-red-team-fundamentals/5-overview-of-a-red-team-engagement/"
   },

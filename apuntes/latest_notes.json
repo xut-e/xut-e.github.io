@@ -1,42 +1,42 @@
 [
   {
-    "title": "0. Networking Core Protocols",
-    "path": "/apuntes/thm/0-pre-career/2-cyber-security-101/5-networking/3-networking-core-protocols/0-networking-core-protocols/",
-    "src": "content/Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/0. Networking Core Protocols.md",
-    "breadcrumb": "THM > 0. Pre Career > 2. Cyber Security 101 > 5. Networking > 3. Networking Core Protocols",
-    "content": "[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/1. Introduction]]\n[[2. DNS- Remembering Addresses]]\n[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/3. WHOIS]]\n[[4. HTTP(S) - Accessing the Web]]\n[[5. FTP - Transferring Files]]\n[[6. SMTP - Sending Email]]\n[[7. POP3 - Receiving Email]]\n[[8. IMAP - Synchronizing Email]]\n[[Ciberseguridad/THM/0. Pre Career/2. Cyber Security 101/5. Networking/3. Networking Core Protocols/9. Conclusion]]",
-    "modified": "2026-04-28T01:49:28"
-  },
-  {
-    "title": "2. Penetration Tester",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/2-penetration-tester/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/2. Penetration Tester.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester",
-    "content": "[[1. Jr Penetration Tester]]\n[[2. Web Fundamentals]]\n[[3. Web Application Pentesting]]\n[[4. Web Application Red Teaming]]\n[[5. Red Teaming]]",
-    "modified": "2026-04-28T01:49:27"
-  },
-  {
-    "title": "5. Red Teaming",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-red-teaming/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Red Teaming.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming",
-    "content": "[[1. Red Team Fundamentals]]\n[[2. Initial Access]]\n[[3. Post Compromise]]\n[[4. Host Evasions]]\n[[5. Network Security Evasion]]\n[[6. Compromising Active Directory]]",
-    "modified": "2026-04-28T01:49:27"
-  },
-  {
     "title": "6. Compromising Active Directory",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/6-compromising-active-directory/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/6. Compromising Active Directory.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "1. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/1. Active Directory Basics/0. Active Directory Basics]]\n2. [[0. Breaching Active Directory]]\n3. [[0. Enumerating Active Directory]]\n4. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting]]\n5. [[0. Exploiting Active Directory]]\n6. [[0. Persisting Active Directory]]\n7. [[0. Credentials Harvesting]]",
+    "modified": "2026-04-29T01:52:26"
   },
   {
     "title": "5. Network Security Evasion",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/5-network-security-evasion/5-network-security-evasion/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/5. Network Security Evasion/5. Network Security Evasion.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 5. Network Security Evasion",
+    "content": "1. [[0. Network Security Solutions]]\n2. [[0. Firewalls]]\n3. [[0. Sandbox Evasion]]\n4.",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Host Evasions",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/4-host-evasions/4-host-evasions/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/4. Host Evasions.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 4. Host Evasions",
+    "content": "1. [[0. Windows Internals]]\n2. [[0. Introduction to Windows API]]\n3. [[0. Abusing Windows Internals]]\n4. [[0. Introduction to Antivirus]]\n5. [[0. AV Evasion - Shellcode]]\n6. [[0. Obfuscation Principles]]\n7. [[0. Signature Evasion]]\n8. [[0. Bypassing UAC]]\n9. [[0. Runtime Detection Evasion]]\n10. [[0. Evading Logging and Monitoring]]\n11. [[0. Living Off the Land]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "3. Post Compromise",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/3-post-compromise/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Post Compromise.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 3. Post Compromise",
+    "content": "1. [[0. The Lay of the Land]]\n2. [[0. Enumeration]]\n3. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/3. Windows Privilege Escalation/0. Windows Privilege Escalation]]\n4. [[0. Windows Local Persistence]]\n5. [[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting]]\n6. [[0. Data Exfiltration]]",
+    "modified": "2026-04-29T01:52:26"
+  },
+  {
+    "title": "4. Local Windows Credentials",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/7-credentials-harvesting/4-local-windows-credentials/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/7. Credentials Harvesting/4. Local Windows Credentials.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 7. Credentials Harvesting",
     "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "modified": "2026-04-29T01:52:26"
   }
 ]
