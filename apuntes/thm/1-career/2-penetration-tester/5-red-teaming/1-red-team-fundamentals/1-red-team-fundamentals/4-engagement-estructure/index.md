@@ -3,3 +3,33 @@ layout: apunte
 title: "4. Engagement Estructure"
 ---
 
+Una función principal del equipo adversarial es la emulación de adversarios. Aunque no es obligatoria, es comúnmente usada para evaluar lo que un adversario real podría hacer con el entorno usando sus herramientas y metodologías. El red team puede usar varias cyber kill chains para resumir y asistir los pasos y procedimientos del engagement.
+
+El blue team suele usar cyber kill chains para mapear comportamientos y desglosar el movimiento del adversario. El red team puede adaptar esta idea para mapear TTPs a componentes del engagement.
+
+Muchas organizaciones de regulación y estandarización han liberado sus cyber kill chains. Cada una sigue la misma estructura, con algunas siendo más en profundidad o definiendo objetivos de forma diferente. Debajo una lista de cyber kill chains estándar.
+
+- [Lockheed Martin Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+- [Unified Kill Chain](https://unifiedkillchain.com/)
+- [Varonis Cyber Kill Chain](https://www.varonis.com/blog/cyber-kill-chain/)
+- [Active Directory Attack Cycle](https://github.com/infosecn1nja/AD-Attack-Defense)
+- [MITRE ATT&CK Framework](https://attack.mitre.org/)
+
+En esta tarea, nos referiremos a la "Lockheed Martin Cyber Kill Chain". Es la más estandarizada y comúnmente muy usada entre equipos red y blue.
+
+Esta se enfoca en las brechas de perímetro o externas. Al contrario que otras, no ofrece un desglose en profundidad de movimiento interno. Puedes pensar en esta como un resumen de todos los comportamientos y operaciones presentes.
+
+!**Pasted image 20260430160246.png**
+
+Los componentes de esta se pueden separar en esta tabla:
+
+| Technique             | Purpose                                                                           | Examples                                         |
+| --------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Reconnaissance        | Obtain information on the target                                                  | Harvesting emails, OSINT                         |
+| Weaponization         | Combine the objective with an exploit. Commonly results in a deliverable payload. | Exploit with backdoor, malicious office document |
+| Delivery              | How will the weaponized function be delivered to the target                       | Email, web, USB                                  |
+| Exploitation          | Exploit the target's system to execute code                                       | MS17-010, Zero-Logon, etc.                       |
+| Installation          | Install malware or other tooling                                                  | Mimikatz, Rubeus, etc.                           |
+| Command & Control     | Control the compromised asset from a remote central controller                    | Empire, Cobalt Strike, etc.                      |
+| Actions on Objectives | Any end objectives: ransomware, data exfiltration, etc.                           | Conti, LockBit2.0, etc.                          |
+
