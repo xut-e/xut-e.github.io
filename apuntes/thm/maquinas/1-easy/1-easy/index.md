@@ -46,4 +46,5 @@ title: "1. Easy"
 41. [0. Dig Dug](/apuntes/thm/maquinas/1-easy/41-dig-dug/0-dig-dug/)
 42. **Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT**
 43. **Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT**
-44. 
+44. [0. Mustacchio](/apuntes/thm/maquinas/1-easy/44-mustacchio/0-mustacchio/)
+45. 

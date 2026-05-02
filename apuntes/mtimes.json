@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "89925cd729aa4bf6c11014457df02824067762b57074ec23c78d28bb1cdd6aa7"
+    "modified": "2026-05-02T01:30:44",
+    "hash": "c7482d15256a9e770bc75a3ae119bb9b28e2448abfeb7e3dc6c15efba04fc056"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5992,24 +5992,24 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/5. Concept of Operations.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-02T01:30:43",
+    "hash": "30960607573e9a0331af751771ce81155bf79036cccdc311d8432894e620f863"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/0. Red Team Engagements.md": {
     "modified": "2026-04-28T01:49:27",
     "hash": "b552d939c584839376e0113ed96a495a32911dfea1f642b1bc673280c10b9b23"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/1. Defining Scope and Objectives.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-02T01:30:43",
+    "hash": "ab66e42adf712a0197713425fda40648cea1792de75d6bd2374a2c3fb59d20d4"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/2. Rules of Engagement.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-02T01:30:43",
+    "hash": "80b94c5ebde5b212b191eba68ccca83e252020c7ac336c92245171ad9c274ef0"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/4. Engagement Documentation.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-02T01:30:43",
+    "hash": "e99efbaf77b4a9d3a626f4defab22a9fba48756ee9d3ecbd0c463dbce38fe885"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/8. Mission Plan.md": {
     "modified": "2026-04-28T01:49:27",
@@ -6020,8 +6020,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/3. Campaign Planning.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-02T01:30:43",
+    "hash": "0db72627491f9d82b3e852b309f4aa85d4fb18aef7f9464a7d3c20cf744b88c6"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/5. Other Red Team Applications of CTI.md": {
     "modified": "2026-04-28T01:49:27",
@@ -7206,5 +7206,17 @@
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/4. Host Evasions/11. Living Off the Land/1. Introduction.md": {
     "modified": "2026-04-29T01:52:26",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/1. Easy/44. Mustacchio/0. Mustacchio.md": {
+    "modified": "2026-05-02T01:30:44",
+    "hash": "ad2745901239353cca4f338f9b452e17a2e7005c2ff892518fb2f4c0f85a1cc2"
+  },
+  "THM/Maquinas/1. Easy/44. Mustacchio/2. Getting the Flags.md": {
+    "modified": "2026-05-02T01:30:44",
+    "hash": "1574edcd22211fb005699d45606823c0a647ff66e6ee6d6b010a2352071408e9"
+  },
+  "THM/Maquinas/1. Easy/44. Mustacchio/1. Introduction.md": {
+    "modified": "2026-05-02T01:30:44",
+    "hash": "2f53e91d42d3bcd20d24b9227b8f27ddd88bec37aed89f37f7e9bbfdf7977c17"
   }
 }

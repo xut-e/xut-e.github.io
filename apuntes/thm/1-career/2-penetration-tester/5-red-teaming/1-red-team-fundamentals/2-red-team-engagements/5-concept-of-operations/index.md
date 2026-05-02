@@ -3,3 +3,16 @@ layout: apunte
 title: "5. Concept of Operations"
 ---
 
+El Concepto de Operación (CONOPS) es una parte del plan de engagement que detalla a alto nivel los procedimientos de este. Podemos comparar esto a un resumen ejecutivo del reporte del test de penetración. El documento servirá como referencia para el cliente y red team para construir y extender campañas.
+
+El documento CONOPS debería estar escrito desde una perspectiva semitécnica, asumiendo que la audiencia tiene cero conocimiento técnico. Aunque CONOPS debería ser escrito a alto nivel, no deberías omitir detalles como herramientas, grupos de ataque, etc. Como con la mayoría de documentos, no hay un CONOPS estándar, aunque debajo hay una guía de componentes críticos que deberían ser incluidos en este documento.
+
+- Client Name
+- Service Provider
+- Timeframe
+- General Objectives/Phases
+- Other Training Objectives (Exfiltration)
+- High-Level Tools/Techniques planned to be used
+- Threat group to emulate (if any)
+
+La clave para escribir y entender un CONOPS es dar suficiente información para generar un entendimiento generar mientras es claro para personas con poco conocimiento técnico.

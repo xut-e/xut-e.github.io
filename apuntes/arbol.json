@@ -10186,6 +10186,24 @@
                   ]
                 },
                 {
+                  "name": "44. Mustacchio",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/44. Mustacchio/1. Introduction.md",
+                      "parent": "44. Mustacchio"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/44. Mustacchio/2. Getting the Flags.md",
+                      "parent": "44. Mustacchio"
+                    }
+                  ]
+                },
+                {
                   "name": "5. Brooklyn Nine Nine",
                   "type": "directory",
                   "contents": [
