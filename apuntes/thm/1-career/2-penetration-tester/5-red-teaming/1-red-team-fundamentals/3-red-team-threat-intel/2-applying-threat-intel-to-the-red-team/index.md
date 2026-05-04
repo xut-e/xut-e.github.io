@@ -3,3 +3,18 @@ layout: apunte
 title: "2. Applying Threat Intel to the Red Team"
 ---
 
+Como hemos mencionado previamente, el red team usará CTI para ayudar en la emulación de adversarios y apoyar evidencia del comportamiento de los adversarios.
+
+Para ayudar en la consumición de CTI y recolectar TTPs, los red teams normalmente usarán plataformas y frameworks TI como MITRE ATT&CK, TIBER-EU, y OST Map.
+
+Estos frameworks recolectarán TTPs conocidos y los categorizarán basándose en características variantes como:
+
+1. Threat Group
+2. Kill Chain Phase
+3. Tactic
+4. Objective/Goal
+
+Una vez que el adversario es seleccionado, el objetivo es identificar todos los TTPs categorizados con el adversario escogido y mapearlos a una cyber kill chain conocida. Este concepto lo cubriremos más adelante.
+
+Usar TTPs se usa como técnica de planificación más que como algo en lo que el equipo se enfocará durante la ejecución del engagement. Dependiendo del tamaño del equipo, un equipo CTI u operador de TI, puede ser empleado para recolectar TTPs para el red team. Durante la ejecución de un engagement, el red team usará TI para construir herramientas, modificar tráfico y comportamiento y emular adversarios. Este concepto es cubierto más en profundidad más adelante.
+

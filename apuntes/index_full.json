@@ -4364,8 +4364,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/7-operations-plan/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/7. Operations Plan.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 2. Red Team Engagements",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "El plan de operaciones es un documento flexible que ofrece detalles específicos sobre el engagement y las acciones que ocurren. El plan se expande en el CONOPS actual y debería incluir una mayoría de información específica del engagement. El ROE también puede ser colocado aquí dependiendo de la profundidad y estructura del ROE.\n\nEl plan de operaciones debería seguir un esquema de escritura similar al plan de recursos, usando listas de puntos y subsecciones pequeñas. Como con los otros documentos de red team, no hay estándar definido. Debajo un ejemplo de guía:\n\n- Header\n    - Personnel writing\n    - Dates\n    - Customer\n- Halting/stopping conditions (can be placed in ROE depending on depth)\n- Required/assigned personnel\n- Specific TTPs and attacks planned\n- Communications plan\n- Rules of Engagement (optional)\n\nLa adición más notable a este documento es el plan de comunicaciones. El plan de comunicaciones debería resumir cómo la red cell se comunicará con otras cells y con el cliente. Cada equipo tendrá su método preferido de comunicación. Debajo una lista de opciones posibles:\n\n- [vectr.io](https://vectr.io/)\n- Email\n- Slack",
+    "modified": "2026-05-04T01:47:07"
   },
   {
     "title": "5. Concept of Operations",
@@ -4412,16 +4412,16 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/8-mission-plan/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/8. Mission Plan.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 2. Red Team Engagements",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "El plan de misión es un documento específico de cada célula que detalla las acciones exactas que se completarán por parte de los operadores. El documento usa información de planes previos y asigna acciones a ellos.\n\nCómo el documento es escrito y detallado dependerá del equipo, ya que es un documento usado internamente, la estructura tendrá menos impacto. Como con todos los documentos que hemos visto, no hay estándar. Debajo una lista de los detalles mínimos que las células deberían incluir.\n\n- Objectives\n- Operators\n- Exploits/Attacks\n- Targets (users/machines/objectives)\n- Execution plan variations\n\nLos dos planes pueden ser pensados de forma similar; el plan de operaciones debería ser considerado desde la perspectiva de negocio/cliente y el plan de misión desde la perspectiva de un operador.",
+    "modified": "2026-05-04T01:47:07"
   },
   {
     "title": "6. Resource Plan",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/2-red-team-engagements/6-resource-plan/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/2. Red Team Engagements/6. Resource Plan.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 2. Red Team Engagements",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "El plan de recursos es el segundo documento del plan de engagement, detallando un resumen de fechas, conocimiento requerido, requerimientos de fuentes. El plan extiende el CONOPS e incluye detalles específicos.\n\nAl contrario que CONOPS, el plan de recursos no debería estar escrito como resumen, sino como lista de puntos de subsecciones. Como con la mayoría de documentos de red team, no hay un estándar establecido para este. Debajo un ejemplo de guía:\n\n- Header\n    - Personnel writing\n    - Dates\n    - Customer\n- Engagement Dates\n    - Reconnaissance Dates\n    - Initial Compromise Dates\n    - Post-Exploitation and Persistence Dates\n    - Misc. Dates\n- Knowledge Required (optional)\n    - Reconnaissance\n    - Initial Compromise\n    - Post-Exploitation\n- Resource Requirements\n    - Personnel\n    - Hardware\n    - Cloud\n    - Misc.\n\nLa clave para escribir y entender un plan de recursos, es ofrecer suficiente información para recoger lo que se requiere pero no más de ello. El documento debería de ser conciso y definir lo que se necesita.",
+    "modified": "2026-05-04T01:47:07"
   },
   {
     "title": "3. Campaign Planning",
@@ -4460,8 +4460,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/1-what-is-threat-intelligence/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/1. What is Threat Intelligence.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 3. Red Team Threat Intel",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Expandiendo, CTI (Cyber Threat Intelligence) puede ser consumido recolectando IOCs (Indicators Of Compromise) y TTPs comúnmente distribuidos y mantenidos por ISACs (Information and Sharing Analysis Centers). Las plataformas y frameworks de inteligencia también ayudan en la consumición de CTI, primariamente enfocándose en todas las actividades.\n\nTradicionalmente, los defensores usan TI para dar contexto al paisaje cambiante de las amenazas y cuantificar hallazgos. Los IOCs son cuantificados por trazas dejadas por adversarios como dominios, IPs, archivos, strings, etc. El blue team puede utilizar varios IOCs para construir detecciones y analizar el comportamiento. Desde la perspectiva del red team, puedes pensar en el TI como el análisis del red team de la habilidad del blue team de usar CTI para la detección.\n\nEn esta unidad nos centraremos en la actividad APT (Advanced Persistent Threat) y cómo usar sus TTPs documentados. La siguiente tarea detallará los específicos de TI y su significado para el red team.",
+    "modified": "2026-05-04T01:47:07"
   },
   {
     "title": "3. The TIBER-EU Framework",
@@ -4484,8 +4484,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/3-red-team-threat-intel/2-applying-threat-intel-to-the-red-team/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/3. Red Team Threat Intel/2. Applying Threat Intel to the Red Team.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 3. Red Team Threat Intel",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Como hemos mencionado previamente, el red team usará CTI para ayudar en la emulación de adversarios y apoyar evidencia del comportamiento de los adversarios.\n\nPara ayudar en la consumición de CTI y recolectar TTPs, los red teams normalmente usarán plataformas y frameworks TI como MITRE ATT&CK, TIBER-EU, y OST Map.\n\nEstos frameworks recolectarán TTPs conocidos y los categorizarán basándose en características variantes como:\n\n1. Threat Group\n2. Kill Chain Phase\n3. Tactic\n4. Objective/Goal\n\nUna vez que el adversario es seleccionado, el objetivo es identificar todos los TTPs categorizados con el adversario escogido y mapearlos a una cyber kill chain conocida. Este concepto lo cubriremos más adelante.\n\nUsar TTPs se usa como técnica de planificación más que como algo en lo que el equipo se enfocará durante la ejecución del engagement. Dependiendo del tamaño del equipo, un equipo CTI u operador de TI, puede ser empleado para recolectar TTPs para el red team. Durante la ejecución de un engagement, el red team usará TI para construir herramientas, modificar tráfico y comportamiento y emular adversarios. Este concepto es cubierto más en profundidad más adelante.",
+    "modified": "2026-05-04T01:47:07"
   },
   {
     "title": "5. Risk Assessment",
