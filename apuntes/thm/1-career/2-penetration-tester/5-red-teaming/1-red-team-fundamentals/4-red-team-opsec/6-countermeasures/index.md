@@ -3,3 +3,9 @@ layout: apunte
 title: "6. Countermeasures"
 ---
 
+El paso final es aplicar contramedidas. El [Manual de Programa del Departamento de Defensa para OPSEC](https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520502m.pdf) dice: "Las contramedidas son diseñadas para prevenir a un adversario de detectar información crítica, ofrecer una alternativa o denegar el sistema de recolección del adversario."
+
+Veamos de nuevo los dos ejemplos anteriores.
+
+1. La contramedida del primero ejemplo es usar IPs diferentes para cada actividad. De esta manera podemos asegurar que incluso siendo detectada una de las actividades, el bloqueo de esta IP no afectará directamente a las otras dos.
+2. La contramedida del segundo ejemplo es asegurar que la base de datos está siendo securizada adecuadamente para que la información no pueda ser accedida excepto por personal autorizado.

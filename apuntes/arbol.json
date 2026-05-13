@@ -7479,18 +7479,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/6. Countermeasures.md",
                               "parent": "4. Red Team OPSEC"
-                            },
-                            {
-                              "name": "7. More Practical Examples.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/7. More Practical Examples.md",
-                              "parent": "4. Red Team OPSEC"
-                            },
-                            {
-                              "name": "8. Summary.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/8. Summary.md",
-                              "parent": "4. Red Team OPSEC"
                             }
                           ]
                         },

@@ -4492,72 +4492,56 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/5-risk-assessment/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/5. Risk Assessment.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Hemos terminado de analizar las vulnerabilidades, ahora podemos proceder con el cuarto paso: realizar una evaluación de riesgos. [NIST](https://csrc.nist.gov/glossary/term/risk_assessment) define una evaluación de riesgos como \"El proceso de identificar riesgos de las operaciones de organización (incluyendo misión, funciones, imagen, reputación), activos de organización, individuos, otras organizaciones, y la nación, resultado de la operación de un sistema informático.\" En OPSEC, la evaluación de riesgos requiere la concienciación de que un evento ocurra junto al coste esperado de dicho evento. Consecuentemente, esto incluye evaluar la habilidad del adversario para explotar las vulnerabilidades.\n\n![[Pasted image 20260512152437.png]]\n\nUna vez que el nivel de riesgo es determinado, las contramedidas se consideran para mitigar ese riesgo. Necesitamos considerar los siguientes tres factores:\n\n1. La eficiencia de la contramedida en la reducción del riesgo.\n2. El coste de la contramedida en comparación al impacto de la explotación de la vulnerabilidad.\n3. La posibilidad de que la contramedida pueda revelar información al adversario.\n\nVeamos dos ejemplos de tareas anteriores. En el primer ejemplo, consideramos la vulnerabilidad de escanear una red con Nmap, usar Metasploit y hostear una página de phishing usando la misma IP. Analizamos que esta vulnerabilidad hace muy sencillo para los adversario bloquear toda nuestra actividad. Ahora evaluemos el riesgo. Para evaluar el riesgo relacionado a esta vulnerabilidad, necesitamos afrontar la posibilidad de que una o más de estas actividades sea detectada. No podemos responder esto sin conocer las capacidades del adversario. Consideremos que el cliente tiene un SIEM. Podemos comprender que un SIEM haría la tarea de detección no muy complicada. Como resultado, podríamos evaluar el riesgo relacionado como alto. Por otro lado, si sabemos que nuestro adversario tiene recursos mínimos para detectar eventos de seguridad, podemos evaluar el riesgo asociado a la vulnerabilidad como bajo.\n\nConsideremos el segundo ejemplo de una base de datos no securizada correctamente donde almacenamos la información recibida por la página de phishing. Basado en la información recolectada de varios grupos de investigación usando honeypots, podemos esperar que varios bots maliciosos apunten a nuestra IP en internet. Por lo que sólo es cuestión de tiempo que uno de estos encuentre la base de datos, que si no está securizada, expondrá información crítica, por lo que podemos evaluar el riesgo asociado a esta vulnerabilidad como alto.",
+    "modified": "2026-05-13T01:59:01"
   },
   {
     "title": "6. Countermeasures",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/6-countermeasures/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/6. Countermeasures.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
-  },
-  {
-    "title": "8. Summary",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/8-summary/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/8. Summary.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "El paso final es aplicar contramedidas. El [Manual de Programa del Departamento de Defensa para OPSEC](https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520502m.pdf) dice: \"Las contramedidas son diseñadas para prevenir a un adversario de detectar información crítica, ofrecer una alternativa o denegar el sistema de recolección del adversario.\"\n\nVeamos de nuevo los dos ejemplos anteriores.\n\n1. La contramedida del primero ejemplo es usar IPs diferentes para cada actividad. De esta manera podemos asegurar que incluso siendo detectada una de las actividades, el bloqueo de esta IP no afectará directamente a las otras dos.\n2. La contramedida del segundo ejemplo es asegurar que la base de datos está siendo securizada adecuadamente para que la información no pueda ser accedida excepto por personal autorizado.",
+    "modified": "2026-05-13T01:59:01"
   },
   {
     "title": "4. Vulnerability Analysis",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/4-vulnerability-analysis/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/4. Vulnerability Analysis.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Después de identificar la información crítica y analizar las amenazas, podemos empezar con el tercer paso: analizar las vulnerabilidades. Este no debe confundirse con las vulnerabilidades asociadas a la ciberseguridad. Una vulnerabilidad OPSEC existe cuando un adversario puede obtener información crítica, analizar sus hallazgos y actuar de manera que afecte a nuestros planes.\n\n![[Pasted image 20260512151149.png]]\n\nPara entender mejor una vulnerabilidad OPSEC en relación al red team, consideraremos el siguiente escenario. Usas Nmap para descubrir hosts activos en una subred objetivo y encuentras puertos abiertos. Además, mandas varios emails de phishing que llevan a la página web que hosteas. Además, estás usando el framework Metasploit para intentar explotar ciertas vulnerabilidades de software. Estas son tres actividades separadas; sin embargo, si usas la misma IP para todas, esto podría resultar en una vulnerabilidad OPSEC. Una vez que cualquier actividad maliciosa sea detectada, el blue team tomará acción y bloquearla la dirección IP temporal o permanentemente. Consecuentemente, solo tomará que una dirección IP sea interceptada y bloqueada para que todas las actividades fallen.\n\nOtro ejemplo sería una base de datos no securizada que sea usada para almacenar información recibida de las víctimas de phishing. Si la base de datos no está debidamente securizada, puede llevar a que un tercero malicioso comprometa la operación y podría resultar en datos siendo filtrados y usados en un ataque contra la red de tu cliente. Como resultado, en lugar de ayudar a tu cliente estarías exponiendo datos críticos.",
+    "modified": "2026-05-13T01:59:01"
   },
   {
     "title": "2. Critical Information Identification",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/2-critical-information-identification/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/2. Critical Information Identification.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Lo que un red teamer considera información crítica que merece la pena proteger depende de la operación y los activos o las herramientas usadas. En este caso, la información crítica incluye, pero no está limitada a, las intenciones, capacidades, actividades y limitaciones del red team. La información crítica incluye cualquier información que una vez obtenida por el blue team, podría dañar o degradar la misión del red team.\n\n![[Pasted image 20260512144936.png]]\n\nPara identificar información crítica, el red team necesita usar un acercamiento adversarial y preguntarse a sí mismos qué información un adversario (el blue team) querría saber sobre la misión. Si lo obtuviera, el adversario estará en una posición sólida para parar los ataques del red team. Es por ello que la información crítica no es necesariamente información sensible, sino que es cualquier información que pueda frustrar tus planes si se filtra al adversario. Algunos ejemplos son:\n\n- Información del cliente que haya encontrado tu equipo.\n- Información del red team, como identidades, actividad, planes, etc.\n- Tácticas, técnicas y procedimientos (TTPs) que tu equipo use para emular el ataque.\n- OS, proveedor de cloud o framework C2 que use tu equipo.\n- Direcciones IP públicas que usará tu equipo.\n- Nombres de dominio que tu equipo haya registrado.\n- Sitios web hosteados como sitios de phishing.",
+    "modified": "2026-05-13T01:59:01"
   },
   {
     "title": "0. Red Team OPSEC",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/0-red-team-opsec/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/0. Red Team OPSEC.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/1. Introduction]]\n[[2. Critical Information Identification]]\n[[3. Threat Analysis]]\n[[4. Vulnerability Analysis]]\n[[5. Risk Assessment]]\n[[6. Countermeasures]]\n[[7. More Practical Examples]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/8. Summary]]",
-    "modified": "2026-04-28T01:49:27"
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/1. Introduction]]\n[[2. Critical Information Identification]]\n[[3. Threat Analysis]]\n[[4. Vulnerability Analysis]]\n[[5. Risk Assessment]]\n[[6. Countermeasures]]",
+    "modified": "2026-05-13T01:59:01"
   },
   {
     "title": "1. Introduction",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/1-introduction/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/1. Introduction.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Las Operations Security (OPSEC) es un término acuñado por el ejército de los estados unidos. En el campo de la ciberseguridad, empezaremos con la definición dada por [NIST](https://csrc.nist.gov/glossary/term/opsec):\n\n\"Proceso sistemático y probado por el cual adversarios potenciales pueden ser denegados de información sobre capacidades e intenciones mediante la identificación, el control y la protección generalmente no clasificada del plan y la ejecución de actividades sensibles. El proceso incluye cinco pasos: identificación de información crítica, análisis de amenazas, análisis de vulnerabilidades, evaluación de riesgos y aplicación de contramedidas apropiadas.\"\n\nVeamos la definición desde una perspectiva de red team. Como miembro de red team, tus adversarios potenciales son el blue team y terceros. El blue team es considerado adversario debido a que estamos atacando los sistemas que ellos pretenden defender. Los ejercicios red vs blue son comunes para ayudar a una organización a entender qué amenazas existen en un entorno dado y prepararse mejor si el ataque real ocurriese. Como red teamers, incluso aunque estemos obedeciendo las leyes y estemos autorizados para atacar los sistemas, no cambia el hecho de que estamos actuando contra los objetivos del blue team e intentando evitar su detección.\n\nDenegar a cualquier potencial adversario la habilidad para obtener información sobre nuestras capacidades e intenciones es crítico para mantener OPSEC. OPCSEC es un proceso de identificación, control y protección sobre cualquier información relacionada al plan y ejecución de nuestras actividades. Los frameworks como [Lockheed Martin's Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html) y [MITRE ATT&CK](https://attack.mitre.org/) ayuda a los defensores a identificar los objetivos que un adversario intenta cumplir.\n\n![[Pasted image 20260512144413.png]]\n\nEl proceso de OPSEC tiene cinco pasos:\n\n1. Identificar información crucial.\n2. Analizar amenazas.\n3. Analizar vulnerabilidades.\n4. Evaluar riesgos.\n5. Aplicar contramedidas apropiadas.\n\n![[Pasted image 20260512144507.png]]\n\nSi el adversario descubre que estás escaneando tu red con Nmap (el blue team en nuestro caso), deberían poder fácilmente descubrir la dirección IP usada. Por ejemplo, si usas la misma IP para hostear un sitio web de phishing, no será difícil para ellos conectar los dos elementos y atribuírselos al mismo actor.\n\nOPSEC no es un conjunto de reglas o una solución, sino un proceso de cinco pasos para denegar a los adversarios la posibilidad de ganar acceso a cualquier información crítica.",
+    "modified": "2026-05-13T01:59:01"
   },
   {
     "title": "3. Threat Analysis",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/3-threat-analysis/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/3. Threat Analysis.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
-  },
-  {
-    "title": "7. More Practical Examples",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/4-red-team-opsec/7-more-practical-examples/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/4. Red Team OPSEC/7. More Practical Examples.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 1. Red Team Fundamentals > 4. Red Team OPSEC",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Después de identificar la información crítica, necesitamos analizar las amenazas. El análisis de amenazas se refiere a identificar adversarios potenciales y sus intenciones y capacidades. Adaptado del [Manual de Programa de OPSEC del Depeartamento de defensa (DoD)](https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520502m.pdf), el análisis de amenazas intenta responder a las siguientes cuestiones:\n\n1. ¿Quién es el adversario?\n2. ¿Cuáles son los objetivos del adversario?\n3. ¿Qué tácticas, técnicas y procedimientos usan?\n4. ¿Qué información crítica ha obtenido ya el adversario?\n\n![[Pasted image 20260512145934.png]]\n\nLa tarea del red team es emular un ataque real para que el blue team descubra cómo se ve y esté mejor preparado para cuando el peligro real llegue. El objetivo principal del blue team es asegurar la seguridad de la red y sistemas de la organización. Las intenciones del blue team son claras, quieren mantener al red team fuera de su red. Consecuentemente, considerando la tarea del red team, el blue team es considerado nuestro adversario ya que cada equipo tiene objetivos en conflicto.\n\nLos jugadores terceros maliciosos pueden tener diferentes intenciones y capacidades y puede que paren una amenaza como resultado. Este tercer partido puede ser alguien con capacidades humildes escaneando sistemas aleatoriamente o un adversario capaz poniendo como objetivo los sistemas de tu cliente. Consecuentemente, las intenciones y capacidades de estos terceros puede resultar en un adversario también.\n\n| Adversary             | Intentions         | Capabilities     |\n| --------------------- | ------------------ | ---------------- |\n| Blue team             | Keep intruders out | Not always known |\n| Malicious third-party | Varies             | Varies           |\n\nConsideramos cualquier adversario con la intención y capacidad para tomar acciones que nos prevendrían de completar la operación como una amenaza.\n\n`amenaza = adversario + intención + capacidad`",
+    "modified": "2026-05-13T01:59:01"
   },
   {
     "title": "0. Weaponization",
