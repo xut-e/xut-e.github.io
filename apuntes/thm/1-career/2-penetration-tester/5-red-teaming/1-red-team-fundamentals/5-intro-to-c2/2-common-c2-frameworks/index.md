@@ -3,3 +3,90 @@ layout: apunte
 title: "2. Common C2 Frameworks"
 ---
 
+A través de tu vida puede que te encuentres muchos frameworks C2 diferentes. Veremos algunos populares que son ampliamente usados por red teamers y adversarios. Los dividiremos en dos secciones:
+
+- Gratuitos
+- Premium
+
+Puede que te hagas preguntas como "¿Por qué debería usar un framework C2 de pago?", y es una pregunta excelente. Los frameworks C2 de pago son usualmente menos detectables por antivirus. Esto no quiere decir que sea imposible detectarlos, sólo que un proyecto de código abierto suele ser ampliamente entendido y las firmas son fácilmente desarrolladas.
+
+Usualmente, los frameworks C2 premium tienen más módulos de post explotación más avanzados, funcionalidades de pivotaje, e incluso peticiones que puede que los desarrolladores de código abierto no. Por ejemplo, una funcionalidad de Cobalt Strike que la mayoría de otros frameworks no ofrecen es que tiene la habilidad de abrir un túnel VPN desde un beacon. Esto puede ser una funcionalidad fantástica si el Proxy no funciona bien en tu situación específica. Debes hacer el trabajo de investigación para saber qué es lo mejor para tu equipo.
+
+------------------------------------------
+<h2>Frameworks C2 Gratuitos</h2>
+<h3>Metasploit</h3>
+El [Framework Metasploit](https://www.metasploit.com/), desarrollado y mantenido por Rapid7, es uno de los frameworks (C2) de Explotación y Post Explotación más populares que es público e instalado en prácticamente todas las distros de pentesting.
+
+```bash
+root@kali$ msfconsole
+                                                  
+
+      .:okOOOkdc'           'cdkOOOko:.
+    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx.
+   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:
+  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'
+  oOOOOOOOO.    .oOOOOoOOOOl.    ,OOOOOOOOo
+  dOOOOOOOO.      .cOOOOOc.      ,OOOOOOOOx
+  lOOOOOOOO.         ;d;         ,OOOOOOOOl
+  .OOOOOOOO.   .;           ;    ,OOOOOOOO.
+   cOOOOOOO.   .OOc.     'oOO.   ,OOOOOOOc
+    oOOOOOO.   .OOOO.   :OOOO.   ,OOOOOOo
+     lOOOOO.   .OOOO.   :OOOO.   ,OOOOOl
+      ;OOOO'   .OOOO.   :OOOO.   ;OOOO;
+       .dOOo   .OOOOocccxOOOO.   xOOd.
+         ,kOl  .OOOOOOOOOOOOO. .dOk,
+           :kk;.OOOOOOOOOOOOO.cOk:
+             ;kOOOOOOOOOOOOOOOk:
+               ,xOOOOOOOOOOOx,
+                 .lOOOOOOOl.
+                    ,dOd,
+                      .
+
+       =[ metasploit v6.1.12-dev                          ]
++ -- --=[ 2177 exploits - 1152 auxiliary - 399 post       ]
++ -- --=[ 596 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: View a module's description using 
+info, or the enhanced version in your browser with 
+info -d
+
+msf6 > 
+```
+
+<h3>Armitage</h3>
+[Armitage](https://web.archive.org/web/20211006153158/http://www.fastandeasyhacking.com/) es una extensión de Metasploit que añade una GUI y está escrito en Java (increíblemente similar a Cobalt Strike). Esto es debido a que ambos son desarrollador por Raphael Mudge. Armitage ofrece una manera sencilla de enumerar y visualizar todos tus objetivos. Además de verse como Cobalt Strike, incluso incluye algunas funcionalidades únicas. Una de las más populares puede ser encontrada en el menú "Attacks". Esta funcionalidad se conoce como ataque Hail Mary, el cual intenta ejecutar todos los exploits para los servicios que corren en la víctima específica. Armitage realmente es "Fast and Easy Hacking".
+
+!**Pasted image 20260513200459.png**
+
+<h3>Powershell Empire/Starkiller</h3>
+[Powershell Empire](https://bc-security.gitbook.io/empire-wiki/) y [Starkiller](https://github.com/BC-SECURITY/Starkiller) es otyro increíblemente popular C2 originalmente creado por Harmjopy, Sixdub y Enigma0x3 del grupo Veris. Actualmente el proyecto ha sido descontinuado y ha sido tomado por el equipo de seguridad BC (Cx01N, Hubbl3 y \_Vinnybod). Empire ofrece agentes escritos en varios lenguajes compatibles con la mayoría de plataformas, haciéndolo increíblemente versátil.
+
+!**Pasted image 20260513202251.png**
+
+<h3>Sliver</h3>
+[Sliver](https://github.com/BishopFox/sliver) por Bishop Fox es un framework C2 avanzado, altamente personalizable, multiusuario y basado en CLI. Sliver está escrito en Go, lo que hace la ingeniería inversa de implantes C2 increíblemente complicada. Soporta varios protocolos para comunicaciones C2 como WireGuard, mTLS, HTTP(S), DNS y mucho más. Además, soporta archivos BOF (Beacon Object Files) para funcionalidad adicional, DNS Canary Domains para enmascarar comunicaciones C2, generación automatizada de certificados Let's Encrypt para beacons HTTPS y mucho más.
+
+!**Pasted image 20260513202815.png**
+
+<h3>Covenant</h3>
+[Covenant](https://github.com/cobbr/Covenant) por Ryan Cobb es el último framework C2 gratuito que cubriremos. De lejos es uno de los frameworks C2 más únicos escrito en C#. Al contrario que Metasploit/Armitage, es primariamente usado para la post explotación y el movimiento lateral con HTTP, HTTPS y listeners SMB con agentes altamente personalizables.
+
+!**Pasted image 20260513202445.png**
+
+-----------------------------------------------
+<h2>Frameworks C2 de Pago</h2>
+<h3>Cobalt Strike</h3>
+[Cobalt Strike](https://www.cobaltstrike.com/) por Help Systems (creado originalmente por Raphael Mudge) es discutiblemente uno de los comand and control más famosos junto a Metasploit. Como Armitage, está escrito en Java y diseñado para ser tan flexible como sea posible. Para más información mira el [video de la página de entrenamento](https://www.youtube.com/playlist?list=PLcjpg2ik7YT6H5l9Jx-1ooRYpfvznAInJ) de Cobalt Strike.
+
+!**Pasted image 20260513203623.png**
+
+<h3>Brute Ratel</h3>
+[Brute Ratel](https://bruteratel.com/) por Chetan Nayak o Paranoid Ninja es un framework C2 publicitado como "Customizable Command and Control Center" o framework "C4" que ofrece una experiencia de simulación de adversario única. Para más información mira el [video de la página de entrenamiento](https://bruteratel.com/tabs/tutorials/).
+
+!**Pasted image 20260513203831.png**
+
+--------------------------------
+<h2>Otros Frameworks C2</h2>
+Para una lista más completa de frameworks C2 y sus capacidades, comprueba [C2 Matrix](https://howto.thec2matrix.com/), un proyecto de Jorge Orchilles y Bryson Bort. Tiene una lista más amplia de todos los frameworks C2 actualmente disponibles.
+
