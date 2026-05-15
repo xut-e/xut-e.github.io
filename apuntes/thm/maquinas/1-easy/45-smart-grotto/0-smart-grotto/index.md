@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. Smart Grotto"
+---
+
+**Ciberseguridad/THM/Maquinas/1. Easy/45. Smart Grotto/1. Introduction**
+**Ciberseguridad/THM/Maquinas/1. Easy/45. Smart Grotto/2. Getting the Flags**

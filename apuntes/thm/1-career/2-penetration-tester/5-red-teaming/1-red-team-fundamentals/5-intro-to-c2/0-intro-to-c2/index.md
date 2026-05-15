@@ -9,4 +9,3 @@ title: "0. Intro to C2"
 [4. C2 Operation Basics](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/4-c2-operation-basics/)
 [5. Command, Control and Conquer](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/5-command-control-and-conquer/)
 [6. Advanced C2 Setups](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/6-advanced-c2-setups/)
-[7. Wrapping Up](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/7-wrapping-up/)

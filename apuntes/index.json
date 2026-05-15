@@ -2152,10 +2152,6 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/4-c2-operation-basics/"
   },
   {
-    "title": "7. Wrapping Up",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/7-wrapping-up/"
-  },
-  {
     "title": "3. Setting Up a C2 Framework",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/1-red-team-fundamentals/5-intro-to-c2/3-setting-up-a-c2-framework/"
   },
@@ -4362,6 +4358,18 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/thm/maquinas/1-easy/43-healthgpt/1-introduction/"
+  },
+  {
+    "title": "0. Smart Grotto",
+    "path": "/apuntes/thm/maquinas/1-easy/45-smart-grotto/0-smart-grotto/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/45-smart-grotto/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/45-smart-grotto/1-introduction/"
   },
   {
     "title": "2. Reconnaissance",

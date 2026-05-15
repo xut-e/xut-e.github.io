@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-05-02T01:30:44",
-    "hash": "c7482d15256a9e770bc75a3ae119bb9b28e2448abfeb7e3dc6c15efba04fc056"
+    "modified": "2026-05-15T01:59:56",
+    "hash": "6e32726669af29b4ed5081b1c735ffdb7b6076336b606efec03dbdda92928c3e"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5956,24 +5956,24 @@
     "hash": "3815b79d11ae7ad688f3de465c49562a653eafce6d7996cb9891b4b2c31ba67b"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/4. C2 Operation Basics.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-15T01:59:56",
+    "hash": "97e29721229db6b28c4bc9bb68c53cbff4f4e8516c63a73a2818bea99ae33511"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/7. Wrapping Up.md": {
     "modified": "2026-04-28T01:49:27",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/3. Setting Up a C2 Framework.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-15T01:59:56",
+    "hash": "4e81416e0df9c7e053151578c8b0fa03f3bdbed1497f35261155ddc4cb448ba6"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/5. Command, Control and Conquer.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-15T01:59:56",
+    "hash": "7e6afcfae6809c4adfadb73157efeabb7c546f2afc996a5e19c12ed02d1ddce4"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/0. Intro to C2.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "8363c30efd8e596f689eae7b73f2392f61ccef62270ec5be015c23e634a51f5b"
+    "modified": "2026-05-15T01:59:56",
+    "hash": "3f416e43f85f97f480d8c0cc0fcf009627fe79e60966580f2eb25bf8d48a7329"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/1. Command and Control Framework Structure.md": {
     "modified": "2026-05-14T02:01:20",
@@ -7218,5 +7218,17 @@
   "THM/Maquinas/1. Easy/44. Mustacchio/1. Introduction.md": {
     "modified": "2026-05-02T01:30:44",
     "hash": "2f53e91d42d3bcd20d24b9227b8f27ddd88bec37aed89f37f7e9bbfdf7977c17"
+  },
+  "THM/Maquinas/1. Easy/45. Smart Grotto/0. Smart Grotto.md": {
+    "modified": "2026-05-15T01:59:56",
+    "hash": "99939e033b0f85baed09b2c901f993706e32f6dafb99fadc0664228e9f162771"
+  },
+  "THM/Maquinas/1. Easy/45. Smart Grotto/2. Getting the Flags.md": {
+    "modified": "2026-05-15T01:59:56",
+    "hash": "944a40818fe179d35eac926ef5d22056905294fbc8b2f937a61972384bf341cc"
+  },
+  "THM/Maquinas/1. Easy/45. Smart Grotto/1. Introduction.md": {
+    "modified": "2026-05-15T01:59:56",
+    "hash": "67b3deb7c072acf509d9929391dea710f1e8fc38da26d214de4493aaf7d7f9a9"
   }
 }

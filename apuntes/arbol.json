@@ -7521,12 +7521,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/6. Advanced C2 Setups.md",
                               "parent": "5. Intro to C2"
-                            },
-                            {
-                              "name": "7. Wrapping Up.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/7. Wrapping Up.md",
-                              "parent": "5. Intro to C2"
                             }
                           ]
                         }
@@ -10188,6 +10182,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/44. Mustacchio/2. Getting the Flags.md",
                       "parent": "44. Mustacchio"
+                    }
+                  ]
+                },
+                {
+                  "name": "45. Smart Grotto",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/45. Smart Grotto/1. Introduction.md",
+                      "parent": "45. Smart Grotto"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/45. Smart Grotto/2. Getting the Flags.md",
+                      "parent": "45. Smart Grotto"
                     }
                   ]
                 },
