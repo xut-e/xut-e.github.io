@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-05-15T01:59:56",
-    "hash": "6e32726669af29b4ed5081b1c735ffdb7b6076336b606efec03dbdda92928c3e"
+    "modified": "2026-05-16T01:53:02",
+    "hash": "666472865c692ccaafffa64a84eea94f3f964a7343ad1c1040018b123062139d"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -7230,5 +7230,17 @@
   "THM/Maquinas/1. Easy/45. Smart Grotto/1. Introduction.md": {
     "modified": "2026-05-15T01:59:56",
     "hash": "67b3deb7c072acf509d9929391dea710f1e8fc38da26d214de4493aaf7d7f9a9"
+  },
+  "THM/Maquinas/1. Easy/46. Tech_Supp0rt-1/1. Introduction.md": {
+    "modified": "2026-05-16T01:53:02",
+    "hash": "3b21a07d1c483a2b17f24d43c20c7086b7f2e246b0bba7168f6692c42f5e613e"
+  },
+  "THM/Maquinas/1. Easy/46. Tech_Supp0rt-1/2. Getting the flags.md": {
+    "modified": "2026-05-16T01:53:02",
+    "hash": "4dea9899e350f115198107a971f99b4ec8211d32421d6e08cf863a01c75fdf6e"
+  },
+  "THM/Maquinas/1. Easy/46. Tech_Supp0rt-1/0. Tech_Supp0rt-1.md": {
+    "modified": "2026-05-16T01:53:02",
+    "hash": "4939e754319d1b5cf8797ff50722d93f84051a498b7aae17ec3f242973b93ec4"
   }
 }

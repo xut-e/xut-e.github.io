@@ -10204,6 +10204,24 @@
                   ]
                 },
                 {
+                  "name": "46. Tech_Supp0rt-1",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/46. Tech_Supp0rt-1/1. Introduction.md",
+                      "parent": "46. Tech_Supp0rt-1"
+                    },
+                    {
+                      "name": "2. Getting the flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/46. Tech_Supp0rt-1/2. Getting the flags.md",
+                      "parent": "46. Tech_Supp0rt-1"
+                    }
+                  ]
+                },
+                {
                   "name": "5. Brooklyn Nine Nine",
                   "type": "directory",
                   "contents": [

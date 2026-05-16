@@ -48,4 +48,5 @@ title: "1. Easy"
 43. **Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT**
 44. [0. Mustacchio](/apuntes/thm/maquinas/1-easy/44-mustacchio/0-mustacchio/)
 45. [0. Smart Grotto](/apuntes/thm/maquinas/1-easy/45-smart-grotto/0-smart-grotto/)
-46. 
+46. [0. Tech_Supp0rt-1](/apuntes/thm/maquinas/1-easy/46-tech_supp0rt-1/0-tech_supp0rt-1/)
+47. 
