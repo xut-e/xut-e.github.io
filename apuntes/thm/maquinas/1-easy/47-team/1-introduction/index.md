@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260516130552.png**
+
+Máquina boot2root apta para principiantes.

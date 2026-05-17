@@ -49,4 +49,6 @@ title: "1. Easy"
 44. [0. Mustacchio](/apuntes/thm/maquinas/1-easy/44-mustacchio/0-mustacchio/)
 45. [0. Smart Grotto](/apuntes/thm/maquinas/1-easy/45-smart-grotto/0-smart-grotto/)
 46. [0. Tech_Supp0rt-1](/apuntes/thm/maquinas/1-easy/46-tech_supp0rt-1/0-tech_supp0rt-1/)
-47. 
+47. [0. Team](/apuntes/thm/maquinas/1-easy/47-team/0-team/)
+48. [0. Gallery](/apuntes/thm/maquinas/1-easy/48-gallery/0-gallery/)
+49. 

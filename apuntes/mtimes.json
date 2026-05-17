@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-05-16T01:53:02",
-    "hash": "666472865c692ccaafffa64a84eea94f3f964a7343ad1c1040018b123062139d"
+    "modified": "2026-05-17T01:55:49",
+    "hash": "f249c628572d5023b3c15e9b45e55911651e7bc5ca3fcf9508315f65ea0568b8"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5968,8 +5968,8 @@
     "hash": "4e81416e0df9c7e053151578c8b0fa03f3bdbed1497f35261155ddc4cb448ba6"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/5. Command, Control and Conquer.md": {
-    "modified": "2026-05-15T01:59:56",
-    "hash": "7e6afcfae6809c4adfadb73157efeabb7c546f2afc996a5e19c12ed02d1ddce4"
+    "modified": "2026-05-17T01:55:49",
+    "hash": "302086b4e0a3832addceac269a9a665f1b91bdec78d4655e5278a538e4167e90"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/0. Intro to C2.md": {
     "modified": "2026-05-15T01:59:56",
@@ -5980,8 +5980,8 @@
     "hash": "0cade608c24b3d299d3ac84a5079cb270da3a4d881ae8d92466d27f9056b6b9a"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/6. Advanced C2 Setups.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-17T01:55:49",
+    "hash": "ec2d8568ebf9a6481e2ce61910a104e5298e21d1e9a089a783c341717c4644ce"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/2. Common C2 Frameworks.md": {
     "modified": "2026-05-14T02:01:20",
@@ -7242,5 +7242,29 @@
   "THM/Maquinas/1. Easy/46. Tech_Supp0rt-1/0. Tech_Supp0rt-1.md": {
     "modified": "2026-05-16T01:53:02",
     "hash": "4939e754319d1b5cf8797ff50722d93f84051a498b7aae17ec3f242973b93ec4"
+  },
+  "THM/Maquinas/1. Easy/48. Gallery/1. Introduction.md": {
+    "modified": "2026-05-17T01:55:49",
+    "hash": "085f5e4a78d64838d89894c7f3a49617aba69b6bc5ad4148cc64ec8b5cef925c"
+  },
+  "THM/Maquinas/1. Easy/48. Gallery/0. Gallery.md": {
+    "modified": "2026-05-17T01:55:49",
+    "hash": "c6b6e6ecd700a9b62963c2bd3828312d8d16930cbc5ec9be2340fddafbf53b3d"
+  },
+  "THM/Maquinas/1. Easy/48. Gallery/2. Getting the Flags.md": {
+    "modified": "2026-05-17T01:55:49",
+    "hash": "0be789c5762c203b0bcd85eac80e0b7998cfc1272a0db70d319268aa16f672b1"
+  },
+  "THM/Maquinas/1. Easy/47. Team/1. Introduction.md": {
+    "modified": "2026-05-17T01:55:49",
+    "hash": "208e4af8c41fcf0fc93bbad84560e5c9730b5addafc681da7f0ad1c485d95045"
+  },
+  "THM/Maquinas/1. Easy/47. Team/0. Team.md": {
+    "modified": "2026-05-17T01:55:49",
+    "hash": "813fdb8513af2c4a4cecb357a69f3de6ace1dcec0b531f168588d62cd102efa4"
+  },
+  "THM/Maquinas/1. Easy/47. Team/2. Getting the Flags.md": {
+    "modified": "2026-05-17T01:55:49",
+    "hash": "014f25b5d6978d8df6148e39131c007c58759252a3a5f96d329cca349dfeed3c"
   }
 }

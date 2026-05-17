@@ -10222,6 +10222,42 @@
                   ]
                 },
                 {
+                  "name": "47. Team",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/47. Team/1. Introduction.md",
+                      "parent": "47. Team"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/47. Team/2. Getting the Flags.md",
+                      "parent": "47. Team"
+                    }
+                  ]
+                },
+                {
+                  "name": "48. Gallery",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/48. Gallery/1. Introduction.md",
+                      "parent": "48. Gallery"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/48. Gallery/2. Getting the Flags.md",
+                      "parent": "48. Gallery"
+                    }
+                  ]
+                },
+                {
                   "name": "5. Brooklyn Nine Nine",
                   "type": "directory",
                   "contents": [
