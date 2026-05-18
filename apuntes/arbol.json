@@ -10258,6 +10258,24 @@
                   ]
                 },
                 {
+                  "name": "49. Checkmate",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/49. Checkmate/1. Introduction.md",
+                      "parent": "49. Checkmate"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/49. Checkmate/2. Getting the Flags.md",
+                      "parent": "49. Checkmate"
+                    }
+                  ]
+                },
+                {
                   "name": "5. Brooklyn Nine Nine",
                   "type": "directory",
                   "contents": [

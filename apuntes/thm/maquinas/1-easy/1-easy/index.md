@@ -51,4 +51,5 @@ title: "1. Easy"
 46. [0. Tech_Supp0rt-1](/apuntes/thm/maquinas/1-easy/46-tech_supp0rt-1/0-tech_supp0rt-1/)
 47. [0. Team](/apuntes/thm/maquinas/1-easy/47-team/0-team/)
 48. [0. Gallery](/apuntes/thm/maquinas/1-easy/48-gallery/0-gallery/)
-49. 
+49. [0. Checkmate](/apuntes/thm/maquinas/1-easy/49-checkmate/0-checkmate/)
+50. 

@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-05-17T01:55:49",
-    "hash": "f249c628572d5023b3c15e9b45e55911651e7bc5ca3fcf9508315f65ea0568b8"
+    "modified": "2026-05-18T02:06:55",
+    "hash": "844a92a0b6c5535ac8e615680d62f1f6e8f6b1d885fd73abf02b2876fe6253e0"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -5980,8 +5980,8 @@
     "hash": "0cade608c24b3d299d3ac84a5079cb270da3a4d881ae8d92466d27f9056b6b9a"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/6. Advanced C2 Setups.md": {
-    "modified": "2026-05-17T01:55:49",
-    "hash": "ec2d8568ebf9a6481e2ce61910a104e5298e21d1e9a089a783c341717c4644ce"
+    "modified": "2026-05-18T02:06:55",
+    "hash": "fbed298739fbc16ec071dba2e6e918c1e768e02b89d5ddbc47b8449aa01823e0"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/1. Red Team Fundamentals/5. Intro to C2/2. Common C2 Frameworks.md": {
     "modified": "2026-05-14T02:01:20",
@@ -7266,5 +7266,17 @@
   "THM/Maquinas/1. Easy/47. Team/2. Getting the Flags.md": {
     "modified": "2026-05-17T01:55:49",
     "hash": "014f25b5d6978d8df6148e39131c007c58759252a3a5f96d329cca349dfeed3c"
+  },
+  "THM/Maquinas/1. Easy/49. Checkmate/1. Introduction.md": {
+    "modified": "2026-05-18T02:06:55",
+    "hash": "9f902639e1c9ac7ea67e46e39ff804aa8cb867c922b53a7bb4f051feb0a1b73c"
+  },
+  "THM/Maquinas/1. Easy/49. Checkmate/0. Checkmate.md": {
+    "modified": "2026-05-18T02:06:55",
+    "hash": "f466c793fecd2f1b328ed845ebb2ef0f67dfb883dd3dd59f29ba22092f246f00"
+  },
+  "THM/Maquinas/1. Easy/49. Checkmate/2. Getting the Flags.md": {
+    "modified": "2026-05-18T02:06:55",
+    "hash": "bf31f6895b74c9f3a50b46a6bf8e81f7a0315101562180ea763d41f6d2e2abfe"
   }
 }
