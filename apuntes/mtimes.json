@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "59c8883f397a1ffd16a6edac1190c8fb7895cf58a5798e42db728d39d9c554a7"
+    "modified": "2026-05-20T02:04:58",
+    "hash": "bbf4fa2bb969d41309a89d6160db12107988fa7a7cc06c0557929d7895bd1572"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -5316,8 +5316,8 @@
     "hash": "cd021674922eb19c465a46d1d8b700bd6c4017380b9b989883c2f2795f181db9"
   },
   "THM/Maquinas/1. Easy/15. Agent Sudo/0. Agent Sudo.md": {
-    "modified": "2026-03-13T01:05:53",
-    "hash": "a2b537270f0db38f1f0a4fea512e927ad479f15fdb6ae238c5040a690f4b82ab"
+    "modified": "2026-05-20T02:04:58",
+    "hash": "48bf2d8810e3fd9a061235812d3dbbb56d0581d45f69c6da67ce26cbf0e24d9c"
   },
   "THM/Maquinas/1. Easy/15. Agent Sudo/3. Hash Cracking and Brute Force.md": {
     "modified": "2026-03-13T01:05:53",
@@ -6172,16 +6172,16 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/2. Taxonomy of Reconnaissance.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-20T02:04:58",
+    "hash": "9759e7aff1538c037cabd8f2a8763a6e4a1fef1228822ff13c749af9a182d743"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/7. Maltego.md": {
     "modified": "2026-04-28T01:49:27",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/3. Built-in Tools.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-20T02:04:58",
+    "hash": "6ef0fa1a34cc5b3206c719cfa7a09eb1a5b5b4121871fae8699d8b3baf910577"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/8. Summary.md": {
     "modified": "2026-04-28T01:49:27",
@@ -6196,8 +6196,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/1. Introduction.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-20T02:04:58",
+    "hash": "8ad27baca10de436c20c8234f9ac67ee7429e61873acc57f248a3d198fa885c7"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/5. Specialized Search Engines.md": {
     "modified": "2026-04-28T01:49:27",
@@ -7278,5 +7278,29 @@
   "THM/Maquinas/1. Easy/49. Checkmate/2. Getting the Flags.md": {
     "modified": "2026-05-18T02:06:55",
     "hash": "bf31f6895b74c9f3a50b46a6bf8e81f7a0315101562180ea763d41f6d2e2abfe"
+  },
+  "THM/Maquinas/2. Medium/17. GoldenEye/1. Introduction.md": {
+    "modified": "2026-05-20T02:04:58",
+    "hash": "84d6a2f0c25c4f0240fc54b5c477b7ad643a2af689ed4700287a9f42c4a007de"
+  },
+  "THM/Maquinas/2. Medium/17. GoldenEye/3. It's mail time....md": {
+    "modified": "2026-05-20T02:04:58",
+    "hash": "9add21bc4c49bb0a39926b8e2131e37c68b9c2ae7b283e6a065b67e7276b6ba3"
+  },
+  "THM/Maquinas/2. Medium/17. GoldenEye/5. Privilege Escalation.md": {
+    "modified": "2026-05-20T02:04:58",
+    "hash": "ce7331e23a9286e98651f9a6ec4389da40485df7b0e2aa04c8394a529478ba8a"
+  },
+  "THM/Maquinas/2. Medium/17. GoldenEye/2. Intro and Enumeration.md": {
+    "modified": "2026-05-20T02:04:58",
+    "hash": "a58092d1d6ec95c1ee9331be0bf7fbc1ba5a71523e4324a78668f883e40baefb"
+  },
+  "THM/Maquinas/2. Medium/17. GoldenEye/0. GoldenEye.md": {
+    "modified": "2026-05-20T02:04:58",
+    "hash": "669cde3871d93dc49e3026bc4f8a2d90926bd8a3fea1b73dcc4b1841f0d1d1c4"
+  },
+  "THM/Maquinas/2. Medium/17. GoldenEye/4. GoldenEye Operators Training.md": {
+    "modified": "2026-05-20T02:04:58",
+    "hash": "025d028051c828c8dce90a467d8c99e2a38ac519df34804023d662c024b0d326"
   }
 }

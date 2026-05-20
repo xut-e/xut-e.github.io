@@ -1,0 +1,50 @@
+---
+layout: apunte
+title: "5. Privilege Escalation"
+---
+
+En esta última parte del reto nos piden resolver las siguientes cuestiones:
+
+1. ¿Cuál es la versión del kernel?
+
+Para esto usamos el comando `uname -a`.
+
+!**Pasted image 20260519202611.png**
+
+2. ¿Cuál es la flag de root?
+
+Siguiendo nuestra checklist, vemos que hay un exploit del kernel para este.
+
+!**Pasted image 20260519202750.png**
+
+Nos descargamos el exploit y lo servimos.
+
+!**Pasted image 20260519203243.png**
+
+Y ahora desde la máquina víctima lo descargamos.
+
+!**Pasted image 20260519203313.png**
+
+Y lo ejecutamos.
+
+!**Pasted image 20260519203816.png**
+
+Nos da problemas porque no encuentra `gcc`.
+
+!**Pasted image 20260519203917.png**
+
+Sin embargo, `clang` sí que está instalado, usaremos este. Modificamos el exploit sustituyendo gcc por clang. Utilizamos este comando para ello.
+
+!**Pasted image 20260519204134.png**
+
+Y lo volvemos a subir.
+
+!**Pasted image 20260519204444.png**
+
+Y ahora leemos la flag.
+
+!**Pasted image 20260519204539.png**
+
+Vamos a donde nos dicen.
+
+!**Pasted image 20260519204615.png**

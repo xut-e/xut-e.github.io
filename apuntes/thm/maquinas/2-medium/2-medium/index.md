@@ -19,4 +19,5 @@ title: "2. Medium"
 14. **Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify**
 15. **Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell**
 16. **Ciberseguridad/THM/Maquinas/2. Medium/16. Juicy/0. Juicy**
-17. 
+17. [0. GoldenEye](/apuntes/thm/maquinas/2-medium/17-goldeneye/0-goldeneye/)
+18. 

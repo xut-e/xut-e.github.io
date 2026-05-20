@@ -1,0 +1,52 @@
+---
+layout: apunte
+title: "3. It's mail time..."
+---
+
+Vamos ahora con la segunda parte del reto. En esta se nos dan otra serie de preguntas a resolver.
+
+Si iniciamos sesión en el directorio del login que nos dieron con las credenciales que obtuvimos ganamos acceso a esto:
+
+!**Pasted image 20260519172740.png**
+
+1. Si las credenciales que has obtenido no funcionan (en otros servicios), ¿puedes usar otro programa para encontrar otros usuarios y contraseñas? ¿Puede que Hydra? ¿Cuál es su nueva contraseña?
+
+!**Pasted image 20260519172948.png**
+
+Parece que `boris` cambió su contraseña. Vamos a ver si podemos hacer fuerza bruta con Hydra.
+
+Después de mucho rato probando con `hydra` y que no funcionara, me cansé y decidir probar con otras herramientas que no conocía: `medusa` y `ncrack`. Medusa fue mucho más rápida que las otras dos pero los resultados no aparecen como en `hydra` sino que tienes que buscarlos.
+
+!**Pasted image 20260519185542.png**
+
+2. Inspecciona el puerto 55007, ¿qué servicio está configurado para usar este puerto?
+
+Vamos a iniciar sesión y a ver lo que hay dentro.
+
+!**Pasted image 20260519185916.png**
+!**Pasted image 20260519185930.png**
+
+3. ¿Qué puedes encontrar en este servicio?
+
+Podemos encontrar emails.
+
+4. ¿Qué usuario puede romper los códigos de Boris?
+
+Esto lo vimos en el script de la primera parte del reto. Pero se vuelve a repetir, es Natalya.
+
+Después de todo este proceso hemos obtenido una lista de posibles nombres:
+
+- boris
+- natalya
+- root
+- alec
+- xenia
+- janus
+
+Vamos a hacer una lista con esos nombres y a intentar conseguir sus credenciales.
+
+!**Pasted image 20260519191028.png**
+
+Por algún motivo que desconozco `hydra` volvió a funcionar, y no seré yo el que se niegue a usarla xD. Vamos a entrar al correo de `natalya`.
+
+!**Pasted image 20260519191408.png**

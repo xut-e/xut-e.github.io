@@ -10528,6 +10528,42 @@
                   ]
                 },
                 {
+                  "name": "17. GoldenEye",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/17. GoldenEye/1. Introduction.md",
+                      "parent": "17. GoldenEye"
+                    },
+                    {
+                      "name": "2. Intro and Enumeration.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/17. GoldenEye/2. Intro and Enumeration.md",
+                      "parent": "17. GoldenEye"
+                    },
+                    {
+                      "name": "3. It's mail time....md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/17. GoldenEye/3. It's mail time....md",
+                      "parent": "17. GoldenEye"
+                    },
+                    {
+                      "name": "4. GoldenEye Operators Training.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/17. GoldenEye/4. GoldenEye Operators Training.md",
+                      "parent": "17. GoldenEye"
+                    },
+                    {
+                      "name": "5. Privilege Escalation.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/17. GoldenEye/5. Privilege Escalation.md",
+                      "parent": "17. GoldenEye"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Net Sec Challenge",
                   "type": "directory",
                   "contents": [

@@ -828,6 +828,30 @@
     "path": "/apuntes/thm/maquinas/2-medium/4-rabbit-store/2-finding-the-flags/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/17-goldeneye/1-introduction/"
+  },
+  {
+    "title": "3. It's mail time...",
+    "path": "/apuntes/thm/maquinas/2-medium/17-goldeneye/3-it-s-mail-time/"
+  },
+  {
+    "title": "5. Privilege Escalation",
+    "path": "/apuntes/thm/maquinas/2-medium/17-goldeneye/5-privilege-escalation/"
+  },
+  {
+    "title": "2. Intro and Enumeration",
+    "path": "/apuntes/thm/maquinas/2-medium/17-goldeneye/2-intro-and-enumeration/"
+  },
+  {
+    "title": "0. GoldenEye",
+    "path": "/apuntes/thm/maquinas/2-medium/17-goldeneye/0-goldeneye/"
+  },
+  {
+    "title": "4. GoldenEye Operators Training",
+    "path": "/apuntes/thm/maquinas/2-medium/17-goldeneye/4-goldeneye-operators-training/"
+  },
+  {
     "title": "1. Getting the Flags",
     "path": "/apuntes/thm/maquinas/2-medium/8-injectics/1-getting-the-flags/"
   },
