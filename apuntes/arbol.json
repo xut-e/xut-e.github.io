@@ -10294,6 +10294,24 @@
                   ]
                 },
                 {
+                  "name": "50. Anonforce",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/50. Anonforce/1. Introduction.md",
+                      "parent": "50. Anonforce"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/50. Anonforce/2. Getting the Flags.md",
+                      "parent": "50. Anonforce"
+                    }
+                  ]
+                },
+                {
                   "name": "6. TakeOver",
                   "type": "directory",
                   "contents": [

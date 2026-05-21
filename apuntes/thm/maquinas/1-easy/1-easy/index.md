@@ -52,4 +52,5 @@ title: "1. Easy"
 47. [0. Team](/apuntes/thm/maquinas/1-easy/47-team/0-team/)
 48. [0. Gallery](/apuntes/thm/maquinas/1-easy/48-gallery/0-gallery/)
 49. [0. Checkmate](/apuntes/thm/maquinas/1-easy/49-checkmate/0-checkmate/)
-50. 
+50. [0. Anonforce](/apuntes/thm/maquinas/1-easy/50-anonforce/0-anonforce/)
+51. 

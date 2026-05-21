@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-05-18T02:06:55",
-    "hash": "844a92a0b6c5535ac8e615680d62f1f6e8f6b1d885fd73abf02b2876fe6253e0"
+    "modified": "2026-05-21T02:04:45",
+    "hash": "498afbbaa0838232688ff6d963a0551902fe1e1215ac26f409f4a6429b71aa31"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -6204,8 +6204,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/4. Advanced Searching.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-21T02:04:45",
+    "hash": "1bf18fe99d626df51843584f25c1f41f9d720611b40d27e5759a2e5164fb8dd6"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/0. Phishing.md": {
     "modified": "2026-04-28T01:49:27",
@@ -7302,5 +7302,17 @@
   "THM/Maquinas/2. Medium/17. GoldenEye/4. GoldenEye Operators Training.md": {
     "modified": "2026-05-20T02:04:58",
     "hash": "025d028051c828c8dce90a467d8c99e2a38ac519df34804023d662c024b0d326"
+  },
+  "THM/Maquinas/1. Easy/50. Anonforce/1. Introduction.md": {
+    "modified": "2026-05-21T02:04:45",
+    "hash": "619efcce5bed47e039f7b4ff607cf9c1d560306cb569677cb8f10a7942db904e"
+  },
+  "THM/Maquinas/1. Easy/50. Anonforce/0. Anonforce.md": {
+    "modified": "2026-05-21T02:04:45",
+    "hash": "2881a2e6433f0a0f364aa2277f26c6bc2cdf8a65090757cce89e20536a86fd3e"
+  },
+  "THM/Maquinas/1. Easy/50. Anonforce/2. Getting the Flags.md": {
+    "modified": "2026-05-21T02:04:45",
+    "hash": "5342c68c51fc2776397dc7e9095eb8e222cec8a95485c5cbc86545d2640c63e9"
   }
 }
