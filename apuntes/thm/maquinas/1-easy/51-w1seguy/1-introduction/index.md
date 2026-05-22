@@ -1,0 +1,8 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260521165318.png**
+
+Una vez un hombre sabio ijo: "La respuesta es tan plana como el dia (the answer is usually as plain as day)".

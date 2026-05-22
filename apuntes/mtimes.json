@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-05-21T02:04:45",
-    "hash": "498afbbaa0838232688ff6d963a0551902fe1e1215ac26f409f4a6429b71aa31"
+    "modified": "2026-05-22T02:06:59",
+    "hash": "4b6f9611a9764d76bcd139d60d910847692ae6f9498b93665f5e5fa862069e0c"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -6200,8 +6200,8 @@
     "hash": "8ad27baca10de436c20c8234f9ac67ee7429e61873acc57f248a3d198fa885c7"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/5. Specialized Search Engines.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-22T02:06:59",
+    "hash": "eae50f31f17b2c063a338b106884c4eee8e5645f1fa3174a2d3ade23ba5e8109"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/4. Advanced Searching.md": {
     "modified": "2026-05-21T02:04:45",
@@ -7314,5 +7314,17 @@
   "THM/Maquinas/1. Easy/50. Anonforce/2. Getting the Flags.md": {
     "modified": "2026-05-21T02:04:45",
     "hash": "5342c68c51fc2776397dc7e9095eb8e222cec8a95485c5cbc86545d2640c63e9"
+  },
+  "THM/Maquinas/1. Easy/51. W1seGuy/1. Introduction.md": {
+    "modified": "2026-05-22T02:06:59",
+    "hash": "e33aa1e280e00c6b6f8630cc0c988dcf819f3c4d020f1929366a45b4e117b6b6"
+  },
+  "THM/Maquinas/1. Easy/51. W1seGuy/2. Getting the Flags.md": {
+    "modified": "2026-05-22T02:06:59",
+    "hash": "7a0267bd8906aa0ce2181eaa3e30ff19340a76761c9fc1399289f041b05dc31b"
+  },
+  "THM/Maquinas/1. Easy/51. W1seGuy/0. W1seGuy.md": {
+    "modified": "2026-05-22T02:06:59",
+    "hash": "597b5b544a76aef022dba52d9514641e7a925b3e9c24e2cef0557dc273a86d72"
   }
 }

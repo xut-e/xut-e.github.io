@@ -53,4 +53,5 @@ title: "1. Easy"
 48. [0. Gallery](/apuntes/thm/maquinas/1-easy/48-gallery/0-gallery/)
 49. [0. Checkmate](/apuntes/thm/maquinas/1-easy/49-checkmate/0-checkmate/)
 50. [0. Anonforce](/apuntes/thm/maquinas/1-easy/50-anonforce/0-anonforce/)
-51. 
+51. [0. W1seGuy](/apuntes/thm/maquinas/1-easy/51-w1seguy/0-w1seguy/)
+52. 

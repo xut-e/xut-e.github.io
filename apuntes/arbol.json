@@ -10312,6 +10312,24 @@
                   ]
                 },
                 {
+                  "name": "51. W1seGuy",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/51. W1seGuy/1. Introduction.md",
+                      "parent": "51. W1seGuy"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/51. W1seGuy/2. Getting the Flags.md",
+                      "parent": "51. W1seGuy"
+                    }
+                  ]
+                },
+                {
                   "name": "6. TakeOver",
                   "type": "directory",
                   "contents": [

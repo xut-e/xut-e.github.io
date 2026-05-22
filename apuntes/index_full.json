@@ -76,8 +76,8 @@
     "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
     "breadcrumb": "THM > Maquinas > 1. Easy",
-    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26. [[0. CTF collection Vol. 1]]\n27. [[0. Chill Hack]]\n28. [[0. Year of the Rabbit]]\n29. [[0. Lian_Yu]]\n30. [[0. Fowsniff CTF]]\n31. [[0. Easy Peasy]]\n32. [[0. Chocolate Factory]]\n33. [[0. Source]]\n34. [[0. Neighbour]]\n35. [[0. Agent T]]\n36. [[0. Poster]]\n37. [[0. VulnNet - Internal]]\n38. [[0. ColddBox - Easy]]\n39. [[0. Corridor]]\n40. [[0. Archangel]]\n41. [[0. Dig Dug]]\n42. [[Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT]]\n43. [[Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT]]\n44. [[0. Mustacchio]]\n45. [[0. Smart Grotto]]\n46. [[0. Tech_Supp0rt-1]]\n47. [[0. Team]]\n48. [[0. Gallery]]\n49. [[0. Checkmate]]\n50. [[0. Anonforce]]\n51.",
-    "modified": "2026-05-21T02:04:45"
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26. [[0. CTF collection Vol. 1]]\n27. [[0. Chill Hack]]\n28. [[0. Year of the Rabbit]]\n29. [[0. Lian_Yu]]\n30. [[0. Fowsniff CTF]]\n31. [[0. Easy Peasy]]\n32. [[0. Chocolate Factory]]\n33. [[0. Source]]\n34. [[0. Neighbour]]\n35. [[0. Agent T]]\n36. [[0. Poster]]\n37. [[0. VulnNet - Internal]]\n38. [[0. ColddBox - Easy]]\n39. [[0. Corridor]]\n40. [[0. Archangel]]\n41. [[0. Dig Dug]]\n42. [[Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT]]\n43. [[Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT]]\n44. [[0. Mustacchio]]\n45. [[0. Smart Grotto]]\n46. [[0. Tech_Supp0rt-1]]\n47. [[0. Team]]\n48. [[0. Gallery]]\n49. [[0. Checkmate]]\n50. [[0. Anonforce]]\n51. [[0. W1seGuy]]\n52.",
+    "modified": "2026-05-22T02:06:59"
   },
   {
     "title": "4. Insane",
@@ -774,6 +774,30 @@
     "breadcrumb": "THM > Maquinas > 1. Easy > 33. Source",
     "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/33. Source/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/33. Source/2. Getting the Flags]]",
     "modified": "2026-04-03T01:15:58"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/51-w1seguy/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/51. W1seGuy/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 51. W1seGuy",
+    "content": "![[Pasted image 20260521165318.png]]\n\nUna vez un hombre sabio ijo: \"La respuesta es tan plana como el dia (the answer is usually as plain as day)\".",
+    "modified": "2026-05-22T02:06:59"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/51-w1seguy/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/51. W1seGuy/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 51. W1seGuy",
+    "content": "Nos dan un archivo con un código fuente para revisar y nos piden encontrar las dos flags.",
+    "modified": "2026-05-22T02:06:59"
+  },
+  {
+    "title": "0. W1seGuy",
+    "path": "/apuntes/thm/maquinas/1-easy/51-w1seguy/0-w1seguy/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/51. W1seGuy/0. W1seGuy.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 51. W1seGuy",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/51. W1seGuy/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/51. W1seGuy/2. Getting the Flags]]",
+    "modified": "2026-05-22T02:06:59"
   },
   {
     "title": "6. QRrrrr",
@@ -5076,8 +5100,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/5-specialized-search-engines/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/5. Specialized Search Engines.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 2. Initial Access > 1. Red Team Recon",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "<h2>WHOIS y DNS</h2>\nMás allá de las herramientas estándar WHOIS y DNS query que ya hemos cubierto, hay terceros que ofrecen servicios pagados históricos de información WHOIS. Un ejemplo es el historial WHOIS, el cual ofrece un historial de información WHOIS que puede ser de ayuda si el registrador del dominio no usó privacidad WHOIS cuando lo creó.\n\nHay muchas webs que ofrecen servicios DNS avanzados que son gratis. Algunos de estos ofrecen funcionalidades ricas. Por ahora nos enfocaremos en los aspectos clave de DNS. Consideraremos los siguientes:\n\n- [ViewDNS.info](https://viewdns.info/)\n- [Threat Intelligence Platform](https://threatintelligenceplatform.com/)\n\n---------------------------------------\n<h2>ViewDNS.info</h2>\nViewDNS.info ofrece in Reverse IP Lookup (consulta reversa de IP). Inicialmente, cada servidor usaría una o más direcciones IP; sin embargo, hoy es común encontrarse con servidores que comparten IP. Con el hosting compartido, una dirección IP es compartida entre muchos servidores web diferentes con diferentes nombres. Con reverse IP lookup, comenzando por un dominio o dirección IP, puedes encontrar otros nombres de dominio que usan la misma IP.\n\nEn la imagen de abajo, hemos usado reverse IP lookup para encontrar otros servidores que comparten la misma dirección IP que `cafe.thmredteam.com`. Por eso, es importante anotar que saber la dirección IP puede no llevar sólo a una única web.\n\n![[Pasted image 20260521104707.png]]\n\n-----------------------------------\n<h2>Threat Intelligence Platform</h2>\nThreat Intelligence Platform requiere que des un nombre de dominio o una dirección IP, y lanzará una serie de tests desde comprobaciones de malware a queries WHOIS y DNS. Los resultados WHOIS y DNS son similares a los resultados que obtendríamos usando `whois` y `dig`, pero presenta los resultados en un formato más legible. Hay información extra que obtenemos con nuestro reporte. Por ejemplo, después de mirar `thmredteam.com`, vemos que los registros NS fueron resueltos a sus direcciones IPv4 e IPv6 respectivas como se muestra en la imagen debajo.\n\n![[Pasted image 20260521105122.png]]\n\nPor otro lado, cuando buscamos por `cafe.thmredteam.com`, también podríamos obtener una lista de otros dominios en la misma IP. El resultado que vemos en la imagen de abajo es similar a los resultados obtenidos usando ViewDNS.info.\n\n![[Pasted image 20260521105227.png]]\n\n-----------------------------------------------\n<h2>Motores de Búsqueda Especializados</h2>\n<h3>Censys</h3>\n[Censys Search](https://search.censys.io/) puede ofrecer un montón de información sobre las direcciones IP y dominios. En este ejemplo, miramos una de las direcciones IP a las que `cafe.thmredteam.com` resuelve. Podemos fácilmente inferir que la dirección IP que hemos mirado pertenece a Cloudflare. Podemos ver información relacionada a los puertos 80 y 443. Sin embargo no está claro que esta IP sea usada para otros servidores web más allá de `cafe.thmredteam.com`. \n\n![[Pasted image 20260521105527.png]]\n\n<h3>Shodan</h3>\nPuede que recuerdes haber usado [Shodan](https://www.shodan.io/). En esta sección veremos cómo usar Shodan desde la línea de comandos.\n\nPara usar Shodan desde la CLI, necesitamos crear una cuenta en Shodan y configurar `shodan` para que use nuestra clave API usando el comando: \n\n```bash\nshodan init API_KEY\n```\n\nPodemos usar diferentes filtros dependiendo de nuestro tipo de cuenta de Shodan. Para saber más sobre qué puedes hacer con `shodan`, visita [Shodan CLI](https://cli.shodan.io/). Demostraremos un ejemplo simple de mirar información sobre una de las IPs que tenemos `nslooup cafe.thmredteam.com`. Usando `shodan host IP_ADDRESS`, podemos situarla geográficamente y obtener los puertos abiertos, como se muestra debajo.\n\n```bash\npentester@TryHackMe$ shodan host 172.67.212.249\n\n172.67.212.249\nCity:                    San Francisco\nCountry:                 United States\nOrganisation:            Cloudflare, Inc.\nUpdated:                 2021-11-22T05:55:54.787113\nNumber of open ports:    5\n\nPorts:\n     80/tcp  \n    443/tcp  \n\t|-- SSL Versions: -SSLv2, -SSLv3, -TLSv1, -TLSv1.1, TLSv1.2, TLSv1.3\n   2086/tcp  \n   2087/tcp  \n   8080/tcp \n```",
+    "modified": "2026-05-22T02:06:59"
   },
   {
     "title": "4. Advanced Searching",

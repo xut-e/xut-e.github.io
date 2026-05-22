@@ -3,3 +3,66 @@ layout: apunte
 title: "5. Specialized Search Engines"
 ---
 
+<h2>WHOIS y DNS</h2>
+Más allá de las herramientas estándar WHOIS y DNS query que ya hemos cubierto, hay terceros que ofrecen servicios pagados históricos de información WHOIS. Un ejemplo es el historial WHOIS, el cual ofrece un historial de información WHOIS que puede ser de ayuda si el registrador del dominio no usó privacidad WHOIS cuando lo creó.
+
+Hay muchas webs que ofrecen servicios DNS avanzados que son gratis. Algunos de estos ofrecen funcionalidades ricas. Por ahora nos enfocaremos en los aspectos clave de DNS. Consideraremos los siguientes:
+
+- [ViewDNS.info](https://viewdns.info/)
+- [Threat Intelligence Platform](https://threatintelligenceplatform.com/)
+
+---------------------------------------
+<h2>ViewDNS.info</h2>
+ViewDNS.info ofrece in Reverse IP Lookup (consulta reversa de IP). Inicialmente, cada servidor usaría una o más direcciones IP; sin embargo, hoy es común encontrarse con servidores que comparten IP. Con el hosting compartido, una dirección IP es compartida entre muchos servidores web diferentes con diferentes nombres. Con reverse IP lookup, comenzando por un dominio o dirección IP, puedes encontrar otros nombres de dominio que usan la misma IP.
+
+En la imagen de abajo, hemos usado reverse IP lookup para encontrar otros servidores que comparten la misma dirección IP que `cafe.thmredteam.com`. Por eso, es importante anotar que saber la dirección IP puede no llevar sólo a una única web.
+
+!**Pasted image 20260521104707.png**
+
+-----------------------------------
+<h2>Threat Intelligence Platform</h2>
+Threat Intelligence Platform requiere que des un nombre de dominio o una dirección IP, y lanzará una serie de tests desde comprobaciones de malware a queries WHOIS y DNS. Los resultados WHOIS y DNS son similares a los resultados que obtendríamos usando `whois` y `dig`, pero presenta los resultados en un formato más legible. Hay información extra que obtenemos con nuestro reporte. Por ejemplo, después de mirar `thmredteam.com`, vemos que los registros NS fueron resueltos a sus direcciones IPv4 e IPv6 respectivas como se muestra en la imagen debajo.
+
+!**Pasted image 20260521105122.png**
+
+Por otro lado, cuando buscamos por `cafe.thmredteam.com`, también podríamos obtener una lista de otros dominios en la misma IP. El resultado que vemos en la imagen de abajo es similar a los resultados obtenidos usando ViewDNS.info.
+
+!**Pasted image 20260521105227.png**
+
+-----------------------------------------------
+<h2>Motores de Búsqueda Especializados</h2>
+<h3>Censys</h3>
+[Censys Search](https://search.censys.io/) puede ofrecer un montón de información sobre las direcciones IP y dominios. En este ejemplo, miramos una de las direcciones IP a las que `cafe.thmredteam.com` resuelve. Podemos fácilmente inferir que la dirección IP que hemos mirado pertenece a Cloudflare. Podemos ver información relacionada a los puertos 80 y 443. Sin embargo no está claro que esta IP sea usada para otros servidores web más allá de `cafe.thmredteam.com`. 
+
+!**Pasted image 20260521105527.png**
+
+<h3>Shodan</h3>
+Puede que recuerdes haber usado [Shodan](https://www.shodan.io/). En esta sección veremos cómo usar Shodan desde la línea de comandos.
+
+Para usar Shodan desde la CLI, necesitamos crear una cuenta en Shodan y configurar `shodan` para que use nuestra clave API usando el comando: 
+
+```bash
+shodan init API_KEY
+```
+
+Podemos usar diferentes filtros dependiendo de nuestro tipo de cuenta de Shodan. Para saber más sobre qué puedes hacer con `shodan`, visita [Shodan CLI](https://cli.shodan.io/). Demostraremos un ejemplo simple de mirar información sobre una de las IPs que tenemos `nslooup cafe.thmredteam.com`. Usando `shodan host IP_ADDRESS`, podemos situarla geográficamente y obtener los puertos abiertos, como se muestra debajo.
+
+```bash
+pentester@TryHackMe$ shodan host 172.67.212.249
+
+172.67.212.249
+City:                    San Francisco
+Country:                 United States
+Organisation:            Cloudflare, Inc.
+Updated:                 2021-11-22T05:55:54.787113
+Number of open ports:    5
+
+Ports:
+     80/tcp  
+    443/tcp  
+	|-- SSL Versions: -SSLv2, -SSLv3, -TLSv1, -TLSv1.1, TLSv1.2, TLSv1.3
+   2086/tcp  
+   2087/tcp  
+   8080/tcp 
+```
+
