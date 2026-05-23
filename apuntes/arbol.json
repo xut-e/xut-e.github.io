@@ -7575,12 +7575,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/7. Maltego.md",
                               "parent": "1. Red Team Recon"
-                            },
-                            {
-                              "name": "8. Summary.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/8. Summary.md",
-                              "parent": "1. Red Team Recon"
                             }
                           ]
                         },

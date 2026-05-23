@@ -10,4 +10,3 @@ title: "0. Red Team Recon"
 [5. Specialized Search Engines](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/5-specialized-search-engines/)
 [6. Recon-ng](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/6-recon-ng/)
 [7. Maltego](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/1-red-team-recon/7-maltego/)
-**Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/1. Red Team Recon/8. Summary**
