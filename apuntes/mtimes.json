@@ -6088,8 +6088,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/0. Weaponization.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "5cde41b5e2b0a2c9104bf51029ef3552300287fc8639a6fe16dc8a14a2cc7544"
+    "modified": "2026-05-28T01:53:23",
+    "hash": "f2af670b8141cba22813020f92cd99e39fec1fb3a02c6a8a764714f2abccf43a"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/9. Practice Arena.md": {
     "modified": "2026-04-28T01:49:27",
@@ -6124,8 +6124,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/1. Introduction.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-05-28T01:53:23",
+    "hash": "71dbdc5a84790f6c58c84548e1a13ee80ebc8b69082477d71b04269b7f7dde06"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/9. Password Spray Attack.md": {
     "modified": "2026-04-28T01:49:27",
@@ -7326,5 +7326,33 @@
   "THM/Maquinas/1. Easy/51. W1seGuy/0. W1seGuy.md": {
     "modified": "2026-05-22T02:06:59",
     "hash": "597b5b544a76aef022dba52d9514641e7a925b3e9c24e2cef0557dc273a86d72"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/3. An HTML Application - HTA.md": {
+    "modified": "2026-05-28T01:53:23",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/8. Practice Arena.md": {
+    "modified": "2026-05-28T01:53:23",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/4. Visual Basic for Application - VBA.md": {
+    "modified": "2026-05-28T01:53:23",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/6. Command And Control - (C2 or C&C).md": {
+    "modified": "2026-05-28T01:53:23",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/7. Delivery Techniques.md": {
+    "modified": "2026-05-28T01:53:23",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/2. Windows Scripting Host - WSH.md": {
+    "modified": "2026-05-28T01:53:23",
+    "hash": "a935be5363b7cc8d4ddc6e68af3a0d67c43dce690cae4dc547628a1cab6a631f"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/5. PowerShell - PSH.md": {
+    "modified": "2026-05-28T01:53:23",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }

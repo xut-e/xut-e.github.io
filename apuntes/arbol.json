@@ -7589,51 +7589,45 @@
                               "parent": "2. Weaponization"
                             },
                             {
-                              "name": "2. Deploy the Windows Machine.md",
+                              "name": "2. Windows Scripting Host - WSH.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/2. Deploy the Windows Machine.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/2. Windows Scripting Host - WSH.md",
                               "parent": "2. Weaponization"
                             },
                             {
-                              "name": "3. Windows Scripting Host - WSH.md",
+                              "name": "3. An HTML Application - HTA.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/3. Windows Scripting Host - WSH.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/3. An HTML Application - HTA.md",
                               "parent": "2. Weaponization"
                             },
                             {
-                              "name": "4. An HTML Application - HTA.md",
+                              "name": "4. Visual Basic for Application - VBA.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/4. An HTML Application - HTA.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/4. Visual Basic for Application - VBA.md",
                               "parent": "2. Weaponization"
                             },
                             {
-                              "name": "5. Visual Basic for Application - VBA.md",
+                              "name": "5. PowerShell - PSH.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/5. Visual Basic for Application - VBA.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/5. PowerShell - PSH.md",
                               "parent": "2. Weaponization"
                             },
                             {
-                              "name": "6. PowerShell - PSH.md",
+                              "name": "6. Command And Control - (C2 or C&C).md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/6. PowerShell - PSH.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/6. Command And Control - (C2 or C&C).md",
                               "parent": "2. Weaponization"
                             },
                             {
-                              "name": "7. Command And Control - (C2 or C&C).md",
+                              "name": "7. Delivery Techniques.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/7. Command And Control - (C2 or C&C).md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/7. Delivery Techniques.md",
                               "parent": "2. Weaponization"
                             },
                             {
-                              "name": "8. Delivery Techniques.md",
+                              "name": "8. Practice Arena.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/8. Delivery Techniques.md",
-                              "parent": "2. Weaponization"
-                            },
-                            {
-                              "name": "9. Practice Arena.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/9. Practice Arena.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/8. Practice Arena.md",
                               "parent": "2. Weaponization"
                             }
                           ]
