@@ -3,3 +3,75 @@ layout: apunte
 title: "4. Visual Basic for Application - VBA"
 ---
 
+VBA significa Visual Basic for Applications, un lenguaje de programación de Microsoft implementado para las aplicaciones Microsoft, como Word, Excel, PowerPoint, etc. La programación VBA permite automatizar tareas de cada interacción de teclado y ratón entre el usuario y aplicaciones de Microsoft Office.
+
+Las macros son las aplicaciones Microsoft Office que contienen código incrustado escrito en un lenguaje de programación conocido como Visual Basic para Aplicaciones (VBA). Es usado para crear funciones personalizadas para acelerar tareas manuales creando procesos automatizados. Una de las funcionalidades de VBA es acceder a la Windows Application Programming Interface (API) y otras funcionalidades de bajo nivel. Para más información sobre VBA, pincha [aquí](https://en.wikipedia.org/wiki/Visual_Basic_for_Applications).
+
+En esta tarea, veremos los básicos de VBA y las formas en las que los adversarios usan las macros para crear documentos Microsoft maliciosos.
+
+Ahora abre Microsoft Word de 2016 desde el menú de inicio. Una vez abierto, cerramos la ventana de clave de producto ya que usaremos la prueba de 7 días.
+
+!**Pasted image 20260601134337.png**
+
+Luego, aceptamos el acuerdo de licencia de Microsoft Office.
+
+!**Pasted image 20260601134401.png**
+
+Ahora creamos un documento en blanco para crear nuestra primera macro. El objetivo es ver lo básico del lenguaje y mostrar cómo ejecutarlo cuando se abre Microsoft Word. Primero necesitamos abrir el editor Visual Basic seleccionando `view` y luego `macros`. La ventana Macros muestra cómo crear nuestra propia macro en el documento.
+
+!**Pasted image 20260601134605.png**
+
+En la sección `Macro name`, elegimos el nombre de nuestra macro como `THM`. Ten en cuenta que tenemos que seleccionar de la lista `Macros in` el `Document 1` y seleccionar `Create`. Luego, el editor de Microsoft Visual Basic for Applications muestra dónde debemos escribir el código VBA. Vamos a intentar enseñar una caja de texto con el mensaje: `Welcome to Weaponization Room!`. Podemos hacer esto usando la función `MsgBox`:
+
+```VBA
+Sub THM()
+  MsgBox ("Welcome to Weaponization Room!")
+End Sub
+```
+
+Finalmente, ejecutamos la macro con `F5` o `Run` y luego `Run Sub/UserForm`.
+
+Ahora para poder ejecutar el código automáticamente una vez que el documento sea abierto, podemos usar las funciones implementadas como `AutoOpen` y `Document_open`. Ten en cuenta que necesitamos especificar el nombre de la función que necesita ser ejecutada una vez el documento se abra, que en nuestro caso es la función `THM`:
+
+```VBA
+Sub Document_Open()
+  THM
+End Sub
+
+Sub AutoOpen()
+  THM
+End Sub
+
+Sub THM()
+   MsgBox ("Welcome to Weaponization Room!")
+End Sub
+```
+
+Es importante tener en cuenta que para hacer que la macro funcione, necesitamos guardarla en formato Macro-Enabled como `.doc` o `docm`. Ahora vamos a guardar el archivo como `Word 97-2003 Template` donde la macro es habilitada yendo a `File` y luego `save DDocument1` y guardándolo como tipo `Word 97-2003 Document` y finalmente `save`.
+
+!**Pasted image 20260601140102.png**
+
+Cerraremos el documento que hemos guardado. Si lo reabrimos, Microsoft Word nos mostrará un mensaje de seguridad diciendo que las macros están deshabilitadas y nos dará la opción de habilitarlas. Las habilitaremos y veremos el resultado.
+
+!**Pasted image 20260601140303.png**
+
+Una vez que hemos hecho click en `Enable Content`, nuestra macro se ejecuta.
+
+!**Pasted image 20260601140325.png**
+
+Ahora editamos el documento de Word para crear una función que ejecute `calc.exe`.
+
+```VBA
+Sub PoC()
+	Dim payload As String
+	payload = "calc.exe"
+	CreateObject("Wscript.Shell").Run payload,0
+End Sub
+```
+
+Para explicar el código en detalle, con `Dim payload As String`, declaramos la variable `payload` como string usando `Dim`. Con `payload = "calc.exe"` estamos especificando el nombre del payload. Y finalmente, con `CreateObject)"Wscript.Shell").Run payload` creamos el objeto WSH y ejecutamos el payload. Ten en cuenta que si queremos renombrar la función, debemos incluir el nombre de la función en `AutoOpen()` y `Document_open()`.
+
+Asegúrate de comprobar tu código antes de guardar el documento usando la función de ejecución. Asegúrate de crear las funciones `AutoOpen()` y `Document_open()` antes de guardar el documento.
+
+!**Pasted image 20260601140805.png**
+
