@@ -3,3 +3,11 @@ layout: apunte
 title: "1. Introduction"
 ---
 
+Esta unidad es una introducción a los tipos y técnicas usadas en los ataques a contraseñas. Veremos las formas de obtener u generar listas de contraseñas personalizadas. Los siguientes son los temas que tocaremos:
+
+- Perfil de contraseñas
+- Técnicas de ataques de contraseñas
+- Ataques de contraseñas online
+
+-----------------------------------
+<h2>¿Qué es una contraseña?</h2>

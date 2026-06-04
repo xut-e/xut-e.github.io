@@ -3,3 +3,29 @@ layout: apunte
 title: "6. Command And Control - (C2 or C&C)"
 ---
 
+Esta tarea introduce un concepto básico de los frameworks de Command and Control (C2) usados en operaciones Red team.
+
+--------------------------------------
+<h2>¿Qué es Command and Control (C2)?</h2>
+Los frameworks C2 son frameworks post-explotación que permiten a los red teamers colaborar y controlar máquinas comprometidas. C2 es considerado una de las herramientas más importantes para los red teamers durante las operaciones ofensivas. Los frameworks C2 ofrecen acercamientos directos y eficaces sobre:
+
+- Generar varios payloads maliciosos.
+- Enumerar las máquinas/redes comprometidas.
+- Realizar escalada de privilegios y pivotaje.
+- Movimiento lateral.
+- Muchas otra cosas.
+
+Algunos frameworks C2 populares son Cobalt Strike, PowerShell Empire, Metasploit... La mayoría de estos frameworks buscan ayudar a un entorno conveniente para compartir y comunicar entre operaciones red team una vez el acceso inicial es ganado al sistema.
+
+-------------------------------
+<h2>Cobalt Strike</h2>
+Cobalt Strike es un framework comercial que se enfoca en simulaciones adversariales y operaciones de red team. Es una combinación de herramientas de acceso remoto, capacidades de post-explotación y un sistema de reporte único. Ofrece un agente con técnicas avanzadas para establecer comunicaciones y realizar varias operaciones, incluyendo key-logging, descarga y subida de archivos, despliegue VPN, técnicas de escalada de privilegios, mimikatz, escaneo de puertos, y los movimientos laterales más avanzados.
+
+----------------------------------
+<h2>PowerShell Empire</h2>
+PowerShell Empire es un framework de código abierto que ayuda a los operadores de red team y a pentesters a colaborar a lo largo de múltiples servidores usando claves y contraseñas compartidas. Es un framework de explotación basado en agentes PowerShell y Python. PowerShell Empire se enfoca en la explotación del lado del cliente y post-explotación del entorno de directorio activo de Windows.
+
+----------------------------------------
+<h2>Metasploit</h2>
+Metasploit es un framework ampliamente usado que ofrece varias técnicas y herramientas para realizar hacking fácilmente. Es un framework de código abierto y es considerado una de las herramientas primarias para el pentesting y las operaciones de red team. Metasploit es una de las herramientas que que usamos en esta unidad para generar payloads para la fase de armamentización.
+

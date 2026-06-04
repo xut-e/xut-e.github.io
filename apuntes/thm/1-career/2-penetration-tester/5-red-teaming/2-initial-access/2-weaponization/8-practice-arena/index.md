@@ -3,3 +3,24 @@ layout: apunte
 title: "8. Practice Arena"
 ---
 
+Nos dicen que hay una máquina Windows que interpreta archivos PS1, DOC y VBS. Además, si recibe un link HTA, entra en dicho enlace.
+
+Vamos a usar la técnica HTA que hemos aprendido esta unidad.
+
+1. Primero creamos el payload malicioso y lo guardamos.
+   !**Pasted image 20260603145622.png**
+2. Luego servimos el archivo.
+   !**Pasted image 20260603145641.png**
+3. Nos ponemos en escucha.
+   !**Pasted image 20260603145701.png**
+4. Introducimos el enlace en la página.
+   !**Pasted image 20260603145730.png**
+5. Recibimos la conexión de descarga.
+   !**Pasted image 20260603145749.png**
+6. Y acto seguido la shell.
+   !**Pasted image 20260603145802.png**
+
+Ahora sólo queda buscar la flag.
+
+!**Pasted image 20260603150017.png**
+
