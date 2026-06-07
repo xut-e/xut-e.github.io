@@ -3,3 +3,125 @@ layout: apunte
 title: "3. Password Profiling 1 - Default, Weak, Leaked, Combined and Username Wordlists"
 ---
 
+Tener un buen diccionario es crítico para la exitosa realización de un ataque de contraseñas. Es importante conocer cómo generar listas de usuarios y listas de contraseñas. En esta sección veremos la creación de listas de usuarios y contraseñas específicamente dirigidas. También cubriremos varios tópicos incluyendo contraseñas por defecto, débiles o filtradas y creando diccionarios personalizados.
+
+----------------------------------
+<h2>Contraseñas por Defecto</h2>
+Antes de realizar ataques de contraseñas, merece la pena intentar un par de contraseñas por defecto en el servicio objetivo. Los fabricantes configuran contraseñas por defecto con productos y equipamiento como switches, firewalls y routers. Estos son escenarios donde los clientes no cambian la contraseña por defecto, lo que hace al sistema vulnerable. Por esto, es buena práctica intentar `admin:admin`, `admin:123456`, etc. Si conocemos el dispositivo que intentamos atacar, podemos buscar sus contraseñas por defecto e intentarlas. Por ejemplo, supón que el servidor objetivo es Tomcat. En dicho caso, hay un par de posibles contraseñas que podríamos probar: `admin:admin` o `tomcat:admin`.
+
+Aquí hay algunas listas que ofrecen contraseñas por defecto para varios dispositivos:
+
+- https://cirt.net/passwords
+- https://default-password.info/
+- https://datarecovery.com/rd/default-passwords/
+
+-----------------------------------
+<h2>Contraseñas Débiles</h2>
+Los profesionales recolectan y generan listas de contraseñas débiles a lo largo del tiempo y las suelen combinar en listas grandes. Estas listas están basadas en su experiencia y lo que ven en los engagements de pentesting. Estas listas también pueden contener contraseñas filtradas que han sigo divulgadas públicamente. Aquí algunas listas de contraseñas débiles comunes:
+
+- https://www.skullsecurity.org/wiki/Passwords - Esta incluye las recopilaciones mejor conocidas de contraseñas.
+- [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords) - Una recopilación gigantesca de todo tipo de listas, no sólo password cracking.
+
+------------------------------------
+<h2>Contraseñas Filtradas</h2>
+La información sensible como las contraseñas o los hashes pueden ser divulgadas públicamente o vendidas como resultado de una brecha de seguridad. Estos leaks disponibles son referidos normalmente como "dumps". Dependiendo del contenido de un dump, un atacante puede requerir extraer contraseñas de la información. En algunos casos, el dump puede sólo contener hashes de las contraseñas y requerir crackeo para ganar las contraseñas en texto plano. Las siguientes son algunas listas de contraseñas débiles y filtradas de compañías incluyendo `webhost`, `elitehacker`, `hak5`, `Hotmail` y `PhpBB`:
+
+- [SecLists/Passwords/Leaked-Databases](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Leaked-Databases)
+
+---------------------------------------
+<h2>Wordlists Combinadas</h2>
+Digamos que tenemos más de una wordlist. Entonces, podemos combinar dichas wordlists en un archivo grande. Esto puede ser hecho de la siguiente manera:
+
+```bash
+cat file1.txt file2.txt file3.txt > combined_list.txt
+```
+
+Para limpiar la lista generada de duplicados, podemos usar `sort` o `uniq`:
+
+```bash
+sort combined_list.txt | uniq -u > cleaned_combined_list.txt
+```
+
+-----------------------------------------
+<h2>Wordlists Personalizadas</h2>
+Personalizar diccionarios es una de las mejores manera de incrementar la probabilidad de encontrar credenciales válidas. Podemos crear estas listas desde la web objetivo. Normalmente, una compañía contiene información útil sobre la compañía y sus empleados, incluyendo emails y nombres. Además, la web puede contener palabras clave específicas de lo que la compañía ofrece, incluyendo productos y servicios, lo que puede ser usado en la contraseña de un usuario.
+
+Herramientas como `Cewl` pueden ser utilizadas para rastrear el sitio web y extraer strings o palabras clave. `Cewl` es una herramienta poderosa para generar una wordlist específica para una compañía u objetivo. Considera el siguiente ejemplo:
+
+```bash
+cewl -w list.txt -d 5 -m 5 http://thm.labs
+```
+
+- `-w` escribe los contenidos al archivo.
+- `-m 5` recopila strings de 5 o más caracteres.
+- `-d 5` es el nivel de profundidad del web crawling (por defecto 2).
+
+Como resultado, deberíamos tener ahora una wordlist de un tamaño decente basado en palabras relevantes para esta compañía en específico, como nombres, localizaciones, y mucha información de negocio. De forma similar, la wordlist creada podría ser usada para fuzzear nombres de usuario.
+
+Aplicamos lo que hemos visto a la URL `https://clinic.thmredteam.com` para parsear la wordlist con una longitud mínima de 8. Esta será usada en una tarea más adelante.
+
+```bash
+cewl -w clinic_thmredteam_list.txt -d 5 -m 8 https://clinic.thmredteam.com
+```
+
+------------------------------------------
+<h2>Wordlists de Nombres de Usuario</h2>
+Conseguir los nombres de los empleados en la fase de reconocimiento es esencial. Podemos generar una lista desde el sitio web del objetivo. Por seguir el siguiente ejemplo, asumiremos que tenemos {nombre}{apellido} (ej: John Smith) y un método para generar los nombres de usuario.
+
+- **{first name}:** `john`
+- **{last name}:** `smith`
+- **{first name}{last name}:** `johnsmith`
+- **{last name}{first name}:** `smithjohn`
+- **Primera letra de {first name}{last name}:** `jsmith`
+- **Primera letra de {last name}{first name}:** `sjohn`
+- **Primera letra de {first name}.{last name}:** `j.smith`
+- **Primera letra de {first name}-{last name}:** `j-smith`
+- Y más.
+
+Por suerte hay una herramienta llamada `username_generator` que podría ayudar a crear una lista de la mayoría de combinaciones posibles si tenemos el nombre y apellido.
+
+```bash
+user@thm$ git clone https://github.com/therodri2/username_generator.git
+Cloning into 'username_generator'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+
+user@thm$ cd username_generator
+```
+
+Usar `python3 username_generator.py -h` muestra el mensaje y argumentos opcionales:
+
+```bash
+user@thm$ python3 username_generator.py -h
+usage: username_generator.py [-h] -w wordlist [-u]
+
+Python script to generate user lists for bruteforcing!
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -w wordlist, --wordlist wordlist
+                        Specify path to the wordlist
+  -u, --uppercase       Also produce uppercase permutations. Disabled by default
+```
+
+Ahora crearemos una lista que contenga el nombre completo John Smith a un archivo de texto. Luego, lo ejecutaremos para generar las combinaciones posibles:
+
+```bash
+user@thm$ echo "John Smith" > users.lst
+user@thm$ python3 username_generator.py -w users.lst
+usage: username_generator.py [-h] -w wordlist [-u]
+john
+smith
+j.smith
+j-smith
+j_smith
+j+smith
+jsmith
+smithjohn
+```
+
+Este es sólo uno de los ejemplo de un generador de nombres de usuario personalizados.
+
