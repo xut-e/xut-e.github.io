@@ -3,3 +3,54 @@ layout: apunte
 title: "5. Offline Attacks - Dictionary and Brute-Force"
 ---
 
+<h2>Ataques de Diccionarios</h2>
+Un ataque de diccionario es una técnica usada para adivinar las contraseñas usando palabras o frases conocidas. Los ataques de diccionarios recaen enteramente en wordlists pre-recogidas que fueron previamente recogidas. Es importante elegir o crear el mejor candidato para tu objetivo para tener éxito en tu ataque. Vamos a explorar la realización de un ataque de diccionario usando lo que hemos aprendido en las tareas anteriores sobre generar wordlists. Realizaremos un ataque de diccionario offline usando `hashcat`.
+
+Digamos que obtenemos el hash `f806fc5a2a0d5ba2471600758452799c`, y queremos realizar un ataque de diccionario para crackearlo. Primero, necesitamos conocer el siguiente mínimo:
+
+1. ¿Qué tipo de hash es?
+2. ¿Qué wordlist usar? ¿O qué tipo de ataque podríamos usar?
+
+Para identificar el tipo de hash, podríamos usar una herramienta como `hashid`, o `hash-identifier`. Para este ejemplo, `hash-identifier` cree que es posible que el hashing sea `MD5`. 
+
+```bash
+user@machine$ hashcat -a 0 -m 0 f806fc5a2a0d5ba2471600758452799c /usr/share/wordlists/rockyou.txt
+hashcat (v6.1.1) starting...
+f806fc5a2a0d5ba2471600758452799c:rockyou
+
+Session..........: hashcat
+Status...........: Cracked
+Hash.Name........: MD5
+Hash.Target......: f806fc5a2a0d5ba2471600758452799c
+Time.Started.....: Mon Oct 11 08:20:50 2021 (0 secs)
+Time.Estimated...: Mon Oct 11 08:20:50 2021 (0 secs)
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:   114.1 kH/s (0.02ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 1/1 (100.00%) Digests
+Progress.........: 40/40 (100.00%)
+Rejected.........: 0/40 (0.00%)
+Restore.Point....: 0/40 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: 123456 -> 123123
+
+Started: Mon Oct 11 08:20:49 2021
+Stopped: Mon Oct 11 08:20:52 2021
+```
+
+- `-a 0`: Prepara el modo de ataque a diccionario.
+- `-m 0`: Prepara el modo de hasheo a MD5. Usa `hashcat -h` para averiguar otros métodos.
+- `f806fc5a2a0d5ba2471600758452799c`: Puede ser el hash o un archivo que contenga dicho hash.
+- `/usr/share/wordlists/rockyou.txt`: La wordlist para el ataque.
+
+Ejecutamos `hashcat` con la opción `--show`:
+
+```bash
+user@machine$ hashcat -a 0 -m 0 F806FC5A2A0D5BA2471600758452799C /usr/share/wordlists/rockyou.txt --show
+f806fc5a2a0d5ba2471600758452799c:rockyou
+```
+
+Como resultado, obtenemos `rockyou`.
+
+-------------------------------------------
+<h2>Ataque de Fuerza Bruta</h2>

@@ -6132,8 +6132,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/0. Password Attacks.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "d99357ed7bc8fbf4d495dfcb0be042cedad6473371353f70eea2ec3e3020b519"
+    "modified": "2026-06-08T02:32:45",
+    "hash": "60495ae35a47b4e15e997ec0460559b160da18720b256bd470bf0f1756868612"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/8. Online Password Attacks.md": {
     "modified": "2026-04-28T01:49:27",
@@ -6148,8 +6148,8 @@
     "hash": "7028c113deecd3b9228f0174c17ad7cedbe857fe06d17a61f323696ba9afbac7"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/5. Offline Attacks - Dictionary and Brute-Force.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-08T02:32:45",
+    "hash": "91ecb6a81921d97d2d54f460e99216d775075bd16b10e020be1f5a33a7498e56"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/2. Password Attacking Techniques.md": {
     "modified": "2026-06-07T02:28:08",
@@ -6160,8 +6160,8 @@
     "hash": "edb3f63bf4d75c9bdf25fb1cfcbb63de001495bad26f3b89b62ee1391737be23"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/4. Password Profiling 2 - Keyspace Technique and CUPP.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-08T02:32:45",
+    "hash": "c8f86ee48dfad409da1bc3ad47bf38a92e59b93aef7c53642e8d16b85111498c"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/10 Summary.md": {
     "modified": "2026-04-28T01:49:27",
@@ -7354,5 +7354,9 @@
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/2. Weaponization/5. PowerShell - PSH.md": {
     "modified": "2026-06-04T02:34:54",
     "hash": "32a8cf1ba520bbb9c8ee7e1eeb6ef2326b7619e5f498c1dab23754062d0d6591"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/10. Summary.md": {
+    "modified": "2026-06-08T02:32:45",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }
