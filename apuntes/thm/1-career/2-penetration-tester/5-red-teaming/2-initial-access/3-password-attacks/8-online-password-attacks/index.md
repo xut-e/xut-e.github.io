@@ -3,3 +3,22 @@ layout: apunte
 title: "8. Online Password Attacks"
 ---
 
+Los ataques de contraseñas online involucran adivinar las contraseñas para servicios en red que usan nombre de usuario y autentificación mediante contraseña, como HTTP, SSH, VNC, SNMP, POP3, etc. Esta sección muestra cómo usar `hydra`, una herramienta común para este tipo de ataques.
+
+------------------------------------
+<h2>Hydra</h2>
+Hydra soporta una lista extensa de servicios de red a los que puede atacar. Usando hydra, bruteforcearemos servicios como páginas web de login, FTP, SMTP, y SSH. Normalmente en hydra, cada servicio tiene sus propias opciones y sintaxis.
+
+-----------------------
+<h2>FTP</h2>
+En el siguiente escenario, realizaremos un ataque de fuerza bruta sobre un servidor FTP. Comprobando las opciones de ayuda de hydra, sabemos que la sintaxis es la siguiente:
+
+```bash
+hydra -l ftp -P passlist.txt ftp://10.10.x.x
+```
+
+- `-l ftp`: Especifica el nombre de usuario. Si fuera una lista sería `-L`.
+- `-P Path`: Especifica la ruta de la wordlist. Si fuera una sóla contraseña podrías usar `-p password`.
+- `ftp://10.10.x.x`: El protocolo y la dirección IP del objetivo.
+
+----------------------------------

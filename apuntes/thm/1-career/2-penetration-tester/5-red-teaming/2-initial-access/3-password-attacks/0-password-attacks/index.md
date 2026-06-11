@@ -12,4 +12,3 @@ title: "0. Password Attacks"
 [7. Deploy the VM](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/7-deploy-the-vm/)
 [8. Online Password Attacks](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/8-online-password-attacks/)
 [9. Password Spray Attack](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/9-password-spray-attack/)
-[10. Summary](/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/10-summary/)
