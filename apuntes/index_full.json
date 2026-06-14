@@ -13876,8 +13876,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/2-initial-access/4-phishing/1-intro-to-phishing-attacks/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/1. Intro to Phishing Attacks.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 2. Initial Access > 4. Phishing",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Antes de aprender lo qeu es el phishing, necesitamos entender el término ingeniería social. La ingeniería social es la manipulación psicológica de la gente para que realicen acciones o divulguen información explotando las debilidades en la naturaleza humana. Estas debilidades pueden ser la curiosidad, envidia, codicia e incluso amabilidad. El phishing es una forma de ingeniería social entregada a través de email para engañar a alguien para que revele información personal, credenciales o incluso ejecutar código malicioso.\n\nEstos emails normalmente aparecen de una fuente confiable, sea una persona o negocio. Incluyen contenido que intenta tentar o engañar a la gente para que descarguen software, abran archivos adjuntos o sigan enlaces.\n\nUn término con el que te cruzarás y que es el tipo de campaña en el que un integrante del red team trabaja es el spear-phishing, como lanzar una lanza. Tendrías que apuntar ya sea a un individuo o una organización.\n\nUn ejemplo:\n\n1. El atacante localiza la localización física de un negocio objetivo.\n2. El atacante mira proveedores de comida cercanos y descubre una compañía llamada **Ultimate Cookies**.\n3. El atacante registra el dominio **ultimate-cookies.thm**.\n4. El atacante elabora un correo electrónico tentando a la primera empresa si se registran en su web. Debido a que la víctima probablemente ha oído hablar de la compañía es más probable que confíe.\n5. La víctima sigue el enlace y se registra.\n6. El atacante ahora tiene el email y la posible contraseña para iniciar sesión en el email de la víctima.\n\n![[Pasted image 20260613185708.png]]",
+    "modified": "2026-06-14T02:31:53"
   },
   {
     "title": "0. Phishing",
