@@ -7743,12 +7743,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/8. Using Browser Exploits.md",
                               "parent": "4. Phishing"
-                            },
-                            {
-                              "name": "9. Phishing Practical.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/4. Phishing/9. Phishing Practical.md",
-                              "parent": "4. Phishing"
                             }
                           ]
                         }

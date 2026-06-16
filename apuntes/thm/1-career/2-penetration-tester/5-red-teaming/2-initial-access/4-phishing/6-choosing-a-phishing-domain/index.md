@@ -3,3 +3,27 @@ layout: apunte
 title: "6. Choosing A Phishing Domain"
 ---
 
+Elegir el dominio adecuado para lanzar tu ataque es esencial para asegurar que tienes la ventaja psicológica sobre tu objetivo. Un engagement de red team puede usar algunos de los métodos abajo mencionados para elegir el nombre de doominio perfecto.
+
+<h3>Dominios Expirados</h3>
+Aunque no es esencial, comprar un dominio con algo de historia, puede llevar a que tu dominio tenga una mejor puntuación cuando se trara de los filtros de spam. Los filtros de spam tienen tendencia de no confiar en un nuevo dominio en contraste a otros con algo de historial.
+
+<h3>Typosquatting</h3>
+El typosquatting es cuando un dominio registrado se ve extremadamente similar al dominio objetico que tratas de suplantar. Aquí hay algunos de los métodos comunes:
+
+- **Misspelling:** `goggle.com`
+- **Additional Period:** `go.ogle.com`
+- **Switching numbers for letters:** `g00gle.com`
+- **Phrasing:** `googles.com`
+- **Additional Word:** `googleresults.com`
+
+Estos cambios pueden parecer poco realistas, pero a un vistazo, el cerebro de un humano trata de rellenar los blanks y ver lo que quiere ver (el nombre de dominio correcto).
+
+<h3>Alternativas TLD</h3>
+Un TLD (Top Level Domain) es el `.com`, `.net`, `.gov`, etc. de la  parte del dominio. Hay unas 100 variantes hoy por hoy de esto. Un truco común para elegir un dominio sería usar el mismo nombre pero con un TLD diferente. Por ejemplo, `tryhackme.co.uk` en lugar de `tryhackme.com`.
+
+<h3>Ataque IDN Homográfico</h3>
+Los dominios, originalmente, tenian nombres compuestos de caracteres latinos: `a-zA-Z0-9`. Sin embargo, en 1998, DN (Internationalized Domain Name) fue implementado para soportar scripts o alfabetos de lenguas específicas de otras como el Árabe, Chino, Cirílico, Hebreo y más. Un problema resultante de esto es que las diferentes letras de los diferentes abecedarios pueden parecerse mucho. Por ejemplo, el carácter Unicode `U+0430` (letra cirílica **a**) se ve idéntica al carácter Unicode U+0061 (letra latina **a**), permitiendo a los atacantes registrar dominios que se ven casi idénticos pero que son diferentes.
+
+!**Pasted image 20260615200644.png**
+
