@@ -3,3 +3,9 @@ layout: apunte
 title: "1. Deploy the VM"
 ---
 
+Para seguir las explicaciones de esta unidad, debes iniciar la máquina virtual y acceder a ella. Para dicho propósito puedes utilizar RDP. Las credenciales son `kkidd:Pass123321@`.
+
+```bash
+xfreerdp3 /v:MACHINE_IP /u:kkidd
+```
+
