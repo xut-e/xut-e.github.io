@@ -10576,6 +10576,24 @@
                   ]
                 },
                 {
+                  "name": "18. Relevant",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/18. Relevant/1. Introduction.md",
+                      "parent": "18. Relevant"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/18. Relevant/2. Getting the Flags.md",
+                      "parent": "18. Relevant"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Net Sec Challenge",
                   "type": "directory",
                   "contents": [

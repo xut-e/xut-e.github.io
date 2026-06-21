@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-05-20T02:04:58",
-    "hash": "bbf4fa2bb969d41309a89d6160db12107988fa7a7cc06c0557929d7895bd1572"
+    "modified": "2026-06-21T02:33:36",
+    "hash": "65ada24b06ba95be11cfe34b4a095372c1a9c08ae00c81a23394e175c5ecc954"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -6304,8 +6304,8 @@
     "hash": "44413c90f5e4d7f8a667d0203b6e147b0a3c3a0123da1f1a62259c7303947c61"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/6. Host Security Solution 2.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-21T02:33:36",
+    "hash": "38da35fa77c1bc297b29003f7898b744a7ab472ddef9d47e70f2e9c9ee39342b"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/4. Users and Groups Management.md": {
     "modified": "2026-06-18T02:33:23",
@@ -7358,5 +7358,17 @@
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/2. Initial Access/3. Password Attacks/10. Summary.md": {
     "modified": "2026-06-08T02:32:45",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/2. Medium/18. Relevant/0. Relevant.md": {
+    "modified": "2026-06-21T02:33:36",
+    "hash": "c4494cdeec1e9715c81395d9c3e91803601301b942ce4457e3aec533cd94d1e8"
+  },
+  "THM/Maquinas/2. Medium/18. Relevant/2. Getting the Flags.md": {
+    "modified": "2026-06-21T02:33:36",
+    "hash": "56a3513ecea0ab9c23867eeb54f9613f0c278b53905ded021efa82ae281d0c8b"
+  },
+  "THM/Maquinas/2. Medium/18. Relevant/1. Introduction.md": {
+    "modified": "2026-06-21T02:33:36",
+    "hash": "8e7c4dda925d3a69534a4d19fd3b8843d73fda8724f76f0babee3e76ca5b2dde"
   }
 }

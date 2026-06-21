@@ -1,0 +1,24 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260620182647.png**
+
+Ten han asignado un cliente que quiere realizar un test de penetración antes de que su entorno sea desplegado en producción en 7 días.
+
+**Alcance de Trabajo**
+
+El cliente pide que un ingeniero realice una evaluación del entorno virtual dado. El cliente ha pedido que la mínima información sea provista para la evaluación, queriendo que dicho engagement sea llevado a cabo desde los ojos de un actor malicioso. El cliente ha pedido que encuentres dos flags como prueba de la explotación:
+
+- user.txt
+- root.txt
+
+Además, el cliente ha dado el siguiente scope:
+
+- Todas las herramientas o técnicas están permitidas en este engagement
+- Localiza y anota todas las vulnerabilidades encontradas
+- Sube las flags al dashboard
+- Sólo la IP asignada a tu máquina entra en el scope
+- Encientra TODAS las vulnerabilidades
+
