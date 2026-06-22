@@ -6288,8 +6288,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/7. Network Security Solutions.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-22T02:37:41",
+    "hash": "947353e94b0cc7766efb81f6c36f4729bcfa74719f5337360216479f35b7795c"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/2. Network Infrastructure.md": {
     "modified": "2026-06-18T02:33:23",
@@ -6316,8 +6316,8 @@
     "hash": "d7f2579f7405b0618d51d339b8e19ca02a9108a3b3629a17e8e38b6e291c7497"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/8. Applications and Services.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-22T02:37:41",
+    "hash": "dd61b8fb129308dd680bd530f1948ee8bd422beee2587a65704d7c6f8aa59fba"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/1. The Lay of the Land/0. The Lay of the Land.md": {
     "modified": "2026-04-28T01:49:27",
@@ -7370,5 +7370,17 @@
   "THM/Maquinas/2. Medium/18. Relevant/1. Introduction.md": {
     "modified": "2026-06-21T02:33:36",
     "hash": "8e7c4dda925d3a69534a4d19fd3b8843d73fda8724f76f0babee3e76ca5b2dde"
+  },
+  "THM/Maquinas/2. Medium/19. Dogcat/0. Dogcat.md": {
+    "modified": "2026-06-22T02:37:40",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/2. Medium/19. Dogcat/2. Getting the Flags.md": {
+    "modified": "2026-06-22T02:37:40",
+    "hash": "648ff8550aeb85258fadd5985c609768098186327b0fcdf6fa1d4a909c1e2f9a"
+  },
+  "THM/Maquinas/2. Medium/19. Dogcat/1. Introduction.md": {
+    "modified": "2026-06-22T02:37:40",
+    "hash": "60a235a5680b0c1b6ac89fb50a4e93ffee19a7fde7671fa466d7e3e55f9b9aec"
   }
 }

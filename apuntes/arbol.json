@@ -10594,6 +10594,24 @@
                   ]
                 },
                 {
+                  "name": "19. Dogcat",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/19. Dogcat/1. Introduction.md",
+                      "parent": "19. Dogcat"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/19. Dogcat/2. Getting the Flags.md",
+                      "parent": "19. Dogcat"
+                    }
+                  ]
+                },
+                {
                   "name": "2. Net Sec Challenge",
                   "type": "directory",
                   "contents": [
