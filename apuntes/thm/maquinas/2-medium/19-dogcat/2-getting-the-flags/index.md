@@ -78,9 +78,103 @@ Vamos a ver que encontramos.
 
 !**Pasted image 20260621195828.png**
 
-Hemos encontrado nuestras peticiones. Sabemos que corre Apache2.
+Hemos encontrado nuestras peticiones. Sabemos que corre Apache2. Ahora debemos intentar escalar la LFI a RCE. Como hemos visto que podemos acceder a los logs, puede que este sea un método para conseguirlo.
 
+!**Pasted image 20260624172621.png**
 
+Vamos a probar a inyectar PHP en el parámetro User-Agent:
+
+!**Pasted image 20260624173100.png**
+
+Ahora modificamos el endpoint de la petición para incluir el comando en el parámetro `cmd`.
+
+!**Pasted image 20260624173232.png**
+
+Vamos a mandarlo y a observar el log.
+
+!**Pasted image 20260624173545.png**
+
+Aquí podemos ver que el log ya  ha sido contaminado. Para que surta efecto, tenemos que cambiar el User-Agent para que sea normal de nuevo. Así que vamos a la página normal y metemos el comando.
+
+>[!NOTE] Es necesario entender que el archivo `access.log` funciona como una base de datos en texto plano, la cual no se elimina mientras el servicio o la máquina se mantengan encendidos. Es por esto que con esta primera petición, conseguimos que la línea de PHP que hemos escrito quede guardada dentro de `access.log`, por lo que después de la primera ya no es necesario meterla de nuevo.
+
+!**Pasted image 20260624174052.png**
+
+Como podemos observar, en la misma linea de antes, se ve la respuesta del comando. Vamos ahora a intentar conseguir una reverse shell, para ello uso mi página favorita para dicho propósito: [revshells](https://www.revshells.com).
+
+!**Pasted image 20260624181010.png**
+
+Como hay espacios y caracteres especiales, vamos a URL encodearla.
+
+!**Pasted image 20260624180731.png**
+
+Ahora nos ponemos en escucha y probamos a mandarlo.
+
+!**Pasted image 20260624180932.png**
+
+Vamos a buscar la primera flag.
+
+!**Pasted image 20260624181104.png**
 
 -----------------------------------
-<h2>Escalada de Privilegios</h2>
+<h2>Escalada de Privilegios</h2>Seguimos investigando y nos encontramos con que podemos ejecutar un comando sin contraseña como root:
+
+!**Pasted image 20260624181307.png**
+
+Vamos a mirar en GTFOBins:
+
+!**Pasted image 20260624181359.png**
+
+Parece que podemos conseguir una shell de root fácilmente, vamos a ello:
+
+!**Pasted image 20260624181448.png**
+
+Parece que ya somos root.
+
+!**Pasted image 20260624182444.png**
+
+Vamos a leerlas.
+
+!**Pasted image 20260624182535.png**
+
+Si investigamos, podemos inferir que estamos en un contenedor de Docker:
+
+!**Pasted image 20260625011043.png**
+
+---------------------------------------------
+<h2>Escape del Docker</h2>
+Vamos a intentar escapar del contenedor. Vamos a ver si podemos ver si hay scripts personalizados de bash:
+
+!**Pasted image 20260625011811.png**
+
+Vamos a investigar estos archivos:
+
+!**Pasted image 20260625013044.png**
+
+Aquí podemos ver un archivo que puede que se ejecute periódicamente (por el hecho de ser un script que realiza backups). Como somos `root`, podemos ejecutarlo. Además, aunque el script está en el contenedor, las rutas que se mencionan en el script no pertenecen al contenedor, por lo que podemos inferir que se está ejecutando desde el host real.
+
+Debido a que tenemos permisos de escritura en el archivo, podemos intentar conseguir una reverse shell desde el host.
+
+!**Pasted image 20260625015025.png**
+
+Nos ponemos en escucha y...
+
+!**Pasted image 20260625015047.png**
+
+Ahora buscamos la flag:
+
+!**Pasted image 20260625015141.png**
+
+-------------------------------------
+<h2>Conclusión</h2>
+Hemos enumerado puertos y encontrado una web. Hemos practicado:
+
+- Enumeración.
+- LFI.
+- Log poisoning.
+- Escalada de privilegios.
+- Escape de contenedor Docker.
+
+>[!SUCCESS] Hemos conseguido obtener las 4 flags.
+
+
