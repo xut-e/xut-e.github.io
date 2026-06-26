@@ -3,3 +3,16 @@ layout: apunte
 title: "1. Introduction"
 ---
 
+Esta unidad ses centra en la enumeración de post-explotación. En otras palabras, asumiremos que hemos ganado algún tipo de acceso al sistema. Además, puede que hayamos llevado a cabo escalada de privilegios, por lo que puede que tengamos privilegios de administrador o root. Algunas de las técnicas que veremos pueden ser útiles incluso con cuentas no privilegiadas.
+
+Hay dos scripts:
+
+- [WinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS)
+- [LinPEAS](https://grimbins.github.io/grimbins/linpeas/)
+
+Sirven para la invesitigación de escalada de privilegios.
+
+Nuestro propósito es recolectar más información que nos ayude a ganar más acceso a la red objetivo. Por ejemplo, podemos encontrar credenciales de login. Nos enfocamos en herramientas normalmente disponibles en sistemas estándar para recolectar mñas información sobre el objetivo. Al ser parte del sistema, estas herramientas parecen inofensivas y no generan ruido.
+
+Asumimos que hemos conseguido acceso a la CLI, como `bash` o `cmd.exe`. Es más fácil cambiar de una shell a otra, como de `cmd.exe` a `powershell.exe`.
+
