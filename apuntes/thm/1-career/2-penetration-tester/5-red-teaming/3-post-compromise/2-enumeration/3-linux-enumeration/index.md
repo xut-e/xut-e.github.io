@@ -3,3 +3,296 @@ layout: apunte
 title: "3. Linux Enumeration"
 ---
 
+Esta tarea se enfoca en enumerar una máquina Linux después de acceder a una shell, como `bash`. Aunque algunos comandos nos den información de más de un area, hemos tratado de agruparlos en 4 categorías dependiendo de la información que obtendremos:
+
+- Sistema
+- Usuarios
+- Redes
+- Servicios en ejecución
+
+--------------------------------------
+<h2>Sistema</h2>
+En un sistema Linux, podemos obtener más informacióon sobre la distribución de Linux y la versión buscando archivos o links que terminan con `-release` en `/etc/`. Ejecutar `ls /etc/*-release` nos ayuda a encontrarlos. Vamos a ver qué cosas encontramos en un Linux CentOS:
+
+```bash
+user@TryHackMe$ ls /etc/*-release
+/etc/centos-release  /etc/os-release  /etc/redhat-release  /etc/system-release
+$ cat /etc/os-release 
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+[...]
+```
+
+Y en Fedora:
+
+```bash
+user@TryHackMe$ ls /etc/*-release
+/etc/fedora-release@  /etc/os-release@  /etc/redhat-release@  /etc/system-release@
+$ cat /etc/os-release
+NAME="Fedora Linux"
+VERSION="36 (Workstation Edition)"
+[...]
+```
+
+Podemos encontrar el nombre del sistema usando el comando `hostname`:
+
+```bash
+user@TryHackMe$ hostname
+rpm-red-enum.thm
+```
+
+Varios archivos en un sistema pueden ofrecer mucha información útil. En particular, considera el siguiente: `/etc/passwd`, `/etc/group` y `/etc/shadow`. Cualquier usuario puede leer los archivos `passwd` y `group`. Sin embargo, el archivo `shadow` requiere de privilegios root ya que contiene los hashes de las contraseñas.
+
+```bash
+user@TryHackMe$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+[...]
+michael:x:1001:1001::/home/michael:/bin/bash
+peter:x:1002:1002::/home/peter:/bin/bash
+jane:x:1003:1003::/home/jane:/bin/bash
+randa:x:1004:1004::/home/randa:/bin/bash
+
+$ cat /etc/group
+root:x:0:
+[...]
+michael:x:1001:
+peter:x:1002:
+jane:x:1003:
+randa:x:1004:
+
+$ sudo cat /etc/shadow
+root:$6$pZlRFi09$qqgNBS.00qtcUF9x0yHetjJbXsw0PAwQabpCilmAB47ye3OzmmJVfV6DxBYyUoWBHtTXPU0kQEVUQfPtZPO3C.:19131:0:99999:7:::
+[...]
+michael:$6$GADCGz6m$g.ROJGcSX/910DEipiPjU6clo6Z6/uBZ9Fvg3IaqsVnMA.UZtebTgGHpRU4NZFXTffjKPvOAgPKbtb2nQrVU70:19130:0:99999:7:::
+peter:$6$RN4fdNxf$wvgzdlrIVYBJjKe3s2eqlIQhvMrtwAWBsjuxL5xMVaIw4nL9pCshJlrMu2iyj/NAryBmItFbhYAVznqRcFWIz1:19130:0:99999:7:::
+jane:$6$Ees6f7QM$TL8D8yFXVXtIOY9sKjMqJ7BoHK1EHEeqM5dojTaqO52V6CPiGq2W6XjljOGx/08rSo4QXsBtLUC3PmewpeZ/Q0:19130:0:99999:7:::
+randa:$6$dYsVoPyy$WR43vaETwoWooZvR03AZGPPKxjrGQ4jTb0uAHDy2GqGEOZyXvrQNH10tGlLIHac7EZGV8hSIfuXP0SnwVmnZn0:19130:0:99999:7:::
+```
+
+Similarmente, varios directorios pueden revelar información sobre usuarios y pueden contener archivos sensibles. Uno de ellos es el directorio de mail en `/var/mail`:
+
+```bash
+user@TryHackMe$ ls -lh /var/mail/
+total 4.0K
+-rw-rw----. 1 jane      mail   0 May 18 14:15 jane
+-rw-rw----. 1 michael   mail   0 May 18 14:13 michael
+-rw-rw----. 1 peter     mail   0 May 18 14:14 peter
+-rw-rw----. 1 randa     mail   0 May 18 14:15 randa
+-rw-------. 1 root      mail 639 May 19 07:37 root
+```
+
+Para encontrar aplicaciones instaladas, puedes considerar los archivos en `/usr/bin/` y `/sbin/`:
+
+- `ls -lh /usr/bin`
+- `ls -lh /sbin/`
+
+En un sistema Linux basado en RPM, puedes listar todos los paquetes instalados usando `rpm -qa`.
+
+En un sistema Linux basado en Debian, puedes listar todos los paquetes instalados usando `dpkg -l`.
+
+```bash
+user@TryHackMe$ dpkg -l
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                  Version                            Architecture Description
++++-=====================================-==================================-============-===============================================================================
+ii  accountsservice                       0.6.55-0ubuntu12~20.04.5           amd64        query and manipulate user account information
+ii  adduser                               3.118ubuntu2                       all          add and remove users and groups
+ii  alsa-topology-conf                    1.2.2-1                            all          ALSA topology configuration files
+ii  alsa-ucm-conf                         1.2.2-1ubuntu0.13                  all          ALSA Use Case Manager configuration files
+ii  amd64-microcode                       3.20191218.1ubuntu1                amd64        Processor microcode firmware for AMD CPUs
+[...   ]
+ii  zlib1g-dev:amd64                      1:1.2.11.dfsg-2ubuntu1.3           amd64        compression library - development
+```
+
+-------------------------------------------
+<h2>Usuarios</h2>
+Archivos como `/etc/passwd` revelan los nombres de usuario. Sin embargo, varios comandos pueden ofrecer más información y detalles sobre otros usuarios en el sistema y sus andanzas.
+
+Puedes mostrar quién tiene la sesión iniciada con `who`.
+
+```bash
+user@TryHackMe$ who
+root     tty1         2022-05-18 13:24
+jane     pts/0        2022-05-19 07:17 (10.20.30.105)
+peter    pts/1        2022-05-19 07:13 (10.20.30.113)
+```
+
+Podemos ver que `root` está con la sesión iniciada directamente en el sistema mientras que `jane` y `peter` están conectados por red.
+
+Si quieres ir más allá, el comando `w` muestra quién está conectado y además qué está haciendo. Basado en la terminal, `peter` está editando `notes.txt` y `jane` es quien ejecuta el comando `w`:
+
+```bash
+user@TryHackMe$ w
+ 07:18:43 up 18:05,  3 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     tty1                      Wed13   17:52m  0.00s  0.00s less -s
+jane     pts/0    10.20.30.105     07:17    3.00s  0.01s  0.00s w
+peter    pts/1    10.20.30.113     07:13    5:23   0.00s  0.00s vi notes.txt
+```
+
+Para mostrar los IDs efectivos de usuario y grupo, puedes usar el comando `id`.
+
+```bash
+user@TryHackMe$ id
+uid=1003(jane) gid=1003(jane) groups=1003(jane) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+```
+
+¿Quieres saber quién ha usado el sistema recientemente? El comando `last` muestra una lista de los últimos usuarios en iniciar sesión. Además, podemos ver quién cerró sesión y cuánto tiempo estuvo conectado. En el output de abajo, el usuario `randa` se mantuvo con la sesión iniciada por casi 17 horas, mientras que `michael` cerró sesión tras unos minutos:
+
+```bash
+user@TryHackMe$ last
+jane     pts/0        10.20.30.105     Thu May 19 07:17   still logged in   
+peter    pts/1        10.20.30.113     Thu May 19 07:13   still logged in   
+michael  pts/0        10.20.30.1       Thu May 19 05:12 - 05:17  (00:04)    
+randa    pts/1        10.20.30.107     Wed May 18 14:18 - 07:08  (16:49)    
+root     tty1                          Wed May 18 13:24   still logged in
+[...]
+```
+
+El comando `sudo -l` lista los comandos permitidos para el usuario invocado en el sistem actual.
+
+-------------------------------------
+<h2>Redes</h2>
+Las direcciones IP pueden ser mostradas usando `ip address show` ( o `ip a s`) o con un comando más antiguo `ifconfig -a` (su paquete está descontinuado). El output de la terminar de abajo muestra la interfaz de red `ens33` con la dirección IP `10.20.30.129` y la máscara de subred `255.255.255.0` ya que es `/24`.
+
+```bash
+user@TryHackMe$ ip a s
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:0c:29:a2:0e:7e brd ff:ff:ff:ff:ff:ff
+    inet 10.20.30.129/24 brd 10.20.30.255 scope global noprefixroute dynamic ens33
+       valid_lft 1580sec preferred_lft 1580sec
+    inet6 fe80::761a:b360:78:26cd/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+```
+
+Los servidores DNS pueden ser encontrados en `/etc/resolv.conf`. Considera el siguiente output de terminar para un sistema que usa DHCP para sus configuraciones de red. El DNS está configurado a `10.20.30.2`.
+
+```bash
+user@TryHackMe$ cat /etc/resolv.conf
+# Generated by NetworkManager
+search localdomain thm
+nameserver 10.20.30.2
+```
+
+El comando `netstat` es útil para conocer sobre las conexiones de red, tablas de enrutado, y estadísticas de interfaz. Explicamos algunas de las opciones debajo.
+
+| Opción | Descripción                                                                            |
+| ------ | -------------------------------------------------------------------------------------- |
+| `-a`   | Muestra sockets en escucha y no en escucha.                                            |
+| `-l`   | Muestra sólo sockets en escucha.                                                       |
+| `-n`   | Muestra un output numérico en lugar de resolver la dirección IP y el número de puerto. |
+| `-t`   | TCP                                                                                    |
+| `-u`   | UDP                                                                                    |
+| `-x`   | UNIX                                                                                   |
+| `-p`   | Muestra el PID y el nombre del programa al cual pertenece el socket.                   |
+
+Puedes usar cualquier combinación que necesites. Por ejemplo, `netstat -plt` devolverá programas escuchando sockets TCP. Como podemos ver en el output de terminal de abajo, `sshd` está escuchando el puerto SSH mientras que `mmaster` escucha en el puerto SMTP en ambos IPv4 e IPv6. Ten en cuenta que para obtener todos los PIDs y nombres de programa, debes ejecutar `netstat` como `sudo`.
+
+```bash
+user@TryHackMe$ sudo netstat -plt
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN      978/sshd            
+tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN      1141/master         
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      978/sshd            
+tcp6       0      0 localhost:smtp          [::]:*                  LISTEN      1141/master
+```
+
+El comando `netstat -atupn` mostrará toodos los TCP y UDP en escucha y con conexiones establecidas y el nombre de programa con dirección IP y puerto en formato numérico.
+
+```bash
+user@TryHackMe$ sudo netstat -atupn
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      978/sshd            
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1141/master         
+tcp        0      0 10.20.30.129:22         10.20.30.113:38822        ESTABLISHED 5665/sshd: peter [p 
+tcp        0      0 10.20.30.129:22         10.20.30.105:38826        ESTABLISHED 5723/sshd: jane [pr 
+tcp6       0      0 :::22                   :::*                    LISTEN      978/sshd            
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1141/master         
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           640/chronyd         
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           5638/dhclient       
+udp6       0      0 ::1:323                 :::*                                640/chronyd
+```
+
+Puedes pensar que usar `nmap` antes de ganar acceso a la máquina podría haber ofrecido un resultado similar. Sin embargo, no es del todo cierto. Nmap necesita generar un número grande de paquetes para comprobar puertos abiertos, lo que puede disparar sistemas de detección o prevención de intrusiones. Además, los firewalls pueden tirar ciertos paquetes, alterando los resultados de Nmap.
+
+El comando `lsof` significa List Open Files. Si queremos mostrar sólo las conexiones de internet y red, podemos usar `lsof -i`. La terminal de abajo muestra servicios IPv4 e IPv6 y conexiones funcionales. El usuario `peter` está conectado  al servidor `rpm-red-enum.thm` en el puerto `ssh`. Ten en cuenta que para obtener todos necesitas ejecutar `lsof` como root.
+
+```bash
+user@TryHackMe$ sudo lsof -i
+COMMAND   PID      USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+chronyd   640    chrony    5u  IPv4  16945      0t0  UDP localhost:323 
+chronyd   640    chrony    6u  IPv6  16946      0t0  UDP localhost:323 
+sshd      978      root    3u  IPv4  20035      0t0  TCP *:ssh (LISTEN)
+sshd      978      root    4u  IPv6  20058      0t0  TCP *:ssh (LISTEN)
+master   1141      root   13u  IPv4  20665      0t0  TCP localhost:smtp (LISTEN)
+master   1141      root   14u  IPv6  20666      0t0  TCP localhost:smtp (LISTEN)
+dhclient 5638      root    6u  IPv4  47458      0t0  UDP *:bootpc 
+sshd     5693     peter    3u  IPv4  47594      0t0  TCP rpm-red-enum.thm:ssh->10.20.30.113:38822 (ESTABLISHED)
+[...]
+```
+
+Debido a que la lista puede ser larga, puedes filtrar el putput especificando los puertos que te interesan, como SMPT en el 25. Ejecutando `lsof -i :25`, limitamos el resultado a aquellos.
+
+```bash
+user@TryHackMe$ sudo lsof -i :25
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+master  1141 root   13u  IPv4  20665      0t0  TCP localhost:smtp (LISTEN)
+master  1141 root   14u  IPv6  20666      0t0  TCP localhost:smtp (LISTEN)
+```
+
+-----------------------------------
+<h2>Servicios en Ejecución</h2>
+Conseguir una snapshot de los procesos en ejecución pueden revelar varios detalles. El comando `ps` te permite descubrir los procesos en ejecución y mucha información sobre ellos.
+
+Puedes listar todos los procesos en el sistema usandoo `ps -e`, donde `-e` selecciona todos los procesos. Para más información, puedes añadir `-f` para formato completo o `-l` para formato largo.
+
+Obtienes output comparable y ves todos los procesos usando sintaxis BSD: `ps ax` o `ps aux`. Ten en cuenta que `a` y `x` son necesarios cuando se usa sintaxis BSD ya que levantan las restricciones "sólo tú" y "debe tener una TTY". La ´u´ es para los detalles sobre el usuario que tiene el proceso.
+
+| Opción | Descripción                  |
+| ------ | ---------------------------- |
+| `-e`   | Todos los procesos           |
+| `-f`   | Listado de formato completo  |
+| `-j`   | Formato de trabajos          |
+| `-l`   | Formato largo                |
+| `-u`   | Formato orientado a usuarios |
+
+Para más output visual, puedes usar `ps axjf` para mostrar un arbol de procesos. La `f` es "forest" y crea un ASCII art de la jerarquía entre los procesos.
+
+```bash
+user@TryHackMe$ ps axf
+   PID TTY      STAT   TIME COMMAND
+     2 ?        S      0:00 [kthreadd]
+     4 ?        S<     0:00  \_ [kworker/0:0H]
+     5 ?        S      0:01  \_ [kworker/u256:0]
+[...]
+   978 ?        Ss     0:00 /usr/sbin/sshd -D
+  5665 ?        Ss     0:00  \_ sshd: peter [priv]
+  5693 ?        S      0:00  |   \_ sshd: peter@pts/1
+  5694 pts/1    Ss     0:00  |       \_ -bash
+  5713 pts/1    S+     0:00  |           \_ vi notes.txt
+  5723 ?        Ss     0:00  \_ sshd: jane [priv]
+  5727 ?        S      0:00      \_ sshd: jane@pts/0
+  5728 pts/0    Ss     0:00          \_ -bash
+  7080 pts/0    R+     0:00              \_ ps axf
+   979 ?        Ssl    0:12 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+   981 ?        Ssl    0:07 /usr/sbin/rsyslogd -n
+  1141 ?        Ss     0:00 /usr/libexec/postfix/master -w
+  1147 ?        S      0:00  \_ qmgr -l -t unix -u
+  6991 ?        S      0:00  \_ pickup -l -t unix -u
+  1371 ?        Ss     0:00 login -- root
+  1376 tty1     Ss     0:00  \_ -bash
+  1411 tty1     S+     0:00      \_ man man
+  1420 tty1     S+     0:00          \_ less -s
+[...]
+```
+
