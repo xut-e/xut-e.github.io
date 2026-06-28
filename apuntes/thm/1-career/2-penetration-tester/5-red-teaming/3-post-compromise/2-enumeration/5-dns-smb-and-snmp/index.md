@@ -3,3 +3,41 @@ layout: apunte
 title: "5. DNS, SMB and SNMP"
 ---
 
+<h2>DNS</h2>
+Estamos familiarizados con lsa queries Domain Name System (DNS) donde podemos mirar registros A, AAAA, CName y TXT entre otros. Si podemos obtener una "copia" de todos los registros que un servidor DNS tiene la responsabilidad de responder, puede que encontremos hosts que no sabíamos que existían.
+
+Un camino fácil apra intentar DNS zon transfer es vía `dig`. Dependiendo de la configuración DNS, la transferencia de zona DNS puede ser restringida. Si no está restringida, debería ser conseguible usando `dig -t AXFR DOMAIN_NAME @DNS_SERVER`. El `-t AXFR` indica que estamos pidiendo una transferencia de zona, mientras `@` precede al `DNS_SERVER` que queremos consultar relativo a los registros del `DOMAIN_NAME` especificado.
+
+------------------------------------------
+<h2>SMB</h2>
+El Server Message Block (SMB) es un protocolo de comunicación que pfrece acceso compartido a los archivos e impresoras. Podemos comprobar directorios compartidos usando `net share`.
+
+```batch
+user@TryHackMe$ net share
+
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+C$           C:\                             Default share
+IPC$                                         Remote IPC
+ADMIN$       C:\Windows                      Remote Admin
+Internal     C:\Internal Files               Internal Documents
+Users        C:\Users
+The command completed successfully.
+```
+
+-----------------------------------
+<h2>SNMP</h2>
+El Simple Network Management Protocol (SNMP) fue diseñado para ayudar a recolectar información sobre diferentes dispositivos en la red. Te permite conocer sobre varios eventos de red, desde el servidor con un disco problemático hasta la impresora sin tinta. Consecuentemente, SNMP puede mantener un montón de información. Una herramienta simple para hacer query a servidores relacionada con SNMP es `snmpcheck`. Puedes encontrarlo en `/opt/snmpcheck/`. La sintaxis es simple: `/opt/snmpcheck/snmpcheck.rb IP_REMOTA -c COMMUNITY_STRING`. Recuerda reemplazar esta última parte con el nombre de la comunidad real.
+
+Si quieren instalar `snmpcheck` en tu máquina, puedes hacerlo así:
+
+```bash
+git clone https://gitlab.com/kalilinux/packages/snmpcheck.git
+cd snmpcheck/
+gem install snmp
+chmod +x snmpcheck-1.9.rb
+```
+
+>[!CAUTION] La herramienta `snmpcheck` no funciona como se esperaría. La herramienta `snmpwalk`, es en contraposición, la nativa de Kali que sí funciona.
+

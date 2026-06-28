@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-06-26T02:07:50",
-    "hash": "38a414c76f61522cf398d3b3c2a21033a2a8226215d6bc15b7680af604d8ab02"
+    "modified": "2026-06-28T02:13:28",
+    "hash": "3973dcd383c42c26e5e1ef631fb0ba2ce19ad23586acbd98fa2cf6f397dfa753"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -6376,28 +6376,28 @@
     "hash": "6a44e19e435acc387e6c7fcd52fe7f7de3afa388d0cddecc74594c2c3097f6bc"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/4. Windows Enumeration.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-28T02:13:29",
+    "hash": "8855fb7bf3ce21c6325b1d7b0d02b3b8d071b05f987c75b49976d3e45de1baa9"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/3. Linux Enumeration.md": {
     "modified": "2026-06-27T02:02:39",
     "hash": "6a74a8a4c8f6db92cb149ff887ecbb9851d4c32c791a62676ad89fd281a60242"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/6. More Tools for Windows.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-28T02:13:29",
+    "hash": "3af3e1cef3ba73d8aa1d8f4d932e27286e57254e3b6b89c65d8df7b1f8b9fccf"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/5. DNS, SMB and SNMP.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-28T02:13:29",
+    "hash": "4d051b7e32a06038c458f14e04873237e0a80dbe5565f5c334bf1b8d8d490fd5"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/1. Introduction.md": {
     "modified": "2026-06-26T02:07:50",
     "hash": "059efcfe44814e738408931b136a34e68f403b3b76e5cfd27a5791720d3c8fd7"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/2. Enumeration/7. Conclusion.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-06-28T02:13:29",
+    "hash": "8ef8d0997cbbff3ca8b26132c4f4fd68e66ba3018f333b217f6e7a56b3387977"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/5. Lateral Movement and Pivoting/6. Abusing User Behaviour.md": {
     "modified": "2026-04-28T01:49:27",
@@ -7382,5 +7382,17 @@
   "THM/Maquinas/2. Medium/19. Dogcat/1. Introduction.md": {
     "modified": "2026-06-22T02:37:40",
     "hash": "60a235a5680b0c1b6ac89fb50a4e93ffee19a7fde7671fa466d7e3e55f9b9aec"
+  },
+  "THM/Maquinas/2. Medium/20. Wekor/2. Getting the Flags.md": {
+    "modified": "2026-06-28T02:13:28",
+    "hash": "3227bdd09b2ca80ee7c90bf4669a4fdb924187f9d79a54ed1d83a6ed8fe12331"
+  },
+  "THM/Maquinas/2. Medium/20. Wekor/0. Wekor.md": {
+    "modified": "2026-06-28T02:13:28",
+    "hash": "36ff754369a0d5e3975076eb495b21cb7d19fa260e9b541b918e3fae40d3965d"
+  },
+  "THM/Maquinas/2. Medium/20. Wekor/1. Introduction.md": {
+    "modified": "2026-06-28T02:13:28",
+    "hash": "338ecc2b4eab7356330852a0a41289394cddde719e6cce2dfcdd4084cf98d234"
   }
 }

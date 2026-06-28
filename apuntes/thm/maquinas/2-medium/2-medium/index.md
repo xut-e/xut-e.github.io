@@ -22,4 +22,5 @@ title: "2. Medium"
 17. [0. GoldenEye](/apuntes/thm/maquinas/2-medium/17-goldeneye/0-goldeneye/)
 18. [0. Relevant](/apuntes/thm/maquinas/2-medium/18-relevant/0-relevant/)
 19. [0. Dogcat](/apuntes/thm/maquinas/2-medium/19-dogcat/0-dogcat/)
-20. 
+20. [0. Wekor](/apuntes/thm/maquinas/2-medium/20-wekor/0-wekor/)
+21. 

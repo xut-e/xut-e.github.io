@@ -10630,6 +10630,24 @@
                   ]
                 },
                 {
+                  "name": "20. Wekor",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/20. Wekor/1. Introduction.md",
+                      "parent": "20. Wekor"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/20. Wekor/2. Getting the Flags.md",
+                      "parent": "20. Wekor"
+                    }
+                  ]
+                },
+                {
                   "name": "3. Revenge",
                   "type": "directory",
                   "contents": [

@@ -3,3 +3,32 @@ layout: apunte
 title: "7. Conclusion"
 ---
 
+Los comandos que hemos visto a lo largo de esta unidad y para qué sirven:
+
+----------------------------
+<h2>Linux</h2>
+
+| Command           | Description                                                       |
+| ----------------- | ----------------------------------------------------------------- |
+| `hostname`        | Muestra el hostname del sistema                                   |
+| `who`             | Muestra quién tiene sesión iniciada                               |
+| `whoami`          | Muestra el nombre de usuario efectivo                             |
+| `w`               | Muestra quién está con la sesión iniciada y qué están haciendo    |
+| `last`            | Muestra un listado de los últimos usuarios con la sesión iniciada |
+| `ip address show` | Muestra las interfaces de ed y drecciones                         |
+| `arp`             | Muestra la caché ARP                                              |
+| `netstat`         | Muestra las conexiones de red                                     |
+| `ps`              | Muestra una snapshot de los procesos actuales                     |
+
+---------------------------------------
+<h2>Windows</h2>
+
+| Windows Command  | Description                                                                                                    |
+| ---------------- | -------------------------------------------------------------------------------------------------------------- |
+| `systeminfo`     | Muestra información de configuración del OS, incluyendo niveles de paquetes de servicios                       |
+| `whoami`         | Muestra el nombre d eusuario y la información del grupo junto con sus respectivos identificadores de seguridad |
+| `netstat`        | Muestra estadísticas de protoclo y conexiones de red TCP/IP actuales                                           |
+| `net user`       | Muestra las cuentas de usuario en el ordenador                                                                 |
+| `net localgroup` | Muestra los grupos locales en el ordenador                                                                     |
+| `arp`            | Muestra la tabla de relación entre IP y MAC                                                                    |
+
