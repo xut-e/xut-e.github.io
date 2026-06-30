@@ -13684,8 +13684,8 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/1-introduction/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/1. Introduction.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 3. Post Compromise > 4. Windows Local Persistence",
-    "content": "",
-    "modified": "2026-04-28T01:49:27"
+    "content": "Después de ganar acceso inicial a la red interna de tu objetivo, querrás asegurarte de que no pierdes el acceso antes de llegar a las joyas de la corona. Establecer persistencia es una de las primeras tareas que tendremos que hacer como atacantes al ganar acceso a una red.\n\nHay muchas razones por las que querrías establecer persistencia lo más rápido posible:\n\n- **La re-explotación no siempre es posible:** \n- **Ganar acceso es difícil de reproducir:** \n- **El blue team está detrás de ti:** \n\nAunque podrías hacerlo quedándote con la contraseña del administrador y reutilizarla, te arriesgas a que dichas credenciales cambien o sean rotadas en algún momento. Además, hay formas más sigilosas para volver a ganar",
+    "modified": "2026-06-30T02:07:39"
   },
   {
     "title": "9. Conclusion",
