@@ -1,0 +1,45 @@
+---
+layout: apunte
+title: "2. Getting the Flags"
+---
+
+<h2>Reconocimiento Inicial</h2>
+Comenzamos escaneando los puertos abiertos.
+
+!**Pasted image 20260701221429.png**
+
+Ahora vamos a investigar dichos puertos un poco más.
+
+!**Pasted image 20260701221440.png**
+
+Vamos a ver qué directorios hay en la página.
+
+!**Pasted image 20260701221404.png**
+
+Parece que hemos encontrado algo bastante interesante. Ahora vamos a ver la página.
+
+!**Pasted image 20260701221529.png**
+
+Está chula.
+
+---------------------
+<h2>Profundización</h2>
+Vamos a mirar en los directorios que hemos encontrado:
+
+- `/assets/`: No hay nada aparentemente interesante.
+- `changelog.txt`: Tampoco parece contener nada de información relevante.
+- `login.html`:
+  !**Pasted image 20260701222031.png**
+  Aquí tenemos la clave.
+
+La "función" `RevereString` devuelve una string dada la vuelta (`hola -> aloh`).
+
+------------------------------------
+<h2>Explotación</h2>
+Vamos a introducir lo que debemos.
+
+!**Pasted image 20260701222246.png**
+
+Y así obtenemos la flag:
+
+!**Pasted image 20260701222311.png**
