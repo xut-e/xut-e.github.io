@@ -39,7 +39,7 @@ Como podemos ver, múltiples políticas pueden establecerse en un GPO. Si necesi
 
 ------------------------
 <h2>Distribución de GPOs</h2>
-Los GPOs son distribuidos a la red a través de una compartición de red llamada `SYSVOL`, que está almacenada en el DC. Todos los usuarios en el dominio deberían típicamente tener acceso a esta compartición para sincronizar sus GPOs periódicamente. `SYSVOL` comparte al directorio `C:\Windows\SYSVOL\sysvol\` por defecto.
+Los GPOs son distribuidos a la red a través de una compartición de red llamada `SYSVOL`, que está almacenada en el DC. Todos los usuarios en el dominio deberían típicamente tener acceso a esta compartición para sincronizar sus GPOs periódicamente. `SYSVOL` comparte al directorio `C:\Windows\SYSVOL\sysvol\ ` por defecto.
 
 Si queremos forzar la sincronización de un dispositivo después de hacer un cambio en los GPOs podemos ejecutar el siguiente comando en el ordenador a actualizar: `PS C:\> gpupdate /force`.
 

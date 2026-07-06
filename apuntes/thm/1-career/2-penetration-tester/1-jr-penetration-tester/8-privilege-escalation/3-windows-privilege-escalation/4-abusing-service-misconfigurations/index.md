@@ -32,7 +32,7 @@ Los servicios tienen una Lista de Control de Acceso Discrecional (DACL), la cual
 
 !**Pasted image 20251128225827.png**
 
-Todas las configuraciones de servicios se pueden guardar en el registro bajo `HKLM\SYSTEM\CurrentControlSet\Services\`:
+Todas las configuraciones de servicios se pueden guardar en el registro bajo `HKLM\SYSTEM\CurrentControlSet\Services\ `:
 
 !**Pasted image 20251128225919.png**
 
@@ -185,7 +185,7 @@ Aunque parece trivial, por lo general no es realizable la explotación de esta v
 
 >[!IMPORTANT] Esta vulnerabilidad sólo es explotable cuando el administrador ha decidido guardar los programas en una ruta alternativa que tiene permisos de escritura.
 
-En nuestro caso, el administrador los instala en `C:\MyPrograms`. Por defecto, hereda los permisos del directorio `C:\`, permitiendo a cualquier usuario crear archivos y directorios dentro. Lo comprobamos usando `icacls`:
+En nuestro caso, el administrador los instala en `C:\MyPrograms`. Por defecto, hereda los permisos del directorio `C:\ `, permitiendo a cualquier usuario crear archivos y directorios dentro. Lo comprobamos usando `icacls`:
 
 ```powershell
 C:\>icacls c:\MyPrograms

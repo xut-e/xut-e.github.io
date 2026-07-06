@@ -3,3 +3,10 @@ layout: apunte
 title: "9. Conclusion"
 ---
 
+Hemos cubierto los métodos primarios usados por los atacantes para establecer persistencia en una máquina Windows. Aunque hemos visto varias técnicas, sólo hemos visto una pequeña fracción. Si estás interesado en aprender otras, los siguientes recursos están disponibles:
+
+- [Hexacorn - Windows Persistence](https://www.hexacorn.com/blog/category/autostart-persistence/)
+- [PayloadsAllTheThings - Windows Persistence](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Persistence.md)
+- [Oddvar Moe - Windows Persistence Through RunOnceEx ](https://oddvar.moe/2018/03/21/persistence-using-runonceex-hidden-from-autoruns-exe/)
+- [PowerUpSQL (opens in new tab)](https://www.netspi.com/blog/technical/network-penetration-testing/establishing-registry-persistence-via-sql-server-powerupsql/)
+
