@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-06-28T02:13:28",
-    "hash": "3973dcd383c42c26e5e1ef631fb0ba2ce19ad23586acbd98fa2cf6f397dfa753"
+    "modified": "2026-07-07T01:56:18",
+    "hash": "b8d066a64a580a3ae75d86a2b3e0143eabe3dc741b161f68b48d2b57a2763ee3"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-05-22T02:06:59",
-    "hash": "4b6f9611a9764d76bcd139d60d910847692ae6f9498b93665f5e5fa862069e0c"
+    "modified": "2026-07-07T01:56:18",
+    "hash": "6e5aa8e132ff9b1a94260b8f5acb91d564292e396b35981bfcf24d4c9a131421"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -6680,8 +6680,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/1. Introduction to AD Breaches.md": {
-    "modified": "2026-04-29T01:52:26",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-07T01:56:18",
+    "hash": "8c647360298c29ce7d8bbcbd044a46f74500d1427120988bdcedd123d0506829"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/8. Conclusion.md": {
     "modified": "2026-04-29T01:52:26",
@@ -7406,5 +7406,29 @@
   "THM/Maquinas/1. Easy/52. CyberHeroes/1. Introduction.md": {
     "modified": "2026-07-02T02:05:02",
     "hash": "92c8ef21548edccc133c0f1950268b26c90b93e9d62b6c39784d41881af01dbf"
+  },
+  "THM/Maquinas/1. Easy/53. Fools Mate/2. Getting the Flags.md": {
+    "modified": "2026-07-07T01:56:18",
+    "hash": "d551043d0a449472ae2107ca96a3067a317542f74549d0ee24a404c1ac86c76f"
+  },
+  "THM/Maquinas/1. Easy/53. Fools Mate/0. Fools Mate.md": {
+    "modified": "2026-07-07T01:56:18",
+    "hash": "2d17907fed10d846f287cd8325ca7ea085d71fb9de7feaed3e02b216d4178ce1"
+  },
+  "THM/Maquinas/1. Easy/53. Fools Mate/1. Introduction.md": {
+    "modified": "2026-07-07T01:56:18",
+    "hash": "7c209f5ba6a19d5574fcf38b682be5aff051b6c3ab527d1c8e3f124b691e5a14"
+  },
+  "THM/Maquinas/2. Medium/21. Fools Mate Revenge/0. Fools Mate Revenge.md": {
+    "modified": "2026-07-07T01:56:18",
+    "hash": "920b0c171eef450e15c3b644466a6260cdd21592294ae2061fa156b64e13bc81"
+  },
+  "THM/Maquinas/2. Medium/21. Fools Mate Revenge/2. Getting the Flags.md": {
+    "modified": "2026-07-07T01:56:18",
+    "hash": "8bbac62bcfe83d899ab143288e1b36e9bb675b7ad1d417066b9ca59dbf571f76"
+  },
+  "THM/Maquinas/2. Medium/21. Fools Mate Revenge/1. Introduction.md": {
+    "modified": "2026-07-07T01:56:18",
+    "hash": "4da1ee214e9791f5eab9f12cb3855a8bb77ca34399da1c56c23b7e224fde6b2a"
   }
 }

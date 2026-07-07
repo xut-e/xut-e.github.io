@@ -10324,6 +10324,24 @@
                   ]
                 },
                 {
+                  "name": "53. Fools Mate",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/53. Fools Mate/1. Introduction.md",
+                      "parent": "53. Fools Mate"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/53. Fools Mate/2. Getting the Flags.md",
+                      "parent": "53. Fools Mate"
+                    }
+                  ]
+                },
+                {
                   "name": "6. TakeOver",
                   "type": "directory",
                   "contents": [
@@ -10662,6 +10680,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/20. Wekor/2. Getting the Flags.md",
                       "parent": "20. Wekor"
+                    }
+                  ]
+                },
+                {
+                  "name": "21. Fools Mate Revenge",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/21. Fools Mate Revenge/1. Introduction.md",
+                      "parent": "21. Fools Mate Revenge"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/21. Fools Mate Revenge/2. Getting the Flags.md",
+                      "parent": "21. Fools Mate Revenge"
                     }
                   ]
                 },

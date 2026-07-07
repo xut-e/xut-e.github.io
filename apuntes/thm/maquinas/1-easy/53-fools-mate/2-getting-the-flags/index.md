@@ -1,0 +1,45 @@
+---
+layout: apunte
+title: "2. Getting the Flags"
+---
+
+<h2>Reconocimiento Inicial</h2>
+Comenzamos escaneando los puertos abiertos de la máquina.
+
+!**Pasted image 20260706180433.png**
+
+Ahora vamos a escanear dichos puertos más en profundidad.
+
+!**Pasted image 20260706180452.png**
+
+Vamos a ver los directorios de la página.
+
+!**Pasted image 20260706180931.png**
+
+-------------------------------
+<h2>Profundización</h2>
+Vamos a ver cómo se ve la página.
+
+!**Pasted image 20260706181001.png**
+
+Parece normal, pero si intentamos jugar `Ra8`, que es el mejor movimiento por acabar en mate, nos dice:
+
+!**Pasted image 20260706181057.png**
+
+De igual manera si modificamos la posición hasta que es mate, nos dice lo mismo: `g8=Q`.
+
+!**Pasted image 20260706181311.png**
+
+Vamos a mirar qué hay en `/js/app.js`. Si buscamos en el código, podemos ver que la restricción que nos da de no poder hacer mate, está del lado del cliente:
+
+!**Pasted image 20260706182322.png**
+
+-------------------------------------
+<h2>Explotación</h2>
+Por lo que vamos a usar BurpSuite para modificar el movimiento sin restricciones del cliente:
+
+!**Pasted image 20260706182534.png**
+
+Interceptamos la petición de `Ra7` de la cual no obtenemos problemas del lado del cliente, y en Burp la modificamos para hacer `Ra8`.
+
+!**Pasted image 20260706182638.png**
