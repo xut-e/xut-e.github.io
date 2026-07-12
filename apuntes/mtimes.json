@@ -3548,8 +3548,8 @@
     "hash": "803b7c61aeee9f323e923772ff1630a1a8d1f091a88e73c3bd86631dc448b627"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/2. Linux Privilege Escalation/6. Privilege Escalation - SUID.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "552c18538ca82b99600b9fdec300a41205b7fdc817c65e647bf1120e7e5405db"
+    "modified": "2026-07-12T01:27:50",
+    "hash": "1509011ce520808de35788c528ee899a5c7cb7f45014b60c8e6c1cd167e87c7f"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/1. What the Shell/14. Linux Practice Box.md": {
     "modified": "2025-12-12T13:58:55",
@@ -6696,8 +6696,8 @@
     "hash": "8487574b24a001906b3109ba11a56722b89c4515f6f7d8b80a643159cf489b9d"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/4. LDAP Bind Credentials.md": {
-    "modified": "2026-04-29T01:52:26",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-12T01:27:50",
+    "hash": "62756f52036c44615d88af1136d05a3a2f26fc3d0a9db237d388630702299d22"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/2. OSINT and Phishing.md": {
     "modified": "2026-07-09T01:48:25",
@@ -7372,8 +7372,8 @@
     "hash": "8e7c4dda925d3a69534a4d19fd3b8843d73fda8724f76f0babee3e76ca5b2dde"
   },
   "THM/Maquinas/2. Medium/19. Dogcat/0. Dogcat.md": {
-    "modified": "2026-06-22T02:37:40",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-12T01:27:49",
+    "hash": "c4c8de9cabe2e27e999cc1fa9bbf5f70eea6b8043d2bae4f4dec21c7af2b89a3"
   },
   "THM/Maquinas/2. Medium/19. Dogcat/2. Getting the Flags.md": {
     "modified": "2026-06-25T02:06:19",
@@ -7396,8 +7396,8 @@
     "hash": "338ecc2b4eab7356330852a0a41289394cddde719e6cce2dfcdd4084cf98d234"
   },
   "THM/Maquinas/1. Easy/52. CyberHeroes/0. CyberHeroes.md": {
-    "modified": "2026-07-02T02:05:02",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-12T01:27:49",
+    "hash": "f2a662023ae3b7f35aae0b7ecc3b4cdb6a6dd3e9b82f2f8fb92279ba0fcee03b"
   },
   "THM/Maquinas/1. Easy/52. CyberHeroes/2. Getting the Flags.md": {
     "modified": "2026-07-02T02:05:02",
@@ -7430,5 +7430,25 @@
   "THM/Maquinas/2. Medium/21. Fools Mate Revenge/1. Introduction.md": {
     "modified": "2026-07-07T01:56:18",
     "hash": "4da1ee214e9791f5eab9f12cb3855a8bb77ca34399da1c56c23b7e224fde6b2a"
+  },
+  "HTB/0. HTB.md": {
+    "modified": "2026-07-12T01:27:49",
+    "hash": "7a432818dec5cd885e77e0e6113e50645ad0a6fdcb776829ab014f5804b3e6b7"
+  },
+  "HTB/Seasons/0. Seasons.md": {
+    "modified": "2026-07-12T01:27:49",
+    "hash": "545a9d6c1d92e545ede11592936ddfd8f6bff3cc59e39ad653e2e4de67d386ef"
+  },
+  "HTB/Seasons/11/11.md": {
+    "modified": "2026-07-12T01:27:49",
+    "hash": "541306484de17298306096a8d2c4fde9d16bcf8147a6fb0a774a1115a7ff42af"
+  },
+  "HTB/Seasons/11/7. MakeSense/0. MakeSense.md": {
+    "modified": "2026-07-12T01:27:49",
+    "hash": "7b7d29a0113ef52d9cc498fe9076d7b8092952f6e7d1f409c6cc46e7f71ea570"
+  },
+  "HTB/Seasons/11/7. MakeSense/1. Getting the Flags.md": {
+    "modified": "2026-07-12T01:27:49",
+    "hash": "6ead412c63ab60a6f61401d29be712e5c9cfbd959f3dc4271bdddf8c83cebe75"
   }
 }

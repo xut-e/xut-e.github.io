@@ -75,6 +75,36 @@
       ]
     },
     {
+      "name": "HTB",
+      "type": "directory",
+      "contents": [
+        {
+          "name": "Seasons",
+          "type": "directory",
+          "contents": [
+            {
+              "name": "11",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "7. MakeSense",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/HTB/Seasons/11/7. MakeSense/1. Getting the Flags.md",
+                      "parent": "7. MakeSense"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Recursos Web",
       "type": "directory",
       "contents": [

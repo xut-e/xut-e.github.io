@@ -13,7 +13,7 @@ Notarás que estos archivos tienen un bit "s" que muestra su nivel de permiso es
 
 Una buena práctica sería comparar ejecutables en esta lista con GTFOBins. Hacer click en el botón SUID filtrará binarios que se sepa que son explotables cuando el bit SUID esté configurado.
 
-La lista arriba muestra que nano tiene el bit SUID configuradoo. Desafortunadamente, GTFOBins no ofrece una victoria fácil. Típico en los entornos reales, necesitaremos encontrar pasos intermedios en la escalada de privilegios.
+La lista arriba muestra que nano tiene el bit SUID configurado. Desafortunadamente, GTFOBins no ofrece una victoria fácil. Típico en los entornos reales, necesitaremos encontrar pasos intermedios en la escalada de privilegios.
 
 !**Pasted image 20251127123032.png**
 

@@ -8,6 +8,10 @@
     "path": "/apuntes/ctfs/0-ctfs/"
   },
   {
+    "title": "0. HTB",
+    "path": "/apuntes/htb/0-htb/"
+  },
+  {
     "title": "0. Recursos Web",
     "path": "/apuntes/recursos-web/0-recursos-web/"
   },
@@ -58,6 +62,22 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/ctfs/1-talent-arena/2026/3-reverse-engineering/1-introduction/"
+  },
+  {
+    "title": "0. Seasons",
+    "path": "/apuntes/htb/seasons/0-seasons/"
+  },
+  {
+    "title": "11",
+    "path": "/apuntes/htb/seasons/11/11/"
+  },
+  {
+    "title": "0. MakeSense",
+    "path": "/apuntes/htb/seasons/11/7-makesense/0-makesense/"
+  },
+  {
+    "title": "1. Getting the Flags",
+    "path": "/apuntes/htb/seasons/11/7-makesense/1-getting-the-flags/"
   },
   {
     "title": "1. DVWA",
