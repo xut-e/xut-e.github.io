@@ -3,3 +3,7 @@ layout: apunte
 title: "6. Microsoft Deployment Toolkit"
 ---
 
+Las organizaciones grandes, necesitan herramientas para desplegar y gestionar la infraestructura del estado. En organizaciones masivas, no puedes tener a tu personal de IT usando DVDs o incluso USBs instalando software en cada máquina. Por suerte, Microsoft ofrece las herramientas requeridas para manejar el estado. Sin embargo, podemos explotar malas configuraciones en estas herramientas al igual que en el AD.
+
+--------------------------------
+<h2>MDT y SCCM</h2>

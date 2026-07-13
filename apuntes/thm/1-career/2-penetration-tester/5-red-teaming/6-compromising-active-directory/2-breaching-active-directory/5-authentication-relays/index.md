@@ -3,3 +3,59 @@ layout: apunte
 title: "5. Authentication Relays"
 ---
 
+Continuando con los ataques que pueden ser preparados desde nuestro dispositivo mercenario, podemos mirar ataques contra protocolos más amplios de autentificación. En estas redes Windows, hay una cantidad significante de servicios hablando unos con otros, permitiendo a los usuarios a hacer uso de los servicios ofrecidos por la red.
+
+Estos servicios tienen que usar métodos de autentificación integrados para verificar la identidad de las conexiones entrantes. En la tarea 2 exploramos la autentificación NTLM usada en aplicaciones web. En esta, profundizaremos en cómo esta autentificación se ve desde la perspectiva de red. Sin embargo, para esta tarea nos centraremos en la autentificación NetNTLM usada por SMB.
+
+------------------------------------------------------------
+<h2>Server Message Block</h2>
+El protocolo SMB permite a los clientes comunicarse con un servidor. En las redes que usa Microsoft AD, SMB gobierna todo desde la compartición de archivos en la red interna como la administración remota. Incluso alerta a tu ordenador cuando intentas imprimir un documento.
+
+Sin embargo, la seguridad de versiones antiguas del protocolo eran insuficientes. Varias vulnerabilidades y exploits fueron descubiertos para recuperar credenciales o incluso ganar ejecución de comandos en dispositivos. Aunque algunas de estas vulnerabilidades fueron resueltas en versiones posteriores, a menudo las organizaciones no refuerzan el uso de versiones más recientes por motivos de legacy. Veremos dos exploits diferentes para la autentificación NetNTLM mediante SMB:
+
+- Como los retos NTLM pueden ser interceptados, usaremos técnicas de cracking offline para recuperar las contraseñas asociadas al reto NTLM. Sin embargo, este proceso puede ser significantemente más lento que crackear el hash NTLM directamente.
+- Podemos usar nuestro dispositivo mercenario para preparar un ataque MITM, repitiendo la autentificación SMB entre el cliente y el servidor, lo que nos proporcionará con una sesión autentificada y acceso al servidor objetivo.
+
+----------------------------------
+<h2>LLMNR, NBT-NS y WPAD</h2>
+En esta tarea, veremos cómo ocurre la autentificación durante el uso de SMB. Usaremos la herramienta `responder` para intentar interceptar el reto NetNTLM para crackearlo. Hay normalmente un montón de estos retos en la red. Algunas soluciones de seguridad incluso realizan un barrido del rango de IPs entero para recuperar información de los hosts. A veces debido a los registros DNS fijos, estos retos de autentificación pueden acabar llegando a tu dispositivo mercenario en lugar de al host debido.
+EL Responder nos permite realizar ataques MITM contaminando las respuestas durante la autentificación NetNTLM, engañando al cliente para hablarte a ti en lugar de al servidor real al que quería conectarse. En una LAN real ,el Responder intentará contaminar cualquier petición Link-Local Multicast Name Resolution (LLMNR), NetBIOS Name Service (NBT-NS) y Web Proxy Auto-Discovery (WPAD) que sea detectada. En redes Windows grandes, estos protocolos pueden permitir a hosts que realicen su propia resolución DNS para todos los hosts de la misma red. En vez de saturar recursos de red como servidores DNS, los hosts pueden intentar primero determinar si el host que están buscando está en la misma red local mandando peticiones LLMNR y viendo si algún host responde. El NBT-NS es el protocolo precursor de LLMNR y las peticiones WPAD están hechas para intentar encontrar un proxy para futuras conexiones HTTP(S).
+
+Como estos protocolos confían en peticiones broadcasteadas en la red local, nuestro dispositivo mercenario también recibiría estas peticiones. Normalmente, estas peticiones simplemente serían tiradas ya que no se pretendían para nuestro host, Sin embargo, el Responder las escuchará activamente y mandará las respuestas contaminadas diciendo que el host que piden tiene nuestra IP. Contaminando estas peticiones, el Responder intenta forzar al cliente a conectarse a nuestra máquina. De la misma forma, empieza a hostear diferentes servidores como SMB, HTTP, SQL y otros para capturar estas peticiones y forzar la autentificación.
+
+--------------------------------------------
+<h2>Interceptar un Reto NetNTLM</h2>
+Una cosa a tener en cuenta es que el Responder trata de ganar la race condition contaminando las conexiones para asegurar que interceptas la conexión. Esto significa que el Responder es normalmente limitado a contaminar retos de autentificación en redes locales. Está programado para mandar una petición contaminable cada 30 minutos.
+
+Aunque el Responder sería capaz de interceptar y contaminar más peticiones de autentificación al ejecutarse desde un dispositivo mercenario conectado a la LAN de la organización, es crucial entender que este comportamiento puede ser disruptivo y por tanto, detectado. Contaminando las peticiones de autentificación, los intentos normales de autentificación fallarían, significando que usuarios y servicios no podrían conectarse a los hosts y comparticiones que pretenden.
+
+Si estás usando tu propia máquina, puedes descargar e instalar el Responder desde el repositorio: https://github.com/lgandx/Responder. Para configurar el responder para ejecutarse en la interfaz conectada a la VPN:
+
+```bash
+sudo responder -I breachad
+```
+
+Déjalo corriendo por un tiempo (aproximadamente 10 minutos) y deberías recibir una conexión SMBv2 la cual el Responder puede usar para extraer la respuesta NTLMv2-SSP. Se verá así:
+
+```bash
+[+] Listening for events...
+[SMBv2] NTLMv2-SSP Client   : <Client IP>
+[SMBv2] NTLMv2-SSP Username : ZA\<Service Account Username>
+[SMBv2] NTLMv2-SSP Hash     : <Service Account Username>::ZA:<NTLMv2-SSP Hash>
+```
+
+Si estuviéramos usando el dispositivo mercenario, deberíamos capturar varias respuestas. Una vez que tenemos un par, podemos empezar a realizar crackeo offline de las respuestas. Si las cuentas tienen contraseñas débiles configuradas, tenemos una buena oportunidad de obtenerlas. Copia el hash NTLMv2-SSP a un archivo de texto. Usaremos la lista de contraseñas dada en la tarea. Usaremos el siguiente comando:
+
+```bash
+hashcat -m 5600 <hash_file> <password_file> --force
+```
+
+-------------------------------------------
+<h2>Repitiendo (redireccionando) el Reto</h2>
+En algunas instancias, podemos llevar esto un paso más allá intentando repetir el reto en lugar de capturarlo directamente. Esto es un poco más difícil de hacer sin conocimiento previo de las cuentas ya que el ataque depende de los permisos de la cuenta asociada. Necesitamos un par de cosas que jueguen a nuestro favor:
+
+- La firma SMB debería estar deshabilitada o habilitada pero no obligatoria. Al realizar la repetición, podemos hacer cambios sutiles a la petición para pasarla. Si la firma SMB está habilitada, no seremos capaces de suplantar dicha firma, por lo que el objetivo la rechazará.
+- La cuenta asociada necesita tener permisos relevantes en el servidor para acceder a los recursos pedidos. Idealmente, estamos buscando repetir el reto y respuesta de una cuenta con privilegios administrativos en el servidor.
+- Como no tenemos un acceso AD técnicamente, algo de trabajo adivinatorio ha de ser realizado para saber qué cuentas cuentan con qué permisos en qué hosts. Si ya hemos roto AD, podemos realizar una enumeración primero, que suele ser el caso.
+
+!**Pasted image 20260712201658.png**
