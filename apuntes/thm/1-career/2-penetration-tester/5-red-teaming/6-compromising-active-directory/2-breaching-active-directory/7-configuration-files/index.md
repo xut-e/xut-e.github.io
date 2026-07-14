@@ -3,3 +3,15 @@ layout: apunte
 title: "7. Configuration Files"
 ---
 
+EL último tramo de enumeración que exploraremos en esta red serán los archivos de configuración. Supón que tienes suerte y causas una brecha que te da accedo a un host en la red de la organización. En este caso, los archivos de configuración son una forma excelente de explorar en un intento de obtener credenciales AD. Dependiendo del host que fue comprometido, puedes encontrar varios tipos diferentes de archivos de configuración útiles para la enumeración:
+
+- Archivos de configuración de aplicaciones web.
+- Archivos de configuración de servicios.
+- Claves de registro.
+- Aplicaciones desplegadas centralmente.
+
+Varios scripts de enumeración, como [Seatbelt](https://github.com/GhostPack/Seatbelt) pueden ser usados para automatizar este proceso.
+
+-------------------------------
+<h2>Credenciales de Archivos de Configuración</h2>
+Nos centraremos en recuperar credenciales de una aplicación desplegada centralmente. Normalmente, estas aplicaciones necesitan un método para autentificarse en el dominio durante la instalación y las fases de ejecución.

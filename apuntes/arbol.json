@@ -8871,12 +8871,6 @@
                               "type": "file",
                               "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/7. Configuration Files.md",
                               "parent": "2. Breaching Active Directory"
-                            },
-                            {
-                              "name": "8. Conclusion.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/8. Conclusion.md",
-                              "parent": "2. Breaching Active Directory"
                             }
                           ]
                         },
