@@ -1,5 +1,13 @@
 [
   {
+    "title": "0. Breaching Active Directory",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/0-breaching-active-directory/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/0. Breaching Active Directory.md",
+    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
+    "content": "[[1. Introduction to AD Breaches]]\n[[2. OSINT and Phishing]]\n[[3. NTLM Authenticated Services]]\n[[4. LDAP Bind Credentials]]\n[[5. Authentication Relays]]\n[[6. Microsoft Deployment Toolkit]]\n[[7. Configuration Files]]",
+    "modified": "2026-07-14T01:18:28"
+  },
+  {
     "title": "6. Microsoft Deployment Toolkit",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/6-microsoft-deployment-toolkit/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/6. Microsoft Deployment Toolkit.md",
@@ -13,14 +21,6 @@
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/7. Configuration Files.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
     "content": "EL último tramo de enumeración que exploraremos en esta red serán los archivos de configuración. Supón que tienes suerte y causas una brecha que te da accedo a un host en la red de la organización. En este caso, los archivos de configuración son una forma excelente de explorar en un intento de obtener credenciales AD. Dependiendo del host que fue comprometido, puedes encontrar varios tipos diferentes de archivos de configuración útiles para la enumeración:\n\n- Archivos de configuración de aplicaciones web.\n- Archivos de configuración de servicios.\n- Claves de registro.\n- Aplicaciones desplegadas centralmente.\n\nVarios scripts de enumeración, como [Seatbelt](https://github.com/GhostPack/Seatbelt) pueden ser usados para automatizar este proceso.\n\n-------------------------------\n<h2>Credenciales de Archivos de Configuración</h2>\nNos centraremos en recuperar credenciales de una aplicación desplegada centralmente. Normalmente, estas aplicaciones necesitan un método para autentificarse en el dominio durante la instalación y las fases de ejecución.",
-    "modified": "2026-07-14T01:18:28"
-  },
-  {
-    "title": "0. Breaching Active Directory",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/2-breaching-active-directory/0-breaching-active-directory/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/0. Breaching Active Directory.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 2. Breaching Active Directory",
-    "content": "[[1. Introduction to AD Breaches]]\n[[2. OSINT and Phishing]]\n[[3. NTLM Authenticated Services]]\n[[4. LDAP Bind Credentials]]\n[[5. Authentication Relays]]\n[[6. Microsoft Deployment Toolkit]]\n[[7. Configuration Files]]",
     "modified": "2026-07-14T01:18:28"
   },
   {
