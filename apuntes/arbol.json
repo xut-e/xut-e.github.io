@@ -97,6 +97,18 @@
                       "parent": "7. MakeSense"
                     }
                   ]
+                },
+                {
+                  "name": "8. Paperwork",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/HTB/Seasons/11/8. Paperwork/1. Getting the Flags.md",
+                      "parent": "8. Paperwork"
+                    }
+                  ]
                 }
               ]
             }

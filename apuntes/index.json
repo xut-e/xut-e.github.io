@@ -7280,6 +7280,14 @@
     "path": "/apuntes/htb/seasons/11/11/"
   },
   {
+    "title": "0. Paperwork",
+    "path": "/apuntes/htb/seasons/11/8-paperwork/0-paperwork/"
+  },
+  {
+    "title": "1. Getting the Flags",
+    "path": "/apuntes/htb/seasons/11/8-paperwork/1-getting-the-flags/"
+  },
+  {
     "title": "1. Getting the Flags",
     "path": "/apuntes/htb/seasons/11/7-makesense/1-getting-the-flags/"
   },

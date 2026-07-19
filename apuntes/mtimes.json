@@ -7440,8 +7440,8 @@
     "hash": "545a9d6c1d92e545ede11592936ddfd8f6bff3cc59e39ad653e2e4de67d386ef"
   },
   "HTB/Seasons/11/11.md": {
-    "modified": "2026-07-12T01:27:49",
-    "hash": "541306484de17298306096a8d2c4fde9d16bcf8147a6fb0a774a1115a7ff42af"
+    "modified": "2026-07-19T01:26:01",
+    "hash": "ee819bde76de21a1e3f84b6e29ae87311c201cbe75497bcbd54e090936d95d0d"
   },
   "HTB/Seasons/11/7. MakeSense/0. MakeSense.md": {
     "modified": "2026-07-12T01:27:49",
@@ -7450,5 +7450,13 @@
   "HTB/Seasons/11/7. MakeSense/1. Getting the Flags.md": {
     "modified": "2026-07-12T01:27:49",
     "hash": "6ead412c63ab60a6f61401d29be712e5c9cfbd959f3dc4271bdddf8c83cebe75"
+  },
+  "HTB/Seasons/11/8. Paperwork/0. Paperwork.md": {
+    "modified": "2026-07-19T01:26:01",
+    "hash": "6c97a6b3661af27888caf7db7f14ed8fe5b3bb6f640d14329fe2e544f43b0fb2"
+  },
+  "HTB/Seasons/11/8. Paperwork/1. Getting the Flags.md": {
+    "modified": "2026-07-19T01:26:01",
+    "hash": "f76df23ec76142e3ca713024882339f1f066a6168c147c6a7b326347e329ce6d"
   }
 }
