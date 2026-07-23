@@ -6568,8 +6568,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/1. Why AD Enumeration.md": {
-    "modified": "2026-04-29T01:52:26",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-23T01:43:51",
+    "hash": "0585b6a90054c3bfc0a12f23489f2f933574658ab15e52eb63b4a1ee729e9a6f"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/0. Enumerating Active Directory.md": {
     "modified": "2026-04-29T01:52:26",
@@ -6588,8 +6588,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/2. Credential Injection.md": {
-    "modified": "2026-04-29T01:52:26",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-07-23T01:43:51",
+    "hash": "5546bd551e9be97a38bf7df3339a6105efb7897e0c687100aa7ae9b3318389f8"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/3. Enumeration through Microsoft Management Console.md": {
     "modified": "2026-04-29T01:52:26",
@@ -6680,8 +6680,8 @@
     "hash": "7b03c4b3b75775957fe939fe486faaf382da0a2f4170de1d80e51223c3e13380"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/1. Introduction to AD Breaches.md": {
-    "modified": "2026-07-07T01:56:18",
-    "hash": "8c647360298c29ce7d8bbcbd044a46f74500d1427120988bdcedd123d0506829"
+    "modified": "2026-07-23T01:43:51",
+    "hash": "f66a6320bb692d341d982f949ae89db164f0edd9dfc23b11a5cecab6c6fa7556"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/2. Breaching Active Directory/8. Conclusion.md": {
     "modified": "2026-04-29T01:52:26",
@@ -7440,8 +7440,8 @@
     "hash": "545a9d6c1d92e545ede11592936ddfd8f6bff3cc59e39ad653e2e4de67d386ef"
   },
   "HTB/Seasons/11/11.md": {
-    "modified": "2026-07-19T01:26:01",
-    "hash": "ee819bde76de21a1e3f84b6e29ae87311c201cbe75497bcbd54e090936d95d0d"
+    "modified": "2026-07-23T01:43:51",
+    "hash": "cdf80e26895cc26eb14db0f71f57e1800d65b8b6572a5b421b253a1b9d7f3ad1"
   },
   "HTB/Seasons/11/7. MakeSense/0. MakeSense.md": {
     "modified": "2026-07-12T01:27:49",
@@ -7458,5 +7458,13 @@
   "HTB/Seasons/11/8. Paperwork/1. Getting the Flags.md": {
     "modified": "2026-07-19T15:25:31",
     "hash": "173a882e40cce08fd9bedeb853820d36def9796aeb693607c6bd7205a42a49f7"
+  },
+  "HTB/Seasons/11/9. Bedside/1. Getting the Flags.md": {
+    "modified": "2026-07-23T01:43:51",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "HTB/Seasons/11/9. Bedside/0. Bedside.md": {
+    "modified": "2026-07-23T01:43:51",
+    "hash": "32a7a3021d7f7f42fde0c0009af2391651a541e0e318e5e7279055ec9405487d"
   }
 }

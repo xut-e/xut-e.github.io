@@ -109,6 +109,18 @@
                       "parent": "8. Paperwork"
                     }
                   ]
+                },
+                {
+                  "name": "9. Bedside",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/HTB/Seasons/11/9. Bedside/1. Getting the Flags.md",
+                      "parent": "9. Bedside"
+                    }
+                  ]
                 }
               ]
             }
