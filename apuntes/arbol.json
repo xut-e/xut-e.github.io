@@ -10750,6 +10750,24 @@
                   ]
                 },
                 {
+                  "name": "22. Blog",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/22. Blog/1. Introduction.md",
+                      "parent": "22. Blog"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/22. Blog/2. Getting the Flags.md",
+                      "parent": "22. Blog"
+                    }
+                  ]
+                },
+                {
                   "name": "3. Revenge",
                   "type": "directory",
                   "contents": [

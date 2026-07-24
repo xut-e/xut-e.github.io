@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-07-07T01:56:18",
-    "hash": "b8d066a64a580a3ae75d86a2b3e0143eabe3dc741b161f68b48d2b57a2763ee3"
+    "modified": "2026-07-24T01:28:11",
+    "hash": "43b8597f43e72b25756d5d8be50de1662d2e2f7309dbda8fbd91bf1e3d18d803"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -6588,8 +6588,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/2. Credential Injection.md": {
-    "modified": "2026-07-23T01:43:51",
-    "hash": "5546bd551e9be97a38bf7df3339a6105efb7897e0c687100aa7ae9b3318389f8"
+    "modified": "2026-07-24T01:28:11",
+    "hash": "85ba2d133b9ff8b0f2a1f7aafc59fd585179354afeb6a980fd8a9dfad05def60"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/3. Enumerating Active Directory/3. Enumeration through Microsoft Management Console.md": {
     "modified": "2026-04-29T01:52:26",
@@ -7466,5 +7466,17 @@
   "HTB/Seasons/11/9. Bedside/0. Bedside.md": {
     "modified": "2026-07-23T01:43:51",
     "hash": "32a7a3021d7f7f42fde0c0009af2391651a541e0e318e5e7279055ec9405487d"
+  },
+  "THM/Maquinas/2. Medium/22. Blog/0. Blog.md": {
+    "modified": "2026-07-24T01:28:11",
+    "hash": "afc12458bf6d0e2c5adff76283c0254b801fa6e8f9e59b34e7454fdc03feaa87"
+  },
+  "THM/Maquinas/2. Medium/22. Blog/1. Introduction.md": {
+    "modified": "2026-07-24T01:28:11",
+    "hash": "e15f43cae5926c66058c9a1592fa6fe7dba7cfd54d0ecc532189e5fcf322c9e9"
+  },
+  "THM/Maquinas/2. Medium/22. Blog/2. Getting the Flags.md": {
+    "modified": "2026-07-24T01:28:11",
+    "hash": "23e02c08da67be88075ff00df8c1253e033899edcc6c920b6eaf251221123363"
   }
 }
