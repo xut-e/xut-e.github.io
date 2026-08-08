@@ -3,3 +3,161 @@ layout: apunte
 title: "5. Enumeration thorugh PowerShell"
 ---
 
+<h2>PowerShell</h2>
+PowerShell es la mejora del Prompt de Comandos. Microsoft fue lanzado en 2006 po rprimera vez. Mientras que PowerShell tiene toda la funcionalidad estándar que ofrece el command prompt, además también ofrece los cmdlets.
+
+Ya que hemos instalado las herramientas AD-RSAT en la tarea anterior, también se instalaron los cmdlets asociados. Hay más de 50 cmdlets instalados.
+
+Usando la terminal de SSH, podemos escalarla a una PowerShell usando el comando `powershell`.
+
+-----------------------------
+<h2>Usuarios</h2>
+Podemos usar el cmdlet`Get-ADUser` para enumerar usuarios AD:
+
+```powershell
+PS C:\> Get-ADUser -Identity gordon.stevens -Server za.tryhackme.com -Properties *
+
+AccountExpirationDate                :
+accountExpires                       : 9223372036854775807
+AccountLockoutTime                   :
+[...]
+Deleted                              :
+Department                           : Consulting
+Description                          :
+DisplayName                          : Gordon Stevens
+DistinguishedName                    : CN=gordon.stevens,OU=Consulting,OU=People,DC=za,DC=tryhackme,DC=com
+[...]
+```
+
+Los parámetros son usados para:
+
+- `-Identity`: El nombre de la cuenta que queremos enumerar.
+- `-Properties`: Qué propiedades asociadas con la cuenta serán mostradas, `*` mostrará todas.
+- `-Server`: Ya que no estamos unidos al dominio, tenemos que usar este parámetro para apuntar al controlador de dominio.
+
+Para la mayoría de estos cmdlets también podemos usar el parámetro `-Filter` para controlar la enumeración y usar el cmdlet `Format-Table` para mostrar los resultados como el siguiente:
+
+```powershell
+PS C:\> Get-ADUser -Filter 'Name -like "*stevens"' -Server za.tryhackme.com | Format-Table Name,SamAccountName -A
+
+Name             SamAccountName
+----             --------------
+chloe.stevens    chloe.stevens
+samantha.stevens samantha.stevens
+[...]
+janice.stevens   janice.stevens
+gordon.stevens   gordon.stevens
+```
+
+----------------------------
+<h2>Groups</h2>
+Podemos usar el cmdlet `Get-ADGroup` para enumerar los grupos AD:
+
+```powershell
+PS C:\> Get-ADGroup -Identity Administrators -Server za.tryhackme.com
+
+
+DistinguishedName : CN=Administrators,CN=Builtin,DC=za,DC=tryhackme,DC=com
+GroupCategory     : Security
+GroupScope        : DomainLocal
+Name              : Administrators
+ObjectClass       : group
+ObjectGUID        : f4d1cbcd-4a6f-4531-8550-0394c3273c4f
+SamAccountName    : Administrators
+SID               : S-1-5-32-544
+```
+
+También podemos enumerar la pertenencia a grupos usando el cmdlet `Get-ADGroupMember`.
+
+```powershell
+PS C:\> Get-ADGroupMember -Identity Administrators -Server za.tryhackme.com
+
+
+distinguishedName : CN=Domain Admins,CN=Users,DC=za,DC=tryhackme,DC=com
+
+name              : Domain Admins
+objectClass       : group
+objectGUID        : 8a6186e5-e20f-4f13-b1b0-067f3326f67c
+SamAccountName    : Domain Admins
+SID               : S-1-5-21-3330634377-1326264276-632209373-512
+
+[...]
+
+distinguishedName : CN=Administrator,CN=Users,DC=za,DC=tryhackme,DC=com name              : Administrator
+objectClass       : user
+objectGUID        : b10fe384-bcce-450b-85c8-218e3c79b30fSamAccountName    : Administrator
+SID               : S-1-5-21-3330634377-1326264276-632209373-500
+```
+
+----------------------------------
+<h2>Objetos AD</h2>
+Una búsqueda genérica en busca de objetos puede ser realizada usando el cmdlet `Get-ADObject`. Por ejemplo, si estamos buscando objetos AD que han cambiado tras una fecha:
+
+```powershell
+PS C:\> $ChangeDate = New-Object DateTime(2022, 02, 28, 12, 00, 00)
+PS C:\> Get-ADObject -Filter 'whenChanged -gt $ChangeDate' -includeDeletedObjects -Server za.tryhackme.com
+
+Deleted           :
+DistinguishedName : DC=za,DC=tryhackme,DC=com
+Name              : za
+ObjectClass       : domainDNS
+ObjectGUID        : 518ee1e7-f427-4e91-a081-bb75e655ce7a
+
+Deleted           :
+DistinguishedName : CN=Administrator,CN=Users,DC=za,DC=tryhackme,DC=com
+Name              : Administrator
+ObjectClass       : user
+ObjectGUID        : b10fe384-bcce-450b-85c8-218e3c79b30f
+```
+
+Si quisiéramos, por ejemplo, realizar un ataque de password spraying sin bloquear cuentas, podemos usar esto para enumerar cuentas que su `badPwdCount` es mayor que ''0'', para evitar estas cuentas en nuestro ataque:
+
+```powershell
+PS C:\> Get-ADObject -Filter 'badPwdCount -gt 0' -Server za.tryhackme.com
+PS C:\>
+```
+
+Esto sólo mostrará resultados si uno de los usuarios en la red ha fallado su contraseña un par de veces.
+
+-----------------------------------------
+<h2>Dominios</h2>
+Podemos usar `Get-ADDomain` para recuperar información adicional sobre el dominio específico:
+
+```powershell
+PS C:\> Get-ADDomain -Server za.tryhackme.com
+
+AllowedDNSSuffixes                 : {}
+ChildDomains                       : {}
+ComputersContainer                 : CN=Computers,DC=za,DC=tryhackme,DC=com
+DeletedObjectsContainer            : CN=Deleted Objects,DC=za,DC=tryhackme,DC=com
+DistinguishedName                  : DC=za,DC=tryhackme,DC=com
+DNSRoot                            : za.tryhackme.com
+DomainControllersContainer         : OU=Domain Controllers,DC=za,DC=tryhackme,DC=com
+[...]
+UsersContainer                     : CN=Users,DC=za,DC=tryhackme,DC=com
+```
+
+-----------------------------------
+<h2>Alterar Objetos AD</h2>
+La cosa buena sobre los cmdlets AD-RSAT es que algunos incluso te permiten crear objetos AD nuevos o alterar existentes. Sin embargo, nuestro foco es para la enumeración en red. Crear nuevos objetos o alterar existentes podría ser considerado explotación AD, lo que cubriremos más adelante.
+
+Si embargo, mostraremos un ejemplo de esto forzando el cambio de contraseña de nuestro usuario usando el cmdlet `Set-ADAccountPassword`.
+
+```powershell
+PS C:\> Set-ADAccountPassword -Identity gordon.stevens -Server za.tryhackme.com -OldPassword (ConvertTo-SecureString -AsPlaintext "old" -force) -NewPassword (ConvertTo-SecureString -AsPlainText "new" -Force)
+```
+
+Recuerda cambiar el valor de identidad y contraseña a la cuenta que te dieron.
+
+----------------------------------------
+<h2>Beneficios</h2>
+- Los cmdlets PowerShell pueden enumerar significantemente más información que los comandos net del command prompt.
+- Podemos especificar el servidor y el dominio para ejecutar estos comandos usando runas desde una máquina no unida al dominio.
+- Podemos crear nuestros nuevoos cmdlets para enumerar información específica.
+- Podemos usar cmdlets AD-RSAT para cambiar directamente objetos AD, como resetear contraseñas o añadir un usuario a un grupo específico.
+
+--------------------------------------
+<h2>Desventajas</h2>
+- La PowerShell es normalmente más monitorizada por los blue teams que la command prompt-
+- Tenemos que instalar herramientas AD-RSAT o usar otros, potencialmente detectables, scripts para enumeración PowerShell.
+

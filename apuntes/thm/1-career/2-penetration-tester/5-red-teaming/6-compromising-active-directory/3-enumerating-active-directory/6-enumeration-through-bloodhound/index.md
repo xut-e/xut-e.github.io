@@ -3,3 +3,43 @@ layout: apunte
 title: "6. Enumeration through Bloodhound"
 ---
 
+Por último, echaremos un vistazzo a realizar enumeración AD con [BloodHound](https://github.com/BloodHoundAD/BloodHound). Bloodhound es la herramienta de enumeración AD más poderosa hasta la fecha.
+
+----------------------------------
+<h2>Historia de Bloodhound</h2>
+Durante bastante tiempo, los red teamers tuvieron la sartén por el mango. Tanto era así que Microsoft intedró su propia versión de Bloodhound en su solución contra amenazas avanzada.
+
+Bloodhound permitió a los atacantes visualizar el entorno AD en un formato gráfico con nodos interconectados. Cada conexión es un camino posible que podría ser explotado para conseguir un objetivo. En contraste, los defensores usaban listas.
+
+Este pensamiento basado en gráficos, abrió un mundo para los atacantes. Permitió ataques de dos fases. En la primera fase, los atacantes realizarían ataques de phishing para conseguir acceso inicial para enumerar el AD. Este payload inicial solía generar mucho ruido y ser detectado y contenido por el blue team antes de que los atacantes pudieran realizar acciones aparte de exfiltrar la información enumerada. Sin embargo, los atacantes podían usar esta información offline para crear una ruta de ataque en formato gráfico, mostrando precisamente los pasos y saltos requeridos. Usando esta información durante la segunda campaña de phishing, los atacantes podrían normalmente cumplir con su objetivo en minutos una vez conseguida la brecha. Suele incluso ser más rápido de lo que tomaría el blue team en recibir la primera alerta
+
+-----------------------------------------
+<h2>Sharphound</h2>
+Normalmente oirás a usuarios referirse a Sharphound y Bloodhound como lo mismo. Sin embargo, no lo son. Sharphound es la herramienta de enumeración de Bloodhound. Es usada para enumerar la información AD que puede ser mostrada visualmente después en Bloodhound. Bloodhound es la GUI usada para mostrar los gráficos de ataque AD. Es por esto que necesitamos aprender a cómo usar Sharphound para enumerar el AD antes de poder mirar resultados usando Bloodhound.
+
+Hay tres tipos diferentes de colectoores Sharphound:
+
+- **Sharphound.ps1:** Script de PowerShell para ejecutar Sharphound. Sin embargo, la última actualización de Sharphound ha dejado de liberar la versión de PowerShell del script. Esta versión es buena para usar con RATs ya que el script puede ser cargado directamente en memoria, evadiendo escaneos de AV en disco.
+- **Sharphound.exe:** Un ejecutable de Windows para Sharphound.
+- **AzureHound.ps1:** Script de PowerShell para ejecutar Sharphound para instancias Azure (Microsoft Cloud Computing Services). Bloodhound puede ingestar información enumerada desde Azure para encontrar rutas de ataque relacionadas a la configuración de la gestión de identidad y acceso de Azure.
+
+>[!IMPORTANT] Las versiones de Bloodhound y Sharphound deben coincidir para los mejores resultados. Esta red fue creada usando `Bloodhound v4.1.0`.
+
+------------------------------
+<h2>Bloodhound</h2>
+
+
+-----------------------------------------
+<h2>Rutas de Ataque</h2>
+
+
+--------------------------------
+<h2>Sólo Información de Sesión</h2>
+
+
+--------------------------------------
+<h2>Beneficios</h2>
+
+
+--------------------------------
+<h2>Desventajas</h2>
