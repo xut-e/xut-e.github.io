@@ -25,4 +25,5 @@ title: "2. Medium"
 20. [0. Wekor](/apuntes/thm/maquinas/2-medium/20-wekor/0-wekor/)
 21. [0. Fools Mate Revenge](/apuntes/thm/maquinas/2-medium/21-fools-mate-revenge/0-fools-mate-revenge/)
 22. [0. Blog](/apuntes/thm/maquinas/2-medium/22-blog/0-blog/)
-23. 
+23. [0. The Hollow Shell](/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/0-the-hollow-shell/)
+24. 

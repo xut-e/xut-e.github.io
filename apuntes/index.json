@@ -1172,6 +1172,18 @@
     "path": "/apuntes/thm/maquinas/2-medium/8-injectics/1-getting-the-flags/"
   },
   {
+    "title": "0. The Hollow Shell",
+    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/0-the-hollow-shell/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/1-introduction/"
+  },
+  {
     "title": "2. Getting the Flags",
     "path": "/apuntes/thm/maquinas/2-medium/16-juicy/2-getting-the-flags/"
   },
@@ -1440,40 +1452,36 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/3-post-compromise/4-windows-local-persistence/8-persisting-through-existing-services/"
   },
   {
-    "title": "3. Spawning Processes Remotely",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/3-spawning-processes-remotely/"
+    "title": "7. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/7-conclusion/"
   },
   {
-    "title": "8. Conclusion",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/8-conclusion/"
+    "title": "3. Moving Laterally Using WMI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/3-moving-laterally-using-wmi/"
   },
   {
-    "title": "7. Port Forwarding",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/7-port-forwarding/"
-  },
-  {
-    "title": "6. Abusing User Behaviour",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/6-abusing-user-behaviour/"
+    "title": "4. Use of Alternate Authentication Material",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/4-use-of-alternate-authentication-material/"
   },
   {
     "title": "0. Lateral Movement and Pivoting",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/0-lateral-movement-and-pivoting/"
   },
   {
-    "title": "1. Introduction",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/1-introduction/"
+    "title": "5. Abusing User Behaviour",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/5-abusing-user-behaviour/"
   },
   {
-    "title": "5. Use of Alternate Authentication Material",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/5-use-of-alternate-authentication-material/"
+    "title": "1. Moving Through the Network",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/1-moving-through-the-network/"
   },
   {
-    "title": "2. Moving Through the Network",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/2-moving-through-the-network/"
+    "title": "6. Port Forwarding",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/6-port-forwarding/"
   },
   {
-    "title": "4. Moving Laterally Using WMI",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/4-moving-laterally-using-wmi/"
+    "title": "2. Spawning Processes Remotely",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/2-spawning-processes-remotely/"
   },
   {
     "title": "1. Introduction to AD Breaches",

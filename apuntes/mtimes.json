@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-07-24T01:28:11",
-    "hash": "43b8597f43e72b25756d5d8be50de1662d2e2f7309dbda8fbd91bf1e3d18d803"
+    "modified": "2026-08-24T00:35:19",
+    "hash": "fadeae71cd024d7b5399ec5a6a19679142bae819185f7d70f12ff8cdff9d95bb"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -6656,8 +6656,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/0. Lateral Movement and Pivoting.md": {
-    "modified": "2026-04-29T01:52:26",
-    "hash": "6714abb4896600f1a684ef96e208702c604928520ae3360c2a6181915f17e2a0"
+    "modified": "2026-08-24T00:35:19",
+    "hash": "2397fe07be4408eaf3788ade1daeba15bcda5cc33ba4e91085b3bd89b595175c"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Port Forwarding.md": {
     "modified": "2026-04-29T01:52:26",
@@ -7478,5 +7478,45 @@
   "THM/Maquinas/2. Medium/22. Blog/2. Getting the Flags.md": {
     "modified": "2026-07-24T01:28:11",
     "hash": "23e02c08da67be88075ff00df8c1253e033899edcc6c920b6eaf251221123363"
+  },
+  "THM/Maquinas/2. Medium/23. The Hollow Shell/0. The Hollow Shell.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "61f1df37bab1a1709c718dd7c802117ca8734b8973271ae76a8004cab139d0a3"
+  },
+  "THM/Maquinas/2. Medium/23. The Hollow Shell/2. Getting the Flags.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "90ecd17405c555870f342d9e9c33b8a0f2267d76dd00f1591e6ee374847732c7"
+  },
+  "THM/Maquinas/2. Medium/23. The Hollow Shell/1. Introduction.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "d3400f5d70706c38e87bf4be9b89e8306a0b449c66de38a8b27998c89dac6161"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Conclusion.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Moving Laterally Using WMI.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Use of Alternate Authentication Material.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Abusing User Behaviour.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Moving Through the Network.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "b49a876c3dfec6f3290c49cf5129bebf9de2ed6dcf0d8bdaaf607f65625c5e63"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Port Forwarding.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Spawning Processes Remotely.md": {
+    "modified": "2026-08-24T00:35:19",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }

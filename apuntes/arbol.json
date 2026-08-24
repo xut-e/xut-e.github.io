@@ -8951,51 +8951,45 @@
                           "type": "directory",
                           "contents": [
                             {
-                              "name": "1. Introduction.md",
+                              "name": "1. Moving Through the Network.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Introduction.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/1. Moving Through the Network.md",
                               "parent": "4. Lateral Movement and Pivoting"
                             },
                             {
-                              "name": "2. Moving Through the Network.md",
+                              "name": "2. Spawning Processes Remotely.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Moving Through the Network.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Spawning Processes Remotely.md",
                               "parent": "4. Lateral Movement and Pivoting"
                             },
                             {
-                              "name": "3. Spawning Processes Remotely.md",
+                              "name": "3. Moving Laterally Using WMI.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Spawning Processes Remotely.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/3. Moving Laterally Using WMI.md",
                               "parent": "4. Lateral Movement and Pivoting"
                             },
                             {
-                              "name": "4. Moving Laterally Using WMI.md",
+                              "name": "4. Use of Alternate Authentication Material.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Moving Laterally Using WMI.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Use of Alternate Authentication Material.md",
                               "parent": "4. Lateral Movement and Pivoting"
                             },
                             {
-                              "name": "5. Use of Alternate Authentication Material.md",
+                              "name": "5. Abusing User Behaviour.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Use of Alternate Authentication Material.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Abusing User Behaviour.md",
                               "parent": "4. Lateral Movement and Pivoting"
                             },
                             {
-                              "name": "6. Abusing User Behaviour.md",
+                              "name": "6. Port Forwarding.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Abusing User Behaviour.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/6. Port Forwarding.md",
                               "parent": "4. Lateral Movement and Pivoting"
                             },
                             {
-                              "name": "7. Port Forwarding.md",
+                              "name": "7. Conclusion.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Port Forwarding.md",
-                              "parent": "4. Lateral Movement and Pivoting"
-                            },
-                            {
-                              "name": "8. Conclusion.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/8. Conclusion.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Conclusion.md",
                               "parent": "4. Lateral Movement and Pivoting"
                             }
                           ]
@@ -10764,6 +10758,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/22. Blog/2. Getting the Flags.md",
                       "parent": "22. Blog"
+                    }
+                  ]
+                },
+                {
+                  "name": "23. The Hollow Shell",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/1. Introduction.md",
+                      "parent": "23. The Hollow Shell"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/2. Getting the Flags.md",
+                      "parent": "23. The Hollow Shell"
                     }
                   ]
                 },
