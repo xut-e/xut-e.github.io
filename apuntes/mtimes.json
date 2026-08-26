@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-07-07T01:56:18",
-    "hash": "6e5aa8e132ff9b1a94260b8f5acb91d564292e396b35981bfcf24d4c9a131421"
+    "modified": "2026-08-26T00:35:57",
+    "hash": "14d9c59600760f5e9cefb3cf78c1ee6331be97ce69ea56f04bf59f6553372c61"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -7518,5 +7518,17 @@
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/2. Spawning Processes Remotely.md": {
     "modified": "2026-08-24T00:35:19",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/1. Easy/54. Light/2. Getting the Flags.md": {
+    "modified": "2026-08-26T00:35:57",
+    "hash": "17325685e52b2f8ee8f82fdb4b105fca8d44a780d298dbe608712f935df9eaae"
+  },
+  "THM/Maquinas/1. Easy/54. Light/1. Introduction.md": {
+    "modified": "2026-08-26T00:35:57",
+    "hash": "3c97f755f6bcd674a2d360d0ce2255eb6c7551fadf8cea4211c6ada7ca70fa9e"
+  },
+  "THM/Maquinas/1. Easy/54. Light/0. Light.md": {
+    "modified": "2026-08-26T00:35:57",
+    "hash": "537d676134fa265d49582b1998b4e20ba753eda97ae9c45bf379baac2eb7f089"
   }
 }

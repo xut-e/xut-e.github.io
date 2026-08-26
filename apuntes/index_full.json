@@ -260,8 +260,8 @@
     "path": "/apuntes/thm/maquinas/1-easy/1-easy/",
     "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/1. Easy.md",
     "breadcrumb": "THM > Maquinas > 1. Easy",
-    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26. [[0. CTF collection Vol. 1]]\n27. [[0. Chill Hack]]\n28. [[0. Year of the Rabbit]]\n29. [[0. Lian_Yu]]\n30. [[0. Fowsniff CTF]]\n31. [[0. Easy Peasy]]\n32. [[0. Chocolate Factory]]\n33. [[0. Source]]\n34. [[0. Neighbour]]\n35. [[0. Agent T]]\n36. [[0. Poster]]\n37. [[0. VulnNet - Internal]]\n38. [[0. ColddBox - Easy]]\n39. [[0. Corridor]]\n40. [[0. Archangel]]\n41. [[0. Dig Dug]]\n42. [[Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT]]\n43. [[Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT]]\n44. [[0. Mustacchio]]\n45. [[0. Smart Grotto]]\n46. [[0. Tech_Supp0rt-1]]\n47. [[0. Team]]\n48. [[0. Gallery]]\n49. [[0. Checkmate]]\n50. [[0. Anonforce]]\n51. [[0. W1seGuy]]\n52. [[0. CyberHeroes]]\n53. [[0. Fools Mate]]\n54.",
-    "modified": "2026-07-07T01:56:18"
+    "content": "1. [[Ciberseguridad/THM/Maquinas/1. Easy/1. Vulnerability Capstone/0. Vulnerability Capstone]]\n2. [[Ciberseguridad/THM/Maquinas/1. Easy/2. Pickle Rick/0. Pickle Rick]]\n3. [[0. Lookup]]\n4. [[0. Res]]\n5. [[0. Brooklyn Nine Nine]]\n6. [[0. TakeOver]]\n7. [[0. Overpass]]\n8. [[0. Publisher]]\n9. [[0. MD2PDF]]\n10. [[0. Basic Pentesting]]\n11. [[0. RootMe]]\n12. [[0. OhSINT]]\n13. [[0. Simple CTF]]\n14. [[0. Bounty Hacker]]\n15. [[0. Agent Sudo]]\n16. [[0. LazyAdmin]]\n17. [[0. Cyborg]]\n18. [[0. Skynet]]\n19. [[0. Startup]]\n20. [[0. Tomghost]]\n21. [[0. GamingServer]]\n22. [[0. Ignite]]\n23. [[0. Brute It]]\n24. [[0. Wgel CTF]]\n25. [[0. Anthem]]\n26. [[0. CTF collection Vol. 1]]\n27. [[0. Chill Hack]]\n28. [[0. Year of the Rabbit]]\n29. [[0. Lian_Yu]]\n30. [[0. Fowsniff CTF]]\n31. [[0. Easy Peasy]]\n32. [[0. Chocolate Factory]]\n33. [[0. Source]]\n34. [[0. Neighbour]]\n35. [[0. Agent T]]\n36. [[0. Poster]]\n37. [[0. VulnNet - Internal]]\n38. [[0. ColddBox - Easy]]\n39. [[0. Corridor]]\n40. [[0. Archangel]]\n41. [[0. Dig Dug]]\n42. [[Ciberseguridad/THM/Maquinas/1. Easy/42. BankGPT/0. BankGPT]]\n43. [[Ciberseguridad/THM/Maquinas/1. Easy/43. HealthGPT/0. HealthGPT]]\n44. [[0. Mustacchio]]\n45. [[0. Smart Grotto]]\n46. [[0. Tech_Supp0rt-1]]\n47. [[0. Team]]\n48. [[0. Gallery]]\n49. [[0. Checkmate]]\n50. [[0. Anonforce]]\n51. [[0. W1seGuy]]\n52. [[0. CyberHeroes]]\n53. [[0. Fools Mate]]\n54. [[0. Light]]\n55.",
+    "modified": "2026-08-26T00:35:57"
   },
   {
     "title": "2. Medium",
@@ -318,6 +318,30 @@
     "breadcrumb": "THM > Maquinas > 3. Hard > 2. Extract",
     "content": "![[Pasted image 20260330194510.png]]\n\nEl librero corrió con algunos cambios finales a la aplicación web antes de irse de vacaciones. En el proceso dejaron accidentalmente información sensible. Tu objetivo es encontrar y explotar las vulnerabilidades en la aplicación para extraer estos secretos.",
     "modified": "2026-03-31T01:16:47"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/54-light/2-getting-the-flags/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/54. Light/2. Getting the Flags.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 54. Light",
+    "content": "<h2>Reconocimiento Inicial</h2>\nComenzamos realizando un escaneo de puertos abiertos.\n\n![[Pasted image 20260825183504.png]]\n\nAhora escaneamos más a fondo los puertos abiertos.\n\n![[Pasted image 20260825183528.png]]\n\n------------------------\n<h2>Profundización</h2>\nVamos a ver qué hay en el puerto `1337`.\n\n![[Pasted image 20260825183720.png]]\n\nParece que nos da la contraseña del usuario, ahora vamos a tratar de conseguir el username del administrador.\n\n![[Pasted image 20260825184440.png]]\n\nCuando ponemos un usuario inexistente, la aplicación nos devuelve `Username not found.`, esto significa que la aplicación está haciendo una query para mirar nombres de usuarios del estilo:\n\n```sql\nSELECT password FROM users WHERE username=input\n```\n\nEsto significa que puede que exista una vulnerabilidad de tipo SQLi. Para comprobarlo introducimos una `'`.\n\n![[Pasted image 20260825184848.png]]\n\nY efectivamente confirmamos las sospechas.\n\n--------------------------------\n<h2>Explotación</h2>\nVamos a intentar explotarla. Como parece que sigue ejecutando la query después de la comilla vamos a intentar introducir un comentario.\n\n![[Pasted image 20260825185037.png]]\n\nParece que los comentarios están filtrados, vamos a ver cómo bypassearlo.\n\n![[Pasted image 20260825185214.png]]\n\nParece que puede ser la palabra clave `SELECT` la que \"no le gusta\".\n\n![[Pasted image 20260825185422.png]]\n\nParece que no puede ejecutar varias queries en una única línea y por eso se queda colgada. Vamos a probar con `UNION SELECT`.\n\n![[Pasted image 20260825185650.png]]\n\nEn SQL, el operador `>` es un comparador que devuelve todo lo que coincida después de la string. Como en la primera comilla dejamos una aislada, cuando ponemos la última la string queda vacía (`SELECT * FROM users WHERE username > ''`). A efectos prácticos, esto nos devuelve todos los nombres. Sin embargo aquí nos topamos con el siguiente problema, que es que no conocemos el nombre de las tablas. Vamos a averiguarlos.\n\n![[Pasted image 20260825190551.png]]\n\nDespués de probar varios payloads encontramos el que nos funciona. Así obtenemos los nombres de las tablas. Ahora toca extraer lo que necesitamos.\n\n![[Pasted image 20260825190733.png]]\n\nAsí obtenemos el nombre del administrador.\n\n![[Pasted image 20260825191142.png]]\n\nCon esta otra query encontramos la flag. Pero nos falta la contraseña, por lo que vamos a obtener la contraseña.\n\n![[Pasted image 20260825191210.png]]",
+    "modified": "2026-08-26T00:35:57"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/54-light/1-introduction/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/54. Light/1. Introduction.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 54. Light",
+    "content": "![[Pasted image 20260825181443.png]]\n\nBienvenido a la aplicación de base de datos Light.\n\nEstoy trabajando en una aplicación de base de datos llamada Light. ¿Te gustaría probarla?\nSi es así, la aplicación se ejecuta en el puerto 1337. Puedes conectarte usando `nc 10.80.136.72 1337`.\nPuedes usar el nombre de usuario `smokey` para empezar.",
+    "modified": "2026-08-26T00:35:57"
+  },
+  {
+    "title": "0. Light",
+    "path": "/apuntes/thm/maquinas/1-easy/54-light/0-light/",
+    "src": "content/Ciberseguridad/THM/Maquinas/1. Easy/54. Light/0. Light.md",
+    "breadcrumb": "THM > Maquinas > 1. Easy > 54. Light",
+    "content": "[[Ciberseguridad/THM/Maquinas/1. Easy/54. Light/1. Introduction]]\n[[Ciberseguridad/THM/Maquinas/1. Easy/54. Light/2. Getting the Flags]]",
+    "modified": "2026-08-26T00:35:57"
   },
   {
     "title": "2. Getting the Flags",
