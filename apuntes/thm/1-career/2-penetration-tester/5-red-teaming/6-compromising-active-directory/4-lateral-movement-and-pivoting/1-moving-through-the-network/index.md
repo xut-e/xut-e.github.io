@@ -31,4 +31,19 @@ Ten en cuenta que aunque el movimiento lateral necesita ser usado para circunval
 
 ------------------------------------------------
 <h2>La Perspectiva del Atacante</h2>
-Hay varias maneras en las que un atacante puede moverse lateralmente. La forma más simple sería usar protocolos administrativos estandar como WinRM, RDP, VNC o SSH para conectarse a otras máquinas de mmmmá´
+Hay varias maneras en las que un atacante puede moverse lateralmente. La forma más simple sería usar protocolos administrativos estandar como WinRM, RDP, VNC o SSH para conectarse a otras máquinas de la red. Este acercamiento puede ser usado para emular el comportamiento habitual de un usuario mientras que se mantenga alguna coherencia al planear dónde conectarse con la cuenta. Mientras que un usuario de IT conectándose al servidor vía RDP puede ser habitual y pasar desapercibido, hay que tener cuidadod  no realizar conexiones sospechosas.
+
+Los atacantes hoy en día también tienen otros métodos de moverse lateralmente mientras hacen más difícil para el blue team detectarlos. Aunque ninguna técnica debería considerarse infalible, podemos por lo menos intentar ser lo más silenciosos posible.
+
+---------------------------------
+<h2>Administradores y UAC</h2>
+Al realizar la mayoría de técnicas de movimiento lateral introducidas en esta unidad, usaremos principalmente credenciales de administrador. Mientras que uno puede esperar que cada cuenta de administrador sirva el mismo propósito, se debe de hacer una distinción entre dos tipos de administradores.
+
+- Cuentas locales parte del grupo de administradores locales.
+- Cuentas de dominio parte del grupo de administradores locales.
+
+Las diferencias en las que estamos interesados son restricciones impuestas por el UAC (User Account Control) sobre los administradores locales (excepto la cuenta de administrador por defecto). Por defecto, los administradores locales no serán capaces de conectarse remotamente a una máquina y realizar tareas administrativas a no ser que usen una sesión interactiva a través de RDP. Windos denegará cualquier tarea administrativa pedida vía RPC, SMB o WinRM ya que dichos administradores estarán logueados con un token filtrado de indentidad media, previniendo que la cuenta ejecute acciones privilegiadas. La única cuenta local con privilegios completos es la cuenta Administrator (la por defecto).
+
+Las cuentas de dominio con privilegios de administración local no estarán sujetas al mismo tratamiento y estarán logueadas con privilegios administrativos completos.
+
+Esta funcionalidad de seguridad puede ser desactivada si así se desea y a veces puedes no encontrar diferencias entre cuentas locales o de dominio en el grupo de administradores. Aún así, es esencial tener en cuenta que si fallan algunas técnicas de movimiento lateral puede ser debido a usar un administrador local no por defecto donde se fuerza el UAC.
