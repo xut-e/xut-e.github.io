@@ -4320,6 +4320,18 @@
     "path": "/apuntes/thm/maquinas/1-easy/2-pickle-rick/2-finding-the-ingredients/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/55-lo-fi/1-introduction/"
+  },
+  {
+    "title": "0. Lo-Fi",
+    "path": "/apuntes/thm/maquinas/1-easy/55-lo-fi/0-lo-fi/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/55-lo-fi/2-getting-the-flags/"
+  },
+  {
     "title": "0. Basic Pentesting",
     "path": "/apuntes/thm/maquinas/1-easy/10-basic-pentesting/0-basic-pentesting/"
   },
@@ -5062,6 +5074,18 @@
   {
     "title": "0. The Hollow Shell",
     "path": "/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/0-the-hollow-shell/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/24-the-guest-book/1-introduction/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/24-the-guest-book/2-getting-the-flags/"
+  },
+  {
+    "title": "0. The Guest Book",
+    "path": "/apuntes/thm/maquinas/2-medium/24-the-guest-book/0-the-guest-book/"
   },
   {
     "title": "1. Getting the Flags",

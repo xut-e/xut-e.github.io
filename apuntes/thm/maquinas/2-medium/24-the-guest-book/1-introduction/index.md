@@ -1,0 +1,12 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260907181107.png**
+
+VERA lee cada entrada del libro de visitas y las interpreta como instrucciones. La mayoría de los huéspedes escriben "una estancia encantadora". Si escribes algo que no debería tener en cuenta, ella lo tiene en cuenta.
+
+Ya conoces a VERA, todos la conocen, antes de conocer a un solo empleado de Byte Lotus. Ella es la voz de la aplicación, la conserje que sabe tu pedido de café y las cosas que nunca le has contado. "Que te noten", dice la marca; VERA es la personificación de ese lema.
+
+Ahora ella se encarga del libro de visitas. Lee cada entrada y las interpreta como instrucciones: revisa las firmas del día con calidez y confianza, siguiendo la autoridad del gerente nocturno, y decide qué destacar y qué registro consultar.

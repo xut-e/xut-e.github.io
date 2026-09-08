@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-08-24T00:35:19",
-    "hash": "fadeae71cd024d7b5399ec5a6a19679142bae819185f7d70f12ff8cdff9d95bb"
+    "modified": "2026-09-08T01:51:03",
+    "hash": "d57885b74c1c2bb5c59bc2b26f7c0aa9c7dd18cf5694cc21c98e5694ca46a7bb"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-08-26T00:35:57",
-    "hash": "14d9c59600760f5e9cefb3cf78c1ee6331be97ce69ea56f04bf59f6553372c61"
+    "modified": "2026-09-08T01:51:03",
+    "hash": "28e5cccb4d7b40b6a8cc81ba6795f9ded219b20958555176b2b4dd6602a5a2e8"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -7530,5 +7530,29 @@
   "THM/Maquinas/1. Easy/54. Light/0. Light.md": {
     "modified": "2026-08-26T00:35:57",
     "hash": "537d676134fa265d49582b1998b4e20ba753eda97ae9c45bf379baac2eb7f089"
+  },
+  "THM/Maquinas/1. Easy/55. Lo-Fi/1. Introduction.md": {
+    "modified": "2026-09-08T01:51:03",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/1. Easy/55. Lo-Fi/0. Lo-Fi.md": {
+    "modified": "2026-09-08T01:51:03",
+    "hash": "7564ed2a7a7b5535684ad22284b197fe57d5229f4f58300dd87eee394e6714e5"
+  },
+  "THM/Maquinas/1. Easy/55. Lo-Fi/2. Getting the Flags.md": {
+    "modified": "2026-09-08T01:51:03",
+    "hash": "04a54ee9dbcf7e5aa2acab73862cc76d2ad1ac1b095c1acff9e766a6c7c2dac7"
+  },
+  "THM/Maquinas/2. Medium/24. The Guest Book/1. Introduction.md": {
+    "modified": "2026-09-08T01:51:03",
+    "hash": "7535c34e47c258d7c9500a586ded2a5e0077715c46d201fb6a864170d9fe109b"
+  },
+  "THM/Maquinas/2. Medium/24. The Guest Book/2. Getting the Flags.md": {
+    "modified": "2026-09-08T01:51:03",
+    "hash": "e638317114c5ee6521616bf1805d4f553b1c257b3b04f61a76471f3d6f54bbc1"
+  },
+  "THM/Maquinas/2. Medium/24. The Guest Book/0. The Guest Book.md": {
+    "modified": "2026-09-08T01:51:03",
+    "hash": "6c0d13e4d189bdda8a998d61139694b08d1c9005f54adb5ff6250bde75508fcf"
   }
 }

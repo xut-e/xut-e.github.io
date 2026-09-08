@@ -10402,6 +10402,24 @@
                   ]
                 },
                 {
+                  "name": "55. Lo-Fi",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/55. Lo-Fi/1. Introduction.md",
+                      "parent": "55. Lo-Fi"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/55. Lo-Fi/2. Getting the Flags.md",
+                      "parent": "55. Lo-Fi"
+                    }
+                  ]
+                },
+                {
                   "name": "6. TakeOver",
                   "type": "directory",
                   "contents": [
@@ -10794,6 +10812,24 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/23. The Hollow Shell/2. Getting the Flags.md",
                       "parent": "23. The Hollow Shell"
+                    }
+                  ]
+                },
+                {
+                  "name": "24. The Guest Book",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/24. The Guest Book/1. Introduction.md",
+                      "parent": "24. The Guest Book"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/24. The Guest Book/2. Getting the Flags.md",
+                      "parent": "24. The Guest Book"
                     }
                   ]
                 },
