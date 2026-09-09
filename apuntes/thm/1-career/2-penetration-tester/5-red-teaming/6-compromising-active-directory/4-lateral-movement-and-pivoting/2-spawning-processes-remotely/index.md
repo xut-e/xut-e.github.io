@@ -3,3 +3,115 @@ layout: apunte
 title: "2. Spawning Processes Remotely"
 ---
 
+En esta tarea veremos los métodos que tiene disponibles un atacante para spawnear un proceso de forma remota, permitiéndole ejecutar comandos en máquinas donde tengan credenciales válidas. Cada una de las técnicas habladas usa formas ligeramente diferentes para conseguir el mismo propósito, y algunas de ellas pueden incluso ser mejores para ciertos escenarios.
+
+-------------------------------
+<h2>Psexec</h2>
+- **Puertos:** 445/TCP (SMB)
+- **Membresías de Grupo Requerida:** Administrators
+
+Psexec ha sido el método por excelencia cuando se necesita ejecutar procesos remotamente durante años. Permite a un administrador ejecutar comandos remotamente en cualquier PC al que tenga acceso. Psexec es una de las muchas herramientas Sysinternals y puede ser descargada [aquí](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec).
+
+La manera en la que psexec funciona es la siguiente:
+
+1. Conecta a la compartición `Admin$` y sube un binario de servicio. Psexec usa `psexesvc.exe` como nombre.
+2. Conecta al gestor de control de servicios para crear y ejecutar un servicio llamado `PSEXESVC` y asocia el binario del servicio con `C:\Windows\psexesvc.exe`.
+3. Crea algunas named pipes para manejar el stdin/stdout/stderr.
+
+!**Pasted image 20260908110148.png**
+
+Para ejecutar psexec, sólo necesitamos proporcionar las credenciales de administrador requeridas al host remoto y el comando que queramos ejecutar:
+
+```cmd
+psexec64.exe \\MACHINE_IP -u Administrator -p Mypass123 -i cmd.exe
+```
+
+-------------------------------------------
+<h2>Creación de Proceso Remoto usando WinRM</h2>
+- **Puertos:** 5985/TCP (WinRM HTTP) o 5986/TCP (WinRM HTTPS)
+- **Membresías de Grupo Requeridas:** Remote Management Users
+
+WinRM (Windows Remote Management) es un protocolo basado en web usado para mandar comandos Powershell a hosts de Windows remotamente. La mayoría de instalaciones de Windows Server tienen WinRM habilitado por defecto, haciéndolo un vector de ataque atractivo.
+
+Para conectarse a una sesión de Powershell desde la línea de comandos, podemos usar el siguiente comando:
+
+```cmd
+winrs.exe -u:Administrator -p:Mypass123 -r:target cmd
+```
+
+Podemos conseguir lo mismo desde Powershell, pero para pasar credenciales diferentes, necesitaremos crear un objeto PSCredential:
+
+```powershell
+$username = 'Administrator';
+$password = 'Mypass123';
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force;
+$credential = New-Object System.Management.Automation.PSCredential $username, $securePassword;
+```
+
+Una vez tengamos nuestro objeto PSCredential, podemos crear una sesión interactiva usando el cmdlet Enter-PSSession:
+
+```powershell
+Enter-PSSession -Computername TARGET -Credential $credential
+```
+
+Powershell también incluye cmdlet de invocación de comandos `Invoke-Command`, el cual ejecuta un bloque de script remotamente vía WinRM. Las credenciales deben ser pasadas a través de un objeto PSCredential también:
+
+```powershell
+Invoke-Command -Computername TARGET -Credential $credential -ScriptBlock {woami}
+```
+
+---------------------------------
+<h2>Creando Servicios Remotamente usando SC</h2>
+- **Puertos:** 
+	- 135/TCP, 49152-65535/TCP (DCE/RDP)
+	- 445/TCP (RPC over SMB Named Pipes)
+	- 139/TCP (RPC over SMB Named Pipes)
+- **Membresías de Grupo Requeridas:** Administrators
+
+Los servicios de Windows también pueden ser usados para ejecutar comandos arbitrarios al comenzar. Mientras que un ejecutable de servicio es técnicamente diferente a una aplicación normal, si configuramos un servicio de Windows para ejecutar cualquier aplicación, seguirá ejecutando y fallará después.
+
+Podemos crear un servicio en un host remoto con `sc.exe`, una herramienta estándar disponible en Windows. Al usar sc, intentará conectarse al Gestor de Control de Servicios (SVCCTL) mediante RCP de varias maneras:
+
+1. Se hará un intento de conexión usando DCE/RCP. El cliente primero se conectará al mapeador de endpoints (EPM) en el puerto 135, lo que sirve como catálogo de endpoints RPC y pide información en el programa de servicio SVCCTL. El EPM responderá con la IP y puerto de conexión a SVCCTL, el cual suele ser dinámico en el rango entre 49152-65535.
+   !**Pasted image 20260908120505.png**
+2. Si la conexión falla, sc tratará de alcanzar SVCCTL a través de SMB Named Pipes, ya sea en el puerto 445 (SMB) o el 139 (SMB over NetBIOS).
+   !**Pasted image 20260908122347.png**
+
+Podemos crear y arrancar un servicio llamado "THMservice" usando los siguientes comandos:
+
+```cmd
+sc.exe \\TARGET create THMservice binPath= "net user xut Pass123 /add" start= auto
+
+sc.exe \\TARGET start THMservice
+```
+
+El comando "net user" será ejecutado cuando el servicio arranque, creando un nuevo usuario local en el sistema. Como el sistema operativo está a cargo de comenzar el servicio, no serás capaz de ver el output del comando.
+
+Para parar y borrar el servicio, podemos ejecutar los siguientes comandos:
+
+```cmd
+sc.exe \\TARGET stop THMservice
+
+sc.exe \\TARGET delete THMservice
+```
+
+-----------------------------------
+<h2>Creando Tareas Programadas Remotamente</h2>
+Otra funcionalidad de Windows que podemos usar son las tareas programadas. Puedes crear y ejecutar una remotamente con schtasks, disponible en cualquier instalación de Windows. Para crear una tarea llamada THMtask1, podemos usar los siguientes comandos:
+
+```cmd
+schtasks /s TARGET /RU "SYSTEM" /create /tn "THMtask1" /tr "<command/payload to execute>" /sc ONCE /sd 01/01/1970 /st 00:00
+
+schtasks /s TARGET /run /TN "THMtask1"
+```
+
+Configuramos el tipo de programa (schedule type, /sc) a ONCE, lo que hace que se ejecute una sóla vez en la fecha y hora programada. Como ejecutaremos la tarea manualmente, la fecha de comienzo (starting date, /sd) y la hora de comienzo (starting time, /st) no importarán mucho.
+
+Como el sistema ejecutará la tarea programada, el output del comando no estará disponible para nosotros, haciendo esto un ataque a ciegas.
+
+Finalmente, para eliminar la tarea programada, podemos usar el siguiente comando y limpiar detrás de nosotros.
+
+```cmd
+schtasks /S TARGET /TN "THMtask1" /DELETE /F
+```
+
