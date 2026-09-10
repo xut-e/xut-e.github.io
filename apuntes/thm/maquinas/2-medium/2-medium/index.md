@@ -27,4 +27,5 @@ title: "2. Medium"
 22. [0. Blog](/apuntes/thm/maquinas/2-medium/22-blog/0-blog/)
 23. [0. The Hollow Shell](/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/0-the-hollow-shell/)
 24. [0. The Guest Book](/apuntes/thm/maquinas/2-medium/24-the-guest-book/0-the-guest-book/)
-25. 
+25. [0. Infinity Pool](/apuntes/thm/maquinas/2-medium/25-infinity-pool/0-infinity-pool/)
+26. 

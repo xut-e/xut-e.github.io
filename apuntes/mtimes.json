@@ -1,7 +1,7 @@
 {
   "0. Ciberseguridad.md": {
-    "modified": "2026-02-10T01:18:20",
-    "hash": "d6946da2f3c807a0d082f2367b4dae736872c64696964f2851571fa4ac6e65e2"
+    "modified": "2026-09-10T01:53:15",
+    "hash": "08d31d1ccab03402da67c81428120fec0ebc8d58ef4a4438394e8dbe1c4a2fd9"
   },
   "Recursos Web/0. Recursos Web.md": {
     "modified": "2025-12-12T13:58:55",
@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-09-08T01:51:03",
-    "hash": "d57885b74c1c2bb5c59bc2b26f7c0aa9c7dd18cf5694cc21c98e5694ca46a7bb"
+    "modified": "2026-09-10T01:53:15",
+    "hash": "316a3c80ef85e18f20d593b4e3b3f8268d09bfe53f3a52d9d2667ca5d8bd3be0"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -7500,8 +7500,8 @@
     "hash": "c6cd026d08ebf6e8f3830475a77f04b5b1211c09f87f8d2feea7cd8b6ab9bf6f"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/4. Use of Alternate Authentication Material.md": {
-    "modified": "2026-09-09T01:56:40",
-    "hash": "0a9db7410e077fbcae8c851516fd8bce571bcb46739b6dc9b6fbea6066d21cbc"
+    "modified": "2026-09-10T01:53:15",
+    "hash": "0d486241e58aae76c6b0316029e261f751fe18dea76bfe34f18a945786f89d3e"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/4. Lateral Movement and Pivoting/5. Abusing User Behaviour.md": {
     "modified": "2026-08-24T00:35:19",
@@ -7554,5 +7554,17 @@
   "THM/Maquinas/2. Medium/24. The Guest Book/0. The Guest Book.md": {
     "modified": "2026-09-08T01:51:03",
     "hash": "6c0d13e4d189bdda8a998d61139694b08d1c9005f54adb5ff6250bde75508fcf"
+  },
+  "THM/Maquinas/2. Medium/25. Infinity Pool/0. Infinity Pool.md": {
+    "modified": "2026-09-10T01:53:15",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/2. Medium/25. Infinity Pool/1. Introduction.md": {
+    "modified": "2026-09-10T01:53:15",
+    "hash": "eefb64dc1bc6fcb19793efdcd8ad3b24d6226320604e21b48bd54821592d5ec6"
+  },
+  "THM/Maquinas/2. Medium/25. Infinity Pool/2. Getting the Flags.md": {
+    "modified": "2026-09-10T01:53:15",
+    "hash": "ebb9d3e9473d5613fe285178530cac3ffef2b890b79adf1325df41cec1e674d4"
   }
 }

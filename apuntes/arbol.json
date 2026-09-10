@@ -10834,6 +10834,24 @@
                   ]
                 },
                 {
+                  "name": "25. Infinity Pool",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/25. Infinity Pool/1. Introduction.md",
+                      "parent": "25. Infinity Pool"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/25. Infinity Pool/2. Getting the Flags.md",
+                      "parent": "25. Infinity Pool"
+                    }
+                  ]
+                },
+                {
                   "name": "3. Revenge",
                   "type": "directory",
                   "contents": [
