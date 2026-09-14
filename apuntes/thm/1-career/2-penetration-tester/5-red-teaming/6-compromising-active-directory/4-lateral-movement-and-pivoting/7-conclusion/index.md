@@ -3,3 +3,14 @@ layout: apunte
 title: "7. Conclusion"
 ---
 
+En esta unidad hemos visto varias maneras en las que un atacante puede moverse a lo largo de una red una vez que consiguen un set de credenciales válidas. Desde la perspectiva del atacante, tener cuantas más técnicas siempre será útil ya que diferentes redes tendrán diferentes restricciones.
+
+Aunque hemos presentado unas cuantas técnicas en uso, ten en cuanta que cualquier cosa que te permita moverte de un host a otro es movimiento lateral. Dependiendo de las especificaciones de cada red, otras rutas serán viables.
+
+Si estás interesado en más herramientas y técnicas puedes consultar los siguientes recursos:
+
+- [Sshuttle](https://github.com/sshuttle/sshuttle)
+- [Rpivot](https://github.com/klsecservices/rpivot)
+- [Chisel](https://github.com/jpillora/chisel)
+- [Hijacking Sockets with Shadowmove](https://adepts.of0x.cc/shadowmove-hijack-socket/)
+

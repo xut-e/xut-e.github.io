@@ -3,3 +3,9 @@ layout: apunte
 title: "6. Port Forwarding"
 ---
 
+La mayoría de las técnicas de movimiento lateral que hemos presentado requiere puertos específicos para estar disponibles para un atacante. En las redes del mundo real, los administradores pueden tener bloqueados algunos de estos puertos por motivos de seguridad o haber implementado segmentación a lo largo de la red, impidiendo que alcances puertos SMB, RDP, WinRM o RPC.
+
+Para sobrepasar estas restricciones, podemos usar técnicas de redireccionamiento de puertos las cuales consisten en usar cualquier host comprometido como caja de salto para pivotar a otros hosts. Se espera que algunas máquinas tengan más permisos de red que otras, ya que todos los roles en un negocio tienen necesidades diferentes en términos de lo que requieren los servicios de red en el trabajo diario.
+
+-------------------------------------
+<h2>Túnel SSH</2>
