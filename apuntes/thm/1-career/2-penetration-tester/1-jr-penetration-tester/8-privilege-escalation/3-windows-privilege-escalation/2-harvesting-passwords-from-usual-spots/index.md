@@ -60,6 +60,8 @@ PuTTY es un cliente SSH comúnmente encontrado en sistemas Windows. En vez de te
 
 Para recuperar las credenciales proxy guardadas, puedes buscar bajo la siguiente clave de registro por la ProxyPassword con el siguiente comando:
 
+`reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"`
+
 `reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s`
 
 >[!NOTE] Simon Tatham es el creador de PuTTY y su nombre forma parte del path, no es un nombre de usuario.

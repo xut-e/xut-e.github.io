@@ -1,0 +1,13 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260922135404.png**
+
+Usa la escalada de privilegios en Windows para saltar de `guest` a `SYSTEM`.
+
+Un escaneo de vulnerabilidades rutinario destacó una máquina Windows en la red interna; nada alarmante en la superficie, simplemente una sóla estación de trabajo dejada atrás tras una ronda de despidos. IT nunca limpió la máquina debidamente. Tu trabajo es descubrir cómo de malo es. TU objetivo es escalar desde `guest` hasta `SYSTEM`:
+
+`guest` --> `thmuser` --> `notadmin` --> `svcadmin` --> `SYSTEM`
+

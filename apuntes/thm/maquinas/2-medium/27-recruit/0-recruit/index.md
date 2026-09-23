@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. Recruit"
+---
+
+**Ciberseguridad/THM/Maquinas/2. Medium/27. Recruit/1. Introduction**
+**Ciberseguridad/THM/Maquinas/2. Medium/27. Recruit/2. Getting the Flags**

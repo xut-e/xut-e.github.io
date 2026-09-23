@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-09-10T01:53:15",
-    "hash": "316a3c80ef85e18f20d593b4e3b3f8268d09bfe53f3a52d9d2667ca5d8bd3be0"
+    "modified": "2026-09-23T02:13:24",
+    "hash": "ab3281d1065b22101d434ce93afc44c425b59d469c9e923119366a698a202271"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-03-31T01:16:47",
@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-09-08T01:51:03",
-    "hash": "28e5cccb4d7b40b6a8cc81ba6795f9ded219b20958555176b2b4dd6602a5a2e8"
+    "modified": "2026-09-23T02:13:24",
+    "hash": "f6e3325503ccaf3c7bff1c6e1a6c986cef0436d95056cc610c75cabb37b576db"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -3496,8 +3496,8 @@
     "hash": "7b58423977c1512e6cb2c1defcc2a63e8f36094b99d64e4daa3ff1e83f35bc0b"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/2. Harvesting Passwords from Usual Spots.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "3c61bf07d81369446dea3af7f7a048b4758bff2b2eb6ab94d08331551b5ab39b"
+    "modified": "2026-09-23T02:13:24",
+    "hash": "9aba10b557ae7f4448922d48b1371825e054514e8631d69edc14fca7a3b421e5"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/8. Privilege Escalation/3. Windows Privilege Escalation/1. Windows Privilege Escalation.md": {
     "modified": "2025-12-12T13:58:55",
@@ -6528,8 +6528,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/0. Exploiting Active Directory.md": {
-    "modified": "2026-04-29T01:52:26",
-    "hash": "d1943ab41627f00bfe645512bd53d7962696e189c306a9071ee3eeaf98e3f935"
+    "modified": "2026-09-23T02:13:24",
+    "hash": "3fbc70de20fd9006f7892aeb621fa948d3bb814035a6587d2a153567cebe5c50"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/9. Conclusion.md": {
     "modified": "2026-04-29T01:52:26",
@@ -7566,5 +7566,85 @@
   "THM/Maquinas/2. Medium/25. Infinity Pool/2. Getting the Flags.md": {
     "modified": "2026-09-10T01:53:15",
     "hash": "ebb9d3e9473d5613fe285178530cac3ffef2b890b79adf1325df41cec1e674d4"
+  },
+  "THM/Maquinas/2. Medium/28. Windows Jump/2. Getting the Flags.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "202a0d55d03e47e869ba3478cc864dc22d3f0392506bc6289e2382946159237e"
+  },
+  "THM/Maquinas/2. Medium/28. Windows Jump/1. Introduction.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "ae0b1e121356db56b45a08afc9e0faa07481745604f404411522c580e11e9d09"
+  },
+  "THM/Maquinas/2. Medium/28. Windows Jump/0. Windows Jump.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "b2a1a89a1bd816bfc66b86193ead5bcbb79bc52d5cb6e334bc228f98e4bad02d"
+  },
+  "THM/Maquinas/2. Medium/26. Silent Monitor/2. Getting the Flags.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "cafb47b795e2a6b2bddc03b0313fe3f3ce7cdf97aaa6965c28c10996d31e66c4"
+  },
+  "THM/Maquinas/2. Medium/26. Silent Monitor/1. Introduction.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "f3e5b7118f7740fa923068a3b2840f70cbe542d5680329da664e3e0ae3bbda37"
+  },
+  "THM/Maquinas/2. Medium/26. Silent Monitor/0. Silent Monitor.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "332c85f0b9e0c15ea043f6e1c7f2a4bf06e2a06026e483ffeb6ecbd9d79c9ed7"
+  },
+  "THM/Maquinas/2. Medium/27. Recruit/2. Getting the Flags.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "9fb304aa5ba7a09a706fd9c8818d41ae66a901a3d73205438cf4892e16f51580"
+  },
+  "THM/Maquinas/2. Medium/27. Recruit/1. Introduction.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "53e61e9866e10f0bd20fcb70571c601e841128a577b4f51b8b415f27a4bb377e"
+  },
+  "THM/Maquinas/2. Medium/27. Recruit/0. Recruit.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "909fc57b728abdf52080598320eeb663c15b41db5acecee454c76426893e770e"
+  },
+  "THM/Maquinas/1. Easy/56. Cipher's Secret Message/2. Getting the Flags.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "203fe2aa8b60988ca7f673c63a387690deba71e85b890875f5390aa2498a613e"
+  },
+  "THM/Maquinas/1. Easy/56. Cipher's Secret Message/1. Introduction.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "5f41a7aa5ca7d7d6061805df62f96a56bfbb2c368b0a476517510e25aa679878"
+  },
+  "THM/Maquinas/1. Easy/56. Cipher's Secret Message/0. Cipher's Secret Message.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "9baacd0605962eeab183c47c2c33c0edbe38b39c1d72a4d0371b728a716b0688"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/3. Exploiting Automated Relays.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/4. Exploiting AD Users.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/8. Conclusion.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/1. Exploiting Permission Delegation.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "e65409db344e1fe82658dfe80cedc1d635aa2aba5194f433389ce2db56a8d4f1"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/7. Exploiting Domain Trusts.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/5. Exploiting GPOs.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/6. Exploiting Certificates.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/2. Exploiting Kerberos Delegation.md": {
+    "modified": "2026-09-23T02:13:24",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }

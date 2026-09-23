@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. Silent Monitor"
+---
+
+**Ciberseguridad/THM/Maquinas/2. Medium/26. Silent Monitor/1. Introduction**
+**Ciberseguridad/THM/Maquinas/2. Medium/26. Silent Monitor/2. Getting the Flags**

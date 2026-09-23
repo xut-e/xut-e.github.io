@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+<h2>Luces Verdes, Esquinas Oscuras</h2>
+El centro de operaciones de la red interna de CorpNet lleva ejecutándose silenciosamente durante años. Monitoriza hosts, registra eventos y manteniendo la infraestructura viva. O eso parece. Un consejo de un contratista sugiere que alguien en el equipo de NOC ha estado dejando puertas abiertas y escondiendo cosas en sitios que nadie piensa mirar.
+
+El portal está en vivo. Los servicios muestran verde. El log de auditoría parece limpio.
+
+Pero los registros limpios pueden ser escritos por cualquiera.
+
+Tu objetivo es tratar de entrar, moverte a través del sistema y encontrar lo que de verdad está ejecutándose detrás del dashboard secreto.
+

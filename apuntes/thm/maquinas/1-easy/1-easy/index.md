@@ -58,4 +58,5 @@ title: "1. Easy"
 53. [0. Fools Mate](/apuntes/thm/maquinas/1-easy/53-fools-mate/0-fools-mate/)
 54. [0. Light](/apuntes/thm/maquinas/1-easy/54-light/0-light/)
 55. [0. Lo-Fi](/apuntes/thm/maquinas/1-easy/55-lo-fi/0-lo-fi/)
-56. 
+56. [0. Cipher's Secret Message](/apuntes/thm/maquinas/1-easy/56-cipher-s-secret-message/0-cipher-s-secret-message/)
+57. 

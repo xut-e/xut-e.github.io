@@ -28,4 +28,6 @@ title: "2. Medium"
 23. [0. The Hollow Shell](/apuntes/thm/maquinas/2-medium/23-the-hollow-shell/0-the-hollow-shell/)
 24. [0. The Guest Book](/apuntes/thm/maquinas/2-medium/24-the-guest-book/0-the-guest-book/)
 25. [0. Infinity Pool](/apuntes/thm/maquinas/2-medium/25-infinity-pool/0-infinity-pool/)
-26. 
+26. [0. Silent Monitor](/apuntes/thm/maquinas/2-medium/26-silent-monitor/0-silent-monitor/)
+27. [0. Recruit](/apuntes/thm/maquinas/2-medium/27-recruit/0-recruit/)
+28. [0. Windows Jump](/apuntes/thm/maquinas/2-medium/28-windows-jump/0-windows-jump/)

@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. Cipher's Secret Message"
+---
+
+**Ciberseguridad/THM/Maquinas/1. Easy/56. Cipher's Secret Message/1. Introduction**
+**Ciberseguridad/THM/Maquinas/1. Easy/56. Cipher's Secret Message/2. Getting the Flags**

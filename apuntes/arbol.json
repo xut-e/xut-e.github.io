@@ -8999,57 +8999,51 @@
                           "type": "directory",
                           "contents": [
                             {
-                              "name": "1. Introduction.md",
+                              "name": "1. Exploiting Permission Delegation.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/1. Introduction.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/1. Exploiting Permission Delegation.md",
                               "parent": "5. Exploiting Active Directory"
                             },
                             {
-                              "name": "2. Exploiting Permission Delegation.md",
+                              "name": "2. Exploiting Kerberos Delegation.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/2. Exploiting Permission Delegation.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/2. Exploiting Kerberos Delegation.md",
                               "parent": "5. Exploiting Active Directory"
                             },
                             {
-                              "name": "3. Exploiting Kerberos Delegation.md",
+                              "name": "3. Exploiting Automated Relays.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/3. Exploiting Kerberos Delegation.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/3. Exploiting Automated Relays.md",
                               "parent": "5. Exploiting Active Directory"
                             },
                             {
-                              "name": "4. Exploiting Automated Relays.md",
+                              "name": "4. Exploiting AD Users.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/4. Exploiting Automated Relays.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/4. Exploiting AD Users.md",
                               "parent": "5. Exploiting Active Directory"
                             },
                             {
-                              "name": "5. Exploiting AD Users.md",
+                              "name": "5. Exploiting GPOs.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/5. Exploiting AD Users.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/5. Exploiting GPOs.md",
                               "parent": "5. Exploiting Active Directory"
                             },
                             {
-                              "name": "6. Exploiting GPOs.md",
+                              "name": "6. Exploiting Certificates.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/6. Exploiting GPOs.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/6. Exploiting Certificates.md",
                               "parent": "5. Exploiting Active Directory"
                             },
                             {
-                              "name": "7. Exploiting Certificates.md",
+                              "name": "7. Exploiting Domain Trusts.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/7. Exploiting Certificates.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/7. Exploiting Domain Trusts.md",
                               "parent": "5. Exploiting Active Directory"
                             },
                             {
-                              "name": "8. Exploiting Domain Trusts.md",
+                              "name": "8. Conclusion.md",
                               "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/8. Exploiting Domain Trusts.md",
-                              "parent": "5. Exploiting Active Directory"
-                            },
-                            {
-                              "name": "9. Conclusion.md",
-                              "type": "file",
-                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/9. Conclusion.md",
+                              "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/8. Conclusion.md",
                               "parent": "5. Exploiting Active Directory"
                             }
                           ]
@@ -10420,6 +10414,24 @@
                   ]
                 },
                 {
+                  "name": "56. Cipher's Secret Message",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/56. Cipher's Secret Message/1. Introduction.md",
+                      "parent": "56. Cipher's Secret Message"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/56. Cipher's Secret Message/2. Getting the Flags.md",
+                      "parent": "56. Cipher's Secret Message"
+                    }
+                  ]
+                },
+                {
                   "name": "6. TakeOver",
                   "type": "directory",
                   "contents": [
@@ -10848,6 +10860,60 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/25. Infinity Pool/2. Getting the Flags.md",
                       "parent": "25. Infinity Pool"
+                    }
+                  ]
+                },
+                {
+                  "name": "26. Silent Monitor",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/26. Silent Monitor/1. Introduction.md",
+                      "parent": "26. Silent Monitor"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/26. Silent Monitor/2. Getting the Flags.md",
+                      "parent": "26. Silent Monitor"
+                    }
+                  ]
+                },
+                {
+                  "name": "27. Recruit",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/27. Recruit/1. Introduction.md",
+                      "parent": "27. Recruit"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/27. Recruit/2. Getting the Flags.md",
+                      "parent": "27. Recruit"
+                    }
+                  ]
+                },
+                {
+                  "name": "28. Windows Jump",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/28. Windows Jump/1. Introduction.md",
+                      "parent": "28. Windows Jump"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/28. Windows Jump/2. Getting the Flags.md",
+                      "parent": "28. Windows Jump"
                     }
                   ]
                 },
