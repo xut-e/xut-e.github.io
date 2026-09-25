@@ -10432,6 +10432,24 @@
                   ]
                 },
                 {
+                  "name": "57. Silver Platter",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/57. Silver Platter/1. Introduction.md",
+                      "parent": "57. Silver Platter"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/57. Silver Platter/2. Getting the Flags.md",
+                      "parent": "57. Silver Platter"
+                    }
+                  ]
+                },
+                {
                   "name": "6. TakeOver",
                   "type": "directory",
                   "contents": [
@@ -10918,6 +10936,24 @@
                   ]
                 },
                 {
+                  "name": "29. Interception",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/29. Interception/1. Introduction.md",
+                      "parent": "29. Interception"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/29. Interception/2. Getting the Flags.md",
+                      "parent": "29. Interception"
+                    }
+                  ]
+                },
+                {
                   "name": "3. Revenge",
                   "type": "directory",
                   "contents": [
@@ -11088,6 +11124,36 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/2. Extract/2. Getting the Flags.md",
                       "parent": "2. Extract"
+                    }
+                  ]
+                },
+                {
+                  "name": "3. K2",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/3. K2/1. Introduction.md",
+                      "parent": "3. K2"
+                    },
+                    {
+                      "name": "2. Base Camp.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/3. K2/2. Base Camp.md",
+                      "parent": "3. K2"
+                    },
+                    {
+                      "name": "3. Middle Camp.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/3. K2/3. Middle Camp.md",
+                      "parent": "3. K2"
+                    },
+                    {
+                      "name": "4. The Summit.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/3. Hard/3. K2/4. The Summit.md",
+                      "parent": "3. K2"
                     }
                   ]
                 }

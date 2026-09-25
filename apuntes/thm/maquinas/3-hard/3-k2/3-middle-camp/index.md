@@ -1,0 +1,173 @@
+---
+layout: apunte
+title: "3. Middle Camp"
+---
+
+El equipo de IT no puede creer que hayas pasado del primer servidor. Sin embargo, están seguros de que no llegarás mucho más lejos.
+
+Usa toda la información recopilada de los hallazgos anteriores para seguir en tu camino hacia la cima.
+
+------------------------------
+<h2>Reconocimiento Inicial</h2>
+Comenzamos escaneando los puertos abiertos.
+
+!**Pasted image 20260923203523.png**
+
+Ahora analizamos dichos puertos en profundidad.
+
+!**Pasted image 20260923204025.png**
+
+Vamos a ver qué hay en SMB.
+
+!**Pasted image 20260923204829.png**
+
+Por alguna razón no está funcionando.
+
+---------------------------------
+<h2>Profundización</h2>
+Bueno, vamos a seguir con la explotación de AD. Lo primero que queremos hacer es conseguir un par de credenciales válidas (o al menos intentarlo). Vamos a hacer una lista de posibles nombres de usuario. En caso de que tuviéramos más, podríamos usar herramientas como [usernames-anarchy](https://github.com/urbanadventurer/username-anarchy).
+
+!**Pasted image 20260923205429.png**
+
+Ahora vamos a usar una herramienta de fuerza bruta para enumerar todas las cuentas válidas: `kerbrute`. Descargamos el binario y lo movemos a `/usr/local/bin`.
+
+!**Pasted image 20260924095005.png**
+
+Vamos a realizar el ataque.
+
+!**Pasted image 20260924095717.png**
+
+Parece que hemos encontrado dos nombres de usuario válidos. Vamos a probar diferentes contraseñas.
+
+!**Pasted image 20260924100245.png**
+
+Ahora vamos a configurar `bloodhound-python`.
+
+!**Pasted image 20260924100745.png**
+
+Vamos a seguir configurando bloodhound con la información extraida:
+
+!**Pasted image 20260924101232.png**
+
+El comando para ejecutar Bloodhound es:
+
+```bash
+curl -L https://ghst.ly/getbhce | sudo docker-compose -f - up
+```
+
+Cogemos la contraseña por defecto:
+
+!**Pasted image 20260924101359.png**
+
+Y ahora vamos a `http://localhost:8080/ui/login`:
+
+!**Pasted image 20260924101531.png**
+
+Vamos a iniciar sesión.
+
+!**Pasted image 20260924101627.png**
+
+Mientras esperamos a que se ingesten los datos podemos ir abriendo una consola como el usuario comprometido:
+
+!**Pasted image 20260924101910.png**
+
+Vamos a ver qué vemos por aquí:
+
+!**Pasted image 20260924102320.png**
+
+Podemos ver los privilegios que tenemos y detalles sobre el usuario. Vamos a investigar el sistema un poco.
+
+!**Pasted image 20260924102424.png**
+
+Tenemos dos notas, vamos a leerlas.
+
+!**Pasted image 20260924102559.png**
+
+En las notas podemos ver cómo james tiene una contraseña muy débil: `rockyou` y que ha añadido dos caracteres para cumplir con las políticas, por lo que uno de los dos caracteres será un número 0-9 y el otro un carácter especial. Vamos a crear un diccionario.
+
+!**Pasted image 20260924104235.png**
+
+De esta manera hemos generado todas las posibles combinaciones.
+
+!**Pasted image 20260924105405.png**
+
+Ahora que tenemos dos usuarios vamos a volver a `bloodhound`. Si investigamos a `r.bud`, podemos ver lo siguiente:
+
+!**Pasted image 20260924111024.png**
+
+El grupo `REMOTE MANAGEMENT USERS` es interesante. Sin embargo, si hacemos click en él, podemos ver que este está controlado por muchos otros grupos.
+
+!**Pasted image 20260924111157.png**
+
+Vamos a  mirar a `j.bold`.
+
+!**Pasted image 20260924111248.png**
+
+Parece que `j.bold` es miembro de una categoría de IT Staff superior a `r.bud`. Vamos a mirar de qué se trata.
+
+!**Pasted image 20260924111409.png**
+
+Parece que este grupo tiene control sobre un usuario de alto valor. Bloodhound incluso nos da información sobre cómo explotarlo.
+
+!**Pasted image 20260924111939.png**
+
+-------------------------------------------
+<h2>Explotación</h2>
+Usaremos lo que Bloodhound nos dice (como buenos scriptkiddies que somos xD).
+
+!**Pasted image 20260924113605.png**
+
+No hemos recibido ningún error, lo cual es muy bueno. Vamos a intentar iniciar sesión como `j.smith`.
+
+!**Pasted image 20260924113718.png**
+
+Ha funcionado. Vamos a investigar.
+
+!**Pasted image 20260924113816.png**
+
+Y ahora buscamos la flag.
+
+!**Pasted image 20260924113859.png**
+
+Como nos preguntan por los nombres de usuarios encontrados en el servidor, vamos a buscarlos.
+
+!**Pasted image 20260924114103.png**
+
+Habiendo encontrado las respuestas a las primeras dos preguntas ahora toca escalar privilegios.
+
+---------------------------
+<h2>Escalada de Privilegios</h2>
+Para ello, volvemos a Bloodhound e investigamos ahora a `j.smith`. Podemos ver lo siguiente:
+
+!**Pasted image 20260924114622.png**
+
+Forma parte de un grupo interesante: `BACKUP OPERATORS`. Con una simple búsqueda de Google:
+
+!**Pasted image 20260924114737.png**
+
+Vamos a leer la información.
+
+!**Pasted image 20260924114911.png**
+
+Seguimos los pasos para extraer la base de datos SAM localmente:
+
+!**Pasted image 20260924115429.png**
+
+Y lo descargamos en nuestra máquina. El siguiente comando es posible gracias a `evil-winrm`.
+
+!**Pasted image 20260924115848.png**
+
+Ahora vamos a usar `impacket-secretsdump` para extraer las credenciales administrativas.
+
+!**Pasted image 20260924120327.png**
+
+Con esto, vamos a usar `evil-winrm` para realizar un ataque PtH.
+
+!**Pasted image 20260924120449.png**
+
+Y estamos dentro. Ahora buscamos la flag.
+
+!**Pasted image 20260924120527.png**
+
+>[!SUCCESS] Hemos conseguido responder a todas las preguntas!
+

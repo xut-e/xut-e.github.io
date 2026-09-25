@@ -31,3 +31,5 @@ title: "2. Medium"
 26. [0. Silent Monitor](/apuntes/thm/maquinas/2-medium/26-silent-monitor/0-silent-monitor/)
 27. [0. Recruit](/apuntes/thm/maquinas/2-medium/27-recruit/0-recruit/)
 28. [0. Windows Jump](/apuntes/thm/maquinas/2-medium/28-windows-jump/0-windows-jump/)
+29. [0. Interception](/apuntes/thm/maquinas/2-medium/29-interception/0-interception/)
+30. 

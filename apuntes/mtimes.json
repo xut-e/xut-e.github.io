@@ -2176,20 +2176,20 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-09-23T02:13:24",
-    "hash": "ab3281d1065b22101d434ce93afc44c425b59d469c9e923119366a698a202271"
+    "modified": "2026-09-25T02:16:26",
+    "hash": "fb4fa4c5427ee6d49213bb3f5dee0d215cc01f7bd23cc2273610539ef02995cc"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
-    "modified": "2026-03-31T01:16:47",
-    "hash": "bf80fb901bc5fa42b5efa96f7868925daa676f44144538140a10405b9b3562c1"
+    "modified": "2026-09-25T02:16:26",
+    "hash": "646e667c1c5e401bacd6f88230d7e4b512aeac7e1c2d0716cb8764024d31c97b"
   },
   "THM/Maquinas/4. Insane/4. Insane.md": {
     "modified": "2025-12-12T13:58:55",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-09-23T02:13:24",
-    "hash": "f6e3325503ccaf3c7bff1c6e1a6c986cef0436d95056cc610c75cabb37b576db"
+    "modified": "2026-09-25T02:16:26",
+    "hash": "b660e2a606a4a387b9a980d0fa52bc75b7d5e2c4415dbd7aff465e728bc69d80"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -7646,5 +7646,49 @@
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/2. Exploiting Kerberos Delegation.md": {
     "modified": "2026-09-23T02:13:24",
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/Maquinas/2. Medium/29. Interception/2. Getting the Flags.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "96258d7de2089ab9691ce8b1c607494839655e22dce66646e466d036c4759656"
+  },
+  "THM/Maquinas/2. Medium/29. Interception/1. Introduction.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "c57b9f33703a681015cdbc0cfdf7bbba4eb73a4b834ccaaa30239fee6dbd15e8"
+  },
+  "THM/Maquinas/2. Medium/29. Interception/0. Interception.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "23860adffa6add13e0141881887bf83b60672fb8f3e2ef26d4db0c8f622d6bbb"
+  },
+  "THM/Maquinas/3. Hard/3. K2/2. Base Camp.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "e70206a9ef8a9dd9e7600c1f7a3a0899e616d0e1648f37d3f8505ebcb981cf81"
+  },
+  "THM/Maquinas/3. Hard/3. K2/1. Introduction.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "f4634887676aedd63023f5193f416eb787ef4f8586cfa1f0c706547fe29fd4ef"
+  },
+  "THM/Maquinas/3. Hard/3. K2/4. The Summit.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "f077648d01196a289926b475a6093d0330e8dc77f418da3744f0ca0d7dc7bf55"
+  },
+  "THM/Maquinas/3. Hard/3. K2/3. Middle Camp.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "f1155e1834828813b13f5ff57bd5cfc8a9de8f8caaea729205021dbd63bb8c69"
+  },
+  "THM/Maquinas/3. Hard/3. K2/0. K2.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "a41fd33f0c86c5cadda3d9939174154d5329392568a6e874d1e5e94158e75324"
+  },
+  "THM/Maquinas/1. Easy/57. Silver Platter/2. Getting the Flags.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "beb9de33804c92a086ccfe6c492398c87c20773dee75b9402354a3fed1412b0a"
+  },
+  "THM/Maquinas/1. Easy/57. Silver Platter/1. Introduction.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "5bfeb7cb76e8578ad7597fe63383d5b3987f2dffc253ed1001777e9e5cfd1bca"
+  },
+  "THM/Maquinas/1. Easy/57. Silver Platter/0. Silver Platter.md": {
+    "modified": "2026-09-25T02:16:26",
+    "hash": "ffba495180bb34ca5a6badc055f80e9066f4ece47aaba7cabc2715390756ab93"
   }
 }

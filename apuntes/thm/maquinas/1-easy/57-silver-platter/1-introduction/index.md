@@ -1,0 +1,14 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260924154223.png**
+
+¿Puedes colarte en el servidor?
+
+¿Crees que tienes lo necesario para superar al equipo de Hack Smarter Security? Ellos afirman ser invencibles, y ahora tienes la oportunidad de demostrar que se equivocan. Adéntrate en su servidor web, encuentra las banderas ocultas y muestra al mundo tus habilidades de hacking de élite. ¡Buena suerte y que gane el mejor hacker!
+
+Pero ten cuidado: esto no será un paseo por el entorno digital. Hack Smarter Security ha blindado el servidor contra ataques comunes y su política de contraseñas exige claves que no hayan sido comprometidas (las verifican comparándolas con el archivo rockyou.txt; así de «geniales» son). Se ha lanzado el desafío definitivo y es hora de llevar tus habilidades al siguiente nivel. Recuerda: solo los más ingeniosos llegarán a la cima.
+
+¡Que tu código sea veloz, tus exploits impecables y la victoria tuya!
