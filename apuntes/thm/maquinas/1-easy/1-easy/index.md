@@ -60,4 +60,5 @@ title: "1. Easy"
 55. [0. Lo-Fi](/apuntes/thm/maquinas/1-easy/55-lo-fi/0-lo-fi/)
 56. [0. Cipher's Secret Message](/apuntes/thm/maquinas/1-easy/56-cipher-s-secret-message/0-cipher-s-secret-message/)
 57. [0. Silver Platter](/apuntes/thm/maquinas/1-easy/57-silver-platter/0-silver-platter/)
-58. 
+58. [0. Lookback](/apuntes/thm/maquinas/1-easy/58-lookback/0-lookback/)
+59. 

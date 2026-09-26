@@ -2176,8 +2176,8 @@
     "hash": "737d921044997178683e33ce91c7e14128556073bb6640ef26118f631aff0eb0"
   },
   "THM/Maquinas/2. Medium/2. Medium.md": {
-    "modified": "2026-09-25T02:16:26",
-    "hash": "fb4fa4c5427ee6d49213bb3f5dee0d215cc01f7bd23cc2273610539ef02995cc"
+    "modified": "2026-09-26T02:21:54",
+    "hash": "12cc397ba8737ecfef6a6578df19834da9b52f7f19dea29504e49a8813bdaced"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
     "modified": "2026-09-25T02:16:26",
@@ -2188,8 +2188,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/Maquinas/1. Easy/1. Easy.md": {
-    "modified": "2026-09-25T02:16:26",
-    "hash": "b660e2a606a4a387b9a980d0fa52bc75b7d5e2c4415dbd7aff465e728bc69d80"
+    "modified": "2026-09-26T02:21:54",
+    "hash": "d48295484302f4f7f165fb93593d7530c77452b5253f15b60189fb377a045162"
   },
   "THM/Maquinas/2. Medium/8. Injectics/0. Injectics.md": {
     "modified": "2025-12-12T13:58:55",
@@ -7690,5 +7690,61 @@
   "THM/Maquinas/1. Easy/57. Silver Platter/0. Silver Platter.md": {
     "modified": "2026-09-25T02:16:26",
     "hash": "ffba495180bb34ca5a6badc055f80e9066f4ece47aaba7cabc2715390756ab93"
+  },
+  "THM/Maquinas/2. Medium/31. Forward/2. Getting the Flags.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "5ecbbd0ca54ab5c8b64cf3ed0eedc9b556a64264803861ac01e7ae0859c7c025"
+  },
+  "THM/Maquinas/2. Medium/31. Forward/1. Introduction.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "737cd68c5734b3707a491f8722b78d9f60cc95d800983fe72dd78e3f97f05578"
+  },
+  "THM/Maquinas/2. Medium/31. Forward/0. Forward.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "cfc1ff06069888caf20a95985475bae169893fc969c41254807da9432bf0e678"
+  },
+  "THM/Maquinas/2. Medium/30. Attacktive Directory/3. Enumerating Users Via Kerberos.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "978bed98df2c0c9a08fc167769aaa401c86f00349527dea2c8e380f148f3834d"
+  },
+  "THM/Maquinas/2. Medium/30. Attacktive Directory/0. Attacktive Directory.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "b5b5f2ed38004c64a3a44537a8d894d619d07b38de552f0e08f752a4307475f4"
+  },
+  "THM/Maquinas/2. Medium/30. Attacktive Directory/1. Introduction.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "bac325f1ba6e891fa221e3424918521c68ac1e2a37fcb4fc412b06915c735416"
+  },
+  "THM/Maquinas/2. Medium/30. Attacktive Directory/7. Flag Submission Panel..md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "14df847915b55a85a291307f51d0385f9460cdf7692d304896a10b44bff6d8fe"
+  },
+  "THM/Maquinas/2. Medium/30. Attacktive Directory/4. Abusing Kerberos.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "0bfb6c493e739c7e17d6fa8547b012ff19721a4ebea9db6eec2195c35a7413c4"
+  },
+  "THM/Maquinas/2. Medium/30. Attacktive Directory/2. Welcome to Attacktive Directory.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "db207c34b30bfe730893bb5d3889f9c43aff86d299ce9a71fa04e9d2cd14716f"
+  },
+  "THM/Maquinas/2. Medium/30. Attacktive Directory/6. Elevating Privileges Within the Domain.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "76bc6d34ea532be3a211a4103383695537dca359613c2a3bf720f4dce061cbb6"
+  },
+  "THM/Maquinas/2. Medium/30. Attacktive Directory/5. Back to the Basics.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "9a451f50aca02e7b6466fdf69788d6fe5af965b4ac215329de88fe852e115101"
+  },
+  "THM/Maquinas/1. Easy/58. Lookback/0. Lookback.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "42cdb050fb715d53b5ae5358afa4b9ed740919af46c967a78d14e3d764ea99f2"
+  },
+  "THM/Maquinas/1. Easy/58. Lookback/2. Getting the Flags.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "31ab1015a6ef5e7254ccfa9495ffe95af1e5170246f02e8c1ca1778f7e720de4"
+  },
+  "THM/Maquinas/1. Easy/58. Lookback/1. Introduction.md": {
+    "modified": "2026-09-26T02:21:54",
+    "hash": "579c735460ca90c1a5c5bb7609492d329d979a4568d3ed95217728125ba86311"
   }
 }

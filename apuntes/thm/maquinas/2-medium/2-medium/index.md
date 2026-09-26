@@ -32,4 +32,6 @@ title: "2. Medium"
 27. [0. Recruit](/apuntes/thm/maquinas/2-medium/27-recruit/0-recruit/)
 28. [0. Windows Jump](/apuntes/thm/maquinas/2-medium/28-windows-jump/0-windows-jump/)
 29. [0. Interception](/apuntes/thm/maquinas/2-medium/29-interception/0-interception/)
-30. 
+30. [0. Attacktive Directory](/apuntes/thm/maquinas/2-medium/30-attacktive-directory/0-attacktive-directory/)
+31. [0. Forward](/apuntes/thm/maquinas/2-medium/31-forward/0-forward/)
+32. 

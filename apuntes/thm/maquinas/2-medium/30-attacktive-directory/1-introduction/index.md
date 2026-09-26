@@ -1,0 +1,9 @@
+---
+layout: apunte
+title: "1. Introduction"
+---
+
+!**Pasted image 20260925120855.png**
+
+El 99% de las redes corporativas corren sobre AD. ¿Pero puedes explotar un controlador de dominio vulnerable?
+

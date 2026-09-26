@@ -10450,6 +10450,24 @@
                   ]
                 },
                 {
+                  "name": "58. Lookback",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/58. Lookback/1. Introduction.md",
+                      "parent": "58. Lookback"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/1. Easy/58. Lookback/2. Getting the Flags.md",
+                      "parent": "58. Lookback"
+                    }
+                  ]
+                },
+                {
                   "name": "6. TakeOver",
                   "type": "directory",
                   "contents": [
@@ -10974,6 +10992,72 @@
                       "type": "file",
                       "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/3. Revenge/3. Finding the flags.md",
                       "parent": "3. Revenge"
+                    }
+                  ]
+                },
+                {
+                  "name": "30. Attacktive Directory",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/30. Attacktive Directory/1. Introduction.md",
+                      "parent": "30. Attacktive Directory"
+                    },
+                    {
+                      "name": "2. Welcome to Attacktive Directory.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/30. Attacktive Directory/2. Welcome to Attacktive Directory.md",
+                      "parent": "30. Attacktive Directory"
+                    },
+                    {
+                      "name": "3. Enumerating Users Via Kerberos.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/30. Attacktive Directory/3. Enumerating Users Via Kerberos.md",
+                      "parent": "30. Attacktive Directory"
+                    },
+                    {
+                      "name": "4. Abusing Kerberos.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/30. Attacktive Directory/4. Abusing Kerberos.md",
+                      "parent": "30. Attacktive Directory"
+                    },
+                    {
+                      "name": "5. Back to the Basics.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/30. Attacktive Directory/5. Back to the Basics.md",
+                      "parent": "30. Attacktive Directory"
+                    },
+                    {
+                      "name": "6. Elevating Privileges Within the Domain.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/30. Attacktive Directory/6. Elevating Privileges Within the Domain.md",
+                      "parent": "30. Attacktive Directory"
+                    },
+                    {
+                      "name": "7. Flag Submission Panel..md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/30. Attacktive Directory/7. Flag Submission Panel..md",
+                      "parent": "30. Attacktive Directory"
+                    }
+                  ]
+                },
+                {
+                  "name": "31. Forward",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/31. Forward/1. Introduction.md",
+                      "parent": "31. Forward"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/THM/Maquinas/2. Medium/31. Forward/2. Getting the Flags.md",
+                      "parent": "31. Forward"
                     }
                   ]
                 },

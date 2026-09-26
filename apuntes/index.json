@@ -2345,6 +2345,18 @@
   },
   {
     "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/2-medium/31-forward/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/31-forward/1-introduction/"
+  },
+  {
+    "title": "0. Forward",
+    "path": "/apuntes/thm/maquinas/2-medium/31-forward/0-forward/"
+  },
+  {
+    "title": "2. Getting the Flags",
     "path": "/apuntes/thm/maquinas/2-medium/15-farewell/2-getting-the-flags/"
   },
   {
@@ -2446,6 +2458,38 @@
   {
     "title": "1. Introduction",
     "path": "/apuntes/thm/maquinas/2-medium/13-wonderland/1-introduction/"
+  },
+  {
+    "title": "3. Enumerating Users Via Kerberos",
+    "path": "/apuntes/thm/maquinas/2-medium/30-attacktive-directory/3-enumerating-users-via-kerberos/"
+  },
+  {
+    "title": "0. Attacktive Directory",
+    "path": "/apuntes/thm/maquinas/2-medium/30-attacktive-directory/0-attacktive-directory/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/2-medium/30-attacktive-directory/1-introduction/"
+  },
+  {
+    "title": "7. Flag Submission Panel.",
+    "path": "/apuntes/thm/maquinas/2-medium/30-attacktive-directory/7-flag-submission-panel/"
+  },
+  {
+    "title": "4. Abusing Kerberos",
+    "path": "/apuntes/thm/maquinas/2-medium/30-attacktive-directory/4-abusing-kerberos/"
+  },
+  {
+    "title": "2. Welcome to Attacktive Directory",
+    "path": "/apuntes/thm/maquinas/2-medium/30-attacktive-directory/2-welcome-to-attacktive-directory/"
+  },
+  {
+    "title": "6. Elevating Privileges Within the Domain",
+    "path": "/apuntes/thm/maquinas/2-medium/30-attacktive-directory/6-elevating-privileges-within-the-domain/"
+  },
+  {
+    "title": "5. Back to the Basics",
+    "path": "/apuntes/thm/maquinas/2-medium/30-attacktive-directory/5-back-to-the-basics/"
   },
   {
     "title": "2. Finding the flags",
@@ -2958,6 +3002,18 @@
   {
     "title": "0. ColddBox - Easy",
     "path": "/apuntes/thm/maquinas/1-easy/38-colddbox-easy/0-colddbox-easy/"
+  },
+  {
+    "title": "0. Lookback",
+    "path": "/apuntes/thm/maquinas/1-easy/58-lookback/0-lookback/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/thm/maquinas/1-easy/58-lookback/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/maquinas/1-easy/58-lookback/1-introduction/"
   },
   {
     "title": "2. Finding the flags",

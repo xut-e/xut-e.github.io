@@ -1,0 +1,7 @@
+---
+layout: apunte
+title: "0. Forward"
+---
+
+**Ciberseguridad/THM/Maquinas/2. Medium/31. Forward/1. Introduction**
+**Ciberseguridad/THM/Maquinas/2. Medium/31. Forward/2. Getting the Flags**
