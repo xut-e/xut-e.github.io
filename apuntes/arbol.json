@@ -4891,6 +4891,48 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "name": "9. Writing Pentest Reports",
+                      "type": "directory",
+                      "contents": [
+                        {
+                          "name": "1. Introduction.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/1. Introduction.md",
+                          "parent": "9. Writing Pentest Reports"
+                        },
+                        {
+                          "name": "2. The Anatomy of a Pentest Report.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/2. The Anatomy of a Pentest Report.md",
+                          "parent": "9. Writing Pentest Reports"
+                        },
+                        {
+                          "name": "3. Report Section 1 - Summary.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/3. Report Section 1 - Summary.md",
+                          "parent": "9. Writing Pentest Reports"
+                        },
+                        {
+                          "name": "4. Report Section 2 - Vulnerability Write-Ups.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/4. Report Section 2 - Vulnerability Write-Ups.md",
+                          "parent": "9. Writing Pentest Reports"
+                        },
+                        {
+                          "name": "5. Report Section 3 - Appendices.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/5. Report Section 3 - Appendices.md",
+                          "parent": "9. Writing Pentest Reports"
+                        },
+                        {
+                          "name": "6. Styling Guides and Report QA.md",
+                          "type": "file",
+                          "path": "content/Ciberseguridad/THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/6. Styling Guides and Report QA.md",
+                          "parent": "9. Writing Pentest Reports"
+                        }
+                      ]
                     }
                   ]
                 },

@@ -7746,5 +7746,33 @@
   "THM/Maquinas/1. Easy/58. Lookback/1. Introduction.md": {
     "modified": "2026-09-26T02:21:54",
     "hash": "579c735460ca90c1a5c5bb7609492d329d979a4568d3ed95217728125ba86311"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/1. Introduction.md": {
+    "modified": "2026-09-28T02:21:44",
+    "hash": "3860515036bb66ebd397928bf7bae35785740340c71179ae43522ef383cc637c"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/0. Writing Pentest Reports.md": {
+    "modified": "2026-09-28T02:21:44",
+    "hash": "7917489b69c20de836280b7c12de9ddd497a285a725efe347c3374c169f2ce7b"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/6. Styling Guides and Report QA.md": {
+    "modified": "2026-09-28T02:21:44",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/2. The Anatomy of a Pentest Report.md": {
+    "modified": "2026-09-28T02:21:44",
+    "hash": "9322954647342132825828f9be0b3e7b2b7941f26d21ec0de232d4bb5351df91"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/4. Report Section 2 - Vulnerability Write-Ups.md": {
+    "modified": "2026-09-28T02:21:44",
+    "hash": "b938787ddb1273a7aa2ff7a6d5b61ecdbe18931a74d1b0588bf33d1bbcc1d0f5"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/3. Report Section 1 - Summary.md": {
+    "modified": "2026-09-28T02:21:44",
+    "hash": "f189a99853e1339d0f50e17f5c9ecb3186cf0780fce3751680dd35cc4ba1ce45"
+  },
+  "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/5. Report Section 3 - Appendices.md": {
+    "modified": "2026-09-28T02:21:44",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }

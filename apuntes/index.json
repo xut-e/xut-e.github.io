@@ -3964,6 +3964,34 @@
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/5-network-security/5-network-security/"
   },
   {
+    "title": "1. Introduction",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/9-writing-pentest-reports/1-introduction/"
+  },
+  {
+    "title": "0. Writing Pentest Reports",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/9-writing-pentest-reports/0-writing-pentest-reports/"
+  },
+  {
+    "title": "6. Styling Guides and Report QA",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/9-writing-pentest-reports/6-styling-guides-and-report-qa/"
+  },
+  {
+    "title": "2. The Anatomy of a Pentest Report",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/9-writing-pentest-reports/2-the-anatomy-of-a-pentest-report/"
+  },
+  {
+    "title": "4. Report Section 2 - Vulnerability Write-Ups",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/9-writing-pentest-reports/4-report-section-2-vulnerability-write-ups/"
+  },
+  {
+    "title": "3. Report Section 1 - Summary",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/9-writing-pentest-reports/3-report-section-1-summary/"
+  },
+  {
+    "title": "5. Report Section 3 - Appendices",
+    "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/9-writing-pentest-reports/5-report-section-3-appendices/"
+  },
+  {
     "title": "7. Metasploit",
     "path": "/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/7-metasploit/"
   },
