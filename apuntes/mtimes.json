@@ -2180,8 +2180,8 @@
     "hash": "12cc397ba8737ecfef6a6578df19834da9b52f7f19dea29504e49a8813bdaced"
   },
   "THM/Maquinas/3. Hard/3. Hard.md": {
-    "modified": "2026-09-25T02:16:26",
-    "hash": "646e667c1c5e401bacd6f88230d7e4b512aeac7e1c2d0716cb8764024d31c97b"
+    "modified": "2026-10-02T02:56:32",
+    "hash": "23420a55858d9d64d52206e7d407a28f241e1545ce4bd3cb34c0c6e074979d1e"
   },
   "THM/Maquinas/4. Insane/4. Insane.md": {
     "modified": "2025-12-12T13:58:55",
@@ -2372,8 +2372,8 @@
     "hash": "5ac21ab5c7a64806d31f5cdfe06c84fbbd69fd981662bd68e8a54a225fc7bf91"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/1. Jr Penetration Tester.md": {
-    "modified": "2025-12-12T13:58:55",
-    "hash": "1d748ec3f16fe50a902dc255cb082586b21f92d7c9b88dc08b23072ed0ae1b30"
+    "modified": "2026-10-02T02:56:32",
+    "hash": "ec33d412ce49f66e747d6ae030671080082de6e1b30d6014abffa52ceb65e8a6"
   },
   "THM/1. Career/2. Penetration Tester/3. Web Application Pentesting/3. Web Application Pentesting.md": {
     "modified": "2025-12-12T13:58:55",
@@ -7628,8 +7628,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/1. Exploiting Permission Delegation.md": {
-    "modified": "2026-09-23T02:13:24",
-    "hash": "e65409db344e1fe82658dfe80cedc1d635aa2aba5194f433389ce2db56a8d4f1"
+    "modified": "2026-10-02T02:56:32",
+    "hash": "fbea17010f657129477155f914abcf299a93de84075e4b84a9978468eb8067ae"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/7. Exploiting Domain Trusts.md": {
     "modified": "2026-09-23T02:13:24",
@@ -7644,8 +7644,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/2. Exploiting Kerberos Delegation.md": {
-    "modified": "2026-09-23T02:13:24",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-10-02T02:56:32",
+    "hash": "4cf9d386719be73add3e57ad511e9ea188371c12205b5ffee69e6d8892956af2"
   },
   "THM/Maquinas/2. Medium/29. Interception/2. Getting the Flags.md": {
     "modified": "2026-09-25T02:16:26",
@@ -7756,23 +7756,47 @@
     "hash": "7917489b69c20de836280b7c12de9ddd497a285a725efe347c3374c169f2ce7b"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/6. Styling Guides and Report QA.md": {
-    "modified": "2026-09-28T02:21:44",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-10-02T02:56:32",
+    "hash": "872db9ac2050da518b966bc9743a5e0b1af8f6b7bad3ff3b8fba3af2d865a05c"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/2. The Anatomy of a Pentest Report.md": {
     "modified": "2026-09-28T02:21:44",
     "hash": "9322954647342132825828f9be0b3e7b2b7941f26d21ec0de232d4bb5351df91"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/4. Report Section 2 - Vulnerability Write-Ups.md": {
-    "modified": "2026-09-28T02:21:44",
-    "hash": "b938787ddb1273a7aa2ff7a6d5b61ecdbe18931a74d1b0588bf33d1bbcc1d0f5"
+    "modified": "2026-10-02T02:56:32",
+    "hash": "ef507998b861323bd5790c8cc82a4260e2c1e05123400f36603ed9878a7083be"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/3. Report Section 1 - Summary.md": {
     "modified": "2026-09-28T02:21:44",
     "hash": "f189a99853e1339d0f50e17f5c9ecb3186cf0780fce3751680dd35cc4ba1ce45"
   },
   "THM/1. Career/2. Penetration Tester/1. Jr Penetration Tester/9. Writing Pentest Reports/5. Report Section 3 - Appendices.md": {
-    "modified": "2026-09-28T02:21:44",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "modified": "2026-10-02T02:56:32",
+    "hash": "9947206e359bdb34081b6e9296fe74af58d46f03b44213dc12b11a93b5f26a9c"
+  },
+  "THM/Maquinas/3. Hard/4. Reset/2. Getting the Flags.md": {
+    "modified": "2026-10-02T02:56:32",
+    "hash": "f7f5bb41bcff3d8ba7c2e7ca0b6eebab5bc538416cf24a750689b7bb612f4369"
+  },
+  "THM/Maquinas/3. Hard/4. Reset/1. Introduction.md": {
+    "modified": "2026-10-02T02:56:32",
+    "hash": "e1daa759b0d816dbf4466de76df0f91c190d336f61b6cb2b4b223d8be1940fb2"
+  },
+  "THM/Maquinas/3. Hard/4. Reset/0. Reset.md": {
+    "modified": "2026-10-02T02:56:32",
+    "hash": "080ca4dbbcf619bd7afba5f13cc2c111d79c163144f3edf62fb792c0c837f167"
+  },
+  "THM/Maquinas/3. Hard/5. Ledger/2. Getting the Flags.md": {
+    "modified": "2026-10-02T02:56:32",
+    "hash": "56dcfab9ee8be39d4df4d12e94c63cb1c17287fe2ee6cd23951638ab51774e3e"
+  },
+  "THM/Maquinas/3. Hard/5. Ledger/1. Introduction.md": {
+    "modified": "2026-10-02T02:56:32",
+    "hash": "5065b7d0ea545b19171d4af4f9f14730a237642e551dcefa201ac81bbcf8f7bb"
+  },
+  "THM/Maquinas/3. Hard/5. Ledger/0. Ledger.md": {
+    "modified": "2026-10-02T02:56:32",
+    "hash": "bd881407988cfd0740b1715cab7a729d5163f37642b01c83c564bb49e2af1017"
   }
 }

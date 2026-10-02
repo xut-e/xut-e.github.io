@@ -11,3 +11,4 @@ title: "1. Jr Penetration Tester"
 [6. Vulnerability Research](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/6-vulnerability-research/6-vulnerability-research/)
 [7. Metasploit](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/7-metasploit/7-metasploit/)
 [8. Privilege Escalation](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/8-privilege-escalation/8-privilege-escalation/)
+[0. Writing Pentest Reports](/apuntes/thm/1-career/2-penetration-tester/1-jr-penetration-tester/9-writing-pentest-reports/0-writing-pentest-reports/)
