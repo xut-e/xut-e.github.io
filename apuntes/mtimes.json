@@ -7436,8 +7436,8 @@
     "hash": "7a432818dec5cd885e77e0e6113e50645ad0a6fdcb776829ab014f5804b3e6b7"
   },
   "HTB/Seasons/0. Seasons.md": {
-    "modified": "2026-07-12T01:27:49",
-    "hash": "545a9d6c1d92e545ede11592936ddfd8f6bff3cc59e39ad653e2e4de67d386ef"
+    "modified": "2026-10-03T19:26:26",
+    "hash": "e1d84c23d29be7a037d50f9ad24178863cae22c664b73359468c1ae9fe901298"
   },
   "HTB/Seasons/11/11.md": {
     "modified": "2026-07-23T01:43:51",
@@ -7644,8 +7644,8 @@
     "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "THM/1. Career/2. Penetration Tester/5. Red Teaming/6. Compromising Active Directory/5. Exploiting Active Directory/2. Exploiting Kerberos Delegation.md": {
-    "modified": "2026-10-02T02:56:32",
-    "hash": "4cf9d386719be73add3e57ad511e9ea188371c12205b5ffee69e6d8892956af2"
+    "modified": "2026-10-03T19:26:26",
+    "hash": "1724fcdee0ac7dd5d660b40d03acc228298199148f43f91354edf16dcda542a9"
   },
   "THM/Maquinas/2. Medium/29. Interception/2. Getting the Flags.md": {
     "modified": "2026-09-25T02:16:26",
@@ -7798,5 +7798,21 @@
   "THM/Maquinas/3. Hard/5. Ledger/0. Ledger.md": {
     "modified": "2026-10-02T02:56:32",
     "hash": "bd881407988cfd0740b1715cab7a729d5163f37642b01c83c564bb49e2af1017"
+  },
+  "HTB/Seasons/12/12.md": {
+    "modified": "2026-10-03T19:26:26",
+    "hash": "6759365aaddc5bb6dbd71d7f1ceb93253092a69e16acf148895ecbd5b35c0aaa"
+  },
+  "HTB/Seasons/12/1. Layover/2. Getting the Flags.md": {
+    "modified": "2026-10-03T19:26:26",
+    "hash": "eeadf475b3cec58cf48d2c27d025047dc2bb1a667895a29e423e2c706f1c89d3"
+  },
+  "HTB/Seasons/12/1. Layover/1. Introduction.md": {
+    "modified": "2026-10-03T19:26:26",
+    "hash": "c6470aca3b2d6bbd0da5bc78e678cbe25757d18f109af701dd46e4a1a8824773"
+  },
+  "HTB/Seasons/12/1. Layover/0. Layover.md": {
+    "modified": "2026-10-03T19:26:26",
+    "hash": "80732533661e6910ffae21a454c0d5686574202ef798331d33dec90fa0199dab"
   }
 }

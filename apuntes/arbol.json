@@ -123,6 +123,30 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "12",
+              "type": "directory",
+              "contents": [
+                {
+                  "name": "1. Layover",
+                  "type": "directory",
+                  "contents": [
+                    {
+                      "name": "1. Introduction.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/HTB/Seasons/12/1. Layover/1. Introduction.md",
+                      "parent": "1. Layover"
+                    },
+                    {
+                      "name": "2. Getting the Flags.md",
+                      "type": "file",
+                      "path": "content/Ciberseguridad/HTB/Seasons/12/1. Layover/2. Getting the Flags.md",
+                      "parent": "1. Layover"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

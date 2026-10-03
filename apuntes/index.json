@@ -28,6 +28,10 @@
     "path": "/apuntes/htb/seasons/11/11/"
   },
   {
+    "title": "12",
+    "path": "/apuntes/htb/seasons/12/12/"
+  },
+  {
     "title": "1. Getting the Flags",
     "path": "/apuntes/htb/seasons/11/7-makesense/1-getting-the-flags/"
   },
@@ -50,6 +54,18 @@
   {
     "title": "0. Paperwork",
     "path": "/apuntes/htb/seasons/11/8-paperwork/0-paperwork/"
+  },
+  {
+    "title": "2. Getting the Flags",
+    "path": "/apuntes/htb/seasons/12/1-layover/2-getting-the-flags/"
+  },
+  {
+    "title": "1. Introduction",
+    "path": "/apuntes/htb/seasons/12/1-layover/1-introduction/"
+  },
+  {
+    "title": "0. Layover",
+    "path": "/apuntes/htb/seasons/12/1-layover/0-layover/"
   },
   {
     "title": "1. DVWA",
